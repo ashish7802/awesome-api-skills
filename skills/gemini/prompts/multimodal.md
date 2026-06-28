@@ -1,0 +1,1 @@
+Write a script that takes a local image of a flowchart, converts it to base64, and asks Gemini 1.5 Pro to generate Mermaid.js code representing the chart.

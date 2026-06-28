@@ -1,0 +1,30 @@
+{
+  "name": "awesome-api-skills",
+  "version": "0.0.0",
+  "private": true,
+  "description": "The world's largest collection of installable AI coding skills for APIs.",
+  "scripts": {
+    "lint": "eslint .",
+    "benchmark": "node benchmark.js",
+    "format": "prettier --write .",
+    "test": "vitest run --passWithNoTests"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@types/node": "^22.10.0",
+    "eslint": "^9.15.0",
+    "prettier": "^3.4.1",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.16.0",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

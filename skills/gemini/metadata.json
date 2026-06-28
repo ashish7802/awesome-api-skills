@@ -1,0 +1,17 @@
+{
+  "name": "gemini",
+  "version": "1.0.0",
+  "description": "Multimodal AI models by Google.",
+  "categories": [
+    "AI"
+  ],
+  "languages": [
+    "typescript",
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://ai.google.dev/api"
+  }
+}

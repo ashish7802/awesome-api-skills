@@ -1,0 +1,1 @@
+$client = new Shopify\Clients\Graphql('store.myshopify.com', 'token');

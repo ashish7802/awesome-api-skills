@@ -1,0 +1,47 @@
+{
+  "colors": {
+    "primary": {
+      "hex": "#00F0FF",
+      "rgb": "rgb(0, 240, 255)",
+      "hsl": "hsl(183, 100%, 50%)"
+    },
+    "secondary": {
+      "hex": "#FF3366",
+      "rgb": "rgb(255, 51, 102)",
+      "hsl": "hsl(345, 100%, 60%)"
+    },
+    "neutral": {
+      "100": "#FFFFFF",
+      "200": "#EAEAEA",
+      "300": "#A0A0A0",
+      "400": "#666666",
+      "500": "#333333",
+      "600": "#1A1A1A",
+      "700": "#111111",
+      "800": "#0A0A0A",
+      "900": "#000000"
+    },
+    "semantic": {
+      "success": "#00E59B",
+      "warning": "#FFB800",
+      "danger": "#FF3B30",
+      "info": "#0088FF"
+    },
+    "theme": {
+      "dark": {
+        "background": "{colors.neutral.900}",
+        "surface": "{colors.neutral.800}",
+        "border": "{colors.neutral.600}",
+        "text_primary": "{colors.neutral.100}",
+        "text_secondary": "{colors.neutral.300}"
+      },
+      "light": {
+        "background": "{colors.neutral.100}",
+        "surface": "{colors.neutral.200}",
+        "border": "{colors.neutral.300}",
+        "text_primary": "{colors.neutral.900}",
+        "text_secondary": "{colors.neutral.500}"
+      }
+    }
+  }
+}

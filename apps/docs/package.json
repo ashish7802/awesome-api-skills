@@ -1,0 +1,23 @@
+{
+  "name": "@awesome-api-skills/docs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/generate.js && vitepress dev src",
+    "build": "node scripts/generate.js && vitepress build src",
+    "serve": "vitepress serve src",
+    "analyze": "vitepress build src && npx vite-bundle-visualizer -o bundle-stats.html"
+  },
+  "dependencies": {
+    "vue": "^3.5.0",
+    "vitepress": "1.5.0",
+    "@awesome-api-skills/core": "workspace:*",
+    "@awesome-api-skills/shared-types": "workspace:*",
+    "@awesome-api-skills/validator": "workspace:*",
+    "@awesome-api-skills/generator": "workspace:*"
+  },
+  "devDependencies": {
+    "lighthouse": "^12.2.0",
+    "vite-bundle-visualizer": "^1.2.1"
+  }
+}

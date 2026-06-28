@@ -1,0 +1,1 @@
+Write a Node.js function using Firebase Admin SDK to execute a batch write that updates a 'users' document and creates an 'audit_logs' document atomically.

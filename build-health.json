@@ -1,0 +1,123 @@
+{
+  "timestamp": "2026-06-28T12:30:08.676Z",
+  "platform": "win32",
+  "nodeVersion": "v24.17.0",
+  "benchmarks": {
+    "validationReal": 0.44439999999997326,
+    "validation1000": 3.31310000000002,
+    "generationReal": 11.839500000000044,
+    "generationIncrementalReal": 0.1582000000000221,
+    "generation1000": 491.21219999999994,
+    "registryLoadReal": 0.0766999999999598,
+    "searchReal": 0.17390000000000327,
+    "registryLoad1000": 0.4436999999999216,
+    "search1000": 0.35389999999995325
+  },
+  "validationResults": [
+    {
+      "skillId": "anthropic",
+      "isValid": true,
+      "diagnostics": []
+    },
+    {
+      "skillId": "cloudflare",
+      "isValid": true,
+      "diagnostics": []
+    },
+    {
+      "skillId": "discord",
+      "isValid": true,
+      "diagnostics": []
+    },
+    {
+      "skillId": "github",
+      "isValid": true,
+      "diagnostics": []
+    },
+    {
+      "skillId": "google-gemini",
+      "isValid": true,
+      "diagnostics": []
+    },
+    {
+      "skillId": "openai",
+      "isValid": true,
+      "diagnostics": []
+    },
+    {
+      "skillId": "stripe",
+      "isValid": true,
+      "diagnostics": []
+    },
+    {
+      "skillId": "supabase",
+      "isValid": true,
+      "diagnostics": []
+    },
+    {
+      "skillId": "twilio",
+      "isValid": true,
+      "diagnostics": []
+    },
+    {
+      "skillId": "vercel",
+      "isValid": true,
+      "diagnostics": []
+    }
+  ],
+  "buildResults": {
+    "timestamp": 1782649808689,
+    "totalDurationMs": 11.669200000000046,
+    "diagnostics": [
+      {
+        "stage": "plugin-search-index",
+        "durationMs": 1.2146000000000186,
+        "outputsCreated": 1,
+        "outputsSkipped": 0,
+        "warnings": [],
+        "errors": []
+      },
+      {
+        "stage": "plugin-registry",
+        "durationMs": 0.6685999999999694,
+        "outputsCreated": 1,
+        "outputsSkipped": 0,
+        "warnings": [],
+        "errors": []
+      },
+      {
+        "stage": "plugin-manifest",
+        "durationMs": 1.0742999999999938,
+        "outputsCreated": 1,
+        "outputsSkipped": 0,
+        "warnings": [],
+        "errors": []
+      },
+      {
+        "stage": "plugin-integrity",
+        "durationMs": 0.9105999999999881,
+        "outputsCreated": 1,
+        "outputsSkipped": 0,
+        "warnings": [],
+        "errors": []
+      },
+      {
+        "stage": "plugin-docs",
+        "durationMs": 6.120499999999993,
+        "outputsCreated": 10,
+        "outputsSkipped": 0,
+        "warnings": [],
+        "errors": []
+      },
+      {
+        "stage": "plugin-sitemap",
+        "durationMs": 0.8122000000000185,
+        "outputsCreated": 1,
+        "outputsSkipped": 0,
+        "warnings": [],
+        "errors": []
+      }
+    ],
+    "success": true
+  }
+}

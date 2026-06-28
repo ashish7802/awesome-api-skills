@@ -1,0 +1,1 @@
+Write a Node.js Express endpoint that calls the OpenAI chat completions API with GPT-4o, enables streaming, and pipes the response directly to the Server-Sent Events (SSE) client.

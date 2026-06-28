@@ -1,0 +1,1 @@
+Write a Node.js route that accepts a Plaid public token, exchanges it for an access token using the Plaid API, and stores it in a mock database.

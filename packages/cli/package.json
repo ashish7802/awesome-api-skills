@@ -1,0 +1,24 @@
+{
+  "name": "@awesome-api-skills/cli",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "awesome-api": "dist/bin.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "lint": "eslint src tests"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "@awesome-api-skills/core": "workspace:*",
+    "@awesome-api-skills/shared-types": "workspace:*",
+    "@clack/prompts": "^0.7.0",
+    "picocolors": "^1.1.1"
+  }
+}

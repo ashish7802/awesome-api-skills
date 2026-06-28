@@ -1,0 +1,17 @@
+{
+  "name": "sentry",
+  "version": "1.0.0",
+  "description": "Application performance monitoring and error tracking.",
+  "categories": [
+    "Monitoring"
+  ],
+  "languages": [
+    "typescript",
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://docs.sentry.io/api/"
+  }
+}

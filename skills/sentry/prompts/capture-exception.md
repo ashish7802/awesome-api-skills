@@ -1,0 +1,1 @@
+Show how to catch a database error in an Express route, attach the user's ID to the Sentry scope, and manually capture the exception.

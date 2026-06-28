@@ -1,0 +1,17 @@
+{
+  "name": "shopify",
+  "version": "1.0.0",
+  "description": "E-commerce platform API.",
+  "categories": [
+    "Commerce"
+  ],
+  "languages": [
+    "typescript",
+    "php"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://shopify.dev/docs/api/admin-graphql"
+  }
+}

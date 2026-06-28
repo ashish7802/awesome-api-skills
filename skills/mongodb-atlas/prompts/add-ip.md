@@ -1,0 +1,1 @@
+Write a Python script that adds a given IP address to the MongoDB Atlas Project IP Access List using the Administration API.

@@ -1,0 +1,1 @@
+Create a prompt that instructs Claude to read a provided block of text, extract specific named entities, and output them exclusively as a JSON array.

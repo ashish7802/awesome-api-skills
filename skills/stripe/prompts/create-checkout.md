@@ -1,0 +1,1 @@
+Generate a Stripe Checkout Session for a one-time payment of $20 USD for a product named 'Pro Plan'. Ensure `success_url` and `cancel_url` are set.

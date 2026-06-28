@@ -1,0 +1,17 @@
+{
+  "name": "algolia",
+  "version": "1.0.0",
+  "description": "Hosted Search API.",
+  "categories": [
+    "Search"
+  ],
+  "languages": [
+    "typescript",
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://www.algolia.com/doc/api-reference/"
+  }
+}

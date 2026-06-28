@@ -1,0 +1,124 @@
+{
+  "skills": [
+    {
+      "id": "anthropic",
+      "name": "Anthropic API",
+      "description": "Integration for Claude models",
+      "version": "1.0.0",
+      "license": "MIT",
+      "categories": ["AI"],
+      "tags": ["anthropic", "ai"],
+      "sdkLanguages": ["typescript", "python"],
+      "authType": "api_key",
+      "supportedAgents": ["claude-code", "cursor"]
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare API",
+      "description": "Manage DNS and workers",
+      "version": "1.0.0",
+      "license": "MIT",
+      "categories": ["Cloud"],
+      "tags": ["cloudflare", "cloud"],
+      "sdkLanguages": ["typescript", "python"],
+      "authType": "api_key",
+      "supportedAgents": ["claude-code", "cursor"]
+    },
+    {
+      "id": "discord",
+      "name": "Discord API",
+      "description": "Manage bots and servers",
+      "version": "1.0.0",
+      "license": "MIT",
+      "categories": ["Messaging"],
+      "tags": ["discord", "messaging"],
+      "sdkLanguages": ["typescript", "python"],
+      "authType": "api_key",
+      "supportedAgents": ["claude-code", "cursor"]
+    },
+    {
+      "id": "github",
+      "name": "GitHub API",
+      "description": "Manage repositories and pull requests",
+      "version": "1.0.0",
+      "license": "MIT",
+      "categories": ["DevOps"],
+      "tags": ["github", "devops"],
+      "sdkLanguages": ["typescript", "python"],
+      "authType": "api_key",
+      "supportedAgents": ["claude-code", "cursor"]
+    },
+    {
+      "id": "google-gemini",
+      "name": "Google Gemini",
+      "description": "Integration for Gemini models",
+      "version": "1.0.0",
+      "license": "MIT",
+      "categories": ["AI"],
+      "tags": ["google-gemini", "ai"],
+      "sdkLanguages": ["typescript", "python"],
+      "authType": "api_key",
+      "supportedAgents": ["claude-code", "cursor"]
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI API",
+      "description": "Integration for GPT models and embeddings",
+      "version": "1.0.0",
+      "license": "MIT",
+      "categories": ["AI"],
+      "tags": ["openai", "ai"],
+      "sdkLanguages": ["typescript", "python"],
+      "authType": "api_key",
+      "supportedAgents": ["claude-code", "cursor"]
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe API",
+      "description": "Payment processing and subscriptions",
+      "version": "1.0.0",
+      "license": "MIT",
+      "categories": ["Payments"],
+      "tags": ["stripe", "payments"],
+      "sdkLanguages": ["typescript", "python"],
+      "authType": "api_key",
+      "supportedAgents": ["claude-code", "cursor"]
+    },
+    {
+      "id": "supabase",
+      "name": "Supabase API",
+      "description": "Manage databases and authentication",
+      "version": "1.0.0",
+      "license": "MIT",
+      "categories": ["Databases"],
+      "tags": ["supabase", "databases"],
+      "sdkLanguages": ["typescript", "python"],
+      "authType": "api_key",
+      "supportedAgents": ["claude-code", "cursor"]
+    },
+    {
+      "id": "twilio",
+      "name": "Twilio API",
+      "description": "Send SMS and voice calls",
+      "version": "1.0.0",
+      "license": "MIT",
+      "categories": ["Messaging"],
+      "tags": ["twilio", "messaging"],
+      "sdkLanguages": ["typescript", "python"],
+      "authType": "api_key",
+      "supportedAgents": ["claude-code", "cursor"]
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel API",
+      "description": "Manage deployments and domains",
+      "version": "1.0.0",
+      "license": "MIT",
+      "categories": ["Cloud"],
+      "tags": ["vercel", "cloud"],
+      "sdkLanguages": ["typescript", "python"],
+      "authType": "api_key",
+      "supportedAgents": ["claude-code", "cursor"]
+    }
+  ]
+}

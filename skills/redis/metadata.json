@@ -1,0 +1,17 @@
+{
+  "name": "redis",
+  "version": "1.0.0",
+  "description": "In-memory data structure store.",
+  "categories": [
+    "Databases"
+  ],
+  "languages": [
+    "typescript",
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://redis.io/commands/"
+  }
+}

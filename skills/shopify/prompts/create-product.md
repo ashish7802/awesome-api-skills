@@ -1,0 +1,1 @@
+Write a Shopify Admin API GraphQL mutation to create a new product with two variants, utilizing the @shopify/shopify-api Node library.

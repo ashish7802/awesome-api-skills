@@ -1,0 +1,18 @@
+{
+  "name": "firebase",
+  "version": "1.0.0",
+  "description": "Backend-as-a-Service by Google.",
+  "categories": [
+    "Cloud",
+    "Databases"
+  ],
+  "languages": [
+    "typescript",
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://firebase.google.com/docs/admin/setup"
+  }
+}

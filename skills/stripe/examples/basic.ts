@@ -1,0 +1,1 @@
+console.log('Initialize Stripe API');\n

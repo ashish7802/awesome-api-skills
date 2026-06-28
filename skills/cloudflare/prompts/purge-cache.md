@@ -1,0 +1,1 @@
+Write a script that uses the Cloudflare SDK to purge the cache for specific URLs on a given Zone ID.

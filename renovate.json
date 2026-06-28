@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":preserveSemverRanges",
+    ":dependencyDashboard"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchPackageNames": ["@types/**", "eslint**", "prettier", "typescript", "vitest"],
+      "groupName": "devDependencies (non-major)",
+      "automerge": true
+    },
+    {
+      "matchPackageNames": ["pnpm"],
+      "groupName": "pnpm updates"
+    }
+  ],
+  "ignoreDeps": [
+    "vue-demi"
+  ]
+}

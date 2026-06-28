@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SkillMetadata",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "verified": {
+      "type": "boolean"
+    },
+    "official": {
+      "type": "boolean"
+    },
+    "maintainer": {
+      "type": "string"
+    },
+    "repository": {
+      "type": "string"
+    },
+    "documentation": {
+      "type": "string"
+    },
+    "support": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sdkLanguages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "authType": {
+      "type": "string"
+    },
+    "supportedAgents": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string"
+    },
+    "popularity": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "description",
+    "version",
+    "license",
+    "categories",
+    "tags",
+    "sdkLanguages",
+    "authType",
+    "supportedAgents"
+  ]
+}

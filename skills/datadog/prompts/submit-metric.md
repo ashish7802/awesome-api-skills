@@ -1,0 +1,1 @@
+Write a Node.js function using the Datadog API Client v2 to submit a custom metric named 'app.user.login' with tags 'env:prod' and 'region:us-east'.

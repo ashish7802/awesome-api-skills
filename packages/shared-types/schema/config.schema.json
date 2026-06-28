@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Config",
+  "type": "object",
+  "properties": {
+    "defaultRegistry": {
+      "type": "string"
+    },
+    "registries": {
+      "type": "array",
+      "items": {
+        "$ref": "registry.schema.json"
+      }
+    }
+  },
+  "required": ["defaultRegistry", "registries"]
+}

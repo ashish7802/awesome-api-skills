@@ -1,0 +1,22 @@
+{
+  "name": "@awesome-api-skills/core",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "lint": "eslint src tests"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "@awesome-api-skills/shared-types": "workspace:*",
+    "@awesome-api-skills/sdk": "workspace:*",
+    "@awesome-api-skills/registry": "workspace:*",
+    "@awesome-api-skills/validator": "workspace:*",
+    "@awesome-api-skills/generator": "workspace:*"
+  }
+}

@@ -1,0 +1,1 @@
+Write a Node.js function using the Auth0 ManagementClient to update a user's `app_metadata` with a custom role.

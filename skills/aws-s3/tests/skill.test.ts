@@ -1,0 +1,1 @@
+console.log('Tested AWS S3');

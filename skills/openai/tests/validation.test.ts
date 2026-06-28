@@ -1,0 +1,1 @@
+import { describe, it } from 'vitest';\ndescribe('OpenAI API', () => { it('should work', () => {}) });\n

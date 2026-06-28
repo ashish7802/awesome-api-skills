@@ -1,0 +1,17 @@
+{
+  "name": "twilio",
+  "version": "1.0.0",
+  "description": "Communication APIs for SMS, Voice, and Video.",
+  "categories": [
+    "Messaging"
+  ],
+  "languages": [
+    "typescript",
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://www.twilio.com/docs/api"
+  }
+}

@@ -1,0 +1,1 @@
+Write a Node.js function using AWS SDK v3 lib-dynamodb to query a Global Secondary Index named 'EmailIndex' for a specific email address.

@@ -1,0 +1,41 @@
+name: Publish Artifacts
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    name: Publish Build Artifacts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+          cache: 'pnpm'
+
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build All
+        run: pnpm build
+
+      - name: Generate Integrity Report & Checksums
+        run: pnpm run generate-integrity
+
+      - name: Generate SBOM
+        uses: advanced-security/sbom-generator-action@v1
+
+      - name: Upload Artifacts to Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            packages/core/custom-dist/registry.json
+            packages/core/custom-dist/search-index.json
+            packages/core/custom-dist/integrity-report.json
+            checksums.txt
+            sbom.spdx.json

@@ -1,0 +1,1 @@
+const res = await fetch('https://api.vercel.com/v9/projects', { headers: { Authorization: `Bearer ${TOKEN}` } });

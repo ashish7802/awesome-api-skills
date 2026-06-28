@@ -1,0 +1,18 @@
+{
+  "name": "vercel",
+  "version": "1.0.0",
+  "description": "Platform for frontend frameworks and static sites.",
+  "categories": [
+    "Cloud",
+    "DevOps"
+  ],
+  "languages": [
+    "typescript",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://vercel.com/docs/rest-api"
+  }
+}

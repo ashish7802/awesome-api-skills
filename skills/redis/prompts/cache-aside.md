@@ -1,0 +1,1 @@
+Write a Node.js function implementing the cache-aside pattern using Redis v4 SDK. It should check Redis for a key, and if missing, fetch from a DB, save to Redis with a TTL of 1 hour, and return the data.

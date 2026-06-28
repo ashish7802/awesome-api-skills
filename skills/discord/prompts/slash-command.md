@@ -1,0 +1,1 @@
+Write a discord.js event listener that intercepts a slash command named '/ping' and replies with 'Pong!' ephemerally.

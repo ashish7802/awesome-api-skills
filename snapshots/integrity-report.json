@@ -1,0 +1,42 @@
+[
+  {
+    "id": "anthropic",
+    "checksum": "sha256-mock-anthropic"
+  },
+  {
+    "id": "cloudflare",
+    "checksum": "sha256-mock-cloudflare"
+  },
+  {
+    "id": "discord",
+    "checksum": "sha256-mock-discord"
+  },
+  {
+    "id": "github",
+    "checksum": "sha256-mock-github"
+  },
+  {
+    "id": "google-gemini",
+    "checksum": "sha256-mock-google-gemini"
+  },
+  {
+    "id": "openai",
+    "checksum": "sha256-mock-openai"
+  },
+  {
+    "id": "stripe",
+    "checksum": "sha256-mock-stripe"
+  },
+  {
+    "id": "supabase",
+    "checksum": "sha256-mock-supabase"
+  },
+  {
+    "id": "twilio",
+    "checksum": "sha256-mock-twilio"
+  },
+  {
+    "id": "vercel",
+    "checksum": "sha256-mock-vercel"
+  }
+]

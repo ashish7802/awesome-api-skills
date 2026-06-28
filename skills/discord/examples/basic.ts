@@ -1,0 +1,1 @@
+console.log('Initialize Discord API');\n

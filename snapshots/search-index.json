@@ -1,0 +1,62 @@
+[
+  {
+    "id": "anthropic",
+    "name": "Anthropic API",
+    "tags": ["anthropic", "ai"],
+    "categories": ["AI"]
+  },
+  {
+    "id": "cloudflare",
+    "name": "Cloudflare API",
+    "tags": ["cloudflare", "cloud"],
+    "categories": ["Cloud"]
+  },
+  {
+    "id": "discord",
+    "name": "Discord API",
+    "tags": ["discord", "messaging"],
+    "categories": ["Messaging"]
+  },
+  {
+    "id": "github",
+    "name": "GitHub API",
+    "tags": ["github", "devops"],
+    "categories": ["DevOps"]
+  },
+  {
+    "id": "google-gemini",
+    "name": "Google Gemini",
+    "tags": ["google-gemini", "ai"],
+    "categories": ["AI"]
+  },
+  {
+    "id": "openai",
+    "name": "OpenAI API",
+    "tags": ["openai", "ai"],
+    "categories": ["AI"]
+  },
+  {
+    "id": "stripe",
+    "name": "Stripe API",
+    "tags": ["stripe", "payments"],
+    "categories": ["Payments"]
+  },
+  {
+    "id": "supabase",
+    "name": "Supabase API",
+    "tags": ["supabase", "databases"],
+    "categories": ["Databases"]
+  },
+  {
+    "id": "twilio",
+    "name": "Twilio API",
+    "tags": ["twilio", "messaging"],
+    "categories": ["Messaging"]
+  },
+  {
+    "id": "vercel",
+    "name": "Vercel API",
+    "tags": ["vercel", "cloud"],
+    "categories": ["Cloud"]
+  }
+]

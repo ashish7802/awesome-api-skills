@@ -1,0 +1,18 @@
+{
+  "name": "slack",
+  "version": "1.0.0",
+  "description": "Team communication platform.",
+  "categories": [
+    "Messaging",
+    "Productivity"
+  ],
+  "languages": [
+    "typescript",
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://api.slack.com/apis"
+  }
+}

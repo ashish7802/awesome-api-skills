@@ -1,0 +1,2 @@
+import { Configuration, PlaidApi, PlaidEnvironments } from 'plaid';
+const client = new PlaidApi(new Configuration({ basePath: PlaidEnvironments.sandbox, baseOptions: { headers: { 'PLAID-CLIENT-ID': 'id', 'PLAID-SECRET': 'secret' } } }));

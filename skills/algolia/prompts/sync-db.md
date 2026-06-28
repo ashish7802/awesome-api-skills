@@ -1,0 +1,1 @@
+Write a Node.js script that fetches records from a Postgres database and pushes them to an Algolia index in batches of 1000 using `saveObjects`.

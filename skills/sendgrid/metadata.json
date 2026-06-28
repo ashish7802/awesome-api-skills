@@ -1,0 +1,17 @@
+{
+  "name": "sendgrid",
+  "version": "1.0.0",
+  "description": "Cloud-based email delivery and management.",
+  "categories": [
+    "Messaging"
+  ],
+  "languages": [
+    "typescript",
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://docs.sendgrid.com/api-reference"
+  }
+}

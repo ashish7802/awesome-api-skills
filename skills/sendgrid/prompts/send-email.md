@@ -1,0 +1,1 @@
+Write a function using the SendGrid Node.js SDK to send a transactional email using a specific Dynamic Template ID and inject user variables.

@@ -1,0 +1,1 @@
+console.log('Initialize Vercel API');\n

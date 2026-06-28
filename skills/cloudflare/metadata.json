@@ -1,0 +1,18 @@
+{
+  "name": "cloudflare",
+  "version": "1.0.0",
+  "description": "Web performance and security company.",
+  "categories": [
+    "Cloud",
+    "Security"
+  ],
+  "languages": [
+    "typescript",
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://developers.cloudflare.com/api/"
+  }
+}

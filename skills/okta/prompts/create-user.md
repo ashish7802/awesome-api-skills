@@ -1,0 +1,1 @@
+Write a script that creates a new Okta user in the 'Staged' state and assigns them to a specific Group ID.

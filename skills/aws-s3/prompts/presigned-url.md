@@ -1,0 +1,1 @@
+Write a Node.js function using AWS SDK v3 that generates a presigned URL allowing a client to upload a PNG file directly to S3.

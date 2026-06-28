@@ -1,0 +1,1 @@
+Write a Supabase JS query that selects all 'todos' where 'user_id' matches the currently authenticated user, utilizing generated TypeScript types.
