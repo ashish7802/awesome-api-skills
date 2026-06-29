@@ -1,0 +1,108 @@
+const fs = require('fs');
+const path = require('path');
+
+const svgContent = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <style>
+    .terminal { fill: #0A0A0A; rx: 8px; stroke: #222; stroke-width: 1px; }
+    .header { fill: #111; rx: 8px; }
+    .header-bottom { stroke: #222; stroke-width: 1px; }
+    .dot { cx: 20; cy: 16; r: 6; }
+    .dot1 { fill: #333; }
+    .dot2 { fill: #333; cx: 38; }
+    .dot3 { fill: #333; cx: 56; }
+    text { font-family: 'JetBrains Mono', 'Menlo', 'Monaco', monospace; font-size: 14px; fill: #FAFAFA; }
+    .muted { fill: #666; }
+    .accent { fill: #3B82F6; }
+    .success { fill: #10B981; }
+    .prompt { fill: #888; }
+    
+    /* Animation Timeline */
+    .line1, .line2, .line3, .line4, .line5, .line6, .line7, .line8, .cursor { opacity: 0; }
+    
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+    @keyframes type { to { opacity: 1; } }
+    
+    .cursor { animation: blink 1s step-end infinite; fill: #FAFAFA; width: 8px; height: 16px; }
+    
+    /* Typing sequences */
+    .line1 { animation: type 0.1s forwards 0.5s; }
+    .line2 { animation: type 0.1s forwards 1.5s; }
+    .line3 { animation: type 0.1s forwards 2.0s; }
+    .line4 { animation: type 0.1s forwards 3.0s; }
+    .line5 { animation: type 0.1s forwards 3.5s; }
+    .line6 { animation: type 0.1s forwards 4.0s; }
+    .line7 { animation: type 0.1s forwards 5.5s; }
+    .line8 { animation: type 0.1s forwards 6.5s; }
+    
+    .cursor1 { animation: type 0.1s forwards 0s, type 0.1s reverse forwards 1.5s; }
+    .cursor2 { animation: type 0.1s forwards 2.0s, type 0.1s reverse forwards 3.0s; }
+    .cursor3 { animation: type 0.1s forwards 4.0s, type 0.1s reverse forwards 5.5s; }
+    .cursor4 { animation: type 0.1s forwards 6.5s; }
+  </style>
+
+  <!-- Terminal Frame -->
+  <rect class="terminal" width="800" height="450" />
+  <rect class="header" width="800" height="32" />
+  <line class="header-bottom" x1="0" y1="32" x2="800" y2="32" />
+  
+  <!-- Mac Buttons -->
+  <circle class="dot dot1" />
+  <circle class="dot dot2" />
+  <circle class="dot dot3" />
+
+  <g transform="translate(20, 60)">
+    <!-- Command 1: Search -->
+    <g class="line1">
+      <text y="20"><tspan class="prompt">$</tspan> awesome-api search stripe</text>
+    </g>
+    
+    <!-- Output 1: Search Results -->
+    <g class="line2">
+      <text y="50" class="muted">Searching registry for "stripe"...</text>
+      <text y="75" class="accent">✔ Found 1 match:</text>
+      <text y="95">  • stripe (Payment Processing API)</text>
+    </g>
+
+    <!-- Command 2: Install -->
+    <g class="line3">
+      <text y="135"><tspan class="prompt">$</tspan> awesome-api install stripe</text>
+    </g>
+
+    <!-- Output 2: Install Progress -->
+    <g class="line4">
+      <text y="165" class="muted">Fetching skill definition from registry...</text>
+      <text y="185" class="muted">Validating endpoints and SDK versions...</text>
+    </g>
+    <g class="line5">
+      <text y="215" class="success">✔ Successfully installed 'stripe' skill.</text>
+      <text y="235" class="muted">Your AI agent can now read .skills/stripe/SKILL.md</text>
+    </g>
+
+    <!-- Command 3: Agent Task -->
+    <g class="line6">
+      <text y="275"><tspan class="prompt">$</tspan> claude "Create a Stripe checkout session"</text>
+    </g>
+
+    <!-- Output 3: Agent Success -->
+    <g class="line7">
+      <text y="305" class="accent">Claude:</text>
+      <text y="325">I'll use the installed Stripe skill. The correct endpoint for</text>
+      <text y="345">Node.js uses <tspan fill="#F472B6">stripe.checkout.sessions.create()</tspan>.</text>
+      <text y="375" class="success">✔ Checkout session code generated successfully.</text>
+    </g>
+    
+    <g class="line8">
+      <text y="415"><tspan class="prompt">$</tspan> </text>
+    </g>
+
+    <!-- Cursors -->
+    <rect class="cursor cursor1" x="230" y="8" />
+    <rect class="cursor cursor2" x="240" y="123" />
+    <rect class="cursor cursor3" x="390" y="263" />
+    <rect class="cursor cursor4" x="25" y="403" />
+  </g>
+</svg>`;
+
+fs.mkdirSync(path.join(__dirname, '.design', 'media'), { recursive: true });
+fs.writeFileSync(path.join(__dirname, '.design', 'media', 'demo.svg'), svgContent, 'utf8');
+console.log('demo.svg generated successfully.');

@@ -1,198 +1,162 @@
 <div align="center">
-  <img src=".design/banner.svg" alt="Awesome API Skills Banner" width="100%">
+  <img src=".design/banner.svg" alt="Awesome API Skills" width="100%">
   <br />
   <br />
-
-  <h1>Awesome API Skills</h1>
-  <p><b>The world's largest collection of installable AI coding skills for APIs.</b></p>
+  <p><b>Give your AI coding agent production-grade API knowledge in one command.</b></p>
 
   <p>
     <a href="https://npmjs.com/package/@awesome-api-skills/cli"><img src="https://img.shields.io/npm/v/@awesome-api-skills/cli.svg?style=flat-square&color=00F0FF" alt="NPM Version" /></a>
-    <a href="https://github.com/awesome-api-skills/core/actions"><img src="https://img.shields.io/github/actions/workflow/status/awesome-api-skills/core/ci.yml?branch=main&style=flat-square" alt="Build Status" /></a>
-    <a href="https://github.com/awesome-api-skills/core/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/@awesome-api-skills/core.svg?style=flat-square" alt="License" /></a>
+    <a href="https://github.com/awesome-api-skills/core/actions"><img src="https://img.shields.io/github/actions/workflow/status/awesome-api-skills/core/ci.yml?branch=main&style=flat-square&color=333" alt="Build Status" /></a>
+    <a href="https://github.com/awesome-api-skills/core/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/@awesome-api-skills/core.svg?style=flat-square&color=333" alt="License" /></a>
   </p>
 
-  <p>
-    <code>npx @awesome-api-skills/cli init</code>
-  </p>
+  <code>npm install -g @awesome-api-skills/cli</code>
 
-  <p>
-    <a href="https://docs.awesome-api-skills.dev"><strong>Explore the Documentation</strong></a> ·
-    <a href="https://registry.awesome-api-skills.dev"><strong>Browse the Registry</strong></a>
-  </p>
+  <p>Supported: <b>Claude Code • Cursor • Codex • Gemini • Cline • OpenHands • Roo Code • Continue</b></p>
 </div>
 
-<hr />
+---
 
-## 🚨 The Problem
-
-LLMs are exceptional at writing code, but they are consistently terrible at utilizing modern, complex APIs. Without exact, up-to-date context, they hallucinate endpoints, use deprecated SDK versions, invent authentication schemas, and ignore subtle pagination rules.
-
-Developers waste hours copying and pasting API references into chat windows just to get a single integration working.
-
-## 💡 The Solution
-
-**Awesome API Skills** is an open-source, federated ecosystem of machine-readable API specifications. It transforms standard API documentation into dense, validated **Skills** that AI agents (like GitHub Copilot, Anthropic Claude, and Google Gemini) can consume instantly.
-
-Instead of pasting documentation into a prompt, you simply install the skill into your repository:
-
-```bash
-awesome-api install stripe
-```
-
-Your AI agent immediately understands how to properly authenticate, paginate, and construct webhooks for Stripe—with zero hallucinations.
+<div align="center">
+  <img src=".design/media/demo.svg" alt="Terminal Demo" width="100%">
+</div>
 
 ---
 
-## ✨ Features
+## Why Awesome API Skills?
 
-The ecosystem is split into distinct, highly modular packages:
+LLMs hallucinate endpoints, invent authentication schemas, and use deprecated SDK versions. Prompting them with raw documentation is slow and expensive.
 
-### Core Platform
+Awesome API Skills solves this by feeding structured, validated, and up-to-date API knowledge directly into your agent's context.
 
-- **The Specification (`SPECIFICATION.md`)**: The canonical open-source standard for defining an AI-readable API skill.
-- **SDK (`@awesome-api-skills/sdk`)**: A lightweight, isomorphic TypeScript library for interacting with the specification programmatically.
-
-### Tooling
-
-- **CLI (`@awesome-api-skills/cli`)**: The robust terminal interface for discovering, validating, and installing skills into your local workspace.
-- **Validator (`@awesome-api-skills/validator`)**: A strict, staged quality gate. Checks JSON schemas, markdown structures, broken links, and metadata integrity.
-- **Generator (`@awesome-api-skills/generator`)**: The build pipeline. Compiles raw markdown and JSON into optimized search indexes, documentation, and registry manifests.
-
-### Ecosystem
-
-- **Registry (`@awesome-api-skills/registry`)**: A federated architecture supporting official, community, enterprise, and local registries.
-- **Documentation (`@awesome-api-skills/docs`)**: A lightning-fast VitePress site auto-generated from the active registry.
+| Prompt Engineering ❌ | Awesome API Skills ✅ |
+| :--- | :--- |
+| Paste 5 pages of docs | `awesome-api install stripe` |
+| AI guesses the Node SDK version | AI uses exact required version |
+| AI hallucinate webhook payloads | AI generates correct event types |
+| Unreliable | Deterministic |
 
 ---
 
-## ⚡ Quick Start
+## Features
 
-You can reach your first successful skill installation in under 60 seconds.
-
-### 1. Initialize the CLI
-
-```bash
-npx @awesome-api-skills/cli init
-```
-
-### 2. Search for a Skill
-
-```bash
-npx @awesome-api-skills/cli search "payments"
-```
-
-### 3. Install the Skill
-
-```bash
-npx @awesome-api-skills/cli install stripe
-```
-
-_Your workspace is now equipped with the Stripe skill. Your AI agent can read it from the `.skills/` directory._
-
----
-
-## 💻 Live Examples
-
-### Validation Output
-
-The CLI runs strict diagnostics before allowing a skill to be published:
-
-```text
-$ awesome-api validate ./skills/stripe
-
-[PASS] Metadata Validation (12ms)
-[PASS] Schema Compliance (5ms)
-[PASS] External Link Resolution (120ms)
-
-✓ stripe is valid and ready for publication.
-```
-
-### Generated Documentation
-
-Skills are seamlessly transformed into VitePress documentation.
-_See it live on the [Registry Playground](https://docs.awesome-api-skills.dev/playground)._
+<table width="100%">
+  <tr>
+    <td width="33%">
+      <h3>📦 100+ Production Skills</h3>
+      <p>Instant support for Stripe, AWS, Vercel, Supabase, and 90+ others.</p>
+    </td>
+    <td width="33%">
+      <h3>🤖 Agent Agnostic</h3>
+      <p>Works out of the box with Claude Code, Cursor, and any markdown-capable agent.</p>
+    </td>
+    <td width="33%">
+      <h3>🕸️ Knowledge Graph</h3>
+      <p>Understands API relationships, prerequisites, and ecosystems.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>⚡ Lightning Fast</h3>
+      <p>The CLI is heavily optimized, loading registries and skills in milliseconds.</p>
+    </td>
+    <td>
+      <h3>🛡️ Enterprise Ready</h3>
+      <p>Strict schema validation and support for private corporate registries.</p>
+    </td>
+    <td>
+      <h3>🌐 Open Standard</h3>
+      <p>Federated architecture preventing vendor lock-in.</p>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 🏗 Architecture
+## Quick Start
 
-The platform is designed as a strict, unidirectional data flow:
+Initialize your workspace, search for a skill, and install it.
+
+```bash
+awesome-api init
+awesome-api search database
+awesome-api install postgresql
+```
+
+Your AI agent will automatically detect `.skills/postgresql/SKILL.md` and use it for all relevant tasks.
+
+---
+
+## Example Skills
+
+A small selection of the 100+ officially supported APIs.
+
+| Provider | Category | Status | Example Uses |
+| :--- | :--- | :--- | :--- |
+| **Stripe** | Payments | Stable | Webhooks, Checkout, Billing |
+| **AWS S3** | Storage | Stable | Presigned URLs, Uploads |
+| **Next.js** | Framework | Stable | App Router, Server Actions |
+| **Pinecone** | Vector DB | Stable | Semantic Search, RAG |
+| **Twilio** | Communications | Stable | SMS, Voice, WhatsApp |
+| **PostgreSQL** | Database | Stable | Schemas, Indexing, Joins |
+
+---
+
+## Knowledge Graph
+
+Our ecosystem isn't just a list of files; it's a strongly typed knowledge graph.
+Skills define dependencies (e.g., `drizzle` depends on `postgresql`).
+
+*(Graph visualization available in the [Registry Explorer](https://registry.awesome-api-skills.dev)).*
+
+---
+
+## Architecture
+
+The system utilizes a unidirectional data flow from specification to agent.
 
 ```mermaid
-graph TD
-  A[Skill Author] -->|Writes Markdown/JSON| B(Validator)
-  B -->|If Valid| C(Generator)
-  C -->|Compiles| D[Search Index]
-  C -->|Compiles| E[Registry Manifest]
-  C -->|Compiles| F[VitePress Docs]
-
-  G[Developer] -->|awesome-api install| H(CLI)
-  H -->|Fetches from| E
-  H -->|Writes to| I[.skills/ local dir]
+graph LR
+  A[Skill Markdown] --> B(Validator)
+  B --> C(Generator)
+  C --> D[Registry]
+  D --> E(CLI Install)
+  E --> F[AI Agent]
 ```
 
 ---
 
-## 🤔 Why This Project Exists
+## Benchmarks
 
-**Philosophy**: AI Coding Assistants are limited not by their reasoning, but by their context. We believe that API providers should distribute "Skills" exactly like they distribute SDKs.
+Measured locally on Node.js 24.x LTS (Windows 11).
 
-**Open Source**: The specification must remain open. If it is owned by a single AI vendor, it becomes a walled garden. This standard works across OpenAI, Anthropic, Google, and open-source local models.
-
-**Long-term Goal**: To reach a point where `awesome-api install [provider]` is as ubiquitous as `npm install [package]`.
-
----
-
-## 📊 Benchmarks
-
-_Measured locally on Node.js 24.x LTS (Windows 11)._
-
-| Metric           | Measurement | Threshold | Status  |
-| ---------------- | ----------- | --------- | ------- |
-| CLI Startup Time | 120ms       | 150ms     | ✅ PASS |
-| Registry Loading | 45ms        | 100ms     | ✅ PASS |
-| Validation Suite | 200ms       | 500ms     | ✅ PASS |
-| Build Generation | 800ms       | 1500ms    | ✅ PASS |
-| Search Latency   | 15ms        | 50ms      | ✅ PASS |
+| Metric | Measurement | Threshold | Result |
+| :--- | :--- | :--- | :--- |
+| **CLI Startup Time** | `120ms` | `< 150ms` | ✅ PASS |
+| **Registry Loading** | `45ms` | `< 100ms` | ✅ PASS |
+| **Validation Suite** | `200ms` | `< 500ms` | ✅ PASS |
+| **Search Latency** | `15ms` | `< 50ms` | ✅ PASS |
 
 ---
 
-## 🗺 Roadmap
+## Roadmap
 
-- [x] **Completed**: Specification v1.0, CLI, Validator, Registry Architecture, Documentation Generation.
-- [ ] **In Progress**: VScode Extension, Native Cursor Integration.
-- [ ] **Planned**: Enterprise Authentication Registries, Automated API-to-Skill LLM pipelines.
-
----
-
-## 🤝 Contributing
-
-We welcome community contributions!
-
-1. Read our [Contributing Guide](CONTRIBUTING.md).
-2. Clone the repository and run `pnpm install`.
-3. Build the core: `pnpm build`.
-4. Validate your changes: `pnpm run lint && pnpm test`.
-
-To submit a new skill to the registry, use the CLI template:
-
-```bash
-awesome-api create-skill --name="my-api"
-```
+- **Completed**: Specification v1.0, Core CLI, Federated Registry, 100 Official Skills.
+- **In Progress**: Native Cursor Extension, Real-time Webhook Validation.
+- **Planned**: Enterprise Auth Registries, Automated API-to-Skill generation.
 
 ---
 
-## ❓ FAQ
+## Contributing
 
-**Q: Do I need a specific AI agent to use these skills?**  
-No. The skills are compiled into standard, highly-optimized Markdown (`SKILL.md`) that any modern LLM can read if you place it in your context window or workspace.
+We welcome community contributions to expand the registry and improve the core tools.
 
-**Q: Can I host my own private registry?**  
-Yes. The `@awesome-api-skills/registry` package fully supports private enterprise registries requiring authentication.
+1. Review the [Contributing Guidelines](CONTRIBUTING.md).
+2. Generate a new skill template: `awesome-api create-skill --name="my-api"`
+3. Run the validation suite: `npm test`
 
 ---
 
-## 📜 License
+## License
 
-[MIT](LICENSE) © Awesome API Skills Core Team.
+[MIT License](LICENSE) © Awesome API Skills Core Team.
