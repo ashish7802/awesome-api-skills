@@ -1,5 +1,4 @@
 <div align="center">
-  <img src=".design/banner.svg" alt="Awesome API Skills Banner" width="100%">
   
   <br />
   <br />
