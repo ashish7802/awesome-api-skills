@@ -1,0 +1,42 @@
+# Vue Skill
+
+> The Progressive JavaScript Framework.
+
+## Ecosystem Graph
+
+```mermaid
+graph LR
+  vue["Vue"]
+  vue -- "extended by" --> nuxt
+  vue -- "alternative to" --> react
+  vue -- "works well with" --> supabase
+```
+
+## Quick Start
+Vue 3 utilizes the Composition API, offering a highly logical and reactive way to structure components compared to the legacy Options API.
+
+```bash
+npm create vue@latest
+```
+
+## Production Patterns
+### Composables
+Vue's equivalent to React hooks. Use `ref` and `computed` inside standalone JavaScript functions to encapsulate and reuse stateful logic across multiple `.vue` components.
+
+## Architecture & Scaling
+### Reactivity System
+Vue 3 uses JavaScript Proxies for reactivity. This means modifying nested properties of a `reactive` object works seamlessly without needing immutable state replacement (unlike React's `setState`).
+
+## Error Recovery
+Utilize `onErrorCaptured` at the layout level to catch and log errors thrown by descendant components gracefully.
+
+## Security Notes
+Be extremely cautious with the `v-html` directive. It renders raw HTML directly to the DOM and is a primary vector for XSS attacks if the input is not strictly sanitized.
+
+## Relationships
+**Alternatives**: [react](/skills/react)
+
+**Works Well With**: [supabase](/skills/supabase)
+
+## References
+- [Vue Docs](https://vuejs.org/guide/introduction.html)

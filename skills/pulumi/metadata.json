@@ -1,0 +1,42 @@
+{
+  "name": "pulumi",
+  "version": "1.0.0",
+  "description": "Universal Infrastructure as Code.",
+  "categories": [
+    "Developer Tools",
+    "Infrastructure"
+  ],
+  "languages": [
+    "typescript",
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Pulumi Docs": "https://www.pulumi.com/docs/"
+  },
+  "learningLevel": "advanced",
+  "useCases": [
+    "IaC"
+  ],
+  "deploymentTargets": [
+    "aws",
+    "gcp",
+    "kubernetes"
+  ],
+  "ecosystem": "devops",
+  "maintainers": [
+    "pulumi"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "terraform",
+      "type": "alternative_to"
+    },
+    {
+      "target": "terraform",
+      "type": "alternative_to"
+    }
+  ]
+}

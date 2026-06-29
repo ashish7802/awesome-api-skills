@@ -1,0 +1,41 @@
+{
+  "name": "nginx",
+  "version": "1.0.0",
+  "description": "High performance load balancer, web server, and reverse proxy.",
+  "categories": [
+    "Developer Tools",
+    "Infrastructure"
+  ],
+  "languages": [
+    "yaml"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "NGINX Docs": "https://nginx.org/en/docs/"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "Reverse Proxy",
+    "Load Balancing"
+  ],
+  "deploymentTargets": [
+    "docker",
+    "kubernetes"
+  ],
+  "ecosystem": "devops",
+  "maintainers": [
+    "f5"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "kubernetes",
+      "type": "integrates_with"
+    },
+    {
+      "target": "docker",
+      "type": "integrates_with"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+if (res.status === 429) { const reset = res.headers.get('RateLimit-Reset'); console.warn('Rate limited until', reset); }

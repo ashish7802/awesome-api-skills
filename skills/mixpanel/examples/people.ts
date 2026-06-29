@@ -1,0 +1,1 @@
+mixpanel.people.set('user_123', { $first_name: 'John', Plan: 'Premium' });

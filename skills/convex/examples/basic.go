@@ -1,0 +1,1 @@
+// Use the Convex REST API for environments without official SDK support.

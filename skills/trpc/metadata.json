@@ -1,0 +1,40 @@
+{
+  "name": "trpc",
+  "version": "1.0.0",
+  "description": "End-to-end typesafe APIs made easy.",
+  "categories": [
+    "Backend Frameworks",
+    "Developer Tools"
+  ],
+  "languages": [
+    "typescript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "tRPC Docs": "https://trpc.io/docs"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "Full Stack TypeScript"
+  ],
+  "deploymentTargets": [
+    "vercel",
+    "docker"
+  ],
+  "ecosystem": "typescript",
+  "maintainers": [
+    "trpc"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "nextjs",
+      "type": "works_well_with"
+    },
+    {
+      "target": "react",
+      "type": "works_well_with"
+    }
+  ]
+}

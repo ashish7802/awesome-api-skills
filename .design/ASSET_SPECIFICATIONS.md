@@ -3,6 +3,7 @@
 Do not generate raster images. This document serves as the exact specification for future image generation or manual design via Figma.
 
 ## 1. GitHub Avatar / App Icon
+
 - **Dimensions**: 512x512 pixels
 - **Format**: PNG / SVG
 - **Safe Area**: Center 60% of the canvas.
@@ -10,6 +11,7 @@ Do not generate raster images. This document serves as the exact specification f
 - **Content**: The Interface Prism logo, vertically and horizontally centered.
 
 ## 2. Repository Banner
+
 - **Dimensions**: 1280x640 pixels
 - **Format**: SVG / PNG
 - **Content**:
@@ -19,10 +21,12 @@ Do not generate raster images. This document serves as the exact specification f
   - Grid: Subtle 24px isometric grid lines (opacity 5%) spanning the background to communicate structure.
 
 ## 3. Website Hero Background
+
 - **Dimensions**: Scalable Vector Graphic (SVG).
 - **Concept**: A stark, ultra-minimalist grid pattern intersecting with sharp diagonal cuts (30/60 degree angles). No gradients, no glows. Just 1px pure geometric lines.
 
 ## 4. OpenGraph / Social Preview Image
+
 - **Dimensions**: 1200x630 pixels
 - **Format**: PNG
 - **Composition**:
@@ -30,8 +34,10 @@ Do not generate raster images. This document serves as the exact specification f
   - Right (60%): A stylized, high-contrast code snippet rendered in JetBrains Mono against a `#111111` background, showcasing a CLI command or JSON validation schema.
 
 ## 5. Favicon
+
 - **Dimensions**: 16x16, 32x32, 64x64 (.ico / .svg)
 - **Concept**: The absolute minimal distillation of the Interface Prism. A single locking joint.
 
 ## Accessibility Notes
+
 All assets incorporating text must ensure a minimum contrast ratio of 4.5:1 against their backgrounds to satisfy WCAG AA standards.

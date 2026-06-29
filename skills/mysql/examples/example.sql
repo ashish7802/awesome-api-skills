@@ -1,0 +1,6 @@
+CREATE TABLE orders (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  user_id BIGINT NOT NULL,
+  total DECIMAL(10,2) NOT NULL,
+  INDEX idx_user_id (user_id)
+) ENGINE=InnoDB;

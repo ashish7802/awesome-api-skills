@@ -1,0 +1,1 @@
+Write a Node.js function using `@google-cloud/storage` that generates a v4 signed URL strictly restricted to uploading a 'video/mp4' file.

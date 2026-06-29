@@ -1,0 +1,1 @@
+const res = await fetch('https://backboard.railway.app/graphql/v2', { method: 'POST', headers: { Authorization: `Bearer ${TOKEN}` }, body: JSON.stringify({ query: 'query { projects { edges { node { name } } } }' }) });

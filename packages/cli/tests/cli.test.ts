@@ -24,7 +24,9 @@ describe('CLI Router', () => {
   it('should format errors via the renderer', async () => {
     const errorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
     // Mocking exit to prevent test failure
-    const exitSpy = vi.spyOn(process, 'exit').mockImplementation((() => {}) as unknown as (code?: number) => never);
+    const exitSpy = vi.spyOn(process, 'exit').mockImplementation((() => {
+      /* noop */
+    }) as never);
 
     await main(['search', '--json']); // Missing search term throws
     const output = errorSpy.mock.calls[0][0];

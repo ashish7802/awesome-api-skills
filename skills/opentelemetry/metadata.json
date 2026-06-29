@@ -1,0 +1,41 @@
+{
+  "name": "opentelemetry",
+  "version": "1.0.0",
+  "description": "High-quality, ubiquitous, and portable telemetry to enable effective observability.",
+  "categories": [
+    "Observability"
+  ],
+  "languages": [
+    "typescript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "OpenTelemetry Docs": "https://opentelemetry.io/docs/"
+  },
+  "learningLevel": "advanced",
+  "useCases": [
+    "Tracing",
+    "Metrics",
+    "Logs"
+  ],
+  "deploymentTargets": [
+    "kubernetes",
+    "docker"
+  ],
+  "ecosystem": "devops",
+  "maintainers": [
+    "cncf"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "jaeger",
+      "type": "publishes_to"
+    },
+    {
+      "target": "prometheus",
+      "type": "publishes_to"
+    }
+  ]
+}

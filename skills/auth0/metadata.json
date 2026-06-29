@@ -14,5 +14,19 @@
   "license": "MIT",
   "links": {
     "API Reference": "https://auth0.com/docs/api/management/v2"
-  }
+  },
+  "relationships": [
+    {
+      "target": "oauth2",
+      "type": "implements"
+    },
+    {
+      "target": "openid-connect",
+      "type": "implements"
+    },
+    {
+      "target": "nextjs",
+      "type": "integrates_with"
+    }
+  ]
 }

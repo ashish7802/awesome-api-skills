@@ -1,0 +1,23 @@
+{
+  "name": "convex",
+  "version": "1.0.0",
+  "description": "Backend-as-a-Service with deterministic React sync.",
+  "categories": [
+    "Databases",
+    "Cloud"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Convex Docs": "https://docs.convex.dev/home"
+  },
+  "relatedSkills": [
+    "Clerk",
+    "Vercel"
+  ]
+}

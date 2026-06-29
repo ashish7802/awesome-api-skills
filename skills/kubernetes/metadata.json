@@ -1,0 +1,50 @@
+{
+  "name": "kubernetes",
+  "version": "1.0.0",
+  "description": "Automated container deployment, scaling, and management.",
+  "categories": [
+    "Developer Tools",
+    "Infrastructure"
+  ],
+  "languages": [
+    "yaml"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Kubernetes Docs": "https://kubernetes.io/docs/home/"
+  },
+  "learningLevel": "advanced",
+  "useCases": [
+    "Microservices",
+    "Orchestration"
+  ],
+  "deploymentTargets": [
+    "aws",
+    "gcp",
+    "azure"
+  ],
+  "ecosystem": "devops",
+  "maintainers": [
+    "cncf"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "docker",
+      "type": "depends_on"
+    },
+    {
+      "target": "helm",
+      "type": "integrates_with"
+    },
+    {
+      "target": "argo-cd",
+      "type": "works_well_with"
+    },
+    {
+      "target": "prometheus",
+      "type": "monitors"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Write a Node.js function using the Typesense SDK that generates a scoped search key restricted to the 'companies' collection and a specific 'tenant_id'.

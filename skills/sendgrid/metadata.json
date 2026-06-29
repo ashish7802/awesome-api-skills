@@ -13,5 +13,11 @@
   "license": "MIT",
   "links": {
     "API Reference": "https://docs.sendgrid.com/api-reference"
-  }
+  },
+  "relationships": [
+    {
+      "target": "twilio",
+      "type": "related_to"
+    }
+  ]
 }

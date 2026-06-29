@@ -12,8 +12,10 @@ export class CommandRegistry {
   async resolve(name: string): Promise<Command | null> {
     const importer = this.commands.get(name);
     if (!importer) return null;
-    const mod: any = await importer();
-    return (mod.default && mod.default.default) ? mod.default.default : mod.default;
+    const mod = await importer();
+    return (mod.default as unknown as { default?: Command }).default
+      ? (mod.default as unknown as { default: Command }).default
+      : mod.default;
   }
 
   getRegisteredNames(): string[] {
@@ -24,11 +26,26 @@ export class CommandRegistry {
 export const registry = new CommandRegistry();
 
 // Lazy-register all commands
-registry.register('help', () => import('./commands/help.js') as unknown as Promise<{ default: Command }>);
-registry.register('doctor', () => import('./commands/doctor.js') as unknown as Promise<{ default: Command }>);
-registry.register('search', () => import('./commands/search.js') as unknown as Promise<{ default: Command }>);
-registry.register('validate', () => import('./commands/validate.js') as unknown as Promise<{ default: Command }>);
-registry.register('completion', () => import('./commands/completion.js') as unknown as Promise<{ default: Command }>);
+registry.register(
+  'help',
+  () => import('./commands/help.js') as unknown as Promise<{ default: Command }>,
+);
+registry.register(
+  'doctor',
+  () => import('./commands/doctor.js') as unknown as Promise<{ default: Command }>,
+);
+registry.register(
+  'search',
+  () => import('./commands/search.js') as unknown as Promise<{ default: Command }>,
+);
+registry.register(
+  'validate',
+  () => import('./commands/validate.js') as unknown as Promise<{ default: Command }>,
+);
+registry.register(
+  'completion',
+  () => import('./commands/completion.js') as unknown as Promise<{ default: Command }>,
+);
 
 // Mock other commands to satisfy requirements without exploding code size in this demo
 const mockCommands = [

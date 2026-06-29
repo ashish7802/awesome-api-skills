@@ -1,0 +1,40 @@
+{
+  "name": "vllm",
+  "version": "1.0.0",
+  "description": "High-throughput and memory-efficient LLM inference engine.",
+  "categories": [
+    "AI",
+    "Infrastructure"
+  ],
+  "languages": [
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "vLLM Docs": "https://vllm.readthedocs.io/"
+  },
+  "learningLevel": "advanced",
+  "useCases": [
+    "Production AI Inference"
+  ],
+  "deploymentTargets": [
+    "docker",
+    "kubernetes"
+  ],
+  "ecosystem": "ai",
+  "maintainers": [
+    "vllm-project"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "ollama",
+      "type": "alternative_to"
+    },
+    {
+      "target": "langchain",
+      "type": "integrates_with"
+    }
+  ]
+}

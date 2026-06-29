@@ -1,0 +1,39 @@
+{
+  "name": "helm",
+  "version": "1.0.0",
+  "description": "The package manager for Kubernetes.",
+  "categories": [
+    "Developer Tools",
+    "Infrastructure"
+  ],
+  "languages": [
+    "yaml"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Helm Docs": "https://helm.sh/docs/"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "Kubernetes Deployment"
+  ],
+  "deploymentTargets": [
+    "kubernetes"
+  ],
+  "ecosystem": "devops",
+  "maintainers": [
+    "cncf"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "kubernetes",
+      "type": "depends_on"
+    },
+    {
+      "target": "argo-cd",
+      "type": "integrates_with"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "git",
+  "version": "1.0.0",
+  "description": "Distributed version control system.",
+  "categories": [
+    "Developer Tools"
+  ],
+  "languages": [
+    "yaml"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Git Docs": "https://git-scm.com/doc"
+  },
+  "learningLevel": "beginner",
+  "useCases": [
+    "Version Control"
+  ],
+  "deploymentTargets": [
+    "github",
+    "gitlab"
+  ],
+  "ecosystem": "devops",
+  "maintainers": [
+    "git"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "github-actions",
+      "type": "works_well_with"
+    }
+  ]
+}

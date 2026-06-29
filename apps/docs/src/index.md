@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: "Awesome API Skills"
-  text: "Universal Standard for AI Agents"
-  tagline: "The production-grade ecosystem for defining, validating, and sharing API skills across any LLM or Agent architecture."
+  name: 'Awesome API Skills'
+  text: 'Universal Standard for AI Agents'
+  tagline: 'The production-grade ecosystem for defining, validating, and sharing API skills across any LLM or Agent architecture.'
   actions:
     - theme: brand
       text: Get Started

@@ -1,7 +1,6 @@
 import { Command } from '../interfaces.js';
 import {
   Container,
-  Workflows,
   ConfigurationManager,
   WorkspaceManager,
   ValidationManager,
@@ -20,8 +19,6 @@ const command: Command = {
     container.register('ConfigurationManager', configManager);
     container.register('WorkspaceManager', new WorkspaceManager(configManager));
     container.register('ValidationManager', new ValidationManager());
-
-
 
     // In a real scenario we'd do a full workspace validation, check ports, check auth, etc.
     // For this demonstration, we just pull the config and system info.

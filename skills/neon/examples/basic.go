@@ -1,0 +1,1 @@
+db, err := sql.Open("postgres", "postgres://user:pass@ep-..." )

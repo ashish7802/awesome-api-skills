@@ -1,0 +1,1 @@
+let db = Database::open_remote("libsql://...", "token")

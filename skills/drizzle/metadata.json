@@ -1,0 +1,57 @@
+{
+  "name": "drizzle",
+  "version": "1.0.0",
+  "description": "Next generation TypeScript ORM.",
+  "categories": [
+    "Databases",
+    "Developer Tools"
+  ],
+  "languages": [
+    "typescript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Drizzle Docs": "https://orm.drizzle.team/"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "TypeScript ORM",
+    "Edge Computing"
+  ],
+  "deploymentTargets": [
+    "vercel",
+    "cloudflare"
+  ],
+  "ecosystem": "typescript",
+  "maintainers": [
+    "drizzle-team"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "postgresql",
+      "type": "integrates_with"
+    },
+    {
+      "target": "mysql",
+      "type": "integrates_with"
+    },
+    {
+      "target": "sqlite",
+      "type": "integrates_with"
+    },
+    {
+      "target": "prisma",
+      "type": "alternative_to"
+    },
+    {
+      "target": "neon",
+      "type": "works_well_with"
+    },
+    {
+      "target": "turso",
+      "type": "works_well_with"
+    }
+  ]
+}

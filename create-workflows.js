@@ -9,7 +9,7 @@ const templates = {
   'docs.yml': { name: 'Documentation', command: 'pnpm --filter @awesome-api-skills/docs build' },
   'benchmarks.yml': { name: 'Benchmarks', command: 'pnpm run benchmark' },
   'snapshots.yml': { name: 'Snapshot Tests', command: 'pnpm test -u --passWithNoTests' },
-  'registry.yml': { name: 'Registry Sync', command: 'node scripts/dogfood.js' }
+  'registry.yml': { name: 'Registry Sync', command: 'node scripts/dogfood.js' },
 };
 
 const matrixStr = `
@@ -132,7 +132,9 @@ jobs:
 fs.writeFileSync(path.join(workflowsDir, 'release.yml'), releaseContent);
 
 // Security policy
-fs.writeFileSync(path.join(__dirname, 'SECURITY.md'), `# Security Policy
+fs.writeFileSync(
+  path.join(__dirname, 'SECURITY.md'),
+  `# Security Policy
 
 ## Supported Versions
 
@@ -145,6 +147,7 @@ fs.writeFileSync(path.join(__dirname, 'SECURITY.md'), `# Security Policy
 
 Please report vulnerabilities directly to security@awesome.api.
 Do not open a public issue.
-`);
+`,
+);
 
 console.log('Workflows created.');

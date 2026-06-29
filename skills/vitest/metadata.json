@@ -1,0 +1,39 @@
+{
+  "name": "vitest",
+  "version": "1.0.0",
+  "description": "Next generation testing framework powered by Vite.",
+  "categories": [
+    "Testing",
+    "Developer Tools"
+  ],
+  "languages": [
+    "typescript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Vitest Docs": "https://vitest.dev/guide/"
+  },
+  "learningLevel": "beginner",
+  "useCases": [
+    "Unit Testing"
+  ],
+  "deploymentTargets": [
+    "any"
+  ],
+  "ecosystem": "javascript",
+  "maintainers": [
+    "vitest"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "playwright",
+      "type": "works_well_with"
+    },
+    {
+      "target": "react",
+      "type": "works_well_with"
+    }
+  ]
+}

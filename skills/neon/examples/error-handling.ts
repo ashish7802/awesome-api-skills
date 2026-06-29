@@ -1,0 +1,1 @@
+try { await sql`INSERT INTO tags (name) VALUES ('node')`; } catch (err) { if (err.code === '23505') console.log('Tag exists'); }

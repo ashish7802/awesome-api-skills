@@ -1,8 +1,8 @@
 <div align="center">
-  
+  <img src=".design/banner.svg" alt="Awesome API Skills Banner" width="100%">
   <br />
   <br />
-  
+
   <h1>Awesome API Skills</h1>
   <p><b>The world's largest collection of installable AI coding skills for APIs.</b></p>
 
@@ -49,15 +49,18 @@ Your AI agent immediately understands how to properly authenticate, paginate, an
 The ecosystem is split into distinct, highly modular packages:
 
 ### Core Platform
+
 - **The Specification (`SPECIFICATION.md`)**: The canonical open-source standard for defining an AI-readable API skill.
 - **SDK (`@awesome-api-skills/sdk`)**: A lightweight, isomorphic TypeScript library for interacting with the specification programmatically.
 
 ### Tooling
+
 - **CLI (`@awesome-api-skills/cli`)**: The robust terminal interface for discovering, validating, and installing skills into your local workspace.
 - **Validator (`@awesome-api-skills/validator`)**: A strict, staged quality gate. Checks JSON schemas, markdown structures, broken links, and metadata integrity.
 - **Generator (`@awesome-api-skills/generator`)**: The build pipeline. Compiles raw markdown and JSON into optimized search indexes, documentation, and registry manifests.
 
 ### Ecosystem
+
 - **Registry (`@awesome-api-skills/registry`)**: A federated architecture supporting official, community, enterprise, and local registries.
 - **Documentation (`@awesome-api-skills/docs`)**: A lightning-fast VitePress site auto-generated from the active registry.
 
@@ -68,27 +71,33 @@ The ecosystem is split into distinct, highly modular packages:
 You can reach your first successful skill installation in under 60 seconds.
 
 ### 1. Initialize the CLI
+
 ```bash
 npx @awesome-api-skills/cli init
 ```
 
 ### 2. Search for a Skill
+
 ```bash
 npx @awesome-api-skills/cli search "payments"
 ```
 
 ### 3. Install the Skill
+
 ```bash
 npx @awesome-api-skills/cli install stripe
 ```
-*Your workspace is now equipped with the Stripe skill. Your AI agent can read it from the `.skills/` directory.*
+
+_Your workspace is now equipped with the Stripe skill. Your AI agent can read it from the `.skills/` directory._
 
 ---
 
 ## 💻 Live Examples
 
 ### Validation Output
+
 The CLI runs strict diagnostics before allowing a skill to be published:
+
 ```text
 $ awesome-api validate ./skills/stripe
 
@@ -100,8 +109,9 @@ $ awesome-api validate ./skills/stripe
 ```
 
 ### Generated Documentation
-Skills are seamlessly transformed into VitePress documentation. 
-*See it live on the [Registry Playground](https://docs.awesome-api-skills.dev/playground).*
+
+Skills are seamlessly transformed into VitePress documentation.
+_See it live on the [Registry Playground](https://docs.awesome-api-skills.dev/playground)._
 
 ---
 
@@ -116,7 +126,7 @@ graph TD
   C -->|Compiles| D[Search Index]
   C -->|Compiles| E[Registry Manifest]
   C -->|Compiles| F[VitePress Docs]
-  
+
   G[Developer] -->|awesome-api install| H(CLI)
   H -->|Fetches from| E
   H -->|Writes to| I[.skills/ local dir]
@@ -126,7 +136,7 @@ graph TD
 
 ## 🤔 Why This Project Exists
 
-**Philosophy**: AI Coding Assistants are limited not by their reasoning, but by their context. We believe that API providers should distribute "Skills" exactly like they distribute SDKs. 
+**Philosophy**: AI Coding Assistants are limited not by their reasoning, but by their context. We believe that API providers should distribute "Skills" exactly like they distribute SDKs.
 
 **Open Source**: The specification must remain open. If it is owned by a single AI vendor, it becomes a walled garden. This standard works across OpenAI, Anthropic, Google, and open-source local models.
 
@@ -136,15 +146,15 @@ graph TD
 
 ## 📊 Benchmarks
 
-*Measured locally on Node.js 24.x LTS (Windows 11).*
+_Measured locally on Node.js 24.x LTS (Windows 11)._
 
-| Metric | Measurement | Threshold | Status |
-| ------ | ----------- | --------- | ------ |
-| CLI Startup Time | 120ms | 150ms | ✅ PASS |
-| Registry Loading | 45ms | 100ms | ✅ PASS |
-| Validation Suite | 200ms | 500ms | ✅ PASS |
-| Build Generation | 800ms | 1500ms | ✅ PASS |
-| Search Latency | 15ms | 50ms | ✅ PASS |
+| Metric           | Measurement | Threshold | Status  |
+| ---------------- | ----------- | --------- | ------- |
+| CLI Startup Time | 120ms       | 150ms     | ✅ PASS |
+| Registry Loading | 45ms        | 100ms     | ✅ PASS |
+| Validation Suite | 200ms       | 500ms     | ✅ PASS |
+| Build Generation | 800ms       | 1500ms    | ✅ PASS |
+| Search Latency   | 15ms        | 50ms      | ✅ PASS |
 
 ---
 
@@ -158,7 +168,7 @@ graph TD
 
 ## 🤝 Contributing
 
-We welcome community contributions! 
+We welcome community contributions!
 
 1. Read our [Contributing Guide](CONTRIBUTING.md).
 2. Clone the repository and run `pnpm install`.
@@ -166,6 +176,7 @@ We welcome community contributions!
 4. Validate your changes: `pnpm run lint && pnpm test`.
 
 To submit a new skill to the registry, use the CLI template:
+
 ```bash
 awesome-api create-skill --name="my-api"
 ```

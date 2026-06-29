@@ -1,0 +1,1 @@
+const res = await fetch('https://api.machines.dev/v1/apps/{app}/machines', { method: 'POST', headers: { Authorization: `Bearer ${TOKEN}` }, body: JSON.stringify({ config: { image: 'nginx', guest: { cpus: 1, memory_mb: 256 } }, region: 'ord' }) });

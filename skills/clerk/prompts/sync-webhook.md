@@ -1,0 +1,1 @@
+Write an Express webhook handler that securely verifies a Clerk `user.created` event using Svix, and conditionally inserts the user into a PostgreSQL database.

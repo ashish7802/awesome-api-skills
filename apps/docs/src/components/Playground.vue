@@ -34,8 +34,10 @@ const validationResult = computed(() => {
   const errors = [];
   if (!m.skillId) errors.push({ severity: 'error', message: 'Missing skillId' });
   if (!m.version) errors.push({ severity: 'error', message: 'Missing version' });
-  if (m.version && !/^\d+\.\d+\.\d+$/.test(m.version)) errors.push({ severity: 'warning', message: 'Version is not semantic' });
-  if (!m.apis || m.apis.length === 0) errors.push({ severity: 'warning', message: 'No APIs defined' });
+  if (m.version && !/^\d+\.\d+\.\d+$/.test(m.version))
+    errors.push({ severity: 'warning', message: 'Version is not semantic' });
+  if (!m.apis || m.apis.length === 0)
+    errors.push({ severity: 'warning', message: 'No APIs defined' });
   return errors.length ? errors : [{ severity: 'success', message: 'Skill metadata is valid' }];
 });
 
@@ -49,7 +51,7 @@ const generatedDocs = computed(() => {
 ${m.description || ''}
 
 ## APIs
-${(m.apis || []).map(api => `- ${api.name} (${api.type})`).join('\n')}
+${(m.apis || []).map((api) => `- ${api.name} (${api.type})`).join('\n')}
 
 ## Tags
 ${(m.tags || []).join(', ')}
@@ -61,7 +63,7 @@ const registryEntry = computed(() => {
   return {
     registryId: 'playground-reg-01',
     timestamp: new Date().toISOString(),
-    entry: parsedMetadata.value
+    entry: parsedMetadata.value,
   };
 });
 
@@ -69,8 +71,10 @@ const searchIndex = computed(() => {
   if (!parsedMetadata.value) return null;
   return {
     id: parsedMetadata.value.skillId,
-    tokens: [parsedMetadata.value.name, ...parsedMetadata.value.tags || []].join(' ').toLowerCase(),
-    weight: 1.0
+    tokens: [parsedMetadata.value.name, ...(parsedMetadata.value.tags || [])]
+      .join(' ')
+      .toLowerCase(),
+    weight: 1.0,
   };
 });
 </script>
@@ -81,30 +85,38 @@ const searchIndex = computed(() => {
       <h3>Metadata Editor (JSON)</h3>
       <textarea v-model="metadata" spellcheck="false"></textarea>
     </div>
-    
+
     <div class="preview-pane">
       <div class="tabs">
-        <button :class="{ active: activeTab === 'validator' }" @click="activeTab = 'validator'">Validator</button>
-        <button :class="{ active: activeTab === 'docs' }" @click="activeTab = 'docs'">Documentation</button>
-        <button :class="{ active: activeTab === 'registry' }" @click="activeTab = 'registry'">Registry Entry</button>
-        <button :class="{ active: activeTab === 'search' }" @click="activeTab = 'search'">Search Index</button>
+        <button :class="{ active: activeTab === 'validator' }" @click="activeTab = 'validator'">
+          Validator
+        </button>
+        <button :class="{ active: activeTab === 'docs' }" @click="activeTab = 'docs'">
+          Documentation
+        </button>
+        <button :class="{ active: activeTab === 'registry' }" @click="activeTab = 'registry'">
+          Registry Entry
+        </button>
+        <button :class="{ active: activeTab === 'search' }" @click="activeTab = 'search'">
+          Search Index
+        </button>
       </div>
-      
+
       <div class="preview-content">
         <div v-if="activeTab === 'validator'" class="validator-output">
           <div v-for="(err, idx) in validationResult" :key="idx" :class="['alert', err.severity]">
             {{ err.message }}
           </div>
         </div>
-        
+
         <div v-if="activeTab === 'docs'" class="docs-output">
           <pre>{{ generatedDocs }}</pre>
         </div>
-        
+
         <div v-if="activeTab === 'registry'" class="json-output">
           <pre>{{ JSON.stringify(registryEntry, null, 2) }}</pre>
         </div>
-        
+
         <div v-if="activeTab === 'search'" class="json-output">
           <pre>{{ JSON.stringify(searchIndex, null, 2) }}</pre>
         </div>
@@ -126,7 +138,8 @@ const searchIndex = computed(() => {
     height: 600px;
   }
 }
-.editor-pane, .preview-pane {
+.editor-pane,
+.preview-pane {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -194,10 +207,34 @@ pre {
   margin-bottom: 10px;
   font-size: 13px;
 }
-.alert.error { background: #fee2e2; color: #991b1b; border: 1px solid #f87171; }
-.alert.warning { background: #fef3c7; color: #92400e; border: 1px solid #fbbf24; }
-.alert.success { background: #dcfce7; color: #166534; border: 1px solid #4ade80; }
-.dark .alert.error { background: #450a0a; color: #fca5a5; border-color: #7f1d1d; }
-.dark .alert.warning { background: #451a03; color: #fcd34d; border-color: #78350f; }
-.dark .alert.success { background: #052e16; color: #86efac; border-color: #14532d; }
+.alert.error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #f87171;
+}
+.alert.warning {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fbbf24;
+}
+.alert.success {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #4ade80;
+}
+.dark .alert.error {
+  background: #450a0a;
+  color: #fca5a5;
+  border-color: #7f1d1d;
+}
+.dark .alert.warning {
+  background: #451a03;
+  color: #fcd34d;
+  border-color: #78350f;
+}
+.dark .alert.success {
+  background: #052e16;
+  color: #86efac;
+  border-color: #14532d;
+}
 </style>

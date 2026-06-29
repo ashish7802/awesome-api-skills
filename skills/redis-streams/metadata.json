@@ -1,0 +1,42 @@
+{
+  "name": "redis-streams",
+  "version": "1.0.0",
+  "description": "A data type in Redis that models an append-only log.",
+  "categories": [
+    "Messaging",
+    "Databases"
+  ],
+  "languages": [
+    "typescript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Redis Streams": "https://redis.io/docs/data-types/streams/"
+  },
+  "learningLevel": "advanced",
+  "useCases": [
+    "Event Sourcing",
+    "Message Broker"
+  ],
+  "deploymentTargets": [
+    "upstash",
+    "aws",
+    "gcp"
+  ],
+  "ecosystem": "database",
+  "maintainers": [
+    "redis"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "redis",
+      "type": "depends_on"
+    },
+    {
+      "target": "kafka",
+      "type": "alternative_to"
+    }
+  ]
+}

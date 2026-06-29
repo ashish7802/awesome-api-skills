@@ -1,0 +1,43 @@
+{
+  "name": "biome",
+  "version": "1.0.0",
+  "description": "One toolchain for your web project.",
+  "categories": [
+    "Developer Tools"
+  ],
+  "languages": [
+    "json"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Biome Docs": "https://biomejs.dev/"
+  },
+  "learningLevel": "beginner",
+  "useCases": [
+    "Linting",
+    "Formatting"
+  ],
+  "deploymentTargets": [
+    "any"
+  ],
+  "ecosystem": "javascript",
+  "maintainers": [
+    "biomejs"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "eslint",
+      "type": "replaces"
+    },
+    {
+      "target": "prettier",
+      "type": "replaces"
+    },
+    {
+      "target": "react",
+      "type": "works_well_with"
+    }
+  ]
+}

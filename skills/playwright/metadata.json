@@ -1,0 +1,40 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "End-to-end testing for modern web apps.",
+  "categories": [
+    "Developer Tools",
+    "Testing"
+  ],
+  "languages": [
+    "typescript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Playwright Docs": "https://playwright.dev/docs/intro"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "E2E Testing",
+    "Automation"
+  ],
+  "deploymentTargets": [
+    "github-actions"
+  ],
+  "ecosystem": "javascript",
+  "maintainers": [
+    "microsoft"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "github-actions",
+      "type": "integrates_with"
+    },
+    {
+      "target": "nextjs",
+      "type": "works_well_with"
+    }
+  ]
+}

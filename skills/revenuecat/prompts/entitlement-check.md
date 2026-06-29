@@ -1,0 +1,1 @@
+Write an Express.js middleware function that calls the RevenueCat API to verify a user's 'Premium' entitlement, returning 403 Forbidden if inactive.

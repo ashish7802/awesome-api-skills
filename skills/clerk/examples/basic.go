@@ -1,0 +1,1 @@
+client, _ := clerk.NewClient("sk_test_xxx")

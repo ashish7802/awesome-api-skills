@@ -1,0 +1,44 @@
+{
+  "name": "openid-connect",
+  "version": "1.0.0",
+  "description": "Identity layer on top of the OAuth 2.0 protocol.",
+  "categories": [
+    "Authentication",
+    "Security"
+  ],
+  "languages": [
+    "yaml"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "OIDC": "https://openid.net/connect/"
+  },
+  "learningLevel": "advanced",
+  "useCases": [
+    "SSO",
+    "Identity Verification"
+  ],
+  "deploymentTargets": [
+    "any"
+  ],
+  "ecosystem": "security",
+  "maintainers": [
+    "openid-foundation"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "oauth2",
+      "type": "depends_on"
+    },
+    {
+      "target": "jwt",
+      "type": "integrates_with"
+    },
+    {
+      "target": "github-actions",
+      "type": "works_well_with"
+    }
+  ]
+}

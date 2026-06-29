@@ -1,0 +1,1 @@
+const res = await client.collections('books').documents().search({ q: 'harry', query_by: 'title' });

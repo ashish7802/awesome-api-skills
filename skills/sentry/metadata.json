@@ -13,5 +13,19 @@
   "license": "MIT",
   "links": {
     "API Reference": "https://docs.sentry.io/api/"
-  }
+  },
+  "relationships": [
+    {
+      "target": "nextjs",
+      "type": "monitors"
+    },
+    {
+      "target": "express",
+      "type": "monitors"
+    },
+    {
+      "target": "fastapi",
+      "type": "monitors"
+    }
+  ]
 }

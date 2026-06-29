@@ -1,0 +1,23 @@
+{
+  "name": "lemon-squeezy",
+  "version": "1.0.0",
+  "description": "Merchant of record for software companies.",
+  "categories": [
+    "Payments",
+    "Finance"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Lemon Squeezy API": "https://docs.lemonsqueezy.com/api"
+  },
+  "relatedSkills": [
+    "Paddle",
+    "Stripe"
+  ]
+}

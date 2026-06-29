@@ -8,7 +8,7 @@ const currentMetrics = {
   registryLoading: 45, // ms
   generation: 800, // ms
   validation: 200, // ms
-  search: 15 // ms
+  search: 15, // ms
 };
 
 const thresholds = {
@@ -16,7 +16,7 @@ const thresholds = {
   registryLoading: 100,
   generation: 1500,
   validation: 500,
-  search: 50
+  search: 50,
 };
 
 let failed = false;

@@ -1,0 +1,801 @@
+{
+  "meta": {
+    "version": "RC1",
+    "generatedAt": "2026-06-29T05:42:55.502Z",
+    "auditType": "full"
+  },
+  "packages": [
+    {
+      "name": "cli",
+      "hasPackageJson": true,
+      "hasTsConfig": true,
+      "hasTests": false,
+      "hasReadme": false,
+      "version": "1.0.0",
+      "dependencies": [
+        "@awesome-api-skills/core",
+        "@awesome-api-skills/shared-types",
+        "@clack/prompts",
+        "picocolors"
+      ],
+      "devDependencies": ["typescript", "vitest"],
+      "sourceFiles": 12
+    },
+    {
+      "name": "core",
+      "hasPackageJson": true,
+      "hasTsConfig": true,
+      "hasTests": false,
+      "hasReadme": false,
+      "version": "1.0.0",
+      "dependencies": [
+        "@awesome-api-skills/shared-types",
+        "@awesome-api-skills/sdk",
+        "@awesome-api-skills/registry",
+        "@awesome-api-skills/validator",
+        "@awesome-api-skills/generator"
+      ],
+      "devDependencies": ["typescript", "vitest"],
+      "sourceFiles": 9
+    },
+    {
+      "name": "generator",
+      "hasPackageJson": true,
+      "hasTsConfig": true,
+      "hasTests": false,
+      "hasReadme": false,
+      "version": "1.0.0",
+      "dependencies": ["@awesome-api-skills/shared-types", "@awesome-api-skills/sdk"],
+      "devDependencies": ["typescript", "vitest"],
+      "sourceFiles": 6
+    },
+    {
+      "name": "registry",
+      "hasPackageJson": true,
+      "hasTsConfig": true,
+      "hasTests": false,
+      "hasReadme": false,
+      "version": "1.0.0",
+      "dependencies": ["@awesome-api-skills/shared-types", "@awesome-api-skills/sdk"],
+      "devDependencies": ["typescript", "vitest"],
+      "sourceFiles": 9
+    },
+    {
+      "name": "sdk",
+      "hasPackageJson": true,
+      "hasTsConfig": true,
+      "hasTests": false,
+      "hasReadme": false,
+      "version": "1.0.0",
+      "dependencies": ["@awesome-api-skills/shared-types"],
+      "devDependencies": ["typescript", "vitest"],
+      "sourceFiles": 11
+    },
+    {
+      "name": "shared-types",
+      "hasPackageJson": true,
+      "hasTsConfig": true,
+      "hasTests": false,
+      "hasReadme": false,
+      "version": "1.0.0",
+      "dependencies": ["ajv", "ajv-formats"],
+      "devDependencies": [],
+      "sourceFiles": 8
+    },
+    {
+      "name": "validator",
+      "hasPackageJson": true,
+      "hasTsConfig": true,
+      "hasTests": false,
+      "hasReadme": false,
+      "version": "1.0.0",
+      "dependencies": ["@awesome-api-skills/shared-types", "@awesome-api-skills/sdk"],
+      "devDependencies": ["typescript", "vitest"],
+      "sourceFiles": 5
+    }
+  ],
+  "skills": {
+    "total": 100,
+    "valid": 100,
+    "invalid": 0,
+    "issues": []
+  },
+  "registry": {
+    "files": [
+      {
+        "file": "coverage-report.json",
+        "sizeBytes": 1519
+      },
+      {
+        "file": "ecosystem-map.json",
+        "sizeBytes": 1308
+      },
+      {
+        "file": "graph-health.json",
+        "sizeBytes": 199
+      },
+      {
+        "file": "graph-statistics.json",
+        "sizeBytes": 430
+      },
+      {
+        "file": "graph.json",
+        "sizeBytes": 128204
+      },
+      {
+        "file": "learning-paths.json",
+        "sizeBytes": 312
+      },
+      {
+        "file": "recommendations.json",
+        "sizeBytes": 251274
+      },
+      {
+        "file": "recommended-stacks.json",
+        "sizeBytes": 289
+      },
+      {
+        "file": "technology-categories.json",
+        "sizeBytes": 2398
+      }
+    ],
+    "integrity": [
+      {
+        "file": "graph.json",
+        "nodes": 100,
+        "edges": 213,
+        "status": "VALID"
+      },
+      {
+        "file": "recommendations.json",
+        "skillsWithRecs": 100,
+        "skillsWithoutRecs": 0,
+        "anomalies": [],
+        "status": "VALID"
+      }
+    ]
+  },
+  "workflows": [
+    {
+      "file": "artifacts.yml",
+      "name": "Publish Artifacts",
+      "sizeBytes": 1011
+    },
+    {
+      "file": "benchmarks.yml",
+      "name": "Benchmarks",
+      "sizeBytes": 714
+    },
+    {
+      "file": "build.yml",
+      "name": "Build",
+      "sizeBytes": 691
+    },
+    {
+      "file": "docs.yml",
+      "name": "Documentation",
+      "sizeBytes": 749
+    },
+    {
+      "file": "quality.yml",
+      "name": "Quality Gates",
+      "sizeBytes": 820
+    },
+    {
+      "file": "registry.yml",
+      "name": "Registry Sync",
+      "sizeBytes": 731
+    },
+    {
+      "file": "release.yml",
+      "name": "Release",
+      "sizeBytes": 753
+    },
+    {
+      "file": "security.yml",
+      "name": "Security",
+      "sizeBytes": 811
+    },
+    {
+      "file": "snapshots.yml",
+      "name": "Snapshot Tests",
+      "sizeBytes": 738
+    },
+    {
+      "file": "tests.yml",
+      "name": "Tests",
+      "sizeBytes": 690
+    }
+  ],
+  "files": {
+    "total": 749,
+    "byExtension": {
+      ".json": 145,
+      ".md": 182,
+      "(none)": 6,
+      ".yml": 30,
+      ".js": 41,
+      ".mts": 1,
+      ".css": 1,
+      ".ts": 247,
+      ".vue": 1,
+      ".mjs": 1,
+      ".yaml": 2,
+      ".py": 55,
+      ".go": 27,
+      ".javascript": 1,
+      ".bash": 2,
+      ".sql": 3,
+      ".prisma": 1,
+      ".php": 1,
+      ".rust": 1,
+      ".xml": 1
+    },
+    "generated": 563,
+    "handwritten": 186
+  },
+  "documentation": {
+    "pages": [
+      {
+        "file": "README.md",
+        "wordCount": 843,
+        "exists": true
+      },
+      {
+        "file": "SPECIFICATION.md",
+        "wordCount": 1634,
+        "exists": true
+      },
+      {
+        "file": "SECURITY.md",
+        "wordCount": 44,
+        "exists": true
+      },
+      {
+        "file": "skills/algolia/SKILL.md",
+        "wordCount": 226,
+        "exists": true
+      },
+      {
+        "file": "skills/anthropic/SKILL.md",
+        "wordCount": 249,
+        "exists": true
+      },
+      {
+        "file": "skills/argo-cd/SKILL.md",
+        "wordCount": 255,
+        "exists": true
+      },
+      {
+        "file": "skills/auth0/SKILL.md",
+        "wordCount": 227,
+        "exists": true
+      },
+      {
+        "file": "skills/aws-dynamodb/SKILL.md",
+        "wordCount": 202,
+        "exists": true
+      },
+      {
+        "file": "skills/aws-s3/SKILL.md",
+        "wordCount": 220,
+        "exists": true
+      },
+      {
+        "file": "skills/azure-blob-storage/SKILL.md",
+        "wordCount": 237,
+        "exists": true
+      },
+      {
+        "file": "skills/azure-openai/SKILL.md",
+        "wordCount": 264,
+        "exists": true
+      },
+      {
+        "file": "skills/better-auth/SKILL.md",
+        "wordCount": 244,
+        "exists": true
+      },
+      {
+        "file": "skills/biome/SKILL.md",
+        "wordCount": 282,
+        "exists": true
+      },
+      {
+        "file": "skills/bullmq/SKILL.md",
+        "wordCount": 261,
+        "exists": true
+      },
+      {
+        "file": "skills/caddy/SKILL.md",
+        "wordCount": 263,
+        "exists": true
+      },
+      {
+        "file": "skills/clerk/SKILL.md",
+        "wordCount": 262,
+        "exists": true
+      },
+      {
+        "file": "skills/cloudflare/SKILL.md",
+        "wordCount": 205,
+        "exists": true
+      },
+      {
+        "file": "skills/cloudflare-workers/SKILL.md",
+        "wordCount": 279,
+        "exists": true
+      },
+      {
+        "file": "skills/convex/SKILL.md",
+        "wordCount": 252,
+        "exists": true
+      },
+      {
+        "file": "skills/datadog/SKILL.md",
+        "wordCount": 193,
+        "exists": true
+      },
+      {
+        "file": "skills/deno-deploy/SKILL.md",
+        "wordCount": 235,
+        "exists": true
+      },
+      {
+        "file": "skills/digitalocean/SKILL.md",
+        "wordCount": 264,
+        "exists": true
+      },
+      {
+        "file": "skills/discord/SKILL.md",
+        "wordCount": 207,
+        "exists": true
+      },
+      {
+        "file": "skills/docker/SKILL.md",
+        "wordCount": 240,
+        "exists": true
+      },
+      {
+        "file": "skills/drizzle/SKILL.md",
+        "wordCount": 302,
+        "exists": true
+      },
+      {
+        "file": "skills/eslint/SKILL.md",
+        "wordCount": 275,
+        "exists": true
+      },
+      {
+        "file": "skills/express/SKILL.md",
+        "wordCount": 224,
+        "exists": true
+      },
+      {
+        "file": "skills/fastapi/SKILL.md",
+        "wordCount": 226,
+        "exists": true
+      },
+      {
+        "file": "skills/firebase/SKILL.md",
+        "wordCount": 201,
+        "exists": true
+      },
+      {
+        "file": "skills/fly/SKILL.md",
+        "wordCount": 297,
+        "exists": true
+      },
+      {
+        "file": "skills/gemini/SKILL.md",
+        "wordCount": 234,
+        "exists": true
+      },
+      {
+        "file": "skills/git/SKILL.md",
+        "wordCount": 183,
+        "exists": true
+      },
+      {
+        "file": "skills/github/SKILL.md",
+        "wordCount": 207,
+        "exists": true
+      },
+      {
+        "file": "skills/github-actions/SKILL.md",
+        "wordCount": 220,
+        "exists": true
+      },
+      {
+        "file": "skills/google-cloud-storage/SKILL.md",
+        "wordCount": 251,
+        "exists": true
+      },
+      {
+        "file": "skills/grafana/SKILL.md",
+        "wordCount": 214,
+        "exists": true
+      },
+      {
+        "file": "skills/helm/SKILL.md",
+        "wordCount": 206,
+        "exists": true
+      },
+      {
+        "file": "skills/hono/SKILL.md",
+        "wordCount": 200,
+        "exists": true
+      },
+      {
+        "file": "skills/jaeger/SKILL.md",
+        "wordCount": 225,
+        "exists": true
+      },
+      {
+        "file": "skills/jwt/SKILL.md",
+        "wordCount": 292,
+        "exists": true
+      },
+      {
+        "file": "skills/kafka/SKILL.md",
+        "wordCount": 293,
+        "exists": true
+      },
+      {
+        "file": "skills/kubernetes/SKILL.md",
+        "wordCount": 219,
+        "exists": true
+      },
+      {
+        "file": "skills/langchain/SKILL.md",
+        "wordCount": 297,
+        "exists": true
+      },
+      {
+        "file": "skills/lemon-squeezy/SKILL.md",
+        "wordCount": 247,
+        "exists": true
+      },
+      {
+        "file": "skills/linux/SKILL.md",
+        "wordCount": 282,
+        "exists": true
+      },
+      {
+        "file": "skills/llamaindex/SKILL.md",
+        "wordCount": 293,
+        "exists": true
+      },
+      {
+        "file": "skills/loki/SKILL.md",
+        "wordCount": 242,
+        "exists": true
+      },
+      {
+        "file": "skills/mapbox/SKILL.md",
+        "wordCount": 202,
+        "exists": true
+      },
+      {
+        "file": "skills/meilisearch/SKILL.md",
+        "wordCount": 261,
+        "exists": true
+      },
+      {
+        "file": "skills/mixpanel/SKILL.md",
+        "wordCount": 255,
+        "exists": true
+      },
+      {
+        "file": "skills/mongodb-atlas/SKILL.md",
+        "wordCount": 207,
+        "exists": true
+      },
+      {
+        "file": "skills/mysql/SKILL.md",
+        "wordCount": 272,
+        "exists": true
+      },
+      {
+        "file": "skills/nats/SKILL.md",
+        "wordCount": 255,
+        "exists": true
+      },
+      {
+        "file": "skills/neon/SKILL.md",
+        "wordCount": 328,
+        "exists": true
+      },
+      {
+        "file": "skills/nestjs/SKILL.md",
+        "wordCount": 207,
+        "exists": true
+      },
+      {
+        "file": "skills/nextjs/SKILL.md",
+        "wordCount": 263,
+        "exists": true
+      },
+      {
+        "file": "skills/nginx/SKILL.md",
+        "wordCount": 231,
+        "exists": true
+      },
+      {
+        "file": "skills/nuxt/SKILL.md",
+        "wordCount": 193,
+        "exists": true
+      },
+      {
+        "file": "skills/oauth2/SKILL.md",
+        "wordCount": 300,
+        "exists": true
+      },
+      {
+        "file": "skills/okta/SKILL.md",
+        "wordCount": 197,
+        "exists": true
+      },
+      {
+        "file": "skills/ollama/SKILL.md",
+        "wordCount": 298,
+        "exists": true
+      },
+      {
+        "file": "skills/openai/SKILL.md",
+        "wordCount": 244,
+        "exists": true
+      },
+      {
+        "file": "skills/openid-connect/SKILL.md",
+        "wordCount": 294,
+        "exists": true
+      },
+      {
+        "file": "skills/opentelemetry/SKILL.md",
+        "wordCount": 222,
+        "exists": true
+      },
+      {
+        "file": "skills/paddle/SKILL.md",
+        "wordCount": 262,
+        "exists": true
+      },
+      {
+        "file": "skills/pinecone/SKILL.md",
+        "wordCount": 293,
+        "exists": true
+      },
+      {
+        "file": "skills/plaid/SKILL.md",
+        "wordCount": 231,
+        "exists": true
+      },
+      {
+        "file": "skills/planetscale/SKILL.md",
+        "wordCount": 297,
+        "exists": true
+      },
+      {
+        "file": "skills/playwright/SKILL.md",
+        "wordCount": 193,
+        "exists": true
+      },
+      {
+        "file": "skills/postgresql/SKILL.md",
+        "wordCount": 286,
+        "exists": true
+      },
+      {
+        "file": "skills/posthog/SKILL.md",
+        "wordCount": 261,
+        "exists": true
+      },
+      {
+        "file": "skills/prettier/SKILL.md",
+        "wordCount": 272,
+        "exists": true
+      },
+      {
+        "file": "skills/prisma/SKILL.md",
+        "wordCount": 266,
+        "exists": true
+      },
+      {
+        "file": "skills/prometheus/SKILL.md",
+        "wordCount": 201,
+        "exists": true
+      },
+      {
+        "file": "skills/pulumi/SKILL.md",
+        "wordCount": 223,
+        "exists": true
+      },
+      {
+        "file": "skills/rabbitmq/SKILL.md",
+        "wordCount": 267,
+        "exists": true
+      },
+      {
+        "file": "skills/railway/SKILL.md",
+        "wordCount": 250,
+        "exists": true
+      },
+      {
+        "file": "skills/react/SKILL.md",
+        "wordCount": 221,
+        "exists": true
+      },
+      {
+        "file": "skills/redis/SKILL.md",
+        "wordCount": 216,
+        "exists": true
+      },
+      {
+        "file": "skills/redis-streams/SKILL.md",
+        "wordCount": 281,
+        "exists": true
+      },
+      {
+        "file": "skills/render/SKILL.md",
+        "wordCount": 255,
+        "exists": true
+      },
+      {
+        "file": "skills/resend/SKILL.md",
+        "wordCount": 278,
+        "exists": true
+      },
+      {
+        "file": "skills/revenuecat/SKILL.md",
+        "wordCount": 239,
+        "exists": true
+      },
+      {
+        "file": "skills/sendgrid/SKILL.md",
+        "wordCount": 196,
+        "exists": true
+      },
+      {
+        "file": "skills/sentry/SKILL.md",
+        "wordCount": 229,
+        "exists": true
+      },
+      {
+        "file": "skills/shopify/SKILL.md",
+        "wordCount": 207,
+        "exists": true
+      },
+      {
+        "file": "skills/slack/SKILL.md",
+        "wordCount": 213,
+        "exists": true
+      },
+      {
+        "file": "skills/sqlite/SKILL.md",
+        "wordCount": 274,
+        "exists": true
+      },
+      {
+        "file": "skills/stripe/SKILL.md",
+        "wordCount": 265,
+        "exists": true
+      },
+      {
+        "file": "skills/supabase/SKILL.md",
+        "wordCount": 208,
+        "exists": true
+      },
+      {
+        "file": "skills/sveltekit/SKILL.md",
+        "wordCount": 198,
+        "exists": true
+      },
+      {
+        "file": "skills/terraform/SKILL.md",
+        "wordCount": 220,
+        "exists": true
+      },
+      {
+        "file": "skills/traefik/SKILL.md",
+        "wordCount": 287,
+        "exists": true
+      },
+      {
+        "file": "skills/trpc/SKILL.md",
+        "wordCount": 208,
+        "exists": true
+      },
+      {
+        "file": "skills/turborepo/SKILL.md",
+        "wordCount": 258,
+        "exists": true
+      },
+      {
+        "file": "skills/turso/SKILL.md",
+        "wordCount": 277,
+        "exists": true
+      },
+      {
+        "file": "skills/twilio/SKILL.md",
+        "wordCount": 194,
+        "exists": true
+      },
+      {
+        "file": "skills/typesense/SKILL.md",
+        "wordCount": 264,
+        "exists": true
+      },
+      {
+        "file": "skills/upstash/SKILL.md",
+        "wordCount": 250,
+        "exists": true
+      },
+      {
+        "file": "skills/vercel/SKILL.md",
+        "wordCount": 189,
+        "exists": true
+      },
+      {
+        "file": "skills/vitest/SKILL.md",
+        "wordCount": 296,
+        "exists": true
+      },
+      {
+        "file": "skills/vllm/SKILL.md",
+        "wordCount": 273,
+        "exists": true
+      },
+      {
+        "file": "skills/vue/SKILL.md",
+        "wordCount": 192,
+        "exists": true
+      }
+    ],
+    "brokenInternalLinks": [],
+    "brokenExternalLinks": []
+  },
+  "dependencies": {
+    "production": [],
+    "development": [
+      {
+        "name": "@eslint/js",
+        "version": "^9.15.0"
+      },
+      {
+        "name": "@types/node",
+        "version": "^22.10.0"
+      },
+      {
+        "name": "eslint",
+        "version": "^9.15.0"
+      },
+      {
+        "name": "prettier",
+        "version": "^3.4.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.7.2"
+      },
+      {
+        "name": "typescript-eslint",
+        "version": "^8.16.0"
+      },
+      {
+        "name": "vitest",
+        "version": "^2.1.8"
+      }
+    ]
+  },
+  "codeQuality": {},
+  "security": {
+    "secretsDetected": [],
+    "licenses": [
+      {
+        "note": "pnpm-lock.yaml present, lockfile integrity verifiable"
+      }
+    ]
+  },
+  "performance": {}
+}

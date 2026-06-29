@@ -1,0 +1,41 @@
+{
+  "name": "sqlite",
+  "version": "1.0.0",
+  "description": "Small, fast, reliable, embedded database.",
+  "categories": [
+    "Databases"
+  ],
+  "languages": [
+    "sql"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "SQLite Docs": "https://www.sqlite.org/docs.html"
+  },
+  "learningLevel": "beginner",
+  "useCases": [
+    "Embedded App",
+    "Edge Computing",
+    "Testing"
+  ],
+  "deploymentTargets": [
+    "turso",
+    "cloudflare"
+  ],
+  "ecosystem": "database",
+  "maintainers": [
+    "sqlite"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "turso",
+      "type": "extended_by"
+    },
+    {
+      "target": "drizzle",
+      "type": "integrates_with"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+await storage.bucket('my-bucket').upload('./local.txt', { destination: 'remote.txt' });

@@ -1,0 +1,23 @@
+{
+  "name": "google-cloud-storage",
+  "version": "1.0.0",
+  "description": "Enterprise object storage by Google.",
+  "categories": [
+    "Cloud",
+    "Storage"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "GCS Node.js SDK": "https://googleapis.dev/nodejs/storage/latest/"
+  },
+  "relatedSkills": [
+    "AWS S3",
+    "Firebase"
+  ]
+}

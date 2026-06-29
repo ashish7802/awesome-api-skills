@@ -1,0 +1,45 @@
+{
+  "name": "ollama",
+  "version": "1.0.0",
+  "description": "Get up and running with large language models locally.",
+  "categories": [
+    "AI",
+    "Developer Tools"
+  ],
+  "languages": [
+    "yaml",
+    "bash"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Ollama Docs": "https://github.com/ollama/ollama"
+  },
+  "learningLevel": "beginner",
+  "useCases": [
+    "Local AI Inference"
+  ],
+  "deploymentTargets": [
+    "docker",
+    "linux"
+  ],
+  "ecosystem": "ai",
+  "maintainers": [
+    "ollama"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "vllm",
+      "type": "alternative_to"
+    },
+    {
+      "target": "langchain",
+      "type": "integrates_with"
+    },
+    {
+      "target": "openai",
+      "type": "alternative_to"
+    }
+  ]
+}

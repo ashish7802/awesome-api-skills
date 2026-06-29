@@ -8,11 +8,15 @@ export class RegistryManager {
   }
 
   async syncAll(urls: string[]) {
-    // Orchestrates syncing
+    // Orchestrates syncing across multiple registry URLs
     const engine = new SyncEngine(this.cache);
     for (const url of urls) {
-      // mocked logic for testability
-      await engine.sync(url as unknown as Parameters<typeof engine.sync>[0]);
+      const client = {
+        id: url,
+        getManifest: async () => null,
+        fetchSkills: async () => ({ skills: [] }),
+      } as unknown as Parameters<typeof engine.syncRegistry>[0];
+      await engine.syncRegistry(client);
     }
   }
 

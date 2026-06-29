@@ -1,0 +1,42 @@
+{
+  "name": "rabbitmq",
+  "version": "1.0.0",
+  "description": "Reliable, mature AMQP message broker.",
+  "categories": [
+    "Messaging",
+    "Enterprise"
+  ],
+  "languages": [
+    "typescript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "RabbitMQ Docs": "https://www.rabbitmq.com/documentation.html"
+  },
+  "learningLevel": "advanced",
+  "useCases": [
+    "Task Queues",
+    "Microservices"
+  ],
+  "deploymentTargets": [
+    "kubernetes",
+    "docker",
+    "aws"
+  ],
+  "ecosystem": "infrastructure",
+  "maintainers": [
+    "vmware"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "kafka",
+      "type": "alternative_to"
+    },
+    {
+      "target": "bullmq",
+      "type": "alternative_to"
+    }
+  ]
+}

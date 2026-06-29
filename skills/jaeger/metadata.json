@@ -1,0 +1,40 @@
+{
+  "name": "jaeger",
+  "version": "1.0.0",
+  "description": "Open source, end-to-end distributed tracing.",
+  "categories": [
+    "Observability"
+  ],
+  "languages": [
+    "yaml"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Jaeger Docs": "https://www.jaegertracing.io/docs/"
+  },
+  "learningLevel": "advanced",
+  "useCases": [
+    "Distributed Tracing",
+    "Performance"
+  ],
+  "deploymentTargets": [
+    "kubernetes",
+    "docker"
+  ],
+  "ecosystem": "devops",
+  "maintainers": [
+    "cncf"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "opentelemetry",
+      "type": "depends_on"
+    },
+    {
+      "target": "grafana",
+      "type": "integrates_with"
+    }
+  ]
+}

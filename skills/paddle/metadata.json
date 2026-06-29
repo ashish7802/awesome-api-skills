@@ -1,0 +1,23 @@
+{
+  "name": "paddle",
+  "version": "1.0.0",
+  "description": "B2B and B2C billing platform handling tax compliance globally.",
+  "categories": [
+    "Payments",
+    "Finance"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Paddle API": "https://developer.paddle.com/api-reference"
+  },
+  "relatedSkills": [
+    "Stripe",
+    "Lemon Squeezy"
+  ]
+}

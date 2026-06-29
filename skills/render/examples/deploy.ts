@@ -1,0 +1,1 @@
+const res = await fetch('https://api.render.com/v1/services/{serviceId}/deploys', { method: 'POST', headers: { Authorization: `Bearer ${TOKEN}` } });

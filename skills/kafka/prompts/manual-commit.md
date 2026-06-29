@@ -1,0 +1,1 @@
+Write a KafkaJS consumer in TypeScript that disables auto-commit, processes messages, and manually commits the offset only if processing succeeds.

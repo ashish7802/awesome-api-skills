@@ -1,0 +1,2 @@
+import OpenAI from 'openai';
+const client = new OpenAI({ baseURL: 'https://RESOURCE.openai.azure.com/openai/deployments/DEPLOYMENT', defaultQuery: { 'api-version': '2023-05-15' }, defaultHeaders: { 'api-key': 'KEY' } });

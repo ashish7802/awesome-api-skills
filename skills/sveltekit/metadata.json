@@ -1,0 +1,41 @@
+{
+  "name": "sveltekit",
+  "version": "1.0.0",
+  "description": "Web development, streamlined.",
+  "categories": [
+    "Frontend Frameworks"
+  ],
+  "languages": [
+    "typescript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "SvelteKit Docs": "https://kit.svelte.dev/docs"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "SSR",
+    "Performance"
+  ],
+  "deploymentTargets": [
+    "vercel",
+    "docker",
+    "cloudflare"
+  ],
+  "ecosystem": "svelte",
+  "maintainers": [
+    "rich-harris"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "nextjs",
+      "type": "alternative_to"
+    },
+    {
+      "target": "vercel",
+      "type": "deploys_to"
+    }
+  ]
+}

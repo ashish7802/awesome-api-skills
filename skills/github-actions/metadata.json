@@ -1,0 +1,40 @@
+{
+  "name": "github-actions",
+  "version": "1.0.0",
+  "description": "Automate your software workflows directly from GitHub.",
+  "categories": [
+    "CI/CD",
+    "Developer Tools"
+  ],
+  "languages": [
+    "yaml"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "GitHub Actions": "https://docs.github.com/en/actions"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "CI/CD",
+    "Automation"
+  ],
+  "deploymentTargets": [
+    "github"
+  ],
+  "ecosystem": "devops",
+  "maintainers": [
+    "github"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "git",
+      "type": "depends_on"
+    },
+    {
+      "target": "docker",
+      "type": "works_well_with"
+    }
+  ]
+}

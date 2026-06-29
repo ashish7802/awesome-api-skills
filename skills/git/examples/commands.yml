@@ -1,0 +1,6 @@
+# Fetch latest without merging
+git fetch origin
+# Rebase feature branch onto main
+git rebase origin/main
+# Force push safely (prevents overwriting remote changes)
+git push --force-with-lease

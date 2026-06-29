@@ -1,0 +1,38 @@
+{
+  "name": "prettier",
+  "version": "1.0.0",
+  "description": "Opinionated Code Formatter.",
+  "categories": [
+    "Developer Tools"
+  ],
+  "languages": [
+    "json"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Prettier Docs": "https://prettier.io/docs/en/"
+  },
+  "learningLevel": "beginner",
+  "useCases": [
+    "Formatting"
+  ],
+  "deploymentTargets": [
+    "any"
+  ],
+  "ecosystem": "javascript",
+  "maintainers": [
+    "prettier"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "eslint",
+      "type": "works_well_with"
+    },
+    {
+      "target": "biome",
+      "type": "alternative_to"
+    }
+  ]
+}

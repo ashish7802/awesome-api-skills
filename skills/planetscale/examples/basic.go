@@ -1,0 +1,1 @@
+db, err := sql.Open("mysql", "user:pass@tcp(host)/db?tls=true")

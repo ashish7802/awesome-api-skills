@@ -1,0 +1,8 @@
+api.example.com {
+  reverse_proxy localhost:8080
+}
+
+example.com {
+  root * /var/www/html
+  file_server
+}

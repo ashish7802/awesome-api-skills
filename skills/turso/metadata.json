@@ -1,0 +1,24 @@
+{
+  "name": "turso",
+  "version": "1.0.0",
+  "description": "Edge SQLite database based on libSQL.",
+  "categories": [
+    "Databases",
+    "Cloud"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go",
+    "rust"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Turso Documentation": "https://docs.turso.tech"
+  },
+  "relatedSkills": [
+    "Fly.io",
+    "Render"
+  ]
+}

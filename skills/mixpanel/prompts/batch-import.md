@@ -1,0 +1,1 @@
+Write a Node.js script using the Mixpanel SDK that reads an array of 500 historical user events and sends them using `track_batch`.

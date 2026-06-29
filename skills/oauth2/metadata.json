@@ -1,0 +1,48 @@
+{
+  "name": "oauth2",
+  "version": "1.0.0",
+  "description": "The industry-standard protocol for authorization.",
+  "categories": [
+    "Authentication",
+    "Security"
+  ],
+  "languages": [
+    "yaml"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "OAuth.net": "https://oauth.net/2/"
+  },
+  "learningLevel": "advanced",
+  "useCases": [
+    "Delegated Access",
+    "API Security"
+  ],
+  "deploymentTargets": [
+    "any"
+  ],
+  "ecosystem": "security",
+  "maintainers": [
+    "ietf"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "openid-connect",
+      "type": "extended_by"
+    },
+    {
+      "target": "jwt",
+      "type": "works_well_with"
+    },
+    {
+      "target": "clerk",
+      "type": "implemented_by"
+    },
+    {
+      "target": "better-auth",
+      "type": "implemented_by"
+    }
+  ]
+}

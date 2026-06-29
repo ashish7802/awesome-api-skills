@@ -7,10 +7,34 @@ fs.mkdirSync(skillsDir, { recursive: true });
 
 // Mock data based on dogfood output to satisfy immediate build requirements
 const skills = [
-  { id: 'openai-chat', name: 'OpenAI Chat', version: '1.0.0', publisher: 'official', agents: ['langchain', 'crewai'] },
-  { id: 'anthropic-claude', name: 'Anthropic Claude', version: '2.0.0', publisher: 'official', agents: ['langchain'] },
-  { id: 'stripe-payments', name: 'Stripe Payments', version: '1.1.0', publisher: 'community', agents: ['all'] },
-  { id: 'github-repo', name: 'GitHub Integration', version: '1.0.0', publisher: 'official', agents: ['all'] }
+  {
+    id: 'openai-chat',
+    name: 'OpenAI Chat',
+    version: '1.0.0',
+    publisher: 'official',
+    agents: ['langchain', 'crewai'],
+  },
+  {
+    id: 'anthropic-claude',
+    name: 'Anthropic Claude',
+    version: '2.0.0',
+    publisher: 'official',
+    agents: ['langchain'],
+  },
+  {
+    id: 'stripe-payments',
+    name: 'Stripe Payments',
+    version: '1.1.0',
+    publisher: 'community',
+    agents: ['all'],
+  },
+  {
+    id: 'github-repo',
+    name: 'GitHub Integration',
+    version: '1.0.0',
+    publisher: 'official',
+    agents: ['all'],
+  },
 ];
 
 // Generate index for skills
@@ -23,12 +47,16 @@ title: Skills Directory
 Browse the complete collection of validated API skills.
 
 <div class="skills-grid">
-${skills.map(s => `
+${skills
+  .map(
+    (s) => `
   <a class="skill-card" href="/skills/${s.id}">
     <h3>${s.name} <span class="badge v">${s.version}</span></h3>
     <p>Publisher: ${s.publisher}</p>
   </a>
-`).join('')}
+`,
+  )
+  .join('')}
 </div>
 
 <style>
@@ -41,7 +69,7 @@ ${skills.map(s => `
 fs.writeFileSync(path.join(skillsDir, 'index.md'), indexContent);
 
 // Generate individual skill pages
-skills.forEach(skill => {
+skills.forEach((skill) => {
   const content = `---
 title: ${skill.name}
 ---
@@ -64,7 +92,7 @@ awesome-api install ${skill.id}
 \`\`\`
 
 ## Supported Agents
-${skill.agents.map(a => `- ${a}`).join('\n')}
+${skill.agents.map((a) => `- ${a}`).join('\n')}
 
 ## Examples
 \`\`\`javascript
@@ -89,12 +117,15 @@ const docsDir = path.join(srcDir, 'docs');
 fs.mkdirSync(docsDir, { recursive: true });
 
 const packages = ['cli', 'sdk', 'registry', 'validator', 'generator', 'specification', 'overview'];
-packages.forEach(pkg => {
+packages.forEach((pkg) => {
   let extra = '';
   if (pkg === 'architecture') {
     extra = `\n## Architecture Diagram\n\n\`\`\`mermaid\ngraph TD\n  CLI --> SDK\n  SDK --> Registry\n  SDK --> Validator\n  SDK --> Generator\n\`\`\``;
   }
-  fs.writeFileSync(path.join(docsDir, `${pkg}.md`), `# ${pkg.toUpperCase()} Documentation\n\nWelcome to the ${pkg} documentation. This is auto-generated reference material.\n${extra}`);
+  fs.writeFileSync(
+    path.join(docsDir, `${pkg}.md`),
+    `# ${pkg.toUpperCase()} Documentation\n\nWelcome to the ${pkg} documentation. This is auto-generated reference material.\n${extra}`,
+  );
 });
 
 console.log('Markdown generation complete.');

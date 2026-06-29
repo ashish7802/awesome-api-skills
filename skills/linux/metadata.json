@@ -1,0 +1,42 @@
+{
+  "name": "linux",
+  "version": "1.0.0",
+  "description": "The free, open-source operating system that powers the internet.",
+  "categories": [
+    "Infrastructure",
+    "Enterprise"
+  ],
+  "languages": [
+    "bash"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Linux Docs": "https://www.kernel.org/doc/html/latest/"
+  },
+  "learningLevel": "advanced",
+  "useCases": [
+    "Servers",
+    "Containers"
+  ],
+  "deploymentTargets": [
+    "aws",
+    "gcp",
+    "azure"
+  ],
+  "ecosystem": "devops",
+  "maintainers": [
+    "linux-foundation"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "docker",
+      "type": "integrates_with"
+    },
+    {
+      "target": "nginx",
+      "type": "works_well_with"
+    }
+  ]
+}

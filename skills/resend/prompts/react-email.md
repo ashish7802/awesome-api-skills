@@ -1,0 +1,1 @@
+Write a Next.js API route that accepts a user's name and email, uses React Email to render an 'Account Created' component to a string, and sends it via the Resend Node.js SDK.

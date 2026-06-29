@@ -1,0 +1,1 @@
+db, err := sql.Open("libsql", "libsql://...?authToken=...")

@@ -1,0 +1,1 @@
+Write a Node.js function using the official OpenAI SDK configured for Azure OpenAI, taking a prompt and returning the response, handling the 'content_filter' finish reason explicitly.

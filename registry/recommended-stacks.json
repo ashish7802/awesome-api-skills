@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Python AI Microservice",
+    "stack": ["fastapi", "docker", "openai", "pinecone", "redis"]
+  },
+  {
+    "name": "TypeScript Serverless",
+    "stack": ["hono", "cloudflare", "upstash", "planetscale"]
+  }
+]

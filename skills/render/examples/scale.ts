@@ -1,0 +1,1 @@
+const res = await fetch('https://api.render.com/v1/services/{serviceId}/scale', { method: 'POST', headers: { Authorization: `Bearer ${TOKEN}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ instances: 3 }) });

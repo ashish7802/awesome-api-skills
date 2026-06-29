@@ -1,0 +1,45 @@
+{
+  "name": "nestjs",
+  "version": "1.0.0",
+  "description": "A progressive Node.js framework for building efficient, reliable and scalable server-side applications.",
+  "categories": [
+    "Backend Frameworks"
+  ],
+  "languages": [
+    "typescript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "NestJS Docs": "https://docs.nestjs.com/"
+  },
+  "learningLevel": "advanced",
+  "useCases": [
+    "Enterprise APIs",
+    "Microservices"
+  ],
+  "deploymentTargets": [
+    "docker",
+    "kubernetes",
+    "railway"
+  ],
+  "ecosystem": "typescript",
+  "maintainers": [
+    "nestjs"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "express",
+      "type": "extended_by"
+    },
+    {
+      "target": "docker",
+      "type": "deploys_to"
+    },
+    {
+      "target": "kubernetes",
+      "type": "deploys_to"
+    }
+  ]
+}

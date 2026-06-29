@@ -5,7 +5,16 @@ export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
   {
-    ignores: ['skills/**/*', 'snapshots/**/*', 'dist/**/*', '.cache/**/*', 'create-*.js'],
+    ignores: [
+      'skills/**/*',
+      'snapshots/**/*',
+      'dist/**/*',
+      '.cache/**/*',
+      'create-*.js',
+      'scripts/**/*',
+      '*.js',
+      'apps/docs/scripts/**/*',
+    ],
   },
   {
     ignores: ['**/dist/**', '**/node_modules/**', '**/coverage/**'],

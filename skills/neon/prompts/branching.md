@@ -1,0 +1,1 @@
+Write a GitHub Action workflow using the Neon API that creates a new database branch based on the PR number, sets the connection string as a secret for the test runner, and destroys the branch on completion.

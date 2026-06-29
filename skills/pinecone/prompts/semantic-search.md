@@ -1,0 +1,1 @@
+Write a Node.js function that takes a text query, calls the OpenAI embedding API to convert it to a vector, and queries a Pinecone index for the top 5 nearest neighbors, filtering by a specific `user_id`.

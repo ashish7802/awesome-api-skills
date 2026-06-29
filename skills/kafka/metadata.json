@@ -1,0 +1,42 @@
+{
+  "name": "kafka",
+  "version": "1.0.0",
+  "description": "Distributed event streaming platform.",
+  "categories": [
+    "Messaging",
+    "Enterprise"
+  ],
+  "languages": [
+    "yaml"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Kafka Docs": "https://kafka.apache.org/documentation/"
+  },
+  "learningLevel": "advanced",
+  "useCases": [
+    "Event Sourcing",
+    "High Throughput Data Pipelines"
+  ],
+  "deploymentTargets": [
+    "aws",
+    "gcp",
+    "kubernetes"
+  ],
+  "ecosystem": "infrastructure",
+  "maintainers": [
+    "apache"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "rabbitmq",
+      "type": "alternative_to"
+    },
+    {
+      "target": "redis-streams",
+      "type": "alternative_to"
+    }
+  ]
+}

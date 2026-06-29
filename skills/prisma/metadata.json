@@ -1,0 +1,51 @@
+{
+  "name": "prisma",
+  "version": "1.0.0",
+  "description": "Next-generation Node.js and TypeScript ORM.",
+  "categories": [
+    "Databases",
+    "Developer Tools"
+  ],
+  "languages": [
+    "prisma",
+    "typescript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Prisma Docs": "https://www.prisma.io/docs/"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "TypeScript ORM",
+    "Rapid Prototyping"
+  ],
+  "deploymentTargets": [
+    "vercel",
+    "docker",
+    "railway"
+  ],
+  "ecosystem": "typescript",
+  "maintainers": [
+    "prisma"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "postgresql",
+      "type": "integrates_with"
+    },
+    {
+      "target": "mysql",
+      "type": "integrates_with"
+    },
+    {
+      "target": "drizzle",
+      "type": "alternative_to"
+    },
+    {
+      "target": "nextjs",
+      "type": "works_well_with"
+    }
+  ]
+}

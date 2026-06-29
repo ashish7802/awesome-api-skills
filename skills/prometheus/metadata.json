@@ -1,0 +1,40 @@
+{
+  "name": "prometheus",
+  "version": "1.0.0",
+  "description": "Powering metrics and alerting.",
+  "categories": [
+    "Observability"
+  ],
+  "languages": [
+    "yaml"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Prometheus Docs": "https://prometheus.io/docs/introduction/overview/"
+  },
+  "learningLevel": "advanced",
+  "useCases": [
+    "Metrics",
+    "Time Series Database"
+  ],
+  "deploymentTargets": [
+    "kubernetes",
+    "docker"
+  ],
+  "ecosystem": "devops",
+  "maintainers": [
+    "cncf"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "grafana",
+      "type": "works_well_with"
+    },
+    {
+      "target": "kubernetes",
+      "type": "monitors"
+    }
+  ]
+}

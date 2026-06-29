@@ -1,0 +1,24 @@
+{
+  "name": "clerk",
+  "version": "1.0.0",
+  "description": "Authentication and User Management.",
+  "categories": [
+    "Authentication",
+    "Security"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Backend API": "https://clerk.com/docs/reference/backend-api"
+  },
+  "relatedSkills": [
+    "Neon",
+    "Supabase",
+    "Resend"
+  ]
+}

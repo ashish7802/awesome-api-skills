@@ -1,0 +1,1 @@
+// Not applicable to Go. Utilize Gotrue or custom auth.

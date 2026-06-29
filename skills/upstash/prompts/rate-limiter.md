@@ -1,0 +1,1 @@
+Write a Next.js API route that utilizes `@upstash/ratelimit` to restrict users to 5 requests per minute based on their IP address, returning a 429 response if exceeded.

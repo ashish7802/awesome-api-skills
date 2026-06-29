@@ -13,5 +13,15 @@
   "license": "MIT",
   "links": {
     "API Reference": "https://shopify.dev/docs/api/admin-graphql"
-  }
+  },
+  "relationships": [
+    {
+      "target": "nextjs",
+      "type": "integrates_with"
+    },
+    {
+      "target": "stripe",
+      "type": "works_well_with"
+    }
+  ]
 }

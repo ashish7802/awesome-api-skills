@@ -1,0 +1,1 @@
+Write a Node.js function using the Lemon Squeezy SDK that validates a provided software license key string against a specific instance.

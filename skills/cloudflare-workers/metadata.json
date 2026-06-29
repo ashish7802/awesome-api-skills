@@ -1,0 +1,40 @@
+{
+  "name": "cloudflare-workers",
+  "version": "1.0.0",
+  "description": "Build serverless applications and deploy globally across the Cloudflare edge network.",
+  "categories": [
+    "Cloud",
+    "Developer Tools"
+  ],
+  "languages": [
+    "typescript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Cloudflare Docs": "https://developers.cloudflare.com/workers/"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "Edge Computing",
+    "Serverless API"
+  ],
+  "deploymentTargets": [
+    "cloudflare"
+  ],
+  "ecosystem": "javascript",
+  "maintainers": [
+    "cloudflare"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "hono",
+      "type": "works_well_with"
+    },
+    {
+      "target": "drizzle",
+      "type": "integrates_with"
+    }
+  ]
+}

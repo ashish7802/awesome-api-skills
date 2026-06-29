@@ -1,0 +1,39 @@
+{
+  "name": "turborepo",
+  "version": "1.0.0",
+  "description": "High-performance build system for JavaScript and TypeScript codebases.",
+  "categories": [
+    "Developer Tools"
+  ],
+  "languages": [
+    "json"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "TurboRepo Docs": "https://turbo.build/repo/docs"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "Monorepo",
+    "Build System"
+  ],
+  "deploymentTargets": [
+    "vercel"
+  ],
+  "ecosystem": "javascript",
+  "maintainers": [
+    "vercel"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "nextjs",
+      "type": "works_well_with"
+    },
+    {
+      "target": "github-actions",
+      "type": "integrates_with"
+    }
+  ]
+}

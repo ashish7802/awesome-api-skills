@@ -1,17 +1,17 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
-  title: "Awesome API Skills",
-  description: "The universal standard for integrating APIs into AI agents.",
+  title: 'Awesome API Skills',
+  description: 'The universal standard for integrating APIs into AI agents.',
   cleanUrls: true,
   sitemap: {
-    hostname: 'https://awesome.api'
+    hostname: 'https://awesome.api',
   },
   head: [
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'Awesome API Skills' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
   ],
   themeConfig: {
     logo: '/logo.svg',
@@ -23,13 +23,13 @@ export default defineConfig({
       { text: 'Validator', link: '/docs/validator' },
       { text: 'Generator', link: '/docs/generator' },
       { text: 'Specification', link: '/docs/specification' },
-      { text: 'Playground', link: '/playground' }
+      { text: 'Playground', link: '/playground' },
     ],
     search: {
       provider: 'local',
       options: {
-        detailedView: true
-      }
+        detailedView: true,
+      },
     },
     sidebar: {
       '/skills/': [
@@ -39,9 +39,9 @@ export default defineConfig({
             { text: 'Overview', link: '/skills/' },
             { text: 'Providers', link: '/skills/providers' },
             { text: 'Categories', link: '/skills/categories' },
-            { text: 'Languages', link: '/skills/languages' }
-          ]
-        }
+            { text: 'Languages', link: '/skills/languages' },
+          ],
+        },
       ],
       '/docs/': [
         {
@@ -52,25 +52,21 @@ export default defineConfig({
             { text: 'SDK', link: '/docs/sdk' },
             { text: 'Registry', link: '/docs/registry' },
             { text: 'Validator', link: '/docs/validator' },
-            { text: 'Generator', link: '/docs/generator' }
-          ]
+            { text: 'Generator', link: '/docs/generator' },
+          ],
         },
         {
           text: 'Specification',
-          items: [
-            { text: 'v1.0.0', link: '/docs/specification' }
-          ]
-        }
-      ]
+          items: [{ text: 'v1.0.0', link: '/docs/specification' }],
+        },
+      ],
     },
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/awesome-api-skills' }
-    ]
+    socialLinks: [{ icon: 'github', link: 'https://github.com/awesome-api-skills' }],
   },
   vite: {
     server: {
       port: 5173,
-      strictPort: true
-    }
-  }
+      strictPort: true,
+    },
+  },
 });

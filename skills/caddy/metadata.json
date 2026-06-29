@@ -1,0 +1,41 @@
+{
+  "name": "caddy",
+  "version": "1.0.0",
+  "description": "The ultimate enterprise web server with automatic HTTPS.",
+  "categories": [
+    "Infrastructure",
+    "Security"
+  ],
+  "languages": [
+    "yaml"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Caddy Docs": "https://caddyserver.com/docs/"
+  },
+  "learningLevel": "beginner",
+  "useCases": [
+    "Reverse Proxy",
+    "Static File Server"
+  ],
+  "deploymentTargets": [
+    "docker",
+    "digitalocean"
+  ],
+  "ecosystem": "devops",
+  "maintainers": [
+    "caddyserver"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "nginx",
+      "type": "alternative_to"
+    },
+    {
+      "target": "docker",
+      "type": "works_well_with"
+    }
+  ]
+}

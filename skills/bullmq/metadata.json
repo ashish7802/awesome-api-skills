@@ -1,0 +1,45 @@
+{
+  "name": "bullmq",
+  "version": "1.0.0",
+  "description": "Redis-based robust queue system for Node.js.",
+  "categories": [
+    "Messaging",
+    "Developer Tools"
+  ],
+  "languages": [
+    "typescript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "BullMQ Docs": "https://docs.bullmq.io/"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "Background Jobs",
+    "Delayed Tasks"
+  ],
+  "deploymentTargets": [
+    "docker",
+    "railway"
+  ],
+  "ecosystem": "javascript",
+  "maintainers": [
+    "taskforcesh"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "redis",
+      "type": "depends_on"
+    },
+    {
+      "target": "rabbitmq",
+      "type": "alternative_to"
+    },
+    {
+      "target": "nestjs",
+      "type": "integrates_with"
+    }
+  ]
+}

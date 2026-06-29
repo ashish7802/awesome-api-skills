@@ -1,0 +1,22 @@
+{
+  "name": "digitalocean",
+  "version": "1.0.0",
+  "description": "Cloud computing designed for developers.",
+  "categories": [
+    "Cloud"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "DigitalOcean API": "https://docs.digitalocean.com/reference/api/"
+  },
+  "relatedSkills": [
+    "AWS S3",
+    "Render"
+  ]
+}

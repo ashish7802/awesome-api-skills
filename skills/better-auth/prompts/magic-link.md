@@ -1,0 +1,1 @@
+Write a Next.js App Router API route utilizing Better Auth's magic link plugin to send an authentication email.

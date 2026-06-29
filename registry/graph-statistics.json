@@ -1,0 +1,21 @@
+{
+  "totalNodes": 75,
+  "totalEdges": 117,
+  "edgeTypes": [
+    "depends_on",
+    "works_well_with",
+    "alternative_to",
+    "related_to",
+    "deploys_to",
+    "integrates_with",
+    "monitors",
+    "extended_by",
+    "authenticates_with",
+    "publishes_to"
+  ],
+  "averageRelationshipsPerNode": "1.56",
+  "graphDensity": "0.0211",
+  "largestConnectedComponentSize": 47,
+  "learningPathsCount": 2,
+  "recommendationCount": 2
+}

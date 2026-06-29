@@ -14,5 +14,15 @@
   "license": "MIT",
   "links": {
     "API Reference": "https://developer.okta.com/docs/reference/"
-  }
+  },
+  "relationships": [
+    {
+      "target": "oauth2",
+      "type": "implements"
+    },
+    {
+      "target": "openid-connect",
+      "type": "implements"
+    }
+  ]
 }

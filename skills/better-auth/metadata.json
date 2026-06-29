@@ -1,0 +1,22 @@
+{
+  "name": "better-auth",
+  "version": "1.0.0",
+  "description": "Comprehensive authentication library for TypeScript.",
+  "categories": [
+    "Authentication"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Better Auth Docs": "https://www.better-auth.com/docs"
+  },
+  "relatedSkills": [
+    "Clerk",
+    "Neon"
+  ]
+}

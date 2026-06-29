@@ -1,0 +1,10 @@
+{
+  "registry_load_graph_json": "2.78ms",
+  "registry_load_recommendations_json": "3.78ms",
+  "skill_directory_scan_100_skills": "61.03ms",
+  "search_hits_for_authentication": 39,
+  "search_latency_substring": "48.39ms",
+  "knowledge_graph_build": "378.30ms",
+  "validation_full_audit": "967.82ms",
+  "typescript_check": "SKIPPED (tsc errors present)"
+}

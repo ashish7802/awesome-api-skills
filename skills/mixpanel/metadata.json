@@ -1,0 +1,21 @@
+{
+  "name": "mixpanel",
+  "version": "1.0.0",
+  "description": "Advanced product analytics for tracking user interactions.",
+  "categories": [
+    "Analytics"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Mixpanel Node SDK": "https://developer.mixpanel.com/docs/nodejs"
+  },
+  "relatedSkills": [
+    "PostHog"
+  ]
+}

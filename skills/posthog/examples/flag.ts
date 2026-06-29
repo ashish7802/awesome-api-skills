@@ -1,0 +1,1 @@
+const isBeta = await posthog.getFeatureFlag('beta-feature', 'user_123');

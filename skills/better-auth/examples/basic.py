@@ -1,0 +1,1 @@
+// Better Auth is heavily optimized for the TypeScript ecosystem. Use standard OAuth libraries for Python.

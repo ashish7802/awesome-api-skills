@@ -1,0 +1,45 @@
+{
+  "name": "vue",
+  "version": "1.0.0",
+  "description": "The Progressive JavaScript Framework.",
+  "categories": [
+    "Frontend Frameworks"
+  ],
+  "languages": [
+    "typescript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Vue Docs": "https://vuejs.org/guide/introduction.html"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "SPA",
+    "Interactive UI"
+  ],
+  "deploymentTargets": [
+    "vercel",
+    "netlify",
+    "aws-s3"
+  ],
+  "ecosystem": "javascript",
+  "maintainers": [
+    "evan-you"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "nuxt",
+      "type": "extended_by"
+    },
+    {
+      "target": "react",
+      "type": "alternative_to"
+    },
+    {
+      "target": "supabase",
+      "type": "works_well_with"
+    }
+  ]
+}

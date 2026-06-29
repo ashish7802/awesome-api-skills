@@ -1,0 +1,9 @@
+{
+  "totalNodes": 100,
+  "totalEdges": 213,
+  "graphDensity": 0.0215,
+  "averageRelationshipsPerNode": 2.13,
+  "isolatedNodesCount": 0,
+  "isolatedNodesList": [],
+  "recommendationCoverage": "100%"
+}

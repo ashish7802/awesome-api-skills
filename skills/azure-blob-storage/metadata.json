@@ -1,0 +1,23 @@
+{
+  "name": "azure-blob-storage",
+  "version": "1.0.0",
+  "description": "Massively scalable object storage for unstructured data.",
+  "categories": [
+    "Cloud",
+    "Storage"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Azure Blob SDK": "https://learn.microsoft.com/en-us/javascript/api/@azure/storage-blob"
+  },
+  "relatedSkills": [
+    "AWS S3",
+    "Google Cloud Storage"
+  ]
+}

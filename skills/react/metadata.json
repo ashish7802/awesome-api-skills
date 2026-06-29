@@ -1,0 +1,45 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "The library for web and native user interfaces.",
+  "categories": [
+    "Frontend Frameworks"
+  ],
+  "languages": [
+    "typescript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "React.dev": "https://react.dev/"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "SPA",
+    "UI Components"
+  ],
+  "deploymentTargets": [
+    "aws-s3",
+    "vercel",
+    "cloudflare"
+  ],
+  "ecosystem": "javascript",
+  "maintainers": [
+    "meta"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "nextjs",
+      "type": "extended_by"
+    },
+    {
+      "target": "vue",
+      "type": "alternative_to"
+    },
+    {
+      "target": "sveltekit",
+      "type": "alternative_to"
+    }
+  ]
+}

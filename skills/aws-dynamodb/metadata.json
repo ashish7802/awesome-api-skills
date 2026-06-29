@@ -14,5 +14,15 @@
   "license": "MIT",
   "links": {
     "API Reference": "https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-dynamodb/"
-  }
+  },
+  "relationships": [
+    {
+      "target": "terraform",
+      "type": "provisioned_by"
+    },
+    {
+      "target": "pulumi",
+      "type": "provisioned_by"
+    }
+  ]
 }

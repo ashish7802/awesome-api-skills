@@ -1,0 +1,1 @@
+Write a Node.js script that uses the Railway GraphQL API to fetch the list of all environments for a specific Project ID and logs their names.

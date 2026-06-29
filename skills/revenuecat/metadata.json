@@ -1,0 +1,23 @@
+{
+  "name": "revenuecat",
+  "version": "1.0.0",
+  "description": "In-App Subscriptions Made Easy.",
+  "categories": [
+    "Payments",
+    "Finance"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "RevenueCat API": "https://www.revenuecat.com/docs/api-v1"
+  },
+  "relatedSkills": [
+    "Stripe",
+    "Paddle"
+  ]
+}

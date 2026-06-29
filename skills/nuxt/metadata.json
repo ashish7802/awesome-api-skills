@@ -1,0 +1,46 @@
+{
+  "name": "nuxt",
+  "version": "1.0.0",
+  "description": "The Intuitive Vue Framework.",
+  "categories": [
+    "Frontend Frameworks"
+  ],
+  "languages": [
+    "typescript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Nuxt Docs": "https://nuxt.com/docs"
+  },
+  "learningLevel": "advanced",
+  "useCases": [
+    "SSR",
+    "SSG",
+    "SEO"
+  ],
+  "deploymentTargets": [
+    "vercel",
+    "docker",
+    "render"
+  ],
+  "ecosystem": "vue",
+  "maintainers": [
+    "nuxt"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "vue",
+      "type": "depends_on"
+    },
+    {
+      "target": "nextjs",
+      "type": "alternative_to"
+    },
+    {
+      "target": "vercel",
+      "type": "deploys_to"
+    }
+  ]
+}

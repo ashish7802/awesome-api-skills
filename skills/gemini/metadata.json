@@ -13,5 +13,15 @@
   "license": "MIT",
   "links": {
     "API Reference": "https://ai.google.dev/api"
-  }
+  },
+  "relationships": [
+    {
+      "target": "langchain",
+      "type": "integrates_with"
+    },
+    {
+      "target": "llamaindex",
+      "type": "integrates_with"
+    }
+  ]
 }

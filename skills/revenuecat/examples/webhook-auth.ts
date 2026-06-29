@@ -1,0 +1,1 @@
+if (req.headers['authorization'] !== `Bearer ${WEBHOOK_SECRET}`) return res.status(401).send();

@@ -1,0 +1,44 @@
+{
+  "name": "llamaindex",
+  "version": "1.0.0",
+  "description": "Data framework for connecting custom data sources to large language models.",
+  "categories": [
+    "AI",
+    "Developer Tools"
+  ],
+  "languages": [
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "LlamaIndex Docs": "https://docs.llamaindex.ai/"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "RAG",
+    "Data Ingestion"
+  ],
+  "deploymentTargets": [
+    "any"
+  ],
+  "ecosystem": "ai",
+  "maintainers": [
+    "run-llama"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "langchain",
+      "type": "alternative_to"
+    },
+    {
+      "target": "openai",
+      "type": "integrates_with"
+    },
+    {
+      "target": "pinecone",
+      "type": "integrates_with"
+    }
+  ]
+}

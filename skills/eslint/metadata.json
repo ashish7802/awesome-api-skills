@@ -1,0 +1,42 @@
+{
+  "name": "eslint",
+  "version": "1.0.0",
+  "description": "Find and fix problems in your JavaScript code.",
+  "categories": [
+    "Developer Tools"
+  ],
+  "languages": [
+    "javascript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "ESLint Docs": "https://eslint.org/docs/latest/"
+  },
+  "learningLevel": "beginner",
+  "useCases": [
+    "Linting"
+  ],
+  "deploymentTargets": [
+    "any"
+  ],
+  "ecosystem": "javascript",
+  "maintainers": [
+    "eslint"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "biome",
+      "type": "alternative_to"
+    },
+    {
+      "target": "prettier",
+      "type": "works_well_with"
+    },
+    {
+      "target": "nextjs",
+      "type": "works_well_with"
+    }
+  ]
+}

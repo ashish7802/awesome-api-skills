@@ -14,5 +14,11 @@
   "license": "MIT",
   "links": {
     "API Reference": "https://plaid.com/docs/api/"
-  }
+  },
+  "relationships": [
+    {
+      "target": "stripe",
+      "type": "works_well_with"
+    }
+  ]
 }

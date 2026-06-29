@@ -1,0 +1,1 @@
+Write a Node.js function using `@azure/storage-blob` that generates a read-only SAS URL for a specific blob that expires in 1 hour.

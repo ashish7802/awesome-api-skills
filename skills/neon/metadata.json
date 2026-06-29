@@ -1,0 +1,23 @@
+{
+  "name": "neon",
+  "version": "1.0.0",
+  "description": "Serverless, fault-tolerant, branching PostgreSQL.",
+  "categories": [
+    "Databases",
+    "Cloud"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Neon API Docs": "https://neon.tech/docs/manage/api-reference"
+  },
+  "relatedSkills": [
+    "Vercel",
+    "Supabase"
+  ]
+}

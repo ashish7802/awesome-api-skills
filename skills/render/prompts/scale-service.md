@@ -1,0 +1,1 @@
+Write a Python script that uses the Render API to fetch the current number of instances for a Web Service and scales it up by 1.

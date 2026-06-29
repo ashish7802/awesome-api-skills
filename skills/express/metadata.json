@@ -1,0 +1,49 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "Fast, unopinionated, minimalist web framework for Node.js.",
+  "categories": [
+    "Backend Frameworks"
+  ],
+  "languages": [
+    "typescript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Express Docs": "https://expressjs.com/"
+  },
+  "learningLevel": "beginner",
+  "useCases": [
+    "REST APIs",
+    "Microservices"
+  ],
+  "deploymentTargets": [
+    "docker",
+    "render",
+    "railway"
+  ],
+  "ecosystem": "javascript",
+  "maintainers": [
+    "expressjs"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "fastapi",
+      "type": "alternative_to"
+    },
+    {
+      "target": "hono",
+      "type": "alternative_to"
+    },
+    {
+      "target": "nestjs",
+      "type": "alternative_to"
+    },
+    {
+      "target": "redis",
+      "type": "works_well_with"
+    }
+  ]
+}

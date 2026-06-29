@@ -1,0 +1,24 @@
+{
+  "name": "planetscale",
+  "version": "1.0.0",
+  "description": "Serverless MySQL database built on Vitess.",
+  "categories": [
+    "Databases",
+    "Cloud"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "PlanetScale Serverless JS": "https://github.com/planetscale/database-js"
+  },
+  "relatedSkills": [
+    "Vercel",
+    "Cloudflare",
+    "Clerk"
+  ]
+}

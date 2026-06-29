@@ -1,0 +1,23 @@
+{
+  "name": "meilisearch",
+  "version": "1.0.0",
+  "description": "Lightning-fast, open-source search engine.",
+  "categories": [
+    "Search",
+    "Databases"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Meilisearch JS": "https://github.com/meilisearch/meilisearch-js"
+  },
+  "relatedSkills": [
+    "Typesense",
+    "Algolia"
+  ]
+}

@@ -4,7 +4,7 @@ const path = require('path');
 function buildSkill(def) {
   const dir = path.join(__dirname, '..', 'skills', def.name);
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-  
+
   // 1. metadata.json
   const metadata = {
     name: def.name,
@@ -14,7 +14,7 @@ function buildSkill(def) {
     languages: Object.keys(def.examples || {}),
     author: 'Awesome API Skills Team',
     license: 'MIT',
-    links: def.links || {}
+    links: def.links || {},
   };
   fs.writeFileSync(path.join(dir, 'metadata.json'), JSON.stringify(metadata, null, 2));
 
@@ -30,14 +30,17 @@ function buildSkill(def) {
   skillMd += `## Rate Limits\n${def.rateLimits}\n\n`;
   skillMd += `## Best Practices\n${def.bestPractices}\n\n`;
   skillMd += `## Troubleshooting\n${def.troubleshooting}\n\n`;
-  skillMd += `## References\n${Object.entries(def.links || {}).map(([k, v]) => `- [${k}](${v})`).join('\n')}\n`;
+  skillMd += `## References\n${Object.entries(def.links || {})
+    .map(([k, v]) => `- [${k}](${v})`)
+    .join('\n')}\n`;
   fs.writeFileSync(path.join(dir, 'SKILL.md'), skillMd);
 
   // 3. examples/
   const examplesDir = path.join(dir, 'examples');
   if (!fs.existsSync(examplesDir)) fs.mkdirSync(examplesDir);
   for (const [lang, code] of Object.entries(def.examples || {})) {
-    const ext = lang === 'typescript' ? 'ts' : lang === 'python' ? 'py' : lang === 'go' ? 'go' : lang;
+    const ext =
+      lang === 'typescript' ? 'ts' : lang === 'python' ? 'py' : lang === 'go' ? 'go' : lang;
     fs.writeFileSync(path.join(examplesDir, `example.${ext}`), code);
   }
 
@@ -51,7 +54,10 @@ function buildSkill(def) {
   // 5. tests/
   const testsDir = path.join(dir, 'tests');
   if (!fs.existsSync(testsDir)) fs.mkdirSync(testsDir);
-  fs.writeFileSync(path.join(testsDir, 'skill.test.ts'), def.test || `// Basic test for ${def.name}`);
+  fs.writeFileSync(
+    path.join(testsDir, 'skill.test.ts'),
+    def.test || `// Basic test for ${def.name}`,
+  );
 
   console.log(`[SUCCESS] Generated skill: ${def.name}`);
 }

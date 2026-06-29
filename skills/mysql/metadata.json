@@ -1,0 +1,45 @@
+{
+  "name": "mysql",
+  "version": "1.0.0",
+  "description": "The world's most popular open source database.",
+  "categories": [
+    "Databases"
+  ],
+  "languages": [
+    "sql"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "MySQL Docs": "https://dev.mysql.com/doc/"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "Relational Database",
+    "Web Apps"
+  ],
+  "deploymentTargets": [
+    "planetscale",
+    "aws",
+    "gcp"
+  ],
+  "ecosystem": "database",
+  "maintainers": [
+    "oracle"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "planetscale",
+      "type": "extended_by"
+    },
+    {
+      "target": "prisma",
+      "type": "integrates_with"
+    },
+    {
+      "target": "postgresql",
+      "type": "alternative_to"
+    }
+  ]
+}

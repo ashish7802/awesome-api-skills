@@ -1,0 +1,44 @@
+{
+  "name": "grafana",
+  "version": "1.0.0",
+  "description": "The open observability platform.",
+  "categories": [
+    "Observability"
+  ],
+  "languages": [
+    "yaml"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Grafana Docs": "https://grafana.com/docs/"
+  },
+  "learningLevel": "advanced",
+  "useCases": [
+    "Dashboards",
+    "Alerting"
+  ],
+  "deploymentTargets": [
+    "kubernetes",
+    "docker"
+  ],
+  "ecosystem": "devops",
+  "maintainers": [
+    "grafana-labs"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "prometheus",
+      "type": "integrates_with"
+    },
+    {
+      "target": "loki",
+      "type": "integrates_with"
+    },
+    {
+      "target": "datadog",
+      "type": "alternative_to"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Write a Node.js script using the NATS SDK where a service subscribes to 'math.double', listens for requests, doubles the payload, and replies.

@@ -1,0 +1,57 @@
+{
+  "name": "nextjs",
+  "version": "1.0.0",
+  "description": "The React Framework for the Web.",
+  "categories": [
+    "Frontend Frameworks"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "App Router Docs": "https://nextjs.org/docs"
+  },
+  "learningLevel": "advanced",
+  "useCases": [
+    "Full Stack Apps",
+    "SEO",
+    "E-commerce"
+  ],
+  "deploymentTargets": [
+    "vercel",
+    "docker",
+    "cloudflare",
+    "aws-s3"
+  ],
+  "ecosystem": "react",
+  "maintainers": [
+    "vercel"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "react",
+      "type": "depends_on"
+    },
+    {
+      "target": "vercel",
+      "type": "deploys_to"
+    },
+    {
+      "target": "clerk",
+      "type": "authenticates_with"
+    },
+    {
+      "target": "nuxt",
+      "type": "alternative_to"
+    },
+    {
+      "target": "trpc",
+      "type": "works_well_with"
+    }
+  ]
+}

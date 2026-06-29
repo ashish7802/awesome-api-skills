@@ -1,0 +1,46 @@
+{
+  "name": "fastapi",
+  "version": "1.0.0",
+  "description": "High-performance Python web framework.",
+  "categories": [
+    "Backend Frameworks"
+  ],
+  "languages": [
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "FastAPI Docs": "https://fastapi.tiangolo.com/"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "Microservices",
+    "AI Inference",
+    "REST APIs"
+  ],
+  "deploymentTargets": [
+    "docker",
+    "render",
+    "railway"
+  ],
+  "ecosystem": "python",
+  "maintainers": [
+    "tiangolo"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "express",
+      "type": "alternative_to"
+    },
+    {
+      "target": "openai",
+      "type": "integrates_with"
+    },
+    {
+      "target": "docker",
+      "type": "deploys_to"
+    }
+  ]
+}

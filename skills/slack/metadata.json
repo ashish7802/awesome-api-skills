@@ -14,5 +14,15 @@
   "license": "MIT",
   "links": {
     "API Reference": "https://api.slack.com/apis"
-  }
+  },
+  "relationships": [
+    {
+      "target": "github-actions",
+      "type": "integrates_with"
+    },
+    {
+      "target": "sentry",
+      "type": "integrates_with"
+    }
+  ]
 }

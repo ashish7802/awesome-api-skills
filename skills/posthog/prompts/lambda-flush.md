@@ -1,0 +1,1 @@
+Write an AWS Lambda handler in Node.js that captures a PostHog event and explicitly flushes the PostHog client queue before returning the HTTP response.

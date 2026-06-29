@@ -1,0 +1,42 @@
+{
+  "name": "hono",
+  "version": "1.0.0",
+  "description": "Ultrafast web framework for the Edges.",
+  "categories": [
+    "Backend Frameworks"
+  ],
+  "languages": [
+    "typescript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Hono Docs": "https://hono.dev/"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "Edge Computing",
+    "Microservices"
+  ],
+  "deploymentTargets": [
+    "cloudflare",
+    "vercel",
+    "deno",
+    "bun"
+  ],
+  "ecosystem": "javascript",
+  "maintainers": [
+    "honojs"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "express",
+      "type": "alternative_to"
+    },
+    {
+      "target": "cloudflare",
+      "type": "deploys_to"
+    }
+  ]
+}

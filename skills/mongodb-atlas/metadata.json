@@ -14,5 +14,11 @@
   "license": "MIT",
   "links": {
     "API Reference": "https://www.mongodb.com/docs/atlas/reference/api-resources/"
-  }
+  },
+  "relationships": [
+    {
+      "target": "prisma",
+      "type": "integrates_with"
+    }
+  ]
 }

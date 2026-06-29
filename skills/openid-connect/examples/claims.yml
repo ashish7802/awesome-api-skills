@@ -1,0 +1,7 @@
+{
+  "iss": "https://accounts.google.com",
+  "aud": "123456.apps.googleusercontent.com",
+  "sub": "10769150350006150715113082367",
+  "email": "user@example.com",
+  "exp": 1610000000
+}

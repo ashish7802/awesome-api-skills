@@ -1,0 +1,40 @@
+{
+  "name": "deno-deploy",
+  "version": "1.0.0",
+  "description": "Distributed system that runs JavaScript, TypeScript, and WebAssembly at the edge.",
+  "categories": [
+    "Cloud",
+    "Developer Tools"
+  ],
+  "languages": [
+    "typescript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Deno Deploy Docs": "https://deno.com/deploy/docs"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "Edge Computing",
+    "Serverless API"
+  ],
+  "deploymentTargets": [
+    "deno-deploy"
+  ],
+  "ecosystem": "javascript",
+  "maintainers": [
+    "denoland"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "cloudflare-workers",
+      "type": "alternative_to"
+    },
+    {
+      "target": "hono",
+      "type": "works_well_with"
+    }
+  ]
+}

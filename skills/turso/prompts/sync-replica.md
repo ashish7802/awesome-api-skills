@@ -1,0 +1,1 @@
+Write a Node.js script using `@libsql/client` that initializes an embedded replica, forces a sync with the remote Turso database, and queries a 'products' table.

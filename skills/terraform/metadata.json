@@ -1,0 +1,42 @@
+{
+  "name": "terraform",
+  "version": "1.0.0",
+  "description": "Infrastructure as Code.",
+  "categories": [
+    "Developer Tools",
+    "Infrastructure"
+  ],
+  "languages": [
+    "yaml"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Terraform Docs": "https://developer.hashicorp.com/terraform/docs"
+  },
+  "learningLevel": "advanced",
+  "useCases": [
+    "IaC",
+    "Cloud Provisioning"
+  ],
+  "deploymentTargets": [
+    "aws",
+    "gcp",
+    "azure"
+  ],
+  "ecosystem": "devops",
+  "maintainers": [
+    "hashicorp"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "pulumi",
+      "type": "alternative_to"
+    },
+    {
+      "target": "github-actions",
+      "type": "integrates_with"
+    }
+  ]
+}

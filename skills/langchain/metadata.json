@@ -1,0 +1,45 @@
+{
+  "name": "langchain",
+  "version": "1.0.0",
+  "description": "Framework for developing applications powered by language models.",
+  "categories": [
+    "AI",
+    "Developer Tools"
+  ],
+  "languages": [
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "LangChain Docs": "https://python.langchain.com/docs/get_started/introduction"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "RAG",
+    "Agents",
+    "Chains"
+  ],
+  "deploymentTargets": [
+    "any"
+  ],
+  "ecosystem": "ai",
+  "maintainers": [
+    "langchain-ai"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "llamaindex",
+      "type": "alternative_to"
+    },
+    {
+      "target": "openai",
+      "type": "integrates_with"
+    },
+    {
+      "target": "pinecone",
+      "type": "integrates_with"
+    }
+  ]
+}

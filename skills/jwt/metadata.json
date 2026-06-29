@@ -1,0 +1,40 @@
+{
+  "name": "jwt",
+  "version": "1.0.0",
+  "description": "Compact, URL-safe means of representing claims to be transferred between two parties.",
+  "categories": [
+    "Authentication",
+    "Security"
+  ],
+  "languages": [
+    "typescript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "JWT.io": "https://jwt.io/"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "Stateless Auth",
+    "API Tokens"
+  ],
+  "deploymentTargets": [
+    "any"
+  ],
+  "ecosystem": "security",
+  "maintainers": [
+    "ietf"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "oauth2",
+      "type": "works_well_with"
+    },
+    {
+      "target": "redis",
+      "type": "integrates_with"
+    }
+  ]
+}

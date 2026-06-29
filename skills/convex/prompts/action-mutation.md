@@ -1,0 +1,1 @@
+Write a Convex `action` in TypeScript that calls a fictional weather API, and then calls a Convex `mutation` to store the weather result in the database.

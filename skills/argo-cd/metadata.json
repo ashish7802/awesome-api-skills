@@ -1,0 +1,44 @@
+{
+  "name": "argo-cd",
+  "version": "1.0.0",
+  "description": "Declarative continuous deployment for Kubernetes.",
+  "categories": [
+    "CI/CD",
+    "Infrastructure"
+  ],
+  "languages": [
+    "yaml"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Argo CD Docs": "https://argo-cd.readthedocs.io/"
+  },
+  "learningLevel": "advanced",
+  "useCases": [
+    "GitOps",
+    "Kubernetes"
+  ],
+  "deploymentTargets": [
+    "kubernetes"
+  ],
+  "ecosystem": "devops",
+  "maintainers": [
+    "cncf"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "kubernetes",
+      "type": "depends_on"
+    },
+    {
+      "target": "helm",
+      "type": "works_well_with"
+    },
+    {
+      "target": "github-actions",
+      "type": "alternative_to"
+    }
+  ]
+}

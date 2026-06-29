@@ -1,0 +1,1 @@
+try { await client.getContainerClient('missing').create(); } catch(e) { console.error('Creation failed', e.message); }

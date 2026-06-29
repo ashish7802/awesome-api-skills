@@ -1,0 +1,23 @@
+{
+  "name": "resend",
+  "version": "1.0.0",
+  "description": "Email API for developers.",
+  "categories": [
+    "Messaging"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://resend.com/docs/api-reference"
+  },
+  "relatedSkills": [
+    "React-Email",
+    "Stripe",
+    "Clerk"
+  ]
+}

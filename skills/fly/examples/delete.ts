@@ -1,0 +1,1 @@
+const res = await fetch('https://api.machines.dev/v1/apps/{app}/machines/{machineId}', { method: 'DELETE', headers: { Authorization: `Bearer ${TOKEN}` } });

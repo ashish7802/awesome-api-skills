@@ -1,0 +1,24 @@
+{
+  "name": "railway",
+  "version": "1.0.0",
+  "description": "Infrastructure platform to provision infrastructure, develop locally, and deploy.",
+  "categories": [
+    "Cloud",
+    "DevOps"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Railway API": "https://docs.railway.app/reference/public-api"
+  },
+  "relatedSkills": [
+    "Render",
+    "Fly.io",
+    "GitHub"
+  ]
+}

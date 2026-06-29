@@ -1,86 +1,86 @@
 const fs = require('fs');
 
 const colorTokens = {
-  "colors": {
-    "primary": {
-      "hex": "#00F0FF",
-      "rgb": "rgb(0, 240, 255)",
-      "hsl": "hsl(183, 100%, 50%)"
+  colors: {
+    primary: {
+      hex: '#00F0FF',
+      rgb: 'rgb(0, 240, 255)',
+      hsl: 'hsl(183, 100%, 50%)',
     },
-    "secondary": {
-      "hex": "#FF3366",
-      "rgb": "rgb(255, 51, 102)",
-      "hsl": "hsl(345, 100%, 60%)"
+    secondary: {
+      hex: '#FF3366',
+      rgb: 'rgb(255, 51, 102)',
+      hsl: 'hsl(345, 100%, 60%)',
     },
-    "neutral": {
-      "100": "#FFFFFF",
-      "200": "#EAEAEA",
-      "300": "#A0A0A0",
-      "400": "#666666",
-      "500": "#333333",
-      "600": "#1A1A1A",
-      "700": "#111111",
-      "800": "#0A0A0A",
-      "900": "#000000"
+    neutral: {
+      100: '#FFFFFF',
+      200: '#EAEAEA',
+      300: '#A0A0A0',
+      400: '#666666',
+      500: '#333333',
+      600: '#1A1A1A',
+      700: '#111111',
+      800: '#0A0A0A',
+      900: '#000000',
     },
-    "semantic": {
-      "success": "#00E59B",
-      "warning": "#FFB800",
-      "danger": "#FF3B30",
-      "info": "#0088FF"
+    semantic: {
+      success: '#00E59B',
+      warning: '#FFB800',
+      danger: '#FF3B30',
+      info: '#0088FF',
     },
-    "theme": {
-      "dark": {
-        "background": "{colors.neutral.900}",
-        "surface": "{colors.neutral.800}",
-        "border": "{colors.neutral.600}",
-        "text_primary": "{colors.neutral.100}",
-        "text_secondary": "{colors.neutral.300}"
+    theme: {
+      dark: {
+        background: '{colors.neutral.900}',
+        surface: '{colors.neutral.800}',
+        border: '{colors.neutral.600}',
+        text_primary: '{colors.neutral.100}',
+        text_secondary: '{colors.neutral.300}',
       },
-      "light": {
-        "background": "{colors.neutral.100}",
-        "surface": "{colors.neutral.200}",
-        "border": "{colors.neutral.300}",
-        "text_primary": "{colors.neutral.900}",
-        "text_secondary": "{colors.neutral.500}"
-      }
-    }
-  }
+      light: {
+        background: '{colors.neutral.100}',
+        surface: '{colors.neutral.200}',
+        border: '{colors.neutral.300}',
+        text_primary: '{colors.neutral.900}',
+        text_secondary: '{colors.neutral.500}',
+      },
+    },
+  },
 };
 fs.writeFileSync('.design/COLOR_TOKENS.json', JSON.stringify(colorTokens, null, 2));
 
 const designTokens = {
-  "spacing": {
-    "0": "0px",
-    "1": "4px",
-    "2": "8px",
-    "3": "12px",
-    "4": "16px",
-    "5": "24px",
-    "6": "32px",
-    "7": "48px",
-    "8": "64px",
-    "9": "96px"
+  spacing: {
+    0: '0px',
+    1: '4px',
+    2: '8px',
+    3: '12px',
+    4: '16px',
+    5: '24px',
+    6: '32px',
+    7: '48px',
+    8: '64px',
+    9: '96px',
   },
-  "radii": {
-    "none": "0px",
-    "sm": "2px",
-    "md": "4px",
-    "lg": "8px",
-    "full": "9999px"
+  radii: {
+    none: '0px',
+    sm: '2px',
+    md: '4px',
+    lg: '8px',
+    full: '9999px',
   },
-  "elevation": {
-    "none": "none",
-    "sm": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
-    "md": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-    "lg": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)"
+  elevation: {
+    none: 'none',
+    sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+    md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+    lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
   },
-  "grid": {
-    "columns": 12,
-    "gutter": "24px",
-    "margin": "32px",
-    "maxWidth": "1280px"
-  }
+  grid: {
+    columns: 12,
+    gutter: '24px',
+    margin: '32px',
+    maxWidth: '1280px',
+  },
 };
 fs.writeFileSync('.design/DESIGN_TOKENS.json', JSON.stringify(designTokens, null, 2));
 

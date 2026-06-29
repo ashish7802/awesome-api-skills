@@ -1,0 +1,23 @@
+{
+  "name": "render",
+  "version": "1.0.0",
+  "description": "Unified cloud to build and run all your apps and websites.",
+  "categories": [
+    "Cloud",
+    "DevOps"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Render API": "https://docs.render.com/api"
+  },
+  "relatedSkills": [
+    "Railway",
+    "Fly.io"
+  ]
+}

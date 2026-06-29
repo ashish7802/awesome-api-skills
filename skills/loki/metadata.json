@@ -1,0 +1,39 @@
+{
+  "name": "loki",
+  "version": "1.0.0",
+  "description": "Like Prometheus, but for logs.",
+  "categories": [
+    "Observability"
+  ],
+  "languages": [
+    "yaml"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Loki Docs": "https://grafana.com/docs/loki/latest/"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "Log Aggregation"
+  ],
+  "deploymentTargets": [
+    "kubernetes",
+    "docker"
+  ],
+  "ecosystem": "devops",
+  "maintainers": [
+    "grafana-labs"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "grafana",
+      "type": "depends_on"
+    },
+    {
+      "target": "prometheus",
+      "type": "works_well_with"
+    }
+  ]
+}

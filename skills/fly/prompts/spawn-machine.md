@@ -1,0 +1,1 @@
+Write a Node.js function that uses the Fly.io Machines API to spawn a new Machine in the 'ams' region using a specific Docker image, and waits for it to reach the 'started' state.

@@ -14,5 +14,15 @@
   "license": "MIT",
   "links": {
     "API Reference": "https://docs.mapbox.com/api/"
-  }
+  },
+  "relationships": [
+    {
+      "target": "react",
+      "type": "integrates_with"
+    },
+    {
+      "target": "vue",
+      "type": "integrates_with"
+    }
+  ]
 }

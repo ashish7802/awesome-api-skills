@@ -1,0 +1,23 @@
+{
+  "name": "typesense",
+  "version": "1.0.0",
+  "description": "Fast, typo-tolerant open-source search engine.",
+  "categories": [
+    "Search",
+    "Databases"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Typesense API": "https://typesense.org/docs/"
+  },
+  "relatedSkills": [
+    "Meilisearch",
+    "Algolia"
+  ]
+}

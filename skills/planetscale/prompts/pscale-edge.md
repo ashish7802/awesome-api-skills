@@ -1,0 +1,1 @@
+Write a Vercel Edge function in TypeScript that connects to PlanetScale using the serverless driver, fetches a user by ID from the request params, and returns it as JSON.

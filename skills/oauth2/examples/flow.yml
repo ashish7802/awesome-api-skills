@@ -1,0 +1,5 @@
+1. App requests Auth Code (redirects to Provider)
+2. User logs in, Provider redirects back with Auth Code
+3. App POSTs Auth Code + Client Secret to Provider
+4. Provider returns Access Token
+5. App uses Access Token to call API

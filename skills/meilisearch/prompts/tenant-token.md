@@ -1,0 +1,1 @@
+Write a Node.js function using the Meilisearch SDK to generate a Tenant Token that restricts search queries to documents where `group_id` equals 42.

@@ -1,0 +1,24 @@
+{
+  "name": "pinecone",
+  "version": "1.0.0",
+  "description": "Vector database for machine learning apps.",
+  "categories": [
+    "Databases",
+    "AI"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://docs.pinecone.io/reference/api/introduction"
+  },
+  "relatedSkills": [
+    "OpenAI",
+    "Anthropic",
+    "Upstash"
+  ]
+}

@@ -1,0 +1,1 @@
+const res = await fetch('https://api.digitalocean.com/v2/droplets', { method: 'POST', headers: { Authorization: `Bearer ${TOKEN}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ name: 'web-1', region: 'nyc3', size: 's-1vcpu-1gb', image: 'ubuntu-22-04-x64' }) });

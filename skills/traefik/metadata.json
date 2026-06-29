@@ -1,0 +1,49 @@
+{
+  "name": "traefik",
+  "version": "1.0.0",
+  "description": "The Cloud Native Application Proxy.",
+  "categories": [
+    "Infrastructure",
+    "Developer Tools"
+  ],
+  "languages": [
+    "yaml"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Traefik Docs": "https://doc.traefik.io/traefik/"
+  },
+  "learningLevel": "intermediate",
+  "useCases": [
+    "Ingress Controller",
+    "Reverse Proxy"
+  ],
+  "deploymentTargets": [
+    "kubernetes",
+    "docker"
+  ],
+  "ecosystem": "devops",
+  "maintainers": [
+    "traefik"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "kubernetes",
+      "type": "integrates_with"
+    },
+    {
+      "target": "docker",
+      "type": "integrates_with"
+    },
+    {
+      "target": "nginx",
+      "type": "alternative_to"
+    },
+    {
+      "target": "caddy",
+      "type": "alternative_to"
+    }
+  ]
+}

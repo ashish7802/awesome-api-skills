@@ -1,0 +1,23 @@
+{
+  "name": "nats",
+  "version": "1.0.0",
+  "description": "Connective technology for adaptive edge and distributed systems.",
+  "categories": [
+    "Messaging",
+    "DevOps"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "NATS Documentation": "https://docs.nats.io/"
+  },
+  "relatedSkills": [
+    "Kafka",
+    "Redis"
+  ]
+}

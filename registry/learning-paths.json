@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Modern React Fullstack",
+    "path": ["react", "nextjs", "vercel", "clerk", "neon"]
+  },
+  {
+    "name": "Kubernetes DevSecOps",
+    "path": ["docker", "kubernetes", "helm", "argo-cd", "prometheus", "grafana"]
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "name": "postgresql",
+  "version": "1.0.0",
+  "description": "The world's most advanced open source relational database.",
+  "categories": [
+    "Databases"
+  ],
+  "languages": [
+    "sql"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "PostgreSQL Docs": "https://www.postgresql.org/docs/"
+  },
+  "learningLevel": "advanced",
+  "useCases": [
+    "Relational Database",
+    "Data Warehouse"
+  ],
+  "deploymentTargets": [
+    "neon",
+    "aws",
+    "gcp"
+  ],
+  "ecosystem": "database",
+  "maintainers": [
+    "postgresql"
+  ],
+  "stability": "production",
+  "relationships": [
+    {
+      "target": "neon",
+      "type": "extended_by"
+    },
+    {
+      "target": "prisma",
+      "type": "integrates_with"
+    },
+    {
+      "target": "drizzle",
+      "type": "integrates_with"
+    },
+    {
+      "target": "mysql",
+      "type": "alternative_to"
+    }
+  ]
+}

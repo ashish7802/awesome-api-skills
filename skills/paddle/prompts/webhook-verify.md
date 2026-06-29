@@ -1,0 +1,1 @@
+Write an Express route that receives a Paddle webhook, uses the official Node SDK to verify the signature, and updates a user's status in the database.

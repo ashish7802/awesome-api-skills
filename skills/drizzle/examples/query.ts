@@ -1,0 +1,1 @@
+const allUsers = await db.select().from(users).where(eq(users.email, 'test@example.com'));

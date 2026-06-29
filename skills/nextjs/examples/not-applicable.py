@@ -1,0 +1,1 @@
+// Next.js is strictly JavaScript/TypeScript

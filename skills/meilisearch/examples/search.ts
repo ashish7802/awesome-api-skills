@@ -1,0 +1,1 @@
+const res = await client.index('movies').search('batmn', { attributesToHighlight: ['title'] });

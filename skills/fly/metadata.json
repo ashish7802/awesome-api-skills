@@ -1,0 +1,23 @@
+{
+  "name": "fly",
+  "version": "1.0.0",
+  "description": "Deploy app servers close to your users.",
+  "categories": [
+    "Cloud",
+    "DevOps"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "Machines API Docs": "https://fly.io/docs/machines/api/"
+  },
+  "relatedSkills": [
+    "Turso",
+    "Render"
+  ]
+}

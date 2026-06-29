@@ -3,7 +3,7 @@ import { WorkspaceManager } from '../services/workspace.js';
 import { RegistryManager } from '../services/registry.js';
 import { ValidationManager } from '../services/validation.js';
 import { GenerationManager } from '../services/generation.js';
-import { SkillMetadata } from '@awesome-api-skills/shared-types';
+import { SkillMetadata, License, AuthenticationType } from '@awesome-api-skills/shared-types';
 
 export class Workflows {
   constructor(private container: Container) {}
@@ -20,11 +20,11 @@ export class Workflows {
       name: 'test',
       description: '',
       version: '1.0',
-      license: 'MIT',
+      license: License.MIT,
       categories: [],
       tags: [],
       sdkLanguages: [],
-      authType: '',
+      authType: AuthenticationType.None,
       supportedAgents: [],
     };
 
@@ -43,11 +43,11 @@ export class Workflows {
       name: 'test',
       description: '',
       version: '1.0',
-      license: 'MIT',
+      license: License.MIT,
       categories: [],
       tags: [],
       sdkLanguages: [],
-      authType: '',
+      authType: AuthenticationType.None,
       supportedAgents: [],
     };
 

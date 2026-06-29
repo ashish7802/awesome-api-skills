@@ -1,0 +1,21 @@
+{
+  "name": "posthog",
+  "version": "1.0.0",
+  "description": "Open-source product analytics, session recording, and feature flags.",
+  "categories": [
+    "Analytics"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "PostHog Node SDK": "https://posthog.com/docs/libraries/node"
+  },
+  "relatedSkills": [
+    "Mixpanel"
+  ]
+}
