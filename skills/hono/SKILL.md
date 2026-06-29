@@ -39,3 +39,20 @@ Hono includes built-in middleware for CSRF, CORS, and Basic Auth. When deploying
 
 ## References
 - [Hono Docs](https://hono.dev/)
+
+## Why use this skill
+Use this when your agent works with **hono** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`express`](../express/SKILL.md) — alternative to
+- [`cloudflare`](../cloudflare/SKILL.md) — deploys to

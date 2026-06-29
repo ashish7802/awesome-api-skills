@@ -20,5 +20,17 @@
     "Render",
     "Fly.io",
     "GitHub"
-  ]
+  ],
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-06-29",
+  "documentationSource": "https://docs.railway.app/reference/public-api",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0"
 }

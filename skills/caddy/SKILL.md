@@ -45,3 +45,20 @@ Caddy is memory-safe since it's written in Go, eliminating entire classes of buf
 
 ## References
 - [Caddy Docs](https://caddyserver.com/docs/)
+
+## Why use this skill
+Use this when your agent works with **caddy** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Hardcoding region or account IDs
+- Missing IAM least-privilege on cloud resources
+- Confusing similar service names (e.g. S3 vs CloudFront)
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`nginx`](../nginx/SKILL.md) — alternative to
+- [`docker`](../docker/SKILL.md) — works well with

@@ -46,3 +46,21 @@ By default, the Ollama API binds to `127.0.0.1`. If you expose it to a local net
 
 ## References
 - [Ollama Docs](https://github.com/ollama/ollama)
+
+## Why use this skill
+Use this when your agent works with **ollama** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using deprecated model IDs or wrong API endpoints
+- Confusing chat vs completions vs embeddings APIs
+- Omitting rate-limit and token budget handling
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`vllm`](../vllm/SKILL.md) — alternative to
+- [`langchain`](../langchain/SKILL.md) — integrates with
+- [`openai`](../openai/SKILL.md) — alternative to

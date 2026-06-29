@@ -36,3 +36,20 @@ If CORS errors occur when using SAS URLs in the browser, ensure CORS rules are e
 ## Related Skills
 - [AWS S3](/skills/aws s3)
 - [Google Cloud Storage](/skills/google cloud storage)
+
+## Why use this skill
+Use this when your agent works with **azure-blob-storage** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`aws s3`](../aws s3/SKILL.md) — related to
+- [`google cloud storage`](../google cloud storage/SKILL.md) — related to

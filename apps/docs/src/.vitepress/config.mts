@@ -2,11 +2,9 @@ import { defineConfig } from 'vitepress';
 
 export default defineConfig({
   title: 'Awesome API Skills',
-  description: 'The universal standard for integrating APIs into AI agents.',
+  description: 'Structured API skills for AI coding agents.',
   cleanUrls: true,
-  sitemap: {
-    hostname: 'https://awesome.api',
-  },
+  ignoreDeadLinks: true,
   head: [
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'Awesome API Skills' }],
@@ -17,13 +15,9 @@ export default defineConfig({
     logo: '/logo.svg',
     nav: [
       { text: 'Skills', link: '/skills/' },
+      { text: 'Graph', link: '/graph' },
       { text: 'CLI', link: '/docs/cli' },
-      { text: 'SDK', link: '/docs/sdk' },
-      { text: 'Registry', link: '/docs/registry' },
-      { text: 'Validator', link: '/docs/validator' },
-      { text: 'Generator', link: '/docs/generator' },
-      { text: 'Specification', link: '/docs/specification' },
-      { text: 'Playground', link: '/playground' },
+      { text: 'Spec', link: '/docs/specification' },
     ],
     search: {
       provider: 'local',
@@ -34,34 +28,36 @@ export default defineConfig({
     sidebar: {
       '/skills/': [
         {
-          text: 'Skills Collection',
+          text: 'Discover',
           items: [
-            { text: 'Overview', link: '/skills/' },
-            { text: 'Providers', link: '/skills/providers' },
+            { text: 'All skills', link: '/skills/' },
             { text: 'Categories', link: '/skills/categories' },
-            { text: 'Languages', link: '/skills/languages' },
+          ],
+        },
+        {
+          text: 'Popular',
+          items: [
+            { text: 'stripe', link: '/skills/stripe' },
+            { text: 'nextjs', link: '/skills/nextjs' },
+            { text: 'postgresql', link: '/skills/postgresql' },
+            { text: 'openai', link: '/skills/openai' },
+            { text: 'vercel', link: '/skills/vercel' },
           ],
         },
       ],
       '/docs/': [
         {
-          text: 'Core Platform',
+          text: 'Guide',
           items: [
             { text: 'Overview', link: '/docs/overview' },
             { text: 'CLI', link: '/docs/cli' },
-            { text: 'SDK', link: '/docs/sdk' },
-            { text: 'Registry', link: '/docs/registry' },
-            { text: 'Validator', link: '/docs/validator' },
-            { text: 'Generator', link: '/docs/generator' },
+            { text: 'Graph', link: '/graph' },
+            { text: 'Specification', link: '/docs/specification' },
           ],
-        },
-        {
-          text: 'Specification',
-          items: [{ text: 'v1.0.0', link: '/docs/specification' }],
         },
       ],
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/awesome-api-skills' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/ashish7802/awesome-api-skills' }],
   },
   vite: {
     server: {

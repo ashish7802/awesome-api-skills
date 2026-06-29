@@ -45,3 +45,20 @@ SQLite files should never be placed in a public-facing web directory. Secure the
 
 ## References
 - [SQLite Docs](https://www.sqlite.org/docs.html)
+
+## Why use this skill
+Use this when your agent works with **sqlite** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Inventing column names or schema fields
+- Using deprecated driver methods or wrong connection strings
+- Omitting connection pooling or transaction boundaries
+
+## Production checklist
+- [ ] Migrations version-controlled and applied via CI
+- [ ] Connection limits and pooling configured
+- [ ] Backups and restore procedure documented
+
+## Related skills
+- [`turso`](../turso/SKILL.md) — extended by
+- [`drizzle`](../drizzle/SKILL.md) — integrates with

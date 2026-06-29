@@ -42,3 +42,21 @@ Fetch the provider's JWKS (JSON Web Key Set) dynamically to verify the ID token'
 
 ## References
 - [OIDC](https://openid.net/connect/)
+
+## Why use this skill
+Use this when your agent works with **openid-connect** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`oauth2`](../oauth2/SKILL.md) — depends on
+- [`jwt`](../jwt/SKILL.md) — integrates with
+- [`github-actions`](../github-actions/SKILL.md) — works well with

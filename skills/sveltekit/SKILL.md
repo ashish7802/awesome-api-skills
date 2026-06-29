@@ -39,3 +39,20 @@ Form actions automatically protect against CSRF attacks. Do not disable this pro
 
 ## References
 - [SvelteKit Docs](https://kit.svelte.dev/docs)
+
+## Why use this skill
+Use this when your agent works with **sveltekit** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`nextjs`](../nextjs/SKILL.md) — alternative to
+- [`vercel`](../vercel/SKILL.md) — deploys to

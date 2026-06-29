@@ -37,11 +37,17 @@ ${cmd.examples.map((ex) => `  $ ${ex}`).join('\n')}
     const allNames = registry.getRegisteredNames();
     const helpText = `
 ${pc.bold('Awesome API Skills CLI')}
+${pc.dim('Find and validate API skills for your agent')}
 
 ${pc.bold('Usage:')}
   awesome-api <command> [options]
 
-${pc.bold('Available Commands:')}
+${pc.bold('Start here:')}
+  ${pc.cyan('search')} ${pc.dim('<term>')}   Find a skill (stripe, postgres, auth…)
+  ${pc.cyan('doctor')}              Check workspace & next steps
+  ${pc.cyan('validate')}            Validate skill schemas
+
+${pc.bold('All commands:')}
 ${allNames.map((n) => `  ${pc.cyan(n.padEnd(15))}`).join('\n')}
 
 ${pc.bold('Global Options:')}

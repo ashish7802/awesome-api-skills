@@ -46,3 +46,22 @@ Traefik supports automatic Let's Encrypt generation. When running multiple Traef
 
 ## References
 - [Traefik Docs](https://doc.traefik.io/traefik/)
+
+## Why use this skill
+Use this when your agent works with **traefik** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Hardcoding region or account IDs
+- Missing IAM least-privilege on cloud resources
+- Confusing similar service names (e.g. S3 vs CloudFront)
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`kubernetes`](../kubernetes/SKILL.md) — integrates with
+- [`docker`](../docker/SKILL.md) — integrates with
+- [`nginx`](../nginx/SKILL.md) — alternative to
+- [`caddy`](../caddy/SKILL.md) — alternative to

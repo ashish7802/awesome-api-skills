@@ -2,64 +2,37 @@
 layout: home
 
 hero:
-  name: 'Awesome API Skills'
-  text: 'Universal Standard for AI Agents'
-  tagline: 'The production-grade ecosystem for defining, validating, and sharing API skills across any LLM or Agent architecture.'
+  name: 'Stop guessing APIs'
+  text: 'Skills your AI agent can trust'
+  tagline: '100 structured skill packages — pitfalls, checklists, and a knowledge graph. No hallucinated endpoints.'
   actions:
     - theme: brand
-      text: Get Started
-      link: /docs/cli
+      text: Browse skills
+      link: /skills/
     - theme: alt
-      text: View Specification
-      link: /docs/specification
+      text: See the graph
+      link: /graph
 
 features:
-  - title: Model Agnostic
-    details: Works with OpenAI, Anthropic, Gemini, local models, and any future architecture.
-  - title: Type Safe Validation
-    details: Instant schema validation ensures zero hallucinated parameter types.
-  - title: Decentralized Registry
-    details: Publish to the global registry or host an enterprise-grade private registry.
+  - title: AI pitfalls built in
+    details: Every skill documents what LLMs get wrong — wrong webhook names, deprecated SDKs, missing verification.
+  - title: Recommended stacks
+    details: Knowledge graph shows prerequisites, alternatives, and learning paths — Next.js + Prisma + Postgres in one view.
+  - title: Agent-agnostic
+    details: Markdown skills for Cursor, Claude Code, Cline, Continue. Copy a folder into your project and go.
 ---
 
-<div class="stats-container">
-  <h2>Live Statistics</h2>
-  <div class="stats-grid">
-    <div class="stat-card">
-      <div class="stat-value">1,010</div>
-      <div class="stat-label">Total Skills</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-value">3</div>
-      <div class="stat-label">Supported Agents</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-value">6</div>
-      <div class="stat-label">Registries Configured</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-value">< 10ms</div>
-      <div class="stat-label">Avg CLI Resolution</div>
-    </div>
-  </div>
-</div>
+## Why not paste API docs?
 
-<div class="installation">
-  <h2>Quick Start</h2>
-  <div class="language-bash">
-    <button title="Copy Code" class="copy"></button>
-    <span class="lang">bash</span>
-    <pre><code>npm install -g @awesome-api-skills/cli
-awesome-api init
-awesome-api search stripe</code></pre>
-  </div>
+Pasted docs are unstructured, untrusted, and re-pasted every session. A skill is **curated**, **validated**, and **relationship-aware** — your agent reads one file with pitfalls and production checks included.
+
+<div class="home-cta">
+
+[Browse 100 skills →](/skills/) · [Explore the graph →](/graph)
+
 </div>
 
 <style>
-.stats-container { margin: 60px 0; text-align: center; }
-.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px; }
-.stat-card { padding: 24px; border: 1px solid var(--vp-c-divider); border-radius: 8px; background: var(--vp-c-bg-soft); }
-.stat-value { font-size: 32px; font-weight: 800; color: var(--vp-c-brand-1); }
-.stat-label { font-size: 14px; color: var(--vp-c-text-2); margin-top: 8px; font-weight: 500; }
-.installation { margin: 60px 0; max-width: 600px; margin-inline: auto; text-align: center; }
+.home-cta { text-align: center; margin: 48px 0; font-size: 18px; }
+.home-cta a { font-weight: 600; }
 </style>

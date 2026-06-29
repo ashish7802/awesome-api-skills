@@ -1,3 +1,3 @@
-# REGISTRY Documentation
+# Registry
 
-Welcome to the registry documentation. This is auto-generated reference material.
+Graph and index JSON in `registry/`. [View graph →](/graph)

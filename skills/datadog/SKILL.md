@@ -39,3 +39,19 @@ If metrics don't appear, ensure the UNIX timestamp attached to your points is in
 
 ## References
 - [API Reference](https://docs.datadoghq.com/api/)
+
+## Why use this skill
+Use this when your agent works with **datadog** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- No graph relationships yet — see the knowledge graph in the docs site.

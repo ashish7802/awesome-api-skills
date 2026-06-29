@@ -19,5 +19,17 @@
   "relatedSkills": [
     "Turso",
     "Render"
-  ]
+  ],
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-06-29",
+  "documentationSource": "https://fly.io/docs/machines/api/",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0"
 }

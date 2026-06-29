@@ -39,3 +39,20 @@ Do not inject dynamic, unbounded user data (like session IDs or IPs) as Loki Lab
 
 ## References
 - [Loki Docs](https://grafana.com/docs/loki/latest/)
+
+## Why use this skill
+Use this when your agent works with **loki** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`grafana`](../grafana/SKILL.md) — depends on
+- [`prometheus`](../prometheus/SKILL.md) — works well with

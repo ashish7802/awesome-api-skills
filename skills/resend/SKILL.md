@@ -37,3 +37,21 @@ If emails mysteriously drop, check the Resend Dashboard 'Logs' tab. Statuses lik
 - [React-Email](/skills/react-email)
 - [Stripe](/skills/stripe)
 - [Clerk](/skills/clerk)
+
+## Why use this skill
+Use this when your agent works with **resend** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`react-email`](../react-email/SKILL.md) — related to
+- [`stripe`](../stripe/SKILL.md) — related to
+- [`clerk`](../clerk/SKILL.md) — related to

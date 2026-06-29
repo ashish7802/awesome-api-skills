@@ -36,3 +36,20 @@ If SSH fails after creating a Droplet via API, ensure you passed the correct `ss
 ## Related Skills
 - [AWS S3](/skills/aws s3)
 - [Render](/skills/render)
+
+## Why use this skill
+Use this when your agent works with **digitalocean** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`aws s3`](../aws s3/SKILL.md) — related to
+- [`render`](../render/SKILL.md) — related to

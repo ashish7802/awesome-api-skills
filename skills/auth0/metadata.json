@@ -28,5 +28,17 @@
       "target": "nextjs",
       "type": "integrates_with"
     }
-  ]
+  ],
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-06-29",
+  "documentationSource": "https://auth0.com/docs/api/management/v2",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0"
 }

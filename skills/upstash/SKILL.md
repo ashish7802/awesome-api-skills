@@ -37,3 +37,21 @@ If data disappears unexpectedly, ensure you are not hitting the memory limit of 
 - [Vercel](/skills/vercel)
 - [Cloudflare](/skills/cloudflare)
 - [OpenAI](/skills/openai)
+
+## Why use this skill
+Use this when your agent works with **upstash** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Inventing column names or schema fields
+- Using deprecated driver methods or wrong connection strings
+- Omitting connection pooling or transaction boundaries
+
+## Production checklist
+- [ ] Migrations version-controlled and applied via CI
+- [ ] Connection limits and pooling configured
+- [ ] Backups and restore procedure documented
+
+## Related skills
+- [`vercel`](../vercel/SKILL.md) — related to
+- [`cloudflare`](../cloudflare/SKILL.md) — related to
+- [`openai`](../openai/SKILL.md) — related to

@@ -39,3 +39,20 @@ If your app can't post to a channel, ensure you have invited the bot to the chan
 
 ## References
 - [API Reference](https://api.slack.com/apis)
+
+## Why use this skill
+Use this when your agent works with **slack** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`github-actions`](../github-actions/SKILL.md) — integrates with
+- [`sentry`](../sentry/SKILL.md) — integrates with

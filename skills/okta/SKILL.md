@@ -39,3 +39,20 @@ If a user is locked out, ensure you are calling the `/api/v1/users/{id}/lifecycl
 
 ## References
 - [API Reference](https://developer.okta.com/docs/reference/)
+
+## Why use this skill
+Use this when your agent works with **okta** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`oauth2`](../oauth2/SKILL.md) — implements
+- [`openid-connect`](../openid-connect/SKILL.md) — implements

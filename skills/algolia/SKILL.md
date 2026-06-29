@@ -39,3 +39,19 @@ If search results are inaccurate, check the index's 'Searchable Attributes' conf
 
 ## References
 - [API Reference](https://www.algolia.com/doc/api-reference/)
+
+## Why use this skill
+Use this when your agent works with **algolia** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- No graph relationships yet — see the knowledge graph in the docs site.

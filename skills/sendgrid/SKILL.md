@@ -38,3 +38,19 @@ If emails aren't arriving, check the Activity Feed in the SendGrid dashboard for
 
 ## References
 - [API Reference](https://docs.sendgrid.com/api-reference)
+
+## Why use this skill
+Use this when your agent works with **sendgrid** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`twilio`](../twilio/SKILL.md) — related to

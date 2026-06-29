@@ -39,3 +39,21 @@ If M2M token generation fails, verify that your Machine-to-Machine application i
 
 ## References
 - [API Reference](https://auth0.com/docs/api/management/v2)
+
+## Why use this skill
+Use this when your agent works with **auth0** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`oauth2`](../oauth2/SKILL.md) — implements
+- [`openid-connect`](../openid-connect/SKILL.md) — implements
+- [`nextjs`](../nextjs/SKILL.md) — integrates with

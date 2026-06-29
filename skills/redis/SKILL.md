@@ -39,3 +39,19 @@ If memory fills up, verify your eviction policy (`maxmemory-policy`) is set to `
 
 ## References
 - [API Reference](https://redis.io/commands/)
+
+## Why use this skill
+Use this when your agent works with **redis** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Inventing column names or schema fields
+- Using deprecated driver methods or wrong connection strings
+- Omitting connection pooling or transaction boundaries
+
+## Production checklist
+- [ ] Migrations version-controlled and applied via CI
+- [ ] Connection limits and pooling configured
+- [ ] Backups and restore procedure documented
+
+## Related skills
+- No graph relationships yet — see the knowledge graph in the docs site.

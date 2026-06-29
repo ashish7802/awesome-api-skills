@@ -40,3 +40,19 @@ If transactions are missing, ensure you are using the `/transactions/sync` endpo
 
 ## References
 - [API Reference](https://plaid.com/docs/api/)
+
+## Why use this skill
+Use this when your agent works with **plaid** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Inventing webhook event names not in the vendor catalog
+- Using secret keys in client-side or browser code
+- Skipping signature verification on webhook payloads
+
+## Production checklist
+- [ ] Webhook signatures verified on raw request body
+- [ ] Idempotency keys on mutating requests
+- [ ] Test and live keys isolated by environment
+
+## Related skills
+- [`stripe`](../stripe/SKILL.md) — works well with

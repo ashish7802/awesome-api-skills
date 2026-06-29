@@ -39,3 +39,19 @@ If initialized multiple times, the SDK throws a 'default app already exists' err
 
 ## References
 - [API Reference](https://firebase.google.com/docs/admin/setup)
+
+## Why use this skill
+Use this when your agent works with **firebase** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Inventing column names or schema fields
+- Using deprecated driver methods or wrong connection strings
+- Omitting connection pooling or transaction boundaries
+
+## Production checklist
+- [ ] Migrations version-controlled and applied via CI
+- [ ] Connection limits and pooling configured
+- [ ] Backups and restore procedure documented
+
+## Related skills
+- No graph relationships yet — see the knowledge graph in the docs site.

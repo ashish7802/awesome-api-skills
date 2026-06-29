@@ -46,3 +46,20 @@ When exposing Redis via Upstash or external providers, always enforce TLS and st
 
 ## References
 - [Redis Streams](https://redis.io/docs/data-types/streams/)
+
+## Why use this skill
+Use this when your agent works with **redis-streams** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Inventing column names or schema fields
+- Using deprecated driver methods or wrong connection strings
+- Omitting connection pooling or transaction boundaries
+
+## Production checklist
+- [ ] Migrations version-controlled and applied via CI
+- [ ] Connection limits and pooling configured
+- [ ] Backups and restore procedure documented
+
+## Related skills
+- [`redis`](../redis/SKILL.md) — depends on
+- [`kafka`](../kafka/SKILL.md) — alternative to

@@ -39,3 +39,20 @@ Jaeger's UI has no built-in authentication mechanism. When deploying to Kubernet
 
 ## References
 - [Jaeger Docs](https://www.jaegertracing.io/docs/)
+
+## Why use this skill
+Use this when your agent works with **jaeger** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`opentelemetry`](../opentelemetry/SKILL.md) — depends on
+- [`grafana`](../grafana/SKILL.md) — integrates with

@@ -39,3 +39,21 @@ Utilize NestJS Guards (`@Injectable() implements CanActivate`) to handle Authori
 
 ## References
 - [NestJS Docs](https://docs.nestjs.com/)
+
+## Why use this skill
+Use this when your agent works with **nestjs** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`express`](../express/SKILL.md) — extended by
+- [`docker`](../docker/SKILL.md) — deploys to
+- [`kubernetes`](../kubernetes/SKILL.md) — deploys to

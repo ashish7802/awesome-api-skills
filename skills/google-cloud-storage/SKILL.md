@@ -36,3 +36,20 @@ If Signed URLs fail with 'SignatureDoesNotMatch', ensure the `Content-Type` head
 ## Related Skills
 - [AWS S3](/skills/aws s3)
 - [Firebase](/skills/firebase)
+
+## Why use this skill
+Use this when your agent works with **google-cloud-storage** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`aws s3`](../aws s3/SKILL.md) — related to
+- [`firebase`](../firebase/SKILL.md) — related to

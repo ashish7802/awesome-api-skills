@@ -44,3 +44,22 @@ Never store the Client Secret in a frontend application or mobile app. State par
 
 ## References
 - [OAuth.net](https://oauth.net/2/)
+
+## Why use this skill
+Use this when your agent works with **oauth2** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`openid-connect`](../openid-connect/SKILL.md) — extended by
+- [`jwt`](../jwt/SKILL.md) — works well with
+- [`clerk`](../clerk/SKILL.md) — implemented by
+- [`better-auth`](../better-auth/SKILL.md) — implemented by

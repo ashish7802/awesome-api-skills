@@ -44,3 +44,20 @@ Never cache tasks that inject sensitive secrets into build artifacts unless you 
 
 ## References
 - [TurboRepo Docs](https://turbo.build/repo/docs)
+
+## Why use this skill
+Use this when your agent works with **turborepo** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Referencing CLI flags or config keys that do not exist
+- Using outdated major versions of tools
+- Skipping lockfile or version pinning in examples
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`nextjs`](../nextjs/SKILL.md) — works well with
+- [`github-actions`](../github-actions/SKILL.md) — integrates with

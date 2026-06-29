@@ -46,3 +46,20 @@ vLLM does not include production authentication mechanisms. You must place it be
 
 ## References
 - [vLLM Docs](https://vllm.readthedocs.io/)
+
+## Why use this skill
+Use this when your agent works with **vllm** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using deprecated model IDs or wrong API endpoints
+- Confusing chat vs completions vs embeddings APIs
+- Omitting rate-limit and token budget handling
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`ollama`](../ollama/SKILL.md) — alternative to
+- [`langchain`](../langchain/SKILL.md) — integrates with

@@ -46,3 +46,20 @@ Never accept tokens where the algorithm (`alg`) is set to `none`. Attackers use 
 
 ## References
 - [JWT.io](https://jwt.io/)
+
+## Why use this skill
+Use this when your agent works with **jwt** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`oauth2`](../oauth2/SKILL.md) — works well with
+- [`redis`](../redis/SKILL.md) — integrates with

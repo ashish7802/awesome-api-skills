@@ -39,3 +39,20 @@ Do not store plaintext passwords in `values.yaml` files committed to Git. Use to
 
 ## References
 - [Helm Docs](https://helm.sh/docs/)
+
+## Why use this skill
+Use this when your agent works with **helm** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Referencing CLI flags or config keys that do not exist
+- Using outdated major versions of tools
+- Skipping lockfile or version pinning in examples
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`kubernetes`](../kubernetes/SKILL.md) — depends on
+- [`argo-cd`](../argo-cd/SKILL.md) — integrates with

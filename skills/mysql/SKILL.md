@@ -48,3 +48,21 @@ Disable `local_infile` to prevent arbitrary file reading vulnerabilities. Ensure
 
 ## References
 - [MySQL Docs](https://dev.mysql.com/doc/)
+
+## Why use this skill
+Use this when your agent works with **mysql** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Inventing column names or schema fields
+- Using deprecated driver methods or wrong connection strings
+- Omitting connection pooling or transaction boundaries
+
+## Production checklist
+- [ ] Migrations version-controlled and applied via CI
+- [ ] Connection limits and pooling configured
+- [ ] Backups and restore procedure documented
+
+## Related skills
+- [`planetscale`](../planetscale/SKILL.md) — extended by
+- [`prisma`](../prisma/SKILL.md) — integrates with
+- [`postgresql`](../postgresql/SKILL.md) — alternative to

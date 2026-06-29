@@ -42,3 +42,21 @@ Argo CD requires extremely high privileges in the cluster. Ensure its UI/API is 
 
 ## References
 - [Argo CD Docs](https://argo-cd.readthedocs.io/)
+
+## Why use this skill
+Use this when your agent works with **argo-cd** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Hardcoding region or account IDs
+- Missing IAM least-privilege on cloud resources
+- Confusing similar service names (e.g. S3 vs CloudFront)
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`kubernetes`](../kubernetes/SKILL.md) — depends on
+- [`helm`](../helm/SKILL.md) — works well with
+- [`github-actions`](../github-actions/SKILL.md) — alternative to

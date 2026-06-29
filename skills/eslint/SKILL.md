@@ -47,3 +47,21 @@ Use `eslint-plugin-security` to detect potential vulnerabilities like Regex Deni
 
 ## References
 - [ESLint Docs](https://eslint.org/docs/latest/)
+
+## Why use this skill
+Use this when your agent works with **eslint** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Referencing CLI flags or config keys that do not exist
+- Using outdated major versions of tools
+- Skipping lockfile or version pinning in examples
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`biome`](../biome/SKILL.md) — alternative to
+- [`prettier`](../prettier/SKILL.md) — works well with
+- [`nextjs`](../nextjs/SKILL.md) — works well with

@@ -37,3 +37,20 @@ Prometheus scrape endpoints (`/metrics`) often contain sensitive infrastructure 
 
 ## References
 - [Prometheus Docs](https://prometheus.io/docs/introduction/overview/)
+
+## Why use this skill
+Use this when your agent works with **prometheus** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`grafana`](../grafana/SKILL.md) — works well with
+- [`kubernetes`](../kubernetes/SKILL.md) — monitors

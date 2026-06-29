@@ -36,3 +36,20 @@ If consumers aren't receiving messages in a JetStream, verify that the subject t
 ## Related Skills
 - [Kafka](/skills/kafka)
 - [Redis](/skills/redis)
+
+## Why use this skill
+Use this when your agent works with **nats** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`kafka`](../kafka/SKILL.md) — related to
+- [`redis`](../redis/SKILL.md) — related to

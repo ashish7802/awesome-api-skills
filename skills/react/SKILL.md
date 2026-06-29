@@ -38,3 +38,21 @@ React natively escapes string variables to prevent XSS. However, using `dangerou
 
 ## References
 - [React.dev](https://react.dev/)
+
+## Why use this skill
+Use this when your agent works with **react** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`nextjs`](../nextjs/SKILL.md) — extended by
+- [`vue`](../vue/SKILL.md) — alternative to
+- [`sveltekit`](../sveltekit/SKILL.md) — alternative to

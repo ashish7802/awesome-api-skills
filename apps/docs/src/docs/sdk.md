@@ -1,3 +1,3 @@
-# SDK Documentation
+# SDK
 
-Welcome to the sdk documentation. This is auto-generated reference material.
+Client utilities in `packages/sdk`.

@@ -38,3 +38,20 @@ If you receive 'Access denied' on a valid query, verify your Admin API Token was
 
 ## References
 - [API Reference](https://shopify.dev/docs/api/admin-graphql)
+
+## Why use this skill
+Use this when your agent works with **shopify** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Mixing test and live API keys in the same code path
+- Retrying POST requests without idempotency keys
+- Hardcoding currency or amount formats incorrectly
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`nextjs`](../nextjs/SKILL.md) — integrates with
+- [`stripe`](../stripe/SKILL.md) — works well with

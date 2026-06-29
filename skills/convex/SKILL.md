@@ -36,3 +36,20 @@ If a mutation throws a non-deterministic error (e.g., `Math.random()` or `fetch(
 ## Related Skills
 - [Clerk](/skills/clerk)
 - [Vercel](/skills/vercel)
+
+## Why use this skill
+Use this when your agent works with **convex** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Inventing column names or schema fields
+- Using deprecated driver methods or wrong connection strings
+- Omitting connection pooling or transaction boundaries
+
+## Production checklist
+- [ ] Migrations version-controlled and applied via CI
+- [ ] Connection limits and pooling configured
+- [ ] Backups and restore procedure documented
+
+## Related skills
+- [`clerk`](../clerk/SKILL.md) — related to
+- [`vercel`](../vercel/SKILL.md) — related to

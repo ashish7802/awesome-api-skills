@@ -39,3 +39,20 @@ If reverse geocoding returns inaccurate results, ensure you are passing the corr
 
 ## References
 - [API Reference](https://docs.mapbox.com/api/)
+
+## Why use this skill
+Use this when your agent works with **mapbox** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Referencing CLI flags or config keys that do not exist
+- Using outdated major versions of tools
+- Skipping lockfile or version pinning in examples
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`react`](../react/SKILL.md) — integrates with
+- [`vue`](../vue/SKILL.md) — integrates with

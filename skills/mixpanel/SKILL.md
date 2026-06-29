@@ -35,3 +35,19 @@ If events appear in Mixpanel with the wrong chronological order, ensure you are 
 
 ## Related Skills
 - [PostHog](/skills/posthog)
+
+## Why use this skill
+Use this when your agent works with **mixpanel** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`posthog`](../posthog/SKILL.md) — related to

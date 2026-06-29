@@ -47,3 +47,20 @@ Enable SASL/SCRAM for client authentication and TLS for in-transit encryption. K
 
 ## References
 - [Kafka Docs](https://kafka.apache.org/documentation/)
+
+## Why use this skill
+Use this when your agent works with **kafka** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`rabbitmq`](../rabbitmq/SKILL.md) — alternative to
+- [`redis-streams`](../redis-streams/SKILL.md) — alternative to

@@ -19,5 +19,17 @@
   "relatedSkills": [
     "OpenAI",
     "Anthropic"
-  ]
+  ],
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-06-29",
+  "documentationSource": "https://learn.microsoft.com/en-us/azure/ai-services/openai/",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0"
 }

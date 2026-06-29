@@ -1,49 +1,51 @@
 # Contributing to Awesome API Skills
 
-Thank you for your interest in contributing to the Awesome API Skills ecosystem.
+Thank you for your interest in contributing.
 
-## Development Setup
+## Development setup
 
 ```bash
-# Clone the repository
-git clone https://github.com/awesome-api-skills/awesome-api-skills.git
+git clone https://github.com/ashish7802/awesome-api-skills.git
 cd awesome-api-skills
-
-# Install dependencies
 pnpm install
-
-# Run tests
+pnpm build
 pnpm test
-
-# Run linting
 pnpm lint
 ```
 
-## Adding a New Skill
+## Adding a new skill
 
-1. Use the generator to scaffold a new skill:
+1. Scaffold with the generator:
 
    ```bash
-   node scripts/build-skill-v4.js
+   node scripts/generators/build-skill-v4.js
    ```
 
-2. Manually populate `SKILL.md` with production-quality documentation.
+2. Write production-quality content in `SKILL.md`.
 
-3. Add examples to the `examples/` directory.
+3. Add runnable examples under `examples/`.
 
 4. Define relationships in `metadata.json`.
 
-5. Run validation:
+5. Rebuild registry artifacts:
+
    ```bash
-   node scripts/build-registry-v1.js
+   node scripts/dev/build-registry-v1.js
+   node scripts/dev/build-knowledge-graph.js
    ```
 
-## Quality Standards
+6. Validate:
+
+   ```bash
+   node scripts/dev/run-validation-v2.js
+   ```
+
+## Quality standards
 
 - Every skill must contain real, actionable content.
 - No placeholder text or TODO sections.
-- Every code example must be runnable.
-- Every relationship must reference an existing skill.
+- Code examples should be runnable or clearly scoped as snippets.
+- Relationship targets must reference existing skill IDs.
 
 ## Code of Conduct
 

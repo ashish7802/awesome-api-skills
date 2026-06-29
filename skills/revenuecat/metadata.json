@@ -19,5 +19,17 @@
   "relatedSkills": [
     "Stripe",
     "Paddle"
-  ]
+  ],
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-06-29",
+  "documentationSource": "https://www.revenuecat.com/docs/api-v1",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0"
 }

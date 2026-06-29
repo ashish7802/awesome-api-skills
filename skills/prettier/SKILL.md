@@ -46,3 +46,20 @@ Prettier has no significant security footprint as it only transforms ASTs. Ensur
 
 ## References
 - [Prettier Docs](https://prettier.io/docs/en/)
+
+## Why use this skill
+Use this when your agent works with **prettier** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Referencing CLI flags or config keys that do not exist
+- Using outdated major versions of tools
+- Skipping lockfile or version pinning in examples
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`eslint`](../eslint/SKILL.md) — works well with
+- [`biome`](../biome/SKILL.md) — alternative to

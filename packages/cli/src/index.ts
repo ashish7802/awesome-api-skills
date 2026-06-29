@@ -5,8 +5,6 @@ import { logger, LogLevel } from './logger.js';
 import { GlobalOptions } from './interfaces.js';
 
 export async function main(argv: string[]) {
-  const start = performance.now();
-
   let parsed;
   try {
     parsed = parseArgs({
@@ -69,24 +67,23 @@ export async function main(argv: string[]) {
   const execStart = performance.now();
   try {
     const data = await cmd.execute({ args: commandArgs, options: parsed.values, globalOptions });
-    const execTime = performance.now() - execStart;
 
     if (typeof data === 'string') {
-      renderer.renderData(data); // e.g. help text
+      renderer.renderData(data);
     } else {
-      renderer.renderSuccess(`${cmd.name} completed successfully.`, data);
+      renderer.renderSuccess(`${cmd.name} completed`, data, cmd.name);
     }
 
-    logger.debug(`[Performance] Cold Start: ${start.toFixed(2)}ms`);
-    logger.debug(`[Performance] Discovery: ${discoverTime.toFixed(2)}ms`);
-    logger.debug(`[Performance] Execution: ${execTime.toFixed(2)}ms`);
+    if (globalOptions.verbose) {
+      logger.debug(`Discovery: ${discoverTime.toFixed(0)}ms · Execution: ${(performance.now() - execStart).toFixed(0)}ms`);
+    }
   } catch (err: unknown) {
     const e = err as Error;
     renderer.renderError(
       `Execution failed for '${cmd.name}'`,
       e.message,
-      `Check arguments or run 'awesome-api help ${cmd.name}'`,
-      `https://awesome.api/docs/cli/${cmd.name}`,
+      `Run 'awesome-api help ${cmd.name}'`,
+      `See apps/docs/src/docs/cli.md in the repository`,
     );
     if (globalOptions.verbose) console.error(e.stack);
     process.exit(1);

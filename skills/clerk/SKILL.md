@@ -37,3 +37,21 @@ If `auth()` returns null in a Next.js App Router setup, ensure your `middleware.
 - [Neon](/skills/neon)
 - [Supabase](/skills/supabase)
 - [Resend](/skills/resend)
+
+## Why use this skill
+Use this when your agent works with **clerk** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`neon`](../neon/SKILL.md) — related to
+- [`supabase`](../supabase/SKILL.md) — related to
+- [`resend`](../resend/SKILL.md) — related to

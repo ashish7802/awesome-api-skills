@@ -9,7 +9,7 @@ export class ConfigurationManager {
     userConfig?: Partial<Configuration>,
   ) {
     const globalDefaults: Configuration = {
-      registryUrls: ['https://official.registry'],
+      registryUrls: ['./registry'],
       outputDir: 'dist',
       cacheDir: '.cache',
       telemetryEnabled: false,

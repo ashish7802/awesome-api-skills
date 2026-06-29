@@ -1,68 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" fill="none">
   <defs>
-    <!-- Background Grid -->
-    <pattern id="gridPattern" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1"/>
-    </pattern>
-    <!-- Accent Line Gradient -->
-    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0A0A0A" />
-      <stop offset="50%" stop-color="#3B82F6" />
-      <stop offset="100%" stop-color="#0A0A0A" />
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#18181b" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#09090b" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
-  <!-- Base Canvas -->
-  <rect width="1200" height="500" fill="#0A0A0A"/>
-  
-  <!-- Subtle Grid -->
-  <rect width="1200" height="500" fill="url(#gridPattern)"/>
+  <!-- Canvas -->
+  <rect width="1200" height="500" fill="#09090b"/>
+  <rect width="1200" height="120" fill="url(#fade)"/>
 
-  <!-- Top Accent Line -->
-  <rect x="0" y="0" width="1200" height="1" fill="url(#accentGradient)" fill-opacity="0.8"/>
+  <!-- Hairline frame -->
+  <rect x="48" y="48" width="1096" height="404" stroke="#27272a" stroke-width="1" rx="2"/>
 
-  <!-- Logo Icon -->
-  <g transform="translate(568, 140)">
-    <path d="M32 0 L64 16 L64 48 L32 64 L0 48 L0 16 Z" fill="none" stroke="#222222" stroke-width="2"/>
-    <path d="M32 0 L32 32 L64 16" fill="none" stroke="#222222" stroke-width="2"/>
-    <path d="M0 16 L32 32 L32 64" fill="none" stroke="#222222" stroke-width="2"/>
-    <circle cx="32" cy="32" r="4" fill="#3B82F6"/>
-  </g>
+  <!-- Wordmark -->
+  <text
+    x="96"
+    y="220"
+    font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="72"
+    font-weight="600"
+    letter-spacing="-3.5"
+    fill="#fafafa"
+  >Awesome API Skills</text>
 
-  <!-- Main Typography -->
-  <text x="600" y="270" 
-        font-family="system-ui, Arial, sans-serif" 
-        font-size="64" 
-        font-weight="800" 
-        letter-spacing="-2px" 
-        fill="#FAFAFA" 
-        text-anchor="middle">
-    Awesome API Skills
-  </text>
+  <!-- Tagline -->
+  <text
+    x="96"
+    y="278"
+    font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="22"
+    font-weight="400"
+    letter-spacing="-0.3"
+    fill="#a1a1aa"
+  >Structured API knowledge for AI coding agents.</text>
 
-  <!-- Tagline / Subtitle -->
-  <text x="600" y="320" 
-        font-family="system-ui, Arial, sans-serif" 
-        font-size="20" 
-        font-weight="400" 
-        letter-spacing="0.5px" 
-        fill="#888888" 
-        text-anchor="middle">
-    Give your AI coding agent production-grade API knowledge in one command.
-  </text>
+  <!-- Meta row -->
+  <text
+    x="96"
+    y="380"
+    font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Segoe UI Mono', monospace"
+    font-size="13"
+    font-weight="500"
+    letter-spacing="0.08em"
+    fill="#52525b"
+  >100 SKILLS</text>
+  <text
+    x="220"
+    y="380"
+    font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Segoe UI Mono', monospace"
+    font-size="13"
+    font-weight="500"
+    letter-spacing="0.08em"
+    fill="#3f3f46"
+  >·</text>
+  <text
+    x="240"
+    y="380"
+    font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Segoe UI Mono', monospace"
+    font-size="13"
+    font-weight="500"
+    letter-spacing="0.08em"
+    fill="#52525b"
+  >SKILL.MD + EXAMPLES + METADATA</text>
+  <text
+    x="560"
+    y="380"
+    font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Segoe UI Mono', monospace"
+    font-size="13"
+    font-weight="500"
+    letter-spacing="0.08em"
+    fill="#3f3f46"
+  >·</text>
+  <text
+    x="580"
+    y="380"
+    font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Segoe UI Mono', monospace"
+    font-size="13"
+    font-weight="500"
+    letter-spacing="0.08em"
+    fill="#52525b"
+  >OPEN SOURCE</text>
 
-  <!-- Supported Agents Mini Bar -->
-  <g transform="translate(600, 390)">
-    <rect x="-240" y="0" width="480" height="40" rx="20" fill="#111111" stroke="#222222" stroke-width="1"/>
-    <text x="0" y="24" 
-          font-family="system-ui, Arial, sans-serif" 
-          font-size="12" 
-          font-weight="500" 
-          letter-spacing="0.5px" 
-          fill="#666666" 
-          text-anchor="middle">
-      SUPPORTED: CLAUDE CODE • CURSOR • CODEX • GEMINI • CLINE • ROO CODE • CONTINUE
-    </text>
-  </g>
+  <!-- Accent mark -->
+  <rect x="96" y="308" width="48" height="2" fill="#fafafa" opacity="0.9"/>
 </svg>

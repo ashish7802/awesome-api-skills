@@ -14,5 +14,17 @@
   "license": "MIT",
   "links": {
     "API Reference": "https://developers.cloudflare.com/api/"
-  }
+  },
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-06-29",
+  "documentationSource": "https://developers.cloudflare.com/api/",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0"
 }

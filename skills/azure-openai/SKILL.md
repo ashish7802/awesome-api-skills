@@ -36,3 +36,20 @@ If you receive a 'Resource not found' error, verify that the `api-version` query
 ## Related Skills
 - [OpenAI](/skills/openai)
 - [Anthropic](/skills/anthropic)
+
+## Why use this skill
+Use this when your agent works with **azure-openai** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using deprecated model IDs or wrong API endpoints
+- Confusing chat vs completions vs embeddings APIs
+- Omitting rate-limit and token budget handling
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`openai`](../openai/SKILL.md) — related to
+- [`anthropic`](../anthropic/SKILL.md) — related to

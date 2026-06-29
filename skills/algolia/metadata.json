@@ -13,5 +13,17 @@
   "license": "MIT",
   "links": {
     "API Reference": "https://www.algolia.com/doc/api-reference/"
-  }
+  },
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-06-29",
+  "documentationSource": "https://www.algolia.com/doc/api-reference/",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0"
 }

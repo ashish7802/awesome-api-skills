@@ -36,3 +36,20 @@ If search results are empty, verify that the fields you are searching against ar
 ## Related Skills
 - [Meilisearch](/skills/meilisearch)
 - [Algolia](/skills/algolia)
+
+## Why use this skill
+Use this when your agent works with **typesense** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Inventing column names or schema fields
+- Using deprecated driver methods or wrong connection strings
+- Omitting connection pooling or transaction boundaries
+
+## Production checklist
+- [ ] Migrations version-controlled and applied via CI
+- [ ] Connection limits and pooling configured
+- [ ] Backups and restore procedure documented
+
+## Related skills
+- [`meilisearch`](../meilisearch/SKILL.md) — related to
+- [`algolia`](../algolia/SKILL.md) — related to

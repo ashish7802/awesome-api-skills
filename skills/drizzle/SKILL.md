@@ -52,3 +52,24 @@ Drizzle utilizes prepared statements by default to completely mitigate SQL injec
 
 ## References
 - [Drizzle Docs](https://orm.drizzle.team/)
+
+## Why use this skill
+Use this when your agent works with **drizzle** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Inventing column names or schema fields
+- Using deprecated driver methods or wrong connection strings
+- Omitting connection pooling or transaction boundaries
+
+## Production checklist
+- [ ] Migrations version-controlled and applied via CI
+- [ ] Connection limits and pooling configured
+- [ ] Backups and restore procedure documented
+
+## Related skills
+- [`postgresql`](../postgresql/SKILL.md) — integrates with
+- [`mysql`](../mysql/SKILL.md) — integrates with
+- [`sqlite`](../sqlite/SKILL.md) — integrates with
+- [`prisma`](../prisma/SKILL.md) — alternative to
+- [`neon`](../neon/SKILL.md) — works well with
+- [`turso`](../turso/SKILL.md) — works well with

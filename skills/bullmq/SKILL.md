@@ -46,3 +46,21 @@ Because BullMQ stores task payloads in Redis, never pass raw sensitive data (cre
 
 ## References
 - [BullMQ Docs](https://docs.bullmq.io/)
+
+## Why use this skill
+Use this when your agent works with **bullmq** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Referencing CLI flags or config keys that do not exist
+- Using outdated major versions of tools
+- Skipping lockfile or version pinning in examples
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`redis`](../redis/SKILL.md) — depends on
+- [`rabbitmq`](../rabbitmq/SKILL.md) — alternative to
+- [`nestjs`](../nestjs/SKILL.md) — integrates with

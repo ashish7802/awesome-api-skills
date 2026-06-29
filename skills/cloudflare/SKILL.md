@@ -39,3 +39,19 @@ If DNS records aren't updating, verify the 'proxied' (orange cloud) status, whic
 
 ## References
 - [API Reference](https://developers.cloudflare.com/api/)
+
+## Why use this skill
+Use this when your agent works with **cloudflare** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- No graph relationships yet — see the knowledge graph in the docs site.

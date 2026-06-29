@@ -44,3 +44,20 @@ Deno is secure by default. Even when running locally, it cannot access the disk,
 
 ## References
 - [Deno Deploy Docs](https://deno.com/deploy/docs)
+
+## Why use this skill
+Use this when your agent works with **deno-deploy** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Referencing CLI flags or config keys that do not exist
+- Using outdated major versions of tools
+- Skipping lockfile or version pinning in examples
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`cloudflare-workers`](../cloudflare-workers/SKILL.md) — alternative to
+- [`hono`](../hono/SKILL.md) — works well with

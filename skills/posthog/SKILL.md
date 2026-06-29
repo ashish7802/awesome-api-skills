@@ -35,3 +35,19 @@ If events are missing in the dashboard, verify that you are flushing the queue b
 
 ## Related Skills
 - [Mixpanel](/skills/mixpanel)
+
+## Why use this skill
+Use this when your agent works with **posthog** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`mixpanel`](../mixpanel/SKILL.md) — related to

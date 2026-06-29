@@ -39,3 +39,20 @@ If multimodal requests fail, ensure inline data is base64 encoded and the correc
 
 ## References
 - [API Reference](https://ai.google.dev/api)
+
+## Why use this skill
+Use this when your agent works with **gemini** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using deprecated model IDs or wrong API endpoints
+- Confusing chat vs completions vs embeddings APIs
+- Omitting rate-limit and token budget handling
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`langchain`](../langchain/SKILL.md) — integrates with
+- [`llamaindex`](../llamaindex/SKILL.md) — integrates with

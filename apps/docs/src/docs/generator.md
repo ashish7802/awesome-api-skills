@@ -1,3 +1,3 @@
-# GENERATOR Documentation
+# Generator
 
-Welcome to the generator documentation. This is auto-generated reference material.
+Artifact plugins in `packages/generator`.

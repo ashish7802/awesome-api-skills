@@ -39,3 +39,21 @@ If source maps aren't working, ensure the `@sentry/cli` or Webpack plugin upload
 
 ## References
 - [API Reference](https://docs.sentry.io/api/)
+
+## Why use this skill
+Use this when your agent works with **sentry** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`nextjs`](../nextjs/SKILL.md) — monitors
+- [`express`](../express/SKILL.md) — monitors
+- [`fastapi`](../fastapi/SKILL.md) — monitors

@@ -1,3 +1,11 @@
-# CLI Documentation
+# CLI
 
-Welcome to the cli documentation. This is auto-generated reference material.
+Search and validate skills locally. Build first: `pnpm build`
+
+```bash
+node packages/cli/dist/bin.js search payment
+node packages/cli/dist/bin.js doctor
+node packages/cli/dist/bin.js validate
+```
+
+Not published to npm yet.

@@ -39,3 +39,19 @@ If you receive 'Context window exceeded', count tokens using `tiktoken` before s
 
 ## References
 - [API Reference](https://platform.openai.com/docs/api-reference)
+
+## Why use this skill
+Use this when your agent works with **openai** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using deprecated model IDs or wrong API endpoints
+- Confusing chat vs completions vs embeddings APIs
+- Omitting rate-limit and token budget handling
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- No graph relationships yet — see the knowledge graph in the docs site.

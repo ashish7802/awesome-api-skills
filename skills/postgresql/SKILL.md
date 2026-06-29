@@ -49,3 +49,22 @@ Never connect as the `postgres` superuser from your application. Create a dedica
 
 ## References
 - [PostgreSQL Docs](https://www.postgresql.org/docs/)
+
+## Why use this skill
+Use this when your agent works with **postgresql** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Inventing column names or schema fields
+- Using deprecated driver methods or wrong connection strings
+- Omitting connection pooling or transaction boundaries
+
+## Production checklist
+- [ ] Migrations version-controlled and applied via CI
+- [ ] Connection limits and pooling configured
+- [ ] Backups and restore procedure documented
+
+## Related skills
+- [`neon`](../neon/SKILL.md) — extended by
+- [`prisma`](../prisma/SKILL.md) — integrates with
+- [`drizzle`](../drizzle/SKILL.md) — integrates with
+- [`mysql`](../mysql/SKILL.md) — alternative to

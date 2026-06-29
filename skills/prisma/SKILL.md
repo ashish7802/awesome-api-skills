@@ -50,3 +50,22 @@ Do not expose Prisma Studio (`npx prisma studio`) to the public internet. It pro
 
 ## References
 - [Prisma Docs](https://www.prisma.io/docs/)
+
+## Why use this skill
+Use this when your agent works with **prisma** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Inventing column names or schema fields
+- Using deprecated driver methods or wrong connection strings
+- Omitting connection pooling or transaction boundaries
+
+## Production checklist
+- [ ] Migrations version-controlled and applied via CI
+- [ ] Connection limits and pooling configured
+- [ ] Backups and restore procedure documented
+
+## Related skills
+- [`postgresql`](../postgresql/SKILL.md) — integrates with
+- [`mysql`](../mysql/SKILL.md) — integrates with
+- [`drizzle`](../drizzle/SKILL.md) — alternative to
+- [`nextjs`](../nextjs/SKILL.md) — works well with

@@ -39,3 +39,20 @@ If a presigned URL fails with SignatureDoesNotMatch, ensure the HTTP method and 
 
 ## References
 - [API Reference](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-s3/)
+
+## Why use this skill
+Use this when your agent works with **aws-s3** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`terraform`](../terraform/SKILL.md) — provisioned by
+- [`pulumi`](../pulumi/SKILL.md) — provisioned by

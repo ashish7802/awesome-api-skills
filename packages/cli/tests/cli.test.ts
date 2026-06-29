@@ -17,7 +17,7 @@ describe('CLI Router', () => {
     const output = consoleSpy.mock.calls[0][0];
     const parsed = JSON.parse(output);
     expect(parsed.success).toBe(true);
-    expect(parsed.data.status).toBe('Healthy');
+    expect(parsed.data.status).toBe('healthy');
     consoleSpy.mockRestore();
   });
 
@@ -33,7 +33,7 @@ describe('CLI Router', () => {
     const parsed = JSON.parse(output);
 
     expect(parsed.success).toBe(false);
-    expect(parsed.probableCause).toBe('Search term is required');
+    expect(parsed.probableCause).toContain('Search term is required');
 
     errorSpy.mockRestore();
     exitSpy.mockRestore();

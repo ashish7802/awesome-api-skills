@@ -227,8 +227,10 @@ export class SitemapPlugin implements GeneratorPlugin {
     }
 
     fs.mkdirSync(context.outputDir, { recursive: true });
+    const repoBase =
+      'https://github.com/ashish7802/awesome-api-skills/tree/master/skills';
     const urls = context.skills
-      .map((s) => '<url><loc>https://registry.awesome.api/docs/' + s.id + '</loc></url>')
+      .map((s) => '<url><loc>' + repoBase + '/' + s.id + '</loc></url>')
       .join('');
     fs.writeFileSync(
       path.join(context.outputDir, 'sitemap.xml'),

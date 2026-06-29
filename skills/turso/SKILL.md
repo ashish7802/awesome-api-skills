@@ -36,3 +36,20 @@ If transactions fail with 'database is locked', ensure you are closing your tran
 ## Related Skills
 - [Fly.io](/skills/fly.io)
 - [Render](/skills/render)
+
+## Why use this skill
+Use this when your agent works with **turso** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Inventing column names or schema fields
+- Using deprecated driver methods or wrong connection strings
+- Omitting connection pooling or transaction boundaries
+
+## Production checklist
+- [ ] Migrations version-controlled and applied via CI
+- [ ] Connection limits and pooling configured
+- [ ] Backups and restore procedure documented
+
+## Related skills
+- [`fly.io`](../fly.io/SKILL.md) — related to
+- [`render`](../render/SKILL.md) — related to

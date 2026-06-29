@@ -41,3 +41,22 @@ Enable RBAC (Role-Based Access Control). Do not grant default Service Accounts c
 
 ## References
 - [Kubernetes Docs](https://kubernetes.io/docs/home/)
+
+## Why use this skill
+Use this when your agent works with **kubernetes** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Referencing CLI flags or config keys that do not exist
+- Using outdated major versions of tools
+- Skipping lockfile or version pinning in examples
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`docker`](../docker/SKILL.md) — depends on
+- [`helm`](../helm/SKILL.md) — integrates with
+- [`argo-cd`](../argo-cd/SKILL.md) — works well with
+- [`prometheus`](../prometheus/SKILL.md) — monitors

@@ -39,3 +39,19 @@ If the API returns a 'roles must alternate' error, ensure your `messages` array 
 
 ## References
 - [API Reference](https://docs.anthropic.com/en/api/getting-started)
+
+## Why use this skill
+Use this when your agent works with **anthropic** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using deprecated model IDs or wrong API endpoints
+- Confusing chat vs completions vs embeddings APIs
+- Omitting rate-limit and token budget handling
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- No graph relationships yet — see the knowledge graph in the docs site.

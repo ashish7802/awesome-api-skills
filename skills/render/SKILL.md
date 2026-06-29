@@ -36,3 +36,20 @@ If a Web Service deploys but is unreachable, verify the 'Start Command' is corre
 ## Related Skills
 - [Railway](/skills/railway)
 - [Fly.io](/skills/fly.io)
+
+## Why use this skill
+Use this when your agent works with **render** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`railway`](../railway/SKILL.md) — related to
+- [`fly.io`](../fly.io/SKILL.md) — related to

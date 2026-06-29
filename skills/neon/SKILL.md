@@ -36,3 +36,20 @@ If queries inexplicably hang in Edge environments, verify you are not attempting
 ## Related Skills
 - [Vercel](/skills/vercel)
 - [Supabase](/skills/supabase)
+
+## Why use this skill
+Use this when your agent works with **neon** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Inventing column names or schema fields
+- Using deprecated driver methods or wrong connection strings
+- Omitting connection pooling or transaction boundaries
+
+## Production checklist
+- [ ] Migrations version-controlled and applied via CI
+- [ ] Connection limits and pooling configured
+- [ ] Backups and restore procedure documented
+
+## Related skills
+- [`vercel`](../vercel/SKILL.md) — related to
+- [`supabase`](../supabase/SKILL.md) — related to

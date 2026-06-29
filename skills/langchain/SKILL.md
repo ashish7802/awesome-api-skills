@@ -48,3 +48,21 @@ Never give an Agent unmitigated access to destructive Tools (e.g., SQL DELETE ca
 
 ## References
 - [LangChain Docs](https://python.langchain.com/docs/get_started/introduction)
+
+## Why use this skill
+Use this when your agent works with **langchain** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using deprecated model IDs or wrong API endpoints
+- Confusing chat vs completions vs embeddings APIs
+- Omitting rate-limit and token budget handling
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`llamaindex`](../llamaindex/SKILL.md) — alternative to
+- [`openai`](../openai/SKILL.md) — integrates with
+- [`pinecone`](../pinecone/SKILL.md) — integrates with

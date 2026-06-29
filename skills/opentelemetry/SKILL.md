@@ -35,3 +35,20 @@ Be extremely careful not to trace raw SQL queries containing PII, or log full HT
 ## Relationships
 ## References
 - [OpenTelemetry Docs](https://opentelemetry.io/docs/)
+
+## Why use this skill
+Use this when your agent works with **opentelemetry** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`jaeger`](../jaeger/SKILL.md) — publishes to
+- [`prometheus`](../prometheus/SKILL.md) — publishes to

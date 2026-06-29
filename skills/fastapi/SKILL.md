@@ -42,3 +42,21 @@ Use `OAuth2PasswordBearer` for built-in token extraction. Never expose raw SQL q
 
 ## References
 - [FastAPI Docs](https://fastapi.tiangolo.com/)
+
+## Why use this skill
+Use this when your agent works with **fastapi** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`express`](../express/SKILL.md) — alternative to
+- [`openai`](../openai/SKILL.md) — integrates with
+- [`docker`](../docker/SKILL.md) — deploys to

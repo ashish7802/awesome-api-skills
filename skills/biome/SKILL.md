@@ -48,3 +48,21 @@ Biome does not execute third-party plugins (unlike ESLint). This eliminates the 
 
 ## References
 - [Biome Docs](https://biomejs.dev/)
+
+## Why use this skill
+Use this when your agent works with **biome** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Referencing CLI flags or config keys that do not exist
+- Using outdated major versions of tools
+- Skipping lockfile or version pinning in examples
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`eslint`](../eslint/SKILL.md) — replaces
+- [`prettier`](../prettier/SKILL.md) — replaces
+- [`react`](../react/SKILL.md) — works well with

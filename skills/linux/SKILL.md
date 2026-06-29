@@ -40,3 +40,20 @@ Disable SSH password authentication (`PasswordAuthentication no`) in `/etc/ssh/s
 
 ## References
 - [Linux Docs](https://www.kernel.org/doc/html/latest/)
+
+## Why use this skill
+Use this when your agent works with **linux** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Hardcoding region or account IDs
+- Missing IAM least-privilege on cloud resources
+- Confusing similar service names (e.g. S3 vs CloudFront)
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`docker`](../docker/SKILL.md) — integrates with
+- [`nginx`](../nginx/SKILL.md) — works well with

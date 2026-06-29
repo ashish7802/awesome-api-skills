@@ -40,3 +40,21 @@ Be extremely cautious with the `v-html` directive. It renders raw HTML directly 
 
 ## References
 - [Vue Docs](https://vuejs.org/guide/introduction.html)
+
+## Why use this skill
+Use this when your agent works with **vue** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`nuxt`](../nuxt/SKILL.md) — extended by
+- [`react`](../react/SKILL.md) — alternative to
+- [`supabase`](../supabase/SKILL.md) — works well with

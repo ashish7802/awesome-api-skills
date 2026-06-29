@@ -46,3 +46,23 @@ Never expose environment variables to the browser unless they are strictly prefi
 
 ## References
 - [App Router Docs](https://nextjs.org/docs)
+
+## Why use this skill
+Use this when your agent works with **nextjs** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`react`](../react/SKILL.md) — depends on
+- [`vercel`](../vercel/SKILL.md) — deploys to
+- [`clerk`](../clerk/SKILL.md) — authenticates with
+- [`nuxt`](../nuxt/SKILL.md) — alternative to
+- [`trpc`](../trpc/SKILL.md) — works well with

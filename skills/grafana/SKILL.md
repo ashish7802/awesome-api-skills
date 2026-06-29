@@ -40,3 +40,21 @@ Never expose Grafana to the public internet without enforcing SSO (Single Sign-O
 
 ## References
 - [Grafana Docs](https://grafana.com/docs/)
+
+## Why use this skill
+Use this when your agent works with **grafana** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`prometheus`](../prometheus/SKILL.md) — integrates with
+- [`loki`](../loki/SKILL.md) — integrates with
+- [`datadog`](../datadog/SKILL.md) — alternative to

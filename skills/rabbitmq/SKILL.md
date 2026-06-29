@@ -46,3 +46,20 @@ Do not expose the management UI (port 15672) to the internet. Enforce TLS for al
 
 ## References
 - [RabbitMQ Docs](https://www.rabbitmq.com/documentation.html)
+
+## Why use this skill
+Use this when your agent works with **rabbitmq** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`kafka`](../kafka/SKILL.md) — alternative to
+- [`bullmq`](../bullmq/SKILL.md) — alternative to

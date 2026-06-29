@@ -46,3 +46,21 @@ When ingesting documents, respect ACLs (Access Control Lists). Ensure that when 
 
 ## References
 - [LlamaIndex Docs](https://docs.llamaindex.ai/)
+
+## Why use this skill
+Use this when your agent works with **llamaindex** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using deprecated model IDs or wrong API endpoints
+- Confusing chat vs completions vs embeddings APIs
+- Omitting rate-limit and token budget handling
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`langchain`](../langchain/SKILL.md) — alternative to
+- [`openai`](../openai/SKILL.md) — integrates with
+- [`pinecone`](../pinecone/SKILL.md) — integrates with

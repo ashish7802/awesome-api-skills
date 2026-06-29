@@ -36,3 +36,20 @@ If webhooks are failing signature verification, ensure you are passing the raw, 
 ## Related Skills
 - [Stripe](/skills/stripe)
 - [Lemon Squeezy](/skills/lemon squeezy)
+
+## Why use this skill
+Use this when your agent works with **paddle** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Inventing webhook event names not in the vendor catalog
+- Using secret keys in client-side or browser code
+- Skipping signature verification on webhook payloads
+
+## Production checklist
+- [ ] Webhook signatures verified on raw request body
+- [ ] Idempotency keys on mutating requests
+- [ ] Test and live keys isolated by environment
+
+## Related skills
+- [`stripe`](../stripe/SKILL.md) — related to
+- [`lemon squeezy`](../lemon squeezy/SKILL.md) — related to

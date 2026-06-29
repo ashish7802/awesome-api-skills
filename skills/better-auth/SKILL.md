@@ -36,3 +36,20 @@ If sessions randomly invalidate, ensure you are not clearing cookies improperly 
 ## Related Skills
 - [Clerk](/skills/clerk)
 - [Neon](/skills/neon)
+
+## Why use this skill
+Use this when your agent works with **better-auth** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`clerk`](../clerk/SKILL.md) — related to
+- [`neon`](../neon/SKILL.md) — related to

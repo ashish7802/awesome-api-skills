@@ -37,3 +37,21 @@ If you receive 'Foreign key constraints are not supported', note that PlanetScal
 - [Vercel](/skills/vercel)
 - [Cloudflare](/skills/cloudflare)
 - [Clerk](/skills/clerk)
+
+## Why use this skill
+Use this when your agent works with **planetscale** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Inventing column names or schema fields
+- Using deprecated driver methods or wrong connection strings
+- Omitting connection pooling or transaction boundaries
+
+## Production checklist
+- [ ] Migrations version-controlled and applied via CI
+- [ ] Connection limits and pooling configured
+- [ ] Backups and restore procedure documented
+
+## Related skills
+- [`vercel`](../vercel/SKILL.md) — related to
+- [`cloudflare`](../cloudflare/SKILL.md) — related to
+- [`clerk`](../clerk/SKILL.md) — related to

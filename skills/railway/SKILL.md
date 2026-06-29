@@ -37,3 +37,21 @@ If a deployment fails the health check, ensure your application is binding to th
 - [Render](/skills/render)
 - [Fly.io](/skills/fly.io)
 - [GitHub](/skills/github)
+
+## Why use this skill
+Use this when your agent works with **railway** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`render`](../render/SKILL.md) — related to
+- [`fly.io`](../fly.io/SKILL.md) — related to
+- [`github`](../github/SKILL.md) — related to

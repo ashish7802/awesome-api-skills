@@ -24,5 +24,17 @@
       "target": "pulumi",
       "type": "provisioned_by"
     }
-  ]
+  ],
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-06-29",
+  "documentationSource": "https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-s3/",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0"
 }

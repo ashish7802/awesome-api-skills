@@ -36,3 +36,20 @@ If `custom_data` is missing in webhooks, ensure your frontend checkout URL expli
 ## Related Skills
 - [Paddle](/skills/paddle)
 - [Stripe](/skills/stripe)
+
+## Why use this skill
+Use this when your agent works with **lemon-squeezy** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Inventing webhook event names not in the vendor catalog
+- Using secret keys in client-side or browser code
+- Skipping signature verification on webhook payloads
+
+## Production checklist
+- [ ] Webhook signatures verified on raw request body
+- [ ] Idempotency keys on mutating requests
+- [ ] Test and live keys isolated by environment
+
+## Related skills
+- [`paddle`](../paddle/SKILL.md) — related to
+- [`stripe`](../stripe/SKILL.md) — related to

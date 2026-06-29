@@ -41,3 +41,22 @@ Install and configure `helmet` to automatically set secure HTTP headers. Rate li
 
 ## References
 - [Express Docs](https://expressjs.com/)
+
+## Why use this skill
+Use this when your agent works with **express** — structured patterns beat pasted docs and prevent common hallucinations.
+
+## AI pitfalls
+- Using outdated SDK or API versions from training data
+- Inventing environment variable names
+- Omitting error handling and retry logic
+
+## Production checklist
+- [ ] Secrets in environment variables, not source code
+- [ ] Error handling and logging in place
+- [ ] Rate limits and timeouts configured
+
+## Related skills
+- [`fastapi`](../fastapi/SKILL.md) — alternative to
+- [`hono`](../hono/SKILL.md) — alternative to
+- [`nestjs`](../nestjs/SKILL.md) — alternative to
+- [`redis`](../redis/SKILL.md) — works well with

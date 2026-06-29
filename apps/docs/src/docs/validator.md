@@ -1,3 +1,3 @@
-# VALIDATOR Documentation
+# Validator
 
-Welcome to the validator documentation. This is auto-generated reference material.
+Schema validation in `packages/validator`.
