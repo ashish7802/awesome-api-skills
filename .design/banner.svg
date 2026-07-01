@@ -1,0 +1,61 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="55%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="url(#grid)"/>
+
+  <!-- Accent bar -->
+  <rect x="0" y="0" width="1200" height="6" fill="url(#accent)"/>
+
+  <!-- Decorative node/graph motif on the right -->
+  <g opacity="0.5" stroke="#22d3ee" stroke-width="1.5">
+    <line x1="900" y1="90" x2="1000" y2="60"/>
+    <line x1="1000" y1="60" x2="1100" y2="100"/>
+    <line x1="900" y1="90" x2="960" y2="170"/>
+    <line x1="960" y1="170" x2="1080" y2="190"/>
+    <line x1="1080" y1="190" x2="1100" y2="100"/>
+    <line x1="960" y1="170" x2="1000" y2="60"/>
+  </g>
+  <g fill="#a855f7">
+    <circle cx="900" cy="90" r="6"/>
+    <circle cx="1000" cy="60" r="6"/>
+    <circle cx="1100" cy="100" r="6"/>
+    <circle cx="960" cy="170" r="6"/>
+    <circle cx="1080" cy="190" r="6"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="70" y="130" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="56" font-weight="800" fill="#f8fafc">
+    Awesome API Skills
+  </text>
+
+  <!-- Tagline -->
+  <text x="72" y="168" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="400" fill="#cbd5e1">
+    Structured API knowledge for AI coding agents — not hallucinations.
+  </text>
+
+  <!-- Pills -->
+  <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600">
+    <rect x="72" y="196" width="120" height="34" rx="17" fill="#0891b2" fill-opacity="0.25" stroke="#22d3ee" stroke-opacity="0.6"/>
+    <text x="90" y="218" fill="#67e8f9">100 Skills</text>
+
+    <rect x="204" y="196" width="150" height="34" rx="17" fill="#7c3aed" fill-opacity="0.25" stroke="#a855f7" stroke-opacity="0.6"/>
+    <text x="222" y="218" fill="#d8b4fe">Self-Audited</text>
+
+    <rect x="366" y="196" width="110" height="34" rx="17" fill="#334155" fill-opacity="0.6" stroke="#94a3b8" stroke-opacity="0.5"/>
+    <text x="384" y="218" fill="#e2e8f0">MIT License</text>
+  </g>
+</svg>
