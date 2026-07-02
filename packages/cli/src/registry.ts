@@ -13,9 +13,7 @@ export class CommandRegistry {
     const importer = this.commands.get(name);
     if (!importer) return null;
     const mod = await importer();
-    return (mod.default as unknown as { default?: Command }).default
-      ? (mod.default as unknown as { default: Command }).default
-      : mod.default;
+    return mod.default || null;
   }
 
   getRegisteredNames(): string[] {
@@ -46,26 +44,59 @@ registry.register(
   'completion',
   () => import('./commands/completion.js') as unknown as Promise<{ default: Command }>,
 );
-
-// Mock other commands to satisfy requirements without exploding code size in this demo
-const mockCommands = [
+registry.register(
   'init',
+  () => import('./commands/init.js') as unknown as Promise<{ default: Command }>,
+);
+registry.register(
   'install',
+  () => import('./commands/install.js') as unknown as Promise<{ default: Command }>,
+);
+registry.register(
   'uninstall',
+  () => import('./commands/uninstall.js') as unknown as Promise<{ default: Command }>,
+);
+registry.register(
   'list',
+  () => import('./commands/list.js') as unknown as Promise<{ default: Command }>,
+);
+registry.register(
   'registry',
+  () => import('./commands/registry.js') as unknown as Promise<{ default: Command }>,
+);
+registry.register(
   'generate',
+  () => import('./commands/generate.js') as unknown as Promise<{ default: Command }>,
+);
+registry.register(
   'build',
+  () => import('./commands/build.js') as unknown as Promise<{ default: Command }>,
+);
+registry.register(
   'sync',
+  () => import('./commands/sync.js') as unknown as Promise<{ default: Command }>,
+);
+registry.register(
   'benchmark',
+  () => import('./commands/benchmark.js') as unknown as Promise<{ default: Command }>,
+);
+registry.register(
   'create-skill',
+  () => import('./commands/create-skill.js') as unknown as Promise<{ default: Command }>,
+);
+registry.register(
   'update',
+  () => import('./commands/update.js') as unknown as Promise<{ default: Command }>,
+);
+registry.register(
   'cache',
+  () => import('./commands/cache.js') as unknown as Promise<{ default: Command }>,
+);
+registry.register(
   'config',
+  () => import('./commands/config.js') as unknown as Promise<{ default: Command }>,
+);
+registry.register(
   'version',
-];
-for (const cmd of mockCommands) {
-  registry.register(cmd, () =>
-    import('./commands/mock.js').then((m) => ({ default: m.createMockCommand(cmd) })),
-  );
-}
+  () => import('./commands/version.js') as unknown as Promise<{ default: Command }>,
+);

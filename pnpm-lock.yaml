@@ -63,6 +63,9 @@ importers:
       '@awesome-api-skills/core':
         specifier: workspace:*
         version: link:../core
+      '@awesome-api-skills/generator':
+        specifier: workspace:*
+        version: link:../generator
       '@awesome-api-skills/shared-types':
         specifier: workspace:*
         version: link:../shared-types
