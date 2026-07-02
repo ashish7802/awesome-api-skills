@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@awesome-api-skills/core": "workspace:*",
+    "@awesome-api-skills/validator": "workspace:*",
     "@awesome-api-skills/shared-types": "workspace:*",
     "@clack/prompts": "^0.7.0",
     "picocolors": "^1.1.1"

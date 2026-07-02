@@ -30,6 +30,7 @@ export interface SkillMetadata {
   supportedAgents: AgentType[];
   status?: SkillStatus;
   popularity?: number;
+  lastVerified?: string;
 }
 
 /**
