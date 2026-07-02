@@ -5,19 +5,10 @@
       <stop offset="50%" stop-color="#a855f7" />
       <stop offset="100%" stop-color="#f43f5e" />
     </linearGradient>
-    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.25"/>
-      <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.25"/>
-    </linearGradient>
-    <pattern id="grid-pattern" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
-    </pattern>
   </defs>
 
   <!-- Main Background -->
   <rect width="1200" height="460" fill="#09090b" rx="14"/>
-  <rect width="1200" height="460" fill="url(#grid-pattern)" rx="14"/>
   <rect width="1200" height="460" fill="none" stroke="#27272a" stroke-width="2" rx="14"/>
 
   <!-- Top Accent Glow Bar -->
@@ -52,19 +43,19 @@
     <circle cx="20" cy="18" r="5" fill="#ef4444"/>
     <circle cx="36" cy="18" r="5" fill="#f59e0b"/>
     <circle cx="52" cy="18" r="5" fill="#10b981"/>
-    <text x="72" y="23" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#ef4444">❌ WITHOUT SKILL (Agent Guesses Outdated APIs)</text>
+    <text x="72" y="23" font-family="monospace" font-size="12" font-weight="700" fill="#ef4444">WITHOUT SKILL (Agent Guesses Outdated APIs)</text>
 
     <!-- Code Content -->
-    <text x="20" y="62" font-family="'JetBrains Mono', monospace" font-size="12" fill="#f87171">// Hallucinates old SDK signatures & body parsing</text>
-    <text x="20" y="86" font-family="'JetBrains Mono', monospace" font-size="13" fill="#f4f4f5">app.use(express.json());</text>
-    <text x="20" y="110" font-family="'JetBrains Mono', monospace" font-size="13" fill="#f4f4f5">import { authMiddleware } from '@clerk/nextjs';</text>
-    <text x="20" y="134" font-family="'JetBrains Mono', monospace" font-size="13" fill="#f4f4f5">for (const u of users) await resend.emails.send();</text>
+    <text x="20" y="62" font-family="monospace" font-size="12" fill="#f87171">// Hallucinates old SDK signatures &amp; body parsing</text>
+    <text x="20" y="86" font-family="monospace" font-size="13" fill="#f4f4f5">app.use(express.json());</text>
+    <text x="20" y="110" font-family="monospace" font-size="13" fill="#f4f4f5">import { authMiddleware } from '@clerk/nextjs';</text>
+    <text x="20" y="134" font-family="monospace" font-size="13" fill="#f4f4f5">for (const u of users) await resend.emails.send();</text>
 
     <rect x="15" y="155" width="500" height="98" rx="6" fill="#450a0a" stroke="#991b1b" stroke-width="1"/>
-    <text x="30" y="178" font-family="'JetBrains Mono', monospace" font-size="11" fill="#fca5a5" font-weight="700">💥 Stripe Signature Check Fails (Raw buffer corrupted)</text>
-    <text x="30" y="200" font-family="'JetBrains Mono', monospace" font-size="11" fill="#fca5a5">💥 Deprecated Clerk v4 authMiddleware throws runtime error</text>
-    <text x="30" y="222" font-family="'JetBrains Mono', monospace" font-size="11" fill="#fca5a5">💥 Unbatched loops trigger HTTP 429 Rate Limit (10 req/s)</text>
-    <text x="30" y="240" font-family="'JetBrains Mono', monospace" font-size="10" fill="#f87171" font-style="italic">Result: Broken webhooks, authentication crashes, API blocks.</text>
+    <text x="30" y="178" font-family="monospace" font-size="11" fill="#fca5a5" font-weight="700">Stripe Signature Check Fails (Raw buffer corrupted)</text>
+    <text x="30" y="200" font-family="monospace" font-size="11" fill="#fca5a5">Deprecated Clerk v4 authMiddleware throws runtime error</text>
+    <text x="30" y="222" font-family="monospace" font-size="11" fill="#fca5a5">Unbatched loops trigger HTTP 429 Rate Limit (10 req/s)</text>
+    <text x="30" y="240" font-family="monospace" font-size="10" fill="#f87171" font-style="italic">Result: Broken webhooks, authentication crashes, API blocks.</text>
   </g>
 
   <!-- RIGHT BOX: With Skill -->
@@ -75,18 +66,18 @@
     <circle cx="20" cy="18" r="5" fill="#ef4444"/>
     <circle cx="36" cy="18" r="5" fill="#f59e0b"/>
     <circle cx="52" cy="18" r="5" fill="#10b981"/>
-    <text x="72" y="23" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#34d399">⚡ WITH SKILL.md (Exact Current API Patterns)</text>
+    <text x="72" y="23" font-family="monospace" font-size="12" font-weight="700" fill="#34d399">WITH SKILL.md (Exact Current API Patterns)</text>
 
     <!-- Code Content -->
-    <text x="20" y="62" font-family="'JetBrains Mono', monospace" font-size="12" fill="#34d399">// Enforces precise, modern, verified SDK patterns</text>
-    <text x="20" y="86" font-family="'JetBrains Mono', monospace" font-size="13" fill="#34d399">app.post('/webhook', express.raw({ type: '*/*' }));</text>
-    <text x="20" y="110" font-family="'JetBrains Mono', monospace" font-size="13" fill="#34d399">import { clerkMiddleware } from '@clerk/nextjs/server';</text>
-    <text x="20" y="134" font-family="'JetBrains Mono', monospace" font-size="13" fill="#34d399">await resend.batch.send(payloads);</text>
+    <text x="20" y="62" font-family="monospace" font-size="12" fill="#34d399">// Enforces precise, modern, verified SDK patterns</text>
+    <text x="20" y="86" font-family="monospace" font-size="13" fill="#34d399">app.post('/webhook', express.raw({ type: '*/*' }));</text>
+    <text x="20" y="110" font-family="monospace" font-size="13" fill="#34d399">import { clerkMiddleware } from '@clerk/nextjs/server';</text>
+    <text x="20" y="134" font-family="monospace" font-size="13" fill="#34d399">await resend.batch.send(payloads);</text>
 
     <rect x="15" y="155" width="500" height="98" rx="6" fill="#022c22" stroke="#047857" stroke-width="1"/>
-    <text x="30" y="178" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6ee7b7" font-weight="700">✓ Webhook signature cryptographic validation passes</text>
-    <text x="30" y="200" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6ee7b7">✓ Modern Clerk v5 App Router matcher works instantly</text>
-    <text x="30" y="222" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6ee7b7">✓ 500 emails dispatched in 1 HTTP request without 429s</text>
-    <text x="30" y="240" font-family="'JetBrains Mono', monospace" font-size="10" fill="#34d399" font-style="italic">Result: Production-ready code on the first prompt pass.</text>
+    <text x="30" y="178" font-family="monospace" font-size="11" fill="#6ee7b7" font-weight="700">Cryptographic signature verification passes</text>
+    <text x="30" y="200" font-family="monospace" font-size="11" fill="#6ee7b7">Modern Clerk v5 App Router matcher works instantly</text>
+    <text x="30" y="222" font-family="monospace" font-size="11" fill="#6ee7b7">500 emails dispatched in 1 HTTP request without 429s</text>
+    <text x="30" y="240" font-family="monospace" font-size="10" fill="#34d399" font-style="italic">Result: Production-ready code on the first prompt pass.</text>
   </g>
 </svg>

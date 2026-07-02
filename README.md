@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="media/banner.svg" alt="Awesome API Skills — Visual Overview" width="100%">
+![Awesome API Skills — Visual Overview](https://raw.githubusercontent.com/ashish7802/awesome-api-skills/master/media/banner.svg)
 
 ### Structured, verified SKILL.md context files that teach AI coding agents how to work with real APIs
 
