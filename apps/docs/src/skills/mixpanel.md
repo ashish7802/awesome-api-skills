@@ -24,7 +24,7 @@ title: mixpanel
 
 ## Graph
 
-- **related to** → [posthog](/skills/posthog)
+_No graph edges for this skill._
 
 ---
 

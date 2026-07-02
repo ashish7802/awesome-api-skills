@@ -26,7 +26,6 @@ title: sveltekit
 
 - **alternative to** → [nextjs](/skills/nextjs)
 - **deploys to** → [vercel](/skills/vercel)
-- **alternative to** ← [react](/skills/react)
 
 ---
 

@@ -24,9 +24,7 @@ title: resend
 
 ## Graph
 
-- **related to** → [react-email](/skills/react-email)
-- **related to** → [stripe](/skills/stripe)
-- **related to** → [clerk](/skills/clerk)
+_No graph edges for this skill._
 
 ---
 

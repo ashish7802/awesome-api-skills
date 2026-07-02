@@ -26,7 +26,6 @@ title: caddy
 
 - **alternative to** → [nginx](/skills/nginx)
 - **works well with** → [docker](/skills/docker)
-- **alternative to** ← [traefik](/skills/traefik)
 
 ---
 

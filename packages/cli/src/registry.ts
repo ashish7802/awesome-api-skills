@@ -13,7 +13,17 @@ export class CommandRegistry {
     const importer = this.commands.get(name);
     if (!importer) return null;
     const mod = await importer();
-    return mod.default || null;
+    // Handle CJS/ESM interop: dynamic import() of a CJS module with
+    // `export default` can produce double-nested defaults where
+    // mod.default is a namespace object containing the real default.
+    const candidate = mod.default as unknown as Record<string, unknown>;
+    if (candidate && typeof candidate.execute === 'function') {
+      return candidate as unknown as Command;
+    }
+    if (candidate && candidate.default && typeof (candidate.default as Record<string, unknown>).execute === 'function') {
+      return candidate.default as unknown as Command;
+    }
+    return null;
   }
 
   getRegisteredNames(): string[] {

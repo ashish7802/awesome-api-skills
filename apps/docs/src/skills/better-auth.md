@@ -24,9 +24,7 @@ title: better-auth
 
 ## Graph
 
-- **related to** → [clerk](/skills/clerk)
-- **related to** → [neon](/skills/neon)
-- **implemented by** ← [oauth2](/skills/oauth2)
+_No graph edges for this skill._
 
 ---
 

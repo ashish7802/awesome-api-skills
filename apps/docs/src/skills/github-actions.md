@@ -26,12 +26,6 @@ title: github-actions
 
 - **depends on** → [git](/skills/git)
 - **works well with** → [docker](/skills/docker)
-- **alternative to** ← [argo-cd](/skills/argo-cd)
-- **works well with** ← [openid-connect](/skills/openid-connect)
-- **integrates with** ← [playwright](/skills/playwright)
-- **integrates with** ← [slack](/skills/slack)
-- **integrates with** ← [terraform](/skills/terraform)
-- **integrates with** ← [turborepo](/skills/turborepo)
 
 ---
 

@@ -24,10 +24,7 @@ title: upstash
 
 ## Graph
 
-- **related to** → [vercel](/skills/vercel)
-- **related to** → [cloudflare](/skills/cloudflare)
-- **related to** → [openai](/skills/openai)
-- **related to** ← [pinecone](/skills/pinecone)
+_No graph edges for this skill._
 
 ---
 

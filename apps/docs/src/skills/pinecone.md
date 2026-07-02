@@ -24,11 +24,7 @@ title: pinecone
 
 ## Graph
 
-- **related to** → [openai](/skills/openai)
-- **related to** → [anthropic](/skills/anthropic)
-- **related to** → [upstash](/skills/upstash)
-- **integrates with** ← [langchain](/skills/langchain)
-- **integrates with** ← [llamaindex](/skills/llamaindex)
+_No graph edges for this skill._
 
 ---
 

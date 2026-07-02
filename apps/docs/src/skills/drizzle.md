@@ -30,7 +30,6 @@ title: drizzle
 - **alternative to** → [prisma](/skills/prisma)
 - **works well with** → [neon](/skills/neon)
 - **works well with** → [turso](/skills/turso)
-- **integrates with** ← [cloudflare-workers](/skills/cloudflare-workers)
 
 ---
 

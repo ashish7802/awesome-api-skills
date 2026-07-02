@@ -26,8 +26,6 @@ title: prometheus
 
 - **works well with** → [grafana](/skills/grafana)
 - **monitors** → [kubernetes](/skills/kubernetes)
-- **works well with** ← [loki](/skills/loki)
-- **publishes to** ← [opentelemetry](/skills/opentelemetry)
 
 ---
 

@@ -26,7 +26,6 @@ title: cloudflare-workers
 
 - **works well with** → [hono](/skills/hono)
 - **integrates with** → [drizzle](/skills/drizzle)
-- **alternative to** ← [deno-deploy](/skills/deno-deploy)
 
 ---
 

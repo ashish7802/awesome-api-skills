@@ -26,8 +26,6 @@ title: hono
 
 - **alternative to** → [express](/skills/express)
 - **deploys to** → [cloudflare](/skills/cloudflare)
-- **works well with** ← [cloudflare-workers](/skills/cloudflare-workers)
-- **works well with** ← [deno-deploy](/skills/deno-deploy)
 
 ---
 

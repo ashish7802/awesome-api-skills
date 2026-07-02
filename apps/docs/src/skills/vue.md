@@ -27,7 +27,6 @@ title: vue
 - **extended by** → [nuxt](/skills/nuxt)
 - **alternative to** → [react](/skills/react)
 - **works well with** → [supabase](/skills/supabase)
-- **integrates with** ← [mapbox](/skills/mapbox)
 
 ---
 

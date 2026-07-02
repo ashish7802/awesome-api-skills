@@ -27,8 +27,6 @@ title: fastapi
 - **alternative to** → [express](/skills/express)
 - **integrates with** → [openai](/skills/openai)
 - **deploys to** → [docker](/skills/docker)
-- **integrates with** ← [discord](/skills/discord)
-- **monitors** ← [sentry](/skills/sentry)
 
 ---
 

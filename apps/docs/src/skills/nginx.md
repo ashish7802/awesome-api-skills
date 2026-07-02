@@ -26,9 +26,6 @@ title: nginx
 
 - **integrates with** → [kubernetes](/skills/kubernetes)
 - **integrates with** → [docker](/skills/docker)
-- **alternative to** ← [caddy](/skills/caddy)
-- **works well with** ← [linux](/skills/linux)
-- **alternative to** ← [traefik](/skills/traefik)
 
 ---
 

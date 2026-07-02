@@ -24,10 +24,7 @@ title: paddle
 
 ## Graph
 
-- **related to** → [stripe](/skills/stripe)
-- **related to** → [lemon squeezy](/skills/lemon squeezy)
-- **related to** ← [lemon-squeezy](/skills/lemon-squeezy)
-- **related to** ← [revenuecat](/skills/revenuecat)
+_No graph edges for this skill._
 
 ---
 

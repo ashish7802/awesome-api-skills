@@ -4,7 +4,7 @@ title: Knowledge Graph
 
 # Recommended stacks & relationships
 
-The graph connects **100 skills** with **213 relationships** — prerequisites, alternatives, and stacks that work together.
+The graph connects **100 skills** with **0 relationships** — prerequisites, alternatives, and stacks that work together.
 
 ## Popular stacks
 
@@ -49,26 +49,7 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-  argo-cd -->|depends on| kubernetes
-  auth0 -->|integrates with| nextjs
-  bullmq -->|depends on| redis
-  bullmq -->|integrates with| nestjs
-  cloudflare-workers -->|integrates with| drizzle
-  discord -->|integrates with| express
-  discord -->|integrates with| fastapi
-  docker -->|integrates with| github-actions
-  drizzle -->|integrates with| postgresql
-  drizzle -->|integrates with| mysql
-  drizzle -->|integrates with| sqlite
-  fastapi -->|integrates with| openai
-  gemini -->|integrates with| langchain
-  gemini -->|integrates with| llamaindex
-  github-actions -->|depends on| git
-  grafana -->|integrates with| prometheus
-  grafana -->|integrates with| loki
-  helm -->|depends on| kubernetes
-  helm -->|integrates with| argo-cd
-  jaeger -->|depends on| opentelemetry
+
 ```
 
 ## How to read edges

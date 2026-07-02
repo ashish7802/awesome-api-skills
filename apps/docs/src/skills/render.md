@@ -24,11 +24,7 @@ title: render
 
 ## Graph
 
-- **related to** → [railway](/skills/railway)
-- **related to** → [fly.io](/skills/fly.io)
-- **related to** ← [digitalocean](/skills/digitalocean)
-- **related to** ← [fly](/skills/fly)
-- **related to** ← [turso](/skills/turso)
+_No graph edges for this skill._
 
 ---
 

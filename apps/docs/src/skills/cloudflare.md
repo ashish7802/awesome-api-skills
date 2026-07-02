@@ -24,9 +24,7 @@ title: cloudflare
 
 ## Graph
 
-- **deploys to** ← [hono](/skills/hono)
-- **related to** ← [planetscale](/skills/planetscale)
-- **related to** ← [upstash](/skills/upstash)
+_No graph edges for this skill._
 
 ---
 

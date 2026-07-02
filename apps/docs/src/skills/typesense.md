@@ -24,8 +24,7 @@ title: typesense
 
 ## Graph
 
-- **related to** → [meilisearch](/skills/meilisearch)
-- **related to** → [algolia](/skills/algolia)
+_No graph edges for this skill._
 
 ---
 

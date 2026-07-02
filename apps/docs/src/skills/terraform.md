@@ -26,8 +26,6 @@ title: terraform
 
 - **alternative to** → [pulumi](/skills/pulumi)
 - **integrates with** → [github-actions](/skills/github-actions)
-- **provisioned by** ← [aws-dynamodb](/skills/aws-dynamodb)
-- **provisioned by** ← [aws-s3](/skills/aws-s3)
 
 ---
 

@@ -24,8 +24,7 @@ title: convex
 
 ## Graph
 
-- **related to** → [clerk](/skills/clerk)
-- **related to** → [vercel](/skills/vercel)
+_No graph edges for this skill._
 
 ---
 

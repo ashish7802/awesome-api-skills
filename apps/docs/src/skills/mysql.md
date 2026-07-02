@@ -27,7 +27,6 @@ title: mysql
 - **extended by** → [planetscale](/skills/planetscale)
 - **integrates with** → [prisma](/skills/prisma)
 - **alternative to** → [postgresql](/skills/postgresql)
-- **integrates with** ← [drizzle](/skills/drizzle)
 
 ---
 

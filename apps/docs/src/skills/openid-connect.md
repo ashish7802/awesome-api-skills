@@ -27,8 +27,6 @@ title: openid-connect
 - **depends on** → [oauth2](/skills/oauth2)
 - **integrates with** → [jwt](/skills/jwt)
 - **works well with** → [github-actions](/skills/github-actions)
-- **implements** ← [auth0](/skills/auth0)
-- **implements** ← [okta](/skills/okta)
 
 ---
 

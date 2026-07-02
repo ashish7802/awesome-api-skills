@@ -24,14 +24,7 @@ title: clerk
 
 ## Graph
 
-- **related to** → [neon](/skills/neon)
-- **related to** → [supabase](/skills/supabase)
-- **related to** → [resend](/skills/resend)
-- **related to** ← [better-auth](/skills/better-auth)
-- **related to** ← [convex](/skills/convex)
-- **authenticates with** ← [nextjs](/skills/nextjs)
-- **implemented by** ← [oauth2](/skills/oauth2)
-- **related to** ← [planetscale](/skills/planetscale)
+_No graph edges for this skill._
 
 ---
 

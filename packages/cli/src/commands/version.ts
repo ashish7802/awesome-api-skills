@@ -3,13 +3,28 @@ import path from 'path';
 import { Command } from '../interfaces.js';
 import pc from 'picocolors';
 
-function findRepoRoot(): string {
-  let dir = process.cwd();
+function findCliPackageJson(): string {
+  // Walk up from __dirname to find the CLI package's own package.json
+  let dir = __dirname;
   for (let i = 0; i < 6; i++) {
-    if (fs.existsSync(path.join(dir, 'package.json'))) return dir;
+    const candidate = path.join(dir, 'package.json');
+    if (fs.existsSync(candidate)) {
+      try {
+        const pkg = JSON.parse(fs.readFileSync(candidate, 'utf8'));
+        if (pkg.name === '@awesome-api-skills/cli') return candidate;
+      } catch {
+        // skip
+      }
+    }
     dir = path.dirname(dir);
   }
-  return process.cwd();
+  // Fallback: try repo root package.json
+  let root = process.cwd();
+  for (let i = 0; i < 6; i++) {
+    if (fs.existsSync(path.join(root, 'package.json'))) return path.join(root, 'package.json');
+    root = path.dirname(root);
+  }
+  return path.join(process.cwd(), 'package.json');
 }
 
 const command: Command = {
@@ -20,8 +35,7 @@ const command: Command = {
   options: {},
   examples: ['awesome-api version'],
   async execute() {
-    const root = findRepoRoot();
-    const pkgPath = path.join(root, 'package.json');
+    const pkgPath = findCliPackageJson();
     let version = '1.0.0';
 
     if (fs.existsSync(pkgPath)) {

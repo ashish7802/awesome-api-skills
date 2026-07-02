@@ -27,7 +27,6 @@ title: llamaindex
 - **alternative to** → [langchain](/skills/langchain)
 - **integrates with** → [openai](/skills/openai)
 - **integrates with** → [pinecone](/skills/pinecone)
-- **integrates with** ← [gemini](/skills/gemini)
 
 ---
 

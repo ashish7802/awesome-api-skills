@@ -26,7 +26,6 @@ title: playwright
 
 - **integrates with** → [github-actions](/skills/github-actions)
 - **works well with** → [nextjs](/skills/nextjs)
-- **works well with** ← [vitest](/skills/vitest)
 
 ---
 

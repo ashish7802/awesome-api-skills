@@ -26,12 +26,6 @@ title: docker
 
 - **deploys to** → [kubernetes](/skills/kubernetes)
 - **integrates with** → [github-actions](/skills/github-actions)
-- **works well with** ← [caddy](/skills/caddy)
-- **deploys to** ← [fastapi](/skills/fastapi)
-- **integrates with** ← [linux](/skills/linux)
-- **deploys to** ← [nestjs](/skills/nestjs)
-- **integrates with** ← [nginx](/skills/nginx)
-- **integrates with** ← [traefik](/skills/traefik)
 
 ---
 

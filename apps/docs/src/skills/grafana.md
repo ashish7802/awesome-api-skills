@@ -27,7 +27,6 @@ title: grafana
 - **integrates with** → [prometheus](/skills/prometheus)
 - **integrates with** → [loki](/skills/loki)
 - **alternative to** → [datadog](/skills/datadog)
-- **integrates with** ← [jaeger](/skills/jaeger)
 
 ---
 

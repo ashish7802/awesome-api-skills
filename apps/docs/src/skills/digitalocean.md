@@ -24,8 +24,7 @@ title: digitalocean
 
 ## Graph
 
-- **related to** → [aws s3](/skills/aws s3)
-- **related to** → [render](/skills/render)
+_No graph edges for this skill._
 
 ---
 

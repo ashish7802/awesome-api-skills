@@ -10,10 +10,20 @@ export async function main(argv: string[]) {
     parsed = parseArgs({
       args: argv,
       options: {
+        // Global options
         json: { type: 'boolean' },
         verbose: { type: 'boolean' },
         quiet: { type: 'boolean' },
         help: { type: 'boolean' },
+        // Per-command string options (registered globally for proper parsing)
+        iterations: { type: 'string' },
+        outDir: { type: 'string' },
+        out: { type: 'string' },
+        category: { type: 'string' },
+        auth: { type: 'string' },
+        target: { type: 'string' },
+        // Per-command boolean options
+        force: { type: 'boolean' },
       },
       strict: false,
       allowPositionals: true,

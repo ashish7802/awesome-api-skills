@@ -24,8 +24,7 @@ title: fly
 
 ## Graph
 
-- **related to** → [turso](/skills/turso)
-- **related to** → [render](/skills/render)
+_No graph edges for this skill._
 
 ---
 

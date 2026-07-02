@@ -24,9 +24,7 @@ title: railway
 
 ## Graph
 
-- **related to** → [render](/skills/render)
-- **related to** → [fly.io](/skills/fly.io)
-- **related to** → [github](/skills/github)
+_No graph edges for this skill._
 
 ---
 

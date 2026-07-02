@@ -24,10 +24,7 @@ title: planetscale
 
 ## Graph
 
-- **related to** → [vercel](/skills/vercel)
-- **related to** → [cloudflare](/skills/cloudflare)
-- **related to** → [clerk](/skills/clerk)
-- **extended by** ← [mysql](/skills/mysql)
+_No graph edges for this skill._
 
 ---
 

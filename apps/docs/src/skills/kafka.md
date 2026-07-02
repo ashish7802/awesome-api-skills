@@ -26,7 +26,6 @@ title: kafka
 
 - **alternative to** → [rabbitmq](/skills/rabbitmq)
 - **alternative to** → [redis-streams](/skills/redis-streams)
-- **related to** ← [nats](/skills/nats)
 
 ---
 

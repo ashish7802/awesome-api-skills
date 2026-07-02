@@ -27,7 +27,6 @@ title: sentry
 - **monitors** → [nextjs](/skills/nextjs)
 - **monitors** → [express](/skills/express)
 - **monitors** → [fastapi](/skills/fastapi)
-- **integrates with** ← [slack](/skills/slack)
 
 ---
 

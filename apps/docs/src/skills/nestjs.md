@@ -27,7 +27,6 @@ title: nestjs
 - **extended by** → [express](/skills/express)
 - **deploys to** → [docker](/skills/docker)
 - **deploys to** → [kubernetes](/skills/kubernetes)
-- **integrates with** ← [bullmq](/skills/bullmq)
 
 ---
 
