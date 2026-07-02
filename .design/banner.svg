@@ -1,61 +1,37 @@
-<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="55%" stop-color="#1e1b4b"/>
-      <stop offset="100%" stop-color="#312e81"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#22d3ee"/>
-      <stop offset="100%" stop-color="#a855f7"/>
-    </linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
-    </pattern>
-  </defs>
+<svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="260" fill="#0d0d0d"/>
 
-  <rect width="1200" height="300" fill="url(#bg)"/>
-  <rect width="1200" height="300" fill="url(#grid)"/>
+  <!-- thin top and bottom rule lines, like a terminal / manpage -->
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="#2a2a2a" stroke-width="2"/>
+  <line x1="0" y1="258" x2="1200" y2="260" stroke="#2a2a2a" stroke-width="2"/>
 
-  <!-- Accent bar -->
-  <rect x="0" y="0" width="1200" height="6" fill="url(#accent)"/>
+  <!-- left accent block -->
+  <rect x="0" y="0" width="6" height="260" fill="#4ade80"/>
 
-  <!-- Decorative node/graph motif on the right -->
-  <g opacity="0.5" stroke="#22d3ee" stroke-width="1.5">
-    <line x1="900" y1="90" x2="1000" y2="60"/>
-    <line x1="1000" y1="60" x2="1100" y2="100"/>
-    <line x1="900" y1="90" x2="960" y2="170"/>
-    <line x1="960" y1="170" x2="1080" y2="190"/>
-    <line x1="1080" y1="190" x2="1100" y2="100"/>
-    <line x1="960" y1="170" x2="1000" y2="60"/>
-  </g>
-  <g fill="#a855f7">
-    <circle cx="900" cy="90" r="6"/>
-    <circle cx="1000" cy="60" r="6"/>
-    <circle cx="1100" cy="100" r="6"/>
-    <circle cx="960" cy="170" r="6"/>
-    <circle cx="1080" cy="190" r="6"/>
-  </g>
+  <!-- prompt marker -->
+  <text x="70" y="95" font-family="'JetBrains Mono','Fira Code',monospace" font-size="22" fill="#4ade80">$</text>
+  <text x="95" y="95" font-family="'JetBrains Mono','Fira Code',monospace" font-size="22" fill="#e5e5e5">ls skills/ | wc -l</text>
+  <text x="420" y="95" font-family="'JetBrains Mono','Fira Code',monospace" font-size="22" fill="#7a7a7a">→ 100</text>
 
-  <!-- Wordmark -->
-  <text x="70" y="130" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="56" font-weight="800" fill="#f8fafc">
-    Awesome API Skills
-  </text>
+  <!-- main title -->
+  <text x="70" y="150" font-family="'JetBrains Mono','Fira Code',monospace" font-size="42" font-weight="700" fill="#ffffff">awesome-api-skills</text>
 
-  <!-- Tagline -->
-  <text x="72" y="168" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="400" fill="#cbd5e1">
-    Structured API knowledge for AI coding agents — not hallucinations.
-  </text>
+  <!-- subtitle -->
+  <text x="70" y="185" font-family="'JetBrains Mono','Fira Code',monospace" font-size="16" fill="#9a9a9a">100 SKILL.md files for Claude Code, Cursor, Codex CLI and Gemini CLI</text>
 
-  <!-- Pills -->
-  <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600">
-    <rect x="72" y="196" width="120" height="34" rx="17" fill="#0891b2" fill-opacity="0.25" stroke="#22d3ee" stroke-opacity="0.6"/>
-    <text x="90" y="218" fill="#67e8f9">100 Skills</text>
+  <!-- bottom tag row, plain text, no gradient badges -->
+  <text x="70" y="225" font-family="'JetBrains Mono','Fira Code',monospace" font-size="14" fill="#4ade80">stripe</text>
+  <text x="135" y="225" font-family="'JetBrains Mono','Fira Code',monospace" font-size="14" fill="#6a6a6a">·</text>
+  <text x="150" y="225" font-family="'JetBrains Mono','Fira Code',monospace" font-size="14" fill="#4ade80">postgresql</text>
+  <text x="245" y="225" font-family="'JetBrains Mono','Fira Code',monospace" font-size="14" fill="#6a6a6a">·</text>
+  <text x="260" y="225" font-family="'JetBrains Mono','Fira Code',monospace" font-size="14" fill="#4ade80">docker</text>
+  <text x="335" y="225" font-family="'JetBrains Mono','Fira Code',monospace" font-size="14" fill="#6a6a6a">·</text>
+  <text x="350" y="225" font-family="'JetBrains Mono','Fira Code',monospace" font-size="14" fill="#4ade80">kubernetes</text>
+  <text x="450" y="225" font-family="'JetBrains Mono','Fira Code',monospace" font-size="14" fill="#6a6a6a">·</text>
+  <text x="465" y="225" font-family="'JetBrains Mono','Fira Code',monospace" font-size="14" fill="#4ade80">openai</text>
+  <text x="540" y="225" font-family="'JetBrains Mono','Fira Code',monospace" font-size="14" fill="#6a6a6a">·</text>
+  <text x="555" y="225" font-family="'JetBrains Mono','Fira Code',monospace" font-size="14" fill="#6a6a6a">+ 95 more</text>
 
-    <rect x="204" y="196" width="150" height="34" rx="17" fill="#7c3aed" fill-opacity="0.25" stroke="#a855f7" stroke-opacity="0.6"/>
-    <text x="222" y="218" fill="#d8b4fe">Self-Audited</text>
-
-    <rect x="366" y="196" width="110" height="34" rx="17" fill="#334155" fill-opacity="0.6" stroke="#94a3b8" stroke-opacity="0.5"/>
-    <text x="384" y="218" fill="#e2e8f0">MIT License</text>
-  </g>
+  <!-- blinking cursor block, static representation -->
+  <rect x="855" y="132" width="14" height="24" fill="#4ade80"/>
 </svg>
