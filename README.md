@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src=".design/banner.svg" alt="Awesome API Skills — Visual Overview" width="100%">
+<img src="media/banner.svg" alt="Awesome API Skills — Visual Overview" width="100%">
 
 ### Structured, verified SKILL.md context files that teach AI coding agents how to work with real APIs
 
