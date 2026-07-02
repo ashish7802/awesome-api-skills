@@ -51,3 +51,6 @@ Use this when your agent works with **mixpanel** — structured patterns beat pa
 
 ## Related skills
 - [`posthog`](../posthog/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02

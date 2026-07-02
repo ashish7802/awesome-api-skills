@@ -14,7 +14,7 @@ title: fly
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | typescript, python, go |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://fly.io/docs/machines/api/) |
@@ -84,4 +84,7 @@ Use this when your agent works with **fly** — structured patterns beat pasted 
 ## Related skills
 - [`turso`](../turso/SKILL.md) — related to
 - [`render`](../render/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02
 

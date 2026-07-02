@@ -57,3 +57,6 @@ Use this when your agent works with **docker** — structured patterns beat past
 ## Related skills
 - [`kubernetes`](../kubernetes/SKILL.md) — deploys to
 - [`github-actions`](../github-actions/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02

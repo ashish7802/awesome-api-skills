@@ -66,3 +66,6 @@ Use this when your agent works with **biome** — structured patterns beat paste
 - [`eslint`](../eslint/SKILL.md) — replaces
 - [`prettier`](../prettier/SKILL.md) — replaces
 - [`react`](../react/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02

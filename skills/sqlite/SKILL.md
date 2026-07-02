@@ -62,3 +62,6 @@ Use this when your agent works with **sqlite** — structured patterns beat past
 ## Related skills
 - [`turso`](../turso/SKILL.md) — extended by
 - [`drizzle`](../drizzle/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02

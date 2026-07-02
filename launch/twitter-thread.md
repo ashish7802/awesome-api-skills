@@ -66,7 +66,7 @@ Before launch we ran a trust sprint:
 • rewrote README for verifiable claims only
 • deleted AI-generated "release ready" reports
 
-`TRUST_REPORT.md` documents all of it.
+`docs/internal/TRUST_REPORT.md` documents all of it.
 
 ---
 

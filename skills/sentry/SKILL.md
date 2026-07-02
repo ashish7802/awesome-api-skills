@@ -57,3 +57,6 @@ Use this when your agent works with **sentry** — structured patterns beat past
 - [`nextjs`](../nextjs/SKILL.md) — monitors
 - [`express`](../express/SKILL.md) — monitors
 - [`fastapi`](../fastapi/SKILL.md) — monitors
+
+---
+> **Last Verified:** 2026-07-02

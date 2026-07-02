@@ -14,7 +14,7 @@ title: postgresql
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | sql |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://www.postgresql.org/docs/) |
@@ -101,4 +101,7 @@ Use this when your agent works with **postgresql** — structured patterns beat 
 - [`prisma`](../prisma/SKILL.md) — integrates with
 - [`drizzle`](../drizzle/SKILL.md) — integrates with
 - [`mysql`](../mysql/SKILL.md) — alternative to
+
+---
+> **Last Verified:** 2026-07-02
 

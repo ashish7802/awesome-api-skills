@@ -58,3 +58,6 @@ Use this when your agent works with **vue** — structured patterns beat pasted 
 - [`nuxt`](../nuxt/SKILL.md) — extended by
 - [`react`](../react/SKILL.md) — alternative to
 - [`supabase`](../supabase/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02

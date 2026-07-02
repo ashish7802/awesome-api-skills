@@ -53,3 +53,6 @@ Use this when your agent works with **paddle** — structured patterns beat past
 ## Related skills
 - [`stripe`](../stripe/SKILL.md) — related to
 - [`lemon squeezy`](../lemon squeezy/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02

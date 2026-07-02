@@ -53,3 +53,6 @@ Use this when your agent works with **convex** — structured patterns beat past
 ## Related skills
 - [`clerk`](../clerk/SKILL.md) — related to
 - [`vercel`](../vercel/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02

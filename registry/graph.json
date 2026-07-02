@@ -205,7 +205,7 @@
       "meta": {
         "name": "azure-openai",
         "version": "1.0.0",
-        "description": "Enterprise-grade OpenAI models hosted on Azure.",
+        "description": "OpenAI models hosted on Microsoft Azure with enterprise security features.",
         "categories": ["AI", "Enterprise"],
         "languages": ["typescript", "python", "go"],
         "author": "Awesome API Skills Team",

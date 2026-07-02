@@ -14,7 +14,7 @@ title: openid-connect
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | yaml |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://openid.net/connect/) |
@@ -94,4 +94,7 @@ Use this when your agent works with **openid-connect** — structured patterns b
 - [`oauth2`](../oauth2/SKILL.md) — depends on
 - [`jwt`](../jwt/SKILL.md) — integrates with
 - [`github-actions`](../github-actions/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02
 

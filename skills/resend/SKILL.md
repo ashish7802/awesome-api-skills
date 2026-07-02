@@ -55,3 +55,6 @@ Use this when your agent works with **resend** — structured patterns beat past
 - [`react-email`](../react-email/SKILL.md) — related to
 - [`stripe`](../stripe/SKILL.md) — related to
 - [`clerk`](../clerk/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02

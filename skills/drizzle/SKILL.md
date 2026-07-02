@@ -73,3 +73,6 @@ Use this when your agent works with **drizzle** — structured patterns beat pas
 - [`prisma`](../prisma/SKILL.md) — alternative to
 - [`neon`](../neon/SKILL.md) — works well with
 - [`turso`](../turso/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02

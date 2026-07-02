@@ -55,3 +55,6 @@ Use this when your agent works with **railway** — structured patterns beat pas
 - [`render`](../render/SKILL.md) — related to
 - [`fly.io`](../fly.io/SKILL.md) — related to
 - [`github`](../github/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02

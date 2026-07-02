@@ -64,3 +64,6 @@ Use this when your agent works with **ollama** — structured patterns beat past
 - [`vllm`](../vllm/SKILL.md) — alternative to
 - [`langchain`](../langchain/SKILL.md) — integrates with
 - [`openai`](../openai/SKILL.md) — alternative to
+
+---
+> **Last Verified:** 2026-07-02

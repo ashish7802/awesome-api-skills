@@ -56,3 +56,6 @@ Use this when your agent works with **okta** — structured patterns beat pasted
 ## Related skills
 - [`oauth2`](../oauth2/SKILL.md) — implements
 - [`openid-connect`](../openid-connect/SKILL.md) — implements
+
+---
+> **Last Verified:** 2026-07-02

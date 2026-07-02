@@ -52,3 +52,6 @@ Use this when your agent works with **opentelemetry** — structured patterns be
 ## Related skills
 - [`jaeger`](../jaeger/SKILL.md) — publishes to
 - [`prometheus`](../prometheus/SKILL.md) — publishes to
+
+---
+> **Last Verified:** 2026-07-02

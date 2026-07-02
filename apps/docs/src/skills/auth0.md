@@ -14,7 +14,7 @@ title: auth0
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | typescript, python |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://auth0.com/docs/api/management/v2) |
@@ -89,4 +89,7 @@ Use this when your agent works with **auth0** — structured patterns beat paste
 - [`oauth2`](../oauth2/SKILL.md) — implements
 - [`openid-connect`](../openid-connect/SKILL.md) — implements
 - [`nextjs`](../nextjs/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02
 

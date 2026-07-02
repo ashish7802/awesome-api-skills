@@ -14,7 +14,7 @@ title: opentelemetry
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | typescript |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://opentelemetry.io/docs/) |
@@ -83,4 +83,7 @@ Use this when your agent works with **opentelemetry** — structured patterns be
 ## Related skills
 - [`jaeger`](../jaeger/SKILL.md) — publishes to
 - [`prometheus`](../prometheus/SKILL.md) — publishes to
+
+---
+> **Last Verified:** 2026-07-02
 

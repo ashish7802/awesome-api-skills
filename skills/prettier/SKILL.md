@@ -63,3 +63,6 @@ Use this when your agent works with **prettier** — structured patterns beat pa
 ## Related skills
 - [`eslint`](../eslint/SKILL.md) — works well with
 - [`biome`](../biome/SKILL.md) — alternative to
+
+---
+> **Last Verified:** 2026-07-02

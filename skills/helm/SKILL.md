@@ -56,3 +56,6 @@ Use this when your agent works with **helm** — structured patterns beat pasted
 ## Related skills
 - [`kubernetes`](../kubernetes/SKILL.md) — depends on
 - [`argo-cd`](../argo-cd/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02

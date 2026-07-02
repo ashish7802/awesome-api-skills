@@ -53,3 +53,6 @@ Use this when your agent works with **better-auth** — structured patterns beat
 ## Related skills
 - [`clerk`](../clerk/SKILL.md) — related to
 - [`neon`](../neon/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02

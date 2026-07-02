@@ -53,3 +53,6 @@ Use this when your agent works with **turso** — structured patterns beat paste
 ## Related skills
 - [`fly.io`](../fly.io/SKILL.md) — related to
 - [`render`](../render/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02

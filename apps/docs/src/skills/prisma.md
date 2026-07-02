@@ -14,7 +14,7 @@ title: prisma
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | prisma, typescript |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://www.prisma.io/docs/) |
@@ -103,4 +103,7 @@ Use this when your agent works with **prisma** — structured patterns beat past
 - [`mysql`](../mysql/SKILL.md) — integrates with
 - [`drizzle`](../drizzle/SKILL.md) — alternative to
 - [`nextjs`](../nextjs/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02
 

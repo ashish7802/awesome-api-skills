@@ -14,7 +14,7 @@ title: azure-blob-storage
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | typescript, python, go |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://learn.microsoft.com/en-us/javascript/api/@azure/storage-blob) |
@@ -84,4 +84,7 @@ Use this when your agent works with **azure-blob-storage** — structured patter
 ## Related skills
 - [`aws s3`](../aws s3/SKILL.md) — related to
 - [`google cloud storage`](../google cloud storage/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02
 

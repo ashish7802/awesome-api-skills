@@ -63,3 +63,6 @@ Use this when your agent works with **oauth2** — structured patterns beat past
 - [`jwt`](../jwt/SKILL.md) — works well with
 - [`clerk`](../clerk/SKILL.md) — implemented by
 - [`better-auth`](../better-auth/SKILL.md) — implemented by
+
+---
+> **Last Verified:** 2026-07-02

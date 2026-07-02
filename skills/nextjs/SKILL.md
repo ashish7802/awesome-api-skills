@@ -66,3 +66,6 @@ Use this when your agent works with **nextjs** — structured patterns beat past
 - [`clerk`](../clerk/SKILL.md) — authenticates with
 - [`nuxt`](../nuxt/SKILL.md) — alternative to
 - [`trpc`](../trpc/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02

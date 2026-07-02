@@ -56,3 +56,6 @@ Use this when your agent works with **pulumi** — structured patterns beat past
 
 ## Related skills
 - [`terraform`](../terraform/SKILL.md) — alternative to
+
+---
+> **Last Verified:** 2026-07-02

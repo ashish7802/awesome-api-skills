@@ -56,3 +56,6 @@ Use this when your agent works with **hono** — structured patterns beat pasted
 ## Related skills
 - [`express`](../express/SKILL.md) — alternative to
 - [`cloudflare`](../cloudflare/SKILL.md) — deploys to
+
+---
+> **Last Verified:** 2026-07-02

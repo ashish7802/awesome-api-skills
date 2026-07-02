@@ -14,7 +14,7 @@ title: vue
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | typescript |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://vuejs.org/guide/introduction.html) |
@@ -91,4 +91,7 @@ Use this when your agent works with **vue** — structured patterns beat pasted 
 - [`nuxt`](../nuxt/SKILL.md) — extended by
 - [`react`](../react/SKILL.md) — alternative to
 - [`supabase`](../supabase/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02
 

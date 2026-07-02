@@ -53,3 +53,6 @@ Use this when your agent works with **google-cloud-storage** — structured patt
 ## Related skills
 - [`aws s3`](../aws s3/SKILL.md) — related to
 - [`firebase`](../firebase/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02

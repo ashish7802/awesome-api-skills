@@ -56,3 +56,6 @@ Use this when your agent works with **gemini** — structured patterns beat past
 ## Related skills
 - [`langchain`](../langchain/SKILL.md) — integrates with
 - [`llamaindex`](../llamaindex/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02

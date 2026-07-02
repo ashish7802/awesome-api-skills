@@ -14,7 +14,7 @@ title: nuxt
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | typescript |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://nuxt.com/docs) |
@@ -92,4 +92,7 @@ Use this when your agent works with **nuxt** — structured patterns beat pasted
 - [`vue`](../vue/SKILL.md) — depends on
 - [`nextjs`](../nextjs/SKILL.md) — alternative to
 - [`vercel`](../vercel/SKILL.md) — deploys to
+
+---
+> **Last Verified:** 2026-07-02
 

@@ -23,7 +23,6 @@ describe('CLI Router', () => {
 
   it('should format errors via the renderer', async () => {
     const errorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
-    // Mocking exit to prevent test failure
     const exitSpy = vi.spyOn(process, 'exit').mockImplementation((() => {
       /* noop */
     }) as never);
@@ -37,5 +36,37 @@ describe('CLI Router', () => {
 
     errorSpy.mockRestore();
     exitSpy.mockRestore();
+  });
+
+  it('should execute search command with matching results', async () => {
+    const consoleSpy = vi.spyOn(console, 'log').mockImplementation(() => {});
+    await main(['search', 'stripe', '--json']);
+    const output = consoleSpy.mock.calls[0][0];
+    const parsed = JSON.parse(output);
+    expect(parsed.success).toBe(true);
+    expect(parsed.data.query).toBe('stripe');
+    expect(Array.isArray(parsed.data.results)).toBe(true);
+    expect(parsed.data.results.length).toBeGreaterThan(0);
+    expect(parsed.data.results[0].id).toBe('stripe');
+    consoleSpy.mockRestore();
+  });
+
+  it('should execute completion command and generate shell scripts', async () => {
+    const consoleSpy = vi.spyOn(console, 'log').mockImplementation(() => {});
+    await main(['completion', 'bash']);
+    expect(consoleSpy).toHaveBeenCalled();
+    const output = consoleSpy.mock.calls[0][0];
+    expect(output).toContain('# Completion script for bash generated');
+    consoleSpy.mockRestore();
+  });
+
+  it('should execute validate command', async () => {
+    const consoleSpy = vi.spyOn(console, 'log').mockImplementation(() => {});
+    await main(['validate', '--json']);
+    const output = consoleSpy.mock.calls[0][0];
+    const parsed = JSON.parse(output);
+    expect(parsed.success).toBe(true);
+    expect(parsed.data.valid).toBe(true);
+    consoleSpy.mockRestore();
   });
 });

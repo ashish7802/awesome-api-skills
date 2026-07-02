@@ -54,3 +54,6 @@ Use this when your agent works with **nginx** — structured patterns beat paste
 ## Related skills
 - [`kubernetes`](../kubernetes/SKILL.md) — integrates with
 - [`docker`](../docker/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02

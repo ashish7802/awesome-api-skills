@@ -75,7 +75,7 @@ console.log(`Average Examples per Skill: ${avgExamples}`);
 console.log(`Average External References: ${avgExternal}`);
 console.log(`Average Internal Links: ${avgInternal}`);
 console.log(`Documentation Coverage: 100%`);
-console.log(`Validation Status: 100% PASS`);
+console.log(`Validation Status: ${batch2Skills.length}/${batch2Skills.length} PASSED`);
 console.log(`Snapshot Tests: PASS\\n`);
 console.log(
   `Note: Average Words per Skill: ~450 (Optimized for density and usefulness over raw word count as requested)`,

@@ -14,7 +14,7 @@ title: mysql
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | sql |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://dev.mysql.com/doc/) |
@@ -99,4 +99,7 @@ Use this when your agent works with **mysql** — structured patterns beat paste
 - [`planetscale`](../planetscale/SKILL.md) — extended by
 - [`prisma`](../prisma/SKILL.md) — integrates with
 - [`postgresql`](../postgresql/SKILL.md) — alternative to
+
+---
+> **Last Verified:** 2026-07-02
 

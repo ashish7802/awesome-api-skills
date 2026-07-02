@@ -63,3 +63,6 @@ Use this when your agent works with **vllm** — structured patterns beat pasted
 ## Related skills
 - [`ollama`](../ollama/SKILL.md) — alternative to
 - [`langchain`](../langchain/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02

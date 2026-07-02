@@ -56,3 +56,6 @@ Use this when your agent works with **discord** — structured patterns beat pas
 ## Related skills
 - [`express`](../express/SKILL.md) — integrates with
 - [`fastapi`](../fastapi/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02

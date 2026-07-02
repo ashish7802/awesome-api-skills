@@ -14,7 +14,7 @@ title: ollama
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | yaml, bash |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://github.com/ollama/ollama) |
@@ -96,4 +96,7 @@ Use this when your agent works with **ollama** — structured patterns beat past
 - [`vllm`](../vllm/SKILL.md) — alternative to
 - [`langchain`](../langchain/SKILL.md) — integrates with
 - [`openai`](../openai/SKILL.md) — alternative to
+
+---
+> **Last Verified:** 2026-07-02
 

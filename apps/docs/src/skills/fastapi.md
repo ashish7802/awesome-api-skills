@@ -14,7 +14,7 @@ title: fastapi
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | python |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://fastapi.tiangolo.com/) |
@@ -94,4 +94,7 @@ Use this when your agent works with **fastapi** — structured patterns beat pas
 - [`express`](../express/SKILL.md) — alternative to
 - [`openai`](../openai/SKILL.md) — integrates with
 - [`docker`](../docker/SKILL.md) — deploys to
+
+---
+> **Last Verified:** 2026-07-02
 

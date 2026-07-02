@@ -56,3 +56,6 @@ Use this when your agent works with **plaid** — structured patterns beat paste
 
 ## Related skills
 - [`stripe`](../stripe/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02

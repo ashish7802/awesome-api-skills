@@ -26,7 +26,7 @@ I've been working on a repo called **Awesome API Skills** and just tagged v1.0.0
 - 28 tests in the workspace packages
 - MIT license
 
-**Before this release** we did a "trust sprint" — removed fake registry URLs, npm install instructions for unpublished packages, and AI-generated release reports. There's an `AUDIT_REPORT.md` and `TRUST_REPORT.md` if you're curious.
+**Before this release** we did a "trust sprint" — removed fake registry URLs, npm install instructions for unpublished packages, and AI-generated release reports. There's a `docs/internal/AUDIT_REPORT.md` and `docs/internal/TRUST_REPORT.md` if you're curious.
 
 **Clone:**
 

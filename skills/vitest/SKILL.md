@@ -61,3 +61,6 @@ Use this when your agent works with **vitest** — structured patterns beat past
 ## Related skills
 - [`playwright`](../playwright/SKILL.md) — works well with
 - [`react`](../react/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02

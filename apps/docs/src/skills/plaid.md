@@ -14,7 +14,7 @@ title: plaid
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | typescript, python |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://plaid.com/docs/api/) |
@@ -86,4 +86,7 @@ Use this when your agent works with **plaid** — structured patterns beat paste
 
 ## Related skills
 - [`stripe`](../stripe/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02
 

@@ -60,3 +60,6 @@ Use this when your agent works with **kubernetes** — structured patterns beat 
 - [`helm`](../helm/SKILL.md) — integrates with
 - [`argo-cd`](../argo-cd/SKILL.md) — works well with
 - [`prometheus`](../prometheus/SKILL.md) — monitors
+
+---
+> **Last Verified:** 2026-07-02

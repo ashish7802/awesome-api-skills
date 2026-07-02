@@ -42,7 +42,7 @@ Works with any agent that reads markdown — Cursor, Claude Code, and similar to
 - **28 tests** in the monorepo
 - **CLI exists in source** but is **not published to npm yet**
 
-We removed unverifiable marketing and fake infrastructure links before launch. See `TRUST_REPORT.md` for the full audit.
+We removed unverifiable marketing and fake infrastructure links before launch. See `docs/internal/TRUST_REPORT.md` for the full audit.
 
 ### Get involved
 

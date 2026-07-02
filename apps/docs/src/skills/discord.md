@@ -14,7 +14,7 @@ title: discord
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | typescript, python |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://discord.com/developers/docs/intro) |
@@ -87,4 +87,7 @@ Use this when your agent works with **discord** — structured patterns beat pas
 ## Related skills
 - [`express`](../express/SKILL.md) — integrates with
 - [`fastapi`](../fastapi/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02
 

@@ -56,3 +56,6 @@ Use this when your agent works with **sveltekit** — structured patterns beat p
 ## Related skills
 - [`nextjs`](../nextjs/SKILL.md) — alternative to
 - [`vercel`](../vercel/SKILL.md) — deploys to
+
+---
+> **Last Verified:** 2026-07-02

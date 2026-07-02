@@ -57,3 +57,6 @@ Use this when your agent works with **auth0** — structured patterns beat paste
 - [`oauth2`](../oauth2/SKILL.md) — implements
 - [`openid-connect`](../openid-connect/SKILL.md) — implements
 - [`nextjs`](../nextjs/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02

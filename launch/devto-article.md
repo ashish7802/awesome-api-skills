@@ -82,7 +82,7 @@ Early versions of this repo had problems we were not comfortable shipping:
 - Hardcoded "performance benchmarks" that were never measured
 - AI-generated release reports claiming zero defects
 
-We ran a trust sprint, documented findings in `AUDIT_REPORT.md`, and fixed the README to state only verifiable facts. See `TRUST_REPORT.md` for verification results.
+We ran a trust sprint, documented findings in `docs/internal/AUDIT_REPORT.md`, and fixed the README to state only verifiable facts. See `docs/internal/TRUST_REPORT.md` for verification results.
 
 ## Known limitations (v1.0.0)
 

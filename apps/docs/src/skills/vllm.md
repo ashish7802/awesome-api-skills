@@ -14,7 +14,7 @@ title: vllm
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | python |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://vllm.readthedocs.io/) |
@@ -94,4 +94,7 @@ Use this when your agent works with **vllm** — structured patterns beat pasted
 ## Related skills
 - [`ollama`](../ollama/SKILL.md) — alternative to
 - [`langchain`](../langchain/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02
 

@@ -61,3 +61,6 @@ Use this when your agent works with **turborepo** — structured patterns beat p
 ## Related skills
 - [`nextjs`](../nextjs/SKILL.md) — works well with
 - [`github-actions`](../github-actions/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02

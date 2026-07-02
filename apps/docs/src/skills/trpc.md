@@ -14,7 +14,7 @@ title: trpc
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | typescript |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://trpc.io/docs) |
@@ -85,4 +85,7 @@ Use this when your agent works with **trpc** — structured patterns beat pasted
 ## Related skills
 - [`nextjs`](../nextjs/SKILL.md) — works well with
 - [`react`](../react/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02
 

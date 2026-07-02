@@ -14,7 +14,7 @@ title: bullmq
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | typescript |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://docs.bullmq.io/) |
@@ -96,4 +96,7 @@ Use this when your agent works with **bullmq** — structured patterns beat past
 - [`redis`](../redis/SKILL.md) — depends on
 - [`rabbitmq`](../rabbitmq/SKILL.md) — alternative to
 - [`nestjs`](../nestjs/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02
 

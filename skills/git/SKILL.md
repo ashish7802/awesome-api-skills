@@ -53,3 +53,6 @@ Use this when your agent works with **git** — structured patterns beat pasted 
 
 ## Related skills
 - [`github-actions`](../github-actions/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02

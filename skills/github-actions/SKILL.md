@@ -59,3 +59,6 @@ Use this when your agent works with **github-actions** — structured patterns b
 ## Related skills
 - [`git`](../git/SKILL.md) — depends on
 - [`docker`](../docker/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02

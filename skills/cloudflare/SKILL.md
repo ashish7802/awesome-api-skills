@@ -55,3 +55,6 @@ Use this when your agent works with **cloudflare** — structured patterns beat 
 
 ## Related skills
 - No graph relationships yet — see the knowledge graph in the docs site.
+
+---
+> **Last Verified:** 2026-07-02

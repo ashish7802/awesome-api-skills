@@ -63,3 +63,6 @@ Use this when your agent works with **jwt** — structured patterns beat pasted 
 ## Related skills
 - [`oauth2`](../oauth2/SKILL.md) — works well with
 - [`redis`](../redis/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02

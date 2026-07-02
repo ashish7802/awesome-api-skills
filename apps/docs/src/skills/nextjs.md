@@ -14,7 +14,7 @@ title: nextjs
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | typescript, python, go |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://nextjs.org/docs) |
@@ -103,4 +103,7 @@ Use this when your agent works with **nextjs** — structured patterns beat past
 - [`clerk`](../clerk/SKILL.md) — authenticates with
 - [`nuxt`](../nuxt/SKILL.md) — alternative to
 - [`trpc`](../trpc/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02
 

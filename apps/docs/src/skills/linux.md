@@ -14,7 +14,7 @@ title: linux
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | bash |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://www.kernel.org/doc/html/latest/) |
@@ -88,4 +88,7 @@ Use this when your agent works with **linux** — structured patterns beat paste
 ## Related skills
 - [`docker`](../docker/SKILL.md) — integrates with
 - [`nginx`](../nginx/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02
 

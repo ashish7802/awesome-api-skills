@@ -60,3 +60,6 @@ Use this when your agent works with **express** — structured patterns beat pas
 - [`hono`](../hono/SKILL.md) — alternative to
 - [`nestjs`](../nestjs/SKILL.md) — alternative to
 - [`redis`](../redis/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02

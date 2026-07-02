@@ -69,3 +69,6 @@ Use this when your agent works with **prisma** — structured patterns beat past
 - [`mysql`](../mysql/SKILL.md) — integrates with
 - [`drizzle`](../drizzle/SKILL.md) — alternative to
 - [`nextjs`](../nextjs/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02

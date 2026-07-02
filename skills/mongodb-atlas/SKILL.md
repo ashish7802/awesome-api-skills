@@ -54,3 +54,6 @@ Use this when your agent works with **mongodb-atlas** — structured patterns be
 
 ## Related skills
 - [`prisma`](../prisma/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02

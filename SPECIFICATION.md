@@ -94,7 +94,7 @@ A skill progresses through a defined lifecycle, tracked via the `status` metadat
 
 1. **Draft:** Work in progress. Tools SHOULD ignore these skills in production registries.
 2. **Experimental:** Functional but unstable. APIs might change.
-3. **Stable:** Production-ready. Backwards compatibility is guaranteed.
+3. **Stable:** Fully tested and standardized format. Backwards compatibility is maintained.
 4. **Verified:** A Stable skill that has passed extensive automated and manual review by the registry administrators.
 5. **Official:** A Verified skill maintained by the actual API vendor.
 6. **Deprecated:** The skill is no longer recommended for new projects. Tools MUST display a warning before installation.
@@ -200,3 +200,16 @@ _Note: This section outlines theoretical capabilities and makes no implementatio
 - **Skill Ratings:** Community-driven upvoting and rating systems integrated into the search index.
 - **Telemetry & Analytics:** Opt-in, privacy-preserving tracking of which skills result in the most successful code generations.
 - **Remote Updates:** Background syncing to ensure installed skills automatically receive patch updates.
+
+## 15. Related Skills Scoring Methodology
+
+Relationship scores (e.g. `0.95`, `0.82`) between skills in the registry graph are computed using a deterministic 5-factor hybrid scoring model:
+
+$$\text{Score} = (0.50 \times \text{ExplicitEdge}) + (0.20 \times \text{CategoryMatch}) + (0.10 \times \text{EcosystemMatch}) + (0.10 \times \text{DeploymentMatch}) + (0.10 \times \text{JaccardSimilarity})$$
+
+- **Explicit Edge (weight 0.50):** 1.0 if the skill explicitly declares a relationship in `metadata.json`, else 0.0.
+- **Category Match (weight 0.20):** Proportion of shared categories between the two skills.
+- **Ecosystem Match (weight 0.10):** 1.0 if both skills belong to the same ecosystem (e.g. Node.js, Python, AWS), else 0.0.
+- **Deployment Match (weight 0.10):** Proportion of shared deployment targets (e.g. Vercel, Docker, Cloudflare).
+- **Jaccard Similarity (weight 0.10):** Graph neighborhood similarity score: $\frac{|N(A) \cap N(B)|}{|N(A) \cup N(B)|}$.
+

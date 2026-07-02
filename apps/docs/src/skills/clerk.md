@@ -14,7 +14,7 @@ title: clerk
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | typescript, python, go |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://clerk.com/docs/reference/backend-api) |
@@ -92,4 +92,7 @@ Use this when your agent works with **clerk** — structured patterns beat paste
 - [`neon`](../neon/SKILL.md) — related to
 - [`supabase`](../supabase/SKILL.md) — related to
 - [`resend`](../resend/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02
 

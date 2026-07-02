@@ -53,3 +53,6 @@ Use this when your agent works with **meilisearch** — structured patterns beat
 ## Related skills
 - [`typesense`](../typesense/SKILL.md) — related to
 - [`algolia`](../algolia/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02

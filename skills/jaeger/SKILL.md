@@ -56,3 +56,6 @@ Use this when your agent works with **jaeger** — structured patterns beat past
 ## Related skills
 - [`opentelemetry`](../opentelemetry/SKILL.md) — depends on
 - [`grafana`](../grafana/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02

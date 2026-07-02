@@ -56,3 +56,6 @@ Use this when your agent works with **slack** — structured patterns beat paste
 ## Related skills
 - [`github-actions`](../github-actions/SKILL.md) — integrates with
 - [`sentry`](../sentry/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02

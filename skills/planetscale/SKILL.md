@@ -55,3 +55,6 @@ Use this when your agent works with **planetscale** — structured patterns beat
 - [`vercel`](../vercel/SKILL.md) — related to
 - [`cloudflare`](../cloudflare/SKILL.md) — related to
 - [`clerk`](../clerk/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02

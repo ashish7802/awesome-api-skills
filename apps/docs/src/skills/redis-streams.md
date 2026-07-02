@@ -14,7 +14,7 @@ title: redis-streams
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | typescript |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://redis.io/docs/data-types/streams/) |
@@ -94,4 +94,7 @@ Use this when your agent works with **redis-streams** — structured patterns be
 ## Related skills
 - [`redis`](../redis/SKILL.md) — depends on
 - [`kafka`](../kafka/SKILL.md) — alternative to
+
+---
+> **Last Verified:** 2026-07-02
 

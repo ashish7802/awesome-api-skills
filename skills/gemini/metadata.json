@@ -27,7 +27,7 @@
   "schemaVersion": "1.0.0",
   "validationStatus": "validated",
   "maintainer": "Awesome API Skills Team",
-  "lastUpdated": "2026-06-29",
+  "lastUpdated": "2026-07-02",
   "documentationSource": "https://ai.google.dev/api",
   "supportedAgents": [
     "cursor",
@@ -35,5 +35,6 @@
     "cline",
     "continue"
   ],
-  "compatibility": "SKILL.md v1.0"
+  "compatibility": "SKILL.md v1.0",
+  "lastVerified": "2026-07-02"
 }

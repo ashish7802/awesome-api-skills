@@ -60,3 +60,6 @@ Use this when your agent works with **argo-cd** — structured patterns beat pas
 - [`kubernetes`](../kubernetes/SKILL.md) — depends on
 - [`helm`](../helm/SKILL.md) — works well with
 - [`github-actions`](../github-actions/SKILL.md) — alternative to
+
+---
+> **Last Verified:** 2026-07-02

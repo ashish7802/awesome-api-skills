@@ -53,3 +53,6 @@ Use this when your agent works with **nats** — structured patterns beat pasted
 ## Related skills
 - [`kafka`](../kafka/SKILL.md) — related to
 - [`redis`](../redis/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02

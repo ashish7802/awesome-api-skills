@@ -53,3 +53,6 @@ Use this when your agent works with **digitalocean** — structured patterns bea
 ## Related skills
 - [`aws s3`](../aws s3/SKILL.md) — related to
 - [`render`](../render/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02

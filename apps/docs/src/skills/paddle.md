@@ -14,7 +14,7 @@ title: paddle
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | typescript, python, go |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://developer.paddle.com/api-reference) |
@@ -86,4 +86,7 @@ Use this when your agent works with **paddle** — structured patterns beat past
 ## Related skills
 - [`stripe`](../stripe/SKILL.md) — related to
 - [`lemon squeezy`](../lemon squeezy/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02
 

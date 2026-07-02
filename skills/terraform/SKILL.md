@@ -58,3 +58,6 @@ Use this when your agent works with **terraform** — structured patterns beat p
 ## Related skills
 - [`pulumi`](../pulumi/SKILL.md) — alternative to
 - [`github-actions`](../github-actions/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02

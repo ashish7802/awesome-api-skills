@@ -55,3 +55,6 @@ Use this when your agent works with **shopify** — structured patterns beat pas
 ## Related skills
 - [`nextjs`](../nextjs/SKILL.md) — integrates with
 - [`stripe`](../stripe/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02

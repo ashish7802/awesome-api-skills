@@ -66,3 +66,6 @@ Use this when your agent works with **langchain** — structured patterns beat p
 - [`llamaindex`](../llamaindex/SKILL.md) — alternative to
 - [`openai`](../openai/SKILL.md) — integrates with
 - [`pinecone`](../pinecone/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02

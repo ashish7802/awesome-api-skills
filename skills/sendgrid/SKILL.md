@@ -54,3 +54,6 @@ Use this when your agent works with **sendgrid** — structured patterns beat pa
 
 ## Related skills
 - [`twilio`](../twilio/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02

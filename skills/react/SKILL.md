@@ -56,3 +56,6 @@ Use this when your agent works with **react** — structured patterns beat paste
 - [`nextjs`](../nextjs/SKILL.md) — extended by
 - [`vue`](../vue/SKILL.md) — alternative to
 - [`sveltekit`](../sveltekit/SKILL.md) — alternative to
+
+---
+> **Last Verified:** 2026-07-02

@@ -62,3 +62,6 @@ Use this when your agent works with **cloudflare-workers** — structured patter
 ## Related skills
 - [`hono`](../hono/SKILL.md) — works well with
 - [`drizzle`](../drizzle/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02

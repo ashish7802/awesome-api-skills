@@ -53,3 +53,6 @@ Use this when your agent works with **lemon-squeezy** — structured patterns be
 ## Related skills
 - [`paddle`](../paddle/SKILL.md) — related to
 - [`stripe`](../stripe/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02

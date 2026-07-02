@@ -53,3 +53,6 @@ Use this when your agent works with **azure-blob-storage** — structured patter
 ## Related skills
 - [`aws s3`](../aws s3/SKILL.md) — related to
 - [`google cloud storage`](../google cloud storage/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02

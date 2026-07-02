@@ -14,7 +14,7 @@ title: mapbox
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | typescript, python |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://docs.mapbox.com/api/) |
@@ -87,4 +87,7 @@ Use this when your agent works with **mapbox** — structured patterns beat past
 ## Related skills
 - [`react`](../react/SKILL.md) — integrates with
 - [`vue`](../vue/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02
 

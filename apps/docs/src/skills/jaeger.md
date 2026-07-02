@@ -14,7 +14,7 @@ title: jaeger
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | yaml |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://www.jaegertracing.io/docs/) |
@@ -87,4 +87,7 @@ Use this when your agent works with **jaeger** — structured patterns beat past
 ## Related skills
 - [`opentelemetry`](../opentelemetry/SKILL.md) — depends on
 - [`grafana`](../grafana/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02
 

@@ -81,7 +81,7 @@ buildSkillV2({
 buildSkillV2({
   name: 'azure-openai',
   displayName: 'Azure OpenAI',
-  description: 'Enterprise-grade OpenAI models hosted on Azure.',
+  description: 'OpenAI models hosted on Microsoft Azure with enterprise security features.',
   categories: ['AI', 'Enterprise'],
   quickStart:
     'Azure OpenAI provides the same models as OpenAI (GPT-4) but within the Azure compliance boundary, utilizing Active Directory and custom domain endpoints.\n\n```bash\nnpm install openai\n```',

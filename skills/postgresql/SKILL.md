@@ -68,3 +68,6 @@ Use this when your agent works with **postgresql** — structured patterns beat 
 - [`prisma`](../prisma/SKILL.md) — integrates with
 - [`drizzle`](../drizzle/SKILL.md) — integrates with
 - [`mysql`](../mysql/SKILL.md) — alternative to
+
+---
+> **Last Verified:** 2026-07-02

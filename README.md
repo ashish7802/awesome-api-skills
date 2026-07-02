@@ -1,121 +1,181 @@
 <div align="center">
 
-<img src=".design/banner.svg" alt="Awesome API Skills" width="100%">
+<img src=".design/banner.svg" alt="Awesome API Skills — Visual Overview" width="100%">
 
-### Structured skill files that teach AI coding agents how to work with real APIs
+### Structured, verified SKILL.md context files that teach AI coding agents how to work with real APIs
 
 <p>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT License"></a>
-  <img src="https://img.shields.io/badge/skills-100-orange?style=flat-square" alt="100 skills">
-  <img src="https://img.shields.io/badge/status-active%20development-yellow?style=flat-square" alt="Active development">
+  <img src="https://img.shields.io/badge/skills-100%20verified-orange?style=flat-square" alt="100 verified skills">
+  <a href="https://github.com/ashish7802/awesome-api-skills/actions/workflows/quality.yml"><img src="https://github.com/ashish7802/awesome-api-skills/actions/workflows/quality.yml/badge.svg" alt="Quality Gates"></a>
+  <a href="https://github.com/ashish7802/awesome-api-skills/actions/workflows/tests.yml"><img src="https://github.com/ashish7802/awesome-api-skills/actions/workflows/tests.yml/badge.svg" alt="Tests"></a>
 </p>
 
-<p><a href="#what-this-is">What this is</a> · <a href="#quick-start">Quick start</a> · <a href="#skill-directory">Skill directory</a> · <a href="#repo-structure">Repo structure</a> · <a href="#roadmap">Roadmap</a> · <a href="#contributing">Contributing</a></p>
+<p>
+  <a href="./docs/index.html"><strong>🔍 Searchable Directory</strong></a> · 
+  <a href="./docs/BENCHMARKS_AND_EXAMPLES.md"><strong>⚡ Before vs. After Code</strong></a> · 
+  <a href="./docs/CLI_USAGE.md"><strong>💻 CLI Reference</strong></a> · 
+  <a href="#quick-start"><strong>🚀 Quick Start</strong></a> · 
+  <a href="#skill-directory"><strong>📚 Skill Directory</strong></a> · 
+  <a href="#contributing"><strong>🤝 Contributing</strong></a>
+</p>
 
 </div>
 
 ---
 
-## What this is
+## 💡 What This Is & Why It Matters
 
-This repo is a collection of 100 `SKILL.md` files — one per API, database, framework, or dev tool. Each file gives an AI coding agent (Claude Code, Cursor, Codex CLI, Gemini CLI, etc.) the specific, current information it usually gets wrong: correct SDK method names, current webhook event names, auth patterns, common mistakes, and which other tools it's typically paired with.
+When an AI coding agent (Claude Code, Cursor, Codex CLI, Gemini CLI, etc.) writes code for modern APIs, it frequently makes critical mistakes:
+- Reaching for **outdated SDK methods** present in old training data.
+- **Parsing raw request bodies** with `express.json()` before validating Stripe webhook signatures, breaking cryptographic checks.
+- Using **deprecated authentication helpers** (e.g. `@clerk/nextjs` v4 `authMiddleware` instead of v5 `clerkMiddleware`).
+- Calling transactional email endpoints inside unbatched loops, hitting **HTTP 429 rate limit errors**.
 
-The problem this solves is simple. Ask an agent to "add Stripe payments" and it will often reach for outdated method names or skip webhook signature verification, because that's what shows up most in its training data. Dropping a skill file into the agent's context directory gives it a shortcut to the current, correct pattern instead of guessing from old blog posts.
+`awesome-api-skills` fixes this by providing **100 curated, schema-validated `SKILL.md` context files**. Dropping a skill file into your agent's skills directory (`.claude/skills/`, `.cursor/skills/`, `.agents/skills/`) gives the model exact, current API instructions, preventing guesswork before code is written.
 
-Every skill follows the same structure, so once you're used to reading one, you can read all of them:
+---
 
-- A short description of what the tool is and when to use it
-- A relationship map showing which tools it's commonly paired with, and why
-- Setup and authentication basics
-- Common mistakes agents make with this specific tool
-- A quick-reference block of the patterns that matter most
+## ⚡ The Difference A Skill Makes
 
-This is not a tutorial for humans and not a replacement for official docs — it's meant to sit inside a repo's `.claude/skills/` or `.cursor/skills/` folder and get read automatically by the agent when it's relevant.
+Here is how an AI agent performs with and without `SKILL.md` context:
 
-## Quick start
+| Scenario | Without SKILL.md (LLM Guessing) | With SKILL.md (Context Injected) |
+|---|---|---|
+| **Stripe Webhook Verification** | Parses JSON first (`express.json()`), ruining the raw buffer signature check and throwing `StripeSignatureVerificationError`. | Mounts `express.raw({ type: 'application/json' })` on the webhook route so `stripe.webhooks.constructEvent()` verifies signature cryptographically. |
+| **Clerk Auth Middleware** | Generates deprecated `authMiddleware({ publicRoutes })` from v4, causing runtime crashes in Next.js App Router. | Uses modern `clerkMiddleware()` with `createRouteMatcher()` matching Next.js v5+ App Router specs. |
+| **Resend Batch Emailing** | Iterates a `for...of` loop with individual `send()` calls, taking minutes and triggering HTTP 429 rate limits. | Packages emails into `resend.batch.send([])`, dispatching 500 emails in a single low-latency HTTP request. |
 
-The repo works today by copying skill folders directly into your project. There's no package to install yet — see [Roadmap](#roadmap) for what that would add.
+> 📖 **See full runnable code diffs in [docs/BENCHMARKS_AND_EXAMPLES.md](./docs/BENCHMARKS_AND_EXAMPLES.md).**
+
+---
+
+## 🚀 Quick Start
+
+### Option 1: Direct Copy into Your Project (No Installation Required)
+
+Simply copy the skill folder for the API you are using into your agent's skill directory:
 
 ```bash
-# Clone the repo (or just the parts you need)
+# Clone the repository lightweight
 git clone --depth 1 https://github.com/ashish7802/awesome-api-skills.git
 
-# Copy the skill you need into your agent's skills folder
+# Copy Stripe skill to Claude Code
 cp -r awesome-api-skills/skills/stripe .claude/skills/
-# or, for Cursor
-cp -r awesome-api-skills/skills/stripe .cursor/skills/
+
+# Copy Clerk skill to Cursor
+cp -r awesome-api-skills/skills/clerk .cursor/skills/
+
+# Copy Redis skill to generic agent workspace
+cp -r awesome-api-skills/skills/redis .agents/skills/
 ```
 
-Then just tell the agent to use it, e.g. "follow `.claude/skills/stripe/SKILL.md` when working with payments." Most agents that support skill/rule files will pick it up automatically once it's in the right folder.
+Then instruct your agent:  
+> *"Use `.claude/skills/stripe/SKILL.md` for payment integration."*
 
-If you want to browse everything locally instead of copying one at a time:
+---
+
+### Option 2: Monorepo & Local CLI Setup
+
+For developers building tooling, validating custom skills, or managing workspaces:
 
 ```bash
 git clone https://github.com/ashish7802/awesome-api-skills.git
 cd awesome-api-skills
 pnpm install
+pnpm build
 ```
 
-This also gives you the monorepo packages (`core`, `cli`, `sdk`, `validator`, `generator`, `registry`) if you want to build or extend the tooling used to generate and validate skills.
+Run CLI commands locally:
+```bash
+# Search skills by keyword
+pnpm --filter @awesome-api-skills/cli exec awesome-api search stripe
 
-## Skill directory
+# Validate all skill schemas
+pnpm --filter @awesome-api-skills/cli exec awesome-api validate
 
-100 skills across the following areas:
+# Inspect workspace health
+pnpm --filter @awesome-api-skills/cli exec awesome-api doctor
+```
 
-| Category | Skills |
+---
+
+## 📚 Skill Directory
+
+Explore 100 skills across 14 core technical domains:
+
+| Category | Available Skills |
 |---|---|
-| Payments & billing | stripe, paddle, lemon-squeezy, revenuecat, plaid |
-| Auth & identity | auth0, clerk, okta, better-auth, jwt, oauth2, openid-connect |
-| Databases | postgresql, mysql, sqlite, mongodb-atlas, planetscale, neon, turso |
-| Caching & queues | redis, redis-streams, upstash, bullmq, kafka, rabbitmq, nats |
-| Object storage | aws-s3, aws-dynamodb, azure-blob-storage, google-cloud-storage |
-| AI & LLM infra | openai, anthropic, gemini, ollama, vllm, langchain, llamaindex, pinecone, typesense, meilisearch, algolia |
-| Backend frameworks | express, fastapi, nestjs, hono, trpc |
-| Frontend frameworks | react, vue, nextjs, nuxt, sveltekit |
-| Deployment platforms | vercel, railway, render, fly, digitalocean, cloudflare, cloudflare-workers, deno-deploy |
-| Infrastructure | docker, kubernetes, helm, terraform, pulumi, argo-cd, github-actions, traefik, nginx, caddy, turborepo |
-| Observability | datadog, sentry, prometheus, grafana, loki, jaeger, opentelemetry, mixpanel, posthog |
-| Dev tooling | eslint, prettier, biome, vitest, playwright, git, github |
-| Communication | slack, discord, twilio, sendgrid, resend |
-| Other | shopify, mapbox, convex |
+| **Payments & Billing** | `stripe`, `paddle`, `lemon-squeezy`, `revenuecat`, `plaid` |
+| **Auth & Identity** | `auth0`, `clerk`, `okta`, `better-auth`, `jwt`, `oauth2`, `openid-connect` |
+| **Databases** | `postgresql`, `mysql`, `sqlite`, `mongodb-atlas`, `planetscale`, `neon`, `turso`, `drizzle`, `prisma` |
+| **Caching & Queues** | `redis`, `redis-streams`, `upstash`, `bullmq`, `kafka`, `rabbitmq`, `nats` |
+| **Object Storage** | `aws-s3`, `aws-dynamodb`, `azure-blob-storage`, `google-cloud-storage` |
+| **AI & LLM Infra** | `openai`, `anthropic`, `gemini`, `ollama`, `vllm`, `langchain`, `llamaindex`, `pinecone`, `typesense`, `meilisearch`, `algolia` |
+| **Backend Frameworks** | `express`, `fastapi`, `nestjs`, `hono`, `trpc` |
+| **Frontend Frameworks** | `react`, `vue`, `nextjs`, `nuxt`, `sveltekit` |
+| **Deployment Platforms** | `vercel`, `railway`, `render`, `fly`, `digitalocean`, `cloudflare`, `cloudflare-workers`, `deno-deploy` |
+| **Infrastructure** | `docker`, `kubernetes`, `helm`, `terraform`, `pulumi`, `argo-cd`, `github-actions`, `traefik`, `nginx`, `caddy`, `turborepo` |
+| **Observability** | `datadog`, `sentry`, `prometheus`, `grafana`, `loki`, `jaeger`, `opentelemetry`, `mixpanel`, `posthog` |
+| **Dev Tooling** | `eslint`, `prettier`, `biome`, `vitest`, `playwright`, `git`, `github` |
+| **Communication** | `slack`, `discord`, `twilio`, `sendgrid`, `resend` |
+| **Platforms & CMS** | `shopify`, `mapbox`, `convex` |
 
-Full, browsable list: [`/skills`](./skills)
+> 🌐 **Browse the interactive web catalog at [docs/index.html](./docs/index.html).**
 
-## Repo structure
+---
+
+## 🏗️ Monorepo Architecture
+
+`awesome-api-skills` is built as a TypeScript pnpm workspace:
 
 ```
-skills/              100 SKILL.md files, one folder per tool
+skills/                 100 SKILL.md files + metadata.json contracts
 packages/
-  cli/                Command-line tool for browsing/validating skills (not yet published)
-  core/                Shared logic used by cli and generator
-  generator/           Builds SKILL.md files from a consistent template
-  validator/            Checks skill files against the schema in shared-types
-  registry/             Metadata for the relationship graph between skills
-  sdk/                   Programmatic access to skill data
-  shared-types/          Zod/JSON-schema types shared across packages
+  cli/                  CLI binary for searching, validating, and managing skills
+  core/                 Core orchestration engine and workspace management
+  generator/            Pipeline generator enforcing consistent SKILL.md templates
+  validator/            Zod & JSON-Schema validation engine for skills
+  registry/             Graph relationship index & search resolver
+  sdk/                  Programmatic Node.js SDK for accessing skill data
+  shared-types/         TypeScript definitions & schemas shared across packages
 scripts/
-  generators/            Build scripts used to generate skill content in batches
-  dev/                    Local dev scripts (benchmarking, etc.)
-docs/                 Additional documentation
+  dev/                  Validation, indexing, and static build scripts
+docs/                   Searchable web directory, benchmarks, and CLI reference
 ```
 
-The skill files are built through a shared generator (`scripts/generators`, `packages/generator`) so that all 100 files stay structurally consistent — same sections, same relationship-graph format — rather than each one being hand-formatted separately. The actual technical content (auth flows, common mistakes, SDK patterns) is written per tool, not copy-pasted.
+---
 
-## Roadmap
+## 🎯 Verification & Quality Standards
 
-Things that are planned but not done yet — listed here instead of implied as already working:
+Every claim in this repository is verified by automated tests and CI checks:
 
-- **Publish the CLI to npm.** The `packages/cli` code exists and works locally, but `@awesome-api-skills/cli` is not yet published to the npm registry. Right now, "install" means cloning the repo and copying skill folders — there's no `npx` install path yet.
-- **Automated validation in CI.** `packages/validator` exists; wiring it into GitHub Actions so every skill file is schema-checked on PR is still pending.
-- **Coverage expansion.** More payment providers, more cloud-native tooling, more AI/agent frameworks.
-- **Versioning per skill.** Right now skills don't track which SDK/API version they were written against explicitly in the metadata — that's worth adding so stale skills can be flagged.
+1. **Schema Validation**: All 100 skills pass strict structural checks via `packages/validator`.
+2. **Automated Unit Tests**: 31 assertions run in CI via Vitest covering all core packages.
+3. **Last Verified Metadata**: Every skill contains a `lastVerified` timestamp in its `metadata.json` and `SKILL.md` header indicating when SDK signatures were verified against vendor documentation.
+4. **Relationship Scoring**: Skill graph connections follow a transparent 5-factor hybrid scoring model (Explicit edges, Category match, Ecosystem match, Deployment match, Jaccard similarity) detailed in [SPECIFICATION.md](./SPECIFICATION.md#15-related-skills-scoring-methodology).
 
-If any of this is important to you, open an issue — it'll help prioritize.
+---
 
-## Contributing
+## 🤝 Contributing
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md). Short version: skills follow the template in `packages/generator`, so the easiest way to add one is to look at an existing skill in the same category and match its structure, then open a PR.
+We welcome contributions! All new skills must adhere to the standard schema:
 
-## License
+1. **Scaffold or Write Skill**: Add your skill folder under `skills/<skill-name>/` containing `SKILL.md` and `metadata.json`.
+2. **Run Validation**:
+   ```bash
+   pnpm run validate:skills
+   ```
+3. **Run Unit Tests**:
+   ```bash
+   pnpm test
+   ```
+4. **Submit PR**: Open a Pull Request. GitHub Actions will automatically validate schema compliance using `packages/validator`.
 
-MIT — see [LICENSE](./LICENSE).
+See [CONTRIBUTING.md](./CONTRIBUTING.md) and [.github/PULL_REQUEST_TEMPLATE.md](./.github/PULL_REQUEST_TEMPLATE.md) for details.
+
+---
+
+## 📄 License
+
+[MIT](./LICENSE) © 2026 Awesome API Skills Team.

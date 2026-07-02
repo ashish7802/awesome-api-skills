@@ -57,3 +57,6 @@ Use this when your agent works with **nestjs** — structured patterns beat past
 - [`express`](../express/SKILL.md) — extended by
 - [`docker`](../docker/SKILL.md) — deploys to
 - [`kubernetes`](../kubernetes/SKILL.md) — deploys to
+
+---
+> **Last Verified:** 2026-07-02

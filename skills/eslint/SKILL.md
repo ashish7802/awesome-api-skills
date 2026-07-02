@@ -65,3 +65,6 @@ Use this when your agent works with **eslint** — structured patterns beat past
 - [`biome`](../biome/SKILL.md) — alternative to
 - [`prettier`](../prettier/SKILL.md) — works well with
 - [`nextjs`](../nextjs/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02

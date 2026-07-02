@@ -57,3 +57,6 @@ Use this when your agent works with **linux** — structured patterns beat paste
 ## Related skills
 - [`docker`](../docker/SKILL.md) — integrates with
 - [`nginx`](../nginx/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02

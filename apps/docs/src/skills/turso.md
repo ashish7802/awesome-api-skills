@@ -14,7 +14,7 @@ title: turso
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | typescript, python, go, rust |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://docs.turso.tech) |
@@ -87,4 +87,7 @@ Use this when your agent works with **turso** — structured patterns beat paste
 ## Related skills
 - [`fly.io`](../fly.io/SKILL.md) — related to
 - [`render`](../render/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02
 

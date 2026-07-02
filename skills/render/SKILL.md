@@ -53,3 +53,6 @@ Use this when your agent works with **render** — structured patterns beat past
 ## Related skills
 - [`railway`](../railway/SKILL.md) — related to
 - [`fly.io`](../fly.io/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02

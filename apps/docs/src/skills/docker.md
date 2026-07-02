@@ -14,7 +14,7 @@ title: docker
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | yaml |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://docs.docker.com/) |
@@ -94,4 +94,7 @@ Use this when your agent works with **docker** — structured patterns beat past
 ## Related skills
 - [`kubernetes`](../kubernetes/SKILL.md) — deploys to
 - [`github-actions`](../github-actions/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02
 

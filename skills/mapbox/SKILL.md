@@ -56,3 +56,6 @@ Use this when your agent works with **mapbox** — structured patterns beat past
 ## Related skills
 - [`react`](../react/SKILL.md) — integrates with
 - [`vue`](../vue/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02

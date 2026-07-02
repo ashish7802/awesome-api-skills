@@ -53,3 +53,6 @@ Use this when your agent works with **neon** — structured patterns beat pasted
 ## Related skills
 - [`vercel`](../vercel/SKILL.md) — related to
 - [`supabase`](../supabase/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02

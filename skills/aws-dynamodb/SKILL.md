@@ -56,3 +56,6 @@ Use this when your agent works with **aws-dynamodb** — structured patterns bea
 ## Related skills
 - [`terraform`](../terraform/SKILL.md) — provisioned by
 - [`pulumi`](../pulumi/SKILL.md) — provisioned by
+
+---
+> **Last Verified:** 2026-07-02

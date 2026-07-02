@@ -58,3 +58,6 @@ Use this when your agent works with **grafana** — structured patterns beat pas
 - [`prometheus`](../prometheus/SKILL.md) — integrates with
 - [`loki`](../loki/SKILL.md) — integrates with
 - [`datadog`](../datadog/SKILL.md) — alternative to
+
+---
+> **Last Verified:** 2026-07-02

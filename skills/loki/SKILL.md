@@ -56,3 +56,6 @@ Use this when your agent works with **loki** — structured patterns beat pasted
 ## Related skills
 - [`grafana`](../grafana/SKILL.md) — depends on
 - [`prometheus`](../prometheus/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02

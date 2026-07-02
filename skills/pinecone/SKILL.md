@@ -57,3 +57,6 @@ Use this when your agent works with **pinecone** — structured patterns beat pa
 - [`openai`](../openai/SKILL.md) — related to
 - [`anthropic`](../anthropic/SKILL.md) — related to
 - [`upstash`](../upstash/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02

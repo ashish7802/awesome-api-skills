@@ -14,7 +14,7 @@ title: pulumi
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | typescript, python |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://www.pulumi.com/docs/) |
@@ -88,4 +88,7 @@ Use this when your agent works with **pulumi** — structured patterns beat past
 
 ## Related skills
 - [`terraform`](../terraform/SKILL.md) — alternative to
+
+---
+> **Last Verified:** 2026-07-02
 

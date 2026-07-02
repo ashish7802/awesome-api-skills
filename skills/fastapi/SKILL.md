@@ -60,3 +60,6 @@ Use this when your agent works with **fastapi** — structured patterns beat pas
 - [`express`](../express/SKILL.md) — alternative to
 - [`openai`](../openai/SKILL.md) — integrates with
 - [`docker`](../docker/SKILL.md) — deploys to
+
+---
+> **Last Verified:** 2026-07-02

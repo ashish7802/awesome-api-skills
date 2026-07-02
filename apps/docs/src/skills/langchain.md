@@ -14,7 +14,7 @@ title: langchain
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | python |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://python.langchain.com/docs/get_started/introduction) |
@@ -101,4 +101,7 @@ Use this when your agent works with **langchain** — structured patterns beat p
 - [`llamaindex`](../llamaindex/SKILL.md) — alternative to
 - [`openai`](../openai/SKILL.md) — integrates with
 - [`pinecone`](../pinecone/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02
 

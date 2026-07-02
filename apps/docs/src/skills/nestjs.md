@@ -14,7 +14,7 @@ title: nestjs
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | typescript |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://docs.nestjs.com/) |
@@ -90,4 +90,7 @@ Use this when your agent works with **nestjs** — structured patterns beat past
 - [`express`](../express/SKILL.md) — extended by
 - [`docker`](../docker/SKILL.md) — deploys to
 - [`kubernetes`](../kubernetes/SKILL.md) — deploys to
+
+---
+> **Last Verified:** 2026-07-02
 

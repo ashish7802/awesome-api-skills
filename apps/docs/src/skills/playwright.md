@@ -14,7 +14,7 @@ title: playwright
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | typescript |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://playwright.dev/docs/intro) |
@@ -86,4 +86,7 @@ Use this when your agent works with **playwright** — structured patterns beat 
 ## Related skills
 - [`github-actions`](../github-actions/SKILL.md) — integrates with
 - [`nextjs`](../nextjs/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02
 

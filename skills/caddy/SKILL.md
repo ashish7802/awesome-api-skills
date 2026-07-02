@@ -62,3 +62,6 @@ Use this when your agent works with **caddy** — structured patterns beat paste
 ## Related skills
 - [`nginx`](../nginx/SKILL.md) — alternative to
 - [`docker`](../docker/SKILL.md) — works well with
+
+---
+> **Last Verified:** 2026-07-02

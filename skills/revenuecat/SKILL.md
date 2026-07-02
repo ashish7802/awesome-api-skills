@@ -53,3 +53,6 @@ Use this when your agent works with **revenuecat** — structured patterns beat 
 ## Related skills
 - [`stripe`](../stripe/SKILL.md) — related to
 - [`paddle`](../paddle/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02

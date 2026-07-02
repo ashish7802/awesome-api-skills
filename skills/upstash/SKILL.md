@@ -55,3 +55,6 @@ Use this when your agent works with **upstash** — structured patterns beat pas
 - [`vercel`](../vercel/SKILL.md) — related to
 - [`cloudflare`](../cloudflare/SKILL.md) — related to
 - [`openai`](../openai/SKILL.md) — related to
+
+---
+> **Last Verified:** 2026-07-02

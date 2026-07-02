@@ -14,7 +14,7 @@ title: terraform
 | **Validation** | validated |
 | **Schema** | 1.0.0 |
 | **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-06-29 |
+| **Updated** | 2026-07-02 |
 | **Languages** | yaml |
 | **Agents** | cursor, claude-code, cline, continue |
 | **Doc source** | [official docs](https://developer.hashicorp.com/terraform/docs) |
@@ -91,4 +91,7 @@ Use this when your agent works with **terraform** — structured patterns beat p
 ## Related skills
 - [`pulumi`](../pulumi/SKILL.md) — alternative to
 - [`github-actions`](../github-actions/SKILL.md) — integrates with
+
+---
+> **Last Verified:** 2026-07-02
 

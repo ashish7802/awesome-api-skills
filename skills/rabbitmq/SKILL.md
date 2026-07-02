@@ -63,3 +63,6 @@ Use this when your agent works with **rabbitmq** — structured patterns beat pa
 ## Related skills
 - [`kafka`](../kafka/SKILL.md) — alternative to
 - [`bullmq`](../bullmq/SKILL.md) — alternative to
+
+---
+> **Last Verified:** 2026-07-02

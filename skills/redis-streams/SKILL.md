@@ -63,3 +63,6 @@ Use this when your agent works with **redis-streams** — structured patterns be
 ## Related skills
 - [`redis`](../redis/SKILL.md) — depends on
 - [`kafka`](../kafka/SKILL.md) — alternative to
+
+---
+> **Last Verified:** 2026-07-02
