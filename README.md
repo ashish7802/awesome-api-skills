@@ -6,7 +6,7 @@
 
 <p>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT License"></a>
-  <img src="https://img.shields.io/badge/skills-100%20verified-orange?style=flat-square" alt="100 verified skills">
+  <img src="https://img.shields.io/badge/skills-101%20verified-orange?style=flat-square" alt="101 verified skills">
   <a href="https://github.com/ashish7802/awesome-api-skills/actions/workflows/quality.yml"><img src="https://github.com/ashish7802/awesome-api-skills/actions/workflows/quality.yml/badge.svg" alt="Quality Gates"></a>
   <a href="https://github.com/ashish7802/awesome-api-skills/actions/workflows/tests.yml"><img src="https://github.com/ashish7802/awesome-api-skills/actions/workflows/tests.yml/badge.svg" alt="Tests"></a>
 </p>
@@ -89,13 +89,13 @@ pnpm build
 Run CLI commands locally:
 ```bash
 # Search skills by keyword
-pnpm --filter @awesome-api-skills/cli exec awesome-api search stripe
+pnpm run cli search stripe
 
 # Validate all skill schemas
-pnpm --filter @awesome-api-skills/cli exec awesome-api validate
+pnpm run cli validate
 
 # Inspect workspace health
-pnpm --filter @awesome-api-skills/cli exec awesome-api doctor
+pnpm run cli doctor
 ```
 
 ---

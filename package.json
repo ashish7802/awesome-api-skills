@@ -4,6 +4,7 @@
   "private": true,
   "description": "A collection of structured API skills for AI coding agents.",
   "scripts": {
+    "cli": "node packages/cli/dist/bin.js",
     "build": "pnpm -r --filter \"@awesome-api-skills/*\" build",
     "dev": "pnpm --filter @awesome-api-skills/docs dev",
     "lint": "eslint .",
