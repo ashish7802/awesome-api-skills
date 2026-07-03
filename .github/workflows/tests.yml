@@ -30,4 +30,6 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Run Tests
-        run: pnpm test
+        run: |
+          pnpm build --filter='!@awesome-api-skills/docs'
+          pnpm test
