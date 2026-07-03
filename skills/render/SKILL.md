@@ -4,7 +4,7 @@
 Render offers Web Services, Static Sites, and managed PostgreSQL/Redis. The Render REST API allows you to automate infrastructure scaling, deploys, and service creation.
 
 ```bash
-# Standard fetch/axios is used for REST API
+  # Standard fetch/axios is used for REST API
 ```
 
 ## Common Workflows
