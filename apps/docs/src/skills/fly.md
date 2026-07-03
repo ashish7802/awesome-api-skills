@@ -34,7 +34,7 @@ _No graph edges for this skill._
 Fly.io transforms Docker containers into microVMs running globally. The Machines API allows you to programmatically spawn, pause, and destroy VMs in milliseconds.
 
 ```bash
-# Fly Machines API operates over standard HTTP REST
+  # Fly Machines API operates over standard HTTP REST
 ```
 
 ## Common Workflows

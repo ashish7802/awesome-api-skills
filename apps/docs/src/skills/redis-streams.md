@@ -57,7 +57,7 @@ graph LR
 Redis Streams acts similarly to Kafka, providing an append-only log that multiple consumer groups can read from simultaneously.
 
 ```bash
-# XADD key ID field value
+  # XADD key ID field value
 redis-cli XADD mystream * sensor-id 1234 temp 19.8
 ```
 

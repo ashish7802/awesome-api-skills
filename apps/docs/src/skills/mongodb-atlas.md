@@ -35,7 +35,7 @@ The Atlas Administration API allows you to programmatically manage clusters, dat
 
 ## Installation
 ```bash
-# Standard fetch/axios is used for REST API
+  # Standard fetch/axios is used for REST API
 ```
 
 ## Authentication

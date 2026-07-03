@@ -4,7 +4,7 @@ title: Knowledge Graph
 
 # Recommended stacks & relationships
 
-The graph connects **100 skills** with **0 relationships** — prerequisites, alternatives, and stacks that work together.
+The graph connects **101 skills** with **0 relationships** — prerequisites, alternatives, and stacks that work together.
 
 ## Popular stacks
 

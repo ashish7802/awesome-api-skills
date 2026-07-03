@@ -28,14 +28,14 @@ _No graph edges for this skill._
 
 ---
 
-# Vercel API API Skill
+# Vercel API Skill
 
 ## Overview
 The Vercel REST API allows you to programmatically manage deployments, domains, and environment variables.
 
 ## Installation
 ```bash
-# Standard fetch/axios is used for REST API
+  # Standard fetch/axios is used for REST API
 npm install @vercel/client
 ```
 

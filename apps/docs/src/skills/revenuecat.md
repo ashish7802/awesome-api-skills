@@ -34,7 +34,7 @@ _No graph edges for this skill._
 RevenueCat manages mobile in-app purchases (Apple/Google) seamlessly. The REST API allows your backend to verify user subscription status and grant entitlements.
 
 ```bash
-# Standard fetch/axios is used for REST API
+  # Standard fetch/axios is used for REST API
 ```
 
 ## Common Workflows

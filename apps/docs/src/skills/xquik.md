@@ -28,6 +28,7 @@ _No graph edges for this skill._
 
 ---
 
+# Xquik API Skill
 
 ## Quick Start
 
