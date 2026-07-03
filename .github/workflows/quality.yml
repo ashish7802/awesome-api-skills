@@ -33,7 +33,7 @@ jobs:
 
       - name: Run Typecheck
         run: |
-          pnpm build --filter='!@awesome-api-skills/docs'
+          pnpm build
           pnpm typecheck
 
       - name: Validate Skill Schemas
