@@ -7,7 +7,7 @@ title: Browse by Category
 Filter skills by domain. Click a category to expand.
 
 
-<details><summary><strong>AI</strong> (9)</summary>
+<details><summary><strong>AI</strong> (10)</summary>
 
 - [anthropic](/skills/anthropic)
 - [azure-openai](/skills/azure-openai)
@@ -18,6 +18,7 @@ Filter skills by domain. Click a category to expand.
 - [openai](/skills/openai)
 - [pinecone](/skills/pinecone)
 - [vllm](/skills/vllm)
+- [xquik](/skills/xquik)
 
 </details>
 
@@ -124,7 +125,7 @@ Filter skills by domain. Click a category to expand.
 
 </details>
 
-<details><summary><strong>Developer Tools</strong> (27)</summary>
+<details><summary><strong>Developer Tools</strong> (28)</summary>
 
 - [biome](/skills/biome)
 - [bullmq](/skills/bullmq)
@@ -153,6 +154,7 @@ Filter skills by domain. Click a category to expand.
 - [trpc](/skills/trpc)
 - [turborepo](/skills/turborepo)
 - [vitest](/skills/vitest)
+- [xquik](/skills/xquik)
 
 </details>
 

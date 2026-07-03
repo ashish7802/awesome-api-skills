@@ -135,6 +135,7 @@ title: Skills
 <a class="skill-card" data-cat="testing developer tools" data-lang="typescript" data-name="vitest" href="/skills/vitest"><h3>vitest</h3><p>Testing · Developer Tools</p><span class="skill-tag">validated</span></a>
 <a class="skill-card" data-cat="ai infrastructure" data-lang="python" data-name="vllm" href="/skills/vllm"><h3>vllm</h3><p>AI · Infrastructure</p><span class="skill-tag">validated</span></a>
 <a class="skill-card" data-cat="frontend frameworks" data-lang="typescript" data-name="vue" href="/skills/vue"><h3>vue</h3><p>Frontend Frameworks</p><span class="skill-tag">validated</span></a>
+<a class="skill-card" data-cat="developer tools ai" data-lang="typescript python" data-name="xquik" href="/skills/xquik"><h3>xquik</h3><p>Developer Tools · AI</p><span class="skill-tag">validated</span></a>
 </div>
 
 <script setup>

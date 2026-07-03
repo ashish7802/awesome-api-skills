@@ -1,0 +1,38 @@
+{
+  "name": "xquik",
+  "version": "1.0.0",
+  "description": "X/Twitter data, automation, monitor, webhook, and write API.",
+  "categories": [
+    "Developer Tools",
+    "AI"
+  ],
+  "languages": [
+    "typescript",
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://docs.xquik.com",
+    "OpenAPI Spec": "https://xquik.com/openapi.json",
+    "MCP Manifest": "https://xquik.com/.well-known/mcp.json"
+  },
+  "relatedSkills": [
+    "GitHub",
+    "PostgreSQL",
+    "Playwright"
+  ],
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-07-03",
+  "documentationSource": "https://docs.xquik.com",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0",
+  "lastVerified": "2026-07-03"
+}
