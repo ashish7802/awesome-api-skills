@@ -1,27 +1,343 @@
 [
   {
+    "id": "algolia",
+    "checksum": "sha256-mock-algolia"
+  },
+  {
     "id": "anthropic",
     "checksum": "sha256-mock-anthropic"
+  },
+  {
+    "id": "argo-cd",
+    "checksum": "sha256-mock-argo-cd"
+  },
+  {
+    "id": "auth0",
+    "checksum": "sha256-mock-auth0"
+  },
+  {
+    "id": "aws-dynamodb",
+    "checksum": "sha256-mock-aws-dynamodb"
+  },
+  {
+    "id": "aws-s3",
+    "checksum": "sha256-mock-aws-s3"
+  },
+  {
+    "id": "azure-blob-storage",
+    "checksum": "sha256-mock-azure-blob-storage"
+  },
+  {
+    "id": "azure-openai",
+    "checksum": "sha256-mock-azure-openai"
+  },
+  {
+    "id": "better-auth",
+    "checksum": "sha256-mock-better-auth"
+  },
+  {
+    "id": "biome",
+    "checksum": "sha256-mock-biome"
+  },
+  {
+    "id": "bullmq",
+    "checksum": "sha256-mock-bullmq"
+  },
+  {
+    "id": "caddy",
+    "checksum": "sha256-mock-caddy"
+  },
+  {
+    "id": "clerk",
+    "checksum": "sha256-mock-clerk"
   },
   {
     "id": "cloudflare",
     "checksum": "sha256-mock-cloudflare"
   },
   {
+    "id": "cloudflare-workers",
+    "checksum": "sha256-mock-cloudflare-workers"
+  },
+  {
+    "id": "convex",
+    "checksum": "sha256-mock-convex"
+  },
+  {
+    "id": "datadog",
+    "checksum": "sha256-mock-datadog"
+  },
+  {
+    "id": "deno-deploy",
+    "checksum": "sha256-mock-deno-deploy"
+  },
+  {
+    "id": "digitalocean",
+    "checksum": "sha256-mock-digitalocean"
+  },
+  {
     "id": "discord",
     "checksum": "sha256-mock-discord"
+  },
+  {
+    "id": "docker",
+    "checksum": "sha256-mock-docker"
+  },
+  {
+    "id": "drizzle",
+    "checksum": "sha256-mock-drizzle"
+  },
+  {
+    "id": "eslint",
+    "checksum": "sha256-mock-eslint"
+  },
+  {
+    "id": "express",
+    "checksum": "sha256-mock-express"
+  },
+  {
+    "id": "fastapi",
+    "checksum": "sha256-mock-fastapi"
+  },
+  {
+    "id": "firebase",
+    "checksum": "sha256-mock-firebase"
+  },
+  {
+    "id": "fly",
+    "checksum": "sha256-mock-fly"
+  },
+  {
+    "id": "gemini",
+    "checksum": "sha256-mock-gemini"
+  },
+  {
+    "id": "git",
+    "checksum": "sha256-mock-git"
   },
   {
     "id": "github",
     "checksum": "sha256-mock-github"
   },
   {
-    "id": "google-gemini",
-    "checksum": "sha256-mock-google-gemini"
+    "id": "github-actions",
+    "checksum": "sha256-mock-github-actions"
+  },
+  {
+    "id": "google-cloud-storage",
+    "checksum": "sha256-mock-google-cloud-storage"
+  },
+  {
+    "id": "grafana",
+    "checksum": "sha256-mock-grafana"
+  },
+  {
+    "id": "helm",
+    "checksum": "sha256-mock-helm"
+  },
+  {
+    "id": "hono",
+    "checksum": "sha256-mock-hono"
+  },
+  {
+    "id": "jaeger",
+    "checksum": "sha256-mock-jaeger"
+  },
+  {
+    "id": "jwt",
+    "checksum": "sha256-mock-jwt"
+  },
+  {
+    "id": "kafka",
+    "checksum": "sha256-mock-kafka"
+  },
+  {
+    "id": "kubernetes",
+    "checksum": "sha256-mock-kubernetes"
+  },
+  {
+    "id": "langchain",
+    "checksum": "sha256-mock-langchain"
+  },
+  {
+    "id": "lemon-squeezy",
+    "checksum": "sha256-mock-lemon-squeezy"
+  },
+  {
+    "id": "linux",
+    "checksum": "sha256-mock-linux"
+  },
+  {
+    "id": "llamaindex",
+    "checksum": "sha256-mock-llamaindex"
+  },
+  {
+    "id": "loki",
+    "checksum": "sha256-mock-loki"
+  },
+  {
+    "id": "mapbox",
+    "checksum": "sha256-mock-mapbox"
+  },
+  {
+    "id": "meilisearch",
+    "checksum": "sha256-mock-meilisearch"
+  },
+  {
+    "id": "mixpanel",
+    "checksum": "sha256-mock-mixpanel"
+  },
+  {
+    "id": "mongodb-atlas",
+    "checksum": "sha256-mock-mongodb-atlas"
+  },
+  {
+    "id": "mysql",
+    "checksum": "sha256-mock-mysql"
+  },
+  {
+    "id": "nats",
+    "checksum": "sha256-mock-nats"
+  },
+  {
+    "id": "neon",
+    "checksum": "sha256-mock-neon"
+  },
+  {
+    "id": "nestjs",
+    "checksum": "sha256-mock-nestjs"
+  },
+  {
+    "id": "nextjs",
+    "checksum": "sha256-mock-nextjs"
+  },
+  {
+    "id": "nginx",
+    "checksum": "sha256-mock-nginx"
+  },
+  {
+    "id": "nuxt",
+    "checksum": "sha256-mock-nuxt"
+  },
+  {
+    "id": "oauth2",
+    "checksum": "sha256-mock-oauth2"
+  },
+  {
+    "id": "okta",
+    "checksum": "sha256-mock-okta"
+  },
+  {
+    "id": "ollama",
+    "checksum": "sha256-mock-ollama"
   },
   {
     "id": "openai",
     "checksum": "sha256-mock-openai"
+  },
+  {
+    "id": "openid-connect",
+    "checksum": "sha256-mock-openid-connect"
+  },
+  {
+    "id": "opentelemetry",
+    "checksum": "sha256-mock-opentelemetry"
+  },
+  {
+    "id": "paddle",
+    "checksum": "sha256-mock-paddle"
+  },
+  {
+    "id": "pinecone",
+    "checksum": "sha256-mock-pinecone"
+  },
+  {
+    "id": "plaid",
+    "checksum": "sha256-mock-plaid"
+  },
+  {
+    "id": "planetscale",
+    "checksum": "sha256-mock-planetscale"
+  },
+  {
+    "id": "playwright",
+    "checksum": "sha256-mock-playwright"
+  },
+  {
+    "id": "postgresql",
+    "checksum": "sha256-mock-postgresql"
+  },
+  {
+    "id": "posthog",
+    "checksum": "sha256-mock-posthog"
+  },
+  {
+    "id": "prettier",
+    "checksum": "sha256-mock-prettier"
+  },
+  {
+    "id": "prisma",
+    "checksum": "sha256-mock-prisma"
+  },
+  {
+    "id": "prometheus",
+    "checksum": "sha256-mock-prometheus"
+  },
+  {
+    "id": "pulumi",
+    "checksum": "sha256-mock-pulumi"
+  },
+  {
+    "id": "rabbitmq",
+    "checksum": "sha256-mock-rabbitmq"
+  },
+  {
+    "id": "railway",
+    "checksum": "sha256-mock-railway"
+  },
+  {
+    "id": "react",
+    "checksum": "sha256-mock-react"
+  },
+  {
+    "id": "redis",
+    "checksum": "sha256-mock-redis"
+  },
+  {
+    "id": "redis-streams",
+    "checksum": "sha256-mock-redis-streams"
+  },
+  {
+    "id": "render",
+    "checksum": "sha256-mock-render"
+  },
+  {
+    "id": "resend",
+    "checksum": "sha256-mock-resend"
+  },
+  {
+    "id": "revenuecat",
+    "checksum": "sha256-mock-revenuecat"
+  },
+  {
+    "id": "sendgrid",
+    "checksum": "sha256-mock-sendgrid"
+  },
+  {
+    "id": "sentry",
+    "checksum": "sha256-mock-sentry"
+  },
+  {
+    "id": "shopify",
+    "checksum": "sha256-mock-shopify"
+  },
+  {
+    "id": "slack",
+    "checksum": "sha256-mock-slack"
+  },
+  {
+    "id": "sqlite",
+    "checksum": "sha256-mock-sqlite"
   },
   {
     "id": "stripe",
@@ -32,11 +348,59 @@
     "checksum": "sha256-mock-supabase"
   },
   {
+    "id": "sveltekit",
+    "checksum": "sha256-mock-sveltekit"
+  },
+  {
+    "id": "terraform",
+    "checksum": "sha256-mock-terraform"
+  },
+  {
+    "id": "traefik",
+    "checksum": "sha256-mock-traefik"
+  },
+  {
+    "id": "trpc",
+    "checksum": "sha256-mock-trpc"
+  },
+  {
+    "id": "turborepo",
+    "checksum": "sha256-mock-turborepo"
+  },
+  {
+    "id": "turso",
+    "checksum": "sha256-mock-turso"
+  },
+  {
     "id": "twilio",
     "checksum": "sha256-mock-twilio"
   },
   {
+    "id": "typesense",
+    "checksum": "sha256-mock-typesense"
+  },
+  {
+    "id": "upstash",
+    "checksum": "sha256-mock-upstash"
+  },
+  {
     "id": "vercel",
     "checksum": "sha256-mock-vercel"
+  },
+  {
+    "id": "vitest",
+    "checksum": "sha256-mock-vitest"
+  },
+  {
+    "id": "vllm",
+    "checksum": "sha256-mock-vllm"
+  },
+  {
+    "id": "vue",
+    "checksum": "sha256-mock-vue"
+  },
+  {
+    "id": "xquik",
+    "checksum": "sha256-mock-xquik"
   }
 ]

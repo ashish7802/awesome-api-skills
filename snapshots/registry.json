@@ -1,124 +1,4776 @@
 {
   "skills": [
     {
-      "id": "anthropic",
-      "name": "Anthropic API",
-      "description": "Integration for Claude models",
+      "name": "algolia",
       "version": "1.0.0",
+      "description": "Hosted Search API.",
+      "categories": [
+        "Search"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
       "license": "MIT",
-      "categories": ["AI"],
-      "tags": ["anthropic", "ai"],
-      "sdkLanguages": ["typescript", "python"],
-      "authType": "api_key",
-      "supportedAgents": ["claude-code", "cursor"]
+      "links": {
+        "API Reference": "https://www.algolia.com/doc/api-reference/"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://www.algolia.com/doc/api-reference/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "algolia"
     },
     {
-      "id": "cloudflare",
-      "name": "Cloudflare API",
-      "description": "Manage DNS and workers",
+      "name": "anthropic",
       "version": "1.0.0",
+      "description": "Claude 3 model family for advanced reasoning and coding.",
+      "categories": [
+        "AI"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
       "license": "MIT",
-      "categories": ["Cloud"],
-      "tags": ["cloudflare", "cloud"],
-      "sdkLanguages": ["typescript", "python"],
-      "authType": "api_key",
-      "supportedAgents": ["claude-code", "cursor"]
+      "links": {
+        "API Reference": "https://docs.anthropic.com/en/api/getting-started"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.anthropic.com/en/api/getting-started",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "anthropic"
     },
     {
-      "id": "discord",
-      "name": "Discord API",
-      "description": "Manage bots and servers",
+      "name": "argo-cd",
       "version": "1.0.0",
+      "description": "Declarative continuous deployment for Kubernetes.",
+      "categories": [
+        "CI/CD",
+        "Infrastructure"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "author": "Awesome API Skills Team",
       "license": "MIT",
-      "categories": ["Messaging"],
-      "tags": ["discord", "messaging"],
-      "sdkLanguages": ["typescript", "python"],
-      "authType": "api_key",
-      "supportedAgents": ["claude-code", "cursor"]
+      "links": {
+        "Argo CD Docs": "https://argo-cd.readthedocs.io/"
+      },
+      "learningLevel": "advanced",
+      "useCases": [
+        "GitOps",
+        "Kubernetes"
+      ],
+      "deploymentTargets": [
+        "kubernetes"
+      ],
+      "ecosystem": "devops",
+      "maintainers": [
+        "cncf"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "kubernetes",
+          "type": "depends_on"
+        },
+        {
+          "target": "helm",
+          "type": "works_well_with"
+        },
+        {
+          "target": "github-actions",
+          "type": "alternative_to"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://argo-cd.readthedocs.io/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "argo-cd"
     },
     {
-      "id": "github",
-      "name": "GitHub API",
-      "description": "Manage repositories and pull requests",
+      "name": "auth0",
       "version": "1.0.0",
+      "description": "Identity and Access Management platform.",
+      "categories": [
+        "Authentication",
+        "Security"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
       "license": "MIT",
-      "categories": ["DevOps"],
-      "tags": ["github", "devops"],
-      "sdkLanguages": ["typescript", "python"],
-      "authType": "api_key",
-      "supportedAgents": ["claude-code", "cursor"]
+      "links": {
+        "API Reference": "https://auth0.com/docs/api/management/v2"
+      },
+      "relationships": [
+        {
+          "target": "oauth2",
+          "type": "implements"
+        },
+        {
+          "target": "openid-connect",
+          "type": "implements"
+        },
+        {
+          "target": "nextjs",
+          "type": "integrates_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://auth0.com/docs/api/management/v2",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "auth0"
     },
     {
-      "id": "google-gemini",
-      "name": "Google Gemini",
-      "description": "Integration for Gemini models",
+      "name": "aws-dynamodb",
       "version": "1.0.0",
+      "description": "NoSQL key-value and document database.",
+      "categories": [
+        "Databases",
+        "Cloud"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
       "license": "MIT",
-      "categories": ["AI"],
-      "tags": ["google-gemini", "ai"],
-      "sdkLanguages": ["typescript", "python"],
-      "authType": "api_key",
-      "supportedAgents": ["claude-code", "cursor"]
+      "links": {
+        "API Reference": "https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-dynamodb/"
+      },
+      "relationships": [
+        {
+          "target": "terraform",
+          "type": "provisioned_by"
+        },
+        {
+          "target": "pulumi",
+          "type": "provisioned_by"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-dynamodb/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "aws-dynamodb"
     },
     {
-      "id": "openai",
-      "name": "OpenAI API",
-      "description": "Integration for GPT models and embeddings",
+      "name": "aws-s3",
       "version": "1.0.0",
+      "description": "Object storage service.",
+      "categories": [
+        "Cloud",
+        "Storage"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
       "license": "MIT",
-      "categories": ["AI"],
-      "tags": ["openai", "ai"],
-      "sdkLanguages": ["typescript", "python"],
-      "authType": "api_key",
-      "supportedAgents": ["claude-code", "cursor"]
+      "links": {
+        "API Reference": "https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-s3/"
+      },
+      "relationships": [
+        {
+          "target": "terraform",
+          "type": "provisioned_by"
+        },
+        {
+          "target": "pulumi",
+          "type": "provisioned_by"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-s3/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "aws-s3"
     },
     {
-      "id": "stripe",
-      "name": "Stripe API",
-      "description": "Payment processing and subscriptions",
+      "name": "azure-blob-storage",
       "version": "1.0.0",
+      "description": "Massively scalable object storage for unstructured data.",
+      "categories": [
+        "Cloud",
+        "Storage"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
       "license": "MIT",
-      "categories": ["Payments"],
-      "tags": ["stripe", "payments"],
-      "sdkLanguages": ["typescript", "python"],
-      "authType": "api_key",
-      "supportedAgents": ["claude-code", "cursor"]
+      "links": {
+        "Azure Blob SDK": "https://learn.microsoft.com/en-us/javascript/api/@azure/storage-blob"
+      },
+      "relatedSkills": [
+        "AWS S3",
+        "Google Cloud Storage"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://learn.microsoft.com/en-us/javascript/api/@azure/storage-blob",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "azure-blob-storage"
     },
     {
-      "id": "supabase",
-      "name": "Supabase API",
-      "description": "Manage databases and authentication",
+      "name": "azure-openai",
       "version": "1.0.0",
+      "description": "OpenAI models hosted on Microsoft Azure with enterprise security features.",
+      "categories": [
+        "AI",
+        "Enterprise"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
       "license": "MIT",
-      "categories": ["Databases"],
-      "tags": ["supabase", "databases"],
-      "sdkLanguages": ["typescript", "python"],
-      "authType": "api_key",
-      "supportedAgents": ["claude-code", "cursor"]
+      "links": {
+        "Azure OpenAI Docs": "https://learn.microsoft.com/en-us/azure/ai-services/openai/"
+      },
+      "relatedSkills": [
+        "OpenAI",
+        "Anthropic"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://learn.microsoft.com/en-us/azure/ai-services/openai/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "azure-openai"
     },
     {
-      "id": "twilio",
-      "name": "Twilio API",
-      "description": "Send SMS and voice calls",
+      "name": "better-auth",
       "version": "1.0.0",
+      "description": "Comprehensive authentication library for TypeScript.",
+      "categories": [
+        "Authentication"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
       "license": "MIT",
-      "categories": ["Messaging"],
-      "tags": ["twilio", "messaging"],
-      "sdkLanguages": ["typescript", "python"],
-      "authType": "api_key",
-      "supportedAgents": ["claude-code", "cursor"]
+      "links": {
+        "Better Auth Docs": "https://www.better-auth.com/docs"
+      },
+      "relatedSkills": [
+        "Clerk",
+        "Neon"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://www.better-auth.com/docs",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "better-auth"
     },
     {
-      "id": "vercel",
-      "name": "Vercel API",
-      "description": "Manage deployments and domains",
+      "name": "biome",
       "version": "1.0.0",
+      "description": "One toolchain for your web project.",
+      "categories": [
+        "Developer Tools"
+      ],
+      "languages": [
+        "json"
+      ],
+      "author": "Awesome API Skills Team",
       "license": "MIT",
-      "categories": ["Cloud"],
-      "tags": ["vercel", "cloud"],
-      "sdkLanguages": ["typescript", "python"],
-      "authType": "api_key",
-      "supportedAgents": ["claude-code", "cursor"]
+      "links": {
+        "Biome Docs": "https://biomejs.dev/"
+      },
+      "learningLevel": "beginner",
+      "useCases": [
+        "Linting",
+        "Formatting"
+      ],
+      "deploymentTargets": [
+        "any"
+      ],
+      "ecosystem": "javascript",
+      "maintainers": [
+        "biomejs"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "eslint",
+          "type": "replaces"
+        },
+        {
+          "target": "prettier",
+          "type": "replaces"
+        },
+        {
+          "target": "react",
+          "type": "works_well_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://biomejs.dev/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "biome"
+    },
+    {
+      "name": "bullmq",
+      "version": "1.0.0",
+      "description": "Redis-based robust queue system for Node.js.",
+      "categories": [
+        "Messaging",
+        "Developer Tools"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "BullMQ Docs": "https://docs.bullmq.io/"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "Background Jobs",
+        "Delayed Tasks"
+      ],
+      "deploymentTargets": [
+        "docker",
+        "railway"
+      ],
+      "ecosystem": "javascript",
+      "maintainers": [
+        "taskforcesh"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "redis",
+          "type": "depends_on"
+        },
+        {
+          "target": "rabbitmq",
+          "type": "alternative_to"
+        },
+        {
+          "target": "nestjs",
+          "type": "integrates_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.bullmq.io/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "bullmq"
+    },
+    {
+      "name": "caddy",
+      "version": "1.0.0",
+      "description": "The ultimate enterprise web server with automatic HTTPS.",
+      "categories": [
+        "Infrastructure",
+        "Security"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Caddy Docs": "https://caddyserver.com/docs/"
+      },
+      "learningLevel": "beginner",
+      "useCases": [
+        "Reverse Proxy",
+        "Static File Server"
+      ],
+      "deploymentTargets": [
+        "docker",
+        "digitalocean"
+      ],
+      "ecosystem": "devops",
+      "maintainers": [
+        "caddyserver"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "nginx",
+          "type": "alternative_to"
+        },
+        {
+          "target": "docker",
+          "type": "works_well_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://caddyserver.com/docs/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "caddy"
+    },
+    {
+      "name": "clerk",
+      "version": "1.0.0",
+      "description": "Authentication and User Management.",
+      "categories": [
+        "Authentication",
+        "Security"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Backend API": "https://clerk.com/docs/reference/backend-api"
+      },
+      "relatedSkills": [
+        "Neon",
+        "Supabase",
+        "Resend"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://clerk.com/docs/reference/backend-api",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "clerk"
+    },
+    {
+      "name": "cloudflare",
+      "version": "1.0.0",
+      "description": "Web performance and security company.",
+      "categories": [
+        "Cloud",
+        "Security"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://developers.cloudflare.com/api/"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://developers.cloudflare.com/api/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "cloudflare"
+    },
+    {
+      "name": "cloudflare-workers",
+      "version": "1.0.0",
+      "description": "Build serverless applications and deploy globally across the Cloudflare edge network.",
+      "categories": [
+        "Cloud",
+        "Developer Tools"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Cloudflare Docs": "https://developers.cloudflare.com/workers/"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "Edge Computing",
+        "Serverless API"
+      ],
+      "deploymentTargets": [
+        "cloudflare"
+      ],
+      "ecosystem": "javascript",
+      "maintainers": [
+        "cloudflare"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "hono",
+          "type": "works_well_with"
+        },
+        {
+          "target": "drizzle",
+          "type": "integrates_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://developers.cloudflare.com/workers/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "cloudflare-workers"
+    },
+    {
+      "name": "convex",
+      "version": "1.0.0",
+      "description": "Backend-as-a-Service with deterministic React sync.",
+      "categories": [
+        "Databases",
+        "Cloud"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Convex Docs": "https://docs.convex.dev/home"
+      },
+      "relatedSkills": [
+        "Clerk",
+        "Vercel"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.convex.dev/home",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "convex"
+    },
+    {
+      "name": "datadog",
+      "version": "1.0.0",
+      "description": "Observability and security platform.",
+      "categories": [
+        "Monitoring",
+        "DevOps"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://docs.datadoghq.com/api/"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.datadoghq.com/api/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "datadog"
+    },
+    {
+      "name": "deno-deploy",
+      "version": "1.0.0",
+      "description": "Distributed system that runs JavaScript, TypeScript, and WebAssembly at the edge.",
+      "categories": [
+        "Cloud",
+        "Developer Tools"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Deno Deploy Docs": "https://deno.com/deploy/docs"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "Edge Computing",
+        "Serverless API"
+      ],
+      "deploymentTargets": [
+        "deno-deploy"
+      ],
+      "ecosystem": "javascript",
+      "maintainers": [
+        "denoland"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "cloudflare-workers",
+          "type": "alternative_to"
+        },
+        {
+          "target": "hono",
+          "type": "works_well_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://deno.com/deploy/docs",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "deno-deploy"
+    },
+    {
+      "name": "digitalocean",
+      "version": "1.0.0",
+      "description": "Cloud computing designed for developers.",
+      "categories": [
+        "Cloud"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "DigitalOcean API": "https://docs.digitalocean.com/reference/api/"
+      },
+      "relatedSkills": [
+        "AWS S3",
+        "Render"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.digitalocean.com/reference/api/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "digitalocean"
+    },
+    {
+      "name": "discord",
+      "version": "1.0.0",
+      "description": "Chat and community platform.",
+      "categories": [
+        "Messaging"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://discord.com/developers/docs/intro"
+      },
+      "relationships": [
+        {
+          "target": "express",
+          "type": "integrates_with"
+        },
+        {
+          "target": "fastapi",
+          "type": "integrates_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://discord.com/developers/docs/intro",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "discord"
+    },
+    {
+      "name": "docker",
+      "version": "1.0.0",
+      "description": "OS-level virtualization to deliver software in packages called containers.",
+      "categories": [
+        "Developer Tools",
+        "Infrastructure"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Docker Docs": "https://docs.docker.com/"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "Containerization",
+        "CI/CD"
+      ],
+      "deploymentTargets": [
+        "kubernetes",
+        "fly",
+        "railway"
+      ],
+      "ecosystem": "devops",
+      "maintainers": [
+        "docker"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "kubernetes",
+          "type": "deploys_to"
+        },
+        {
+          "target": "github-actions",
+          "type": "integrates_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.docker.com/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "docker"
+    },
+    {
+      "name": "drizzle",
+      "version": "1.0.0",
+      "description": "Next generation TypeScript ORM.",
+      "categories": [
+        "Databases",
+        "Developer Tools"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Drizzle Docs": "https://orm.drizzle.team/"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "TypeScript ORM",
+        "Edge Computing"
+      ],
+      "deploymentTargets": [
+        "vercel",
+        "cloudflare"
+      ],
+      "ecosystem": "typescript",
+      "maintainers": [
+        "drizzle-team"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "postgresql",
+          "type": "integrates_with"
+        },
+        {
+          "target": "mysql",
+          "type": "integrates_with"
+        },
+        {
+          "target": "sqlite",
+          "type": "integrates_with"
+        },
+        {
+          "target": "prisma",
+          "type": "alternative_to"
+        },
+        {
+          "target": "neon",
+          "type": "works_well_with"
+        },
+        {
+          "target": "turso",
+          "type": "works_well_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://orm.drizzle.team/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "drizzle"
+    },
+    {
+      "name": "eslint",
+      "version": "1.0.0",
+      "description": "Find and fix problems in your JavaScript code.",
+      "categories": [
+        "Developer Tools"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "ESLint Docs": "https://eslint.org/docs/latest/"
+      },
+      "learningLevel": "beginner",
+      "useCases": [
+        "Linting"
+      ],
+      "deploymentTargets": [
+        "any"
+      ],
+      "ecosystem": "javascript",
+      "maintainers": [
+        "eslint"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "biome",
+          "type": "alternative_to"
+        },
+        {
+          "target": "prettier",
+          "type": "works_well_with"
+        },
+        {
+          "target": "nextjs",
+          "type": "works_well_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://eslint.org/docs/latest/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "eslint"
+    },
+    {
+      "name": "express",
+      "version": "1.0.0",
+      "description": "Fast, unopinionated, minimalist web framework for Node.js.",
+      "categories": [
+        "Backend Frameworks"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Express Docs": "https://expressjs.com/"
+      },
+      "learningLevel": "beginner",
+      "useCases": [
+        "REST APIs",
+        "Microservices"
+      ],
+      "deploymentTargets": [
+        "docker",
+        "render",
+        "railway"
+      ],
+      "ecosystem": "javascript",
+      "maintainers": [
+        "expressjs"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "fastapi",
+          "type": "alternative_to"
+        },
+        {
+          "target": "hono",
+          "type": "alternative_to"
+        },
+        {
+          "target": "nestjs",
+          "type": "alternative_to"
+        },
+        {
+          "target": "redis",
+          "type": "works_well_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://expressjs.com/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "express"
+    },
+    {
+      "name": "fastapi",
+      "version": "1.0.0",
+      "description": "High-performance Python web framework.",
+      "categories": [
+        "Backend Frameworks"
+      ],
+      "languages": [
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "FastAPI Docs": "https://fastapi.tiangolo.com/"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "Microservices",
+        "AI Inference",
+        "REST APIs"
+      ],
+      "deploymentTargets": [
+        "docker",
+        "render",
+        "railway"
+      ],
+      "ecosystem": "python",
+      "maintainers": [
+        "tiangolo"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "express",
+          "type": "alternative_to"
+        },
+        {
+          "target": "openai",
+          "type": "integrates_with"
+        },
+        {
+          "target": "docker",
+          "type": "deploys_to"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://fastapi.tiangolo.com/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "fastapi"
+    },
+    {
+      "name": "firebase",
+      "version": "1.0.0",
+      "description": "Backend-as-a-Service by Google.",
+      "categories": [
+        "Cloud",
+        "Databases"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://firebase.google.com/docs/admin/setup"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://firebase.google.com/docs/admin/setup",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "firebase"
+    },
+    {
+      "name": "fly",
+      "version": "1.0.0",
+      "description": "Deploy app servers close to your users.",
+      "categories": [
+        "Cloud",
+        "DevOps"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Machines API Docs": "https://fly.io/docs/machines/api/"
+      },
+      "relatedSkills": [
+        "Turso",
+        "Render"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://fly.io/docs/machines/api/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "fly"
+    },
+    {
+      "name": "gemini",
+      "version": "1.0.0",
+      "description": "Multimodal AI models by Google.",
+      "categories": [
+        "AI"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://ai.google.dev/api"
+      },
+      "relationships": [
+        {
+          "target": "langchain",
+          "type": "integrates_with"
+        },
+        {
+          "target": "llamaindex",
+          "type": "integrates_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://ai.google.dev/api",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "gemini"
+    },
+    {
+      "name": "git",
+      "version": "1.0.0",
+      "description": "Distributed version control system.",
+      "categories": [
+        "Developer Tools"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Git Docs": "https://git-scm.com/doc"
+      },
+      "learningLevel": "beginner",
+      "useCases": [
+        "Version Control"
+      ],
+      "deploymentTargets": [
+        "github",
+        "gitlab"
+      ],
+      "ecosystem": "devops",
+      "maintainers": [
+        "git"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "github-actions",
+          "type": "works_well_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://git-scm.com/doc",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "git"
+    },
+    {
+      "name": "github",
+      "version": "1.0.0",
+      "description": "Platform API for repositories, actions, and issues.",
+      "categories": [
+        "DevOps",
+        "Developer Tools"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://docs.github.com/en/rest"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.github.com/en/rest",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "github"
+    },
+    {
+      "name": "github-actions",
+      "version": "1.0.0",
+      "description": "Automate your software workflows directly from GitHub.",
+      "categories": [
+        "CI/CD",
+        "Developer Tools"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "GitHub Actions": "https://docs.github.com/en/actions"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "CI/CD",
+        "Automation"
+      ],
+      "deploymentTargets": [
+        "github"
+      ],
+      "ecosystem": "devops",
+      "maintainers": [
+        "github"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "git",
+          "type": "depends_on"
+        },
+        {
+          "target": "docker",
+          "type": "works_well_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.github.com/en/actions",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "github-actions"
+    },
+    {
+      "name": "google-cloud-storage",
+      "version": "1.0.0",
+      "description": "Enterprise object storage by Google.",
+      "categories": [
+        "Cloud",
+        "Storage"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "GCS Node.js SDK": "https://googleapis.dev/nodejs/storage/latest/"
+      },
+      "relatedSkills": [
+        "AWS S3",
+        "Firebase"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://googleapis.dev/nodejs/storage/latest/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "google-cloud-storage"
+    },
+    {
+      "name": "grafana",
+      "version": "1.0.0",
+      "description": "The open observability platform.",
+      "categories": [
+        "Observability"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Grafana Docs": "https://grafana.com/docs/"
+      },
+      "learningLevel": "advanced",
+      "useCases": [
+        "Dashboards",
+        "Alerting"
+      ],
+      "deploymentTargets": [
+        "kubernetes",
+        "docker"
+      ],
+      "ecosystem": "devops",
+      "maintainers": [
+        "grafana-labs"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "prometheus",
+          "type": "integrates_with"
+        },
+        {
+          "target": "loki",
+          "type": "integrates_with"
+        },
+        {
+          "target": "datadog",
+          "type": "alternative_to"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://grafana.com/docs/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "grafana"
+    },
+    {
+      "name": "helm",
+      "version": "1.0.0",
+      "description": "The package manager for Kubernetes.",
+      "categories": [
+        "Developer Tools",
+        "Infrastructure"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Helm Docs": "https://helm.sh/docs/"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "Kubernetes Deployment"
+      ],
+      "deploymentTargets": [
+        "kubernetes"
+      ],
+      "ecosystem": "devops",
+      "maintainers": [
+        "cncf"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "kubernetes",
+          "type": "depends_on"
+        },
+        {
+          "target": "argo-cd",
+          "type": "integrates_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://helm.sh/docs/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "helm"
+    },
+    {
+      "name": "hono",
+      "version": "1.0.0",
+      "description": "Ultrafast web framework for the Edges.",
+      "categories": [
+        "Backend Frameworks"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Hono Docs": "https://hono.dev/"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "Edge Computing",
+        "Microservices"
+      ],
+      "deploymentTargets": [
+        "cloudflare",
+        "vercel",
+        "deno",
+        "bun"
+      ],
+      "ecosystem": "javascript",
+      "maintainers": [
+        "honojs"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "express",
+          "type": "alternative_to"
+        },
+        {
+          "target": "cloudflare",
+          "type": "deploys_to"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://hono.dev/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "hono"
+    },
+    {
+      "name": "jaeger",
+      "version": "1.0.0",
+      "description": "Open source, end-to-end distributed tracing.",
+      "categories": [
+        "Observability"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Jaeger Docs": "https://www.jaegertracing.io/docs/"
+      },
+      "learningLevel": "advanced",
+      "useCases": [
+        "Distributed Tracing",
+        "Performance"
+      ],
+      "deploymentTargets": [
+        "kubernetes",
+        "docker"
+      ],
+      "ecosystem": "devops",
+      "maintainers": [
+        "cncf"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "opentelemetry",
+          "type": "depends_on"
+        },
+        {
+          "target": "grafana",
+          "type": "integrates_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://www.jaegertracing.io/docs/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "jaeger"
+    },
+    {
+      "name": "jwt",
+      "version": "1.0.0",
+      "description": "Compact, URL-safe means of representing claims to be transferred between two parties.",
+      "categories": [
+        "Authentication",
+        "Security"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "JWT.io": "https://jwt.io/"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "Stateless Auth",
+        "API Tokens"
+      ],
+      "deploymentTargets": [
+        "any"
+      ],
+      "ecosystem": "security",
+      "maintainers": [
+        "ietf"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "oauth2",
+          "type": "works_well_with"
+        },
+        {
+          "target": "redis",
+          "type": "integrates_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://jwt.io/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "jwt"
+    },
+    {
+      "name": "kafka",
+      "version": "1.0.0",
+      "description": "Distributed event streaming platform.",
+      "categories": [
+        "Messaging",
+        "Enterprise"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Kafka Docs": "https://kafka.apache.org/documentation/"
+      },
+      "learningLevel": "advanced",
+      "useCases": [
+        "Event Sourcing",
+        "High Throughput Data Pipelines"
+      ],
+      "deploymentTargets": [
+        "aws",
+        "gcp",
+        "kubernetes"
+      ],
+      "ecosystem": "infrastructure",
+      "maintainers": [
+        "apache"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "rabbitmq",
+          "type": "alternative_to"
+        },
+        {
+          "target": "redis-streams",
+          "type": "alternative_to"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://kafka.apache.org/documentation/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "kafka"
+    },
+    {
+      "name": "kubernetes",
+      "version": "1.0.0",
+      "description": "Automated container deployment, scaling, and management.",
+      "categories": [
+        "Developer Tools",
+        "Infrastructure"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Kubernetes Docs": "https://kubernetes.io/docs/home/"
+      },
+      "learningLevel": "advanced",
+      "useCases": [
+        "Microservices",
+        "Orchestration"
+      ],
+      "deploymentTargets": [
+        "aws",
+        "gcp",
+        "azure"
+      ],
+      "ecosystem": "devops",
+      "maintainers": [
+        "cncf"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "docker",
+          "type": "depends_on"
+        },
+        {
+          "target": "helm",
+          "type": "integrates_with"
+        },
+        {
+          "target": "argo-cd",
+          "type": "works_well_with"
+        },
+        {
+          "target": "prometheus",
+          "type": "monitors"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://kubernetes.io/docs/home/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "kubernetes"
+    },
+    {
+      "name": "langchain",
+      "version": "1.0.0",
+      "description": "Framework for developing applications powered by language models.",
+      "categories": [
+        "AI",
+        "Developer Tools"
+      ],
+      "languages": [
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "LangChain Docs": "https://python.langchain.com/docs/get_started/introduction"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "RAG",
+        "Agents",
+        "Chains"
+      ],
+      "deploymentTargets": [
+        "any"
+      ],
+      "ecosystem": "ai",
+      "maintainers": [
+        "langchain-ai"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "llamaindex",
+          "type": "alternative_to"
+        },
+        {
+          "target": "openai",
+          "type": "integrates_with"
+        },
+        {
+          "target": "pinecone",
+          "type": "integrates_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://python.langchain.com/docs/get_started/introduction",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "langchain"
+    },
+    {
+      "name": "lemon-squeezy",
+      "version": "1.0.0",
+      "description": "Merchant of record for software companies.",
+      "categories": [
+        "Payments",
+        "Finance"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Lemon Squeezy API": "https://docs.lemonsqueezy.com/api"
+      },
+      "relatedSkills": [
+        "Paddle",
+        "Stripe"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.lemonsqueezy.com/api",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "lemon-squeezy"
+    },
+    {
+      "name": "linux",
+      "version": "1.0.0",
+      "description": "The free, open-source operating system that powers the internet.",
+      "categories": [
+        "Infrastructure",
+        "Enterprise"
+      ],
+      "languages": [
+        "bash"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Linux Docs": "https://www.kernel.org/doc/html/latest/"
+      },
+      "learningLevel": "advanced",
+      "useCases": [
+        "Servers",
+        "Containers"
+      ],
+      "deploymentTargets": [
+        "aws",
+        "gcp",
+        "azure"
+      ],
+      "ecosystem": "devops",
+      "maintainers": [
+        "linux-foundation"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "docker",
+          "type": "integrates_with"
+        },
+        {
+          "target": "nginx",
+          "type": "works_well_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://www.kernel.org/doc/html/latest/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "linux"
+    },
+    {
+      "name": "llamaindex",
+      "version": "1.0.0",
+      "description": "Data framework for connecting custom data sources to large language models.",
+      "categories": [
+        "AI",
+        "Developer Tools"
+      ],
+      "languages": [
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "LlamaIndex Docs": "https://docs.llamaindex.ai/"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "RAG",
+        "Data Ingestion"
+      ],
+      "deploymentTargets": [
+        "any"
+      ],
+      "ecosystem": "ai",
+      "maintainers": [
+        "run-llama"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "langchain",
+          "type": "alternative_to"
+        },
+        {
+          "target": "openai",
+          "type": "integrates_with"
+        },
+        {
+          "target": "pinecone",
+          "type": "integrates_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.llamaindex.ai/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "llamaindex"
+    },
+    {
+      "name": "loki",
+      "version": "1.0.0",
+      "description": "Like Prometheus, but for logs.",
+      "categories": [
+        "Observability"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Loki Docs": "https://grafana.com/docs/loki/latest/"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "Log Aggregation"
+      ],
+      "deploymentTargets": [
+        "kubernetes",
+        "docker"
+      ],
+      "ecosystem": "devops",
+      "maintainers": [
+        "grafana-labs"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "grafana",
+          "type": "depends_on"
+        },
+        {
+          "target": "prometheus",
+          "type": "works_well_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://grafana.com/docs/loki/latest/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "loki"
+    },
+    {
+      "name": "mapbox",
+      "version": "1.0.0",
+      "description": "Mapping and location cloud platform.",
+      "categories": [
+        "Maps",
+        "Developer Tools"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://docs.mapbox.com/api/"
+      },
+      "relationships": [
+        {
+          "target": "react",
+          "type": "integrates_with"
+        },
+        {
+          "target": "vue",
+          "type": "integrates_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.mapbox.com/api/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "mapbox"
+    },
+    {
+      "name": "meilisearch",
+      "version": "1.0.0",
+      "description": "Lightning-fast, open-source search engine.",
+      "categories": [
+        "Search",
+        "Databases"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Meilisearch JS": "https://github.com/meilisearch/meilisearch-js"
+      },
+      "relatedSkills": [
+        "Typesense",
+        "Algolia"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://github.com/meilisearch/meilisearch-js",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "meilisearch"
+    },
+    {
+      "name": "mixpanel",
+      "version": "1.0.0",
+      "description": "Advanced product analytics for tracking user interactions.",
+      "categories": [
+        "Analytics"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Mixpanel Node SDK": "https://developer.mixpanel.com/docs/nodejs"
+      },
+      "relatedSkills": [
+        "PostHog"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://developer.mixpanel.com/docs/nodejs",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "mixpanel"
+    },
+    {
+      "name": "mongodb-atlas",
+      "version": "1.0.0",
+      "description": "Fully managed MongoDB cloud database.",
+      "categories": [
+        "Databases",
+        "Cloud"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://www.mongodb.com/docs/atlas/reference/api-resources/"
+      },
+      "relationships": [
+        {
+          "target": "prisma",
+          "type": "integrates_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://www.mongodb.com/docs/atlas/reference/api-resources/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "mongodb-atlas"
+    },
+    {
+      "name": "mysql",
+      "version": "1.0.0",
+      "description": "The world's most popular open source database.",
+      "categories": [
+        "Databases"
+      ],
+      "languages": [
+        "sql"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "MySQL Docs": "https://dev.mysql.com/doc/"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "Relational Database",
+        "Web Apps"
+      ],
+      "deploymentTargets": [
+        "planetscale",
+        "aws",
+        "gcp"
+      ],
+      "ecosystem": "database",
+      "maintainers": [
+        "oracle"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "planetscale",
+          "type": "extended_by"
+        },
+        {
+          "target": "prisma",
+          "type": "integrates_with"
+        },
+        {
+          "target": "postgresql",
+          "type": "alternative_to"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://dev.mysql.com/doc/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "mysql"
+    },
+    {
+      "name": "nats",
+      "version": "1.0.0",
+      "description": "Connective technology for adaptive edge and distributed systems.",
+      "categories": [
+        "Messaging",
+        "DevOps"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "NATS Documentation": "https://docs.nats.io/"
+      },
+      "relatedSkills": [
+        "Kafka",
+        "Redis"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.nats.io/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "nats"
+    },
+    {
+      "name": "neon",
+      "version": "1.0.0",
+      "description": "Serverless, fault-tolerant, branching PostgreSQL.",
+      "categories": [
+        "Databases",
+        "Cloud"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Neon API Docs": "https://neon.tech/docs/manage/api-reference"
+      },
+      "relatedSkills": [
+        "Vercel",
+        "Supabase"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://neon.tech/docs/manage/api-reference",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "neon"
+    },
+    {
+      "name": "nestjs",
+      "version": "1.0.0",
+      "description": "A progressive Node.js framework for building efficient, reliable and scalable server-side applications.",
+      "categories": [
+        "Backend Frameworks"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "NestJS Docs": "https://docs.nestjs.com/"
+      },
+      "learningLevel": "advanced",
+      "useCases": [
+        "Enterprise APIs",
+        "Microservices"
+      ],
+      "deploymentTargets": [
+        "docker",
+        "kubernetes",
+        "railway"
+      ],
+      "ecosystem": "typescript",
+      "maintainers": [
+        "nestjs"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "express",
+          "type": "extended_by"
+        },
+        {
+          "target": "docker",
+          "type": "deploys_to"
+        },
+        {
+          "target": "kubernetes",
+          "type": "deploys_to"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.nestjs.com/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "nestjs"
+    },
+    {
+      "name": "nextjs",
+      "version": "1.0.0",
+      "description": "The React Framework for the Web.",
+      "categories": [
+        "Frontend Frameworks"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "App Router Docs": "https://nextjs.org/docs"
+      },
+      "learningLevel": "advanced",
+      "useCases": [
+        "Full Stack Apps",
+        "SEO",
+        "E-commerce"
+      ],
+      "deploymentTargets": [
+        "vercel",
+        "docker",
+        "cloudflare",
+        "aws-s3"
+      ],
+      "ecosystem": "react",
+      "maintainers": [
+        "vercel"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "react",
+          "type": "depends_on"
+        },
+        {
+          "target": "vercel",
+          "type": "deploys_to"
+        },
+        {
+          "target": "clerk",
+          "type": "authenticates_with"
+        },
+        {
+          "target": "nuxt",
+          "type": "alternative_to"
+        },
+        {
+          "target": "trpc",
+          "type": "works_well_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://nextjs.org/docs",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "nextjs"
+    },
+    {
+      "name": "nginx",
+      "version": "1.0.0",
+      "description": "High performance load balancer, web server, and reverse proxy.",
+      "categories": [
+        "Developer Tools",
+        "Infrastructure"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "NGINX Docs": "https://nginx.org/en/docs/"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "Reverse Proxy",
+        "Load Balancing"
+      ],
+      "deploymentTargets": [
+        "docker",
+        "kubernetes"
+      ],
+      "ecosystem": "devops",
+      "maintainers": [
+        "f5"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "kubernetes",
+          "type": "integrates_with"
+        },
+        {
+          "target": "docker",
+          "type": "integrates_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://nginx.org/en/docs/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "nginx"
+    },
+    {
+      "name": "nuxt",
+      "version": "1.0.0",
+      "description": "The Intuitive Vue Framework.",
+      "categories": [
+        "Frontend Frameworks"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Nuxt Docs": "https://nuxt.com/docs"
+      },
+      "learningLevel": "advanced",
+      "useCases": [
+        "SSR",
+        "SSG",
+        "SEO"
+      ],
+      "deploymentTargets": [
+        "vercel",
+        "docker",
+        "render"
+      ],
+      "ecosystem": "vue",
+      "maintainers": [
+        "nuxt"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "vue",
+          "type": "depends_on"
+        },
+        {
+          "target": "nextjs",
+          "type": "alternative_to"
+        },
+        {
+          "target": "vercel",
+          "type": "deploys_to"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://nuxt.com/docs",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "nuxt"
+    },
+    {
+      "name": "oauth2",
+      "version": "1.0.0",
+      "description": "The industry-standard protocol for authorization.",
+      "categories": [
+        "Authentication",
+        "Security"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "OAuth.net": "https://oauth.net/2/"
+      },
+      "learningLevel": "advanced",
+      "useCases": [
+        "Delegated Access",
+        "API Security"
+      ],
+      "deploymentTargets": [
+        "any"
+      ],
+      "ecosystem": "security",
+      "maintainers": [
+        "ietf"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "openid-connect",
+          "type": "extended_by"
+        },
+        {
+          "target": "jwt",
+          "type": "works_well_with"
+        },
+        {
+          "target": "clerk",
+          "type": "implemented_by"
+        },
+        {
+          "target": "better-auth",
+          "type": "implemented_by"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://oauth.net/2/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "oauth2"
+    },
+    {
+      "name": "okta",
+      "version": "1.0.0",
+      "description": "Enterprise Identity Provider and SSO.",
+      "categories": [
+        "Authentication",
+        "Enterprise"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://developer.okta.com/docs/reference/"
+      },
+      "relationships": [
+        {
+          "target": "oauth2",
+          "type": "implements"
+        },
+        {
+          "target": "openid-connect",
+          "type": "implements"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://developer.okta.com/docs/reference/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "okta"
+    },
+    {
+      "name": "ollama",
+      "version": "1.0.0",
+      "description": "Get up and running with large language models locally.",
+      "categories": [
+        "AI",
+        "Developer Tools"
+      ],
+      "languages": [
+        "yaml",
+        "bash"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Ollama Docs": "https://github.com/ollama/ollama"
+      },
+      "learningLevel": "beginner",
+      "useCases": [
+        "Local AI Inference"
+      ],
+      "deploymentTargets": [
+        "docker",
+        "linux"
+      ],
+      "ecosystem": "ai",
+      "maintainers": [
+        "ollama"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "vllm",
+          "type": "alternative_to"
+        },
+        {
+          "target": "langchain",
+          "type": "integrates_with"
+        },
+        {
+          "target": "openai",
+          "type": "alternative_to"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://github.com/ollama/ollama",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "ollama"
+    },
+    {
+      "name": "openai",
+      "version": "1.0.0",
+      "description": "Artificial Intelligence APIs including GPT-4 and DALL-E.",
+      "categories": [
+        "AI",
+        "Developer Tools"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://platform.openai.com/docs/api-reference"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://platform.openai.com/docs/api-reference",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "openai"
+    },
+    {
+      "name": "openid-connect",
+      "version": "1.0.0",
+      "description": "Identity layer on top of the OAuth 2.0 protocol.",
+      "categories": [
+        "Authentication",
+        "Security"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "OIDC": "https://openid.net/connect/"
+      },
+      "learningLevel": "advanced",
+      "useCases": [
+        "SSO",
+        "Identity Verification"
+      ],
+      "deploymentTargets": [
+        "any"
+      ],
+      "ecosystem": "security",
+      "maintainers": [
+        "openid-foundation"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "oauth2",
+          "type": "depends_on"
+        },
+        {
+          "target": "jwt",
+          "type": "integrates_with"
+        },
+        {
+          "target": "github-actions",
+          "type": "works_well_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://openid.net/connect/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "openid-connect"
+    },
+    {
+      "name": "opentelemetry",
+      "version": "1.0.0",
+      "description": "High-quality, ubiquitous, and portable telemetry to enable effective observability.",
+      "categories": [
+        "Observability"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "OpenTelemetry Docs": "https://opentelemetry.io/docs/"
+      },
+      "learningLevel": "advanced",
+      "useCases": [
+        "Tracing",
+        "Metrics",
+        "Logs"
+      ],
+      "deploymentTargets": [
+        "kubernetes",
+        "docker"
+      ],
+      "ecosystem": "devops",
+      "maintainers": [
+        "cncf"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "jaeger",
+          "type": "publishes_to"
+        },
+        {
+          "target": "prometheus",
+          "type": "publishes_to"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://opentelemetry.io/docs/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "opentelemetry"
+    },
+    {
+      "name": "paddle",
+      "version": "1.0.0",
+      "description": "B2B and B2C billing platform handling tax compliance globally.",
+      "categories": [
+        "Payments",
+        "Finance"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Paddle API": "https://developer.paddle.com/api-reference"
+      },
+      "relatedSkills": [
+        "Stripe",
+        "Lemon Squeezy"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://developer.paddle.com/api-reference",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "paddle"
+    },
+    {
+      "name": "pinecone",
+      "version": "1.0.0",
+      "description": "Vector database for machine learning apps.",
+      "categories": [
+        "Databases",
+        "AI"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://docs.pinecone.io/reference/api/introduction"
+      },
+      "relatedSkills": [
+        "OpenAI",
+        "Anthropic",
+        "Upstash"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.pinecone.io/reference/api/introduction",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "pinecone"
+    },
+    {
+      "name": "plaid",
+      "version": "1.0.0",
+      "description": "Financial technology platform to connect bank accounts.",
+      "categories": [
+        "Payments",
+        "Finance"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://plaid.com/docs/api/"
+      },
+      "relationships": [
+        {
+          "target": "stripe",
+          "type": "works_well_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://plaid.com/docs/api/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "plaid"
+    },
+    {
+      "name": "planetscale",
+      "version": "1.0.0",
+      "description": "Serverless MySQL database built on Vitess.",
+      "categories": [
+        "Databases",
+        "Cloud"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "PlanetScale Serverless JS": "https://github.com/planetscale/database-js"
+      },
+      "relatedSkills": [
+        "Vercel",
+        "Cloudflare",
+        "Clerk"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://github.com/planetscale/database-js",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "planetscale"
+    },
+    {
+      "name": "playwright",
+      "version": "1.0.0",
+      "description": "End-to-end testing for modern web apps.",
+      "categories": [
+        "Developer Tools",
+        "Testing"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Playwright Docs": "https://playwright.dev/docs/intro"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "E2E Testing",
+        "Automation"
+      ],
+      "deploymentTargets": [
+        "github-actions"
+      ],
+      "ecosystem": "javascript",
+      "maintainers": [
+        "microsoft"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "github-actions",
+          "type": "integrates_with"
+        },
+        {
+          "target": "nextjs",
+          "type": "works_well_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://playwright.dev/docs/intro",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "playwright"
+    },
+    {
+      "name": "postgresql",
+      "version": "1.0.0",
+      "description": "The world's most advanced open source relational database.",
+      "categories": [
+        "Databases"
+      ],
+      "languages": [
+        "sql"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "PostgreSQL Docs": "https://www.postgresql.org/docs/"
+      },
+      "learningLevel": "advanced",
+      "useCases": [
+        "Relational Database",
+        "Data Warehouse"
+      ],
+      "deploymentTargets": [
+        "neon",
+        "aws",
+        "gcp"
+      ],
+      "ecosystem": "database",
+      "maintainers": [
+        "postgresql"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "neon",
+          "type": "extended_by"
+        },
+        {
+          "target": "prisma",
+          "type": "integrates_with"
+        },
+        {
+          "target": "drizzle",
+          "type": "integrates_with"
+        },
+        {
+          "target": "mysql",
+          "type": "alternative_to"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://www.postgresql.org/docs/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "postgresql"
+    },
+    {
+      "name": "posthog",
+      "version": "1.0.0",
+      "description": "Open-source product analytics, session recording, and feature flags.",
+      "categories": [
+        "Analytics"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "PostHog Node SDK": "https://posthog.com/docs/libraries/node"
+      },
+      "relatedSkills": [
+        "Mixpanel"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://posthog.com/docs/libraries/node",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "posthog"
+    },
+    {
+      "name": "prettier",
+      "version": "1.0.0",
+      "description": "Opinionated Code Formatter.",
+      "categories": [
+        "Developer Tools"
+      ],
+      "languages": [
+        "json"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Prettier Docs": "https://prettier.io/docs/en/"
+      },
+      "learningLevel": "beginner",
+      "useCases": [
+        "Formatting"
+      ],
+      "deploymentTargets": [
+        "any"
+      ],
+      "ecosystem": "javascript",
+      "maintainers": [
+        "prettier"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "eslint",
+          "type": "works_well_with"
+        },
+        {
+          "target": "biome",
+          "type": "alternative_to"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://prettier.io/docs/en/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "prettier"
+    },
+    {
+      "name": "prisma",
+      "version": "1.0.0",
+      "description": "Next-generation Node.js and TypeScript ORM.",
+      "categories": [
+        "Databases",
+        "Developer Tools"
+      ],
+      "languages": [
+        "prisma",
+        "typescript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Prisma Docs": "https://www.prisma.io/docs/"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "TypeScript ORM",
+        "Rapid Prototyping"
+      ],
+      "deploymentTargets": [
+        "vercel",
+        "docker",
+        "railway"
+      ],
+      "ecosystem": "typescript",
+      "maintainers": [
+        "prisma"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "postgresql",
+          "type": "integrates_with"
+        },
+        {
+          "target": "mysql",
+          "type": "integrates_with"
+        },
+        {
+          "target": "drizzle",
+          "type": "alternative_to"
+        },
+        {
+          "target": "nextjs",
+          "type": "works_well_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://www.prisma.io/docs/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "prisma"
+    },
+    {
+      "name": "prometheus",
+      "version": "1.0.0",
+      "description": "Powering metrics and alerting.",
+      "categories": [
+        "Observability"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Prometheus Docs": "https://prometheus.io/docs/introduction/overview/"
+      },
+      "learningLevel": "advanced",
+      "useCases": [
+        "Metrics",
+        "Time Series Database"
+      ],
+      "deploymentTargets": [
+        "kubernetes",
+        "docker"
+      ],
+      "ecosystem": "devops",
+      "maintainers": [
+        "cncf"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "grafana",
+          "type": "works_well_with"
+        },
+        {
+          "target": "kubernetes",
+          "type": "monitors"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://prometheus.io/docs/introduction/overview/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "prometheus"
+    },
+    {
+      "name": "pulumi",
+      "version": "1.0.0",
+      "description": "Universal Infrastructure as Code.",
+      "categories": [
+        "Developer Tools",
+        "Infrastructure"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Pulumi Docs": "https://www.pulumi.com/docs/"
+      },
+      "learningLevel": "advanced",
+      "useCases": [
+        "IaC"
+      ],
+      "deploymentTargets": [
+        "aws",
+        "gcp",
+        "kubernetes"
+      ],
+      "ecosystem": "devops",
+      "maintainers": [
+        "pulumi"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "terraform",
+          "type": "alternative_to"
+        },
+        {
+          "target": "terraform",
+          "type": "alternative_to"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://www.pulumi.com/docs/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "pulumi"
+    },
+    {
+      "name": "rabbitmq",
+      "version": "1.0.0",
+      "description": "Reliable, mature AMQP message broker.",
+      "categories": [
+        "Messaging",
+        "Enterprise"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "RabbitMQ Docs": "https://www.rabbitmq.com/documentation.html"
+      },
+      "learningLevel": "advanced",
+      "useCases": [
+        "Task Queues",
+        "Microservices"
+      ],
+      "deploymentTargets": [
+        "kubernetes",
+        "docker",
+        "aws"
+      ],
+      "ecosystem": "infrastructure",
+      "maintainers": [
+        "vmware"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "kafka",
+          "type": "alternative_to"
+        },
+        {
+          "target": "bullmq",
+          "type": "alternative_to"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://www.rabbitmq.com/documentation.html",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "rabbitmq"
+    },
+    {
+      "name": "railway",
+      "version": "1.0.0",
+      "description": "Infrastructure platform to provision infrastructure, develop locally, and deploy.",
+      "categories": [
+        "Cloud",
+        "DevOps"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Railway API": "https://docs.railway.app/reference/public-api"
+      },
+      "relatedSkills": [
+        "Render",
+        "Fly.io",
+        "GitHub"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.railway.app/reference/public-api",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "railway"
+    },
+    {
+      "name": "react",
+      "version": "1.0.0",
+      "description": "The library for web and native user interfaces.",
+      "categories": [
+        "Frontend Frameworks"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "React.dev": "https://react.dev/"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "SPA",
+        "UI Components"
+      ],
+      "deploymentTargets": [
+        "aws-s3",
+        "vercel",
+        "cloudflare"
+      ],
+      "ecosystem": "javascript",
+      "maintainers": [
+        "meta"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "nextjs",
+          "type": "extended_by"
+        },
+        {
+          "target": "vue",
+          "type": "alternative_to"
+        },
+        {
+          "target": "sveltekit",
+          "type": "alternative_to"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://react.dev/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "react"
+    },
+    {
+      "name": "redis",
+      "version": "1.0.0",
+      "description": "In-memory data structure store.",
+      "categories": [
+        "Databases"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://redis.io/commands/"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://redis.io/commands/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "redis"
+    },
+    {
+      "name": "redis-streams",
+      "version": "1.0.0",
+      "description": "A data type in Redis that models an append-only log.",
+      "categories": [
+        "Messaging",
+        "Databases"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Redis Streams": "https://redis.io/docs/data-types/streams/"
+      },
+      "learningLevel": "advanced",
+      "useCases": [
+        "Event Sourcing",
+        "Message Broker"
+      ],
+      "deploymentTargets": [
+        "upstash",
+        "aws",
+        "gcp"
+      ],
+      "ecosystem": "database",
+      "maintainers": [
+        "redis"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "redis",
+          "type": "depends_on"
+        },
+        {
+          "target": "kafka",
+          "type": "alternative_to"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://redis.io/docs/data-types/streams/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "redis-streams"
+    },
+    {
+      "name": "render",
+      "version": "1.0.0",
+      "description": "Unified cloud to build and run all your apps and websites.",
+      "categories": [
+        "Cloud",
+        "DevOps"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Render API": "https://docs.render.com/api"
+      },
+      "relatedSkills": [
+        "Railway",
+        "Fly.io"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.render.com/api",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "render"
+    },
+    {
+      "name": "resend",
+      "version": "1.0.0",
+      "description": "Email API for developers.",
+      "categories": [
+        "Messaging"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://resend.com/docs/api-reference"
+      },
+      "relatedSkills": [
+        "React-Email",
+        "Stripe",
+        "Clerk"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://resend.com/docs/api-reference",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "resend"
+    },
+    {
+      "name": "revenuecat",
+      "version": "1.0.0",
+      "description": "In-App Subscriptions Made Easy.",
+      "categories": [
+        "Payments",
+        "Finance"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "RevenueCat API": "https://www.revenuecat.com/docs/api-v1"
+      },
+      "relatedSkills": [
+        "Stripe",
+        "Paddle"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://www.revenuecat.com/docs/api-v1",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "revenuecat"
+    },
+    {
+      "name": "sendgrid",
+      "version": "1.0.0",
+      "description": "Cloud-based email delivery and management.",
+      "categories": [
+        "Messaging"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://docs.sendgrid.com/api-reference"
+      },
+      "relationships": [
+        {
+          "target": "twilio",
+          "type": "related_to"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.sendgrid.com/api-reference",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "sendgrid"
+    },
+    {
+      "name": "sentry",
+      "version": "1.0.0",
+      "description": "Application performance monitoring and error tracking.",
+      "categories": [
+        "Monitoring"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://docs.sentry.io/api/"
+      },
+      "relationships": [
+        {
+          "target": "nextjs",
+          "type": "monitors"
+        },
+        {
+          "target": "express",
+          "type": "monitors"
+        },
+        {
+          "target": "fastapi",
+          "type": "monitors"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.sentry.io/api/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "sentry"
+    },
+    {
+      "name": "shopify",
+      "version": "1.0.0",
+      "description": "E-commerce platform API.",
+      "categories": [
+        "Commerce"
+      ],
+      "languages": [
+        "typescript",
+        "php"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://shopify.dev/docs/api/admin-graphql"
+      },
+      "relationships": [
+        {
+          "target": "nextjs",
+          "type": "integrates_with"
+        },
+        {
+          "target": "stripe",
+          "type": "works_well_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://shopify.dev/docs/api/admin-graphql",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "shopify"
+    },
+    {
+      "name": "slack",
+      "version": "1.0.0",
+      "description": "Team communication platform.",
+      "categories": [
+        "Messaging",
+        "Productivity"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://api.slack.com/apis"
+      },
+      "relationships": [
+        {
+          "target": "github-actions",
+          "type": "integrates_with"
+        },
+        {
+          "target": "sentry",
+          "type": "integrates_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://api.slack.com/apis",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "slack"
+    },
+    {
+      "name": "sqlite",
+      "version": "1.0.0",
+      "description": "Small, fast, reliable, embedded database.",
+      "categories": [
+        "Databases"
+      ],
+      "languages": [
+        "sql"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "SQLite Docs": "https://www.sqlite.org/docs.html"
+      },
+      "learningLevel": "beginner",
+      "useCases": [
+        "Embedded App",
+        "Edge Computing",
+        "Testing"
+      ],
+      "deploymentTargets": [
+        "turso",
+        "cloudflare"
+      ],
+      "ecosystem": "database",
+      "maintainers": [
+        "sqlite"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "turso",
+          "type": "extended_by"
+        },
+        {
+          "target": "drizzle",
+          "type": "integrates_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://www.sqlite.org/docs.html",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "sqlite"
+    },
+    {
+      "name": "stripe",
+      "version": "1.0.0",
+      "description": "Financial infrastructure platform for the internet.",
+      "categories": [
+        "Payments",
+        "Commerce"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://stripe.com/docs/api"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://stripe.com/docs/api",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-03",
+      "id": "stripe"
+    },
+    {
+      "name": "supabase",
+      "version": "1.0.0",
+      "description": "Open source Firebase alternative based on PostgreSQL.",
+      "categories": [
+        "Databases",
+        "Authentication"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://supabase.com/docs/reference"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://supabase.com/docs/reference",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "supabase"
+    },
+    {
+      "name": "sveltekit",
+      "version": "1.0.0",
+      "description": "Web development, streamlined.",
+      "categories": [
+        "Frontend Frameworks"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "SvelteKit Docs": "https://kit.svelte.dev/docs"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "SSR",
+        "Performance"
+      ],
+      "deploymentTargets": [
+        "vercel",
+        "docker",
+        "cloudflare"
+      ],
+      "ecosystem": "svelte",
+      "maintainers": [
+        "rich-harris"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "nextjs",
+          "type": "alternative_to"
+        },
+        {
+          "target": "vercel",
+          "type": "deploys_to"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://kit.svelte.dev/docs",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "sveltekit"
+    },
+    {
+      "name": "terraform",
+      "version": "1.0.0",
+      "description": "Infrastructure as Code.",
+      "categories": [
+        "Developer Tools",
+        "Infrastructure"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Terraform Docs": "https://developer.hashicorp.com/terraform/docs"
+      },
+      "learningLevel": "advanced",
+      "useCases": [
+        "IaC",
+        "Cloud Provisioning"
+      ],
+      "deploymentTargets": [
+        "aws",
+        "gcp",
+        "azure"
+      ],
+      "ecosystem": "devops",
+      "maintainers": [
+        "hashicorp"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "pulumi",
+          "type": "alternative_to"
+        },
+        {
+          "target": "github-actions",
+          "type": "integrates_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://developer.hashicorp.com/terraform/docs",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "terraform"
+    },
+    {
+      "name": "traefik",
+      "version": "1.0.0",
+      "description": "The Cloud Native Application Proxy.",
+      "categories": [
+        "Infrastructure",
+        "Developer Tools"
+      ],
+      "languages": [
+        "yaml"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Traefik Docs": "https://doc.traefik.io/traefik/"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "Ingress Controller",
+        "Reverse Proxy"
+      ],
+      "deploymentTargets": [
+        "kubernetes",
+        "docker"
+      ],
+      "ecosystem": "devops",
+      "maintainers": [
+        "traefik"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "kubernetes",
+          "type": "integrates_with"
+        },
+        {
+          "target": "docker",
+          "type": "integrates_with"
+        },
+        {
+          "target": "nginx",
+          "type": "alternative_to"
+        },
+        {
+          "target": "caddy",
+          "type": "alternative_to"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://doc.traefik.io/traefik/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "traefik"
+    },
+    {
+      "name": "trpc",
+      "version": "1.0.0",
+      "description": "End-to-end typesafe APIs made easy.",
+      "categories": [
+        "Backend Frameworks",
+        "Developer Tools"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "tRPC Docs": "https://trpc.io/docs"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "Full Stack TypeScript"
+      ],
+      "deploymentTargets": [
+        "vercel",
+        "docker"
+      ],
+      "ecosystem": "typescript",
+      "maintainers": [
+        "trpc"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "nextjs",
+          "type": "works_well_with"
+        },
+        {
+          "target": "react",
+          "type": "works_well_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://trpc.io/docs",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "trpc"
+    },
+    {
+      "name": "turborepo",
+      "version": "1.0.0",
+      "description": "High-performance build system for JavaScript and TypeScript codebases.",
+      "categories": [
+        "Developer Tools"
+      ],
+      "languages": [
+        "json"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "TurboRepo Docs": "https://turbo.build/repo/docs"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "Monorepo",
+        "Build System"
+      ],
+      "deploymentTargets": [
+        "vercel"
+      ],
+      "ecosystem": "javascript",
+      "maintainers": [
+        "vercel"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "nextjs",
+          "type": "works_well_with"
+        },
+        {
+          "target": "github-actions",
+          "type": "integrates_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://turbo.build/repo/docs",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "turborepo"
+    },
+    {
+      "name": "turso",
+      "version": "1.0.0",
+      "description": "Edge SQLite database based on libSQL.",
+      "categories": [
+        "Databases",
+        "Cloud"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go",
+        "rust"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Turso Documentation": "https://docs.turso.tech"
+      },
+      "relatedSkills": [
+        "Fly.io",
+        "Render"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.turso.tech",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "turso"
+    },
+    {
+      "name": "twilio",
+      "version": "1.0.0",
+      "description": "Communication APIs for SMS, Voice, and Video.",
+      "categories": [
+        "Messaging"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://www.twilio.com/docs/api"
+      },
+      "relationships": [
+        {
+          "target": "sendgrid",
+          "type": "related_to"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://www.twilio.com/docs/api",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "twilio"
+    },
+    {
+      "name": "typesense",
+      "version": "1.0.0",
+      "description": "Fast, typo-tolerant open-source search engine.",
+      "categories": [
+        "Search",
+        "Databases"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Typesense API": "https://typesense.org/docs/"
+      },
+      "relatedSkills": [
+        "Meilisearch",
+        "Algolia"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://typesense.org/docs/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "typesense"
+    },
+    {
+      "name": "upstash",
+      "version": "1.0.0",
+      "description": "Serverless Data Platform (Redis, Kafka, Vector).",
+      "categories": [
+        "Databases",
+        "Messaging"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Redis API Docs": "https://docs.upstash.com/redis"
+      },
+      "relatedSkills": [
+        "Vercel",
+        "Cloudflare",
+        "OpenAI"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.upstash.com/redis",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "upstash"
+    },
+    {
+      "name": "vercel",
+      "version": "1.0.0",
+      "description": "Platform for frontend frameworks and static sites.",
+      "categories": [
+        "Cloud",
+        "DevOps"
+      ],
+      "languages": [
+        "typescript",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://vercel.com/docs/rest-api"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://vercel.com/docs/rest-api",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "vercel"
+    },
+    {
+      "name": "vitest",
+      "version": "1.0.0",
+      "description": "Next generation testing framework powered by Vite.",
+      "categories": [
+        "Testing",
+        "Developer Tools"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Vitest Docs": "https://vitest.dev/guide/"
+      },
+      "learningLevel": "beginner",
+      "useCases": [
+        "Unit Testing"
+      ],
+      "deploymentTargets": [
+        "any"
+      ],
+      "ecosystem": "javascript",
+      "maintainers": [
+        "vitest"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "playwright",
+          "type": "works_well_with"
+        },
+        {
+          "target": "react",
+          "type": "works_well_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://vitest.dev/guide/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "vitest"
+    },
+    {
+      "name": "vllm",
+      "version": "1.0.0",
+      "description": "High-throughput and memory-efficient LLM inference engine.",
+      "categories": [
+        "AI",
+        "Infrastructure"
+      ],
+      "languages": [
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "vLLM Docs": "https://vllm.readthedocs.io/"
+      },
+      "learningLevel": "advanced",
+      "useCases": [
+        "Production AI Inference"
+      ],
+      "deploymentTargets": [
+        "docker",
+        "kubernetes"
+      ],
+      "ecosystem": "ai",
+      "maintainers": [
+        "vllm-project"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "ollama",
+          "type": "alternative_to"
+        },
+        {
+          "target": "langchain",
+          "type": "integrates_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://vllm.readthedocs.io/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "vllm"
+    },
+    {
+      "name": "vue",
+      "version": "1.0.0",
+      "description": "The Progressive JavaScript Framework.",
+      "categories": [
+        "Frontend Frameworks"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "Vue Docs": "https://vuejs.org/guide/introduction.html"
+      },
+      "learningLevel": "intermediate",
+      "useCases": [
+        "SPA",
+        "Interactive UI"
+      ],
+      "deploymentTargets": [
+        "vercel",
+        "netlify",
+        "aws-s3"
+      ],
+      "ecosystem": "javascript",
+      "maintainers": [
+        "evan-you"
+      ],
+      "stability": "production",
+      "relationships": [
+        {
+          "target": "nuxt",
+          "type": "extended_by"
+        },
+        {
+          "target": "react",
+          "type": "alternative_to"
+        },
+        {
+          "target": "supabase",
+          "type": "works_well_with"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://vuejs.org/guide/introduction.html",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-02",
+      "id": "vue"
+    },
+    {
+      "name": "xquik",
+      "version": "1.0.0",
+      "description": "X/Twitter data, automation, monitor, webhook, and write API.",
+      "categories": [
+        "Developer Tools",
+        "AI"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://docs.xquik.com",
+        "OpenAPI Spec": "https://xquik.com/openapi.json",
+        "MCP Manifest": "https://xquik.com/.well-known/mcp.json"
+      },
+      "relatedSkills": [
+        "GitHub",
+        "PostgreSQL",
+        "Playwright"
+      ],
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-03",
+      "documentationSource": "https://docs.xquik.com",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-03",
+      "id": "xquik"
     }
   ]
 }

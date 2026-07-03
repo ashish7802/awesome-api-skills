@@ -29,5 +29,5 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Run Registry Sync
-        run: npx tsx scripts/dogfood.ts
+      - name: Sync to Registry
+        run: npx tsx scripts/dev/dogfood.ts

@@ -2,8 +2,8 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 // We import directly from the local built packages
-import { SkillMetadata } from '../packages/shared-types/src/index.js';
-import { ValidatorEngine, MetadataPresenceRule } from '../packages/validator/src/index.js';
+import { SkillMetadata } from '../../packages/shared-types/src/index.js';
+import { ValidatorEngine, MetadataPresenceRule } from '../../packages/validator/src/index.js';
 import {
   PipelineEngine,
   GeneratorCache,
@@ -14,8 +14,8 @@ import {
   IntegrityReportPlugin,
   DocsPlugin,
   SitemapPlugin,
-} from '../packages/generator/src/index.js';
-import { RegistryCache, SearchIndex } from '../packages/registry/src/index.js';
+} from '../../packages/generator/src/index.js';
+import { RegistryCache, SearchIndex } from '../../packages/registry/src/index.js';
 
 const root = path.join(process.cwd(), 'skills');
 const outDir = path.join(process.cwd(), 'dist');
@@ -27,7 +27,9 @@ async function loadRealSkills(): Promise<SkillMetadata[]> {
   for (const d of dirs) {
     const metaPath = path.join(root, d, 'metadata.json');
     if (fs.existsSync(metaPath)) {
-      skills.push(JSON.parse(fs.readFileSync(metaPath, 'utf8')) as SkillMetadata);
+      const meta = JSON.parse(fs.readFileSync(metaPath, 'utf8')) as SkillMetadata;
+      meta.id = d;
+      skills.push(meta);
     }
   }
   return skills;
