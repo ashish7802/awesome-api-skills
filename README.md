@@ -151,7 +151,7 @@ docs/                   Searchable web directory, benchmarks, and CLI reference
 Every claim in this repository is verified by automated tests and CI checks:
 
 1. **Schema Validation**: All 100 skills pass strict structural checks via `packages/validator`.
-2. **Automated Unit Tests**: 31 assertions run in CI via Vitest covering all core packages.
+2. **Automated Unit Tests**: 37 assertions run in CI via Vitest covering all core packages.
 3. **Last Verified Metadata**: Every skill contains a `lastVerified` timestamp in its `metadata.json` and `SKILL.md` header indicating when SDK signatures were verified against vendor documentation.
 4. **Relationship Scoring**: Skill graph connections follow a transparent 5-factor hybrid scoring model (Explicit edges, Category match, Ecosystem match, Deployment match, Jaccard similarity) detailed in [SPECIFICATION.md](./SPECIFICATION.md#15-related-skills-scoring-methodology).
 

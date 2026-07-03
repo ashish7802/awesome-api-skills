@@ -5,3 +5,4 @@ coverage/
 *.log
 .eslintcache
 .vscode/
+build-health.json
