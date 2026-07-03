@@ -32,7 +32,7 @@ When an AI coding agent (Claude Code, Cursor, Codex CLI, Gemini CLI, etc.) write
 - Using **deprecated authentication helpers** (e.g. `@clerk/nextjs` v4 `authMiddleware` instead of v5 `clerkMiddleware`).
 - Calling transactional email endpoints inside unbatched loops, hitting **HTTP 429 rate limit errors**.
 
-`awesome-api-skills` fixes this by providing **100 curated, schema-validated `SKILL.md` context files**. Dropping a skill file into your agent's skills directory (`.claude/skills/`, `.cursor/skills/`, `.agents/skills/`) gives the model exact, current API instructions, preventing guesswork before code is written.
+`awesome-api-skills` fixes this by providing **101 curated, schema-validated `SKILL.md` context files**. Dropping a skill file into your agent's skills directory (`.claude/skills/`, `.cursor/skills/`, `.agents/skills/`) gives the model exact, current API instructions, preventing guesswork before code is written.
 
 ---
 
@@ -102,7 +102,7 @@ pnpm --filter @awesome-api-skills/cli exec awesome-api doctor
 
 ## 📚 Skill Directory
 
-Explore 100 skills across 14 core technical domains:
+Explore 101 skills across 14 core technical domains:
 
 | Category | Available Skills |
 |---|---|
@@ -111,13 +111,13 @@ Explore 100 skills across 14 core technical domains:
 | **Databases** | `postgresql`, `mysql`, `sqlite`, `mongodb-atlas`, `planetscale`, `neon`, `turso`, `drizzle`, `prisma` |
 | **Caching & Queues** | `redis`, `redis-streams`, `upstash`, `bullmq`, `kafka`, `rabbitmq`, `nats` |
 | **Object Storage** | `aws-s3`, `aws-dynamodb`, `azure-blob-storage`, `google-cloud-storage` |
-| **AI & LLM Infra** | `openai`, `anthropic`, `gemini`, `ollama`, `vllm`, `langchain`, `llamaindex`, `pinecone`, `typesense`, `meilisearch`, `algolia` |
+| **AI & LLM Infra** | `openai`, `anthropic`, `gemini`, `ollama`, `vllm`, `langchain`, `llamaindex`, `pinecone`, `typesense`, `meilisearch`, `algolia`, `xquik` |
 | **Backend Frameworks** | `express`, `fastapi`, `nestjs`, `hono`, `trpc` |
 | **Frontend Frameworks** | `react`, `vue`, `nextjs`, `nuxt`, `sveltekit` |
 | **Deployment Platforms** | `vercel`, `railway`, `render`, `fly`, `digitalocean`, `cloudflare`, `cloudflare-workers`, `deno-deploy` |
 | **Infrastructure** | `docker`, `kubernetes`, `helm`, `terraform`, `pulumi`, `argo-cd`, `github-actions`, `traefik`, `nginx`, `caddy`, `turborepo` |
 | **Observability** | `datadog`, `sentry`, `prometheus`, `grafana`, `loki`, `jaeger`, `opentelemetry`, `mixpanel`, `posthog` |
-| **Dev Tooling** | `eslint`, `prettier`, `biome`, `vitest`, `playwright`, `git`, `github` |
+| **Dev Tooling** | `eslint`, `prettier`, `biome`, `vitest`, `playwright`, `git`, `github`, `xquik` |
 | **Communication** | `slack`, `discord`, `twilio`, `sendgrid`, `resend` |
 | **Platforms & CMS** | `shopify`, `mapbox`, `convex` |
 
@@ -130,7 +130,7 @@ Explore 100 skills across 14 core technical domains:
 `awesome-api-skills` is built as a TypeScript pnpm workspace:
 
 ```
-skills/                 100 SKILL.md files + metadata.json contracts
+skills/                 101 SKILL.md files + metadata.json contracts
 packages/
   cli/                  CLI binary for searching, validating, and managing skills
   core/                 Core orchestration engine and workspace management
@@ -150,8 +150,8 @@ docs/                   Searchable web directory, benchmarks, and CLI reference
 
 Every claim in this repository is verified by automated tests and CI checks:
 
-1. **Schema Validation**: All 100 skills pass strict structural checks via `packages/validator`.
-2. **Automated Unit Tests**: 37 assertions run in CI via Vitest covering all core packages.
+1. **Schema Validation**: All 101 skills pass strict structural checks via `packages/validator`.
+2. **Automated Unit Tests**: 31 assertions run in CI via Vitest covering all core packages.
 3. **Last Verified Metadata**: Every skill contains a `lastVerified` timestamp in its `metadata.json` and `SKILL.md` header indicating when SDK signatures were verified against vendor documentation.
 4. **Relationship Scoring**: Skill graph connections follow a transparent 5-factor hybrid scoring model (Explicit edges, Category match, Ecosystem match, Deployment match, Jaccard similarity) detailed in [SPECIFICATION.md](./SPECIFICATION.md#15-related-skills-scoring-methodology).
 
