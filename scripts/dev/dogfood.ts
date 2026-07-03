@@ -81,8 +81,8 @@ async function runSnapshotTests() {
       'sitemap.xml',
     ];
     for (const f of files) {
-      const generated = fs.readFileSync(path.join(outDir, f), 'utf8');
-      const snapshot = fs.readFileSync(path.join(snapshotsDir, f), 'utf8');
+      const generated = fs.readFileSync(path.join(outDir, f), 'utf8').replace(/\r\n/g, '\n');
+      const snapshot = fs.readFileSync(path.join(snapshotsDir, f), 'utf8').replace(/\r\n/g, '\n');
       if (generated !== snapshot) {
         throw new Error(`Snapshot mismatch for ${f}! Expected matching output.`);
       }

@@ -16,7 +16,7 @@ describe('Generator Pipeline', () => {
       skills: [],
       cache: new GeneratorCache(),
       graph: new BuildGraph(),
-      outputDir: '/dist',
+      outputDir: './dist-test',
       isIncremental: false,
     };
 
@@ -36,7 +36,7 @@ describe('Generator Pipeline', () => {
       skills: [],
       cache,
       graph: new BuildGraph(),
-      outputDir: '/dist',
+      outputDir: './dist-test',
       isIncremental: true,
     };
 
