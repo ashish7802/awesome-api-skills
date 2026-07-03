@@ -53,13 +53,6 @@ If requests fail, verify the base URL, authentication header, endpoint path, pag
 - [TypeScript SDK](https://github.com/Xquik-dev/x-twitter-scraper-typescript)
 - [Python SDK](https://github.com/Xquik-dev/x-twitter-scraper-python)
 
-## Related Skills
-
-- [OpenAPI](/skills/openapi)
-- [GitHub](/skills/github)
-- [PostgreSQL](/skills/postgresql)
-- [Playwright](/skills/playwright)
-
 ## Why Use This Skill
 
 Use this when your agent works with **Xquik** and needs source-backed X/Twitter API integration guidance instead of guessing endpoint names, cursor behavior, or response fields.
@@ -79,7 +72,7 @@ Use this when your agent works with **Xquik** and needs source-backed X/Twitter 
 - [ ] Test fixtures cover parser and normalization logic
 - [ ] Public docs and OpenAPI are checked before changing endpoint assumptions
 
-## Related Skills
+## Related skills
 
 - [`github`](../github/SKILL.md) - related to
 - [`postgresql`](../postgresql/SKILL.md) - works well with
