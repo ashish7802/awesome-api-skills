@@ -1,110 +1,459 @@
-<svg width="1200" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
   <defs>
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#1e293b;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    <!-- Fonts Import -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Fira+Code:wght@400;500;600&amp;display=swap');
+      
+      .title-text {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-weight: 800;
+        font-size: 56px;
+        letter-spacing: -0.035em;
+      }
+      .subtitle-text {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-weight: 500;
+        font-size: 19px;
+        letter-spacing: -0.015em;
+      }
+      .badge-text {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-weight: 700;
+        font-size: 11px;
+        letter-spacing: 0.08em;
+      }
+      .chip-text {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: -0.01em;
+      }
+      .code-text {
+        font-family: 'Fira Code', monospace;
+        font-size: 12px;
+        line-height: 1.5;
+      }
+      
+      /* Subtle Floating Animations */
+      @keyframes float-slow {
+        0% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-8px) rotate(0.5deg); }
+        100% { transform: translateY(0px) rotate(0deg); }
+      }
+      @keyframes float-mid {
+        0% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-12px) rotate(-0.5deg); }
+        100% { transform: translateY(0px) rotate(0deg); }
+      }
+      @keyframes float-fast {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); }
+        100% { transform: translateY(0px); }
+      }
+      @keyframes pulse-cyan {
+        0%, 100% { opacity: 0.4; filter: drop-shadow(0 0 2px rgba(6, 182, 212, 0.2)); }
+        50% { opacity: 0.95; filter: drop-shadow(0 0 10px rgba(6, 182, 212, 0.7)); }
+      }
+      @keyframes pulse-purple {
+        0%, 100% { opacity: 0.4; filter: drop-shadow(0 0 2px rgba(139, 92, 246, 0.2)); }
+        50% { opacity: 0.95; filter: drop-shadow(0 0 12px rgba(139, 92, 246, 0.7)); }
+      }
+      @keyframes dash-flow {
+        to {
+          stroke-dashoffset: -40;
+        }
+      }
+      
+      .animated-float-left { animation: float-slow 7s ease-in-out infinite; transform-origin: center; }
+      .animated-float-right { animation: float-mid 6s ease-in-out infinite; transform-origin: center; }
+      .animated-float-icon { animation: float-fast 5s ease-in-out infinite; transform-origin: center; }
+      .animated-pulse-cyan { animation: pulse-cyan 3.5s ease-in-out infinite; }
+      .animated-pulse-purple { animation: pulse-purple 4s ease-in-out infinite; }
+      .flowing-dash {
+        stroke-dasharray: 8 12;
+        animation: dash-flow 4s linear infinite;
+      }
+    </style>
+
+    <!-- Deep Tech Background Gradient -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1020" />
+      <stop offset="40%" stop-color="#070A14" />
+      <stop offset="100%" stop-color="#111827" />
     </linearGradient>
-    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+
+    <!-- Glowing Radial Light Sources -->
+    <radialGradient id="cyan-glow" cx="15%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="purple-glow" cx="85%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="emerald-glow" cx="50%" cy="85%" r="45%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Grid Layout Mask -->
+    <radialGradient id="grid-fade" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.85" />
+      <stop offset="65%" stop-color="#FFFFFF" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+    <mask id="grid-mask">
+      <rect width="1280" height="640" fill="url(#grid-fade)" />
+    </mask>
+    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="0.8" stroke-opacity="0.45" />
+    </pattern>
+
+    <!-- Dynamic Headers Text Gradients -->
+    <linearGradient id="title-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="40%" stop-color="#F8FAFC" />
+      <stop offset="80%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#94A3B8" />
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+
+    <!-- Glowing Vector Pipelines -->
+    <linearGradient id="cyan-to-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <linearGradient id="purple-to-emerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+    <linearGradient id="emerald-to-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+
+    <!-- Soft Glassmorphic Panel Cards -->
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.25" />
+    </linearGradient>
+
+    <!-- Glow filters for nodes -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="300" fill="url(#bgGradient)"/>
+  <!-- Base Background -->
+  <rect width="1280" height="640" fill="url(#bg-gradient)" />
 
-  <!-- Decorative elements - top left -->
-  <circle cx="80" cy="40" r="30" fill="url(#accentGradient)" opacity="0.15"/>
-  <circle cx="120" cy="60" r="20" fill="url(#accentGradient)" opacity="0.1"/>
+  <!-- Ambient Radiant Backdrops -->
+  <circle cx="150" cy="160" r="450" fill="url(#cyan-glow)" />
+  <circle cx="1130" cy="160" r="450" fill="url(#purple-glow)" />
+  <circle cx="640" cy="540" r="350" fill="url(#emerald-glow)" />
 
-  <!-- Decorative elements - bottom right -->
-  <circle cx="1100" cy="250" r="35" fill="url(#accentGradient)" opacity="0.12"/>
-  <circle cx="1050" cy="280" r="25" fill="url(#accentGradient)" opacity="0.08"/>
+  <!-- Sci-fi Grid Map -->
+  <rect width="1280" height="640" fill="url(#grid-pattern)" mask="url(#grid-mask)" />
 
-  <!-- API Symbol (Left side) -->
-  <g transform="translate(60, 100)">
-    <!-- Server/API Icon -->
-    <rect x="0" y="0" width="80" height="100" fill="none" stroke="url(#accentGradient)" stroke-width="2" rx="4" opacity="0.8"/>
+  <!-- Horizontal Tech Dividing Accent Lines -->
+  <line x1="0" y1="1" x2="1280" y2="1" stroke="#334155" stroke-opacity="0.2" />
+  <line x1="0" y1="639" x2="1280" y2="639" stroke="#334155" stroke-opacity="0.2" />
+
+  <!-- Abstract Node Map (Constellations representing connected APIs) -->
+  <g stroke="#334155" stroke-opacity="0.22" stroke-width="1.2" fill="none">
+    <path d="M 60,140 L 220,180 L 160,340 Z" />
+    <path d="M 220,180 L 380,110 L 440,270 L 160,340" />
+    <path d="M 1220,140 L 1060,250 L 1140,380 L 1220,310 Z" />
+    <path d="M 1060,250 L 900,190 L 840,350 L 1040,430" />
     
-    <!-- Connection nodes -->
-    <circle cx="15" cy="15" r="4" fill="url(#accentGradient)" filter="url(#glow)"/>
-    <circle cx="65" cy="15" r="4" fill="url(#accentGradient)" filter="url(#glow)"/>
-    <circle cx="15" cy="85" r="4" fill="url(#accentGradient)" filter="url(#glow)"/>
-    <circle cx="65" cy="85" r="4" fill="url(#accentGradient)" filter="url(#glow)"/>
-    
-    <!-- Connection lines -->
-    <line x1="15" y1="25" x2="15" y2="75" stroke="url(#accentGradient)" stroke-width="1.5" opacity="0.6"/>
-    <line x1="65" y1="25" x2="65" y2="75" stroke="url(#accentGradient)" stroke-width="1.5" opacity="0.6"/>
-    <line x1="25" y1="50" x2="55" y2="50" stroke="url(#accentGradient)" stroke-width="1.5" opacity="0.6"/>
+    <!-- Heavy Flowing Synapses passing behind text -->
+    <path d="M 440,270 C 540,230 740,230 840,350" stroke="url(#cyan-to-purple)" stroke-opacity="0.25" stroke-width="1.8" />
+    <path d="M 160,340 C 320,490 960,490 1040,430" stroke="url(#purple-to-emerald)" stroke-opacity="0.2" stroke-width="1.5" />
+    <path d="M 220,180 C 400,-20 880,-20 1060,250" stroke="url(#emerald-to-cyan)" stroke-opacity="0.15" stroke-dasharray="4,8" stroke-width="1.2" />
   </g>
 
-  <!-- Main Text -->
-  <text x="200" y="80" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="48" font-weight="700" fill="#f1f5f9" letter-spacing="1">
-    Awesome API Skills
-  </text>
-
-  <!-- Subtitle -->
-  <text x="200" y="125" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="300" fill="#cbd5e1" letter-spacing="0.5">
-    Production-Ready AI Coding Skills for APIs
-  </text>
-
-  <!-- Tagline -->
-  <text x="200" y="160" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#94a3b8">
-    ✨ 101 Verified SKILL.md Files • 🤖 AI-Ready • ⚡ Production-Grade
-  </text>
-
-  <!-- Features Row -->
-  <g id="features">
-    <!-- Feature 1 -->
-    <rect x="200" y="190" width="200" height="50" fill="rgba(59, 130, 246, 0.1)" rx="6" stroke="url(#accentGradient)" stroke-width="1" opacity="0.6"/>
-    <text x="215" y="210" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#3b82f6">
-      🔒 Security First
-    </text>
-    <text x="215" y="228" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#cbd5e1">
-      Best practices included
-    </text>
-
-    <!-- Feature 2 -->
-    <rect x="420" y="190" width="200" height="50" fill="rgba(6, 182, 212, 0.1)" rx="6" stroke="url(#accentGradient)" stroke-width="1" opacity="0.6"/>
-    <text x="435" y="210" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#06b6d4">
-      ⚡ Type-Safe
-    </text>
-    <text x="435" y="228" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#cbd5e1">
-      100% TypeScript verified
-    </text>
-
-    <!-- Feature 3 -->
-    <rect x="640" y="190" width="200" height="50" fill="rgba(59, 130, 246, 0.1)" rx="6" stroke="url(#accentGradient)" stroke-width="1" opacity="0.6"/>
-    <text x="655" y="210" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#3b82f6">
-      📦 14 Domains
-    </text>
-    <text x="655" y="228" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#cbd5e1">
-      Payments, Auth, Databases...
-    </text>
-
-    <!-- Feature 4 -->
-    <rect x="860" y="190" width="200" height="50" fill="rgba(6, 182, 212, 0.1)" rx="6" stroke="url(#accentGradient)" stroke-width="1" opacity="0.6"/>
-    <text x="875" y="210" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#06b6d4">
-      🚀 AI-Ready
-    </text>
-    <text x="875" y="228" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#cbd5e1">
-      Claude, Cursor, Gemini...
-    </text>
+  <!-- Constellation Interactive Neural Nodes -->
+  <g fill="#475569" fill-opacity="0.5">
+    <circle cx="60" cy="140" r="3.5" />
+    <circle cx="220" cy="180" r="5" fill="#06B6D4" class="animated-pulse-cyan" />
+    <circle cx="160" cy="340" r="4" />
+    <circle cx="380" cy="110" r="3" />
+    <circle cx="440" cy="270" r="6" fill="#8B5CF6" class="animated-pulse-purple" />
+    <circle cx="1220" cy="140" r="3" />
+    <circle cx="1060" cy="250" r="5.5" fill="#10B981" />
+    <circle cx="1140" cy="380" r="4" />
+    <circle cx="1220" cy="310" r="3" />
+    <circle cx="900" cy="190" r="4.5" />
+    <circle cx="840" cy="350" r="3.5" />
+    <circle cx="1040" cy="430" r="5" fill="#8B5CF6" />
   </g>
 
-  <!-- Bottom line accent -->
-  <line x1="200" y1="270" x2="1100" y2="270" stroke="url(#accentGradient)" stroke-width="2" opacity="0.3"/>
+  <!-- Header Interactive Glowing Badge -->
+  <g transform="translate(640, 85)">
+    <rect x="-85" y="-13" width="170" height="26" rx="13" fill="#0E172C" stroke="#06B6D4" stroke-width="1.5" stroke-opacity="0.8" />
+    <circle cx="-62" cy="0" r="4.5" fill="#06B6D4" class="animated-pulse-cyan" />
+    <text class="badge-text" fill="#E2E8F0" text-anchor="middle" x="10" y="4">PRODUCTION READY</text>
+  </g>
 
-  <!-- Powered by badge -->
-  <text x="200" y="295" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="500" fill="#64748b">
-    Built for Modern AI Development • MIT Licensed • github.com/ashish7802/awesome-api-skills
+  <!-- Big Title -->
+  <text class="title-text" text-anchor="middle" x="640" y="165" fill="url(#title-gradient)">Awesome API Skills</text>
+
+  <!-- Descriptive Subtitle -->
+  <text class="subtitle-text" text-anchor="middle" x="640" y="212" fill="#94A3B8">
+    101 Production-Ready <tspan fill="#F8FAFC" font-weight="700">AI Context Files</tspan> for Modern APIs
   </text>
+
+  <!-- Top Tech Stack Row (Centred Layout) -->
+  <g transform="translate(640, 252)">
+    <!-- Row 1 -->
+    <g transform="translate(0, 0)">
+      <!-- Stripe -->
+      <g transform="translate(-250, 0)">
+        <rect x="-45" y="-14" width="90" height="28" rx="8" fill="#1E293B" fill-opacity="0.75" stroke="#334155" stroke-width="1.2" />
+        <circle cx="-28" cy="0" r="3.5" fill="#635BFF" />
+        <text class="chip-text" fill="#E2E8F0" x="-18" y="4">Stripe</text>
+      </g>
+      <!-- OpenAI -->
+      <g transform="translate(-150, 0)">
+        <rect x="-50" y="-14" width="100" height="28" rx="8" fill="#1E293B" fill-opacity="0.75" stroke="#06B6D4" stroke-width="1.5" />
+        <circle cx="-32" cy="0" r="3.5" fill="#10A37F" />
+        <text class="chip-text" fill="#E2E8F0" x="-22" y="4">OpenAI</text>
+      </g>
+      <!-- Clerk -->
+      <g transform="translate(-50, 0)">
+        <rect x="-45" y="-14" width="90" height="28" rx="8" fill="#1E293B" fill-opacity="0.75" stroke="#334155" stroke-width="1.2" />
+        <circle cx="-28" cy="0" r="3.5" fill="#6C47FF" />
+        <text class="chip-text" fill="#E2E8F0" x="-18" y="4">Clerk</text>
+      </g>
+      <!-- PostgreSQL -->
+      <g transform="translate(55, 0)">
+        <rect x="-55" y="-14" width="110" height="28" rx="8" fill="#1E293B" fill-opacity="0.75" stroke="#334155" stroke-width="1.2" />
+        <circle cx="-36" cy="0" r="3.5" fill="#336791" />
+        <text class="chip-text" fill="#E2E8F0" x="-26" y="4">PostgreSQL</text>
+      </g>
+      <!-- Redis -->
+      <g transform="translate(165, 0)">
+        <rect x="-45" y="-14" width="90" height="28" rx="8" fill="#1E293B" fill-opacity="0.75" stroke="#334155" stroke-width="1.2" />
+        <circle cx="-28" cy="0" r="3.5" fill="#D82C20" />
+        <text class="chip-text" fill="#E2E8F0" x="-18" y="4">Redis</text>
+      </g>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(0, 38)">
+      <!-- Next.js -->
+      <g transform="translate(-200, 0)">
+        <rect x="-50" y="-14" width="100" height="28" rx="8" fill="#1E293B" fill-opacity="0.75" stroke="#8B5CF6" stroke-width="1.5" />
+        <circle cx="-32" cy="0" r="3.5" fill="#FFFFFF" />
+        <text class="chip-text" fill="#E2E8F0" x="-22" y="4">Next.js</text>
+      </g>
+      <!-- Cloudflare -->
+      <g transform="translate(-90, 0)">
+        <rect x="-55" y="-14" width="110" height="28" rx="8" fill="#1E293B" fill-opacity="0.75" stroke="#334155" stroke-width="1.2" />
+        <circle cx="-37" cy="0" r="3.5" fill="#F38020" />
+        <text class="chip-text" fill="#E2E8F0" x="-27" y="4">Cloudflare</text>
+      </g>
+      <!-- Prisma -->
+      <g transform="translate(15, 0)">
+        <rect x="-50" y="-14" width="100" height="28" rx="8" fill="#1E293B" fill-opacity="0.75" stroke="#334155" stroke-width="1.2" />
+        <circle cx="-32" cy="0" r="3.5" fill="#5A67D8" />
+        <text class="chip-text" fill="#E2E8F0" x="-22" y="4">Prisma</text>
+      </g>
+      <!-- Docker -->
+      <g transform="translate(110, 0)">
+        <rect x="-50" y="-14" width="100" height="28" rx="8" fill="#1E293B" fill-opacity="0.75" stroke="#334155" stroke-width="1.2" />
+        <circle cx="-32" cy="0" r="3.5" fill="#2496ED" />
+        <text class="chip-text" fill="#E2E8F0" x="-22" y="4">Docker</text>
+      </g>
+      <!-- Kubernetes -->
+      <g transform="translate(215, 0)">
+        <rect x="-55" y="-14" width="110" height="28" rx="8" fill="#1E293B" fill-opacity="0.75" stroke="#10B981" stroke-width="1.5" />
+        <circle cx="-37" cy="0" r="3.5" fill="#326CE5" />
+        <text class="chip-text" fill="#E2E8F0" x="-27" y="4">Kubernetes</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Left Glassmorphic IDE Frame -->
+  <g transform="translate(50, 360)" class="animated-float-left">
+    <!-- Card Back Drop Shadow -->
+    <rect x="0" y="4" width="370" height="230" rx="12" fill="#000000" fill-opacity="0.55" />
+    <!-- Glassmorphic panel base -->
+    <rect x="0" y="0" width="370" height="230" rx="12" fill="url(#card-grad)" stroke="url(#card-border)" stroke-width="1.5" />
+    
+    <!-- Titlebar Buttons -->
+    <rect x="0" y="0" width="370" height="36" rx="12" fill="#0F172A" fill-opacity="0.8" />
+    <circle cx="18" cy="18" r="5" fill="#EF4444" fill-opacity="0.8" />
+    <circle cx="34" cy="18" r="5" fill="#F59E0B" fill-opacity="0.8" />
+    <circle cx="50" cy="18" r="5" fill="#10B981" fill-opacity="0.8" />
+    
+    <text class="code-text" fill="#64748B" x="185" y="22" text-anchor="middle" font-size="11">stripe_gateway.ts</text>
+    <rect x="320" y="9" width="35" height="18" rx="4" fill="#1E293B" />
+    <text class="code-text" fill="#06B6D4" x="337" y="21" text-anchor="middle" font-size="9" font-weight="bold">TS</text>
+
+    <!-- Coding Block Content -->
+    <g transform="translate(18, 56)">
+      <text class="code-text" y="15">
+        <tspan fill="#F472B6">import</tspan> <tspan fill="#E2E8F0">{</tspan> <tspan fill="#38BDF8">Stripe</tspan> <tspan fill="#E2E8F0">}</tspan> <tspan fill="#F472B6">from</tspan> <tspan fill="#34D399">"@stripe"</tspan><tspan fill="#94A3B8">;</tspan>
+      </text>
+      <text class="code-text" y="35">
+        <tspan fill="#F472B6">const</tspan> <tspan fill="#818CF8">stripe</tspan> <tspan fill="#F472B6">=</tspan> <tspan fill="#F472B6">new</tspan> <tspan fill="#38BDF8">Stripe</tspan><tspan fill="#E2E8F0">(</tspan><tspan fill="#F59E0B">process.env.KEY</tspan><tspan fill="#E2E8F0">);</tspan>
+      </text>
+      <text class="code-text" y="60">
+        <tspan fill="#64748B" font-style="italic">// Launch AI-driven payments payload</tspan>
+      </text>
+      <text class="code-text" y="80">
+        <tspan fill="#F472B6">export async function</tspan> <tspan fill="#60A5FA">createSession</tspan><tspan fill="#E2E8F0">() {</tspan>
+      </text>
+      <text class="code-text" y="100">
+        <tspan fill="#F472B6">  const</tspan> <tspan fill="#E2E8F0">res</tspan> <tspan fill="#F472B6">=</tspan> <tspan fill="#F472B6">await</tspan> <tspan fill="#818CF8">stripe</tspan><tspan fill="#E2E8F0">.checkout.create({</tspan>
+      </text>
+      <text class="code-text" y="120">
+        <tspan fill="#94A3B8">    payment_method_types: [</tspan><tspan fill="#34D399">"card"</tspan><tspan fill="#94A3B8">],</tspan>
+      </text>
+      <text class="code-text" y="140">
+        <tspan fill="#94A3B8">    mode: </tspan><tspan fill="#34D399">"subscription"</tspan>
+      </text>
+      <text class="code-text" y="160">
+        <tspan fill="#E2E8F0">  });</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Right Glassmorphic IDE Frame -->
+  <g transform="translate(860, 360)" class="animated-float-right">
+    <!-- Card Back Drop Shadow -->
+    <rect x="0" y="4" width="370" height="230" rx="12" fill="#000000" fill-opacity="0.55" />
+    <!-- Glassmorphic panel base -->
+    <rect x="0" y="0" width="370" height="230" rx="12" fill="url(#card-grad)" stroke="url(#card-border)" stroke-width="1.5" />
+    
+    <!-- Titlebar Buttons -->
+    <rect x="0" y="0" width="370" height="36" rx="12" fill="#0F172A" fill-opacity="0.8" />
+    <circle cx="18" cy="18" r="5" fill="#EF4444" fill-opacity="0.8" />
+    <circle cx="34" cy="18" r="5" fill="#F59E0B" fill-opacity="0.8" />
+    <circle cx="50" cy="18" r="5" fill="#10B981" fill-opacity="0.8" />
+    
+    <text class="code-text" fill="#64748B" x="185" y="22" text-anchor="middle" font-size="11">openai_agent.json</text>
+    <rect x="312" y="9" width="43" height="18" rx="4" fill="#1E293B" />
+    <text class="code-text" fill="#8B5CF6" x="333" y="21" text-anchor="middle" font-size="9" font-weight="bold">JSON</text>
+
+    <!-- JSON Coding Block Content -->
+    <g transform="translate(18, 56)">
+      <text class="code-text" y="15">
+        <tspan fill="#E2E8F0">{</tspan>
+      </text>
+      <text class="code-text" y="35">
+        <tspan fill="#38BDF8">  "model"</tspan><tspan fill="#94A3B8">:</tspan> <tspan fill="#34D399">"gpt-4o-mini"</tspan><tspan fill="#94A3B8">,</tspan>
+      </text>
+      <text class="code-text" y="55">
+        <tspan fill="#38BDF8">  "temperature"</tspan><tspan fill="#94A3B8">:</tspan> <tspan fill="#F59E0B">0.2</tspan><tspan fill="#94A3B8">,</tspan>
+      </text>
+      <text class="code-text" y="75">
+        <tspan fill="#38BDF8">  "messages"</tspan><tspan fill="#94A3B8">: [</tspan>
+      </text>
+      <text class="code-text" y="95">
+        <tspan fill="#E2E8F0">    {</tspan>
+      </text>
+      <text class="code-text" y="115">
+        <tspan fill="#38BDF8">      "role"</tspan><tspan fill="#94A3B8">:</tspan> <tspan fill="#34D399">"developer"</tspan><tspan fill="#94A3B8">,</tspan>
+      </text>
+      <text class="code-text" y="135">
+        <tspan fill="#38BDF8">      "content"</tspan><tspan fill="#94A3B8">:</tspan> <tspan fill="#34D399">"Load full SDK context."</tspan>
+      </text>
+      <text class="code-text" y="155">
+        <tspan fill="#E2E8F0">    }</tspan>
+      </text>
+      <text class="code-text" y="175">
+        <tspan fill="#94A3B8">  ]</tspan>
+      </text>
+      <text class="code-text" y="195">
+        <tspan fill="#E2E8F0">}</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Visual Neural Network Flow in Center -->
+  <g transform="translate(470, 390)">
+    <!-- Main Conduit Pipelines -->
+    <path d="M -20,40 C 40,-20 120,0 180,20 C 240,40 320,0 360,40" fill="none" stroke="url(#cyan-to-purple)" stroke-width="2.5" />
+    <path d="M -20,40 C 40,-20 120,0 180,20 C 240,40 320,0 360,40" fill="none" stroke="#FFFFFF" stroke-opacity="0.65" stroke-width="2" class="flowing-dash" />
+
+    <path d="M -20,110 C 60,110 120,40 180,60 C 240,80 290,110 360,80" fill="none" stroke="url(#purple-to-emerald)" stroke-width="2" />
+    <path d="M -20,110 C 60,110 120,40 180,60 C 240,80 290,110 360,80" fill="none" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="1.5" class="flowing-dash" />
+
+    <!-- Pulsing Core Glowing Hubs -->
+    <g class="animated-pulse-cyan">
+      <circle cx="100" cy="10" r="16" fill="#06B6D4" fill-opacity="0.15" filter="url(#glow-cyan)" />
+      <circle cx="100" cy="10" r="6" fill="#06B6D4" />
+      <circle cx="100" cy="10" r="3" fill="#FFFFFF" />
+    </g>
+
+    <g class="animated-pulse-purple">
+      <circle cx="240" cy="45" r="20" fill="#8B5CF6" fill-opacity="0.15" filter="url(#glow-purple)" />
+      <circle cx="240" cy="45" r="7" fill="#8B5CF6" />
+      <circle cx="240" cy="45" r="3.5" fill="#FFFFFF" />
+    </g>
+    
+    <g>
+      <circle cx="170" cy="85" r="14" fill="#10B981" fill-opacity="0.15" />
+      <circle cx="170" cy="85" r="5" fill="#10B981" />
+      <circle cx="170" cy="85" r="2" fill="#FFFFFF" />
+    </g>
+  </g>
+
+  <!-- Floating Elements & Tech Badges (Floating around the margins) -->
+  
+  <!-- 1. TypeScript Shield Icon (Top Left-ish) -->
+  <g transform="translate(140, 260)" class="animated-float-icon">
+    <circle cx="0" cy="0" r="22" fill="#1E293B" stroke="#3178C6" stroke-width="1.5" fill-opacity="0.8" />
+    <!-- TypeScript TS layout -->
+    <rect x="-8" y="-8" width="16" height="16" rx="2" fill="#3178C6" />
+    <text font-family="sans-serif" font-weight="900" font-size="9" fill="#FFFFFF" x="3" y="4" text-anchor="middle">TS</text>
+  </g>
+
+  <!-- 2. Security Shield Badge (Right Center Top) -->
+  <g transform="translate(1120, 260)" class="animated-float-icon">
+    <circle cx="0" cy="0" r="22" fill="#1E293B" stroke="#10B981" stroke-width="1.5" fill-opacity="0.8" />
+    <!-- Shield Path -->
+    <path d="M -6,-9 L 0,-12 L 6,-9 L 6,-3 C 6,3 0,8 0,8 C 0,8 -6,3 -6,-3 Z" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- 3. Terminal Executable Shell (Left Top Corner) -->
+  <g transform="translate(320, 150)" class="animated-float-icon">
+    <circle cx="0" cy="0" r="18" fill="#0F172A" stroke="#475569" stroke-width="1" />
+    <!-- Terminal CLI Prompt Symbol -->
+    <path d="M -5,-4 L -1,0 L -5,4" fill="none" stroke="#06B6D4" stroke-width="1.8" stroke-linecap="round" />
+    <line x1="1" y1="4" x2="6" y2="4" stroke="#06B6D4" stroke-width="1.8" />
+  </g>
+
+  <!-- 4. Database Icon (Bottom Right Side) -->
+  <g transform="translate(800, 520)" class="animated-float-icon">
+    <circle cx="0" cy="0" r="20" fill="#1E293B" stroke="#334155" stroke-width="1.2" />
+    <!-- DB Cylinder shape -->
+    <ellipse cx="0" cy="-5" rx="7" ry="2.5" fill="none" stroke="#E2E8F0" stroke-width="1.5" />
+    <path d="M -7,-5 L -7,0 C -7,1.5 0,2.5 0,2.5 C 0,2.5 7,1.5 7,0 L 7,-5" fill="none" stroke="#E2E8F0" stroke-width="1.5" />
+    <path d="M -7,0 L -7,5 C -7,6.5 0,7.5 0,7.5 C 0,7.5 7,6.5 7,5 L 7,0" fill="none" stroke="#E2E8F0" stroke-width="1.5" />
+  </g>
+
+  <!-- 5. Cloud/Edge Computing Symbol (Right Top-ish Corner) -->
+  <g transform="translate(920, 160)" class="animated-float-icon">
+    <circle cx="0" cy="0" r="18" fill="#1E293B" stroke="#475569" stroke-width="1" fill-opacity="0.8" />
+    <!-- Cloud Path -->
+    <path d="M -5,2 A 3.5,3.5 0 0,1 -4,-4.5 A 5,5 0 0,1 4,-4.5 A 3.5,3.5 0 0,1 5,2 Z" fill="none" stroke="#8B5CF6" stroke-width="1.5" stroke-linejoin="round" />
+  </g>
+
+  <!-- 6. Lightning Bolt Fast Edge Service Badge (Center Base Bottom) -->
+  <g transform="translate(480, 520)" class="animated-float-icon">
+    <circle cx="0" cy="0" r="20" fill="#1E293B" stroke="#F59E0B" stroke-width="1.2" />
+    <!-- lightning vector -->
+    <path d="M 2,-9 L -6,1 L 1,1 L -2,9 L 6,-1 L -1,-1 Z" fill="#F59E0B" />
+  </g>
 </svg>
