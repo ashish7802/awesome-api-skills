@@ -1,19 +1,6 @@
-# 🚀 Awesome API Skills
+#  Awesome API Skills
 
 <div align="center">
-
-```
-╔═══════════════════════════════════════════════════════════════════════════╗
-║                                                                           ║
-║    🎯 Production-Ready AI Coding Skills for APIs                         ║
-║                                                                           ║
-║    101 Verified SKILL.md Context Files for AI Agents                     ║
-║    Optimized for: Claude Code • Cursor • Codex CLI • Gemini CLI          ║
-║                                                                           ║
-║    Build APIs Faster • Avoid Common Pitfalls • Use Latest SDKs           ║
-║                                                                           ║
-╚═══════════════════════════════════════════════════════════════════════════╝
-```
 
 <p>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT License"></a>
@@ -467,7 +454,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
 - ✅ Dependencies scanned for vulnerabilities
 - ✅ All skills verified against current vendor documentation
 
-For security concerns, please email: **security@ashish7802.dev**
+For security concerns, please email: **ashishyadav4818@gmail.com**
 
 ---
 
@@ -489,8 +476,7 @@ For security concerns, please email: **security@ashish7802.dev**
 
 - 💬 **[GitHub Discussions](https://github.com/ashish7802/awesome-api-skills/discussions)** - Ask questions and share ideas
 - 🐛 **[Issue Tracker](https://github.com/ashish7802/awesome-api-skills/issues)** - Report bugs
-- 📧 **Email** - ashish7802@github.com
-- 🐦 **Twitter** - [@ashish7802](https://twitter.com/ashish7802)
+- 📧 **Email** - ashishyadav4818@gmail.com
 
 ---
 
@@ -521,7 +507,7 @@ If Awesome API Skills has helped you write better code:
 
 <div align="center">
 
-**Made with ❤️ by [Ashish](https://github.com/ashish7802) and Contributors**
+**Made with by [Ashish](https://github.com/ashish7802) and Contributors**
 
 [⬆ Back to Top](#-awesome-api-skills)
 
