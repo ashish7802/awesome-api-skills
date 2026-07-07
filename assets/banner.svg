@@ -1,0 +1,110 @@
+<svg width="1200" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgGradient)"/>
+
+  <!-- Decorative elements - top left -->
+  <circle cx="80" cy="40" r="30" fill="url(#accentGradient)" opacity="0.15"/>
+  <circle cx="120" cy="60" r="20" fill="url(#accentGradient)" opacity="0.1"/>
+
+  <!-- Decorative elements - bottom right -->
+  <circle cx="1100" cy="250" r="35" fill="url(#accentGradient)" opacity="0.12"/>
+  <circle cx="1050" cy="280" r="25" fill="url(#accentGradient)" opacity="0.08"/>
+
+  <!-- API Symbol (Left side) -->
+  <g transform="translate(60, 100)">
+    <!-- Server/API Icon -->
+    <rect x="0" y="0" width="80" height="100" fill="none" stroke="url(#accentGradient)" stroke-width="2" rx="4" opacity="0.8"/>
+    
+    <!-- Connection nodes -->
+    <circle cx="15" cy="15" r="4" fill="url(#accentGradient)" filter="url(#glow)"/>
+    <circle cx="65" cy="15" r="4" fill="url(#accentGradient)" filter="url(#glow)"/>
+    <circle cx="15" cy="85" r="4" fill="url(#accentGradient)" filter="url(#glow)"/>
+    <circle cx="65" cy="85" r="4" fill="url(#accentGradient)" filter="url(#glow)"/>
+    
+    <!-- Connection lines -->
+    <line x1="15" y1="25" x2="15" y2="75" stroke="url(#accentGradient)" stroke-width="1.5" opacity="0.6"/>
+    <line x1="65" y1="25" x2="65" y2="75" stroke="url(#accentGradient)" stroke-width="1.5" opacity="0.6"/>
+    <line x1="25" y1="50" x2="55" y2="50" stroke="url(#accentGradient)" stroke-width="1.5" opacity="0.6"/>
+  </g>
+
+  <!-- Main Text -->
+  <text x="200" y="80" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="48" font-weight="700" fill="#f1f5f9" letter-spacing="1">
+    Awesome API Skills
+  </text>
+
+  <!-- Subtitle -->
+  <text x="200" y="125" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="300" fill="#cbd5e1" letter-spacing="0.5">
+    Production-Ready AI Coding Skills for APIs
+  </text>
+
+  <!-- Tagline -->
+  <text x="200" y="160" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#94a3b8">
+    ✨ 101 Verified SKILL.md Files • 🤖 AI-Ready • ⚡ Production-Grade
+  </text>
+
+  <!-- Features Row -->
+  <g id="features">
+    <!-- Feature 1 -->
+    <rect x="200" y="190" width="200" height="50" fill="rgba(59, 130, 246, 0.1)" rx="6" stroke="url(#accentGradient)" stroke-width="1" opacity="0.6"/>
+    <text x="215" y="210" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#3b82f6">
+      🔒 Security First
+    </text>
+    <text x="215" y="228" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#cbd5e1">
+      Best practices included
+    </text>
+
+    <!-- Feature 2 -->
+    <rect x="420" y="190" width="200" height="50" fill="rgba(6, 182, 212, 0.1)" rx="6" stroke="url(#accentGradient)" stroke-width="1" opacity="0.6"/>
+    <text x="435" y="210" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#06b6d4">
+      ⚡ Type-Safe
+    </text>
+    <text x="435" y="228" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#cbd5e1">
+      100% TypeScript verified
+    </text>
+
+    <!-- Feature 3 -->
+    <rect x="640" y="190" width="200" height="50" fill="rgba(59, 130, 246, 0.1)" rx="6" stroke="url(#accentGradient)" stroke-width="1" opacity="0.6"/>
+    <text x="655" y="210" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#3b82f6">
+      📦 14 Domains
+    </text>
+    <text x="655" y="228" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#cbd5e1">
+      Payments, Auth, Databases...
+    </text>
+
+    <!-- Feature 4 -->
+    <rect x="860" y="190" width="200" height="50" fill="rgba(6, 182, 212, 0.1)" rx="6" stroke="url(#accentGradient)" stroke-width="1" opacity="0.6"/>
+    <text x="875" y="210" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#06b6d4">
+      🚀 AI-Ready
+    </text>
+    <text x="875" y="228" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#cbd5e1">
+      Claude, Cursor, Gemini...
+    </text>
+  </g>
+
+  <!-- Bottom line accent -->
+  <line x1="200" y1="270" x2="1100" y2="270" stroke="url(#accentGradient)" stroke-width="2" opacity="0.3"/>
+
+  <!-- Powered by badge -->
+  <text x="200" y="295" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="500" fill="#64748b">
+    Built for Modern AI Development • MIT Licensed • github.com/ashish7802/awesome-api-skills
+  </text>
+</svg>
