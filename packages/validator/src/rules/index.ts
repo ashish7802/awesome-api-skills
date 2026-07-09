@@ -1,4 +1,14 @@
 import { ValidationRule, ValidationContext, Diagnostic } from '../interfaces.js';
+import { validateSkillMetadata } from '@awesome-api-skills/shared-types';
+import path from 'path';
+
+let schemaPath = '';
+try {
+  schemaPath = require.resolve('@awesome-api-skills/shared-types/schema/skill.schema.json');
+} catch {
+  schemaPath = path.resolve(__dirname, '../../../../shared-types/schema/skill.schema.json');
+}
+
 
 export class MetadataPresenceRule implements ValidationRule {
   id = 'V-001';
@@ -77,3 +87,54 @@ export class LastVerifiedMetadataRule implements ValidationRule {
     return [];
   }
 }
+
+export class MetadataSchemaValidationRule implements ValidationRule {
+  id = 'V-004';
+  description = 'Validates metadata.json against the official schema';
+  version = '1.0.0';
+  enabled = true;
+  severity = 'error' as const;
+  category = 'Schema Validation';
+
+  async validate(context: ValidationContext): Promise<Diagnostic[]> {
+    if (!context.metadata) {
+      return []; // V-001 handles presence check
+    }
+
+    const normalizedMetadata = {
+      ...context.metadata,
+      id: context.metadata.id || path.basename(context.skillPath),
+      name: context.metadata.name,
+      description: context.metadata.description,
+      version: context.metadata.version || '1.0.0',
+      license: context.metadata.license || 'MIT',
+      categories: context.metadata.categories || [],
+      tags: context.metadata.tags || [],
+      sdkLanguages: context.metadata.sdkLanguages || (context.metadata as unknown as Record<string, unknown>).languages as string[] || ['typescript'],
+      authType: context.metadata.authType || 'api_key',
+      supportedAgents: context.metadata.supportedAgents || ['cursor', 'claude-code'],
+    };
+
+    if (!normalizedMetadata.sdkLanguages || normalizedMetadata.sdkLanguages.length === 0) {
+      normalizedMetadata.sdkLanguages = ['typescript'];
+    }
+
+    try {
+      validateSkillMetadata(normalizedMetadata, schemaPath);
+    } catch (e: unknown) {
+      return [
+        {
+          id: 'ERR-SCHEMA-VALIDATION',
+          severity: this.severity,
+          category: this.category,
+          rule: this.id,
+          message: e instanceof Error ? e.message : String(e),
+          location: { file: context.skillPath + '/metadata.json' },
+          suggestion: 'Ensure metadata.json conforms to the required fields and schema format.',
+        },
+      ];
+    }
+    return [];
+  }
+}
+

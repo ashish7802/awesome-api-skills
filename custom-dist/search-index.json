@@ -1,8 +1,673 @@
 [
   {
-    "id": "test",
-    "name": "test",
-    "tags": [],
-    "categories": []
+    "name": "algolia",
+    "categories": [
+      "Search"
+    ]
+  },
+  {
+    "name": "anthropic",
+    "categories": [
+      "AI"
+    ]
+  },
+  {
+    "name": "argo-cd",
+    "categories": [
+      "CI/CD",
+      "Infrastructure"
+    ]
+  },
+  {
+    "name": "auth0",
+    "categories": [
+      "Authentication",
+      "Security"
+    ]
+  },
+  {
+    "name": "aws-dynamodb",
+    "categories": [
+      "Databases",
+      "Cloud"
+    ]
+  },
+  {
+    "name": "aws-s3",
+    "categories": [
+      "Cloud",
+      "Storage"
+    ]
+  },
+  {
+    "name": "azure-blob-storage",
+    "categories": [
+      "Cloud",
+      "Storage"
+    ]
+  },
+  {
+    "name": "azure-openai",
+    "categories": [
+      "AI",
+      "Enterprise"
+    ]
+  },
+  {
+    "name": "better-auth",
+    "categories": [
+      "Authentication"
+    ]
+  },
+  {
+    "name": "biome",
+    "categories": [
+      "Developer Tools"
+    ]
+  },
+  {
+    "name": "bullmq",
+    "categories": [
+      "Messaging",
+      "Developer Tools"
+    ]
+  },
+  {
+    "name": "caddy",
+    "categories": [
+      "Infrastructure",
+      "Security"
+    ]
+  },
+  {
+    "name": "clerk",
+    "categories": [
+      "Authentication",
+      "Security"
+    ]
+  },
+  {
+    "name": "cloudflare",
+    "categories": [
+      "Cloud",
+      "Security"
+    ]
+  },
+  {
+    "name": "cloudflare-workers",
+    "categories": [
+      "Cloud",
+      "Developer Tools"
+    ]
+  },
+  {
+    "name": "convex",
+    "categories": [
+      "Databases",
+      "Cloud"
+    ]
+  },
+  {
+    "name": "datadog",
+    "categories": [
+      "Monitoring",
+      "DevOps"
+    ]
+  },
+  {
+    "name": "deno-deploy",
+    "categories": [
+      "Cloud",
+      "Developer Tools"
+    ]
+  },
+  {
+    "name": "digitalocean",
+    "categories": [
+      "Cloud"
+    ]
+  },
+  {
+    "name": "discord",
+    "categories": [
+      "Messaging"
+    ]
+  },
+  {
+    "name": "docker",
+    "categories": [
+      "Developer Tools",
+      "Infrastructure"
+    ]
+  },
+  {
+    "name": "drizzle",
+    "categories": [
+      "Databases",
+      "Developer Tools"
+    ]
+  },
+  {
+    "name": "eslint",
+    "categories": [
+      "Developer Tools"
+    ]
+  },
+  {
+    "name": "express",
+    "categories": [
+      "Backend Frameworks"
+    ]
+  },
+  {
+    "name": "fastapi",
+    "categories": [
+      "Backend Frameworks"
+    ]
+  },
+  {
+    "name": "firebase",
+    "categories": [
+      "Cloud",
+      "Databases"
+    ]
+  },
+  {
+    "name": "fly",
+    "categories": [
+      "Cloud",
+      "DevOps"
+    ]
+  },
+  {
+    "name": "gemini",
+    "categories": [
+      "AI"
+    ]
+  },
+  {
+    "name": "git",
+    "categories": [
+      "Developer Tools"
+    ]
+  },
+  {
+    "name": "github",
+    "categories": [
+      "DevOps",
+      "Developer Tools"
+    ]
+  },
+  {
+    "name": "github-actions",
+    "categories": [
+      "CI/CD",
+      "Developer Tools"
+    ]
+  },
+  {
+    "name": "google-cloud-storage",
+    "categories": [
+      "Cloud",
+      "Storage"
+    ]
+  },
+  {
+    "name": "grafana",
+    "categories": [
+      "Observability"
+    ]
+  },
+  {
+    "name": "helm",
+    "categories": [
+      "Developer Tools",
+      "Infrastructure"
+    ]
+  },
+  {
+    "name": "hono",
+    "categories": [
+      "Backend Frameworks"
+    ]
+  },
+  {
+    "name": "jaeger",
+    "categories": [
+      "Observability"
+    ]
+  },
+  {
+    "name": "jwt",
+    "categories": [
+      "Authentication",
+      "Security"
+    ]
+  },
+  {
+    "name": "kafka",
+    "categories": [
+      "Messaging",
+      "Enterprise"
+    ]
+  },
+  {
+    "name": "kubernetes",
+    "categories": [
+      "Developer Tools",
+      "Infrastructure"
+    ]
+  },
+  {
+    "name": "langchain",
+    "categories": [
+      "AI",
+      "Developer Tools"
+    ]
+  },
+  {
+    "name": "lemon-squeezy",
+    "categories": [
+      "Payments",
+      "Finance"
+    ]
+  },
+  {
+    "name": "linux",
+    "categories": [
+      "Infrastructure",
+      "Enterprise"
+    ]
+  },
+  {
+    "name": "llamaindex",
+    "categories": [
+      "AI",
+      "Developer Tools"
+    ]
+  },
+  {
+    "name": "loki",
+    "categories": [
+      "Observability"
+    ]
+  },
+  {
+    "name": "mapbox",
+    "categories": [
+      "Maps",
+      "Developer Tools"
+    ]
+  },
+  {
+    "name": "meilisearch",
+    "categories": [
+      "Search",
+      "Databases"
+    ]
+  },
+  {
+    "name": "mixpanel",
+    "categories": [
+      "Analytics"
+    ]
+  },
+  {
+    "name": "mongodb-atlas",
+    "categories": [
+      "Databases",
+      "Cloud"
+    ]
+  },
+  {
+    "name": "mysql",
+    "categories": [
+      "Databases"
+    ]
+  },
+  {
+    "name": "nats",
+    "categories": [
+      "Messaging",
+      "DevOps"
+    ]
+  },
+  {
+    "name": "neon",
+    "categories": [
+      "Databases",
+      "Cloud"
+    ]
+  },
+  {
+    "name": "nestjs",
+    "categories": [
+      "Backend Frameworks"
+    ]
+  },
+  {
+    "name": "nextjs",
+    "categories": [
+      "Frontend Frameworks"
+    ]
+  },
+  {
+    "name": "nginx",
+    "categories": [
+      "Developer Tools",
+      "Infrastructure"
+    ]
+  },
+  {
+    "name": "nuxt",
+    "categories": [
+      "Frontend Frameworks"
+    ]
+  },
+  {
+    "name": "oauth2",
+    "categories": [
+      "Authentication",
+      "Security"
+    ]
+  },
+  {
+    "name": "okta",
+    "categories": [
+      "Authentication",
+      "Enterprise"
+    ]
+  },
+  {
+    "name": "ollama",
+    "categories": [
+      "AI",
+      "Developer Tools"
+    ]
+  },
+  {
+    "name": "openai",
+    "categories": [
+      "AI",
+      "Developer Tools"
+    ]
+  },
+  {
+    "name": "openid-connect",
+    "categories": [
+      "Authentication",
+      "Security"
+    ]
+  },
+  {
+    "name": "opentelemetry",
+    "categories": [
+      "Observability"
+    ]
+  },
+  {
+    "name": "paddle",
+    "categories": [
+      "Payments",
+      "Finance"
+    ]
+  },
+  {
+    "name": "pinecone",
+    "categories": [
+      "Databases",
+      "AI"
+    ]
+  },
+  {
+    "name": "plaid",
+    "categories": [
+      "Payments",
+      "Finance"
+    ]
+  },
+  {
+    "name": "planetscale",
+    "categories": [
+      "Databases",
+      "Cloud"
+    ]
+  },
+  {
+    "name": "playwright",
+    "categories": [
+      "Developer Tools",
+      "Testing"
+    ]
+  },
+  {
+    "name": "postgresql",
+    "categories": [
+      "Databases"
+    ]
+  },
+  {
+    "name": "posthog",
+    "categories": [
+      "Analytics"
+    ]
+  },
+  {
+    "name": "prettier",
+    "categories": [
+      "Developer Tools"
+    ]
+  },
+  {
+    "name": "prisma",
+    "categories": [
+      "Databases",
+      "Developer Tools"
+    ]
+  },
+  {
+    "name": "prometheus",
+    "categories": [
+      "Observability"
+    ]
+  },
+  {
+    "name": "pulumi",
+    "categories": [
+      "Developer Tools",
+      "Infrastructure"
+    ]
+  },
+  {
+    "name": "rabbitmq",
+    "categories": [
+      "Messaging",
+      "Enterprise"
+    ]
+  },
+  {
+    "name": "railway",
+    "categories": [
+      "Cloud",
+      "DevOps"
+    ]
+  },
+  {
+    "name": "react",
+    "categories": [
+      "Frontend Frameworks"
+    ]
+  },
+  {
+    "name": "redis",
+    "categories": [
+      "Databases"
+    ]
+  },
+  {
+    "name": "redis-streams",
+    "categories": [
+      "Messaging",
+      "Databases"
+    ]
+  },
+  {
+    "name": "render",
+    "categories": [
+      "Cloud",
+      "DevOps"
+    ]
+  },
+  {
+    "name": "resend",
+    "categories": [
+      "Messaging"
+    ]
+  },
+  {
+    "name": "revenuecat",
+    "categories": [
+      "Payments",
+      "Finance"
+    ]
+  },
+  {
+    "name": "sendgrid",
+    "categories": [
+      "Messaging"
+    ]
+  },
+  {
+    "name": "sentry",
+    "categories": [
+      "Monitoring"
+    ]
+  },
+  {
+    "name": "shopify",
+    "categories": [
+      "Commerce"
+    ]
+  },
+  {
+    "name": "slack",
+    "categories": [
+      "Messaging",
+      "Productivity"
+    ]
+  },
+  {
+    "name": "sqlite",
+    "categories": [
+      "Databases"
+    ]
+  },
+  {
+    "name": "stripe",
+    "categories": [
+      "Payments",
+      "Commerce"
+    ]
+  },
+  {
+    "name": "supabase",
+    "categories": [
+      "Databases",
+      "Authentication"
+    ]
+  },
+  {
+    "name": "sveltekit",
+    "categories": [
+      "Frontend Frameworks"
+    ]
+  },
+  {
+    "name": "terraform",
+    "categories": [
+      "Developer Tools",
+      "Infrastructure"
+    ]
+  },
+  {
+    "name": "traefik",
+    "categories": [
+      "Infrastructure",
+      "Developer Tools"
+    ]
+  },
+  {
+    "name": "trpc",
+    "categories": [
+      "Backend Frameworks",
+      "Developer Tools"
+    ]
+  },
+  {
+    "name": "turborepo",
+    "categories": [
+      "Developer Tools"
+    ]
+  },
+  {
+    "name": "turso",
+    "categories": [
+      "Databases",
+      "Cloud"
+    ]
+  },
+  {
+    "name": "twilio",
+    "categories": [
+      "Messaging"
+    ]
+  },
+  {
+    "name": "typesense",
+    "categories": [
+      "Search",
+      "Databases"
+    ]
+  },
+  {
+    "name": "upstash",
+    "categories": [
+      "Databases",
+      "Messaging"
+    ]
+  },
+  {
+    "name": "vercel",
+    "categories": [
+      "Cloud",
+      "DevOps"
+    ]
+  },
+  {
+    "name": "vitest",
+    "categories": [
+      "Testing",
+      "Developer Tools"
+    ]
+  },
+  {
+    "name": "vllm",
+    "categories": [
+      "AI",
+      "Infrastructure"
+    ]
+  },
+  {
+    "name": "vue",
+    "categories": [
+      "Frontend Frameworks"
+    ]
+  },
+  {
+    "name": "xquik",
+    "categories": [
+      "Developer Tools",
+      "AI"
+    ]
   }
 ]

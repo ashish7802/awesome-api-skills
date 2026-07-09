@@ -6,6 +6,7 @@ import {
   MetadataPresenceRule,
   SkillMarkdownPresenceRule,
   LastVerifiedMetadataRule,
+  MetadataSchemaValidationRule,
   ValidationContext,
   Diagnostic,
 } from '@awesome-api-skills/validator';
@@ -52,6 +53,7 @@ const command: Command = {
     engine.registerRule(new MetadataPresenceRule());
     engine.registerRule(new SkillMarkdownPresenceRule());
     engine.registerRule(new LastVerifiedMetadataRule());
+    engine.registerRule(new MetadataSchemaValidationRule());
 
     const contexts: ValidationContext[] = skillFolders.map((id) => {
       const dirPath = path.join(skillsDir, id);

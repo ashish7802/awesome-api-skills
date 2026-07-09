@@ -3,32 +3,42 @@ import { WorkspaceManager } from '../services/workspace.js';
 import { RegistryManager } from '../services/registry.js';
 import { ValidationManager } from '../services/validation.js';
 import { GenerationManager } from '../services/generation.js';
-import { SkillMetadata, License, AuthenticationType } from '@awesome-api-skills/shared-types';
+import { SkillMetadata } from '@awesome-api-skills/shared-types';
+import fs from 'fs';
+import path from 'path';
 
 export class Workflows {
   constructor(private container: Container) {}
+
+  private loadRealSkills(skillsPath: string): { path: string; metadata: SkillMetadata }[] {
+    if (!fs.existsSync(skillsPath)) return [];
+    const skillFolders = fs.readdirSync(skillsPath)
+      .filter((f) => fs.statSync(path.join(skillsPath, f)).isDirectory());
+
+    const list: { path: string; metadata: SkillMetadata }[] = [];
+    for (const folder of skillFolders) {
+      const folderPath = path.join(skillsPath, folder);
+      const metaPath = path.join(folderPath, 'metadata.json');
+      if (fs.existsSync(metaPath)) {
+        try {
+          const metadata = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
+          list.push({ path: folderPath, metadata });
+        } catch {
+          // ignore or parse empty
+        }
+      }
+    }
+    return list;
+  }
 
   async validateWorkspace(cwd: string) {
     const wsManager = this.container.resolve<WorkspaceManager>('WorkspaceManager');
     const validator = this.container.resolve<ValidationManager>('ValidationManager');
 
     const ws = wsManager.discover(cwd);
+    const realSkills = this.loadRealSkills(ws.skillsPath);
 
-    // Mocked skill loading for orchestration
-    const mockSkill: SkillMetadata = {
-      id: 'test',
-      name: 'test',
-      description: '',
-      version: '1.0',
-      license: License.MIT,
-      categories: [],
-      tags: [],
-      sdkLanguages: [],
-      authType: AuthenticationType.None,
-      supportedAgents: [],
-    };
-
-    const results = await validator.validate([{ path: ws.skillsPath, metadata: mockSkill }]);
+    const results = await validator.validate(realSkills);
     return { workspace: ws, results };
   }
 
@@ -37,21 +47,9 @@ export class Workflows {
     const generator = this.container.resolve<GenerationManager>('GenerationManager');
 
     const ws = wsManager.discover(cwd);
+    const realSkills = this.loadRealSkills(ws.skillsPath).map((s) => s.metadata);
 
-    const mockSkill: SkillMetadata = {
-      id: 'test',
-      name: 'test',
-      description: '',
-      version: '1.0',
-      license: License.MIT,
-      categories: [],
-      tags: [],
-      sdkLanguages: [],
-      authType: AuthenticationType.None,
-      supportedAgents: [],
-    };
-
-    const report = await generator.generate([mockSkill], ws.config.outputDir);
+    const report = await generator.generate(realSkills, ws.config.outputDir);
     return report;
   }
 
@@ -64,3 +62,4 @@ export class Workflows {
     return true;
   }
 }
+

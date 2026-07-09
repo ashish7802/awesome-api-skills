@@ -37,7 +37,7 @@ describe('Core Orchestration Layer', () => {
     const { results } = await workflows.validateWorkspace(process.cwd());
     const duration = performance.now() - start;
 
-    expect(results.length).toBe(1);
+    expect(results.length).toBeGreaterThan(0);
     expect(results[0].isValid).toBe(true);
     expect(duration).toBeGreaterThan(0);
   });

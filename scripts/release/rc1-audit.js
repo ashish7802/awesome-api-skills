@@ -164,7 +164,8 @@ function auditDocumentation() {
         const href = match[2];
         if (href.startsWith('http')) continue; // Skip external
         if (href.startsWith('#')) continue; // Skip anchors
-        const resolved = path.resolve(ROOT, href);
+        const cleanHref = href.split('#')[0];
+        const resolved = path.resolve(ROOT, cleanHref);
         if (!fs.existsSync(resolved)) {
           report.documentation.brokenInternalLinks.push({ file: doc, link: href });
         }

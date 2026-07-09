@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { ValidatorEngine, MetadataPresenceRule, ValidationContext } from '../src/index.js';
+import { ValidatorEngine, MetadataPresenceRule, MetadataSchemaValidationRule, ValidationContext } from '../src/index.js';
 import { SkillMetadata } from '@awesome-api-skills/shared-types';
 
 describe('Validator Engine', () => {
@@ -84,4 +84,28 @@ describe('Validator Engine', () => {
 
     expect(out).toContain('::error file=file.txt,line=10::err msg');
   });
+
+  it('should validate metadata against JSON schema using MetadataSchemaValidationRule', async () => {
+    const engine = new ValidatorEngine();
+    engine.registerRule(new MetadataSchemaValidationRule());
+
+    // Invalid metadata (categories must be an array, but we pass a string)
+    const invalidMetadata = {
+      id: 'test-skill',
+      name: 'Test Skill',
+      description: 'A test skill description',
+      categories: 'not-an-array',
+    } as unknown as SkillMetadata;
+
+    const result = await engine.validateSkill({
+      skillPath: '/fake/skill',
+      contentHash: 'hash-test',
+      metadata: invalidMetadata,
+    });
+
+    expect(result.isValid).toBe(false);
+    expect(result.diagnostics.length).toBe(1);
+    expect(result.diagnostics[0].id).toBe('ERR-SCHEMA-VALIDATION');
+  });
 });
+
