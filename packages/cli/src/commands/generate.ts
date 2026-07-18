@@ -1,4 +1,5 @@
 import path from 'path';
+import fs from 'fs';
 import { Command } from '../interfaces.js';
 import {
   PipelineEngine,
@@ -6,8 +7,23 @@ import {
   GeneratorCache,
   BuildGraph,
   SearchIndexPlugin,
+  RegistryPlugin,
+  ManifestPlugin,
+  IntegrityReportPlugin,
+  DocsPlugin,
+  SitemapPlugin,
 } from '@awesome-api-skills/generator';
+import { SkillMetadata } from '@awesome-api-skills/shared-types';
 import pc from 'picocolors';
+
+function findRepoRoot(): string {
+  let dir = process.cwd();
+  for (let i = 0; i < 6; i++) {
+    if (fs.existsSync(path.join(dir, 'skills'))) return dir;
+    dir = path.dirname(dir);
+  }
+  return process.cwd();
+}
 
 const command: Command = {
   name: 'generate',
@@ -22,11 +38,37 @@ const command: Command = {
     const stage = context.args[0] || 'GenerateArtifacts';
     const outputDir = (context.options.out as string) || path.resolve(process.cwd(), 'dist');
 
+    const root = findRepoRoot();
+    const skillsDir = path.join(root, 'skills');
+    const skills: SkillMetadata[] = [];
+    if (fs.existsSync(skillsDir)) {
+      const folders = fs
+        .readdirSync(skillsDir)
+        .filter((f) => fs.statSync(path.join(skillsDir, f)).isDirectory());
+      for (const folder of folders) {
+        const metaPath = path.join(skillsDir, folder, 'metadata.json');
+        if (fs.existsSync(metaPath)) {
+          try {
+            const meta = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
+            meta.id = folder;
+            skills.push(meta);
+          } catch {
+            // ignore
+          }
+        }
+      }
+    }
+
     const engine = new PipelineEngine();
     engine.registerPlugin(new SearchIndexPlugin());
+    engine.registerPlugin(new RegistryPlugin());
+    engine.registerPlugin(new ManifestPlugin());
+    engine.registerPlugin(new IntegrityReportPlugin());
+    engine.registerPlugin(new DocsPlugin());
+    engine.registerPlugin(new SitemapPlugin());
 
     const buildContext: BuildContext = {
-      skills: [],
+      skills,
       cache: new GeneratorCache(),
       graph: new BuildGraph(),
       outputDir,

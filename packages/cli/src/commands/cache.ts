@@ -45,8 +45,5 @@ export function formatCacheOutput(data: {
   cleared?: boolean;
   message: string;
 }): string {
-  return [
-    pc.bold('Cache Manager:'),
-    `  ${pc.green('✔')} ${data.message}`,
-  ].join('\n');
+  return [pc.bold('Cache Manager:'), `  ${pc.green('✔')} ${data.message}`].join('\n');
 }

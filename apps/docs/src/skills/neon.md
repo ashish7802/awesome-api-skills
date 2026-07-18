@@ -24,7 +24,12 @@ title: neon
 
 ## Graph
 
-_No graph edges for this skill._
+- **related to** → [vercel](/skills/vercel)
+- **related to** → [supabase](/skills/supabase)
+- **related to** ← [better-auth](/skills/better-auth)
+- **related to** ← [clerk](/skills/clerk)
+- **works well with** ← [drizzle](/skills/drizzle)
+- **extended by** ← [postgresql](/skills/postgresql)
 
 ---
 

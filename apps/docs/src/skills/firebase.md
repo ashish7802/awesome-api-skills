@@ -24,7 +24,7 @@ title: firebase
 
 ## Graph
 
-_No graph edges for this skill._
+- **related to** ← [google-cloud-storage](/skills/google-cloud-storage)
 
 ---
 

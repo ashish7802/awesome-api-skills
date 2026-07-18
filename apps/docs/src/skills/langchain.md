@@ -27,6 +27,9 @@ title: langchain
 - **alternative to** → [llamaindex](/skills/llamaindex)
 - **integrates with** → [openai](/skills/openai)
 - **integrates with** → [pinecone](/skills/pinecone)
+- **integrates with** ← [gemini](/skills/gemini)
+- **integrates with** ← [ollama](/skills/ollama)
+- **integrates with** ← [vllm](/skills/vllm)
 
 ---
 

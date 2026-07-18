@@ -28,6 +28,7 @@ title: prisma
 - **integrates with** → [mysql](/skills/mysql)
 - **alternative to** → [drizzle](/skills/drizzle)
 - **works well with** → [nextjs](/skills/nextjs)
+- **integrates with** ← [mongodb-atlas](/skills/mongodb-atlas)
 
 ---
 

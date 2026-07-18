@@ -7,30 +7,30 @@
 
 ## Landscape overview
 
-| Approach | What it is | Strength | Weakness |
-| :--- | :--- | :--- | :--- |
-| **Paste API docs** | Raw vendor docs in chat | Always current if from source | Unstructured, large, re-pasted every session |
-| **Cursor Rules** | Project `.cursorrules` / rules | Deep project integration | Per-project, manual, no API catalog |
-| **Anthropic Skills** | Claude-native skill format | First-party agent support | Ecosystem lock-in, limited catalog |
-| **Cline / Continue rules** | Editor rule files | IDE-native | No cross-API graph or validation |
-| **Roo Code modes** | Custom modes + prompts | Workflow-focused | Not API-reference oriented |
-| **Windsurf rules** | Cascade rules | Tight IDE coupling | Same as Cursor rules pattern |
-| **Awesome API Skills** | Repo of validated skill packages + graph | Agent-agnostic, relationship-aware | No npm yet; no hosted registry |
+| Approach                   | What it is                               | Strength                           | Weakness                                     |
+| :------------------------- | :--------------------------------------- | :--------------------------------- | :------------------------------------------- |
+| **Paste API docs**         | Raw vendor docs in chat                  | Always current if from source      | Unstructured, large, re-pasted every session |
+| **Cursor Rules**           | Project `.cursorrules` / rules           | Deep project integration           | Per-project, manual, no API catalog          |
+| **Anthropic Skills**       | Claude-native skill format               | First-party agent support          | Ecosystem lock-in, limited catalog           |
+| **Cline / Continue rules** | Editor rule files                        | IDE-native                         | No cross-API graph or validation             |
+| **Roo Code modes**         | Custom modes + prompts                   | Workflow-focused                   | Not API-reference oriented                   |
+| **Windsurf rules**         | Cascade rules                            | Tight IDE coupling                 | Same as Cursor rules pattern                 |
+| **Awesome API Skills**     | Repo of validated skill packages + graph | Agent-agnostic, relationship-aware | No npm yet; no hosted registry               |
 
 ---
 
 ## Feature matrix
 
-| Capability | Paste docs | Cursor Rules | Anthropic Skills | **Awesome API Skills** |
-| :--- | :---: | :---: | :---: | :---: |
-| Agent-agnostic | ✓ | Partial | ✗ | ✓ |
-| API-specific pitfalls | ✗ | Manual | Varies | ✓ (100 skills) |
-| Production checklists | ✗ | Manual | Varies | ✓ |
-| Knowledge graph | ✗ | ✗ | ✗ | ✓ |
-| Schema validation | ✗ | ✗ | Varies | ✓ |
-| Runnable examples | Varies | Manual | Varies | ✓ |
-| One-command install | ✗ | ✗ | ✓ | ✗ (source build) |
-| Vendor official status | ✓ | N/A | Some | ✗ (community curated) |
+| Capability             | Paste docs | Cursor Rules | Anthropic Skills | **Awesome API Skills** |
+| :--------------------- | :--------: | :----------: | :--------------: | :--------------------: |
+| Agent-agnostic         |     ✓      |   Partial    |        ✗         |           ✓            |
+| API-specific pitfalls  |     ✗      |    Manual    |      Varies      |     ✓ (100 skills)     |
+| Production checklists  |     ✗      |    Manual    |      Varies      |           ✓            |
+| Knowledge graph        |     ✗      |      ✗       |        ✗         |           ✓            |
+| Schema validation      |     ✗      |      ✗       |      Varies      |           ✓            |
+| Runnable examples      |   Varies   |    Manual    |      Varies      |           ✓            |
+| One-command install    |     ✗      |      ✗       |        ✓         |    ✗ (source build)    |
+| Vendor official status |     ✓      |     N/A      |       Some       | ✗ (community curated)  |
 
 ---
 
@@ -57,13 +57,13 @@
 
 ## Where we can become unique
 
-| Opportunity | Moat |
-| :--- | :--- |
-| **Stack-aware agent context** | Graph recommends full stack, not single API |
-| **Pitfall-first documentation** | Optimized for LLM failure modes, not human tutorials |
-| **Validated skill marketplace** | Registry + schema as open standard (see SPECIFICATION.md) |
-| **CLI + docs + skills trinity** | Search → validate → copy in one repo |
-| **Community graph contributions** | Relationships as first-class PRs |
+| Opportunity                       | Moat                                                      |
+| :-------------------------------- | :-------------------------------------------------------- |
+| **Stack-aware agent context**     | Graph recommends full stack, not single API               |
+| **Pitfall-first documentation**   | Optimized for LLM failure modes, not human tutorials      |
+| **Validated skill marketplace**   | Registry + schema as open standard (see SPECIFICATION.md) |
+| **CLI + docs + skills trinity**   | Search → validate → copy in one repo                      |
+| **Community graph contributions** | Relationships as first-class PRs                          |
 
 ---
 

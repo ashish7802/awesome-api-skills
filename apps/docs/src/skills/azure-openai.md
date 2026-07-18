@@ -24,7 +24,8 @@ title: azure-openai
 
 ## Graph
 
-_No graph edges for this skill._
+- **related to** → [openai](/skills/openai)
+- **related to** → [anthropic](/skills/anthropic)
 
 ---
 

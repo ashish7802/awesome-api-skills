@@ -24,7 +24,8 @@ title: lemon-squeezy
 
 ## Graph
 
-_No graph edges for this skill._
+- **related to** → [paddle](/skills/paddle)
+- **related to** → [stripe](/skills/stripe)
 
 ---
 

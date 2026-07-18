@@ -24,7 +24,8 @@ title: azure-blob-storage
 
 ## Graph
 
-_No graph edges for this skill._
+- **related to** → [aws s3](/skills/aws s3)
+- **related to** → [google cloud storage](/skills/google cloud storage)
 
 ---
 

@@ -24,7 +24,12 @@ title: stripe
 
 ## Graph
 
-_No graph edges for this skill._
+- **related to** ← [lemon-squeezy](/skills/lemon-squeezy)
+- **related to** ← [paddle](/skills/paddle)
+- **works well with** ← [plaid](/skills/plaid)
+- **related to** ← [resend](/skills/resend)
+- **related to** ← [revenuecat](/skills/revenuecat)
+- **works well with** ← [shopify](/skills/shopify)
 
 ---
 

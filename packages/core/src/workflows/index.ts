@@ -12,7 +12,8 @@ export class Workflows {
 
   private loadRealSkills(skillsPath: string): { path: string; metadata: SkillMetadata }[] {
     if (!fs.existsSync(skillsPath)) return [];
-    const skillFolders = fs.readdirSync(skillsPath)
+    const skillFolders = fs
+      .readdirSync(skillsPath)
       .filter((f) => fs.statSync(path.join(skillsPath, f)).isDirectory());
 
     const list: { path: string; metadata: SkillMetadata }[] = [];
@@ -62,4 +63,3 @@ export class Workflows {
     return true;
   }
 }
-

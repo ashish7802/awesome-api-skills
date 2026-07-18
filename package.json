@@ -11,6 +11,7 @@
     "typecheck": "pnpm -r --filter \"@awesome-api-skills/*\" exec tsc --noEmit",
     "format": "prettier --write .",
     "test": "vitest run --passWithNoTests",
+    "validate:skills": "node packages/cli/dist/bin.js validate",
     "benchmark": "node scripts/dev/benchmark.js"
   },
   "devDependencies": {

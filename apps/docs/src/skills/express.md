@@ -28,6 +28,8 @@ title: express
 - **alternative to** → [hono](/skills/hono)
 - **alternative to** → [nestjs](/skills/nestjs)
 - **works well with** → [redis](/skills/redis)
+- **integrates with** ← [discord](/skills/discord)
+- **monitors** ← [sentry](/skills/sentry)
 
 ---
 

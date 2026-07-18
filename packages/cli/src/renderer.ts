@@ -29,11 +29,11 @@ export class OutputRenderer {
 
     if (command) {
       const cmd = command.toLowerCase();
-      if ((cmd === 'search') && data && typeof data === 'object' && 'results' in data) {
+      if (cmd === 'search' && data && typeof data === 'object' && 'results' in data) {
         console.log(formatSearchResults(data as Parameters<typeof formatSearchResults>[0]));
         return;
       }
-      if ((cmd === 'doctor') && data && typeof data === 'object' && 'nextSteps' in data) {
+      if (cmd === 'doctor' && data && typeof data === 'object' && 'nextSteps' in data) {
         console.log(formatDoctor(data as Parameters<typeof formatDoctor>[0]));
         return;
       }
@@ -125,4 +125,3 @@ export class OutputRenderer {
     }
   }
 }
-

@@ -24,7 +24,8 @@ title: github
 
 ## Graph
 
-_No graph edges for this skill._
+- **related to** ← [railway](/skills/railway)
+- **related to** ← [xquik](/skills/xquik)
 
 ---
 

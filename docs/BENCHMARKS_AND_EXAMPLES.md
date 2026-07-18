@@ -7,9 +7,11 @@ This document provides verified side-by-side comparisons showing how supplying a
 ## 1. Stripe Webhooks (Express.js)
 
 ### User Prompt
+
 > "Create an Express.js endpoint to handle Stripe webhooks at `/webhook`."
 
 ### Without `stripe/SKILL.md` (LLM Baseline Output)
+
 ```typescript
 import express from 'express';
 import Stripe from 'stripe';
@@ -23,7 +25,11 @@ app.post('/webhook', (req, res) => {
   const sig = req.headers['stripe-signature'];
   try {
     // Fails with: StripeSignatureVerificationError: No signatures found matching...
-    const event = stripe.webhooks.constructEvent(req.body, sig!, process.env.STRIPE_WEBHOOK_SECRET!);
+    const event = stripe.webhooks.constructEvent(
+      req.body,
+      sig!,
+      process.env.STRIPE_WEBHOOK_SECRET!,
+    );
     res.json({ received: true });
   } catch (err) {
     res.status(400).send(`Webhook Error: ${err.message}`);
@@ -32,6 +38,7 @@ app.post('/webhook', (req, res) => {
 ```
 
 ### With `stripe/SKILL.md` (Corrected Output)
+
 ```typescript
 import express from 'express';
 import Stripe from 'stripe';
@@ -43,8 +50,12 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 app.post('/webhook', express.raw({ type: 'application/json' }), (req, res) => {
   const sig = req.headers['stripe-signature'];
   try {
-    const event = stripe.webhooks.constructEvent(req.body, sig!, process.env.STRIPE_WEBHOOK_SECRET!);
-    
+    const event = stripe.webhooks.constructEvent(
+      req.body,
+      sig!,
+      process.env.STRIPE_WEBHOOK_SECRET!,
+    );
+
     if (event.type === 'checkout.session.completed') {
       const session = event.data.object as Stripe.Checkout.Session;
       // Process successful payment...
@@ -62,26 +73,29 @@ app.post('/webhook', express.raw({ type: 'application/json' }), (req, res) => {
 ## 2. Clerk Auth Middleware (Next.js App Router)
 
 ### User Prompt
+
 > "Add Clerk authentication middleware to protect `/dashboard` in a Next.js App Router project."
 
 ### Without `clerk/SKILL.md` (LLM Baseline Output)
+
 ```typescript
 // middleware.ts
-import { authMiddleware } from "@clerk/nextjs"; // ❌ Deprecated in @clerk/nextjs v5+
+import { authMiddleware } from '@clerk/nextjs'; // ❌ Deprecated in @clerk/nextjs v5+
 
 export default authMiddleware({
-  publicRoutes: ["/", "/login", "/register"]
+  publicRoutes: ['/', '/login', '/register'],
 });
 
 export const config = {
-  matcher: ["/((?!.*\\..*|_next).*)", "/", "/(api|trpc)(.*)"],
+  matcher: ['/((?!.*\\..*|_next).*)', '/', '/(api|trpc)(.*)'],
 };
 ```
 
 ### With `clerk/SKILL.md` (Corrected Output)
+
 ```typescript
 // middleware.ts
-import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server"; // ✅ Modern v5+ pattern
+import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'; // ✅ Modern v5+ pattern
 
 const isProtectedRoute = createRouteMatcher(['/dashboard(.*)']);
 
@@ -104,9 +118,11 @@ export const config = {
 ## 3. Resend Batch Emailing
 
 ### User Prompt
+
 > "Send product update emails to 500 users using Resend in Node.js."
 
 ### Without `resend/SKILL.md` (LLM Baseline Output)
+
 ```typescript
 import { Resend } from 'resend';
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -118,24 +134,25 @@ async function notifyUsers(users: { email: string; name: string }[]) {
       from: 'updates@example.com',
       to: user.email,
       subject: 'Product Update',
-      html: `<p>Hi ${user.name}, check out our new features!</p>`
+      html: `<p>Hi ${user.name}, check out our new features!</p>`,
     });
   }
 }
 ```
 
 ### With `resend/SKILL.md` (Corrected Output)
+
 ```typescript
 import { Resend } from 'resend';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 // ✅ Single HTTP POST request using batch API, respecting rate limits and latency
 async function notifyUsers(users: { email: string; name: string }[]) {
-  const payload = users.map(user => ({
+  const payload = users.map((user) => ({
     from: 'updates@example.com',
     to: user.email,
     subject: 'Product Update',
-    html: `<p>Hi ${user.name}, check out our new features!</p>`
+    html: `<p>Hi ${user.name}, check out our new features!</p>`,
   }));
 
   const { data, error } = await resend.batch.send(payload);

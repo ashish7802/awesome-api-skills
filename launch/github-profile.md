@@ -61,13 +61,13 @@ Source files:
 
 ## About section (sidebar)
 
-| Field | Value |
-| :--- | :--- |
+| Field       | Value                                      |
+| :---------- | :----------------------------------------- |
 | Description | Structured API skills for AI coding agents |
-| Website | *(empty until published)* |
-| Topics | See list above |
-| Releases | Enable **Releases** |
-| Packages | *(none until npm publish)* |
+| Website     | _(empty until published)_                  |
+| Topics      | See list above                             |
+| Releases    | Enable **Releases**                        |
+| Packages    | _(none until npm publish)_                 |
 
 ---
 
@@ -84,24 +84,24 @@ CI workflows in `.github/workflows/` trigger on `main`. If the default branch is
 
 ## License
 
-| Check | Status |
-| :--- | :--- |
-| `LICENSE` file present | Yes — MIT |
-| SPDX in GitHub UI | Set to **MIT** under Settings → General |
+| Check                  | Status                                  |
+| :--------------------- | :-------------------------------------- |
+| `LICENSE` file present | Yes — MIT                               |
+| SPDX in GitHub UI      | Set to **MIT** under Settings → General |
 
 ---
 
 ## README links audit
 
-| Link | Target | Notes |
-| :--- | :--- | :--- |
-| Banner | `.design/banner.svg` | Local asset |
-| License badge | `ashish7802/awesome-api-skills` | Verify repo is public for badge |
-| Build badge | `build.yml` workflow | Requires `main` branch + successful run |
-| Clone URL | `github.com/ashish7802/awesome-api-skills` | Matches remote |
-| `skills/` links | Local paths | Verifiable in repo |
-| `CONTRIBUTING.md` | Local | Verifiable |
-| `LICENSE` | Local | Verifiable |
+| Link              | Target                                     | Notes                                   |
+| :---------------- | :----------------------------------------- | :-------------------------------------- |
+| Banner            | `.design/banner.svg`                       | Local asset                             |
+| License badge     | `ashish7802/awesome-api-skills`            | Verify repo is public for badge         |
+| Build badge       | `build.yml` workflow                       | Requires `main` branch + successful run |
+| Clone URL         | `github.com/ashish7802/awesome-api-skills` | Matches remote                          |
+| `skills/` links   | Local paths                                | Verifiable in repo                      |
+| `CONTRIBUTING.md` | Local                                      | Verifiable                              |
+| `LICENSE`         | Local                                      | Verifiable                              |
 
 ---
 

@@ -24,7 +24,9 @@ title: supabase
 
 ## Graph
 
-_No graph edges for this skill._
+- **related to** ← [clerk](/skills/clerk)
+- **related to** ← [neon](/skills/neon)
+- **works well with** ← [vue](/skills/vue)
 
 ---
 

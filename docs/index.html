@@ -1,153 +1,981 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Awesome API Skills — Searchable Index</title>
-  <style>
-    :root {
-      --bg: #09090b;
-      --card-bg: #18181b;
-      --border: #27272a;
-      --text: #f4f4f5;
-      --muted: #a1a1aa;
-      --accent: #3b82f6;
-      --accent-bg: rgba(59, 130, 246, 0.1);
-    }
-    body {
-      font-family: system-ui, -apple-system, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      margin: 0;
-      padding: 2rem 1rem;
-    }
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    h1 {
-      font-size: 2.25rem;
-      margin-bottom: 0.5rem;
-      background: linear-gradient(135deg, #60a5fa, #a855f7);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    p.subtitle {
-      color: var(--muted);
-      font-size: 1.1rem;
-    }
-    .search-box {
-      margin-bottom: 2rem;
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-    }
-    input#search {
-      width: 100%;
-      max-width: 600px;
-      padding: 0.8rem 1.2rem;
-      border-radius: 0.5rem;
-      border: 1px solid var(--border);
-      background: var(--card-bg);
-      color: var(--text);
-      font-size: 1rem;
-      outline: none;
-    }
-    input#search:focus {
-      border-color: var(--accent);
-      box-shadow: 0 0 0 2px var(--accent-bg);
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 1.25rem;
-    }
-    .card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 0.75rem;
-      padding: 1.25rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: transform 0.15s ease, border-color 0.15s ease;
-    }
-    .card:hover {
-      transform: translateY(-2px);
-      border-color: var(--accent);
-    }
-    .card-title {
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin: 0 0 0.5rem 0;
-    }
-    .card-title a {
-      color: var(--text);
-      text-decoration: none;
-    }
-    .card-title a:hover {
-      color: var(--accent);
-    }
-    .card-desc {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-      line-height: 1.4;
-    }
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-bottom: 0.75rem;
-    }
-    .tag {
-      background: var(--accent-bg);
-      color: #93c5fd;
-      font-size: 0.75rem;
-      padding: 0.2rem 0.5rem;
-      border-radius: 0.25rem;
-    }
-    .verified-date {
-      font-size: 0.75rem;
-      color: #34d399;
-    }
-    .stats {
-      text-align: center;
-      color: var(--muted);
-      margin-bottom: 1.5rem;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Awesome API Skills Directory</h1>
-      <p class="subtitle">100 verified SKILL.md files for AI coding agents</p>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome API Skills — Searchable Index</title>
+    <style>
+      :root {
+        --bg: #09090b;
+        --card-bg: #18181b;
+        --border: #27272a;
+        --text: #f4f4f5;
+        --muted: #a1a1aa;
+        --accent: #3b82f6;
+        --accent-bg: rgba(59, 130, 246, 0.1);
+      }
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        margin: 0;
+        padding: 2rem 1rem;
+      }
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      h1 {
+        font-size: 2.25rem;
+        margin-bottom: 0.5rem;
+        background: linear-gradient(135deg, #60a5fa, #a855f7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      p.subtitle {
+        color: var(--muted);
+        font-size: 1.1rem;
+      }
+      .search-box {
+        margin-bottom: 2rem;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+      input#search {
+        width: 100%;
+        max-width: 600px;
+        padding: 0.8rem 1.2rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--border);
+        background: var(--card-bg);
+        color: var(--text);
+        font-size: 1rem;
+        outline: none;
+      }
+      input#search:focus {
+        border-color: var(--accent);
+        box-shadow: 0 0 0 2px var(--accent-bg);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 1.25rem;
+      }
+      .card {
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+        border-radius: 0.75rem;
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition:
+          transform 0.15s ease,
+          border-color 0.15s ease;
+      }
+      .card:hover {
+        transform: translateY(-2px);
+        border-color: var(--accent);
+      }
+      .card-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 0 0 0.5rem 0;
+      }
+      .card-title a {
+        color: var(--text);
+        text-decoration: none;
+      }
+      .card-title a:hover {
+        color: var(--accent);
+      }
+      .card-desc {
+        color: var(--muted);
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        line-height: 1.4;
+      }
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        margin-bottom: 0.75rem;
+      }
+      .tag {
+        background: var(--accent-bg);
+        color: #93c5fd;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.25rem;
+      }
+      .verified-date {
+        font-size: 0.75rem;
+        color: #34d399;
+      }
+      .stats {
+        text-align: center;
+        color: var(--muted);
+        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Awesome API Skills Directory</h1>
+        <p class="subtitle">100 verified SKILL.md files for AI coding agents</p>
+      </header>
 
-    <div class="search-box">
-      <input type="text" id="search" placeholder="Search 100 skills by API name, category, or keyword..." autofocus>
+      <div class="search-box">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search 100 skills by API name, category, or keyword..."
+          autofocus
+        />
+      </div>
+
+      <div class="stats" id="stats">Showing 100 of 100 skills</div>
+
+      <div class="grid" id="grid"></div>
     </div>
 
-    <div class="stats" id="stats">Showing 100 of 100 skills</div>
+    <script>
+      const skills = [
+        {
+          id: 'algolia',
+          name: 'algolia',
+          description: 'Hosted Search API.',
+          categories: ['Search'],
+          lastVerified: '2026-07-02',
+          path: '../skills/algolia/SKILL.md',
+        },
+        {
+          id: 'anthropic',
+          name: 'anthropic',
+          description: 'Claude 3 model family for advanced reasoning and coding.',
+          categories: ['AI'],
+          lastVerified: '2026-07-02',
+          path: '../skills/anthropic/SKILL.md',
+        },
+        {
+          id: 'argo-cd',
+          name: 'argo-cd',
+          description: 'Declarative continuous deployment for Kubernetes.',
+          categories: ['CI/CD', 'Infrastructure'],
+          lastVerified: '2026-07-02',
+          path: '../skills/argo-cd/SKILL.md',
+        },
+        {
+          id: 'auth0',
+          name: 'auth0',
+          description: 'Identity and Access Management platform.',
+          categories: ['Authentication', 'Security'],
+          lastVerified: '2026-07-02',
+          path: '../skills/auth0/SKILL.md',
+        },
+        {
+          id: 'aws-dynamodb',
+          name: 'aws-dynamodb',
+          description: 'NoSQL key-value and document database.',
+          categories: ['Databases', 'Cloud'],
+          lastVerified: '2026-07-02',
+          path: '../skills/aws-dynamodb/SKILL.md',
+        },
+        {
+          id: 'aws-s3',
+          name: 'aws-s3',
+          description: 'Object storage service.',
+          categories: ['Cloud', 'Storage'],
+          lastVerified: '2026-07-02',
+          path: '../skills/aws-s3/SKILL.md',
+        },
+        {
+          id: 'azure-blob-storage',
+          name: 'azure-blob-storage',
+          description: 'Massively scalable object storage for unstructured data.',
+          categories: ['Cloud', 'Storage'],
+          lastVerified: '2026-07-02',
+          path: '../skills/azure-blob-storage/SKILL.md',
+        },
+        {
+          id: 'azure-openai',
+          name: 'azure-openai',
+          description: 'OpenAI models hosted on Microsoft Azure with enterprise security features.',
+          categories: ['AI', 'Enterprise'],
+          lastVerified: '2026-07-02',
+          path: '../skills/azure-openai/SKILL.md',
+        },
+        {
+          id: 'better-auth',
+          name: 'better-auth',
+          description: 'Comprehensive authentication library for TypeScript.',
+          categories: ['Authentication'],
+          lastVerified: '2026-07-02',
+          path: '../skills/better-auth/SKILL.md',
+        },
+        {
+          id: 'biome',
+          name: 'biome',
+          description: 'One toolchain for your web project.',
+          categories: ['Developer Tools'],
+          lastVerified: '2026-07-02',
+          path: '../skills/biome/SKILL.md',
+        },
+        {
+          id: 'bullmq',
+          name: 'bullmq',
+          description: 'Redis-based robust queue system for Node.js.',
+          categories: ['Messaging', 'Developer Tools'],
+          lastVerified: '2026-07-02',
+          path: '../skills/bullmq/SKILL.md',
+        },
+        {
+          id: 'caddy',
+          name: 'caddy',
+          description: 'The ultimate enterprise web server with automatic HTTPS.',
+          categories: ['Infrastructure', 'Security'],
+          lastVerified: '2026-07-02',
+          path: '../skills/caddy/SKILL.md',
+        },
+        {
+          id: 'clerk',
+          name: 'clerk',
+          description: 'Authentication and User Management.',
+          categories: ['Authentication', 'Security'],
+          lastVerified: '2026-07-02',
+          path: '../skills/clerk/SKILL.md',
+        },
+        {
+          id: 'cloudflare',
+          name: 'cloudflare',
+          description: 'Web performance and security company.',
+          categories: ['Cloud', 'Security'],
+          lastVerified: '2026-07-02',
+          path: '../skills/cloudflare/SKILL.md',
+        },
+        {
+          id: 'cloudflare-workers',
+          name: 'cloudflare-workers',
+          description:
+            'Build serverless applications and deploy globally across the Cloudflare edge network.',
+          categories: ['Cloud', 'Developer Tools'],
+          lastVerified: '2026-07-02',
+          path: '../skills/cloudflare-workers/SKILL.md',
+        },
+        {
+          id: 'convex',
+          name: 'convex',
+          description: 'Backend-as-a-Service with deterministic React sync.',
+          categories: ['Databases', 'Cloud'],
+          lastVerified: '2026-07-02',
+          path: '../skills/convex/SKILL.md',
+        },
+        {
+          id: 'datadog',
+          name: 'datadog',
+          description: 'Observability and security platform.',
+          categories: ['Monitoring', 'DevOps'],
+          lastVerified: '2026-07-02',
+          path: '../skills/datadog/SKILL.md',
+        },
+        {
+          id: 'deno-deploy',
+          name: 'deno-deploy',
+          description:
+            'Distributed system that runs JavaScript, TypeScript, and WebAssembly at the edge.',
+          categories: ['Cloud', 'Developer Tools'],
+          lastVerified: '2026-07-02',
+          path: '../skills/deno-deploy/SKILL.md',
+        },
+        {
+          id: 'digitalocean',
+          name: 'digitalocean',
+          description: 'Cloud computing designed for developers.',
+          categories: ['Cloud'],
+          lastVerified: '2026-07-02',
+          path: '../skills/digitalocean/SKILL.md',
+        },
+        {
+          id: 'discord',
+          name: 'discord',
+          description: 'Chat and community platform.',
+          categories: ['Messaging'],
+          lastVerified: '2026-07-02',
+          path: '../skills/discord/SKILL.md',
+        },
+        {
+          id: 'docker',
+          name: 'docker',
+          description: 'OS-level virtualization to deliver software in packages called containers.',
+          categories: ['Developer Tools', 'Infrastructure'],
+          lastVerified: '2026-07-02',
+          path: '../skills/docker/SKILL.md',
+        },
+        {
+          id: 'drizzle',
+          name: 'drizzle',
+          description: 'Next generation TypeScript ORM.',
+          categories: ['Databases', 'Developer Tools'],
+          lastVerified: '2026-07-02',
+          path: '../skills/drizzle/SKILL.md',
+        },
+        {
+          id: 'eslint',
+          name: 'eslint',
+          description: 'Find and fix problems in your JavaScript code.',
+          categories: ['Developer Tools'],
+          lastVerified: '2026-07-02',
+          path: '../skills/eslint/SKILL.md',
+        },
+        {
+          id: 'express',
+          name: 'express',
+          description: 'Fast, unopinionated, minimalist web framework for Node.js.',
+          categories: ['Backend Frameworks'],
+          lastVerified: '2026-07-02',
+          path: '../skills/express/SKILL.md',
+        },
+        {
+          id: 'fastapi',
+          name: 'fastapi',
+          description: 'High-performance Python web framework.',
+          categories: ['Backend Frameworks'],
+          lastVerified: '2026-07-02',
+          path: '../skills/fastapi/SKILL.md',
+        },
+        {
+          id: 'firebase',
+          name: 'firebase',
+          description: 'Backend-as-a-Service by Google.',
+          categories: ['Cloud', 'Databases'],
+          lastVerified: '2026-07-02',
+          path: '../skills/firebase/SKILL.md',
+        },
+        {
+          id: 'fly',
+          name: 'fly',
+          description: 'Deploy app servers close to your users.',
+          categories: ['Cloud', 'DevOps'],
+          lastVerified: '2026-07-02',
+          path: '../skills/fly/SKILL.md',
+        },
+        {
+          id: 'gemini',
+          name: 'gemini',
+          description: 'Multimodal AI models by Google.',
+          categories: ['AI'],
+          lastVerified: '2026-07-02',
+          path: '../skills/gemini/SKILL.md',
+        },
+        {
+          id: 'git',
+          name: 'git',
+          description: 'Distributed version control system.',
+          categories: ['Developer Tools'],
+          lastVerified: '2026-07-02',
+          path: '../skills/git/SKILL.md',
+        },
+        {
+          id: 'github',
+          name: 'github',
+          description: 'Platform API for repositories, actions, and issues.',
+          categories: ['DevOps', 'Developer Tools'],
+          lastVerified: '2026-07-02',
+          path: '../skills/github/SKILL.md',
+        },
+        {
+          id: 'github-actions',
+          name: 'github-actions',
+          description: 'Automate your software workflows directly from GitHub.',
+          categories: ['CI/CD', 'Developer Tools'],
+          lastVerified: '2026-07-02',
+          path: '../skills/github-actions/SKILL.md',
+        },
+        {
+          id: 'google-cloud-storage',
+          name: 'google-cloud-storage',
+          description: 'Enterprise object storage by Google.',
+          categories: ['Cloud', 'Storage'],
+          lastVerified: '2026-07-02',
+          path: '../skills/google-cloud-storage/SKILL.md',
+        },
+        {
+          id: 'grafana',
+          name: 'grafana',
+          description: 'The open observability platform.',
+          categories: ['Observability'],
+          lastVerified: '2026-07-02',
+          path: '../skills/grafana/SKILL.md',
+        },
+        {
+          id: 'helm',
+          name: 'helm',
+          description: 'The package manager for Kubernetes.',
+          categories: ['Developer Tools', 'Infrastructure'],
+          lastVerified: '2026-07-02',
+          path: '../skills/helm/SKILL.md',
+        },
+        {
+          id: 'hono',
+          name: 'hono',
+          description: 'Ultrafast web framework for the Edges.',
+          categories: ['Backend Frameworks'],
+          lastVerified: '2026-07-02',
+          path: '../skills/hono/SKILL.md',
+        },
+        {
+          id: 'jaeger',
+          name: 'jaeger',
+          description: 'Open source, end-to-end distributed tracing.',
+          categories: ['Observability'],
+          lastVerified: '2026-07-02',
+          path: '../skills/jaeger/SKILL.md',
+        },
+        {
+          id: 'jwt',
+          name: 'jwt',
+          description:
+            'Compact, URL-safe means of representing claims to be transferred between two parties.',
+          categories: ['Authentication', 'Security'],
+          lastVerified: '2026-07-02',
+          path: '../skills/jwt/SKILL.md',
+        },
+        {
+          id: 'kafka',
+          name: 'kafka',
+          description: 'Distributed event streaming platform.',
+          categories: ['Messaging', 'Enterprise'],
+          lastVerified: '2026-07-02',
+          path: '../skills/kafka/SKILL.md',
+        },
+        {
+          id: 'kubernetes',
+          name: 'kubernetes',
+          description: 'Automated container deployment, scaling, and management.',
+          categories: ['Developer Tools', 'Infrastructure'],
+          lastVerified: '2026-07-02',
+          path: '../skills/kubernetes/SKILL.md',
+        },
+        {
+          id: 'langchain',
+          name: 'langchain',
+          description: 'Framework for developing applications powered by language models.',
+          categories: ['AI', 'Developer Tools'],
+          lastVerified: '2026-07-02',
+          path: '../skills/langchain/SKILL.md',
+        },
+        {
+          id: 'lemon-squeezy',
+          name: 'lemon-squeezy',
+          description: 'Merchant of record for software companies.',
+          categories: ['Payments', 'Finance'],
+          lastVerified: '2026-07-02',
+          path: '../skills/lemon-squeezy/SKILL.md',
+        },
+        {
+          id: 'linux',
+          name: 'linux',
+          description: 'The free, open-source operating system that powers the internet.',
+          categories: ['Infrastructure', 'Enterprise'],
+          lastVerified: '2026-07-02',
+          path: '../skills/linux/SKILL.md',
+        },
+        {
+          id: 'llamaindex',
+          name: 'llamaindex',
+          description:
+            'Data framework for connecting custom data sources to large language models.',
+          categories: ['AI', 'Developer Tools'],
+          lastVerified: '2026-07-02',
+          path: '../skills/llamaindex/SKILL.md',
+        },
+        {
+          id: 'loki',
+          name: 'loki',
+          description: 'Like Prometheus, but for logs.',
+          categories: ['Observability'],
+          lastVerified: '2026-07-02',
+          path: '../skills/loki/SKILL.md',
+        },
+        {
+          id: 'mapbox',
+          name: 'mapbox',
+          description: 'Mapping and location cloud platform.',
+          categories: ['Maps', 'Developer Tools'],
+          lastVerified: '2026-07-02',
+          path: '../skills/mapbox/SKILL.md',
+        },
+        {
+          id: 'meilisearch',
+          name: 'meilisearch',
+          description: 'Lightning-fast, open-source search engine.',
+          categories: ['Search', 'Databases'],
+          lastVerified: '2026-07-02',
+          path: '../skills/meilisearch/SKILL.md',
+        },
+        {
+          id: 'mixpanel',
+          name: 'mixpanel',
+          description: 'Advanced product analytics for tracking user interactions.',
+          categories: ['Analytics'],
+          lastVerified: '2026-07-02',
+          path: '../skills/mixpanel/SKILL.md',
+        },
+        {
+          id: 'mongodb-atlas',
+          name: 'mongodb-atlas',
+          description: 'Fully managed MongoDB cloud database.',
+          categories: ['Databases', 'Cloud'],
+          lastVerified: '2026-07-02',
+          path: '../skills/mongodb-atlas/SKILL.md',
+        },
+        {
+          id: 'mysql',
+          name: 'mysql',
+          description: "The world's most popular open source database.",
+          categories: ['Databases'],
+          lastVerified: '2026-07-02',
+          path: '../skills/mysql/SKILL.md',
+        },
+        {
+          id: 'nats',
+          name: 'nats',
+          description: 'Connective technology for adaptive edge and distributed systems.',
+          categories: ['Messaging', 'DevOps'],
+          lastVerified: '2026-07-02',
+          path: '../skills/nats/SKILL.md',
+        },
+        {
+          id: 'neon',
+          name: 'neon',
+          description: 'Serverless, fault-tolerant, branching PostgreSQL.',
+          categories: ['Databases', 'Cloud'],
+          lastVerified: '2026-07-02',
+          path: '../skills/neon/SKILL.md',
+        },
+        {
+          id: 'nestjs',
+          name: 'nestjs',
+          description:
+            'A progressive Node.js framework for building efficient, reliable and scalable server-side applications.',
+          categories: ['Backend Frameworks'],
+          lastVerified: '2026-07-02',
+          path: '../skills/nestjs/SKILL.md',
+        },
+        {
+          id: 'nextjs',
+          name: 'nextjs',
+          description: 'The React Framework for the Web.',
+          categories: ['Frontend Frameworks'],
+          lastVerified: '2026-07-02',
+          path: '../skills/nextjs/SKILL.md',
+        },
+        {
+          id: 'nginx',
+          name: 'nginx',
+          description: 'High performance load balancer, web server, and reverse proxy.',
+          categories: ['Developer Tools', 'Infrastructure'],
+          lastVerified: '2026-07-02',
+          path: '../skills/nginx/SKILL.md',
+        },
+        {
+          id: 'nuxt',
+          name: 'nuxt',
+          description: 'The Intuitive Vue Framework.',
+          categories: ['Frontend Frameworks'],
+          lastVerified: '2026-07-02',
+          path: '../skills/nuxt/SKILL.md',
+        },
+        {
+          id: 'oauth2',
+          name: 'oauth2',
+          description: 'The industry-standard protocol for authorization.',
+          categories: ['Authentication', 'Security'],
+          lastVerified: '2026-07-02',
+          path: '../skills/oauth2/SKILL.md',
+        },
+        {
+          id: 'okta',
+          name: 'okta',
+          description: 'Enterprise Identity Provider and SSO.',
+          categories: ['Authentication', 'Enterprise'],
+          lastVerified: '2026-07-02',
+          path: '../skills/okta/SKILL.md',
+        },
+        {
+          id: 'ollama',
+          name: 'ollama',
+          description: 'Get up and running with large language models locally.',
+          categories: ['AI', 'Developer Tools'],
+          lastVerified: '2026-07-02',
+          path: '../skills/ollama/SKILL.md',
+        },
+        {
+          id: 'openai',
+          name: 'openai',
+          description: 'Artificial Intelligence APIs including GPT-4 and DALL-E.',
+          categories: ['AI', 'Developer Tools'],
+          lastVerified: '2026-07-02',
+          path: '../skills/openai/SKILL.md',
+        },
+        {
+          id: 'openid-connect',
+          name: 'openid-connect',
+          description: 'Identity layer on top of the OAuth 2.0 protocol.',
+          categories: ['Authentication', 'Security'],
+          lastVerified: '2026-07-02',
+          path: '../skills/openid-connect/SKILL.md',
+        },
+        {
+          id: 'opentelemetry',
+          name: 'opentelemetry',
+          description:
+            'High-quality, ubiquitous, and portable telemetry to enable effective observability.',
+          categories: ['Observability'],
+          lastVerified: '2026-07-02',
+          path: '../skills/opentelemetry/SKILL.md',
+        },
+        {
+          id: 'paddle',
+          name: 'paddle',
+          description: 'B2B and B2C billing platform handling tax compliance globally.',
+          categories: ['Payments', 'Finance'],
+          lastVerified: '2026-07-02',
+          path: '../skills/paddle/SKILL.md',
+        },
+        {
+          id: 'pinecone',
+          name: 'pinecone',
+          description: 'Vector database for machine learning apps.',
+          categories: ['Databases', 'AI'],
+          lastVerified: '2026-07-02',
+          path: '../skills/pinecone/SKILL.md',
+        },
+        {
+          id: 'plaid',
+          name: 'plaid',
+          description: 'Financial technology platform to connect bank accounts.',
+          categories: ['Payments', 'Finance'],
+          lastVerified: '2026-07-02',
+          path: '../skills/plaid/SKILL.md',
+        },
+        {
+          id: 'planetscale',
+          name: 'planetscale',
+          description: 'Serverless MySQL database built on Vitess.',
+          categories: ['Databases', 'Cloud'],
+          lastVerified: '2026-07-02',
+          path: '../skills/planetscale/SKILL.md',
+        },
+        {
+          id: 'playwright',
+          name: 'playwright',
+          description: 'End-to-end testing for modern web apps.',
+          categories: ['Developer Tools', 'Testing'],
+          lastVerified: '2026-07-02',
+          path: '../skills/playwright/SKILL.md',
+        },
+        {
+          id: 'postgresql',
+          name: 'postgresql',
+          description: "The world's most advanced open source relational database.",
+          categories: ['Databases'],
+          lastVerified: '2026-07-02',
+          path: '../skills/postgresql/SKILL.md',
+        },
+        {
+          id: 'posthog',
+          name: 'posthog',
+          description: 'Open-source product analytics, session recording, and feature flags.',
+          categories: ['Analytics'],
+          lastVerified: '2026-07-02',
+          path: '../skills/posthog/SKILL.md',
+        },
+        {
+          id: 'prettier',
+          name: 'prettier',
+          description: 'Opinionated Code Formatter.',
+          categories: ['Developer Tools'],
+          lastVerified: '2026-07-02',
+          path: '../skills/prettier/SKILL.md',
+        },
+        {
+          id: 'prisma',
+          name: 'prisma',
+          description: 'Next-generation Node.js and TypeScript ORM.',
+          categories: ['Databases', 'Developer Tools'],
+          lastVerified: '2026-07-02',
+          path: '../skills/prisma/SKILL.md',
+        },
+        {
+          id: 'prometheus',
+          name: 'prometheus',
+          description: 'Powering metrics and alerting.',
+          categories: ['Observability'],
+          lastVerified: '2026-07-02',
+          path: '../skills/prometheus/SKILL.md',
+        },
+        {
+          id: 'pulumi',
+          name: 'pulumi',
+          description: 'Universal Infrastructure as Code.',
+          categories: ['Developer Tools', 'Infrastructure'],
+          lastVerified: '2026-07-02',
+          path: '../skills/pulumi/SKILL.md',
+        },
+        {
+          id: 'rabbitmq',
+          name: 'rabbitmq',
+          description: 'Reliable, mature AMQP message broker.',
+          categories: ['Messaging', 'Enterprise'],
+          lastVerified: '2026-07-02',
+          path: '../skills/rabbitmq/SKILL.md',
+        },
+        {
+          id: 'railway',
+          name: 'railway',
+          description:
+            'Infrastructure platform to provision infrastructure, develop locally, and deploy.',
+          categories: ['Cloud', 'DevOps'],
+          lastVerified: '2026-07-02',
+          path: '../skills/railway/SKILL.md',
+        },
+        {
+          id: 'react',
+          name: 'react',
+          description: 'The library for web and native user interfaces.',
+          categories: ['Frontend Frameworks'],
+          lastVerified: '2026-07-02',
+          path: '../skills/react/SKILL.md',
+        },
+        {
+          id: 'redis',
+          name: 'redis',
+          description: 'In-memory data structure store.',
+          categories: ['Databases'],
+          lastVerified: '2026-07-02',
+          path: '../skills/redis/SKILL.md',
+        },
+        {
+          id: 'redis-streams',
+          name: 'redis-streams',
+          description: 'A data type in Redis that models an append-only log.',
+          categories: ['Messaging', 'Databases'],
+          lastVerified: '2026-07-02',
+          path: '../skills/redis-streams/SKILL.md',
+        },
+        {
+          id: 'render',
+          name: 'render',
+          description: 'Unified cloud to build and run all your apps and websites.',
+          categories: ['Cloud', 'DevOps'],
+          lastVerified: '2026-07-02',
+          path: '../skills/render/SKILL.md',
+        },
+        {
+          id: 'resend',
+          name: 'resend',
+          description: 'Email API for developers.',
+          categories: ['Messaging'],
+          lastVerified: '2026-07-02',
+          path: '../skills/resend/SKILL.md',
+        },
+        {
+          id: 'revenuecat',
+          name: 'revenuecat',
+          description: 'In-App Subscriptions Made Easy.',
+          categories: ['Payments', 'Finance'],
+          lastVerified: '2026-07-02',
+          path: '../skills/revenuecat/SKILL.md',
+        },
+        {
+          id: 'sendgrid',
+          name: 'sendgrid',
+          description: 'Cloud-based email delivery and management.',
+          categories: ['Messaging'],
+          lastVerified: '2026-07-02',
+          path: '../skills/sendgrid/SKILL.md',
+        },
+        {
+          id: 'sentry',
+          name: 'sentry',
+          description: 'Application performance monitoring and error tracking.',
+          categories: ['Monitoring'],
+          lastVerified: '2026-07-02',
+          path: '../skills/sentry/SKILL.md',
+        },
+        {
+          id: 'shopify',
+          name: 'shopify',
+          description: 'E-commerce platform API.',
+          categories: ['Commerce'],
+          lastVerified: '2026-07-02',
+          path: '../skills/shopify/SKILL.md',
+        },
+        {
+          id: 'slack',
+          name: 'slack',
+          description: 'Team communication platform.',
+          categories: ['Messaging', 'Productivity'],
+          lastVerified: '2026-07-02',
+          path: '../skills/slack/SKILL.md',
+        },
+        {
+          id: 'sqlite',
+          name: 'sqlite',
+          description: 'Small, fast, reliable, embedded database.',
+          categories: ['Databases'],
+          lastVerified: '2026-07-02',
+          path: '../skills/sqlite/SKILL.md',
+        },
+        {
+          id: 'stripe',
+          name: 'stripe',
+          description: 'Financial infrastructure platform for the internet.',
+          categories: ['Payments', 'Commerce'],
+          lastVerified: '2026-07-03',
+          path: '../skills/stripe/SKILL.md',
+        },
+        {
+          id: 'supabase',
+          name: 'supabase',
+          description: 'Open source Firebase alternative based on PostgreSQL.',
+          categories: ['Databases', 'Authentication'],
+          lastVerified: '2026-07-02',
+          path: '../skills/supabase/SKILL.md',
+        },
+        {
+          id: 'sveltekit',
+          name: 'sveltekit',
+          description: 'Web development, streamlined.',
+          categories: ['Frontend Frameworks'],
+          lastVerified: '2026-07-02',
+          path: '../skills/sveltekit/SKILL.md',
+        },
+        {
+          id: 'terraform',
+          name: 'terraform',
+          description: 'Infrastructure as Code.',
+          categories: ['Developer Tools', 'Infrastructure'],
+          lastVerified: '2026-07-02',
+          path: '../skills/terraform/SKILL.md',
+        },
+        {
+          id: 'traefik',
+          name: 'traefik',
+          description: 'The Cloud Native Application Proxy.',
+          categories: ['Infrastructure', 'Developer Tools'],
+          lastVerified: '2026-07-02',
+          path: '../skills/traefik/SKILL.md',
+        },
+        {
+          id: 'trpc',
+          name: 'trpc',
+          description: 'End-to-end typesafe APIs made easy.',
+          categories: ['Backend Frameworks', 'Developer Tools'],
+          lastVerified: '2026-07-02',
+          path: '../skills/trpc/SKILL.md',
+        },
+        {
+          id: 'turborepo',
+          name: 'turborepo',
+          description: 'High-performance build system for JavaScript and TypeScript codebases.',
+          categories: ['Developer Tools'],
+          lastVerified: '2026-07-02',
+          path: '../skills/turborepo/SKILL.md',
+        },
+        {
+          id: 'turso',
+          name: 'turso',
+          description: 'Edge SQLite database based on libSQL.',
+          categories: ['Databases', 'Cloud'],
+          lastVerified: '2026-07-02',
+          path: '../skills/turso/SKILL.md',
+        },
+        {
+          id: 'twilio',
+          name: 'twilio',
+          description: 'Communication APIs for SMS, Voice, and Video.',
+          categories: ['Messaging'],
+          lastVerified: '2026-07-02',
+          path: '../skills/twilio/SKILL.md',
+        },
+        {
+          id: 'typesense',
+          name: 'typesense',
+          description: 'Fast, typo-tolerant open-source search engine.',
+          categories: ['Search', 'Databases'],
+          lastVerified: '2026-07-02',
+          path: '../skills/typesense/SKILL.md',
+        },
+        {
+          id: 'upstash',
+          name: 'upstash',
+          description: 'Serverless Data Platform (Redis, Kafka, Vector).',
+          categories: ['Databases', 'Messaging'],
+          lastVerified: '2026-07-02',
+          path: '../skills/upstash/SKILL.md',
+        },
+        {
+          id: 'vercel',
+          name: 'vercel',
+          description: 'Platform for frontend frameworks and static sites.',
+          categories: ['Cloud', 'DevOps'],
+          lastVerified: '2026-07-02',
+          path: '../skills/vercel/SKILL.md',
+        },
+        {
+          id: 'vitest',
+          name: 'vitest',
+          description: 'Next generation testing framework powered by Vite.',
+          categories: ['Testing', 'Developer Tools'],
+          lastVerified: '2026-07-02',
+          path: '../skills/vitest/SKILL.md',
+        },
+        {
+          id: 'vllm',
+          name: 'vllm',
+          description: 'High-throughput and memory-efficient LLM inference engine.',
+          categories: ['AI', 'Infrastructure'],
+          lastVerified: '2026-07-02',
+          path: '../skills/vllm/SKILL.md',
+        },
+        {
+          id: 'vue',
+          name: 'vue',
+          description: 'The Progressive JavaScript Framework.',
+          categories: ['Frontend Frameworks'],
+          lastVerified: '2026-07-02',
+          path: '../skills/vue/SKILL.md',
+        },
+        {
+          id: 'xquik',
+          name: 'xquik',
+          description: 'X/Twitter data, automation, monitor, webhook, and write API.',
+          categories: ['Developer Tools', 'AI'],
+          lastVerified: '2026-07-03',
+          path: '../skills/xquik/SKILL.md',
+        },
+      ];
+      const searchInput = document.getElementById('search');
+      const grid = document.getElementById('grid');
+      const stats = document.getElementById('stats');
 
-    <div class="grid" id="grid"></div>
-  </div>
-
-  <script>
-    const skills = [{"id":"algolia","name":"algolia","description":"Hosted Search API.","categories":["Search"],"lastVerified":"2026-07-02","path":"../skills/algolia/SKILL.md"},{"id":"anthropic","name":"anthropic","description":"Claude 3 model family for advanced reasoning and coding.","categories":["AI"],"lastVerified":"2026-07-02","path":"../skills/anthropic/SKILL.md"},{"id":"argo-cd","name":"argo-cd","description":"Declarative continuous deployment for Kubernetes.","categories":["CI/CD","Infrastructure"],"lastVerified":"2026-07-02","path":"../skills/argo-cd/SKILL.md"},{"id":"auth0","name":"auth0","description":"Identity and Access Management platform.","categories":["Authentication","Security"],"lastVerified":"2026-07-02","path":"../skills/auth0/SKILL.md"},{"id":"aws-dynamodb","name":"aws-dynamodb","description":"NoSQL key-value and document database.","categories":["Databases","Cloud"],"lastVerified":"2026-07-02","path":"../skills/aws-dynamodb/SKILL.md"},{"id":"aws-s3","name":"aws-s3","description":"Object storage service.","categories":["Cloud","Storage"],"lastVerified":"2026-07-02","path":"../skills/aws-s3/SKILL.md"},{"id":"azure-blob-storage","name":"azure-blob-storage","description":"Massively scalable object storage for unstructured data.","categories":["Cloud","Storage"],"lastVerified":"2026-07-02","path":"../skills/azure-blob-storage/SKILL.md"},{"id":"azure-openai","name":"azure-openai","description":"OpenAI models hosted on Microsoft Azure with enterprise security features.","categories":["AI","Enterprise"],"lastVerified":"2026-07-02","path":"../skills/azure-openai/SKILL.md"},{"id":"better-auth","name":"better-auth","description":"Comprehensive authentication library for TypeScript.","categories":["Authentication"],"lastVerified":"2026-07-02","path":"../skills/better-auth/SKILL.md"},{"id":"biome","name":"biome","description":"One toolchain for your web project.","categories":["Developer Tools"],"lastVerified":"2026-07-02","path":"../skills/biome/SKILL.md"},{"id":"bullmq","name":"bullmq","description":"Redis-based robust queue system for Node.js.","categories":["Messaging","Developer Tools"],"lastVerified":"2026-07-02","path":"../skills/bullmq/SKILL.md"},{"id":"caddy","name":"caddy","description":"The ultimate enterprise web server with automatic HTTPS.","categories":["Infrastructure","Security"],"lastVerified":"2026-07-02","path":"../skills/caddy/SKILL.md"},{"id":"clerk","name":"clerk","description":"Authentication and User Management.","categories":["Authentication","Security"],"lastVerified":"2026-07-02","path":"../skills/clerk/SKILL.md"},{"id":"cloudflare","name":"cloudflare","description":"Web performance and security company.","categories":["Cloud","Security"],"lastVerified":"2026-07-02","path":"../skills/cloudflare/SKILL.md"},{"id":"cloudflare-workers","name":"cloudflare-workers","description":"Build serverless applications and deploy globally across the Cloudflare edge network.","categories":["Cloud","Developer Tools"],"lastVerified":"2026-07-02","path":"../skills/cloudflare-workers/SKILL.md"},{"id":"convex","name":"convex","description":"Backend-as-a-Service with deterministic React sync.","categories":["Databases","Cloud"],"lastVerified":"2026-07-02","path":"../skills/convex/SKILL.md"},{"id":"datadog","name":"datadog","description":"Observability and security platform.","categories":["Monitoring","DevOps"],"lastVerified":"2026-07-02","path":"../skills/datadog/SKILL.md"},{"id":"deno-deploy","name":"deno-deploy","description":"Distributed system that runs JavaScript, TypeScript, and WebAssembly at the edge.","categories":["Cloud","Developer Tools"],"lastVerified":"2026-07-02","path":"../skills/deno-deploy/SKILL.md"},{"id":"digitalocean","name":"digitalocean","description":"Cloud computing designed for developers.","categories":["Cloud"],"lastVerified":"2026-07-02","path":"../skills/digitalocean/SKILL.md"},{"id":"discord","name":"discord","description":"Chat and community platform.","categories":["Messaging"],"lastVerified":"2026-07-02","path":"../skills/discord/SKILL.md"},{"id":"docker","name":"docker","description":"OS-level virtualization to deliver software in packages called containers.","categories":["Developer Tools","Infrastructure"],"lastVerified":"2026-07-02","path":"../skills/docker/SKILL.md"},{"id":"drizzle","name":"drizzle","description":"Next generation TypeScript ORM.","categories":["Databases","Developer Tools"],"lastVerified":"2026-07-02","path":"../skills/drizzle/SKILL.md"},{"id":"eslint","name":"eslint","description":"Find and fix problems in your JavaScript code.","categories":["Developer Tools"],"lastVerified":"2026-07-02","path":"../skills/eslint/SKILL.md"},{"id":"express","name":"express","description":"Fast, unopinionated, minimalist web framework for Node.js.","categories":["Backend Frameworks"],"lastVerified":"2026-07-02","path":"../skills/express/SKILL.md"},{"id":"fastapi","name":"fastapi","description":"High-performance Python web framework.","categories":["Backend Frameworks"],"lastVerified":"2026-07-02","path":"../skills/fastapi/SKILL.md"},{"id":"firebase","name":"firebase","description":"Backend-as-a-Service by Google.","categories":["Cloud","Databases"],"lastVerified":"2026-07-02","path":"../skills/firebase/SKILL.md"},{"id":"fly","name":"fly","description":"Deploy app servers close to your users.","categories":["Cloud","DevOps"],"lastVerified":"2026-07-02","path":"../skills/fly/SKILL.md"},{"id":"gemini","name":"gemini","description":"Multimodal AI models by Google.","categories":["AI"],"lastVerified":"2026-07-02","path":"../skills/gemini/SKILL.md"},{"id":"git","name":"git","description":"Distributed version control system.","categories":["Developer Tools"],"lastVerified":"2026-07-02","path":"../skills/git/SKILL.md"},{"id":"github","name":"github","description":"Platform API for repositories, actions, and issues.","categories":["DevOps","Developer Tools"],"lastVerified":"2026-07-02","path":"../skills/github/SKILL.md"},{"id":"github-actions","name":"github-actions","description":"Automate your software workflows directly from GitHub.","categories":["CI/CD","Developer Tools"],"lastVerified":"2026-07-02","path":"../skills/github-actions/SKILL.md"},{"id":"google-cloud-storage","name":"google-cloud-storage","description":"Enterprise object storage by Google.","categories":["Cloud","Storage"],"lastVerified":"2026-07-02","path":"../skills/google-cloud-storage/SKILL.md"},{"id":"grafana","name":"grafana","description":"The open observability platform.","categories":["Observability"],"lastVerified":"2026-07-02","path":"../skills/grafana/SKILL.md"},{"id":"helm","name":"helm","description":"The package manager for Kubernetes.","categories":["Developer Tools","Infrastructure"],"lastVerified":"2026-07-02","path":"../skills/helm/SKILL.md"},{"id":"hono","name":"hono","description":"Ultrafast web framework for the Edges.","categories":["Backend Frameworks"],"lastVerified":"2026-07-02","path":"../skills/hono/SKILL.md"},{"id":"jaeger","name":"jaeger","description":"Open source, end-to-end distributed tracing.","categories":["Observability"],"lastVerified":"2026-07-02","path":"../skills/jaeger/SKILL.md"},{"id":"jwt","name":"jwt","description":"Compact, URL-safe means of representing claims to be transferred between two parties.","categories":["Authentication","Security"],"lastVerified":"2026-07-02","path":"../skills/jwt/SKILL.md"},{"id":"kafka","name":"kafka","description":"Distributed event streaming platform.","categories":["Messaging","Enterprise"],"lastVerified":"2026-07-02","path":"../skills/kafka/SKILL.md"},{"id":"kubernetes","name":"kubernetes","description":"Automated container deployment, scaling, and management.","categories":["Developer Tools","Infrastructure"],"lastVerified":"2026-07-02","path":"../skills/kubernetes/SKILL.md"},{"id":"langchain","name":"langchain","description":"Framework for developing applications powered by language models.","categories":["AI","Developer Tools"],"lastVerified":"2026-07-02","path":"../skills/langchain/SKILL.md"},{"id":"lemon-squeezy","name":"lemon-squeezy","description":"Merchant of record for software companies.","categories":["Payments","Finance"],"lastVerified":"2026-07-02","path":"../skills/lemon-squeezy/SKILL.md"},{"id":"linux","name":"linux","description":"The free, open-source operating system that powers the internet.","categories":["Infrastructure","Enterprise"],"lastVerified":"2026-07-02","path":"../skills/linux/SKILL.md"},{"id":"llamaindex","name":"llamaindex","description":"Data framework for connecting custom data sources to large language models.","categories":["AI","Developer Tools"],"lastVerified":"2026-07-02","path":"../skills/llamaindex/SKILL.md"},{"id":"loki","name":"loki","description":"Like Prometheus, but for logs.","categories":["Observability"],"lastVerified":"2026-07-02","path":"../skills/loki/SKILL.md"},{"id":"mapbox","name":"mapbox","description":"Mapping and location cloud platform.","categories":["Maps","Developer Tools"],"lastVerified":"2026-07-02","path":"../skills/mapbox/SKILL.md"},{"id":"meilisearch","name":"meilisearch","description":"Lightning-fast, open-source search engine.","categories":["Search","Databases"],"lastVerified":"2026-07-02","path":"../skills/meilisearch/SKILL.md"},{"id":"mixpanel","name":"mixpanel","description":"Advanced product analytics for tracking user interactions.","categories":["Analytics"],"lastVerified":"2026-07-02","path":"../skills/mixpanel/SKILL.md"},{"id":"mongodb-atlas","name":"mongodb-atlas","description":"Fully managed MongoDB cloud database.","categories":["Databases","Cloud"],"lastVerified":"2026-07-02","path":"../skills/mongodb-atlas/SKILL.md"},{"id":"mysql","name":"mysql","description":"The world's most popular open source database.","categories":["Databases"],"lastVerified":"2026-07-02","path":"../skills/mysql/SKILL.md"},{"id":"nats","name":"nats","description":"Connective technology for adaptive edge and distributed systems.","categories":["Messaging","DevOps"],"lastVerified":"2026-07-02","path":"../skills/nats/SKILL.md"},{"id":"neon","name":"neon","description":"Serverless, fault-tolerant, branching PostgreSQL.","categories":["Databases","Cloud"],"lastVerified":"2026-07-02","path":"../skills/neon/SKILL.md"},{"id":"nestjs","name":"nestjs","description":"A progressive Node.js framework for building efficient, reliable and scalable server-side applications.","categories":["Backend Frameworks"],"lastVerified":"2026-07-02","path":"../skills/nestjs/SKILL.md"},{"id":"nextjs","name":"nextjs","description":"The React Framework for the Web.","categories":["Frontend Frameworks"],"lastVerified":"2026-07-02","path":"../skills/nextjs/SKILL.md"},{"id":"nginx","name":"nginx","description":"High performance load balancer, web server, and reverse proxy.","categories":["Developer Tools","Infrastructure"],"lastVerified":"2026-07-02","path":"../skills/nginx/SKILL.md"},{"id":"nuxt","name":"nuxt","description":"The Intuitive Vue Framework.","categories":["Frontend Frameworks"],"lastVerified":"2026-07-02","path":"../skills/nuxt/SKILL.md"},{"id":"oauth2","name":"oauth2","description":"The industry-standard protocol for authorization.","categories":["Authentication","Security"],"lastVerified":"2026-07-02","path":"../skills/oauth2/SKILL.md"},{"id":"okta","name":"okta","description":"Enterprise Identity Provider and SSO.","categories":["Authentication","Enterprise"],"lastVerified":"2026-07-02","path":"../skills/okta/SKILL.md"},{"id":"ollama","name":"ollama","description":"Get up and running with large language models locally.","categories":["AI","Developer Tools"],"lastVerified":"2026-07-02","path":"../skills/ollama/SKILL.md"},{"id":"openai","name":"openai","description":"Artificial Intelligence APIs including GPT-4 and DALL-E.","categories":["AI","Developer Tools"],"lastVerified":"2026-07-02","path":"../skills/openai/SKILL.md"},{"id":"openid-connect","name":"openid-connect","description":"Identity layer on top of the OAuth 2.0 protocol.","categories":["Authentication","Security"],"lastVerified":"2026-07-02","path":"../skills/openid-connect/SKILL.md"},{"id":"opentelemetry","name":"opentelemetry","description":"High-quality, ubiquitous, and portable telemetry to enable effective observability.","categories":["Observability"],"lastVerified":"2026-07-02","path":"../skills/opentelemetry/SKILL.md"},{"id":"paddle","name":"paddle","description":"B2B and B2C billing platform handling tax compliance globally.","categories":["Payments","Finance"],"lastVerified":"2026-07-02","path":"../skills/paddle/SKILL.md"},{"id":"pinecone","name":"pinecone","description":"Vector database for machine learning apps.","categories":["Databases","AI"],"lastVerified":"2026-07-02","path":"../skills/pinecone/SKILL.md"},{"id":"plaid","name":"plaid","description":"Financial technology platform to connect bank accounts.","categories":["Payments","Finance"],"lastVerified":"2026-07-02","path":"../skills/plaid/SKILL.md"},{"id":"planetscale","name":"planetscale","description":"Serverless MySQL database built on Vitess.","categories":["Databases","Cloud"],"lastVerified":"2026-07-02","path":"../skills/planetscale/SKILL.md"},{"id":"playwright","name":"playwright","description":"End-to-end testing for modern web apps.","categories":["Developer Tools","Testing"],"lastVerified":"2026-07-02","path":"../skills/playwright/SKILL.md"},{"id":"postgresql","name":"postgresql","description":"The world's most advanced open source relational database.","categories":["Databases"],"lastVerified":"2026-07-02","path":"../skills/postgresql/SKILL.md"},{"id":"posthog","name":"posthog","description":"Open-source product analytics, session recording, and feature flags.","categories":["Analytics"],"lastVerified":"2026-07-02","path":"../skills/posthog/SKILL.md"},{"id":"prettier","name":"prettier","description":"Opinionated Code Formatter.","categories":["Developer Tools"],"lastVerified":"2026-07-02","path":"../skills/prettier/SKILL.md"},{"id":"prisma","name":"prisma","description":"Next-generation Node.js and TypeScript ORM.","categories":["Databases","Developer Tools"],"lastVerified":"2026-07-02","path":"../skills/prisma/SKILL.md"},{"id":"prometheus","name":"prometheus","description":"Powering metrics and alerting.","categories":["Observability"],"lastVerified":"2026-07-02","path":"../skills/prometheus/SKILL.md"},{"id":"pulumi","name":"pulumi","description":"Universal Infrastructure as Code.","categories":["Developer Tools","Infrastructure"],"lastVerified":"2026-07-02","path":"../skills/pulumi/SKILL.md"},{"id":"rabbitmq","name":"rabbitmq","description":"Reliable, mature AMQP message broker.","categories":["Messaging","Enterprise"],"lastVerified":"2026-07-02","path":"../skills/rabbitmq/SKILL.md"},{"id":"railway","name":"railway","description":"Infrastructure platform to provision infrastructure, develop locally, and deploy.","categories":["Cloud","DevOps"],"lastVerified":"2026-07-02","path":"../skills/railway/SKILL.md"},{"id":"react","name":"react","description":"The library for web and native user interfaces.","categories":["Frontend Frameworks"],"lastVerified":"2026-07-02","path":"../skills/react/SKILL.md"},{"id":"redis","name":"redis","description":"In-memory data structure store.","categories":["Databases"],"lastVerified":"2026-07-02","path":"../skills/redis/SKILL.md"},{"id":"redis-streams","name":"redis-streams","description":"A data type in Redis that models an append-only log.","categories":["Messaging","Databases"],"lastVerified":"2026-07-02","path":"../skills/redis-streams/SKILL.md"},{"id":"render","name":"render","description":"Unified cloud to build and run all your apps and websites.","categories":["Cloud","DevOps"],"lastVerified":"2026-07-02","path":"../skills/render/SKILL.md"},{"id":"resend","name":"resend","description":"Email API for developers.","categories":["Messaging"],"lastVerified":"2026-07-02","path":"../skills/resend/SKILL.md"},{"id":"revenuecat","name":"revenuecat","description":"In-App Subscriptions Made Easy.","categories":["Payments","Finance"],"lastVerified":"2026-07-02","path":"../skills/revenuecat/SKILL.md"},{"id":"sendgrid","name":"sendgrid","description":"Cloud-based email delivery and management.","categories":["Messaging"],"lastVerified":"2026-07-02","path":"../skills/sendgrid/SKILL.md"},{"id":"sentry","name":"sentry","description":"Application performance monitoring and error tracking.","categories":["Monitoring"],"lastVerified":"2026-07-02","path":"../skills/sentry/SKILL.md"},{"id":"shopify","name":"shopify","description":"E-commerce platform API.","categories":["Commerce"],"lastVerified":"2026-07-02","path":"../skills/shopify/SKILL.md"},{"id":"slack","name":"slack","description":"Team communication platform.","categories":["Messaging","Productivity"],"lastVerified":"2026-07-02","path":"../skills/slack/SKILL.md"},{"id":"sqlite","name":"sqlite","description":"Small, fast, reliable, embedded database.","categories":["Databases"],"lastVerified":"2026-07-02","path":"../skills/sqlite/SKILL.md"},{"id":"stripe","name":"stripe","description":"Financial infrastructure platform for the internet.","categories":["Payments","Commerce"],"lastVerified":"2026-07-02","path":"../skills/stripe/SKILL.md"},{"id":"supabase","name":"supabase","description":"Open source Firebase alternative based on PostgreSQL.","categories":["Databases","Authentication"],"lastVerified":"2026-07-02","path":"../skills/supabase/SKILL.md"},{"id":"sveltekit","name":"sveltekit","description":"Web development, streamlined.","categories":["Frontend Frameworks"],"lastVerified":"2026-07-02","path":"../skills/sveltekit/SKILL.md"},{"id":"terraform","name":"terraform","description":"Infrastructure as Code.","categories":["Developer Tools","Infrastructure"],"lastVerified":"2026-07-02","path":"../skills/terraform/SKILL.md"},{"id":"traefik","name":"traefik","description":"The Cloud Native Application Proxy.","categories":["Infrastructure","Developer Tools"],"lastVerified":"2026-07-02","path":"../skills/traefik/SKILL.md"},{"id":"trpc","name":"trpc","description":"End-to-end typesafe APIs made easy.","categories":["Backend Frameworks","Developer Tools"],"lastVerified":"2026-07-02","path":"../skills/trpc/SKILL.md"},{"id":"turborepo","name":"turborepo","description":"High-performance build system for JavaScript and TypeScript codebases.","categories":["Developer Tools"],"lastVerified":"2026-07-02","path":"../skills/turborepo/SKILL.md"},{"id":"turso","name":"turso","description":"Edge SQLite database based on libSQL.","categories":["Databases","Cloud"],"lastVerified":"2026-07-02","path":"../skills/turso/SKILL.md"},{"id":"twilio","name":"twilio","description":"Communication APIs for SMS, Voice, and Video.","categories":["Messaging"],"lastVerified":"2026-07-02","path":"../skills/twilio/SKILL.md"},{"id":"typesense","name":"typesense","description":"Fast, typo-tolerant open-source search engine.","categories":["Search","Databases"],"lastVerified":"2026-07-02","path":"../skills/typesense/SKILL.md"},{"id":"upstash","name":"upstash","description":"Serverless Data Platform (Redis, Kafka, Vector).","categories":["Databases","Messaging"],"lastVerified":"2026-07-02","path":"../skills/upstash/SKILL.md"},{"id":"vercel","name":"vercel","description":"Platform for frontend frameworks and static sites.","categories":["Cloud","DevOps"],"lastVerified":"2026-07-02","path":"../skills/vercel/SKILL.md"},{"id":"vitest","name":"vitest","description":"Next generation testing framework powered by Vite.","categories":["Testing","Developer Tools"],"lastVerified":"2026-07-02","path":"../skills/vitest/SKILL.md"},{"id":"vllm","name":"vllm","description":"High-throughput and memory-efficient LLM inference engine.","categories":["AI","Infrastructure"],"lastVerified":"2026-07-02","path":"../skills/vllm/SKILL.md"},{"id":"vue","name":"vue","description":"The Progressive JavaScript Framework.","categories":["Frontend Frameworks"],"lastVerified":"2026-07-02","path":"../skills/vue/SKILL.md"}];
-    const searchInput = document.getElementById('search');
-    const grid = document.getElementById('grid');
-    const stats = document.getElementById('stats');
-
-    function renderSkills(filtered) {
-      stats.textContent = `Showing ${filtered.length} of ${skills.length} skills`;
-      grid.innerHTML = filtered.map(s => `
+      function renderSkills(filtered) {
+        stats.textContent = `Showing ${filtered.length} of ${skills.length} skills`;
+        grid.innerHTML = filtered
+          .map(
+            (s) => `
         <div class="card">
           <div>
             <h2 class="card-title"><a href="${s.path}">${s.name}</a></h2>
@@ -155,30 +983,33 @@
           </div>
           <div>
             <div class="tags">
-              ${(s.categories || []).map(c => `<span class="tag">${c}</span>`).join('')}
+              ${(s.categories || []).map((c) => `<span class="tag">${c}</span>`).join('')}
             </div>
             <div class="verified-date">✓ Verified ${s.lastVerified}</div>
           </div>
         </div>
-      `).join('');
-    }
-
-    searchInput.addEventListener('input', (e) => {
-      const q = e.target.value.toLowerCase().trim();
-      if (!q) {
-        renderSkills(skills);
-        return;
+      `,
+          )
+          .join('');
       }
-      const matched = skills.filter(s =>
-        s.name.toLowerCase().includes(q) ||
-        s.id.toLowerCase().includes(q) ||
-        (s.description && s.description.toLowerCase().includes(q)) ||
-        (s.categories && s.categories.some(c => c.toLowerCase().includes(q)))
-      );
-      renderSkills(matched);
-    });
 
-    renderSkills(skills);
-  </script>
-</body>
+      searchInput.addEventListener('input', (e) => {
+        const q = e.target.value.toLowerCase().trim();
+        if (!q) {
+          renderSkills(skills);
+          return;
+        }
+        const matched = skills.filter(
+          (s) =>
+            s.name.toLowerCase().includes(q) ||
+            s.id.toLowerCase().includes(q) ||
+            (s.description && s.description.toLowerCase().includes(q)) ||
+            (s.categories && s.categories.some((c) => c.toLowerCase().includes(q))),
+        );
+        renderSkills(matched);
+      });
+
+      renderSkills(skills);
+    </script>
+  </body>
 </html>

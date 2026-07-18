@@ -2,24 +2,24 @@
 
 Presentation and launch assets for **v1.0.0**. No runtime changes.
 
-| File | Purpose |
-| :--- | :--- |
-| [`github-profile.md`](github-profile.md) | Repository description, topics, social preview, metadata checklist |
-| [`v1.0.0-release-notes.md`](v1.0.0-release-notes.md) | Full release notes |
-| [`github-release.md`](github-release.md) | Paste into GitHub **Releases → New release** body |
-| [`announcement.md`](announcement.md) | Email or blog-style launch post |
-| [`twitter-thread.md`](twitter-thread.md) | X/Twitter thread (8 posts) |
-| [`reddit-post.md`](reddit-post.md) | Reddit post with title suggestion |
-| [`devto-article.md`](devto-article.md) | DEV.to article (front matter included) |
+| File                                                 | Purpose                                                            |
+| :--------------------------------------------------- | :----------------------------------------------------------------- |
+| [`github-profile.md`](github-profile.md)             | Repository description, topics, social preview, metadata checklist |
+| [`v1.0.0-release-notes.md`](v1.0.0-release-notes.md) | Full release notes                                                 |
+| [`github-release.md`](github-release.md)             | Paste into GitHub **Releases → New release** body                  |
+| [`announcement.md`](announcement.md)                 | Email or blog-style launch post                                    |
+| [`twitter-thread.md`](twitter-thread.md)             | X/Twitter thread (8 posts)                                         |
+| [`reddit-post.md`](reddit-post.md)                   | Reddit post with title suggestion                                  |
+| [`devto-article.md`](devto-article.md)               | DEV.to article (front matter included)                             |
 
 ## Assets
 
-| Asset | Path |
-| :--- | :--- |
-| README banner (SVG) | `.design/banner.svg` |
-| Social preview (PNG, 1200×630) | `social-preview.png` |
-| Social preview (SVG source) | `.design/social-preview.svg` |
-| GitHub upload copy | `.github/social-preview.png` |
+| Asset                          | Path                         |
+| :----------------------------- | :--------------------------- |
+| README banner (SVG)            | `.design/banner.svg`         |
+| Social preview (PNG, 1200×630) | `social-preview.png`         |
+| Social preview (SVG source)    | `.design/social-preview.svg` |
+| GitHub upload copy             | `.github/social-preview.png` |
 
 ## Before you publish
 

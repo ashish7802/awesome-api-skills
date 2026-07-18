@@ -212,4 +212,3 @@ $$\text{Score} = (0.50 \times \text{ExplicitEdge}) + (0.20 \times \text{Category
 - **Ecosystem Match (weight 0.10):** 1.0 if both skills belong to the same ecosystem (e.g. Node.js, Python, AWS), else 0.0.
 - **Deployment Match (weight 0.10):** Proportion of shared deployment targets (e.g. Vercel, Docker, Cloudflare).
 - **Jaccard Similarity (weight 0.10):** Graph neighborhood similarity score: $\frac{|N(A) \cap N(B)|}{|N(A) \cup N(B)|}$.
-

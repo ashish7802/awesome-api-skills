@@ -24,7 +24,8 @@ title: nats
 
 ## Graph
 
-_No graph edges for this skill._
+- **related to** → [kafka](/skills/kafka)
+- **related to** → [redis](/skills/redis)
 
 ---
 

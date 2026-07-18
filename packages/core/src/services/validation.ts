@@ -28,4 +28,3 @@ export class ValidationManager {
     return this.engine.validateAll(contexts);
   }
 }
-

@@ -298,7 +298,11 @@ node packages/cli/dist/bin.js validate
 Not published to npm yet.`,
   },
   { slug: 'sdk', title: 'SDK', body: 'Client utilities in `packages/sdk`.' },
-  { slug: 'registry', title: 'Registry', body: 'Graph and index JSON in `registry/`. [View graph →](/graph)' },
+  {
+    slug: 'registry',
+    title: 'Registry',
+    body: 'Graph and index JSON in `registry/`. [View graph →](/graph)',
+  },
   { slug: 'validator', title: 'Validator', body: 'Schema validation in `packages/validator`.' },
   { slug: 'generator', title: 'Generator', body: 'Artifact plugins in `packages/generator`.' },
   {

@@ -28,6 +28,9 @@ title: kubernetes
 - **integrates with** → [helm](/skills/helm)
 - **works well with** → [argo-cd](/skills/argo-cd)
 - **monitors** → [prometheus](/skills/prometheus)
+- **deploys to** ← [nestjs](/skills/nestjs)
+- **integrates with** ← [nginx](/skills/nginx)
+- **integrates with** ← [traefik](/skills/traefik)
 
 ---
 

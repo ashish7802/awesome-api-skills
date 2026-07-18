@@ -1,5 +1,10 @@
 import { describe, it, expect } from 'vitest';
-import { ValidatorEngine, MetadataPresenceRule, MetadataSchemaValidationRule, ValidationContext } from '../src/index.js';
+import {
+  ValidatorEngine,
+  MetadataPresenceRule,
+  MetadataSchemaValidationRule,
+  ValidationContext,
+} from '../src/index.js';
 import { SkillMetadata } from '@awesome-api-skills/shared-types';
 
 describe('Validator Engine', () => {
@@ -108,4 +113,3 @@ describe('Validator Engine', () => {
     expect(result.diagnostics[0].id).toBe('ERR-SCHEMA-VALIDATION');
   });
 });
-

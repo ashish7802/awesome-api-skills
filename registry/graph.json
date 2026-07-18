@@ -1,871 +1,1692 @@
 {
-  "version": "1.0.0",
-  "syncedAt": "2026-07-03T07:58:23.389Z",
-  "nodes": {
-    "algolia": {
+  "nodes": [
+    {
       "id": "algolia",
-      "name": "algolia",
-      "categories": [
-        "Search"
-      ],
-      "version": "1.0.0"
+      "label": "algolia",
+      "categories": ["Search"],
+      "ecosystem": "various"
     },
-    "anthropic": {
+    {
       "id": "anthropic",
-      "name": "anthropic",
-      "categories": [
-        "AI"
-      ],
-      "version": "1.0.0"
+      "label": "anthropic",
+      "categories": ["AI"],
+      "ecosystem": "various"
     },
-    "argo-cd": {
+    {
       "id": "argo-cd",
-      "name": "argo-cd",
-      "categories": [
-        "CI/CD",
-        "Infrastructure"
-      ],
-      "version": "1.0.0"
+      "label": "argo-cd",
+      "categories": ["CI/CD", "Infrastructure"],
+      "ecosystem": "devops"
     },
-    "auth0": {
+    {
       "id": "auth0",
-      "name": "auth0",
-      "categories": [
-        "Authentication",
-        "Security"
-      ],
-      "version": "1.0.0"
+      "label": "auth0",
+      "categories": ["Authentication", "Security"],
+      "ecosystem": "various"
     },
-    "aws-dynamodb": {
+    {
       "id": "aws-dynamodb",
-      "name": "aws-dynamodb",
-      "categories": [
-        "Databases",
-        "Cloud"
-      ],
-      "version": "1.0.0"
+      "label": "aws-dynamodb",
+      "categories": ["Databases", "Cloud"],
+      "ecosystem": "various"
     },
-    "aws-s3": {
+    {
       "id": "aws-s3",
-      "name": "aws-s3",
-      "categories": [
-        "Cloud",
-        "Storage"
-      ],
-      "version": "1.0.0"
+      "label": "aws-s3",
+      "categories": ["Cloud", "Storage"],
+      "ecosystem": "various"
     },
-    "azure-blob-storage": {
+    {
       "id": "azure-blob-storage",
-      "name": "azure-blob-storage",
-      "categories": [
-        "Cloud",
-        "Storage"
-      ],
-      "version": "1.0.0"
+      "label": "azure-blob-storage",
+      "categories": ["Cloud", "Storage"],
+      "ecosystem": "various"
     },
-    "azure-openai": {
+    {
       "id": "azure-openai",
-      "name": "azure-openai",
-      "categories": [
-        "AI",
-        "Enterprise"
-      ],
-      "version": "1.0.0"
+      "label": "azure-openai",
+      "categories": ["AI", "Enterprise"],
+      "ecosystem": "various"
     },
-    "better-auth": {
+    {
       "id": "better-auth",
-      "name": "better-auth",
-      "categories": [
-        "Authentication"
-      ],
-      "version": "1.0.0"
+      "label": "better-auth",
+      "categories": ["Authentication"],
+      "ecosystem": "various"
     },
-    "biome": {
+    {
       "id": "biome",
-      "name": "biome",
-      "categories": [
-        "Developer Tools"
-      ],
-      "version": "1.0.0"
+      "label": "biome",
+      "categories": ["Developer Tools"],
+      "ecosystem": "javascript"
     },
-    "bullmq": {
+    {
       "id": "bullmq",
-      "name": "bullmq",
-      "categories": [
-        "Messaging",
-        "Developer Tools"
-      ],
-      "version": "1.0.0"
+      "label": "bullmq",
+      "categories": ["Messaging", "Developer Tools"],
+      "ecosystem": "javascript"
     },
-    "caddy": {
+    {
       "id": "caddy",
-      "name": "caddy",
-      "categories": [
-        "Infrastructure",
-        "Security"
-      ],
-      "version": "1.0.0"
+      "label": "caddy",
+      "categories": ["Infrastructure", "Security"],
+      "ecosystem": "devops"
     },
-    "clerk": {
+    {
       "id": "clerk",
-      "name": "clerk",
-      "categories": [
-        "Authentication",
-        "Security"
-      ],
-      "version": "1.0.0"
+      "label": "clerk",
+      "categories": ["Authentication", "Security"],
+      "ecosystem": "various"
     },
-    "cloudflare": {
+    {
       "id": "cloudflare",
-      "name": "cloudflare",
-      "categories": [
-        "Cloud",
-        "Security"
-      ],
-      "version": "1.0.0"
+      "label": "cloudflare",
+      "categories": ["Cloud", "Security"],
+      "ecosystem": "various"
     },
-    "cloudflare-workers": {
+    {
       "id": "cloudflare-workers",
-      "name": "cloudflare-workers",
-      "categories": [
-        "Cloud",
-        "Developer Tools"
-      ],
-      "version": "1.0.0"
+      "label": "cloudflare-workers",
+      "categories": ["Cloud", "Developer Tools"],
+      "ecosystem": "javascript"
     },
-    "convex": {
+    {
       "id": "convex",
-      "name": "convex",
-      "categories": [
-        "Databases",
-        "Cloud"
-      ],
-      "version": "1.0.0"
+      "label": "convex",
+      "categories": ["Databases", "Cloud"],
+      "ecosystem": "various"
     },
-    "datadog": {
+    {
       "id": "datadog",
-      "name": "datadog",
-      "categories": [
-        "Monitoring",
-        "DevOps"
-      ],
-      "version": "1.0.0"
+      "label": "datadog",
+      "categories": ["Monitoring", "DevOps"],
+      "ecosystem": "various"
     },
-    "deno-deploy": {
+    {
       "id": "deno-deploy",
-      "name": "deno-deploy",
-      "categories": [
-        "Cloud",
-        "Developer Tools"
-      ],
-      "version": "1.0.0"
+      "label": "deno-deploy",
+      "categories": ["Cloud", "Developer Tools"],
+      "ecosystem": "javascript"
     },
-    "digitalocean": {
+    {
       "id": "digitalocean",
-      "name": "digitalocean",
-      "categories": [
-        "Cloud"
-      ],
-      "version": "1.0.0"
+      "label": "digitalocean",
+      "categories": ["Cloud"],
+      "ecosystem": "various"
     },
-    "discord": {
+    {
       "id": "discord",
-      "name": "discord",
-      "categories": [
-        "Messaging"
-      ],
-      "version": "1.0.0"
+      "label": "discord",
+      "categories": ["Messaging"],
+      "ecosystem": "various"
     },
-    "docker": {
+    {
       "id": "docker",
-      "name": "docker",
-      "categories": [
-        "Developer Tools",
-        "Infrastructure"
-      ],
-      "version": "1.0.0"
+      "label": "docker",
+      "categories": ["Developer Tools", "Infrastructure"],
+      "ecosystem": "devops"
     },
-    "drizzle": {
+    {
       "id": "drizzle",
-      "name": "drizzle",
-      "categories": [
-        "Databases",
-        "Developer Tools"
-      ],
-      "version": "1.0.0"
+      "label": "drizzle",
+      "categories": ["Databases", "Developer Tools"],
+      "ecosystem": "typescript"
     },
-    "eslint": {
+    {
       "id": "eslint",
-      "name": "eslint",
-      "categories": [
-        "Developer Tools"
-      ],
-      "version": "1.0.0"
+      "label": "eslint",
+      "categories": ["Developer Tools"],
+      "ecosystem": "javascript"
     },
-    "express": {
+    {
       "id": "express",
-      "name": "express",
-      "categories": [
-        "Backend Frameworks"
-      ],
-      "version": "1.0.0"
+      "label": "express",
+      "categories": ["Backend Frameworks"],
+      "ecosystem": "javascript"
     },
-    "fastapi": {
+    {
       "id": "fastapi",
-      "name": "fastapi",
-      "categories": [
-        "Backend Frameworks"
-      ],
-      "version": "1.0.0"
+      "label": "fastapi",
+      "categories": ["Backend Frameworks"],
+      "ecosystem": "python"
     },
-    "firebase": {
+    {
       "id": "firebase",
-      "name": "firebase",
-      "categories": [
-        "Cloud",
-        "Databases"
-      ],
-      "version": "1.0.0"
+      "label": "firebase",
+      "categories": ["Cloud", "Databases"],
+      "ecosystem": "various"
     },
-    "fly": {
+    {
       "id": "fly",
-      "name": "fly",
-      "categories": [
-        "Cloud",
-        "DevOps"
-      ],
-      "version": "1.0.0"
+      "label": "fly",
+      "categories": ["Cloud", "DevOps"],
+      "ecosystem": "various"
     },
-    "gemini": {
+    {
       "id": "gemini",
-      "name": "gemini",
-      "categories": [
-        "AI"
-      ],
-      "version": "1.0.0"
+      "label": "gemini",
+      "categories": ["AI"],
+      "ecosystem": "various"
     },
-    "git": {
+    {
       "id": "git",
-      "name": "git",
-      "categories": [
-        "Developer Tools"
-      ],
-      "version": "1.0.0"
+      "label": "git",
+      "categories": ["Developer Tools"],
+      "ecosystem": "devops"
     },
-    "github": {
+    {
       "id": "github",
-      "name": "github",
-      "categories": [
-        "DevOps",
-        "Developer Tools"
-      ],
-      "version": "1.0.0"
+      "label": "github",
+      "categories": ["DevOps", "Developer Tools"],
+      "ecosystem": "various"
     },
-    "github-actions": {
+    {
       "id": "github-actions",
-      "name": "github-actions",
-      "categories": [
-        "CI/CD",
-        "Developer Tools"
-      ],
-      "version": "1.0.0"
+      "label": "github-actions",
+      "categories": ["CI/CD", "Developer Tools"],
+      "ecosystem": "devops"
     },
-    "google-cloud-storage": {
+    {
       "id": "google-cloud-storage",
-      "name": "google-cloud-storage",
-      "categories": [
-        "Cloud",
-        "Storage"
-      ],
-      "version": "1.0.0"
+      "label": "google-cloud-storage",
+      "categories": ["Cloud", "Storage"],
+      "ecosystem": "various"
     },
-    "grafana": {
+    {
       "id": "grafana",
-      "name": "grafana",
-      "categories": [
-        "Observability"
-      ],
-      "version": "1.0.0"
+      "label": "grafana",
+      "categories": ["Observability"],
+      "ecosystem": "devops"
     },
-    "helm": {
+    {
       "id": "helm",
-      "name": "helm",
-      "categories": [
-        "Developer Tools",
-        "Infrastructure"
-      ],
-      "version": "1.0.0"
+      "label": "helm",
+      "categories": ["Developer Tools", "Infrastructure"],
+      "ecosystem": "devops"
     },
-    "hono": {
+    {
       "id": "hono",
-      "name": "hono",
-      "categories": [
-        "Backend Frameworks"
-      ],
-      "version": "1.0.0"
+      "label": "hono",
+      "categories": ["Backend Frameworks"],
+      "ecosystem": "javascript"
     },
-    "jaeger": {
+    {
       "id": "jaeger",
-      "name": "jaeger",
-      "categories": [
-        "Observability"
-      ],
-      "version": "1.0.0"
+      "label": "jaeger",
+      "categories": ["Observability"],
+      "ecosystem": "devops"
     },
-    "jwt": {
+    {
       "id": "jwt",
-      "name": "jwt",
-      "categories": [
-        "Authentication",
-        "Security"
-      ],
-      "version": "1.0.0"
+      "label": "jwt",
+      "categories": ["Authentication", "Security"],
+      "ecosystem": "security"
     },
-    "kafka": {
+    {
       "id": "kafka",
-      "name": "kafka",
-      "categories": [
-        "Messaging",
-        "Enterprise"
-      ],
-      "version": "1.0.0"
+      "label": "kafka",
+      "categories": ["Messaging", "Enterprise"],
+      "ecosystem": "infrastructure"
     },
-    "kubernetes": {
+    {
       "id": "kubernetes",
-      "name": "kubernetes",
-      "categories": [
-        "Developer Tools",
-        "Infrastructure"
-      ],
-      "version": "1.0.0"
+      "label": "kubernetes",
+      "categories": ["Developer Tools", "Infrastructure"],
+      "ecosystem": "devops"
     },
-    "langchain": {
+    {
       "id": "langchain",
-      "name": "langchain",
-      "categories": [
-        "AI",
-        "Developer Tools"
-      ],
-      "version": "1.0.0"
+      "label": "langchain",
+      "categories": ["AI", "Developer Tools"],
+      "ecosystem": "ai"
     },
-    "lemon-squeezy": {
+    {
       "id": "lemon-squeezy",
-      "name": "lemon-squeezy",
-      "categories": [
-        "Payments",
-        "Finance"
-      ],
-      "version": "1.0.0"
+      "label": "lemon-squeezy",
+      "categories": ["Payments", "Finance"],
+      "ecosystem": "various"
     },
-    "linux": {
+    {
       "id": "linux",
-      "name": "linux",
-      "categories": [
-        "Infrastructure",
-        "Enterprise"
-      ],
-      "version": "1.0.0"
+      "label": "linux",
+      "categories": ["Infrastructure", "Enterprise"],
+      "ecosystem": "devops"
     },
-    "llamaindex": {
+    {
       "id": "llamaindex",
-      "name": "llamaindex",
-      "categories": [
-        "AI",
-        "Developer Tools"
-      ],
-      "version": "1.0.0"
+      "label": "llamaindex",
+      "categories": ["AI", "Developer Tools"],
+      "ecosystem": "ai"
     },
-    "loki": {
+    {
       "id": "loki",
-      "name": "loki",
-      "categories": [
-        "Observability"
-      ],
-      "version": "1.0.0"
+      "label": "loki",
+      "categories": ["Observability"],
+      "ecosystem": "devops"
     },
-    "mapbox": {
+    {
       "id": "mapbox",
-      "name": "mapbox",
-      "categories": [
-        "Maps",
-        "Developer Tools"
-      ],
-      "version": "1.0.0"
+      "label": "mapbox",
+      "categories": ["Maps", "Developer Tools"],
+      "ecosystem": "various"
     },
-    "meilisearch": {
+    {
       "id": "meilisearch",
-      "name": "meilisearch",
-      "categories": [
-        "Search",
-        "Databases"
-      ],
-      "version": "1.0.0"
+      "label": "meilisearch",
+      "categories": ["Search", "Databases"],
+      "ecosystem": "various"
     },
-    "mixpanel": {
+    {
       "id": "mixpanel",
-      "name": "mixpanel",
-      "categories": [
-        "Analytics"
-      ],
-      "version": "1.0.0"
+      "label": "mixpanel",
+      "categories": ["Analytics"],
+      "ecosystem": "various"
     },
-    "mongodb-atlas": {
+    {
       "id": "mongodb-atlas",
-      "name": "mongodb-atlas",
-      "categories": [
-        "Databases",
-        "Cloud"
-      ],
-      "version": "1.0.0"
+      "label": "mongodb-atlas",
+      "categories": ["Databases", "Cloud"],
+      "ecosystem": "various"
     },
-    "mysql": {
+    {
       "id": "mysql",
-      "name": "mysql",
-      "categories": [
-        "Databases"
-      ],
-      "version": "1.0.0"
+      "label": "mysql",
+      "categories": ["Databases"],
+      "ecosystem": "database"
     },
-    "nats": {
+    {
       "id": "nats",
-      "name": "nats",
-      "categories": [
-        "Messaging",
-        "DevOps"
-      ],
-      "version": "1.0.0"
+      "label": "nats",
+      "categories": ["Messaging", "DevOps"],
+      "ecosystem": "various"
     },
-    "neon": {
+    {
       "id": "neon",
-      "name": "neon",
-      "categories": [
-        "Databases",
-        "Cloud"
-      ],
-      "version": "1.0.0"
+      "label": "neon",
+      "categories": ["Databases", "Cloud"],
+      "ecosystem": "various"
     },
-    "nestjs": {
+    {
       "id": "nestjs",
-      "name": "nestjs",
-      "categories": [
-        "Backend Frameworks"
-      ],
-      "version": "1.0.0"
+      "label": "nestjs",
+      "categories": ["Backend Frameworks"],
+      "ecosystem": "typescript"
     },
-    "nextjs": {
+    {
       "id": "nextjs",
-      "name": "nextjs",
-      "categories": [
-        "Frontend Frameworks"
-      ],
-      "version": "1.0.0"
+      "label": "nextjs",
+      "categories": ["Frontend Frameworks"],
+      "ecosystem": "react"
     },
-    "nginx": {
+    {
       "id": "nginx",
-      "name": "nginx",
-      "categories": [
-        "Developer Tools",
-        "Infrastructure"
-      ],
-      "version": "1.0.0"
+      "label": "nginx",
+      "categories": ["Developer Tools", "Infrastructure"],
+      "ecosystem": "devops"
     },
-    "nuxt": {
+    {
       "id": "nuxt",
-      "name": "nuxt",
-      "categories": [
-        "Frontend Frameworks"
-      ],
-      "version": "1.0.0"
+      "label": "nuxt",
+      "categories": ["Frontend Frameworks"],
+      "ecosystem": "vue"
     },
-    "oauth2": {
+    {
       "id": "oauth2",
-      "name": "oauth2",
-      "categories": [
-        "Authentication",
-        "Security"
-      ],
-      "version": "1.0.0"
+      "label": "oauth2",
+      "categories": ["Authentication", "Security"],
+      "ecosystem": "security"
     },
-    "okta": {
+    {
       "id": "okta",
-      "name": "okta",
-      "categories": [
-        "Authentication",
-        "Enterprise"
-      ],
-      "version": "1.0.0"
+      "label": "okta",
+      "categories": ["Authentication", "Enterprise"],
+      "ecosystem": "various"
     },
-    "ollama": {
+    {
       "id": "ollama",
-      "name": "ollama",
-      "categories": [
-        "AI",
-        "Developer Tools"
-      ],
-      "version": "1.0.0"
+      "label": "ollama",
+      "categories": ["AI", "Developer Tools"],
+      "ecosystem": "ai"
     },
-    "openai": {
+    {
       "id": "openai",
-      "name": "openai",
-      "categories": [
-        "AI",
-        "Developer Tools"
-      ],
-      "version": "1.0.0"
+      "label": "openai",
+      "categories": ["AI", "Developer Tools"],
+      "ecosystem": "various"
     },
-    "openid-connect": {
+    {
       "id": "openid-connect",
-      "name": "openid-connect",
-      "categories": [
-        "Authentication",
-        "Security"
-      ],
-      "version": "1.0.0"
+      "label": "openid-connect",
+      "categories": ["Authentication", "Security"],
+      "ecosystem": "security"
     },
-    "opentelemetry": {
+    {
       "id": "opentelemetry",
-      "name": "opentelemetry",
-      "categories": [
-        "Observability"
-      ],
-      "version": "1.0.0"
+      "label": "opentelemetry",
+      "categories": ["Observability"],
+      "ecosystem": "devops"
     },
-    "paddle": {
+    {
       "id": "paddle",
-      "name": "paddle",
-      "categories": [
-        "Payments",
-        "Finance"
-      ],
-      "version": "1.0.0"
+      "label": "paddle",
+      "categories": ["Payments", "Finance"],
+      "ecosystem": "various"
     },
-    "pinecone": {
+    {
       "id": "pinecone",
-      "name": "pinecone",
-      "categories": [
-        "Databases",
-        "AI"
-      ],
-      "version": "1.0.0"
+      "label": "pinecone",
+      "categories": ["Databases", "AI"],
+      "ecosystem": "various"
     },
-    "plaid": {
+    {
       "id": "plaid",
-      "name": "plaid",
-      "categories": [
-        "Payments",
-        "Finance"
-      ],
-      "version": "1.0.0"
+      "label": "plaid",
+      "categories": ["Payments", "Finance"],
+      "ecosystem": "various"
     },
-    "planetscale": {
+    {
       "id": "planetscale",
-      "name": "planetscale",
-      "categories": [
-        "Databases",
-        "Cloud"
-      ],
-      "version": "1.0.0"
+      "label": "planetscale",
+      "categories": ["Databases", "Cloud"],
+      "ecosystem": "various"
     },
-    "playwright": {
+    {
       "id": "playwright",
-      "name": "playwright",
-      "categories": [
-        "Developer Tools",
-        "Testing"
-      ],
-      "version": "1.0.0"
+      "label": "playwright",
+      "categories": ["Developer Tools", "Testing"],
+      "ecosystem": "javascript"
     },
-    "postgresql": {
+    {
       "id": "postgresql",
-      "name": "postgresql",
-      "categories": [
-        "Databases"
-      ],
-      "version": "1.0.0"
+      "label": "postgresql",
+      "categories": ["Databases"],
+      "ecosystem": "database"
     },
-    "posthog": {
+    {
       "id": "posthog",
-      "name": "posthog",
-      "categories": [
-        "Analytics"
-      ],
-      "version": "1.0.0"
+      "label": "posthog",
+      "categories": ["Analytics"],
+      "ecosystem": "various"
     },
-    "prettier": {
+    {
       "id": "prettier",
-      "name": "prettier",
-      "categories": [
-        "Developer Tools"
-      ],
-      "version": "1.0.0"
+      "label": "prettier",
+      "categories": ["Developer Tools"],
+      "ecosystem": "javascript"
     },
-    "prisma": {
+    {
       "id": "prisma",
-      "name": "prisma",
-      "categories": [
-        "Databases",
-        "Developer Tools"
-      ],
-      "version": "1.0.0"
+      "label": "prisma",
+      "categories": ["Databases", "Developer Tools"],
+      "ecosystem": "typescript"
     },
-    "prometheus": {
+    {
       "id": "prometheus",
-      "name": "prometheus",
-      "categories": [
-        "Observability"
-      ],
-      "version": "1.0.0"
+      "label": "prometheus",
+      "categories": ["Observability"],
+      "ecosystem": "devops"
     },
-    "pulumi": {
+    {
       "id": "pulumi",
-      "name": "pulumi",
-      "categories": [
-        "Developer Tools",
-        "Infrastructure"
-      ],
-      "version": "1.0.0"
+      "label": "pulumi",
+      "categories": ["Developer Tools", "Infrastructure"],
+      "ecosystem": "devops"
     },
-    "rabbitmq": {
+    {
       "id": "rabbitmq",
-      "name": "rabbitmq",
-      "categories": [
-        "Messaging",
-        "Enterprise"
-      ],
-      "version": "1.0.0"
+      "label": "rabbitmq",
+      "categories": ["Messaging", "Enterprise"],
+      "ecosystem": "infrastructure"
     },
-    "railway": {
+    {
       "id": "railway",
-      "name": "railway",
-      "categories": [
-        "Cloud",
-        "DevOps"
-      ],
-      "version": "1.0.0"
+      "label": "railway",
+      "categories": ["Cloud", "DevOps"],
+      "ecosystem": "various"
     },
-    "react": {
+    {
       "id": "react",
-      "name": "react",
-      "categories": [
-        "Frontend Frameworks"
-      ],
-      "version": "1.0.0"
+      "label": "react",
+      "categories": ["Frontend Frameworks"],
+      "ecosystem": "javascript"
     },
-    "redis": {
+    {
       "id": "redis",
-      "name": "redis",
-      "categories": [
-        "Databases"
-      ],
-      "version": "1.0.0"
+      "label": "redis",
+      "categories": ["Databases"],
+      "ecosystem": "various"
     },
-    "redis-streams": {
+    {
       "id": "redis-streams",
-      "name": "redis-streams",
-      "categories": [
-        "Messaging",
-        "Databases"
-      ],
-      "version": "1.0.0"
+      "label": "redis-streams",
+      "categories": ["Messaging", "Databases"],
+      "ecosystem": "database"
     },
-    "render": {
+    {
       "id": "render",
-      "name": "render",
-      "categories": [
-        "Cloud",
-        "DevOps"
-      ],
-      "version": "1.0.0"
+      "label": "render",
+      "categories": ["Cloud", "DevOps"],
+      "ecosystem": "various"
     },
-    "resend": {
+    {
       "id": "resend",
-      "name": "resend",
-      "categories": [
-        "Messaging"
-      ],
-      "version": "1.0.0"
+      "label": "resend",
+      "categories": ["Messaging"],
+      "ecosystem": "various"
     },
-    "revenuecat": {
+    {
       "id": "revenuecat",
-      "name": "revenuecat",
-      "categories": [
-        "Payments",
-        "Finance"
-      ],
-      "version": "1.0.0"
+      "label": "revenuecat",
+      "categories": ["Payments", "Finance"],
+      "ecosystem": "various"
     },
-    "sendgrid": {
+    {
       "id": "sendgrid",
-      "name": "sendgrid",
-      "categories": [
-        "Messaging"
-      ],
-      "version": "1.0.0"
+      "label": "sendgrid",
+      "categories": ["Messaging"],
+      "ecosystem": "various"
     },
-    "sentry": {
+    {
       "id": "sentry",
-      "name": "sentry",
-      "categories": [
-        "Monitoring"
-      ],
-      "version": "1.0.0"
+      "label": "sentry",
+      "categories": ["Monitoring"],
+      "ecosystem": "various"
     },
-    "shopify": {
+    {
       "id": "shopify",
-      "name": "shopify",
-      "categories": [
-        "Commerce"
-      ],
-      "version": "1.0.0"
+      "label": "shopify",
+      "categories": ["Commerce"],
+      "ecosystem": "various"
     },
-    "slack": {
+    {
       "id": "slack",
-      "name": "slack",
-      "categories": [
-        "Messaging",
-        "Productivity"
-      ],
-      "version": "1.0.0"
+      "label": "slack",
+      "categories": ["Messaging", "Productivity"],
+      "ecosystem": "various"
     },
-    "sqlite": {
+    {
       "id": "sqlite",
-      "name": "sqlite",
-      "categories": [
-        "Databases"
-      ],
-      "version": "1.0.0"
+      "label": "sqlite",
+      "categories": ["Databases"],
+      "ecosystem": "database"
     },
-    "stripe": {
+    {
       "id": "stripe",
-      "name": "stripe",
-      "categories": [
-        "Payments",
-        "Commerce"
-      ],
-      "version": "1.0.0"
+      "label": "stripe",
+      "categories": ["Payments", "Commerce"],
+      "ecosystem": "various"
     },
-    "supabase": {
+    {
       "id": "supabase",
-      "name": "supabase",
-      "categories": [
-        "Databases",
-        "Authentication"
-      ],
-      "version": "1.0.0"
+      "label": "supabase",
+      "categories": ["Databases", "Authentication"],
+      "ecosystem": "various"
     },
-    "sveltekit": {
+    {
       "id": "sveltekit",
-      "name": "sveltekit",
-      "categories": [
-        "Frontend Frameworks"
-      ],
-      "version": "1.0.0"
+      "label": "sveltekit",
+      "categories": ["Frontend Frameworks"],
+      "ecosystem": "svelte"
     },
-    "terraform": {
+    {
       "id": "terraform",
-      "name": "terraform",
-      "categories": [
-        "Developer Tools",
-        "Infrastructure"
-      ],
-      "version": "1.0.0"
+      "label": "terraform",
+      "categories": ["Developer Tools", "Infrastructure"],
+      "ecosystem": "devops"
     },
-    "traefik": {
+    {
       "id": "traefik",
-      "name": "traefik",
-      "categories": [
-        "Infrastructure",
-        "Developer Tools"
-      ],
-      "version": "1.0.0"
+      "label": "traefik",
+      "categories": ["Infrastructure", "Developer Tools"],
+      "ecosystem": "devops"
     },
-    "trpc": {
+    {
       "id": "trpc",
-      "name": "trpc",
-      "categories": [
-        "Backend Frameworks",
-        "Developer Tools"
-      ],
-      "version": "1.0.0"
+      "label": "trpc",
+      "categories": ["Backend Frameworks", "Developer Tools"],
+      "ecosystem": "typescript"
     },
-    "turborepo": {
+    {
       "id": "turborepo",
-      "name": "turborepo",
-      "categories": [
-        "Developer Tools"
-      ],
-      "version": "1.0.0"
+      "label": "turborepo",
+      "categories": ["Developer Tools"],
+      "ecosystem": "javascript"
     },
-    "turso": {
+    {
       "id": "turso",
-      "name": "turso",
-      "categories": [
-        "Databases",
-        "Cloud"
-      ],
-      "version": "1.0.0"
+      "label": "turso",
+      "categories": ["Databases", "Cloud"],
+      "ecosystem": "various"
     },
-    "twilio": {
+    {
       "id": "twilio",
-      "name": "twilio",
-      "categories": [
-        "Messaging"
-      ],
-      "version": "1.0.0"
+      "label": "twilio",
+      "categories": ["Messaging"],
+      "ecosystem": "various"
     },
-    "typesense": {
+    {
       "id": "typesense",
-      "name": "typesense",
-      "categories": [
-        "Search",
-        "Databases"
-      ],
-      "version": "1.0.0"
+      "label": "typesense",
+      "categories": ["Search", "Databases"],
+      "ecosystem": "various"
     },
-    "upstash": {
+    {
       "id": "upstash",
-      "name": "upstash",
-      "categories": [
-        "Databases",
-        "Messaging"
-      ],
-      "version": "1.0.0"
+      "label": "upstash",
+      "categories": ["Databases", "Messaging"],
+      "ecosystem": "various"
     },
-    "vercel": {
+    {
       "id": "vercel",
-      "name": "vercel",
-      "categories": [
-        "Cloud",
-        "DevOps"
-      ],
-      "version": "1.0.0"
+      "label": "vercel",
+      "categories": ["Cloud", "DevOps"],
+      "ecosystem": "various"
     },
-    "vitest": {
+    {
       "id": "vitest",
-      "name": "vitest",
-      "categories": [
-        "Testing",
-        "Developer Tools"
-      ],
-      "version": "1.0.0"
+      "label": "vitest",
+      "categories": ["Testing", "Developer Tools"],
+      "ecosystem": "javascript"
     },
-    "vllm": {
+    {
       "id": "vllm",
-      "name": "vllm",
-      "categories": [
-        "AI",
-        "Infrastructure"
-      ],
-      "version": "1.0.0"
+      "label": "vllm",
+      "categories": ["AI", "Infrastructure"],
+      "ecosystem": "ai"
     },
-    "vue": {
+    {
       "id": "vue",
-      "name": "vue",
-      "categories": [
-        "Frontend Frameworks"
-      ],
-      "version": "1.0.0"
+      "label": "vue",
+      "categories": ["Frontend Frameworks"],
+      "ecosystem": "javascript"
+    },
+    {
+      "id": "xquik",
+      "label": "xquik",
+      "categories": ["Developer Tools", "AI"],
+      "ecosystem": "various"
     }
-  },
-  "edges": []
+  ],
+  "edges": [
+    {
+      "source": "argo-cd",
+      "target": "kubernetes",
+      "type": "depends_on"
+    },
+    {
+      "source": "argo-cd",
+      "target": "helm",
+      "type": "works_well_with"
+    },
+    {
+      "source": "argo-cd",
+      "target": "github-actions",
+      "type": "alternative_to"
+    },
+    {
+      "source": "auth0",
+      "target": "oauth2",
+      "type": "implements"
+    },
+    {
+      "source": "auth0",
+      "target": "openid-connect",
+      "type": "implements"
+    },
+    {
+      "source": "auth0",
+      "target": "nextjs",
+      "type": "integrates_with"
+    },
+    {
+      "source": "aws-dynamodb",
+      "target": "terraform",
+      "type": "provisioned_by"
+    },
+    {
+      "source": "aws-dynamodb",
+      "target": "pulumi",
+      "type": "provisioned_by"
+    },
+    {
+      "source": "aws-s3",
+      "target": "terraform",
+      "type": "provisioned_by"
+    },
+    {
+      "source": "aws-s3",
+      "target": "pulumi",
+      "type": "provisioned_by"
+    },
+    {
+      "source": "azure-blob-storage",
+      "target": "aws s3",
+      "type": "related_to"
+    },
+    {
+      "source": "azure-blob-storage",
+      "target": "google cloud storage",
+      "type": "related_to"
+    },
+    {
+      "source": "azure-openai",
+      "target": "openai",
+      "type": "related_to"
+    },
+    {
+      "source": "azure-openai",
+      "target": "anthropic",
+      "type": "related_to"
+    },
+    {
+      "source": "better-auth",
+      "target": "clerk",
+      "type": "related_to"
+    },
+    {
+      "source": "better-auth",
+      "target": "neon",
+      "type": "related_to"
+    },
+    {
+      "source": "biome",
+      "target": "eslint",
+      "type": "replaces"
+    },
+    {
+      "source": "biome",
+      "target": "prettier",
+      "type": "replaces"
+    },
+    {
+      "source": "biome",
+      "target": "react",
+      "type": "works_well_with"
+    },
+    {
+      "source": "bullmq",
+      "target": "redis",
+      "type": "depends_on"
+    },
+    {
+      "source": "bullmq",
+      "target": "rabbitmq",
+      "type": "alternative_to"
+    },
+    {
+      "source": "bullmq",
+      "target": "nestjs",
+      "type": "integrates_with"
+    },
+    {
+      "source": "caddy",
+      "target": "nginx",
+      "type": "alternative_to"
+    },
+    {
+      "source": "caddy",
+      "target": "docker",
+      "type": "works_well_with"
+    },
+    {
+      "source": "clerk",
+      "target": "neon",
+      "type": "related_to"
+    },
+    {
+      "source": "clerk",
+      "target": "supabase",
+      "type": "related_to"
+    },
+    {
+      "source": "clerk",
+      "target": "resend",
+      "type": "related_to"
+    },
+    {
+      "source": "cloudflare-workers",
+      "target": "hono",
+      "type": "works_well_with"
+    },
+    {
+      "source": "cloudflare-workers",
+      "target": "drizzle",
+      "type": "integrates_with"
+    },
+    {
+      "source": "convex",
+      "target": "clerk",
+      "type": "related_to"
+    },
+    {
+      "source": "convex",
+      "target": "vercel",
+      "type": "related_to"
+    },
+    {
+      "source": "deno-deploy",
+      "target": "cloudflare-workers",
+      "type": "alternative_to"
+    },
+    {
+      "source": "deno-deploy",
+      "target": "hono",
+      "type": "works_well_with"
+    },
+    {
+      "source": "digitalocean",
+      "target": "aws s3",
+      "type": "related_to"
+    },
+    {
+      "source": "digitalocean",
+      "target": "render",
+      "type": "related_to"
+    },
+    {
+      "source": "discord",
+      "target": "express",
+      "type": "integrates_with"
+    },
+    {
+      "source": "discord",
+      "target": "fastapi",
+      "type": "integrates_with"
+    },
+    {
+      "source": "docker",
+      "target": "kubernetes",
+      "type": "deploys_to"
+    },
+    {
+      "source": "docker",
+      "target": "github-actions",
+      "type": "integrates_with"
+    },
+    {
+      "source": "drizzle",
+      "target": "postgresql",
+      "type": "integrates_with"
+    },
+    {
+      "source": "drizzle",
+      "target": "mysql",
+      "type": "integrates_with"
+    },
+    {
+      "source": "drizzle",
+      "target": "sqlite",
+      "type": "integrates_with"
+    },
+    {
+      "source": "drizzle",
+      "target": "prisma",
+      "type": "alternative_to"
+    },
+    {
+      "source": "drizzle",
+      "target": "neon",
+      "type": "works_well_with"
+    },
+    {
+      "source": "drizzle",
+      "target": "turso",
+      "type": "works_well_with"
+    },
+    {
+      "source": "eslint",
+      "target": "biome",
+      "type": "alternative_to"
+    },
+    {
+      "source": "eslint",
+      "target": "prettier",
+      "type": "works_well_with"
+    },
+    {
+      "source": "eslint",
+      "target": "nextjs",
+      "type": "works_well_with"
+    },
+    {
+      "source": "express",
+      "target": "fastapi",
+      "type": "alternative_to"
+    },
+    {
+      "source": "express",
+      "target": "hono",
+      "type": "alternative_to"
+    },
+    {
+      "source": "express",
+      "target": "nestjs",
+      "type": "alternative_to"
+    },
+    {
+      "source": "express",
+      "target": "redis",
+      "type": "works_well_with"
+    },
+    {
+      "source": "fastapi",
+      "target": "express",
+      "type": "alternative_to"
+    },
+    {
+      "source": "fastapi",
+      "target": "openai",
+      "type": "integrates_with"
+    },
+    {
+      "source": "fastapi",
+      "target": "docker",
+      "type": "deploys_to"
+    },
+    {
+      "source": "fly",
+      "target": "turso",
+      "type": "related_to"
+    },
+    {
+      "source": "fly",
+      "target": "render",
+      "type": "related_to"
+    },
+    {
+      "source": "gemini",
+      "target": "langchain",
+      "type": "integrates_with"
+    },
+    {
+      "source": "gemini",
+      "target": "llamaindex",
+      "type": "integrates_with"
+    },
+    {
+      "source": "git",
+      "target": "github-actions",
+      "type": "works_well_with"
+    },
+    {
+      "source": "github-actions",
+      "target": "git",
+      "type": "depends_on"
+    },
+    {
+      "source": "github-actions",
+      "target": "docker",
+      "type": "works_well_with"
+    },
+    {
+      "source": "google-cloud-storage",
+      "target": "aws s3",
+      "type": "related_to"
+    },
+    {
+      "source": "google-cloud-storage",
+      "target": "firebase",
+      "type": "related_to"
+    },
+    {
+      "source": "grafana",
+      "target": "prometheus",
+      "type": "integrates_with"
+    },
+    {
+      "source": "grafana",
+      "target": "loki",
+      "type": "integrates_with"
+    },
+    {
+      "source": "grafana",
+      "target": "datadog",
+      "type": "alternative_to"
+    },
+    {
+      "source": "helm",
+      "target": "kubernetes",
+      "type": "depends_on"
+    },
+    {
+      "source": "helm",
+      "target": "argo-cd",
+      "type": "integrates_with"
+    },
+    {
+      "source": "hono",
+      "target": "express",
+      "type": "alternative_to"
+    },
+    {
+      "source": "hono",
+      "target": "cloudflare",
+      "type": "deploys_to"
+    },
+    {
+      "source": "jaeger",
+      "target": "opentelemetry",
+      "type": "depends_on"
+    },
+    {
+      "source": "jaeger",
+      "target": "grafana",
+      "type": "integrates_with"
+    },
+    {
+      "source": "jwt",
+      "target": "oauth2",
+      "type": "works_well_with"
+    },
+    {
+      "source": "jwt",
+      "target": "redis",
+      "type": "integrates_with"
+    },
+    {
+      "source": "kafka",
+      "target": "rabbitmq",
+      "type": "alternative_to"
+    },
+    {
+      "source": "kafka",
+      "target": "redis-streams",
+      "type": "alternative_to"
+    },
+    {
+      "source": "kubernetes",
+      "target": "docker",
+      "type": "depends_on"
+    },
+    {
+      "source": "kubernetes",
+      "target": "helm",
+      "type": "integrates_with"
+    },
+    {
+      "source": "kubernetes",
+      "target": "argo-cd",
+      "type": "works_well_with"
+    },
+    {
+      "source": "kubernetes",
+      "target": "prometheus",
+      "type": "monitors"
+    },
+    {
+      "source": "langchain",
+      "target": "llamaindex",
+      "type": "alternative_to"
+    },
+    {
+      "source": "langchain",
+      "target": "openai",
+      "type": "integrates_with"
+    },
+    {
+      "source": "langchain",
+      "target": "pinecone",
+      "type": "integrates_with"
+    },
+    {
+      "source": "lemon-squeezy",
+      "target": "paddle",
+      "type": "related_to"
+    },
+    {
+      "source": "lemon-squeezy",
+      "target": "stripe",
+      "type": "related_to"
+    },
+    {
+      "source": "linux",
+      "target": "docker",
+      "type": "integrates_with"
+    },
+    {
+      "source": "linux",
+      "target": "nginx",
+      "type": "works_well_with"
+    },
+    {
+      "source": "llamaindex",
+      "target": "langchain",
+      "type": "alternative_to"
+    },
+    {
+      "source": "llamaindex",
+      "target": "openai",
+      "type": "integrates_with"
+    },
+    {
+      "source": "llamaindex",
+      "target": "pinecone",
+      "type": "integrates_with"
+    },
+    {
+      "source": "loki",
+      "target": "grafana",
+      "type": "depends_on"
+    },
+    {
+      "source": "loki",
+      "target": "prometheus",
+      "type": "works_well_with"
+    },
+    {
+      "source": "mapbox",
+      "target": "react",
+      "type": "integrates_with"
+    },
+    {
+      "source": "mapbox",
+      "target": "vue",
+      "type": "integrates_with"
+    },
+    {
+      "source": "meilisearch",
+      "target": "typesense",
+      "type": "related_to"
+    },
+    {
+      "source": "meilisearch",
+      "target": "algolia",
+      "type": "related_to"
+    },
+    {
+      "source": "mixpanel",
+      "target": "posthog",
+      "type": "related_to"
+    },
+    {
+      "source": "mongodb-atlas",
+      "target": "prisma",
+      "type": "integrates_with"
+    },
+    {
+      "source": "mysql",
+      "target": "planetscale",
+      "type": "extended_by"
+    },
+    {
+      "source": "mysql",
+      "target": "prisma",
+      "type": "integrates_with"
+    },
+    {
+      "source": "mysql",
+      "target": "postgresql",
+      "type": "alternative_to"
+    },
+    {
+      "source": "nats",
+      "target": "kafka",
+      "type": "related_to"
+    },
+    {
+      "source": "nats",
+      "target": "redis",
+      "type": "related_to"
+    },
+    {
+      "source": "neon",
+      "target": "vercel",
+      "type": "related_to"
+    },
+    {
+      "source": "neon",
+      "target": "supabase",
+      "type": "related_to"
+    },
+    {
+      "source": "nestjs",
+      "target": "express",
+      "type": "extended_by"
+    },
+    {
+      "source": "nestjs",
+      "target": "docker",
+      "type": "deploys_to"
+    },
+    {
+      "source": "nestjs",
+      "target": "kubernetes",
+      "type": "deploys_to"
+    },
+    {
+      "source": "nextjs",
+      "target": "react",
+      "type": "depends_on"
+    },
+    {
+      "source": "nextjs",
+      "target": "vercel",
+      "type": "deploys_to"
+    },
+    {
+      "source": "nextjs",
+      "target": "clerk",
+      "type": "authenticates_with"
+    },
+    {
+      "source": "nextjs",
+      "target": "nuxt",
+      "type": "alternative_to"
+    },
+    {
+      "source": "nextjs",
+      "target": "trpc",
+      "type": "works_well_with"
+    },
+    {
+      "source": "nginx",
+      "target": "kubernetes",
+      "type": "integrates_with"
+    },
+    {
+      "source": "nginx",
+      "target": "docker",
+      "type": "integrates_with"
+    },
+    {
+      "source": "nuxt",
+      "target": "vue",
+      "type": "depends_on"
+    },
+    {
+      "source": "nuxt",
+      "target": "nextjs",
+      "type": "alternative_to"
+    },
+    {
+      "source": "nuxt",
+      "target": "vercel",
+      "type": "deploys_to"
+    },
+    {
+      "source": "oauth2",
+      "target": "openid-connect",
+      "type": "extended_by"
+    },
+    {
+      "source": "oauth2",
+      "target": "jwt",
+      "type": "works_well_with"
+    },
+    {
+      "source": "oauth2",
+      "target": "clerk",
+      "type": "implemented_by"
+    },
+    {
+      "source": "oauth2",
+      "target": "better-auth",
+      "type": "implemented_by"
+    },
+    {
+      "source": "okta",
+      "target": "oauth2",
+      "type": "implements"
+    },
+    {
+      "source": "okta",
+      "target": "openid-connect",
+      "type": "implements"
+    },
+    {
+      "source": "ollama",
+      "target": "vllm",
+      "type": "alternative_to"
+    },
+    {
+      "source": "ollama",
+      "target": "langchain",
+      "type": "integrates_with"
+    },
+    {
+      "source": "ollama",
+      "target": "openai",
+      "type": "alternative_to"
+    },
+    {
+      "source": "openid-connect",
+      "target": "oauth2",
+      "type": "depends_on"
+    },
+    {
+      "source": "openid-connect",
+      "target": "jwt",
+      "type": "integrates_with"
+    },
+    {
+      "source": "openid-connect",
+      "target": "github-actions",
+      "type": "works_well_with"
+    },
+    {
+      "source": "opentelemetry",
+      "target": "jaeger",
+      "type": "publishes_to"
+    },
+    {
+      "source": "opentelemetry",
+      "target": "prometheus",
+      "type": "publishes_to"
+    },
+    {
+      "source": "paddle",
+      "target": "stripe",
+      "type": "related_to"
+    },
+    {
+      "source": "paddle",
+      "target": "lemon squeezy",
+      "type": "related_to"
+    },
+    {
+      "source": "pinecone",
+      "target": "openai",
+      "type": "related_to"
+    },
+    {
+      "source": "pinecone",
+      "target": "anthropic",
+      "type": "related_to"
+    },
+    {
+      "source": "pinecone",
+      "target": "upstash",
+      "type": "related_to"
+    },
+    {
+      "source": "plaid",
+      "target": "stripe",
+      "type": "works_well_with"
+    },
+    {
+      "source": "planetscale",
+      "target": "vercel",
+      "type": "related_to"
+    },
+    {
+      "source": "planetscale",
+      "target": "cloudflare",
+      "type": "related_to"
+    },
+    {
+      "source": "planetscale",
+      "target": "clerk",
+      "type": "related_to"
+    },
+    {
+      "source": "playwright",
+      "target": "github-actions",
+      "type": "integrates_with"
+    },
+    {
+      "source": "playwright",
+      "target": "nextjs",
+      "type": "works_well_with"
+    },
+    {
+      "source": "postgresql",
+      "target": "neon",
+      "type": "extended_by"
+    },
+    {
+      "source": "postgresql",
+      "target": "prisma",
+      "type": "integrates_with"
+    },
+    {
+      "source": "postgresql",
+      "target": "drizzle",
+      "type": "integrates_with"
+    },
+    {
+      "source": "postgresql",
+      "target": "mysql",
+      "type": "alternative_to"
+    },
+    {
+      "source": "posthog",
+      "target": "mixpanel",
+      "type": "related_to"
+    },
+    {
+      "source": "prettier",
+      "target": "eslint",
+      "type": "works_well_with"
+    },
+    {
+      "source": "prettier",
+      "target": "biome",
+      "type": "alternative_to"
+    },
+    {
+      "source": "prisma",
+      "target": "postgresql",
+      "type": "integrates_with"
+    },
+    {
+      "source": "prisma",
+      "target": "mysql",
+      "type": "integrates_with"
+    },
+    {
+      "source": "prisma",
+      "target": "drizzle",
+      "type": "alternative_to"
+    },
+    {
+      "source": "prisma",
+      "target": "nextjs",
+      "type": "works_well_with"
+    },
+    {
+      "source": "prometheus",
+      "target": "grafana",
+      "type": "works_well_with"
+    },
+    {
+      "source": "prometheus",
+      "target": "kubernetes",
+      "type": "monitors"
+    },
+    {
+      "source": "pulumi",
+      "target": "terraform",
+      "type": "alternative_to"
+    },
+    {
+      "source": "pulumi",
+      "target": "terraform",
+      "type": "alternative_to"
+    },
+    {
+      "source": "rabbitmq",
+      "target": "kafka",
+      "type": "alternative_to"
+    },
+    {
+      "source": "rabbitmq",
+      "target": "bullmq",
+      "type": "alternative_to"
+    },
+    {
+      "source": "railway",
+      "target": "render",
+      "type": "related_to"
+    },
+    {
+      "source": "railway",
+      "target": "fly.io",
+      "type": "related_to"
+    },
+    {
+      "source": "railway",
+      "target": "github",
+      "type": "related_to"
+    },
+    {
+      "source": "react",
+      "target": "nextjs",
+      "type": "extended_by"
+    },
+    {
+      "source": "react",
+      "target": "vue",
+      "type": "alternative_to"
+    },
+    {
+      "source": "react",
+      "target": "sveltekit",
+      "type": "alternative_to"
+    },
+    {
+      "source": "redis-streams",
+      "target": "redis",
+      "type": "depends_on"
+    },
+    {
+      "source": "redis-streams",
+      "target": "kafka",
+      "type": "alternative_to"
+    },
+    {
+      "source": "render",
+      "target": "railway",
+      "type": "related_to"
+    },
+    {
+      "source": "render",
+      "target": "fly.io",
+      "type": "related_to"
+    },
+    {
+      "source": "resend",
+      "target": "react-email",
+      "type": "related_to"
+    },
+    {
+      "source": "resend",
+      "target": "stripe",
+      "type": "related_to"
+    },
+    {
+      "source": "resend",
+      "target": "clerk",
+      "type": "related_to"
+    },
+    {
+      "source": "revenuecat",
+      "target": "stripe",
+      "type": "related_to"
+    },
+    {
+      "source": "revenuecat",
+      "target": "paddle",
+      "type": "related_to"
+    },
+    {
+      "source": "sendgrid",
+      "target": "twilio",
+      "type": "related_to"
+    },
+    {
+      "source": "sentry",
+      "target": "nextjs",
+      "type": "monitors"
+    },
+    {
+      "source": "sentry",
+      "target": "express",
+      "type": "monitors"
+    },
+    {
+      "source": "sentry",
+      "target": "fastapi",
+      "type": "monitors"
+    },
+    {
+      "source": "shopify",
+      "target": "nextjs",
+      "type": "integrates_with"
+    },
+    {
+      "source": "shopify",
+      "target": "stripe",
+      "type": "works_well_with"
+    },
+    {
+      "source": "slack",
+      "target": "github-actions",
+      "type": "integrates_with"
+    },
+    {
+      "source": "slack",
+      "target": "sentry",
+      "type": "integrates_with"
+    },
+    {
+      "source": "sqlite",
+      "target": "turso",
+      "type": "extended_by"
+    },
+    {
+      "source": "sqlite",
+      "target": "drizzle",
+      "type": "integrates_with"
+    },
+    {
+      "source": "sveltekit",
+      "target": "nextjs",
+      "type": "alternative_to"
+    },
+    {
+      "source": "sveltekit",
+      "target": "vercel",
+      "type": "deploys_to"
+    },
+    {
+      "source": "terraform",
+      "target": "pulumi",
+      "type": "alternative_to"
+    },
+    {
+      "source": "terraform",
+      "target": "github-actions",
+      "type": "integrates_with"
+    },
+    {
+      "source": "traefik",
+      "target": "kubernetes",
+      "type": "integrates_with"
+    },
+    {
+      "source": "traefik",
+      "target": "docker",
+      "type": "integrates_with"
+    },
+    {
+      "source": "traefik",
+      "target": "nginx",
+      "type": "alternative_to"
+    },
+    {
+      "source": "traefik",
+      "target": "caddy",
+      "type": "alternative_to"
+    },
+    {
+      "source": "trpc",
+      "target": "nextjs",
+      "type": "works_well_with"
+    },
+    {
+      "source": "trpc",
+      "target": "react",
+      "type": "works_well_with"
+    },
+    {
+      "source": "turborepo",
+      "target": "nextjs",
+      "type": "works_well_with"
+    },
+    {
+      "source": "turborepo",
+      "target": "github-actions",
+      "type": "integrates_with"
+    },
+    {
+      "source": "turso",
+      "target": "fly.io",
+      "type": "related_to"
+    },
+    {
+      "source": "turso",
+      "target": "render",
+      "type": "related_to"
+    },
+    {
+      "source": "twilio",
+      "target": "sendgrid",
+      "type": "related_to"
+    },
+    {
+      "source": "typesense",
+      "target": "meilisearch",
+      "type": "related_to"
+    },
+    {
+      "source": "typesense",
+      "target": "algolia",
+      "type": "related_to"
+    },
+    {
+      "source": "upstash",
+      "target": "vercel",
+      "type": "related_to"
+    },
+    {
+      "source": "upstash",
+      "target": "cloudflare",
+      "type": "related_to"
+    },
+    {
+      "source": "upstash",
+      "target": "openai",
+      "type": "related_to"
+    },
+    {
+      "source": "vitest",
+      "target": "playwright",
+      "type": "works_well_with"
+    },
+    {
+      "source": "vitest",
+      "target": "react",
+      "type": "works_well_with"
+    },
+    {
+      "source": "vllm",
+      "target": "ollama",
+      "type": "alternative_to"
+    },
+    {
+      "source": "vllm",
+      "target": "langchain",
+      "type": "integrates_with"
+    },
+    {
+      "source": "vue",
+      "target": "nuxt",
+      "type": "extended_by"
+    },
+    {
+      "source": "vue",
+      "target": "react",
+      "type": "alternative_to"
+    },
+    {
+      "source": "vue",
+      "target": "supabase",
+      "type": "works_well_with"
+    },
+    {
+      "source": "xquik",
+      "target": "github",
+      "type": "related_to"
+    },
+    {
+      "source": "xquik",
+      "target": "postgresql",
+      "type": "related_to"
+    },
+    {
+      "source": "xquik",
+      "target": "playwright",
+      "type": "related_to"
+    }
+  ]
 }

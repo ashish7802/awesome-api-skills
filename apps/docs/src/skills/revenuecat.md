@@ -24,7 +24,8 @@ title: revenuecat
 
 ## Graph
 
-_No graph edges for this skill._
+- **related to** → [stripe](/skills/stripe)
+- **related to** → [paddle](/skills/paddle)
 
 ---
 

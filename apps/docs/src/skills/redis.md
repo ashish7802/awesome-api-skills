@@ -24,7 +24,11 @@ title: redis
 
 ## Graph
 
-_No graph edges for this skill._
+- **depends on** ← [bullmq](/skills/bullmq)
+- **works well with** ← [express](/skills/express)
+- **integrates with** ← [jwt](/skills/jwt)
+- **related to** ← [nats](/skills/nats)
+- **depends on** ← [redis-streams](/skills/redis-streams)
 
 ---
 

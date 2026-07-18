@@ -29,6 +29,9 @@ title: nextjs
 - **authenticates with** → [clerk](/skills/clerk)
 - **alternative to** → [nuxt](/skills/nuxt)
 - **works well with** → [trpc](/skills/trpc)
+- **integrates with** ← [auth0](/skills/auth0)
+- **works well with** ← [eslint](/skills/eslint)
+- **works well with** ← [playwright](/skills/playwright)
 
 ---
 

@@ -9,7 +9,7 @@ const templates = {
   'docs.yml': { name: 'Documentation', command: 'pnpm --filter @awesome-api-skills/docs build' },
   'benchmarks.yml': { name: 'Benchmarks', command: 'pnpm run benchmark' },
   'snapshots.yml': { name: 'Snapshot Tests', command: 'pnpm test -u --passWithNoTests' },
-  'registry.yml': { name: 'Registry Sync', command: 'node scripts/dogfood.js' },
+  'registry.yml': { name: 'Registry Sync', command: 'npx tsx scripts/dev/dogfood.ts' },
 };
 
 const matrixStr = `

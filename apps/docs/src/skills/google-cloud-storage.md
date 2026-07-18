@@ -24,7 +24,8 @@ title: google-cloud-storage
 
 ## Graph
 
-_No graph edges for this skill._
+- **related to** → [aws s3](/skills/aws s3)
+- **related to** → [firebase](/skills/firebase)
 
 ---
 

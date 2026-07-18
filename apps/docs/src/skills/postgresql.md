@@ -28,6 +28,7 @@ title: postgresql
 - **integrates with** → [prisma](/skills/prisma)
 - **integrates with** → [drizzle](/skills/drizzle)
 - **alternative to** → [mysql](/skills/mysql)
+- **related to** ← [xquik](/skills/xquik)
 
 ---
 

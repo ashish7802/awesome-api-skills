@@ -2,7 +2,7 @@ name: Registry Sync
 
 on:
   push:
-    branches: [master, main]
+    branches: [main]
   pull_request:
 
 jobs:
@@ -16,12 +16,12 @@ jobs:
         node-version: [22.x, 24.x]
 
     steps:
-      - uses: actions/checkout@v7
-      - uses: pnpm/action-setup@v6
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
         with:
           version: 9
       - name: Setup Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
@@ -29,5 +29,5 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Sync to Registry
+      - name: Run Registry Sync
         run: npx tsx scripts/dev/dogfood.ts

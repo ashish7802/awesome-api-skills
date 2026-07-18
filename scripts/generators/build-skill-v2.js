@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 function buildSkillV2(def) {
-  const dir = path.join(__dirname, '..', 'skills', def.name);
+  const dir = path.join(__dirname, '../..', 'skills', def.name);
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 
   const metadata = {

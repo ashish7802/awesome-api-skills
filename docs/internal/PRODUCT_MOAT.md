@@ -12,6 +12,7 @@
 **Why it matters:** LLMs pick random stacks. The graph encodes maintainer-curated relationships — Prisma before PostgreSQL, Stripe with Express, OpenAI with Pinecone.
 
 **Moat path:**
+
 - Visual stack explorer (started: `/graph` page)
 - "Install stack" command: `awesome-api stack nextjs-prisma-postgres`
 - Graph-powered agent prompt: "Use skills in dependency order"
@@ -27,6 +28,7 @@
 **Why it matters:** Rules and pasted docs are unvalidated prose. Skills pass schema checks before merge.
 
 **Moat path:**
+
 - CI badge per skill: "schema-validated"
 - Breaking schema migrations with semver
 - Vendor doc link freshness checks (manual → automated)
@@ -42,6 +44,7 @@
 **Why it matters:** Generic docs don't say "agents invent webhook event names." We do.
 
 **Moat path:**
+
 - Community-submitted pitfalls from production incidents
 - Pitfall severity ratings
 - Agent benchmark: skill-on vs skill-off hallucination rate
@@ -57,6 +60,7 @@
 **Why it matters:** Cursor Rules lock you to Cursor. Anthropic Skills lock you to Claude. We don't.
 
 **Moat path:**
+
 - Export adapters: `.cursor/rules`, `.clinerules`, Continue config
 - Agent-specific prompt templates in `prompts/` (already per skill)
 
@@ -71,6 +75,7 @@
 **Why it matters:** Designed for multiple registries (official, community, private) even if only local is live today.
 
 **Moat path:**
+
 - Public registry host when ready
 - Private registry docs for enterprises
 - Skill signing / provenance
@@ -86,6 +91,7 @@
 **Why it matters:** Tutorials teach hello-world; checklists teach production (webhook verification, idempotency keys).
 
 **Moat path:**
+
 - Checklist → CI rule generators
 - Integration with agent "review mode"
 
@@ -93,14 +99,14 @@
 
 ## Moat summary
 
-| Asset | Maturity | Moat strength |
-| :--- | :--- | :--- |
-| Knowledge graph | Built | **High** — unique data |
-| AI pitfalls | Built | **High** — unique content type |
-| Validation | Built | **Medium** — replicable with effort |
-| Cross-agent format | Built | **Medium** — easy to copy format |
-| Registry spec | Spec only | **High** if adopted |
-| Production checklists | Built | **Medium** |
+| Asset                 | Maturity  | Moat strength                       |
+| :-------------------- | :-------- | :---------------------------------- |
+| Knowledge graph       | Built     | **High** — unique data              |
+| AI pitfalls           | Built     | **High** — unique content type      |
+| Validation            | Built     | **Medium** — replicable with effort |
+| Cross-agent format    | Built     | **Medium** — easy to copy format    |
+| Registry spec         | Spec only | **High** if adopted                 |
+| Production checklists | Built     | **Medium**                          |
 
 **Strongest compound moat:** Graph + pitfalls + validation together. No competitor offers all three in one open repo.
 

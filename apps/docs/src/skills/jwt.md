@@ -26,6 +26,7 @@ title: jwt
 
 - **works well with** → [oauth2](/skills/oauth2)
 - **integrates with** → [redis](/skills/redis)
+- **integrates with** ← [openid-connect](/skills/openid-connect)
 
 ---
 

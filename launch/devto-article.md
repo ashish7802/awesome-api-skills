@@ -1,5 +1,5 @@
 ---
-title: "Shipping structured API skills for AI agents (and cleaning up our README first)"
+title: 'Shipping structured API skills for AI agents (and cleaning up our README first)'
 published: false
 tags: ai, open-source, typescript, cursor
 cover_image: https://raw.githubusercontent.com/ashish7802/awesome-api-skills/main/social-preview.png
@@ -37,13 +37,13 @@ Example: a database ORM skill can declare that it depends on a database skill. T
 
 The repository is a pnpm workspace:
 
-| Package | Role |
-| --- | --- |
+| Package              | Role                         |
+| -------------------- | ---------------------------- |
 | `packages/validator` | Schema validation for skills |
-| `packages/registry` | Registry resolution |
-| `packages/generator` | Artifact generation |
-| `packages/cli` | CLI (source only today) |
-| `apps/docs` | VitePress documentation |
+| `packages/registry`  | Registry resolution          |
+| `packages/generator` | Artifact generation          |
+| `packages/cli`       | CLI (source only today)      |
+| `apps/docs`          | VitePress documentation      |
 
 ## Try it locally
 
@@ -100,4 +100,4 @@ If you maintain API tooling or agent workflows, I'd appreciate issues and PRs �
 
 ---
 
-*License: MIT. This post describes v1.0.0 — presentation and documentation polish only; no new runtime features in the launch sprint.*
+_License: MIT. This post describes v1.0.0 — presentation and documentation polish only; no new runtime features in the launch sprint._

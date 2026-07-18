@@ -24,7 +24,7 @@ title: posthog
 
 ## Graph
 
-_No graph edges for this skill._
+- **related to** → [mixpanel](/skills/mixpanel)
 
 ---
 

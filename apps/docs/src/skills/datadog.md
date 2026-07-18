@@ -24,7 +24,7 @@ title: datadog
 
 ## Graph
 
-_No graph edges for this skill._
+- **alternative to** ← [grafana](/skills/grafana)
 
 ---
 

@@ -9,7 +9,6 @@ try {
   schemaPath = path.resolve(__dirname, '../../../../shared-types/schema/skill.schema.json');
 }
 
-
 export class MetadataPresenceRule implements ValidationRule {
   id = 'V-001';
   description = 'Ensures metadata is present';
@@ -110,7 +109,10 @@ export class MetadataSchemaValidationRule implements ValidationRule {
       license: context.metadata.license || 'MIT',
       categories: context.metadata.categories || [],
       tags: context.metadata.tags || [],
-      sdkLanguages: context.metadata.sdkLanguages || (context.metadata as unknown as Record<string, unknown>).languages as string[] || ['typescript'],
+      sdkLanguages: context.metadata.sdkLanguages ||
+        ((context.metadata as unknown as Record<string, unknown>).languages as string[]) || [
+          'typescript',
+        ],
       authType: context.metadata.authType || 'api_key',
       supportedAgents: context.metadata.supportedAgents || ['cursor', 'claude-code'],
     };
@@ -137,4 +139,3 @@ export class MetadataSchemaValidationRule implements ValidationRule {
     return [];
   }
 }
-

@@ -24,7 +24,13 @@ title: vercel
 
 ## Graph
 
-_No graph edges for this skill._
+- **related to** ← [convex](/skills/convex)
+- **related to** ← [neon](/skills/neon)
+- **deploys to** ← [nextjs](/skills/nextjs)
+- **deploys to** ← [nuxt](/skills/nuxt)
+- **related to** ← [planetscale](/skills/planetscale)
+- **deploys to** ← [sveltekit](/skills/sveltekit)
+- **related to** ← [upstash](/skills/upstash)
 
 ---
 

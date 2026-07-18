@@ -55,11 +55,13 @@ This document is generated directly from the `@awesome-api-skills/cli` binary to
 Search for skills by API name, category, or keyword.
 
 **Example:**
+
 ```bash
 awesome-api search stripe --json
 ```
 
 **Actual Output:**
+
 ```json
 {
   "success": true,
@@ -71,10 +73,7 @@ awesome-api search stripe --json
       {
         "id": "stripe",
         "name": "stripe",
-        "categories": [
-          "Payments",
-          "Commerce"
-        ],
+        "categories": ["Payments", "Commerce"],
         "path": "skills/stripe/SKILL.md",
         "score": 1
       }
@@ -91,11 +90,13 @@ awesome-api search stripe --json
 Inspect workspace health, local skill folders, and registry state.
 
 **Example:**
+
 ```bash
 awesome-api doctor --json
 ```
 
 **Actual Output:**
+
 ```json
 {
   "success": true,
@@ -123,11 +124,13 @@ awesome-api doctor --json
 Validate skill schemas against `@awesome-api-skills/validator` rules.
 
 **Example:**
+
 ```bash
 awesome-api validate --json
 ```
 
 **Actual Output:**
+
 ```json
 {
   "success": true,

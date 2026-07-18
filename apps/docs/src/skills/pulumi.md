@@ -25,6 +25,8 @@ title: pulumi
 ## Graph
 
 - **alternative to** → [terraform](/skills/terraform)
+- **provisioned by** ← [aws-dynamodb](/skills/aws-dynamodb)
+- **provisioned by** ← [aws-s3](/skills/aws-s3)
 
 ---
 

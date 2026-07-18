@@ -1,21 +1,25 @@
 {
-  "totalNodes": 75,
-  "totalEdges": 117,
+  "totalNodes": 101,
+  "totalEdges": 216,
   "edgeTypes": [
     "depends_on",
     "works_well_with",
     "alternative_to",
-    "related_to",
-    "deploys_to",
+    "implements",
     "integrates_with",
+    "provisioned_by",
+    "related_to",
+    "replaces",
+    "deploys_to",
     "monitors",
     "extended_by",
     "authenticates_with",
+    "implemented_by",
     "publishes_to"
   ],
-  "averageRelationshipsPerNode": "1.56",
-  "graphDensity": "0.0211",
-  "largestConnectedComponentSize": 47,
+  "averageRelationshipsPerNode": "2.14",
+  "graphDensity": "0.0214",
+  "largestConnectedComponentSize": 91,
   "learningPathsCount": 2,
   "recommendationCount": 2
 }

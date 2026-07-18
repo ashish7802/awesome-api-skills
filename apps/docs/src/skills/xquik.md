@@ -24,7 +24,9 @@ title: xquik
 
 ## Graph
 
-_No graph edges for this skill._
+- **related to** → [github](/skills/github)
+- **related to** → [postgresql](/skills/postgresql)
+- **related to** → [playwright](/skills/playwright)
 
 ---
 

@@ -5,7 +5,9 @@ This document defines the strict geometric, typographic, and color constraints f
 The aesthetic is inspired by Vercel, Linear, and shadcn/ui. It must evoke trust, precision, and modern developer tooling.
 
 ## 1. Grid & Spacing System
+
 All visuals strictly adhere to an 8px base grid system.
+
 - **Base Unit (`--spacing-1`)**: `8px`
 - **Micro (`--spacing-0.5`)**: `4px`
 - **Small (`--spacing-2`)**: `16px`
@@ -14,11 +16,13 @@ All visuals strictly adhere to an 8px base grid system.
 - **Hero/Macro (`--spacing-16`)**: `128px`
 
 ### Invisible Grid (Backgrounds)
+
 - Grid pattern lines must be exactly `1px` wide.
 - Grid stroke color: `rgba(255, 255, 255, 0.04)` on dark backgrounds.
 - Grid spacing: `32px` intervals.
 
 ## 2. Typography Scale
+
 We use standard sans-serif system fonts (Inter, SF Pro Display, Segoe UI) to look native and hyper-fast.
 
 - **Font Family**: `Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif`
@@ -32,6 +36,7 @@ We use standard sans-serif system fonts (Inter, SF Pro Display, Segoe UI) to loo
   - `Micro / Code`: `13px`, Weight: `500`, Line Height: `1.5`, Font: `JetBrains Mono, Menlo, monospace`
 
 ## 3. Color Palette (Dark-First)
+
 The brand is almost entirely monochrome. Color is used exclusively to draw attention to primary actions or success states.
 
 - **Background (Canvas)**: `#0A0A0A` (Near Black)
@@ -45,21 +50,26 @@ The brand is almost entirely monochrome. Color is used exclusively to draw atten
 ## 4. UI Elements & Geometry
 
 ### Corner Radius
+
 - Sharp and technical. Avoid overly rounded "pill" shapes.
 - **Inner elements (buttons, badges)**: `4px` or `6px`
 - **Outer elements (cards, windows, terminals)**: `8px` or `12px`
 
 ### Stroke Width
+
 - **Delicate / Structural**: `1px` (for grids, subtle borders, inactive connections)
 - **Standard**: `2px` (for icons, active connections)
 - **Bold**: `4px` (for primary pipeline arrows)
 
 ### Logo Spacing
+
 - The logo is a simple geometric glyph.
 - **Clearance**: The logo must always have a clearance area equal to 50% of its own width.
 
 ## 5. Terminal & Code Aesthetics
+
 Whenever displaying a terminal or code block (in SVGs or screenshots):
+
 - **Window Frame**: `1px` solid border (`#2A2A2A`), Background (`#050505`), Radius (`8px`).
 - **Header Bar**: Height `32px`, Top Border Bottom `1px solid #1A1A1A`. Three mac-OS style dots on the left (Radius `50%`, Size `10px`, spacing `6px`).
 - **Dots Colors**: `#333` (subtle gray to avoid distraction).
@@ -68,12 +78,14 @@ Whenever displaying a terminal or code block (in SVGs or screenshots):
 - **Error Markers**: `[x]` or ❌ in `#EF4444` (Red).
 
 ## 6. Layout & Composition
+
 - **Max Whitespace**: The canvas must breathe. Never crowd elements.
 - **Centering**: Hero elements are strictly center-aligned.
 - **Alignment**: Left-align text inside cards or terminal windows.
 - **Visual Rhythm**: Alternate text and visual blocks. Never two long walls of text.
 
 ## Execution Checklist for Images
+
 1. Does it use `#0A0A0A` background?
 2. Are strokes `1px` `#222222`?
 3. Is typography Inter/system-ui with tight tracking?

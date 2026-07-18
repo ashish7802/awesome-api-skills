@@ -20,7 +20,11 @@ export class CommandRegistry {
     if (candidate && typeof candidate.execute === 'function') {
       return candidate as unknown as Command;
     }
-    if (candidate && candidate.default && typeof (candidate.default as Record<string, unknown>).execute === 'function') {
+    if (
+      candidate &&
+      candidate.default &&
+      typeof (candidate.default as Record<string, unknown>).execute === 'function'
+    ) {
       return candidate.default as unknown as Command;
     }
     return null;

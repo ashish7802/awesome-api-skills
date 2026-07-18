@@ -27,6 +27,10 @@ title: react
 - **extended by** → [nextjs](/skills/nextjs)
 - **alternative to** → [vue](/skills/vue)
 - **alternative to** → [sveltekit](/skills/sveltekit)
+- **works well with** ← [biome](/skills/biome)
+- **integrates with** ← [mapbox](/skills/mapbox)
+- **works well with** ← [trpc](/skills/trpc)
+- **works well with** ← [vitest](/skills/vitest)
 
 ---
 

@@ -24,7 +24,8 @@ title: anthropic
 
 ## Graph
 
-_No graph edges for this skill._
+- **related to** ← [azure-openai](/skills/azure-openai)
+- **related to** ← [pinecone](/skills/pinecone)
 
 ---
 

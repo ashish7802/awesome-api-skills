@@ -28,6 +28,8 @@ title: oauth2
 - **works well with** → [jwt](/skills/jwt)
 - **implemented by** → [clerk](/skills/clerk)
 - **implemented by** → [better-auth](/skills/better-auth)
+- **implements** ← [auth0](/skills/auth0)
+- **implements** ← [okta](/skills/okta)
 
 ---
 

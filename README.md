@@ -27,6 +27,7 @@
 ## 💡 What This Is & Why It Matters
 
 When an AI coding agent (Claude Code, Cursor, Codex CLI, Gemini CLI, etc.) writes code for modern APIs, it frequently makes critical mistakes:
+
 - Reaching for **outdated SDK methods** present in old training data.
 - **Parsing raw request bodies** with `express.json()` before validating Stripe webhook signatures, breaking cryptographic checks.
 - Using **deprecated authentication helpers** (e.g. `@clerk/nextjs` v4 `authMiddleware` instead of v5 `clerkMiddleware`).
@@ -40,11 +41,11 @@ When an AI coding agent (Claude Code, Cursor, Codex CLI, Gemini CLI, etc.) write
 
 Here is how an AI agent performs with and without `SKILL.md` context:
 
-| Scenario | Without SKILL.md (LLM Guessing) | With SKILL.md (Context Injected) |
-|---|---|---|
+| Scenario                        | Without SKILL.md (LLM Guessing)                                                                                               | With SKILL.md (Context Injected)                                                                                                                    |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Stripe Webhook Verification** | Parses JSON first (`express.json()`), ruining the raw buffer signature check and throwing `StripeSignatureVerificationError`. | Mounts `express.raw({ type: 'application/json' })` on the webhook route so `stripe.webhooks.constructEvent()` verifies signature cryptographically. |
-| **Clerk Auth Middleware** | Generates deprecated `authMiddleware({ publicRoutes })` from v4, causing runtime crashes in Next.js App Router. | Uses modern `clerkMiddleware()` with `createRouteMatcher()` matching Next.js v5+ App Router specs. |
-| **Resend Batch Emailing** | Iterates a `for...of` loop with individual `send()` calls, taking minutes and triggering HTTP 429 rate limits. | Packages emails into `resend.batch.send([])`, dispatching 500 emails in a single low-latency HTTP request. |
+| **Clerk Auth Middleware**       | Generates deprecated `authMiddleware({ publicRoutes })` from v4, causing runtime crashes in Next.js App Router.               | Uses modern `clerkMiddleware()` with `createRouteMatcher()` matching Next.js v5+ App Router specs.                                                  |
+| **Resend Batch Emailing**       | Iterates a `for...of` loop with individual `send()` calls, taking minutes and triggering HTTP 429 rate limits.                | Packages emails into `resend.batch.send([])`, dispatching 500 emails in a single low-latency HTTP request.                                          |
 
 > 📖 **See full runnable code diffs in [docs/BENCHMARKS_AND_EXAMPLES.md](./docs/BENCHMARKS_AND_EXAMPLES.md).**
 
@@ -70,8 +71,9 @@ cp -r awesome-api-skills/skills/clerk .cursor/skills/
 cp -r awesome-api-skills/skills/redis .agents/skills/
 ```
 
-Then instruct your agent:  
-> *"Use `.claude/skills/stripe/SKILL.md` for payment integration."*
+Then instruct your agent:
+
+> _"Use `.claude/skills/stripe/SKILL.md` for payment integration."_
 
 ---
 
@@ -87,6 +89,7 @@ pnpm build
 ```
 
 Run CLI commands locally:
+
 ```bash
 # Search skills by keyword
 pnpm run cli search stripe
@@ -104,22 +107,22 @@ pnpm run cli doctor
 
 Explore 101 skills across 14 core technical domains:
 
-| Category | Available Skills |
-|---|---|
-| **Payments & Billing** | `stripe`, `paddle`, `lemon-squeezy`, `revenuecat`, `plaid` |
-| **Auth & Identity** | `auth0`, `clerk`, `okta`, `better-auth`, `jwt`, `oauth2`, `openid-connect` |
-| **Databases** | `postgresql`, `mysql`, `sqlite`, `mongodb-atlas`, `planetscale`, `neon`, `turso`, `drizzle`, `prisma` |
-| **Caching & Queues** | `redis`, `redis-streams`, `upstash`, `bullmq`, `kafka`, `rabbitmq`, `nats` |
-| **Object Storage** | `aws-s3`, `aws-dynamodb`, `azure-blob-storage`, `google-cloud-storage` |
-| **AI & LLM Infra** | `openai`, `anthropic`, `gemini`, `ollama`, `vllm`, `langchain`, `llamaindex`, `pinecone`, `typesense`, `meilisearch`, `algolia`, `xquik` |
-| **Backend Frameworks** | `express`, `fastapi`, `nestjs`, `hono`, `trpc` |
-| **Frontend Frameworks** | `react`, `vue`, `nextjs`, `nuxt`, `sveltekit` |
-| **Deployment Platforms** | `vercel`, `railway`, `render`, `fly`, `digitalocean`, `cloudflare`, `cloudflare-workers`, `deno-deploy` |
-| **Infrastructure** | `docker`, `kubernetes`, `helm`, `terraform`, `pulumi`, `argo-cd`, `github-actions`, `traefik`, `nginx`, `caddy`, `turborepo` |
-| **Observability** | `datadog`, `sentry`, `prometheus`, `grafana`, `loki`, `jaeger`, `opentelemetry`, `mixpanel`, `posthog` |
-| **Dev Tooling** | `eslint`, `prettier`, `biome`, `vitest`, `playwright`, `git`, `github`, `xquik` |
-| **Communication** | `slack`, `discord`, `twilio`, `sendgrid`, `resend` |
-| **Platforms & CMS** | `shopify`, `mapbox`, `convex` |
+| Category                 | Available Skills                                                                                                                         |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **Payments & Billing**   | `stripe`, `paddle`, `lemon-squeezy`, `revenuecat`, `plaid`                                                                               |
+| **Auth & Identity**      | `auth0`, `clerk`, `okta`, `better-auth`, `jwt`, `oauth2`, `openid-connect`                                                               |
+| **Databases**            | `postgresql`, `mysql`, `sqlite`, `mongodb-atlas`, `planetscale`, `neon`, `turso`, `drizzle`, `prisma`                                    |
+| **Caching & Queues**     | `redis`, `redis-streams`, `upstash`, `bullmq`, `kafka`, `rabbitmq`, `nats`                                                               |
+| **Object Storage**       | `aws-s3`, `aws-dynamodb`, `azure-blob-storage`, `google-cloud-storage`                                                                   |
+| **AI & LLM Infra**       | `openai`, `anthropic`, `gemini`, `ollama`, `vllm`, `langchain`, `llamaindex`, `pinecone`, `typesense`, `meilisearch`, `algolia`, `xquik` |
+| **Backend Frameworks**   | `express`, `fastapi`, `nestjs`, `hono`, `trpc`                                                                                           |
+| **Frontend Frameworks**  | `react`, `vue`, `nextjs`, `nuxt`, `sveltekit`                                                                                            |
+| **Deployment Platforms** | `vercel`, `railway`, `render`, `fly`, `digitalocean`, `cloudflare`, `cloudflare-workers`, `deno-deploy`                                  |
+| **Infrastructure**       | `docker`, `kubernetes`, `helm`, `terraform`, `pulumi`, `argo-cd`, `github-actions`, `traefik`, `nginx`, `caddy`, `turborepo`             |
+| **Observability**        | `datadog`, `sentry`, `prometheus`, `grafana`, `loki`, `jaeger`, `opentelemetry`, `mixpanel`, `posthog`                                   |
+| **Dev Tooling**          | `eslint`, `prettier`, `biome`, `vitest`, `playwright`, `git`, `github`, `xquik`                                                          |
+| **Communication**        | `slack`, `discord`, `twilio`, `sendgrid`, `resend`                                                                                       |
+| **Platforms & CMS**      | `shopify`, `mapbox`, `convex`                                                                                                            |
 
 > 🌐 **Browse the interactive web catalog at [docs/index.html](./docs/index.html).**
 

@@ -24,7 +24,13 @@ title: openai
 
 ## Graph
 
-_No graph edges for this skill._
+- **related to** ← [azure-openai](/skills/azure-openai)
+- **integrates with** ← [fastapi](/skills/fastapi)
+- **integrates with** ← [langchain](/skills/langchain)
+- **integrates with** ← [llamaindex](/skills/llamaindex)
+- **alternative to** ← [ollama](/skills/ollama)
+- **related to** ← [pinecone](/skills/pinecone)
+- **related to** ← [upstash](/skills/upstash)
 
 ---
 

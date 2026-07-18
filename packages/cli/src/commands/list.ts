@@ -52,7 +52,11 @@ const command: Command = {
           lastVerified: meta.lastVerified || 'N/A',
         };
       })
-      .filter((s) => !categoryFilter || s.categories.some((c: string) => c.toLowerCase() === categoryFilter.toLowerCase()));
+      .filter(
+        (s) =>
+          !categoryFilter ||
+          s.categories.some((c: string) => c.toLowerCase() === categoryFilter.toLowerCase()),
+      );
 
     return {
       total: skillsList.length,
@@ -71,7 +75,9 @@ export function formatListOutput(data: {
   const lines = [pc.bold(`Installed Skills (${data.total}):`), ''];
   data.skills.forEach((s) => {
     const cats = s.categories.length ? pc.dim(` [${s.categories.join(', ')}]`) : '';
-    lines.push(`  ${pc.cyan('•')} ${pc.bold(s.id)}${cats} ${pc.dim(`(Verified ${s.lastVerified})`)}`);
+    lines.push(
+      `  ${pc.cyan('•')} ${pc.bold(s.id)}${cats} ${pc.dim(`(Verified ${s.lastVerified})`)}`,
+    );
   });
   return lines.join('\n');
 }

@@ -85,7 +85,9 @@ export async function main(argv: string[]) {
     }
 
     if (globalOptions.verbose) {
-      logger.debug(`Discovery: ${discoverTime.toFixed(0)}ms · Execution: ${(performance.now() - execStart).toFixed(0)}ms`);
+      logger.debug(
+        `Discovery: ${discoverTime.toFixed(0)}ms · Execution: ${(performance.now() - execStart).toFixed(0)}ms`,
+      );
     }
   } catch (err: unknown) {
     const e = err as Error;
