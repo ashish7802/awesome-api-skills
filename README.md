@@ -176,7 +176,6 @@ We welcome contributions! All new skills must adhere to the standard schema:
 4. **Submit PR**: Open a Pull Request. GitHub Actions will automatically validate schema compliance using `packages/validator`.
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) and [.github/PULL_REQUEST_TEMPLATE.md](./.github/PULL_REQUEST_TEMPLATE.md) for details.
-
 ---
 
 ## 📄 License
