@@ -1,4 +1,6 @@
- <div align="center">
+
+
+<div align="center">
 
 ![Awesome API Skills — Visual Overview](https://raw.githubusercontent.com/ashish7802/awesome-api-skills/master/media/banner.png)
 
@@ -144,7 +146,7 @@ packages/
   shared-types/         TypeScript definitions & schemas shared across packages
 scripts/
   dev/                  Validation, indexing, and static build scripts
-docs/                   Searchable web directory, benchmarks, and CLI reference
+apps/docs/              Searchable web directory, benchmarks, and CLI reference
 ```
 
 ---
