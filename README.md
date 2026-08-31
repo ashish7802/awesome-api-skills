@@ -1,4 +1,4 @@
- <div align="center">
+  <div align="center">
 
 ![Awesome API Skills — Visual Overview](https://raw.githubusercontent.com/ashish7802/awesome-api-skills/master/media/banner.png)
 
