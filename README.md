@@ -144,7 +144,7 @@ packages/
   shared-types/         TypeScript definitions & schemas shared across packages
 scripts/
   dev/                  Validation, indexing, and static build scripts
-docs/                   Searchable web directory, benchmarks, and CLI reference
+apps/docs/              Searchable web directory, benchmarks, and CLI reference
 ```
 
 ---
