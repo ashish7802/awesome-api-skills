@@ -3,607 +3,874 @@
     {
       "id": "algolia",
       "label": "algolia",
-      "categories": ["Search"],
+      "categories": [
+        "Search"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "anthropic",
       "label": "anthropic",
-      "categories": ["AI"],
+      "categories": [
+        "AI"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "argo-cd",
       "label": "argo-cd",
-      "categories": ["CI/CD", "Infrastructure"],
+      "categories": [
+        "CI/CD",
+        "Infrastructure"
+      ],
       "ecosystem": "devops"
     },
     {
       "id": "auth0",
       "label": "auth0",
-      "categories": ["Authentication", "Security"],
+      "categories": [
+        "Authentication",
+        "Security"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "aws-dynamodb",
       "label": "aws-dynamodb",
-      "categories": ["Databases", "Cloud"],
+      "categories": [
+        "Databases",
+        "Cloud"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "aws-s3",
       "label": "aws-s3",
-      "categories": ["Cloud", "Storage"],
+      "categories": [
+        "Cloud",
+        "Storage"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "azure-blob-storage",
       "label": "azure-blob-storage",
-      "categories": ["Cloud", "Storage"],
+      "categories": [
+        "Cloud",
+        "Storage"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "azure-openai",
       "label": "azure-openai",
-      "categories": ["AI", "Enterprise"],
+      "categories": [
+        "AI",
+        "Enterprise"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "better-auth",
       "label": "better-auth",
-      "categories": ["Authentication"],
+      "categories": [
+        "Authentication"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "biome",
       "label": "biome",
-      "categories": ["Developer Tools"],
+      "categories": [
+        "Developer Tools"
+      ],
       "ecosystem": "javascript"
     },
     {
       "id": "bullmq",
       "label": "bullmq",
-      "categories": ["Messaging", "Developer Tools"],
+      "categories": [
+        "Messaging",
+        "Developer Tools"
+      ],
       "ecosystem": "javascript"
     },
     {
       "id": "caddy",
       "label": "caddy",
-      "categories": ["Infrastructure", "Security"],
+      "categories": [
+        "Infrastructure",
+        "Security"
+      ],
       "ecosystem": "devops"
     },
     {
       "id": "clerk",
       "label": "clerk",
-      "categories": ["Authentication", "Security"],
+      "categories": [
+        "Authentication",
+        "Security"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "cloudflare",
       "label": "cloudflare",
-      "categories": ["Cloud", "Security"],
+      "categories": [
+        "Cloud",
+        "Security"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "cloudflare-workers",
       "label": "cloudflare-workers",
-      "categories": ["Cloud", "Developer Tools"],
+      "categories": [
+        "Cloud",
+        "Developer Tools"
+      ],
       "ecosystem": "javascript"
     },
     {
       "id": "convex",
       "label": "convex",
-      "categories": ["Databases", "Cloud"],
+      "categories": [
+        "Databases",
+        "Cloud"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "datadog",
       "label": "datadog",
-      "categories": ["Monitoring", "DevOps"],
+      "categories": [
+        "Monitoring",
+        "DevOps"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "deno-deploy",
       "label": "deno-deploy",
-      "categories": ["Cloud", "Developer Tools"],
+      "categories": [
+        "Cloud",
+        "Developer Tools"
+      ],
       "ecosystem": "javascript"
     },
     {
       "id": "digitalocean",
       "label": "digitalocean",
-      "categories": ["Cloud"],
+      "categories": [
+        "Cloud"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "discord",
       "label": "discord",
-      "categories": ["Messaging"],
+      "categories": [
+        "Messaging"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "docker",
       "label": "docker",
-      "categories": ["Developer Tools", "Infrastructure"],
+      "categories": [
+        "Developer Tools",
+        "Infrastructure"
+      ],
       "ecosystem": "devops"
     },
     {
       "id": "drizzle",
       "label": "drizzle",
-      "categories": ["Databases", "Developer Tools"],
+      "categories": [
+        "Databases",
+        "Developer Tools"
+      ],
       "ecosystem": "typescript"
     },
     {
       "id": "eslint",
       "label": "eslint",
-      "categories": ["Developer Tools"],
+      "categories": [
+        "Developer Tools"
+      ],
       "ecosystem": "javascript"
     },
     {
       "id": "express",
       "label": "express",
-      "categories": ["Backend Frameworks"],
+      "categories": [
+        "Backend Frameworks"
+      ],
       "ecosystem": "javascript"
     },
     {
       "id": "fastapi",
       "label": "fastapi",
-      "categories": ["Backend Frameworks"],
+      "categories": [
+        "Backend Frameworks"
+      ],
       "ecosystem": "python"
     },
     {
       "id": "firebase",
       "label": "firebase",
-      "categories": ["Cloud", "Databases"],
+      "categories": [
+        "Cloud",
+        "Databases"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "fly",
       "label": "fly",
-      "categories": ["Cloud", "DevOps"],
+      "categories": [
+        "Cloud",
+        "DevOps"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "gemini",
       "label": "gemini",
-      "categories": ["AI"],
+      "categories": [
+        "AI"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "git",
       "label": "git",
-      "categories": ["Developer Tools"],
+      "categories": [
+        "Developer Tools"
+      ],
       "ecosystem": "devops"
     },
     {
       "id": "github",
       "label": "github",
-      "categories": ["DevOps", "Developer Tools"],
+      "categories": [
+        "DevOps",
+        "Developer Tools"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "github-actions",
       "label": "github-actions",
-      "categories": ["CI/CD", "Developer Tools"],
+      "categories": [
+        "CI/CD",
+        "Developer Tools"
+      ],
       "ecosystem": "devops"
     },
     {
       "id": "google-cloud-storage",
       "label": "google-cloud-storage",
-      "categories": ["Cloud", "Storage"],
+      "categories": [
+        "Cloud",
+        "Storage"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "grafana",
       "label": "grafana",
-      "categories": ["Observability"],
+      "categories": [
+        "Observability"
+      ],
       "ecosystem": "devops"
     },
     {
       "id": "helm",
       "label": "helm",
-      "categories": ["Developer Tools", "Infrastructure"],
+      "categories": [
+        "Developer Tools",
+        "Infrastructure"
+      ],
       "ecosystem": "devops"
     },
     {
       "id": "hono",
       "label": "hono",
-      "categories": ["Backend Frameworks"],
+      "categories": [
+        "Backend Frameworks"
+      ],
       "ecosystem": "javascript"
     },
     {
       "id": "jaeger",
       "label": "jaeger",
-      "categories": ["Observability"],
+      "categories": [
+        "Observability"
+      ],
       "ecosystem": "devops"
     },
     {
       "id": "jwt",
       "label": "jwt",
-      "categories": ["Authentication", "Security"],
+      "categories": [
+        "Authentication",
+        "Security"
+      ],
       "ecosystem": "security"
     },
     {
       "id": "kafka",
       "label": "kafka",
-      "categories": ["Messaging", "Enterprise"],
+      "categories": [
+        "Messaging",
+        "Enterprise"
+      ],
       "ecosystem": "infrastructure"
     },
     {
       "id": "kubernetes",
       "label": "kubernetes",
-      "categories": ["Developer Tools", "Infrastructure"],
+      "categories": [
+        "Developer Tools",
+        "Infrastructure"
+      ],
       "ecosystem": "devops"
     },
     {
       "id": "langchain",
       "label": "langchain",
-      "categories": ["AI", "Developer Tools"],
+      "categories": [
+        "AI",
+        "Developer Tools"
+      ],
       "ecosystem": "ai"
     },
     {
       "id": "lemon-squeezy",
       "label": "lemon-squeezy",
-      "categories": ["Payments", "Finance"],
+      "categories": [
+        "Payments",
+        "Finance"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "linux",
       "label": "linux",
-      "categories": ["Infrastructure", "Enterprise"],
+      "categories": [
+        "Infrastructure",
+        "Enterprise"
+      ],
       "ecosystem": "devops"
     },
     {
       "id": "llamaindex",
       "label": "llamaindex",
-      "categories": ["AI", "Developer Tools"],
+      "categories": [
+        "AI",
+        "Developer Tools"
+      ],
       "ecosystem": "ai"
     },
     {
       "id": "loki",
       "label": "loki",
-      "categories": ["Observability"],
+      "categories": [
+        "Observability"
+      ],
       "ecosystem": "devops"
     },
     {
       "id": "mapbox",
       "label": "mapbox",
-      "categories": ["Maps", "Developer Tools"],
+      "categories": [
+        "Maps",
+        "Developer Tools"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "meilisearch",
       "label": "meilisearch",
-      "categories": ["Search", "Databases"],
+      "categories": [
+        "Search",
+        "Databases"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "mixpanel",
       "label": "mixpanel",
-      "categories": ["Analytics"],
+      "categories": [
+        "Analytics"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "mongodb-atlas",
       "label": "mongodb-atlas",
-      "categories": ["Databases", "Cloud"],
+      "categories": [
+        "Databases",
+        "Cloud"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "mysql",
       "label": "mysql",
-      "categories": ["Databases"],
+      "categories": [
+        "Databases"
+      ],
       "ecosystem": "database"
     },
     {
       "id": "nats",
       "label": "nats",
-      "categories": ["Messaging", "DevOps"],
+      "categories": [
+        "Messaging",
+        "DevOps"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "neon",
       "label": "neon",
-      "categories": ["Databases", "Cloud"],
+      "categories": [
+        "Databases",
+        "Cloud"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "nestjs",
       "label": "nestjs",
-      "categories": ["Backend Frameworks"],
+      "categories": [
+        "Backend Frameworks"
+      ],
       "ecosystem": "typescript"
     },
     {
       "id": "nextjs",
       "label": "nextjs",
-      "categories": ["Frontend Frameworks"],
+      "categories": [
+        "Frontend Frameworks"
+      ],
       "ecosystem": "react"
     },
     {
       "id": "nginx",
       "label": "nginx",
-      "categories": ["Developer Tools", "Infrastructure"],
+      "categories": [
+        "Developer Tools",
+        "Infrastructure"
+      ],
       "ecosystem": "devops"
     },
     {
       "id": "nuxt",
       "label": "nuxt",
-      "categories": ["Frontend Frameworks"],
+      "categories": [
+        "Frontend Frameworks"
+      ],
       "ecosystem": "vue"
     },
     {
       "id": "oauth2",
       "label": "oauth2",
-      "categories": ["Authentication", "Security"],
+      "categories": [
+        "Authentication",
+        "Security"
+      ],
       "ecosystem": "security"
     },
     {
       "id": "okta",
       "label": "okta",
-      "categories": ["Authentication", "Enterprise"],
+      "categories": [
+        "Authentication",
+        "Enterprise"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "ollama",
       "label": "ollama",
-      "categories": ["AI", "Developer Tools"],
+      "categories": [
+        "AI",
+        "Developer Tools"
+      ],
       "ecosystem": "ai"
     },
     {
       "id": "openai",
       "label": "openai",
-      "categories": ["AI", "Developer Tools"],
+      "categories": [
+        "AI",
+        "Developer Tools"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "openid-connect",
       "label": "openid-connect",
-      "categories": ["Authentication", "Security"],
+      "categories": [
+        "Authentication",
+        "Security"
+      ],
       "ecosystem": "security"
     },
     {
       "id": "opentelemetry",
       "label": "opentelemetry",
-      "categories": ["Observability"],
+      "categories": [
+        "Observability"
+      ],
       "ecosystem": "devops"
     },
     {
       "id": "paddle",
       "label": "paddle",
-      "categories": ["Payments", "Finance"],
+      "categories": [
+        "Payments",
+        "Finance"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "pinecone",
       "label": "pinecone",
-      "categories": ["Databases", "AI"],
+      "categories": [
+        "Databases",
+        "AI"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "plaid",
       "label": "plaid",
-      "categories": ["Payments", "Finance"],
+      "categories": [
+        "Payments",
+        "Finance"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "planetscale",
       "label": "planetscale",
-      "categories": ["Databases", "Cloud"],
+      "categories": [
+        "Databases",
+        "Cloud"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "playwright",
       "label": "playwright",
-      "categories": ["Developer Tools", "Testing"],
+      "categories": [
+        "Developer Tools",
+        "Testing"
+      ],
       "ecosystem": "javascript"
     },
     {
       "id": "postgresql",
       "label": "postgresql",
-      "categories": ["Databases"],
+      "categories": [
+        "Databases"
+      ],
       "ecosystem": "database"
     },
     {
       "id": "posthog",
       "label": "posthog",
-      "categories": ["Analytics"],
+      "categories": [
+        "Analytics"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "prettier",
       "label": "prettier",
-      "categories": ["Developer Tools"],
+      "categories": [
+        "Developer Tools"
+      ],
       "ecosystem": "javascript"
     },
     {
       "id": "prisma",
       "label": "prisma",
-      "categories": ["Databases", "Developer Tools"],
+      "categories": [
+        "Databases",
+        "Developer Tools"
+      ],
       "ecosystem": "typescript"
     },
     {
       "id": "prometheus",
       "label": "prometheus",
-      "categories": ["Observability"],
+      "categories": [
+        "Observability"
+      ],
       "ecosystem": "devops"
     },
     {
       "id": "pulumi",
       "label": "pulumi",
-      "categories": ["Developer Tools", "Infrastructure"],
+      "categories": [
+        "Developer Tools",
+        "Infrastructure"
+      ],
       "ecosystem": "devops"
     },
     {
       "id": "rabbitmq",
       "label": "rabbitmq",
-      "categories": ["Messaging", "Enterprise"],
+      "categories": [
+        "Messaging",
+        "Enterprise"
+      ],
       "ecosystem": "infrastructure"
     },
     {
       "id": "railway",
       "label": "railway",
-      "categories": ["Cloud", "DevOps"],
+      "categories": [
+        "Cloud",
+        "DevOps"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "react",
       "label": "react",
-      "categories": ["Frontend Frameworks"],
+      "categories": [
+        "Frontend Frameworks"
+      ],
       "ecosystem": "javascript"
     },
     {
       "id": "redis",
       "label": "redis",
-      "categories": ["Databases"],
+      "categories": [
+        "Databases"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "redis-streams",
       "label": "redis-streams",
-      "categories": ["Messaging", "Databases"],
+      "categories": [
+        "Messaging",
+        "Databases"
+      ],
       "ecosystem": "database"
     },
     {
       "id": "render",
       "label": "render",
-      "categories": ["Cloud", "DevOps"],
+      "categories": [
+        "Cloud",
+        "DevOps"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "resend",
       "label": "resend",
-      "categories": ["Messaging"],
+      "categories": [
+        "Messaging"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "revenuecat",
       "label": "revenuecat",
-      "categories": ["Payments", "Finance"],
+      "categories": [
+        "Payments",
+        "Finance"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "sendgrid",
       "label": "sendgrid",
-      "categories": ["Messaging"],
+      "categories": [
+        "Messaging"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "sentry",
       "label": "sentry",
-      "categories": ["Monitoring"],
+      "categories": [
+        "Monitoring"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "shopify",
       "label": "shopify",
-      "categories": ["Commerce"],
+      "categories": [
+        "Commerce"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "slack",
       "label": "slack",
-      "categories": ["Messaging", "Productivity"],
+      "categories": [
+        "Messaging",
+        "Productivity"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "sqlite",
       "label": "sqlite",
-      "categories": ["Databases"],
+      "categories": [
+        "Databases"
+      ],
       "ecosystem": "database"
     },
     {
       "id": "stripe",
       "label": "stripe",
-      "categories": ["Payments", "Commerce"],
+      "categories": [
+        "Payments",
+        "Commerce"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "supabase",
       "label": "supabase",
-      "categories": ["Databases", "Authentication"],
+      "categories": [
+        "Databases",
+        "Authentication"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "sveltekit",
       "label": "sveltekit",
-      "categories": ["Frontend Frameworks"],
+      "categories": [
+        "Frontend Frameworks"
+      ],
       "ecosystem": "svelte"
     },
     {
       "id": "terraform",
       "label": "terraform",
-      "categories": ["Developer Tools", "Infrastructure"],
+      "categories": [
+        "Developer Tools",
+        "Infrastructure"
+      ],
       "ecosystem": "devops"
     },
     {
       "id": "traefik",
       "label": "traefik",
-      "categories": ["Infrastructure", "Developer Tools"],
+      "categories": [
+        "Infrastructure",
+        "Developer Tools"
+      ],
       "ecosystem": "devops"
     },
     {
       "id": "trpc",
       "label": "trpc",
-      "categories": ["Backend Frameworks", "Developer Tools"],
+      "categories": [
+        "Backend Frameworks",
+        "Developer Tools"
+      ],
       "ecosystem": "typescript"
     },
     {
       "id": "turborepo",
       "label": "turborepo",
-      "categories": ["Developer Tools"],
+      "categories": [
+        "Developer Tools"
+      ],
       "ecosystem": "javascript"
     },
     {
       "id": "turso",
       "label": "turso",
-      "categories": ["Databases", "Cloud"],
+      "categories": [
+        "Databases",
+        "Cloud"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "twilio",
       "label": "twilio",
-      "categories": ["Messaging"],
+      "categories": [
+        "Messaging"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "typesense",
       "label": "typesense",
-      "categories": ["Search", "Databases"],
+      "categories": [
+        "Search",
+        "Databases"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "upstash",
       "label": "upstash",
-      "categories": ["Databases", "Messaging"],
+      "categories": [
+        "Databases",
+        "Messaging"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "vercel",
       "label": "vercel",
-      "categories": ["Cloud", "DevOps"],
+      "categories": [
+        "Cloud",
+        "DevOps"
+      ],
       "ecosystem": "various"
     },
     {
       "id": "vitest",
       "label": "vitest",
-      "categories": ["Testing", "Developer Tools"],
+      "categories": [
+        "Testing",
+        "Developer Tools"
+      ],
       "ecosystem": "javascript"
     },
     {
       "id": "vllm",
       "label": "vllm",
-      "categories": ["AI", "Infrastructure"],
+      "categories": [
+        "AI",
+        "Infrastructure"
+      ],
       "ecosystem": "ai"
     },
     {
       "id": "vue",
       "label": "vue",
-      "categories": ["Frontend Frameworks"],
+      "categories": [
+        "Frontend Frameworks"
+      ],
       "ecosystem": "javascript"
     },
     {
       "id": "xquik",
       "label": "xquik",
-      "categories": ["Developer Tools", "AI"],
+      "categories": [
+        "Developer Tools",
+        "AI"
+      ],
       "ecosystem": "various"
     }
   ],
@@ -660,12 +927,12 @@
     },
     {
       "source": "azure-blob-storage",
-      "target": "aws s3",
+      "target": "aws-s3",
       "type": "related_to"
     },
     {
       "source": "azure-blob-storage",
-      "target": "google cloud storage",
+      "target": "google-cloud-storage",
       "type": "related_to"
     },
     {
@@ -775,7 +1042,7 @@
     },
     {
       "source": "digitalocean",
-      "target": "aws s3",
+      "target": "aws-s3",
       "type": "related_to"
     },
     {
@@ -920,7 +1187,7 @@
     },
     {
       "source": "google-cloud-storage",
-      "target": "aws s3",
+      "target": "aws-s3",
       "type": "related_to"
     },
     {
@@ -1280,7 +1547,7 @@
     },
     {
       "source": "paddle",
-      "target": "lemon squeezy",
+      "target": "lemon-squeezy",
       "type": "related_to"
     },
     {
@@ -1420,7 +1687,7 @@
     },
     {
       "source": "railway",
-      "target": "fly.io",
+      "target": "fly",
       "type": "related_to"
     },
     {
@@ -1460,12 +1727,12 @@
     },
     {
       "source": "render",
-      "target": "fly.io",
+      "target": "fly",
       "type": "related_to"
     },
     {
       "source": "resend",
-      "target": "react-email",
+      "target": "react",
       "type": "related_to"
     },
     {
@@ -1600,7 +1867,7 @@
     },
     {
       "source": "turso",
-      "target": "fly.io",
+      "target": "fly",
       "type": "related_to"
     },
     {

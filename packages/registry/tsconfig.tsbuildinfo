@@ -1,0 +1,1 @@
+{"root":["./src/index.ts","./src/interfaces.ts","./src/cache/index.ts","./src/registry-types/base.ts","./src/registry-types/local.ts","./src/registry-types/remote.ts","./src/resolver/index.ts","./src/search/index.ts","./src/sync/index.ts"],"errors":true,"version":"5.9.3"}

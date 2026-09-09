@@ -25,7 +25,7 @@ title: railway
 ## Graph
 
 - **related to** → [render](/skills/render)
-- **related to** → [fly.io](/skills/fly.io)
+- **related to** → [fly](/skills/fly)
 - **related to** → [github](/skills/github)
 
 ---

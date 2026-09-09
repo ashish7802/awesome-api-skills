@@ -29,6 +29,7 @@ title: react
 - **alternative to** → [sveltekit](/skills/sveltekit)
 - **works well with** ← [biome](/skills/biome)
 - **integrates with** ← [mapbox](/skills/mapbox)
+- **related to** ← [resend](/skills/resend)
 - **works well with** ← [trpc](/skills/trpc)
 - **works well with** ← [vitest](/skills/vitest)
 

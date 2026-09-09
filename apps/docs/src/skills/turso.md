@@ -24,10 +24,9 @@ title: turso
 
 ## Graph
 
-- **related to** → [fly.io](/skills/fly.io)
+- **related to** → [fly](/skills/fly)
 - **related to** → [render](/skills/render)
 - **works well with** ← [drizzle](/skills/drizzle)
-- **related to** ← [fly](/skills/fly)
 - **extended by** ← [sqlite](/skills/sqlite)
 
 ---

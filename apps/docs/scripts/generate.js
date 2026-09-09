@@ -280,35 +280,206 @@ const packageDocs = [
   {
     slug: 'overview',
     title: 'Overview',
-    body: `Stop AI from guessing APIs. This repo ships **100 skills** — markdown packages your agent reads instead of hallucinating SDK details.
+    body: `Stop AI from guessing APIs. This repository ships **${skillIds.length} verified skills** — markdown packages your coding agent reads to eliminate SDK hallucinations, broken method calls, and missing configuration flags.
 
-**Start here:** [Skills directory](/skills/) · [Knowledge graph](/graph)`,
+## Why API Skills?
+
+LLMs are regularly trained on outdated API documentation. When asking an agent to write code for modern SDKs (like Stripe, Clerk v5+, Next.js App Router, or Supabase), models frequently invent deprecated parameters or hallucinate methods.
+
+Awesome API Skills provides deterministic context files (\`SKILL.md\`) that provide:
+- **Exact SDK Import Patterns & Signatures**
+- **Critical AI Pitfalls**: Known traps where models make mistakes (e.g., Stripe raw body webhooks, Clerk v5 middleware, Supabase RLS)
+- **Production Verification Checklists**: Concrete steps to test your integration
+
+## Supported Agents
+
+Skills are formatted for instant ingestion across leading AI coding tools:
+- **Cursor**: Reference in \`.cursorrules\` or directly prompt \`@skills/<skill-name>/SKILL.md\`
+- **Claude Code**: Include in project root \`CLAUDE.md\` or run \`/context skills/<skill-name>/SKILL.md\`
+- **Cline**: Place in \`.cline/skills/\` or pass via workspace instructions
+- **Continue**: Configure under \`.continue/config.json\` or context providers
+
+## Getting Started
+
+1. **Browse Skills**: Explore the [Skills Directory](/skills/) or [Knowledge Graph](/graph)
+2. **Interactive Playground**: Test and validate skills in the [Playground](/playground)
+3. **Local CLI**: Search and validate skills directly with \`node packages/cli/dist/bin.js\`
+`,
   },
   {
     slug: 'cli',
-    title: 'CLI',
-    body: `Search and validate skills locally. Build first: \`pnpm build\`
+    title: 'CLI Reference',
+    body: `Search, validate, and inspect skills locally using the built-in CLI.
+
+## Build the CLI
 
 \`\`\`bash
-node packages/cli/dist/bin.js search payment
+npm run build:packages
+\`\`\`
+
+## Commands
+
+### Search Skills
+
+Search skills by API name, category, or keyword:
+
+\`\`\`bash
+node packages/cli/dist/bin.js search stripe
+node packages/cli/dist/bin.js search database --json
+\`\`\`
+
+### Doctor & Environment Health
+
+Inspect local workspace setup, skills coverage, and build integrity:
+
+\`\`\`bash
 node packages/cli/dist/bin.js doctor
+\`\`\`
+
+### Validate Skills
+
+Run structural, schema, and trust verification across all \`skills/*\` packages:
+
+\`\`\`bash
 node packages/cli/dist/bin.js validate
 \`\`\`
 
-Not published to npm yet.`,
+### Real-Time Performance Benchmark
+
+Measure real loading throughput, validation rules, graph traversal, and query speed:
+
+\`\`\`bash
+npm run benchmark
+\`\`\`
+`,
   },
-  { slug: 'sdk', title: 'SDK', body: 'Client utilities in `packages/sdk`.' },
+  {
+    slug: 'sdk',
+    title: 'SDK Guide',
+    body: `The \`@awesome-api-skills/sdk\` package provides core programmatic access for embedding skill management, lifecycle hooks, and plugin events into custom developer tooling.
+
+## Installation & Import
+
+\`\`\`typescript
+import { SDKCore, DefaultLogger, DefaultEventBus } from '@awesome-api-skills/sdk';
+
+const sdk = new SDKCore();
+
+// Listen to lifecycle events
+sdk.events.on('PluginLoaded', (event) => {
+  console.log(\`Loaded skill plugin: \${event.data.name}\`);
+});
+\`\`\`
+
+## Architecture
+
+- **\`SDKCore\`**: Central coordinator managing plugin lifecycles, configuration, and event dispatching.
+- **\`DefaultEventBus\`**: Typed event emitter for tracking load, validation, and execution events.
+- **\`LifecycleManager\`**: Controls plugin registration, initialization hooks, and version compatibility checks.
+- **\`RegistryClient\`**: Client for querying local or remote skill manifests and relationship graphs.
+`,
+  },
   {
     slug: 'registry',
-    title: 'Registry',
-    body: 'Graph and index JSON in `registry/`. [View graph →](/graph)',
+    title: 'Registry & Knowledge Graph',
+    body: `The registry maintains metadata, category indexes, and dependency relationships for all **${skillIds.length} skills**.
+
+## Graph Data
+
+The complete dependency and integration graph is located in \`registry/graph.json\`:
+
+- **Nodes**: ${graph.nodes?.length || skillIds.length} unique skill nodes with version, categories, and agent compatibility.
+- **Edges**: ${graph.edges?.length || 0} directed relationships categorizing stacks, prerequisites, and alternatives.
+
+## Edge Types
+
+| Relationship | Description | Example |
+| :--- | :--- | :--- |
+| \`depends_on\` | Required underlying dependency | \`argo-cd\` → \`kubernetes\` |
+| \`integrates_with\` | Frequently paired in production | \`auth0\` → \`nextjs\` |
+| \`works_well_with\` | Complementary technology | \`drizzle\` → \`postgresql\` |
+| \`alternative_to\` | Direct technology alternative | \`fastapi\` → \`express\` |
+| \`related_to\` | Shared technology domain | \`redis\` → \`upstash\` |
+
+[Explore the interactive graph visualization →](/graph)
+`,
   },
-  { slug: 'validator', title: 'Validator', body: 'Schema validation in `packages/validator`.' },
-  { slug: 'generator', title: 'Generator', body: 'Artifact plugins in `packages/generator`.' },
+  {
+    slug: 'validator',
+    title: 'Validation Engine',
+    body: `The \`@awesome-api-skills/validator\` package enforces structural, schema, and trust integrity across all skills.
+
+## Validation Rules
+
+1. **\`V-001 (MetadataPresenceRule)\`**: Ensures \`metadata.json\` exists and parses as valid JSON.
+2. **\`V-002 (SkillMarkdownPresenceRule)\`**: Verifies that \`SKILL.md\` is present and non-empty.
+3. **\`V-003 (LastVerifiedMetadataRule)\`**: Confirms \`lastVerified\` timestamp is present to maintain freshness.
+4. **\`V-004 (MetadataSchemaValidationRule)\`**: Validates metadata fields against the formal JSON schema.
+
+## Programmatic Usage
+
+\`\`\`typescript
+import { ValidatorEngine, RuleSet } from '@awesome-api-skills/validator';
+
+const engine = new ValidatorEngine();
+const results = await engine.validateSkill('/path/to/skills/stripe');
+
+console.log(\`Passed: \${results.passed}, Diagnostics: \${results.diagnostics.length}\`);
+\`\`\`
+`,
+  },
+  {
+    slug: 'generator',
+    title: 'Generator & Exporters',
+    body: `The \`@awesome-api-skills/generator\` package transforms raw skill metadata and markdown into agent-specific formats.
+
+## Supported Export Targets
+
+- **Cursor Rules**: Generates \`.cursorrules\` context chunks for instant workspace indexing.
+- **Claude Code**: Formats unified project references for \`CLAUDE.md\`.
+- **VitePress Docs**: Builds high-performance documentation pages with search indexes and relationship maps.
+`,
+  },
   {
     slug: 'specification',
-    title: 'Specification',
-    body: 'Skill format: [SPECIFICATION.md](https://github.com/ashish7802/awesome-api-skills/blob/master/SPECIFICATION.md)',
+    title: 'SKILL.md Specification',
+    body: `Every skill in this repository follows the open \`SKILL.md v1.0\` specification.
+
+## Directory Layout
+
+Each skill occupies an isolated folder under \`skills/<name>/\`:
+
+\`\`\`text
+skills/stripe/
+├── SKILL.md       # Primary agent context and implementation patterns
+└── metadata.json  # Machine-readable schema metadata
+\`\`\`
+
+## Required Metadata Fields
+
+\`\`\`json
+{
+  "name": "stripe",
+  "version": "1.0.0",
+  "description": "Financial infrastructure platform for the internet.",
+  "categories": ["Payments", "Commerce"],
+  "languages": ["typescript", "python"],
+  "license": "MIT",
+  "documentationSource": "https://stripe.com/docs/api",
+  "supportedAgents": ["cursor", "claude-code", "cline", "continue"],
+  "compatibility": "SKILL.md v1.0",
+  "lastVerified": "2026-07-03"
+}
+\`\`\`
+
+## Markdown Structure
+
+1. **Title & Frontmatter**: Skill name and summary.
+2. **Quickstart**: Minimal copy-pasteable configuration and initialization.
+3. **Core API Patterns**: Standard operations (CRUD, pagination, async processing).
+4. **Critical AI Pitfalls**: High-priority rules warning against known LLM hallucinations.
+5. **Verification Checklist**: Concrete commands or checks to verify the integration.
+`,
   },
 ];
 

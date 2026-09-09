@@ -30,7 +30,6 @@ title: xquik
 
 ---
 
-# Xquik API Skill
 
 ## Quick Start
 

@@ -29,7 +29,6 @@ title: vllm
 
 ---
 
-# vLLM Skill
 
 > High-throughput and memory-efficient LLM inference engine.
 

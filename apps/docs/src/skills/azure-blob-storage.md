@@ -24,8 +24,8 @@ title: azure-blob-storage
 
 ## Graph
 
-- **related to** → [aws s3](/skills/aws s3)
-- **related to** → [google cloud storage](/skills/google cloud storage)
+- **related to** → [aws-s3](/skills/aws-s3)
+- **related to** → [google-cloud-storage](/skills/google-cloud-storage)
 
 ---
 

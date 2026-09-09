@@ -24,8 +24,9 @@ title: google-cloud-storage
 
 ## Graph
 
-- **related to** → [aws s3](/skills/aws s3)
+- **related to** → [aws-s3](/skills/aws-s3)
 - **related to** → [firebase](/skills/firebase)
+- **related to** ← [azure-blob-storage](/skills/azure-blob-storage)
 
 ---
 

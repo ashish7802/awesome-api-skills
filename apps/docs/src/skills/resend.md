@@ -24,7 +24,7 @@ title: resend
 
 ## Graph
 
-- **related to** → [react-email](/skills/react-email)
+- **related to** → [react](/skills/react)
 - **related to** → [stripe](/skills/stripe)
 - **related to** → [clerk](/skills/clerk)
 

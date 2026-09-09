@@ -15,6 +15,7 @@ export default defineConfig({
     logo: '/logo.svg',
     nav: [
       { text: 'Skills', link: '/skills/' },
+      { text: 'Playground', link: '/playground' },
       { text: 'Graph', link: '/graph' },
       { text: 'CLI', link: '/docs/cli' },
       { text: 'Spec', link: '/docs/specification' },
@@ -32,6 +33,7 @@ export default defineConfig({
           items: [
             { text: 'All skills', link: '/skills/' },
             { text: 'Categories', link: '/skills/categories' },
+            { text: 'Playground', link: '/playground' },
           ],
         },
         {
@@ -47,11 +49,16 @@ export default defineConfig({
       ],
       '/docs/': [
         {
-          text: 'Guide',
+          text: 'Guide & Tooling',
           items: [
             { text: 'Overview', link: '/docs/overview' },
-            { text: 'CLI', link: '/docs/cli' },
-            { text: 'Graph', link: '/graph' },
+            { text: 'Playground', link: '/playground' },
+            { text: 'Knowledge Graph', link: '/graph' },
+            { text: 'CLI Reference', link: '/docs/cli' },
+            { text: 'SDK Guide', link: '/docs/sdk' },
+            { text: 'Registry & Graph', link: '/docs/registry' },
+            { text: 'Validation Engine', link: '/docs/validator' },
+            { text: 'Generator & Exporters', link: '/docs/generator' },
             { text: 'Specification', link: '/docs/specification' },
           ],
         },

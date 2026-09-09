@@ -26,6 +26,9 @@ title: aws-s3
 
 - **provisioned by** → [terraform](/skills/terraform)
 - **provisioned by** → [pulumi](/skills/pulumi)
+- **related to** ← [azure-blob-storage](/skills/azure-blob-storage)
+- **related to** ← [digitalocean](/skills/digitalocean)
+- **related to** ← [google-cloud-storage](/skills/google-cloud-storage)
 
 ---
 

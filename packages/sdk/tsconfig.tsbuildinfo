@@ -1,0 +1,1 @@
+{"root":["./src/index.ts","./src/errors/index.ts","./src/events/index.ts","./src/exporter/index.ts","./src/generator/index.ts","./src/installer/index.ts","./src/lifecycle/index.ts","./src/logger/index.ts","./src/registry/index.ts","./src/types/index.ts","./src/validator/index.ts"],"errors":true,"version":"5.9.3"}

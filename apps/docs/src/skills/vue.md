@@ -31,7 +31,6 @@ title: vue
 
 ---
 
-# Vue Skill
 
 > The Progressive JavaScript Framework.
 

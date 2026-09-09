@@ -4,11 +4,14 @@ layout: home
 hero:
   name: 'Stop guessing APIs'
   text: 'Skills your AI agent can trust'
-  tagline: '100 structured skill packages — pitfalls, checklists, and a knowledge graph. No hallucinated endpoints.'
+  tagline: '101 structured skill packages — pitfalls, checklists, and a knowledge graph. No hallucinated endpoints.'
   actions:
     - theme: brand
       text: Browse skills
       link: /skills/
+    - theme: alt
+      text: Interactive Playground
+      link: /playground
     - theme: alt
       text: See the graph
       link: /graph
@@ -28,7 +31,7 @@ Pasted docs are unstructured, untrusted, and re-pasted every session. A skill is
 
 <div class="home-cta">
 
-[Browse 100 skills →](/skills/) · [Explore the graph →](/graph)
+[Browse 101 skills →](/skills/) · [Test in Playground →](/playground) · [Explore the graph →](/graph)
 
 </div>
 
