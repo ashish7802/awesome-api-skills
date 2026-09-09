@@ -25,6 +25,7 @@ title: sendgrid
 ## Graph
 
 - **related to** → [twilio](/skills/twilio)
+- **alternative to** ← [postmark](/skills/postmark)
 
 ---
 

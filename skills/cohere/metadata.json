@@ -1,0 +1,42 @@
+{
+  "name": "cohere",
+  "version": "1.0.0",
+  "description": "Enterprise AI platform for high-accuracy multilingual Embeddings (v3), Rerank, and Command R+ models.",
+  "categories": [
+    "AI",
+    "Search",
+    "Machine Learning"
+  ],
+  "languages": [
+    "typescript",
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://docs.cohere.com/reference/about"
+  },
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-07-02",
+  "documentationSource": "https://docs.cohere.com/reference/about",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0",
+  "lastVerified": "2026-07-03",
+  "pitfalls": [
+    "Omitting required inputType on Embed v3 (\"search_document\" vs \"search_query\")",
+    "Not leveraging cohere.rerank() on RAG candidate sets for dramatic precision boosts",
+    "Confusing command-r with command-r-plus model identifiers"
+  ],
+  "checklist": [
+    "Embeddings specify inputType: \"search_document\" when indexing and \"search_query\" when searching",
+    "Rerank endpoint utilized for reordering top-k semantic search results",
+    "COHERE_API_KEY stored securely on the backend"
+  ]
+}

@@ -66,6 +66,13 @@
     ]
   },
   {
+    "name": "braintree",
+    "categories": [
+      "Payments",
+      "Commerce"
+    ]
+  },
+  {
     "name": "bullmq",
     "categories": [
       "Messaging",
@@ -101,6 +108,14 @@
     ]
   },
   {
+    "name": "cohere",
+    "categories": [
+      "AI",
+      "Search",
+      "Machine Learning"
+    ]
+  },
+  {
     "name": "convex",
     "categories": [
       "Databases",
@@ -112,6 +127,13 @@
     "categories": [
       "Monitoring",
       "DevOps"
+    ]
+  },
+  {
+    "name": "deepseek",
+    "categories": [
+      "AI",
+      "Machine Learning"
     ]
   },
   {
@@ -145,6 +167,14 @@
     "categories": [
       "Databases",
       "Developer Tools"
+    ]
+  },
+  {
+    "name": "elevenlabs",
+    "categories": [
+      "AI",
+      "Audio",
+      "Media"
     ]
   },
   {
@@ -219,6 +249,14 @@
     ]
   },
   {
+    "name": "groq",
+    "categories": [
+      "AI",
+      "Performance",
+      "Machine Learning"
+    ]
+  },
+  {
     "name": "helm",
     "categories": [
       "Developer Tools",
@@ -229,6 +267,14 @@
     "name": "hono",
     "categories": [
       "Backend Frameworks"
+    ]
+  },
+  {
+    "name": "inngest",
+    "categories": [
+      "Developer Tools",
+      "Serverless",
+      "Workflows"
     ]
   },
   {
@@ -307,6 +353,13 @@
     ]
   },
   {
+    "name": "mistral",
+    "categories": [
+      "AI",
+      "Developer Tools"
+    ]
+  },
+  {
     "name": "mixpanel",
     "categories": [
       "Analytics"
@@ -356,6 +409,13 @@
     "categories": [
       "Developer Tools",
       "Infrastructure"
+    ]
+  },
+  {
+    "name": "novu",
+    "categories": [
+      "Communications",
+      "Developer Tools"
     ]
   },
   {
@@ -453,6 +513,13 @@
     ]
   },
   {
+    "name": "postmark",
+    "categories": [
+      "Email",
+      "Communications"
+    ]
+  },
+  {
     "name": "prettier",
     "categories": [
       "Developer Tools"
@@ -476,6 +543,14 @@
     "categories": [
       "Developer Tools",
       "Infrastructure"
+    ]
+  },
+  {
+    "name": "qdrant",
+    "categories": [
+      "AI",
+      "Databases",
+      "Search"
     ]
   },
   {
@@ -516,6 +591,14 @@
     "categories": [
       "Cloud",
       "DevOps"
+    ]
+  },
+  {
+    "name": "replicate",
+    "categories": [
+      "AI",
+      "Media",
+      "Machine Learning"
     ]
   },
   {
@@ -583,6 +666,14 @@
     ]
   },
   {
+    "name": "svix",
+    "categories": [
+      "Developer Tools",
+      "Security",
+      "Communications"
+    ]
+  },
+  {
     "name": "terraform",
     "categories": [
       "Developer Tools",
@@ -594,6 +685,14 @@
     "categories": [
       "Infrastructure",
       "Developer Tools"
+    ]
+  },
+  {
+    "name": "trigger-dev",
+    "categories": [
+      "Developer Tools",
+      "Serverless",
+      "Workflows"
     ]
   },
   {
@@ -630,6 +729,14 @@
     ]
   },
   {
+    "name": "unkey",
+    "categories": [
+      "Security",
+      "Developer Tools",
+      "Serverless"
+    ]
+  },
+  {
     "name": "upstash",
     "categories": [
       "Databases",
@@ -661,6 +768,14 @@
     "name": "vue",
     "categories": [
       "Frontend Frameworks"
+    ]
+  },
+  {
+    "name": "weaviate",
+    "categories": [
+      "AI",
+      "Databases",
+      "Search"
     ]
   },
   {

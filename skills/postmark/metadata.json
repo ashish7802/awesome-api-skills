@@ -1,0 +1,41 @@
+{
+  "name": "postmark",
+  "version": "1.0.0",
+  "description": "High-deliverability transactional email service with detailed delivery metrics and inbound webhooks.",
+  "categories": [
+    "Email",
+    "Communications"
+  ],
+  "languages": [
+    "typescript",
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://postmarkapp.com/developer"
+  },
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-07-02",
+  "documentationSource": "https://postmarkapp.com/developer",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0",
+  "lastVerified": "2026-07-03",
+  "pitfalls": [
+    "Using account tokens instead of server API tokens for sending messages",
+    "Sending emails from unverified sender signatures or domains",
+    "Forgetting to attach MessageStream parameter for broadcast vs transactional streams"
+  ],
+  "checklist": [
+    "POSTMARK_SERVER_API_TOKEN configured in backend environment",
+    "From address matches verified domain with DKIM/SPF passing",
+    "Batch emails use sendEmailBatch for bulk delivery"
+  ]
+}

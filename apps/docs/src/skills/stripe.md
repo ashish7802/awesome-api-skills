@@ -30,6 +30,8 @@ title: stripe
 - **related to** ← [resend](/skills/resend)
 - **related to** ← [revenuecat](/skills/revenuecat)
 - **works well with** ← [shopify](/skills/shopify)
+- **works well with** ← [svix](/skills/svix)
+- **works well with** ← [inngest](/skills/inngest)
 
 ---
 

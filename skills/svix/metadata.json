@@ -1,0 +1,43 @@
+{
+  "name": "svix",
+  "version": "1.0.0",
+  "description": "Enterprise webhook sending service and cryptographic signature verification standard.",
+  "categories": [
+    "Developer Tools",
+    "Security",
+    "Communications"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://docs.svix.com"
+  },
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-07-02",
+  "documentationSource": "https://docs.svix.com",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0",
+  "lastVerified": "2026-07-03",
+  "pitfalls": [
+    "Attempting to verify webhook signatures against parsed JSON objects instead of raw string bodies",
+    "Missing required headers: svix-id, svix-timestamp, svix-signature",
+    "Not handling replay attack protection (timestamp drift validation)"
+  ],
+  "checklist": [
+    "Webhook headers passed exactly: svix-id, svix-timestamp, svix-signature",
+    "Webhook secret starts with whsec_ and is retrieved from environment variables",
+    "Verification runs on the raw, unparsed request payload string"
+  ]
+}

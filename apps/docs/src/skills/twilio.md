@@ -25,6 +25,7 @@ title: twilio
 ## Graph
 
 - **related to** → [sendgrid](/skills/sendgrid)
+- **integrates with** ← [novu](/skills/novu)
 
 ---
 

@@ -1,0 +1,42 @@
+{
+  "name": "braintree",
+  "version": "1.0.0",
+  "description": "PayPal and Braintree payment gateway integration for global credit cards, PayPal, and Apple Pay.",
+  "categories": [
+    "Payments",
+    "Commerce"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "java"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://developer.paypal.com/braintree/docs"
+  },
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-07-02",
+  "documentationSource": "https://developer.paypal.com/braintree/docs",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0",
+  "lastVerified": "2026-07-03",
+  "pitfalls": [
+    "Directly accepting raw credit card numbers on backend servers instead of using client tokens and payment method nonces",
+    "Not verifying 3D Secure verification status on transactions in European regions",
+    "Using Sandbox merchant credentials in Production environments"
+  ],
+  "checklist": [
+    "Server generates client token via gateway.clientToken.generate()",
+    "Frontend collects payment and returns paymentMethodNonce",
+    "Server calls gateway.transaction.sale() with submitForSettlement: true"
+  ]
+}

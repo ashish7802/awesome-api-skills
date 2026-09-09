@@ -27,6 +27,7 @@ title: bullmq
 - **depends on** → [redis](/skills/redis)
 - **alternative to** → [rabbitmq](/skills/rabbitmq)
 - **integrates with** → [nestjs](/skills/nestjs)
+- **alternative to** ← [inngest](/skills/inngest)
 
 ---
 

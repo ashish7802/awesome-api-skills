@@ -1,6 +1,6 @@
 # Overview
 
-Stop AI from guessing APIs. This repository ships **101 verified skills** — markdown packages your coding agent reads to eliminate SDK hallucinations, broken method calls, and missing configuration flags.
+Stop AI from guessing APIs. This repository ships **116 verified skills** — markdown packages your coding agent reads to eliminate SDK hallucinations, broken method calls, and missing configuration flags.
 
 ## Why API Skills?
 

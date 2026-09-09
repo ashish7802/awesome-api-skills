@@ -1,0 +1,41 @@
+{
+  "name": "deepseek",
+  "version": "1.0.0",
+  "description": "DeepSeek frontier reasoning (R1) and general chat (V3) models with OpenAI-compatible API endpoints.",
+  "categories": [
+    "AI",
+    "Machine Learning"
+  ],
+  "languages": [
+    "typescript",
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://platform.deepseek.com/api-docs"
+  },
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-07-02",
+  "documentationSource": "https://platform.deepseek.com/api-docs",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0",
+  "lastVerified": "2026-07-03",
+  "pitfalls": [
+    "Omitting baseURL: \"https://api.deepseek.com\" when using the standard openai SDK client",
+    "Confusing reasoning model \"deepseek-reasoner\" (which includes reasoning_content) with \"deepseek-chat\"",
+    "Setting temperature too high on deepseek-reasoner (recommended: 0.6 or default)"
+  ],
+  "checklist": [
+    "Client sets baseURL: \"https://api.deepseek.com\"",
+    "DEEPSEEK_API_KEY loaded securely in server environment variables",
+    "Streaming handler separates delta.reasoning_content from delta.content on deepseek-reasoner"
+  ]
+}

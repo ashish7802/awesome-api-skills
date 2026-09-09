@@ -7,17 +7,25 @@ title: Browse by Category
 Filter skills by domain. Click a category to expand.
 
 
-<details><summary><strong>AI</strong> (10)</summary>
+<details><summary><strong>AI</strong> (18)</summary>
 
 - [anthropic](/skills/anthropic)
 - [azure-openai](/skills/azure-openai)
+- [cohere](/skills/cohere)
+- [deepseek](/skills/deepseek)
+- [elevenlabs](/skills/elevenlabs)
 - [gemini](/skills/gemini)
+- [groq](/skills/groq)
 - [langchain](/skills/langchain)
 - [llamaindex](/skills/llamaindex)
+- [mistral](/skills/mistral)
 - [ollama](/skills/ollama)
 - [openai](/skills/openai)
 - [pinecone](/skills/pinecone)
+- [qdrant](/skills/qdrant)
+- [replicate](/skills/replicate)
 - [vllm](/skills/vllm)
+- [weaviate](/skills/weaviate)
 - [xquik](/skills/xquik)
 
 </details>
@@ -26,6 +34,12 @@ Filter skills by domain. Click a category to expand.
 
 - [mixpanel](/skills/mixpanel)
 - [posthog](/skills/posthog)
+
+</details>
+
+<details><summary><strong>Audio</strong> (1)</summary>
+
+- [elevenlabs](/skills/elevenlabs)
 
 </details>
 
@@ -82,14 +96,23 @@ Filter skills by domain. Click a category to expand.
 
 </details>
 
-<details><summary><strong>Commerce</strong> (2)</summary>
+<details><summary><strong>Commerce</strong> (3)</summary>
 
+- [braintree](/skills/braintree)
 - [shopify](/skills/shopify)
 - [stripe](/skills/stripe)
 
 </details>
 
-<details><summary><strong>Databases</strong> (19)</summary>
+<details><summary><strong>Communications</strong> (3)</summary>
+
+- [novu](/skills/novu)
+- [postmark](/skills/postmark)
+- [svix](/skills/svix)
+
+</details>
+
+<details><summary><strong>Databases</strong> (21)</summary>
 
 - [aws-dynamodb](/skills/aws-dynamodb)
 - [convex](/skills/convex)
@@ -103,6 +126,7 @@ Filter skills by domain. Click a category to expand.
 - [planetscale](/skills/planetscale)
 - [postgresql](/skills/postgresql)
 - [prisma](/skills/prisma)
+- [qdrant](/skills/qdrant)
 - [redis](/skills/redis)
 - [redis-streams](/skills/redis-streams)
 - [sqlite](/skills/sqlite)
@@ -110,6 +134,7 @@ Filter skills by domain. Click a category to expand.
 - [turso](/skills/turso)
 - [typesense](/skills/typesense)
 - [upstash](/skills/upstash)
+- [weaviate](/skills/weaviate)
 
 </details>
 
@@ -125,7 +150,7 @@ Filter skills by domain. Click a category to expand.
 
 </details>
 
-<details><summary><strong>Developer Tools</strong> (28)</summary>
+<details><summary><strong>Developer Tools</strong> (34)</summary>
 
 - [biome](/skills/biome)
 - [bullmq](/skills/bullmq)
@@ -138,23 +163,35 @@ Filter skills by domain. Click a category to expand.
 - [github](/skills/github)
 - [github-actions](/skills/github-actions)
 - [helm](/skills/helm)
+- [inngest](/skills/inngest)
 - [kubernetes](/skills/kubernetes)
 - [langchain](/skills/langchain)
 - [llamaindex](/skills/llamaindex)
 - [mapbox](/skills/mapbox)
+- [mistral](/skills/mistral)
 - [nginx](/skills/nginx)
+- [novu](/skills/novu)
 - [ollama](/skills/ollama)
 - [openai](/skills/openai)
 - [playwright](/skills/playwright)
 - [prettier](/skills/prettier)
 - [prisma](/skills/prisma)
 - [pulumi](/skills/pulumi)
+- [svix](/skills/svix)
 - [terraform](/skills/terraform)
 - [traefik](/skills/traefik)
+- [trigger-dev](/skills/trigger-dev)
 - [trpc](/skills/trpc)
 - [turborepo](/skills/turborepo)
+- [unkey](/skills/unkey)
 - [vitest](/skills/vitest)
 - [xquik](/skills/xquik)
+
+</details>
+
+<details><summary><strong>Email</strong> (1)</summary>
+
+- [postmark](/skills/postmark)
 
 </details>
 
@@ -203,9 +240,25 @@ Filter skills by domain. Click a category to expand.
 
 </details>
 
+<details><summary><strong>Machine Learning</strong> (4)</summary>
+
+- [cohere](/skills/cohere)
+- [deepseek](/skills/deepseek)
+- [groq](/skills/groq)
+- [replicate](/skills/replicate)
+
+</details>
+
 <details><summary><strong>Maps</strong> (1)</summary>
 
 - [mapbox](/skills/mapbox)
+
+</details>
+
+<details><summary><strong>Media</strong> (2)</summary>
+
+- [elevenlabs](/skills/elevenlabs)
+- [replicate](/skills/replicate)
 
 </details>
 
@@ -242,13 +295,20 @@ Filter skills by domain. Click a category to expand.
 
 </details>
 
-<details><summary><strong>Payments</strong> (5)</summary>
+<details><summary><strong>Payments</strong> (6)</summary>
 
+- [braintree](/skills/braintree)
 - [lemon-squeezy](/skills/lemon-squeezy)
 - [paddle](/skills/paddle)
 - [plaid](/skills/plaid)
 - [revenuecat](/skills/revenuecat)
 - [stripe](/skills/stripe)
+
+</details>
+
+<details><summary><strong>Performance</strong> (1)</summary>
+
+- [groq](/skills/groq)
 
 </details>
 
@@ -258,15 +318,18 @@ Filter skills by domain. Click a category to expand.
 
 </details>
 
-<details><summary><strong>Search</strong> (3)</summary>
+<details><summary><strong>Search</strong> (6)</summary>
 
 - [algolia](/skills/algolia)
+- [cohere](/skills/cohere)
 - [meilisearch](/skills/meilisearch)
+- [qdrant](/skills/qdrant)
 - [typesense](/skills/typesense)
+- [weaviate](/skills/weaviate)
 
 </details>
 
-<details><summary><strong>Security</strong> (7)</summary>
+<details><summary><strong>Security</strong> (9)</summary>
 
 - [auth0](/skills/auth0)
 - [caddy](/skills/caddy)
@@ -275,6 +338,16 @@ Filter skills by domain. Click a category to expand.
 - [jwt](/skills/jwt)
 - [oauth2](/skills/oauth2)
 - [openid-connect](/skills/openid-connect)
+- [svix](/skills/svix)
+- [unkey](/skills/unkey)
+
+</details>
+
+<details><summary><strong>Serverless</strong> (3)</summary>
+
+- [inngest](/skills/inngest)
+- [trigger-dev](/skills/trigger-dev)
+- [unkey](/skills/unkey)
 
 </details>
 
@@ -290,5 +363,12 @@ Filter skills by domain. Click a category to expand.
 
 - [playwright](/skills/playwright)
 - [vitest](/skills/vitest)
+
+</details>
+
+<details><summary><strong>Workflows</strong> (2)</summary>
+
+- [inngest](/skills/inngest)
+- [trigger-dev](/skills/trigger-dev)
 
 </details>

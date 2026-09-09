@@ -1,0 +1,42 @@
+{
+  "name": "groq",
+  "version": "1.0.0",
+  "description": "Ultra-low latency inference engine powered by Groq LPU chips for real-time AI and voice pipelines.",
+  "categories": [
+    "AI",
+    "Performance",
+    "Machine Learning"
+  ],
+  "languages": [
+    "typescript",
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://console.groq.com/docs/quickstart"
+  },
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-07-02",
+  "documentationSource": "https://console.groq.com/docs/quickstart",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0",
+  "lastVerified": "2026-07-03",
+  "pitfalls": [
+    "Using deprecated model names like llama3-8b-8192 instead of modern llama-3.3-70b-versatile",
+    "Not handling streaming backpressure when processing high token generation rates (500+ tok/s)",
+    "Hardcoding GROQ_API_KEY in frontend client code"
+  ],
+  "checklist": [
+    "Using groq-sdk or OpenAI client with baseURL: \"https://api.groq.com/openai/v1\"",
+    "GROQ_API_KEY loaded securely in backend environment",
+    "Model ID verified against current Groq production catalog"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "qdrant",
+  "version": "1.0.0",
+  "description": "Vector similarity search engine and database for production AI embeddings and RAG pipelines.",
+  "categories": [
+    "AI",
+    "Databases",
+    "Search"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "rust"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "Apache-2.0",
+  "links": {
+    "API Reference": "https://qdrant.tech/documentation/",
+    "TypeScript SDK": "https://github.com/qdrant/qdrant-js"
+  },
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-07-02",
+  "documentationSource": "https://qdrant.tech/documentation/",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0",
+  "lastVerified": "2026-07-03",
+  "pitfalls": [
+    "Inserting vector dimensions that mismatch collection vector parameters (e.g., 1536 vs 3072)",
+    "Forgetting to create payload indexes on filter fields before running large filtered searches",
+    "Passing integer IDs as strings or UUIDs when collection expects a specific ID format"
+  ],
+  "checklist": [
+    "Collection vector size matches the exact embedding model output dimensions",
+    "Payload fields used in filter queries are indexed with createPayloadIndex",
+    "QDRANT_URL and QDRANT_API_KEY are configured in server-side environment variables"
+  ]
+}

@@ -30,6 +30,8 @@ title: langchain
 - **integrates with** ← [gemini](/skills/gemini)
 - **integrates with** ← [ollama](/skills/ollama)
 - **integrates with** ← [vllm](/skills/vllm)
+- **integrates with** ← [qdrant](/skills/qdrant)
+- **integrates with** ← [deepseek](/skills/deepseek)
 
 ---
 

@@ -31,6 +31,7 @@ title: openai
 - **alternative to** ← [ollama](/skills/ollama)
 - **related to** ← [pinecone](/skills/pinecone)
 - **related to** ← [upstash](/skills/upstash)
+- **works well with** ← [qdrant](/skills/qdrant)
 
 ---
 

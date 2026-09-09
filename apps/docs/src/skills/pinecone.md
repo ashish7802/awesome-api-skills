@@ -29,6 +29,8 @@ title: pinecone
 - **related to** → [upstash](/skills/upstash)
 - **integrates with** ← [langchain](/skills/langchain)
 - **integrates with** ← [llamaindex](/skills/llamaindex)
+- **alternative to** ← [qdrant](/skills/qdrant)
+- **works well with** ← [cohere](/skills/cohere)
 
 ---
 

@@ -1,0 +1,41 @@
+{
+  "name": "novu",
+  "version": "1.0.0",
+  "description": "Unified notification infrastructure for email, SMS, push, Chat (Slack/Discord), and in-app feeds.",
+  "categories": [
+    "Communications",
+    "Developer Tools"
+  ],
+  "languages": [
+    "typescript",
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://docs.novu.co"
+  },
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-07-02",
+  "documentationSource": "https://docs.novu.co",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0",
+  "lastVerified": "2026-07-03",
+  "pitfalls": [
+    "Triggering notifications with missing subscriber object credentials",
+    "Not configuring channel provider fallback keys in Novu dashboard",
+    "Hardcoding email templates in application code rather than Novu workflow layouts"
+  ],
+  "checklist": [
+    "NOVU_SECRET_KEY loaded in server environment",
+    "Subscribers identified with consistent subscriberId",
+    "Trigger workflow slugs verified against Novu console"
+  ]
+}

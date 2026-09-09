@@ -1,0 +1,43 @@
+{
+  "name": "weaviate",
+  "version": "1.0.0",
+  "description": "Open-source vector database with multi-modal embeddings, hybrid keyword+vector search, and generative AI search modules.",
+  "categories": [
+    "AI",
+    "Databases",
+    "Search"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "BSD-3-Clause",
+  "links": {
+    "API Reference": "https://weaviate.io/developers/weaviate"
+  },
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-07-02",
+  "documentationSource": "https://weaviate.io/developers/weaviate",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0",
+  "lastVerified": "2026-07-03",
+  "pitfalls": [
+    "Using legacy v2/v3 Weaviate client syntax instead of modern weaviate-client v3+ collections API",
+    "Not setting vectorizer configuration when creating new collections",
+    "Passing unindexed properties in complex GraphQL / REST filters"
+  ],
+  "checklist": [
+    "Connect using weaviate.connectToWeaviateCloud or connectToCustom",
+    "Collections defined with explicit vectorIndexType and distance metric",
+    "Hybrid search configured with alpha balancing (0 = sparse BM25, 1 = dense vector)"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "inngest",
+  "version": "1.0.0",
+  "description": "Event-driven durable execution engine for background jobs, workflows, and step functions without queues.",
+  "categories": [
+    "Developer Tools",
+    "Serverless",
+    "Workflows"
+  ],
+  "languages": [
+    "typescript",
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "Apache-2.0",
+  "links": {
+    "API Reference": "https://www.inngest.com/docs"
+  },
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-07-02",
+  "documentationSource": "https://www.inngest.com/docs",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0",
+  "lastVerified": "2026-07-03",
+  "pitfalls": [
+    "Executing non-deterministic operations (e.g. Math.random(), Date.now()) outside step.run() blocks",
+    "Not returning serializable JSON data from step.run() calls",
+    "Forgetting to export serve() handler from the API route (e.g., /api/inngest)"
+  ],
+  "checklist": [
+    "API handler exposed at /api/inngest with serve({ client: inngest, functions: [...] })",
+    "All side-effects and external API calls wrapped in step.run()",
+    "INNGEST_SIGNING_KEY and INNGEST_EVENT_KEY set in production"
+  ]
+}

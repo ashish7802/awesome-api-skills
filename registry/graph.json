@@ -872,6 +872,226 @@
         "AI"
       ],
       "ecosystem": "various"
+    },
+    {
+      "id": "qdrant",
+      "name": "qdrant",
+      "categories": [
+        "AI",
+        "Databases",
+        "Search"
+      ],
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ]
+    },
+    {
+      "id": "deepseek",
+      "name": "deepseek",
+      "categories": [
+        "AI",
+        "Machine Learning"
+      ],
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ]
+    },
+    {
+      "id": "groq",
+      "name": "groq",
+      "categories": [
+        "AI",
+        "Performance",
+        "Machine Learning"
+      ],
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ]
+    },
+    {
+      "id": "mistral",
+      "name": "mistral",
+      "categories": [
+        "AI",
+        "Developer Tools"
+      ],
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ]
+    },
+    {
+      "id": "cohere",
+      "name": "cohere",
+      "categories": [
+        "AI",
+        "Search",
+        "Machine Learning"
+      ],
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ]
+    },
+    {
+      "id": "elevenlabs",
+      "name": "elevenlabs",
+      "categories": [
+        "AI",
+        "Audio",
+        "Media"
+      ],
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ]
+    },
+    {
+      "id": "replicate",
+      "name": "replicate",
+      "categories": [
+        "AI",
+        "Media",
+        "Machine Learning"
+      ],
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ]
+    },
+    {
+      "id": "svix",
+      "name": "svix",
+      "categories": [
+        "Developer Tools",
+        "Security",
+        "Communications"
+      ],
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ]
+    },
+    {
+      "id": "inngest",
+      "name": "inngest",
+      "categories": [
+        "Developer Tools",
+        "Serverless",
+        "Workflows"
+      ],
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ]
+    },
+    {
+      "id": "trigger-dev",
+      "name": "trigger-dev",
+      "categories": [
+        "Developer Tools",
+        "Serverless",
+        "Workflows"
+      ],
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ]
+    },
+    {
+      "id": "unkey",
+      "name": "unkey",
+      "categories": [
+        "Security",
+        "Developer Tools",
+        "Serverless"
+      ],
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ]
+    },
+    {
+      "id": "novu",
+      "name": "novu",
+      "categories": [
+        "Communications",
+        "Developer Tools"
+      ],
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ]
+    },
+    {
+      "id": "postmark",
+      "name": "postmark",
+      "categories": [
+        "Email",
+        "Communications"
+      ],
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ]
+    },
+    {
+      "id": "braintree",
+      "name": "braintree",
+      "categories": [
+        "Payments",
+        "Commerce"
+      ],
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ]
+    },
+    {
+      "id": "weaviate",
+      "name": "weaviate",
+      "categories": [
+        "AI",
+        "Databases",
+        "Search"
+      ],
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ]
     }
   ],
   "edges": [
@@ -1954,6 +2174,166 @@
       "source": "xquik",
       "target": "playwright",
       "type": "related_to"
+    },
+    {
+      "source": "qdrant",
+      "target": "openai",
+      "type": "works_well_with"
+    },
+    {
+      "source": "qdrant",
+      "target": "langchain",
+      "type": "integrates_with"
+    },
+    {
+      "source": "qdrant",
+      "target": "pinecone",
+      "type": "alternative_to"
+    },
+    {
+      "source": "weaviate",
+      "target": "openai",
+      "type": "works_well_with"
+    },
+    {
+      "source": "weaviate",
+      "target": "qdrant",
+      "type": "alternative_to"
+    },
+    {
+      "source": "deepseek",
+      "target": "openai",
+      "type": "alternative_to"
+    },
+    {
+      "source": "deepseek",
+      "target": "langchain",
+      "type": "integrates_with"
+    },
+    {
+      "source": "groq",
+      "target": "openai",
+      "type": "alternative_to"
+    },
+    {
+      "source": "groq",
+      "target": "nextjs",
+      "type": "works_well_with"
+    },
+    {
+      "source": "mistral",
+      "target": "openai",
+      "type": "alternative_to"
+    },
+    {
+      "source": "mistral",
+      "target": "langchain",
+      "type": "integrates_with"
+    },
+    {
+      "source": "cohere",
+      "target": "pinecone",
+      "type": "works_well_with"
+    },
+    {
+      "source": "cohere",
+      "target": "openai",
+      "type": "alternative_to"
+    },
+    {
+      "source": "elevenlabs",
+      "target": "openai",
+      "type": "works_well_with"
+    },
+    {
+      "source": "elevenlabs",
+      "target": "nextjs",
+      "type": "works_well_with"
+    },
+    {
+      "source": "replicate",
+      "target": "nextjs",
+      "type": "works_well_with"
+    },
+    {
+      "source": "replicate",
+      "target": "aws-s3",
+      "type": "works_well_with"
+    },
+    {
+      "source": "svix",
+      "target": "stripe",
+      "type": "works_well_with"
+    },
+    {
+      "source": "svix",
+      "target": "clerk",
+      "type": "works_well_with"
+    },
+    {
+      "source": "svix",
+      "target": "resend",
+      "type": "works_well_with"
+    },
+    {
+      "source": "inngest",
+      "target": "nextjs",
+      "type": "works_well_with"
+    },
+    {
+      "source": "inngest",
+      "target": "stripe",
+      "type": "works_well_with"
+    },
+    {
+      "source": "inngest",
+      "target": "bullmq",
+      "type": "alternative_to"
+    },
+    {
+      "source": "trigger-dev",
+      "target": "nextjs",
+      "type": "works_well_with"
+    },
+    {
+      "source": "trigger-dev",
+      "target": "inngest",
+      "type": "alternative_to"
+    },
+    {
+      "source": "unkey",
+      "target": "hono",
+      "type": "works_well_with"
+    },
+    {
+      "source": "unkey",
+      "target": "cloudflare-workers",
+      "type": "works_well_with"
+    },
+    {
+      "source": "novu",
+      "target": "resend",
+      "type": "integrates_with"
+    },
+    {
+      "source": "novu",
+      "target": "twilio",
+      "type": "integrates_with"
+    },
+    {
+      "source": "postmark",
+      "target": "resend",
+      "type": "alternative_to"
+    },
+    {
+      "source": "postmark",
+      "target": "sendgrid",
+      "type": "alternative_to"
+    },
+    {
+      "source": "braintree",
+      "target": "stripe",
+      "type": "alternative_to"
     }
   ]
 }

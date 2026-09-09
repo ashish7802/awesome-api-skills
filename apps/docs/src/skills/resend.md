@@ -27,6 +27,9 @@ title: resend
 - **related to** → [react](/skills/react)
 - **related to** → [stripe](/skills/stripe)
 - **related to** → [clerk](/skills/clerk)
+- **works well with** ← [svix](/skills/svix)
+- **integrates with** ← [novu](/skills/novu)
+- **alternative to** ← [postmark](/skills/postmark)
 
 ---
 

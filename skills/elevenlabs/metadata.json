@@ -1,0 +1,42 @@
+{
+  "name": "elevenlabs",
+  "version": "1.0.0",
+  "description": "Realistic AI voice synthesis, text-to-speech, voice cloning, and real-time conversational audio APIs.",
+  "categories": [
+    "AI",
+    "Audio",
+    "Media"
+  ],
+  "languages": [
+    "typescript",
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://elevenlabs.io/docs/api-reference"
+  },
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-07-02",
+  "documentationSource": "https://elevenlabs.io/docs/api-reference",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0",
+  "lastVerified": "2026-07-03",
+  "pitfalls": [
+    "Buffering entire audio files before playing instead of streaming audio chunks to the player",
+    "Hardcoding voiceId values that may not exist on other workspaces or accounts",
+    "Exposing ELEVENLABS_API_KEY in frontend browser code"
+  ],
+  "checklist": [
+    "Stream TTS audio directly via HTTP chunked response or WebSockets",
+    "ELEVENLABS_API_KEY stored securely in backend server environment",
+    "Voice IDs loaded dynamically via client.voices.getAll()"
+  ]
+}

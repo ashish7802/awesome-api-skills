@@ -1,0 +1,41 @@
+{
+  "name": "mistral",
+  "version": "1.0.0",
+  "description": "Mistral AI API for frontier multilingual models, Codestral code generation, and embeddings.",
+  "categories": [
+    "AI",
+    "Developer Tools"
+  ],
+  "languages": [
+    "typescript",
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "Apache-2.0",
+  "links": {
+    "API Reference": "https://docs.mistral.ai/api/"
+  },
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-07-02",
+  "documentationSource": "https://docs.mistral.ai/api/",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0",
+  "lastVerified": "2026-07-03",
+  "pitfalls": [
+    "Using legacy @mistralai/mistralai SDK syntax instead of the modern client methods",
+    "Confusing Codestral endpoint (codestral.mistral.ai) with general chat endpoint (api.mistral.ai)",
+    "Passing unformatted tool definitions to mistral function calling"
+  ],
+  "checklist": [
+    "MISTRAL_API_KEY initialized via Mistral client",
+    "Using mistral-large-latest or codestral-latest models",
+    "Tool calls properly formatted with function schemas"
+  ]
+}

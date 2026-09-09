@@ -1,0 +1,42 @@
+{
+  "name": "replicate",
+  "version": "1.0.0",
+  "description": "Cloud API for running open-source machine learning models (Flux, SDXL, Llama, Whisper) with a few lines of code.",
+  "categories": [
+    "AI",
+    "Media",
+    "Machine Learning"
+  ],
+  "languages": [
+    "typescript",
+    "python"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "MIT",
+  "links": {
+    "API Reference": "https://replicate.com/docs/reference/http"
+  },
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-07-02",
+  "documentationSource": "https://replicate.com/docs/reference/http",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0",
+  "lastVerified": "2026-07-03",
+  "pitfalls": [
+    "Blocking synchronous web requests waiting for cold-booting GPU model predictions",
+    "Not configuring webhooks for asynchronous long-running predictions (>30 seconds)",
+    "Hardcoding version hashes that may be superseded by official owner/model slugs"
+  ],
+  "checklist": [
+    "REPLICATE_API_TOKEN loaded in server environment",
+    "Async workflows use webhook callbacks or replicate.predictions.create() with polling",
+    "Generated media URLs downloaded and stored in persistent S3/GCS buckets"
+  ]
+}

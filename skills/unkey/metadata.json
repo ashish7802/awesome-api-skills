@@ -1,0 +1,43 @@
+{
+  "name": "unkey",
+  "version": "1.0.0",
+  "description": "Open-source API key management, validation, and distributed edge rate limiting infrastructure.",
+  "categories": [
+    "Security",
+    "Developer Tools",
+    "Serverless"
+  ],
+  "languages": [
+    "typescript",
+    "python",
+    "go"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "Apache-2.0",
+  "links": {
+    "API Reference": "https://www.unkey.com/docs"
+  },
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-07-02",
+  "documentationSource": "https://www.unkey.com/docs",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0",
+  "lastVerified": "2026-07-03",
+  "pitfalls": [
+    "Validating API keys with database queries instead of sub-10ms edge caching via unkey.keys.verify()",
+    "Forgetting to check result.data.valid on key verification",
+    "Not configuring rate limit overrides per API tier"
+  ],
+  "checklist": [
+    "UNKEY_ROOT_KEY loaded on secure server or edge middleware",
+    "Key verification checks result.data.valid and handles result.error",
+    "Global edge rate limits enabled with Ratelimit module"
+  ]
+}

@@ -29,6 +29,7 @@ title: aws-s3
 - **related to** ← [azure-blob-storage](/skills/azure-blob-storage)
 - **related to** ← [digitalocean](/skills/digitalocean)
 - **related to** ← [google-cloud-storage](/skills/google-cloud-storage)
+- **works well with** ← [replicate](/skills/replicate)
 
 ---
 

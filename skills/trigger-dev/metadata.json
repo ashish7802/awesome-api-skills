@@ -1,0 +1,41 @@
+{
+  "name": "trigger-dev",
+  "version": "1.0.0",
+  "description": "Background jobs and long-running tasks platform for TypeScript with zero server timeouts.",
+  "categories": [
+    "Developer Tools",
+    "Serverless",
+    "Workflows"
+  ],
+  "languages": [
+    "typescript"
+  ],
+  "author": "Awesome API Skills Team",
+  "license": "Apache-2.0",
+  "links": {
+    "API Reference": "https://trigger.dev/docs"
+  },
+  "schemaVersion": "1.0.0",
+  "validationStatus": "validated",
+  "maintainer": "Awesome API Skills Team",
+  "lastUpdated": "2026-07-02",
+  "documentationSource": "https://trigger.dev/docs",
+  "supportedAgents": [
+    "cursor",
+    "claude-code",
+    "cline",
+    "continue"
+  ],
+  "compatibility": "SKILL.md v1.0",
+  "lastVerified": "2026-07-03",
+  "pitfalls": [
+    "Using v2 syntax instead of Trigger.dev v3 task() definitions",
+    "Running heavy tasks inside Next.js serverless functions instead of delegating to trigger.dev tasks",
+    "Missing trigger.config.ts in the project root"
+  ],
+  "checklist": [
+    "trigger.config.ts configured with project ID and runtime settings",
+    "Tasks defined with task({ id: \"...\", run: async (payload) => { ... } })",
+    "TRIGGER_SECRET_KEY set in deployment environment"
+  ]
+}
