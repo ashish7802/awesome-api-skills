@@ -33,7 +33,6 @@ title: stripe
 
 ---
 
-# Stripe API Skill
 
 ## Overview
 Stripe provides APIs for payment processing, billing, subscriptions, and financial management. This skill focuses on the Stripe Node.js and Python SDKs, emphasizing PCI-compliant flows like Checkout Sessions and Webhook signatures.

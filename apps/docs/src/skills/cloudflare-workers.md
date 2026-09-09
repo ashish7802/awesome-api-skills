@@ -30,7 +30,6 @@ title: cloudflare-workers
 
 ---
 
-# Cloudflare Workers Skill
 
 > Build serverless applications and deploy globally across the Cloudflare edge network.
 

@@ -29,7 +29,6 @@ title: anthropic
 
 ---
 
-# Anthropic API Skill
 
 ## Overview
 Anthropic's API provides access to the Claude 3 family (Opus, Sonnet, Haiku). This skill focuses on the Messages API, vision capabilities, and strict system prompt isolation.

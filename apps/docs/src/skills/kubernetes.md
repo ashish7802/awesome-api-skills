@@ -34,7 +34,6 @@ title: kubernetes
 
 ---
 
-# Kubernetes Skill
 
 > Automated container deployment, scaling, and management.
 

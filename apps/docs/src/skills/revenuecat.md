@@ -29,7 +29,6 @@ title: revenuecat
 
 ---
 
-# RevenueCat API Skill
 
 ## Quick Start
 RevenueCat manages mobile in-app purchases (Apple/Google) seamlessly. The REST API allows your backend to verify user subscription status and grant entitlements.

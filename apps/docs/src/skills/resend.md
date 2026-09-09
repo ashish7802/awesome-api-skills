@@ -30,7 +30,6 @@ title: resend
 
 ---
 
-# Resend API Skill
 
 ## Quick Start
 Resend focuses on developer experience, bypassing legacy SMTP complexity. It inherently supports React Email for component-driven templating.

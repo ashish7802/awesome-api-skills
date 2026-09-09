@@ -30,7 +30,6 @@ title: jwt
 
 ---
 
-# JSON Web Tokens Skill
 
 > Compact, URL-safe means of representing claims to be transferred between two parties.
 

@@ -29,7 +29,6 @@ title: opentelemetry
 
 ---
 
-# OpenTelemetry Skill
 
 > High-quality, ubiquitous, and portable telemetry to enable effective observability.
 

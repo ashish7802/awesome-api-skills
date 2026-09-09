@@ -31,7 +31,6 @@ title: traefik
 
 ---
 
-# Traefik Skill
 
 > The Cloud Native Application Proxy.
 

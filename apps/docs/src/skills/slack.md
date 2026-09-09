@@ -29,7 +29,6 @@ title: slack
 
 ---
 
-# Slack API Skill
 
 ## Overview
 Slack APIs enable custom apps, bots, and slash commands. This skill covers the `@slack/web-api` and `@slack/bolt` frameworks.

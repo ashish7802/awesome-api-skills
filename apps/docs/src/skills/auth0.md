@@ -30,7 +30,6 @@ title: auth0
 
 ---
 
-# Auth0 API Skill
 
 ## Overview
 Auth0 provides Authentication as a Service. This skill focuses on the Management API for backend operations (users, roles, permissions).

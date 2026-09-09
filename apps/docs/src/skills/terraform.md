@@ -31,7 +31,6 @@ title: terraform
 
 ---
 
-# Terraform Skill
 
 > Infrastructure as Code.
 

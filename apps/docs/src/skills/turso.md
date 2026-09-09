@@ -32,7 +32,6 @@ title: turso
 
 ---
 
-# Turso API Skill
 
 ## Quick Start
 Turso provides a distributed SQLite experience. You can query it over HTTP or sync the entire database to a local SQLite file for ultra-low latency reads.

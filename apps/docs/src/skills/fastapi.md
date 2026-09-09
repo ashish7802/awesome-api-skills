@@ -32,7 +32,6 @@ title: fastapi
 
 ---
 
-# FastAPI Skill
 
 > High-performance Python web framework.
 

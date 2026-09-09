@@ -29,7 +29,6 @@ title: discord
 
 ---
 
-# Discord API Skill
 
 ## Overview
 The Discord API allows you to build bots, automate servers, and manage webhooks. This skill focuses on the `discord.js` library for bot integration.

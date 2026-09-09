@@ -31,7 +31,6 @@ title: planetscale
 
 ---
 
-# PlanetScale API Skill
 
 ## Quick Start
 PlanetScale provides branching workflows for MySQL. Install the `@planetscale/database` serverless driver to interact with it seamlessly over HTTP in Edge environments.

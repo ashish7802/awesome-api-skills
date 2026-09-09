@@ -30,7 +30,6 @@ title: sveltekit
 
 ---
 
-# SvelteKit Skill
 
 > Web development, streamlined.
 

@@ -29,7 +29,6 @@ title: convex
 
 ---
 
-# Convex API Skill
 
 ## Quick Start
 Convex manages your database, server functions, and client state. You write server functions in TypeScript, and Convex automatically syncs the results to your React frontend via WebSockets.

@@ -31,7 +31,6 @@ title: hono
 
 ---
 
-# Hono Skill
 
 > Ultrafast web framework for the Edges.
 

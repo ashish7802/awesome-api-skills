@@ -28,7 +28,6 @@ title: firebase
 
 ---
 
-# Firebase Admin API Skill
 
 ## Overview
 Firebase Admin SDK allows privileged server environments to interact with Firestore, Auth, and Cloud Messaging.

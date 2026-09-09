@@ -30,7 +30,6 @@ title: cloudflare
 
 ---
 
-# Cloudflare API Skill
 
 ## Overview
 The Cloudflare API manages DNS, CDN caching, Workers, and WAF rules. This skill covers the Node.js SDK and REST patterns.

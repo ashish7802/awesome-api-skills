@@ -29,7 +29,6 @@ title: digitalocean
 
 ---
 
-# DigitalOcean API Skill
 
 ## Quick Start
 DigitalOcean provides Droplets (VPS), Managed Databases, and App Platform. The official API allows full programmatic control over your cloud infrastructure.

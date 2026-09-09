@@ -30,7 +30,6 @@ title: caddy
 
 ---
 
-# Caddy Skill
 
 > The ultimate enterprise web server with automatic HTTPS.
 

@@ -29,7 +29,6 @@ title: nats
 
 ---
 
-# NATS API Skill
 
 ## Quick Start
 NATS is an extremely high-performance messaging system (Pub/Sub, Request/Reply, JetStream). Use the `nats` package for Node.js to communicate.

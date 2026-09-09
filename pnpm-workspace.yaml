@@ -1,8 +1,0 @@
-packages:
-  - 'packages/*'
-  - 'apps/*'
-allowBuilds:
-  esbuild: true
-  vue-demi: true
-onlyBuiltDependencies:
-  - esbuild

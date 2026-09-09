@@ -28,7 +28,6 @@ title: mongodb-atlas
 
 ---
 
-# MongoDB Atlas API Skill
 
 ## Overview
 The Atlas Administration API allows you to programmatically manage clusters, database users, and network peering.

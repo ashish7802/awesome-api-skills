@@ -31,7 +31,6 @@ title: prometheus
 
 ---
 
-# Prometheus Skill
 
 > Powering metrics and alerting.
 

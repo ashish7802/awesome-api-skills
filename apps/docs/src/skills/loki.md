@@ -29,7 +29,6 @@ title: loki
 
 ---
 
-# Loki Skill
 
 > Like Prometheus, but for logs.
 

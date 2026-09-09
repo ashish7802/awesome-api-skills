@@ -29,7 +29,6 @@ title: azure-openai
 
 ---
 
-# Azure OpenAI API Skill
 
 ## Quick Start
 Azure OpenAI provides the same models as OpenAI (GPT-4) but within the Azure compliance boundary, utilizing Active Directory and custom domain endpoints.

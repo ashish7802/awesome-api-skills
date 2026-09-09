@@ -31,7 +31,6 @@ title: mysql
 
 ---
 
-# MySQL Skill
 
 > The world's most popular open source database.
 

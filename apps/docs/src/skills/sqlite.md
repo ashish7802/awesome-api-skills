@@ -29,7 +29,6 @@ title: sqlite
 
 ---
 
-# SQLite Skill
 
 > Small, fast, reliable, embedded database.
 

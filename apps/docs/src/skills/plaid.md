@@ -28,7 +28,6 @@ title: plaid
 
 ---
 
-# Plaid API Skill
 
 ## Overview
 Plaid connects users' bank accounts to apps. This skill focuses on Plaid Link flow and the `plaid-node` SDK to extract transaction data.

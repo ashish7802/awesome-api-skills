@@ -29,7 +29,6 @@ title: jaeger
 
 ---
 
-# Jaeger Skill
 
 > Open source, end-to-end distributed tracing.
 

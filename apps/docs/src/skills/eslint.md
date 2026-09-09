@@ -30,7 +30,6 @@ title: eslint
 
 ---
 
-# ESLint Skill
 
 > Find and fix problems in your JavaScript code.
 

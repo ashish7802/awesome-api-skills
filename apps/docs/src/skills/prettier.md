@@ -29,7 +29,6 @@ title: prettier
 
 ---
 
-# Prettier Skill
 
 > Opinionated Code Formatter.
 

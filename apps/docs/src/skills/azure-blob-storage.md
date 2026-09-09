@@ -29,7 +29,6 @@ title: azure-blob-storage
 
 ---
 
-# Azure Blob Storage API Skill
 
 ## Quick Start
 Azure Blob Storage handles massive amounts of unstructured data. The `@azure/storage-blob` SDK provides powerful abstractions for Block, Append, and Page blobs.

@@ -35,7 +35,6 @@ title: nextjs
 
 ---
 
-# Next.js Skill
 
 > The React Framework for the Web.
 

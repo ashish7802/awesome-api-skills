@@ -32,7 +32,6 @@ title: postgresql
 
 ---
 
-# PostgreSQL Skill
 
 > The world's most advanced open source relational database.
 

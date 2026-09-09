@@ -13,10 +13,10 @@
     "vitest": "^2.1.8"
   },
   "dependencies": {
-    "@awesome-api-skills/shared-types": "workspace:*",
-    "@awesome-api-skills/sdk": "workspace:*",
-    "@awesome-api-skills/registry": "workspace:*",
-    "@awesome-api-skills/validator": "workspace:*",
-    "@awesome-api-skills/generator": "workspace:*"
+    "@awesome-api-skills/shared-types": "*",
+    "@awesome-api-skills/sdk": "*",
+    "@awesome-api-skills/registry": "*",
+    "@awesome-api-skills/validator": "*",
+    "@awesome-api-skills/generator": "*"
   }
 }

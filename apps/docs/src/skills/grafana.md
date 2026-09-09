@@ -31,7 +31,6 @@ title: grafana
 
 ---
 
-# Grafana Skill
 
 > The open observability platform.
 

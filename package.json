@@ -3,12 +3,16 @@
   "version": "0.0.0",
   "private": true,
   "description": "A collection of structured API skills for AI coding agents.",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
   "scripts": {
     "cli": "node packages/cli/dist/bin.js",
-    "build": "pnpm -r --filter \"@awesome-api-skills/*\" build",
-    "dev": "pnpm --filter @awesome-api-skills/docs dev",
+    "build": "npm run build --workspace=@awesome-api-skills/docs",
+    "dev": "npm run dev --workspace=@awesome-api-skills/docs",
     "lint": "eslint .",
-    "typecheck": "pnpm -r --filter \"@awesome-api-skills/*\" exec tsc --noEmit",
+    "typecheck": "tsc --noEmit",
     "format": "prettier --write .",
     "test": "vitest run --passWithNoTests",
     "validate:skills": "node packages/cli/dist/bin.js validate",
@@ -24,7 +28,6 @@
     "vitest": "^2.1.8"
   },
   "engines": {
-    "node": ">=20.0.0",
-    "pnpm": ">=9.0.0"
+    "node": ">=20.0.0"
   }
 }

@@ -30,7 +30,6 @@ title: pulumi
 
 ---
 
-# Pulumi Skill
 
 > Universal Infrastructure as Code.
 

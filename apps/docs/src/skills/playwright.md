@@ -31,7 +31,6 @@ title: playwright
 
 ---
 
-# Playwright Skill
 
 > End-to-end testing for modern web apps.
 

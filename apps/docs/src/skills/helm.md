@@ -29,7 +29,6 @@ title: helm
 
 ---
 
-# Helm Skill
 
 > The package manager for Kubernetes.
 

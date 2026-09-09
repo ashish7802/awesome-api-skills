@@ -28,7 +28,6 @@ title: sendgrid
 
 ---
 
-# SendGrid API Skill
 
 ## Overview
 SendGrid handles transactional and marketing email delivery. This skill focuses on the `@sendgrid/mail` SDK and dynamic templates.

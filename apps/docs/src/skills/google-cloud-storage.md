@@ -29,7 +29,6 @@ title: google-cloud-storage
 
 ---
 
-# Google Cloud Storage API Skill
 
 ## Quick Start
 Google Cloud Storage (GCS) is the GCP equivalent of S3, optimized for high durability and tight integration with Google's ML and BigQuery ecosystems.

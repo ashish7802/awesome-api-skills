@@ -30,7 +30,6 @@ title: biome
 
 ---
 
-# Biome Skill
 
 > One toolchain for your web project.
 

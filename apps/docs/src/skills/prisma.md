@@ -32,7 +32,6 @@ title: prisma
 
 ---
 
-# Prisma Skill
 
 > Next-generation Node.js and TypeScript ORM.
 

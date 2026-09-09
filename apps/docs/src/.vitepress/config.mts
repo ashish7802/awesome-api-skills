@@ -59,9 +59,11 @@ export default defineConfig({
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/ashish7802/awesome-api-skills' }],
   },
+  outDir: '../../dist',
   vite: {
     server: {
-      port: 5173,
+      port: 3000,
+      host: '0.0.0.0',
       strictPort: true,
     },
   },

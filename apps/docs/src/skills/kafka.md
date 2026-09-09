@@ -30,7 +30,6 @@ title: kafka
 
 ---
 
-# Apache Kafka Skill
 
 > Distributed event streaming platform.
 

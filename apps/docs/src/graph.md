@@ -73,13 +73,13 @@ flowchart TD
 
 ## How to read edges
 
-| Type              | Meaning                     |
-| :---------------- | :-------------------------- |
-| `depends_on`      | Install or learn this first |
-| `integrates_with` | Commonly used together      |
-| `works_well_with` | Recommended pairing         |
-| `alternative_to`  | Pick one or the other       |
-| `related_to`      | Same domain, explore both   |
+| Type | Meaning |
+| :--- | :--- |
+| `depends_on` | Install or learn this first |
+| `integrates_with` | Commonly used together |
+| `works_well_with` | Recommended pairing |
+| `alternative_to` | Pick one or the other |
+| `related_to` | Same domain, explore both |
 
 ## Learning paths
 

@@ -33,7 +33,6 @@ title: neon
 
 ---
 
-# Neon API Skill
 
 ## Quick Start
 Neon separates compute and storage, allowing instant database branching and autoscaling. For most Node.js applications, use the `@neondatabase/serverless` driver over standard `pg` to leverage WebSocket connections, which bypass serverless environment connection limits.

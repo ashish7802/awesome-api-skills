@@ -29,7 +29,6 @@ title: github
 
 ---
 
-# GitHub REST API API Skill
 
 ## Overview
 The GitHub REST API (v3) allows deep integration with Git data, pull requests, and GitHub Actions. This skill emphasizes the Octokit SDK.

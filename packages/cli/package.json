@@ -16,10 +16,10 @@
     "vitest": "^2.1.8"
   },
   "dependencies": {
-    "@awesome-api-skills/core": "workspace:*",
-    "@awesome-api-skills/generator": "workspace:*",
-    "@awesome-api-skills/validator": "workspace:*",
-    "@awesome-api-skills/shared-types": "workspace:*",
+    "@awesome-api-skills/core": "*",
+    "@awesome-api-skills/generator": "*",
+    "@awesome-api-skills/validator": "*",
+    "@awesome-api-skills/shared-types": "*",
     "@clack/prompts": "^0.7.0",
     "picocolors": "^1.1.1"
   }

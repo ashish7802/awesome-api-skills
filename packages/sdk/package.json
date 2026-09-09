@@ -13,6 +13,6 @@
     "vitest": "^2.1.8"
   },
   "dependencies": {
-    "@awesome-api-skills/shared-types": "workspace:*"
+    "@awesome-api-skills/shared-types": "*"
   }
 }

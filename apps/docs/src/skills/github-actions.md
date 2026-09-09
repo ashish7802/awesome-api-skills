@@ -35,7 +35,6 @@ title: github-actions
 
 ---
 
-# GitHub Actions Skill
 
 > Automate your software workflows directly from GitHub.
 

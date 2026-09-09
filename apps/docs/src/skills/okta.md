@@ -29,7 +29,6 @@ title: okta
 
 ---
 
-# Okta API Skill
 
 ## Overview
 The Okta API manages workforce and customer identities. This skill covers the `@okta/okta-sdk-nodejs` library for backend lifecycle management.

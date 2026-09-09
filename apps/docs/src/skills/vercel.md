@@ -34,7 +34,6 @@ title: vercel
 
 ---
 
-# Vercel API Skill
 
 ## Overview
 The Vercel REST API allows you to programmatically manage deployments, domains, and environment variables.

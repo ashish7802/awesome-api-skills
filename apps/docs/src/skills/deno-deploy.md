@@ -29,7 +29,6 @@ title: deno-deploy
 
 ---
 
-# Deno Deploy Skill
 
 > Distributed system that runs JavaScript, TypeScript, and WebAssembly at the edge.
 

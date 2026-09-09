@@ -31,7 +31,6 @@ title: upstash
 
 ---
 
-# Upstash API Skill
 
 ## Quick Start
 Upstash provides serverless Redis and Kafka via REST APIs, making it uniquely compatible with Edge environments where raw TCP connections are restricted.

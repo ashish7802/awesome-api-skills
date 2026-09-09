@@ -29,7 +29,6 @@ title: aws-s3
 
 ---
 
-# AWS S3 API Skill
 
 ## Overview
 Amazon Simple Storage Service (S3) provides highly scalable object storage. This skill details the AWS SDK v3 for Node.js.

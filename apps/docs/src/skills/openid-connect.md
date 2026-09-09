@@ -32,7 +32,6 @@ title: openid-connect
 
 ---
 
-# OpenID Connect (OIDC) Skill
 
 > Identity layer on top of the OAuth 2.0 protocol.
 

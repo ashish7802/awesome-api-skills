@@ -28,7 +28,6 @@ title: datadog
 
 ---
 
-# Datadog API Skill
 
 ## Overview
 The Datadog API allows you to submit metrics, events, and manage dashboards programmatically. This skill focuses on the `@datadog/datadog-api-client` library.

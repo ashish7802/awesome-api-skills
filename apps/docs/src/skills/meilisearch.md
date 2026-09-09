@@ -29,7 +29,6 @@ title: meilisearch
 
 ---
 
-# Meilisearch API Skill
 
 ## Quick Start
 Meilisearch is an open-source, typo-tolerant search engine optimized for developer experience.

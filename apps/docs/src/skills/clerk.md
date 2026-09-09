@@ -35,7 +35,6 @@ title: clerk
 
 ---
 
-# Clerk API Skill
 
 ## Quick Start
 Clerk provides comprehensive authentication UIs and a powerful backend API. Install the specific SDK for your framework (e.g., `@clerk/nextjs`).

@@ -29,7 +29,6 @@ title: turborepo
 
 ---
 
-# TurboRepo Skill
 
 > High-performance build system for JavaScript and TypeScript codebases.
 

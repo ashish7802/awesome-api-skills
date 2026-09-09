@@ -30,7 +30,6 @@ title: railway
 
 ---
 
-# Railway API Skill
 
 ## Quick Start
 Railway allows you to deploy code simply by pushing to GitHub or using the CLI. The Railway Public API (GraphQL) allows programmatic management of projects, environments, and deployments.

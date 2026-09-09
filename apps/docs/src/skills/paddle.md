@@ -31,7 +31,6 @@ title: paddle
 
 ---
 
-# Paddle API Skill
 
 ## Quick Start
 Paddle acts as a Merchant of Record, meaning they handle sales tax (VAT, GST) calculations and remittance for you. Use the `@paddle/paddle-node` SDK to manage subscriptions and invoices.

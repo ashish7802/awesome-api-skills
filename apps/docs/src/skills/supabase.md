@@ -30,7 +30,6 @@ title: supabase
 
 ---
 
-# Supabase API Skill
 
 ## Overview
 Supabase provides Postgres database access, authentication, edge functions, and storage. This skill covers the `@supabase/supabase-js` client and Row Level Security (RLS).

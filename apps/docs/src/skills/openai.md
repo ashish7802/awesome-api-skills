@@ -34,7 +34,6 @@ title: openai
 
 ---
 
-# OpenAI API Skill
 
 ## Overview
 OpenAI provides advanced machine learning models via REST API. This skill covers Chat Completions, Embeddings, and Vision models, focusing on streaming architectures and context management.

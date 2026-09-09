@@ -28,7 +28,6 @@ title: git
 
 ---
 
-# Git Skill
 
 > Distributed version control system.
 

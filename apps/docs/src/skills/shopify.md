@@ -29,7 +29,6 @@ title: shopify
 
 ---
 
-# Shopify Admin API API Skill
 
 ## Overview
 The Shopify Admin API allows you to manage products, orders, and customers. This skill focuses on the GraphQL API using the `@shopify/shopify-api` package.

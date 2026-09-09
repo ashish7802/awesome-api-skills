@@ -29,7 +29,6 @@ title: algolia
 
 ---
 
-# Algolia API Skill
 
 ## Overview
 Algolia provides ultra-fast full-text search. This skill focuses on indexing data from the backend and searching from the frontend.

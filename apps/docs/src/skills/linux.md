@@ -29,7 +29,6 @@ title: linux
 
 ---
 
-# Linux Skill
 
 > The free, open-source operating system that powers the internet.
 

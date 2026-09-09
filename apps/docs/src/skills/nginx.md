@@ -32,7 +32,6 @@ title: nginx
 
 ---
 
-# NGINX Skill
 
 > High performance load balancer, web server, and reverse proxy.
 

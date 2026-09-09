@@ -29,7 +29,6 @@ title: aws-dynamodb
 
 ---
 
-# AWS DynamoDB API Skill
 
 ## Overview
 Amazon DynamoDB is a fully managed NoSQL database. This skill covers the AWS SDK v3 with a strong emphasis on the DocumentClient.

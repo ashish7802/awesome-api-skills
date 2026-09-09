@@ -29,7 +29,6 @@ title: gemini
 
 ---
 
-# Google Gemini API Skill
 
 ## Overview
 Google Gemini offers natively multimodal capabilities (text, image, audio, video). This skill focuses on `@google/genai` and the v1beta API surface.

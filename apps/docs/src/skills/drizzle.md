@@ -34,7 +34,6 @@ title: drizzle
 
 ---
 
-# Drizzle ORM Skill
 
 > Next generation TypeScript ORM.
 

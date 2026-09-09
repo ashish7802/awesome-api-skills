@@ -33,7 +33,6 @@ title: oauth2
 
 ---
 
-# OAuth 2.0 Skill
 
 > The industry-standard protocol for authorization.
 

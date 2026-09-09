@@ -30,7 +30,6 @@ title: bullmq
 
 ---
 
-# BullMQ Skill
 
 > Redis-based robust queue system for Node.js.
 

@@ -29,7 +29,6 @@ title: trpc
 
 ---
 
-# tRPC Skill
 
 > End-to-end typesafe APIs made easy.
 

@@ -32,7 +32,6 @@ title: pinecone
 
 ---
 
-# Pinecone API Skill
 
 ## Quick Start
 Pinecone stores vector embeddings for fast similarity search, serving as the memory layer for RAG (Retrieval-Augmented Generation) applications.

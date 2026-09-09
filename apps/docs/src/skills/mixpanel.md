@@ -28,7 +28,6 @@ title: mixpanel
 
 ---
 
-# Mixpanel API Skill
 
 ## Quick Start
 Mixpanel tracks user behavior across platforms. Use the official Node.js SDK to accurately record server-side events, avoiding client-side ad-blocker discrepancies.

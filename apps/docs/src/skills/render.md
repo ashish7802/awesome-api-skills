@@ -32,7 +32,6 @@ title: render
 
 ---
 
-# Render API Skill
 
 ## Quick Start
 Render offers Web Services, Static Sites, and managed PostgreSQL/Redis. The Render REST API allows you to automate infrastructure scaling, deploys, and service creation.

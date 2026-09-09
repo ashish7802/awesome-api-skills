@@ -29,7 +29,6 @@ title: redis-streams
 
 ---
 
-# Redis Streams Skill
 
 > A data type in Redis that models an append-only log.
 

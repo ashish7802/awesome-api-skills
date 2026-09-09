@@ -29,7 +29,6 @@ title: fly
 
 ---
 
-# Fly.io API Skill
 
 ## Quick Start
 Fly.io transforms Docker containers into microVMs running globally. The Machines API allows you to programmatically spawn, pause, and destroy VMs in milliseconds.

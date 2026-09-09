@@ -31,7 +31,6 @@ title: sentry
 
 ---
 
-# Sentry API Skill
 
 ## Overview
 Sentry tracks exceptions, traces, and crashes. This skill covers the `@sentry/node` integration for backend error capturing and the Sentry REST API for release management.

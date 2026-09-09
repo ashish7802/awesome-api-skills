@@ -33,7 +33,6 @@ title: langchain
 
 ---
 
-# LangChain Skill
 
 > Framework for developing applications powered by language models.
 

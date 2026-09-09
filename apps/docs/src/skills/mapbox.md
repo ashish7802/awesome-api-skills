@@ -29,7 +29,6 @@ title: mapbox
 
 ---
 
-# Mapbox API Skill
 
 ## Overview
 Mapbox provides APIs for maps, geocoding, and routing. This skill focuses on the Mapbox Search (Geocoding) and Navigation APIs for backend services.

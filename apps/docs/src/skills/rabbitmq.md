@@ -29,7 +29,6 @@ title: rabbitmq
 
 ---
 
-# RabbitMQ Skill
 
 > Reliable, mature AMQP message broker.
 

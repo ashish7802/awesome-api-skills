@@ -29,7 +29,6 @@ title: typesense
 
 ---
 
-# Typesense API Skill
 
 ## Quick Start
 Typesense is a RAM-based search engine built in C++. It requires explicitly defining your schema before indexing data.

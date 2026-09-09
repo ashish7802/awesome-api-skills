@@ -28,7 +28,6 @@ title: twilio
 
 ---
 
-# Twilio API Skill
 
 ## Overview
 Twilio provides programmable communication tools. This skill details the SMS and Voice APIs, emphasizing webhooks for incoming messages and TwiML for call routing.

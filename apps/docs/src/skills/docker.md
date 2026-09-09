@@ -35,7 +35,6 @@ title: docker
 
 ---
 
-# Docker Skill
 
 > OS-level virtualization to deliver software in packages called containers.
 

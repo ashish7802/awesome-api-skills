@@ -28,7 +28,6 @@ title: posthog
 
 ---
 
-# PostHog API Skill
 
 ## Quick Start
 PostHog provides complete product analytics. The Node.js SDK allows you to capture events, identify users, and evaluate feature flags from your backend.

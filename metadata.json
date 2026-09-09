@@ -1,0 +1,6 @@
+{
+  "name": "Awesome API Skills",
+  "description": "A collection of structured API skills for AI coding agents with interactive documentation and knowledge graph.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

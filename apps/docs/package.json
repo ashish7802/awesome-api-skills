@@ -3,18 +3,18 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node scripts/generate.js && vitepress dev src",
-    "build": "node scripts/generate.js && vitepress build src",
-    "serve": "vitepress serve src",
+    "dev": "node scripts/generate.js && vitepress dev src --host 0.0.0.0 --port 3000",
+    "build": "node scripts/generate.js && vitepress build src --outDir ../../dist",
+    "serve": "vitepress serve src --host 0.0.0.0 --port 3000",
     "analyze": "vitepress build src && npx vite-bundle-visualizer -o bundle-stats.html"
   },
   "dependencies": {
     "vue": "^3.5.0",
     "vitepress": "1.5.0",
-    "@awesome-api-skills/core": "workspace:*",
-    "@awesome-api-skills/shared-types": "workspace:*",
-    "@awesome-api-skills/validator": "workspace:*",
-    "@awesome-api-skills/generator": "workspace:*"
+    "@awesome-api-skills/core": "*",
+    "@awesome-api-skills/shared-types": "*",
+    "@awesome-api-skills/validator": "*",
+    "@awesome-api-skills/generator": "*"
   },
   "devDependencies": {
     "lighthouse": "^12.2.0",

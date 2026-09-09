@@ -30,7 +30,6 @@ title: argo-cd
 
 ---
 
-# Argo CD Skill
 
 > Declarative continuous deployment for Kubernetes.
 

@@ -31,7 +31,6 @@ title: llamaindex
 
 ---
 
-# LlamaIndex Skill
 
 > Data framework for connecting custom data sources to large language models.
 

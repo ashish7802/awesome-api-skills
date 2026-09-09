@@ -34,7 +34,6 @@ title: react
 
 ---
 
-# React Skill
 
 > The library for web and native user interfaces.
 

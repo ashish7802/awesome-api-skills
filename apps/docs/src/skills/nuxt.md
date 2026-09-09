@@ -30,7 +30,6 @@ title: nuxt
 
 ---
 
-# Nuxt Skill
 
 > The Intuitive Vue Framework.
 

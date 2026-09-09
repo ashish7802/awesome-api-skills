@@ -29,7 +29,6 @@ title: lemon-squeezy
 
 ---
 
-# Lemon Squeezy API Skill
 
 ## Quick Start
 Lemon Squeezy simplifies global tax compliance and recurring billing. The official `@lemonsqueezy/lemonsqueezy.js` SDK handles interactions cleanly.

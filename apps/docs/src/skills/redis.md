@@ -32,7 +32,6 @@ title: redis
 
 ---
 
-# Redis API Skill
 
 ## Overview
 Redis is used as a database, cache, and message broker. This skill covers the `redis` (Node.js) and `redis-py` libraries.

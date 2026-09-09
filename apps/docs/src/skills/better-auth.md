@@ -30,7 +30,6 @@ title: better-auth
 
 ---
 
-# Better Auth API Skill
 
 ## Quick Start
 Better Auth provides framework-agnostic auth (Next.js, Express, SvelteKit) deeply integrated with modern ORMs like Drizzle and Prisma.

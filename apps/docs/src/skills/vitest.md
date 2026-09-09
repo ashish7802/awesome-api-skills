@@ -29,7 +29,6 @@ title: vitest
 
 ---
 
-# Vitest Skill
 
 > Next generation testing framework powered by Vite.
 
