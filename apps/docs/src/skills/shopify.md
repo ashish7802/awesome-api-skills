@@ -8,17 +8,32 @@ title: shopify
 
 
 <div class="trust-panel">
-
-| | |
-| :--- | :--- |
-| **Validation** | validated |
-| **Schema** | 1.0.0 |
-| **Maintainer** | Awesome API Skills Team |
-| **Updated** | 2026-07-02 |
-| **Languages** | typescript, php |
-| **Agents** | cursor, claude-code, cline, continue |
-| **Doc source** | [official docs](https://shopify.dev/docs/api/admin-graphql) |
-
+  <div class="trust-header">
+    <div class="trust-badge">
+      <span class="pulse-dot"></span>
+      <span>validated</span>
+    </div>
+    <span class="trust-version">Schema v1.0.0</span>
+  </div>
+  <div class="trust-grid">
+    <div class="trust-item">
+      <span class="trust-label">Maintainer</span>
+      <span class="trust-val">Awesome API Skills Team</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-label">Last Verified</span>
+      <span class="trust-val">2026-07-02</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-label">Languages</span>
+      <span class="trust-val">typescript, php</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-label">Supported Agents</span>
+      <span class="trust-val">cursor, claude-code, cline, continue</span>
+    </div>
+  </div>
+  <div class="trust-doc-link"><a href="https://shopify.dev/docs/api/admin-graphql" target="_blank" rel="noopener">Official Documentation ↗</a></div>
 </div>
 
 

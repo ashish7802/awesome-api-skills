@@ -5,7 +5,10 @@ export default defineConfig({
   description: 'Structured API skills for AI coding agents.',
   cleanUrls: true,
   ignoreDeadLinks: true,
+  appearance: 'force-dark',
   head: [
+    ['meta', { name: 'theme-color', content: '#090d16' }],
+    ['meta', { name: 'color-scheme', content: 'dark' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'Awesome API Skills' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
@@ -14,11 +17,11 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.svg',
     nav: [
-      { text: 'Skills', link: '/skills/' },
-      { text: 'Playground', link: '/playground' },
-      { text: 'Graph', link: '/graph' },
-      { text: 'CLI', link: '/docs/cli' },
-      { text: 'Spec', link: '/docs/specification' },
+      { text: 'Skills Directory', link: '/skills/' },
+      { text: 'Interactive Playground', link: '/playground' },
+      { text: 'Knowledge Graph', link: '/graph' },
+      { text: 'CLI Reference', link: '/docs/cli' },
+      { text: 'Specification', link: '/docs/specification' },
     ],
     search: {
       provider: 'local',
@@ -29,20 +32,24 @@ export default defineConfig({
     sidebar: {
       '/skills/': [
         {
-          text: 'Discover',
+          text: 'Explore Catalog',
           items: [
-            { text: 'All skills', link: '/skills/' },
-            { text: 'Categories', link: '/skills/categories' },
-            { text: 'Playground', link: '/playground' },
+            { text: 'All 116 Skills', link: '/skills/' },
+            { text: 'Browse by Category', link: '/skills/categories' },
+            { text: 'Skill Studio Playground', link: '/playground' },
           ],
         },
         {
-          text: 'Popular',
+          text: 'Trending AI & Cloud Skills',
           items: [
             { text: 'stripe', link: '/skills/stripe' },
+            { text: 'deepseek', link: '/skills/deepseek' },
+            { text: 'qdrant', link: '/skills/qdrant' },
+            { text: 'groq', link: '/skills/groq' },
+            { text: 'openai', link: '/skills/openai' },
+            { text: 'inngest', link: '/skills/inngest' },
             { text: 'nextjs', link: '/skills/nextjs' },
             { text: 'postgresql', link: '/skills/postgresql' },
-            { text: 'openai', link: '/skills/openai' },
             { text: 'vercel', link: '/skills/vercel' },
           ],
         },

@@ -1,22 +1,25 @@
-  <div align="center">
+<div align="center">
 
 ![Awesome API Skills — Visual Overview](https://raw.githubusercontent.com/ashish7802/awesome-api-skills/master/media/banner.png)
 
-### Structured, verified SKILL.md context files that teach AI coding agents how to work with real APIs
+# Awesome API Skills
+
+### Production-ready, schema-validated `SKILL.md` context specifications that teach AI coding agents how to work with real-world APIs without hallucinating.
 
 <p>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT License"></a>
-  <img src="https://img.shields.io/badge/skills-101%20verified-orange?style=flat-square" alt="101 verified skills">
+  <img src="https://img.shields.io/badge/skills-116%20verified-38bdf8?style=flat-square" alt="116 verified skills">
+  <img src="https://img.shields.io/badge/graph-248%20edges-818cf8?style=flat-square" alt="248 graph edges">
   <a href="https://github.com/ashish7802/awesome-api-skills/actions/workflows/quality.yml"><img src="https://github.com/ashish7802/awesome-api-skills/actions/workflows/quality.yml/badge.svg" alt="Quality Gates"></a>
   <a href="https://github.com/ashish7802/awesome-api-skills/actions/workflows/tests.yml"><img src="https://github.com/ashish7802/awesome-api-skills/actions/workflows/tests.yml/badge.svg" alt="Tests"></a>
 </p>
 
 <p>
-  <a href="./docs/index.html"><strong>🔍 Searchable Directory</strong></a> · 
-  <a href="./docs/BENCHMARKS_AND_EXAMPLES.md"><strong>⚡ Before vs. After Code</strong></a> · 
+  <a href="./docs/index.html"><strong>🔍 Skills Catalog</strong></a> · 
+  <a href="./apps/docs/src/playground.md"><strong>⚡ Interactive Playground</strong></a> · 
+  <a href="./docs/BENCHMARKS_AND_EXAMPLES.md"><strong>📊 Benchmarks & Diffs</strong></a> · 
   <a href="./docs/CLI_USAGE.md"><strong>💻 CLI Reference</strong></a> · 
   <a href="#quick-start"><strong>🚀 Quick Start</strong></a> · 
-  <a href="#skill-directory"><strong>📚 Skill Directory</strong></a> · 
   <a href="#contributing"><strong>🤝 Contributing</strong></a>
 </p>
 
@@ -24,160 +27,160 @@
 
 ---
 
-## 💡 What This Is & Why It Matters
+## 💡 The Problem & The Solution
 
-When an AI coding agent (Claude Code, Cursor, Codex CLI, Gemini CLI, etc.) writes code for modern APIs, it frequently makes critical mistakes:
+When AI coding agents (**Claude Code**, **Cursor**, **Cline**, **Continue**, **Windsurf**, or **OpenAI Codex**) generate code for modern APIs, they frequently introduce critical defects caused by stale training data:
 
-- Reaching for **outdated SDK methods** present in old training data.
-- **Parsing raw request bodies** with `express.json()` before validating Stripe webhook signatures, breaking cryptographic checks.
-- Using **deprecated authentication helpers** (e.g. `@clerk/nextjs` v4 `authMiddleware` instead of v5 `clerkMiddleware`).
-- Calling transactional email endpoints inside unbatched loops, hitting **HTTP 429 rate limit errors**.
+* ❌ **Broken Webhook Verification**: Parsing raw request bodies with `express.json()` before verifying cryptographic signatures (e.g. Stripe, Svix, Paddle), causing `SignatureVerificationError`.
+* ❌ **Deprecated SDK Methods**: Generating legacy SDK constructors or middleware (e.g. Clerk v4 `authMiddleware` instead of v5 `clerkMiddleware`, outdated Pinecone v0.x classes).
+* ❌ **Unbatched HTTP Loops**: Executing unbatched loops against transactional APIs (Resend, SendGrid, Twilio), resulting in `HTTP 429 Too Many Requests`.
+* ❌ **Missing Connection Pooling**: Spawning unpooled database connections inside Serverless functions (Neon, Supabase, PostgreSQL), exhausting connection limits.
 
-`awesome-api-skills` fixes this by providing **101 curated, schema-validated `SKILL.md` context files**. Dropping a skill file into your agent's skills directory (`.claude/skills/`, `.cursor/skills/`, `.agents/skills/`) gives the model exact, current API instructions, preventing guesswork before code is written.
+`awesome-api-skills` resolves this by providing **116 curated, schema-validated `SKILL.md` context files**. Dropping a skill into your workspace (`.claude/skills/`, `.cursor/skills/`, `.agents/skills/`) provides deterministic parameters, anti-hallucination checklists, and battle-tested code patterns before a single line of code is generated.
 
 ---
 
-## ⚡ The Difference A Skill Makes
+## ⚡ Real-World Impact: Before vs. After
 
-Here is how an AI agent performs with and without `SKILL.md` context:
+| Integration Domain | ❌ Without Skill (LLM Guessing) | ✅ With `SKILL.md` (Context Injected) |
+| :--- | :--- | :--- |
+| **Stripe Webhooks** | Parses JSON with `express.json()`, corrupting raw payload buffer and failing signature verification. | Injects `express.raw({ type: 'application/json' })` so `stripe.webhooks.constructEvent()` verifies authentic HMAC signatures. |
+| **DeepSeek R1 / V3** | Attempts standard OpenAI chat format without routing reasoning tokens, losing chain-of-thought traces. | Configures `baseURL: "https://api.deepseek.com"` and separates `delta.reasoning_content` from `delta.content`. |
+| **Qdrant Vector DB** | Upserts embeddings with dimension mismatch against collection configurations. | Enforces exact vector dimension matching and pre-creates payload indexes on filtered fields. |
+| **Clerk Next.js Auth** | Generates deprecated `authMiddleware({ publicRoutes })` causing App Router runtime crashes. | Uses `clerkMiddleware()` with `createRouteMatcher()` matching Next.js App Router specifications. |
+| **Resend Emails** | Runs a naive `for...of` loop with individual `send()` calls, taking minutes and hitting rate limits. | Packages payloads into `resend.batch.send([])`, sending up to 500 emails in a single low-latency HTTP roundtrip. |
+| **Inngest Workflows** | Calls non-deterministic functions (e.g. `Date.now()`, random UUIDs) directly in handler bodies. | Wraps all side-effects and external operations inside `step.run()` for step memoization and durable recovery. |
 
-| Scenario                        | Without SKILL.md (LLM Guessing)                                                                                               | With SKILL.md (Context Injected)                                                                                                                    |
-| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Stripe Webhook Verification** | Parses JSON first (`express.json()`), ruining the raw buffer signature check and throwing `StripeSignatureVerificationError`. | Mounts `express.raw({ type: 'application/json' })` on the webhook route so `stripe.webhooks.constructEvent()` verifies signature cryptographically. |
-| **Clerk Auth Middleware**       | Generates deprecated `authMiddleware({ publicRoutes })` from v4, causing runtime crashes in Next.js App Router.               | Uses modern `clerkMiddleware()` with `createRouteMatcher()` matching Next.js v5+ App Router specs.                                                  |
-| **Resend Batch Emailing**       | Iterates a `for...of` loop with individual `send()` calls, taking minutes and triggering HTTP 429 rate limits.                | Packages emails into `resend.batch.send([])`, dispatching 500 emails in a single low-latency HTTP request.                                          |
-
-> 📖 **See full runnable code diffs in [docs/BENCHMARKS_AND_EXAMPLES.md](./docs/BENCHMARKS_AND_EXAMPLES.md).**
+> 📖 **Review complete runnable diffs in [docs/BENCHMARKS_AND_EXAMPLES.md](./docs/BENCHMARKS_AND_EXAMPLES.md).**
 
 ---
 
 ## 🚀 Quick Start
 
-### Option 1: Direct Copy into Your Project (No Installation Required)
+### 1. Direct Copy into Your Project (Zero Dependencies)
 
-Simply copy the skill folder for the API you are using into your agent's skill directory:
+Copy the desired skill directory directly into your AI coding agent's configuration:
 
 ```bash
-# Clone the repository lightweight
+# Clone the repository shallowly
 git clone --depth 1 https://github.com/ashish7802/awesome-api-skills.git
 
 # Copy Stripe skill to Claude Code
 cp -r awesome-api-skills/skills/stripe .claude/skills/
 
-# Copy Clerk skill to Cursor
-cp -r awesome-api-skills/skills/clerk .cursor/skills/
+# Copy DeepSeek skill to Cursor
+cp -r awesome-api-skills/skills/deepseek .cursor/skills/
 
-# Copy Redis skill to generic agent workspace
-cp -r awesome-api-skills/skills/redis .agents/skills/
+# Copy Qdrant & Inngest skills to generic agent workspace
+cp -r awesome-api-skills/skills/qdrant .agents/skills/
+cp -r awesome-api-skills/skills/inngest .agents/skills/
 ```
 
-Then instruct your agent:
-
-> _"Use `.claude/skills/stripe/SKILL.md` for payment integration."_
+Then prompt your assistant:
+> *"Use `.claude/skills/stripe/SKILL.md` and `.claude/skills/inngest/SKILL.md` to implement subscription webhooks."*
 
 ---
 
-### Option 2: Monorepo & Local CLI Setup
+### 2. Using the CLI & NPM Package
 
-For developers building tooling, validating custom skills, or managing workspaces:
-
-```bash
-git clone https://github.com/ashish7802/awesome-api-skills.git
-cd awesome-api-skills
-pnpm install
-pnpm build
-```
-
-Run CLI commands locally:
+You can search, validate, and inspect skills directly using the CLI:
 
 ```bash
-# Search skills by keyword
-pnpm run cli search stripe
+# Search for skills matching keywords
+npx @awesome-api-skills/cli search "embeddings vector rag"
 
-# Validate all skill schemas
-pnpm run cli validate
+# Validate all skills in your workspace
+npx @awesome-api-skills/cli validate
 
-# Inspect workspace health
-pnpm run cli doctor
+# Diagnose repository & schema integrity
+npx @awesome-api-skills/cli doctor
 ```
 
 ---
 
-## 📚 Skill Directory
+## 📚 Skill Catalog (116 Verified Skills)
 
-Explore 101 skills across 14 core technical domains:
+Our catalog covers **116 verified skills** across 15 core technical domains:
 
-| Category                 | Available Skills                                                                                                                         |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| **Payments & Billing**   | `stripe`, `paddle`, `lemon-squeezy`, `revenuecat`, `plaid`                                                                               |
-| **Auth & Identity**      | `auth0`, `clerk`, `okta`, `better-auth`, `jwt`, `oauth2`, `openid-connect`                                                               |
-| **Databases**            | `postgresql`, `mysql`, `sqlite`, `mongodb-atlas`, `planetscale`, `neon`, `turso`, `drizzle`, `prisma`                                    |
-| **Caching & Queues**     | `redis`, `redis-streams`, `upstash`, `bullmq`, `kafka`, `rabbitmq`, `nats`                                                               |
-| **Object Storage**       | `aws-s3`, `aws-dynamodb`, `azure-blob-storage`, `google-cloud-storage`                                                                   |
-| **AI & LLM Infra**       | `openai`, `anthropic`, `gemini`, `ollama`, `vllm`, `langchain`, `llamaindex`, `pinecone`, `typesense`, `meilisearch`, `algolia`, `xquik` |
-| **Backend Frameworks**   | `express`, `fastapi`, `nestjs`, `hono`, `trpc`                                                                                           |
-| **Frontend Frameworks**  | `react`, `vue`, `nextjs`, `nuxt`, `sveltekit`                                                                                            |
-| **Deployment Platforms** | `vercel`, `railway`, `render`, `fly`, `digitalocean`, `cloudflare`, `cloudflare-workers`, `deno-deploy`                                  |
-| **Infrastructure**       | `docker`, `kubernetes`, `helm`, `terraform`, `pulumi`, `argo-cd`, `github-actions`, `traefik`, `nginx`, `caddy`, `turborepo`             |
-| **Observability**        | `datadog`, `sentry`, `prometheus`, `grafana`, `loki`, `jaeger`, `opentelemetry`, `mixpanel`, `posthog`                                   |
-| **Dev Tooling**          | `eslint`, `prettier`, `biome`, `vitest`, `playwright`, `git`, `github`, `xquik`                                                          |
-| **Communication**        | `slack`, `discord`, `twilio`, `sendgrid`, `resend`                                                                                       |
-| **Platforms & CMS**      | `shopify`, `mapbox`, `convex`                                                                                                            |
+| Category | Skills Included |
+| :--- | :--- |
+| **AI, LLM & Reasoning** | `deepseek`, `openai`, `anthropic`, `gemini`, `groq`, `mistral`, `cohere`, `elevenlabs`, `replicate`, `ollama`, `vllm`, `langchain`, `llamaindex` |
+| **Vector DB & Search** | `qdrant`, `weaviate`, `pinecone`, `meilisearch`, `typesense`, `algolia`, `xquik` |
+| **Payments & Billing** | `stripe`, `paddle`, `lemon-squeezy`, `braintree`, `revenuecat`, `plaid` |
+| **Workflows & Background** | `inngest`, `trigger-dev`, `bullmq`, `kafka`, `rabbitmq`, `nats`, `redis-streams` |
+| **Auth & Security** | `svix`, `unkey`, `clerk`, `auth0`, `okta`, `better-auth`, `jwt`, `oauth2`, `openid-connect` |
+| **Databases & ORMs** | `postgresql`, `mysql`, `sqlite`, `mongodb-atlas`, `planetscale`, `neon`, `turso`, `drizzle`, `prisma` |
+| **Caching & KV** | `redis`, `upstash` |
+| **Cloud & Object Storage** | `aws-s3`, `aws-dynamodb`, `azure-blob-storage`, `google-cloud-storage` |
+| **Communications & Email** | `resend`, `postmark`, `sendgrid`, `twilio`, `novu`, `slack`, `discord` |
+| **Backend Frameworks** | `express`, `fastapi`, `nestjs`, `hono`, `trpc` |
+| **Frontend Frameworks** | `react`, `vue`, `nextjs`, `nuxt`, `sveltekit` |
+| **Deployment & Edge** | `vercel`, `railway`, `render`, `fly`, `digitalocean`, `cloudflare`, `cloudflare-workers`, `deno-deploy` |
+| **Infrastructure & DevOps** | `docker`, `kubernetes`, `helm`, `terraform`, `pulumi`, `argo-cd`, `github-actions`, `traefik`, `nginx`, `caddy`, `turborepo` |
+| **Observability & Analytics**| `datadog`, `sentry`, `prometheus`, `grafana`, `loki`, `jaeger`, `opentelemetry`, `mixpanel`, `posthog` |
+| **Dev Tools & Platforms** | `eslint`, `prettier`, `biome`, `vitest`, `playwright`, `git`, `github`, `shopify`, `mapbox`, `convex` |
 
-> 🌐 **Browse the interactive web catalog at [docs/index.html](./docs/index.html).**
+> 🌐 **Browse the searchable interactive directory at [docs/index.html](./docs/index.html).**
 
 ---
 
 ## 🏗️ Monorepo Architecture
 
-`awesome-api-skills` is built as a TypeScript pnpm workspace:
+`awesome-api-skills` is organized as a high-performance TypeScript workspace:
 
 ```
-skills/                 101 SKILL.md files + metadata.json contracts
-packages/
-  cli/                  CLI binary for searching, validating, and managing skills
-  core/                 Core orchestration engine and workspace management
-  generator/            Pipeline generator enforcing consistent SKILL.md templates
-  validator/            Zod & JSON-Schema validation engine for skills
-  registry/             Graph relationship index & search resolver
-  sdk/                  Programmatic Node.js SDK for accessing skill data
-  shared-types/         TypeScript definitions & schemas shared across packages
-scripts/
-  dev/                  Validation, indexing, and static build scripts
-apps/docs/              Searchable web directory, benchmarks, and CLI reference
+├── skills/                     # 116 SKILL.md specs & metadata.json contracts
+├── packages/
+│   ├── cli/                    # Production CLI binary (search, validate, doctor)
+│   ├── core/                   # Orchestration runtime and workspace validation
+│   ├── validator/              # JSON Schema & Zod structural validation engine
+│   ├── registry/               # Knowledge graph index (248 edges) & search resolver
+│   ├── generator/              # Template engine & SKILL.md compiler
+│   ├── sdk/                    # Programmatic Node.js SDK
+│   └── shared-types/           # Shared TypeScript interfaces & types
+├── apps/
+│   └── docs/                   # Dark-mode VitePress documentation & Skill Studio
+├── scripts/
+│   ├── dev/                    # Benchmark suite & verification scripts
+│   └── generators/             # Graph and metadata update utilities
+└── vercel.json                 # Zero-configuration Vercel deployment spec
 ```
 
 ---
 
-## 🎯 Verification & Quality Standards
+## 🎯 Verification & Quality Assurance
 
-Every claim in this repository is verified by automated tests and CI checks:
+Every skill in this repository is strictly governed by automated verification pipelines:
 
-1. **Schema Validation**: All 101 skills pass strict structural checks via `packages/validator`.
-2. **Automated Unit Tests**: 31 assertions run in CI via Vitest covering all core packages.
-3. **Last Verified Metadata**: Every skill contains a `lastVerified` timestamp in its `metadata.json` and `SKILL.md` header indicating when SDK signatures were verified against vendor documentation.
-4. **Relationship Scoring**: Skill graph connections follow a transparent 5-factor hybrid scoring model (Explicit edges, Category match, Ecosystem match, Deployment match, Jaccard similarity) detailed in [SPECIFICATION.md](./SPECIFICATION.md#15-related-skills-scoring-methodology).
+1. **Deterministic Schema Enforcement**: 100% of skills validate against the `SKILL.md v1.0` schema specification via `packages/validator`.
+2. **Automated Unit Tests**: 38 comprehensive tests run across all packages in CI with Vitest.
+3. **Verified Knowledge Graph**: 248 validated relationship edges map out prerequisites, alternatives, and full-stack integration recipes.
+4. **Sub-16ms Performance**: In-memory search indexing and relationship traversals execute in under 16ms.
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions! All new skills must adhere to the standard schema:
+We welcome contributions of new API skills and improvements to existing documentation!
 
-1. **Scaffold or Write Skill**: Add your skill folder under `skills/<skill-name>/` containing `SKILL.md` and `metadata.json`.
-2. **Run Validation**:
+1. **Fork and clone** the repository:
+   ```bash
+   git clone https://github.com/ashish7802/awesome-api-skills.git
+   cd awesome-api-skills
+   pnpm install
+   ```
+2. **Create your skill** under `skills/<skill-name>/` containing `SKILL.md` and `metadata.json`.
+3. **Run schema validation & test suite**:
    ```bash
    pnpm run validate:skills
-   ```
-3. **Run Unit Tests**:
-   ```bash
    pnpm test
    ```
-4. **Submit PR**: Open a Pull Request. GitHub Actions will automatically validate schema compliance using `packages/validator`.
+4. **Submit a Pull Request**. Our automated GitHub Actions workflow will review and validate the submission.
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) and [.github/PULL_REQUEST_TEMPLATE.md](./.github/PULL_REQUEST_TEMPLATE.md) for details.
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for full style guidelines and scoring rules.
+
 ---
 
 ## 📄 License
 
-[MIT](./LICENSE) © 2026 Awesome API Skills Team.
+Distributed under the [MIT License](./LICENSE). © 2026 Awesome API Skills Team.

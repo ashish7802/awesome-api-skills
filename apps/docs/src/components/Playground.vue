@@ -664,13 +664,28 @@ const searchIndexEntry = computed(() => {
       : { message: 'Type in Search Query Test below to simulate match relevance' },
   };
 });
+
+const copiedTarget = ref('');
+function copyToClipboard(text, id) {
+  if (!text) return;
+  if (typeof navigator !== 'undefined' && navigator.clipboard) {
+    navigator.clipboard.writeText(typeof text === 'string' ? text : JSON.stringify(text, null, 2));
+    copiedTarget.value = id;
+    setTimeout(() => {
+      if (copiedTarget.value === id) copiedTarget.value = '';
+    }, 2000);
+  }
+}
 </script>
 
 <template>
   <div class="playground-container">
     <!-- Preset Header Controls -->
     <div class="preset-bar">
-      <span class="preset-label">Load Realistic Skill Preset:</span>
+      <div class="preset-bar-title">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        <span>Preset Blueprints:</span>
+      </div>
       <div class="preset-buttons">
         <button
           v-for="(val, key) in PRESETS"
@@ -683,7 +698,7 @@ const searchIndexEntry = computed(() => {
         </button>
         <button
           type="button"
-          :class="['preset-btn', { active: selectedPreset === 'custom' }]"
+          :class="['preset-btn', 'custom-btn', { active: selectedPreset === 'custom' }]"
           @click="loadPreset('custom')"
         >
           + Custom
@@ -695,10 +710,23 @@ const searchIndexEntry = computed(() => {
       <!-- Editor Column -->
       <div class="editor-pane">
         <div class="pane-header">
-          <span>metadata.json</span>
-          <span v-if="jsonParseError" class="badge error">JSON Syntax Error</span>
-          <span v-else-if="isFullyValid" class="badge success">Schema Valid</span>
-          <span v-else class="badge warning">Needs Attention</span>
+          <div class="pane-title">
+            <span class="file-icon">📄</span>
+            <span>metadata.json</span>
+          </div>
+          <div class="pane-actions">
+            <span v-if="jsonParseError" class="badge error">JSON Syntax Error</span>
+            <span v-else-if="isFullyValid" class="badge success">✓ Schema Valid</span>
+            <span v-else class="badge warning">Needs Attention</span>
+            <button
+              type="button"
+              class="copy-btn"
+              title="Copy JSON"
+              @click="copyToClipboard(metadata, 'metadata')"
+            >
+              {{ copiedTarget === 'metadata' ? 'Copied!' : 'Copy' }}
+            </button>
+          </div>
         </div>
         <textarea
           v-model="metadata"
@@ -788,16 +816,34 @@ const searchIndexEntry = computed(() => {
 
           <!-- Documentation Tab -->
           <div v-if="activeTab === 'docs'" class="docs-view">
-            <div class="docs-notice">
-              This preview illustrates the generated <code>SKILL.md</code> ingested by Cursor, Claude Code, Cline, and Continue:
+            <div class="preview-bar-actions">
+              <div class="docs-notice">
+                Generated <code>SKILL.md</code> ingested by Cursor, Claude Code, Cline, and Continue:
+              </div>
+              <button
+                type="button"
+                class="copy-btn preview-copy"
+                @click="copyToClipboard(generatedSkillMarkdown, 'skillmd')"
+              >
+                {{ copiedTarget === 'skillmd' ? 'Copied SKILL.md!' : 'Copy SKILL.md' }}
+              </button>
             </div>
             <pre class="code-block">{{ generatedSkillMarkdown }}</pre>
           </div>
 
           <!-- Registry Tab -->
           <div v-if="activeTab === 'registry'" class="registry-view">
-            <div class="docs-notice">
-              Exact schema representation inside <code>registry/graph.json</code> & <code>registry/manifest.json</code>:
+            <div class="preview-bar-actions">
+              <div class="docs-notice">
+                Exact schema representation inside <code>registry/graph.json</code> & <code>registry/manifest.json</code>:
+              </div>
+              <button
+                type="button"
+                class="copy-btn preview-copy"
+                @click="copyToClipboard(registryNodeEntry, 'registry')"
+              >
+                {{ copiedTarget === 'registry' ? 'Copied JSON!' : 'Copy Node JSON' }}
+              </button>
             </div>
             <pre class="code-block">{{ JSON.stringify(registryNodeEntry, null, 2) }}</pre>
           </div>
@@ -805,12 +851,12 @@ const searchIndexEntry = computed(() => {
           <!-- Search Tab -->
           <div v-if="activeTab === 'search'" class="search-view">
             <div class="search-tester">
-              <label for="search-sim-input" class="search-label">Simulate Search Query:</label>
+              <label for="search-sim-input" class="search-label">Simulate Agent In-Memory Search Query:</label>
               <input
                 id="search-sim-input"
                 v-model="searchQuery"
                 type="text"
-                placeholder="e.g. stripe, rls, webhook, embeddings, auth..."
+                placeholder="e.g. stripe, rls, webhook, embeddings, vector, auth..."
                 class="search-input"
               />
             </div>
@@ -832,16 +878,20 @@ const searchIndexEntry = computed(() => {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
   margin-bottom: 1rem;
-  padding: 0.75rem 1rem;
+  padding: 0.85rem 1.15rem;
   background-color: var(--vp-c-bg-soft);
   border: 1px solid var(--vp-c-divider);
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-.preset-label {
-  font-size: 0.85rem;
+.preset-bar-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.84rem;
   font-weight: 600;
   color: var(--vp-c-text-2);
 }
@@ -855,24 +905,31 @@ const searchIndexEntry = computed(() => {
 .preset-btn {
   font-size: 0.8rem;
   font-weight: 500;
-  padding: 0.25rem 0.65rem;
+  padding: 0.3rem 0.75rem;
   border-radius: 6px;
   border: 1px solid var(--vp-c-divider);
-  background: var(--vp-c-bg);
-  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg-alt);
+  color: var(--vp-c-text-2);
   cursor: pointer;
   transition: all 0.15s ease;
 }
 
 .preset-btn:hover {
   border-color: var(--vp-c-brand-1);
-  color: var(--vp-c-brand-1);
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg-elv);
 }
 
 .preset-btn.active {
-  background: var(--vp-c-brand-1);
-  color: #fff;
-  border-color: var(--vp-c-brand-1);
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border-color: #38bdf8;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+}
+
+.custom-btn {
+  border-style: dashed;
 }
 
 .playground {
@@ -884,7 +941,7 @@ const searchIndexEntry = computed(() => {
 @media (min-width: 900px) {
   .playground {
     flex-direction: row;
-    height: 640px;
+    height: 660px;
   }
 }
 
@@ -894,43 +951,88 @@ const searchIndexEntry = computed(() => {
   display: flex;
   flex-direction: column;
   border: 1px solid var(--vp-c-divider);
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: var(--vp-c-bg-soft);
   overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 .pane-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6rem 1rem;
+  padding: 0.65rem 1rem;
   font-size: 0.85rem;
   font-weight: 600;
   font-family: var(--vp-font-family-mono);
   border-bottom: 1px solid var(--vp-c-divider);
-  background: var(--vp-c-bg);
+  background: var(--vp-c-bg-alt);
+}
+
+.pane-title {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--vp-c-text-1);
+}
+
+.pane-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.copy-btn {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-2);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.copy-btn:hover {
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
+}
+
+.preview-bar-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.preview-copy {
+  white-space: nowrap;
 }
 
 .badge {
   font-size: 0.75rem;
-  padding: 0.15rem 0.5rem;
+  padding: 0.15rem 0.55rem;
   border-radius: 4px;
   font-weight: 600;
 }
 
 .badge.success {
-  background: #dcfce7;
-  color: #166534;
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
 }
 
 .badge.warning {
-  background: #fef3c7;
-  color: #92400e;
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
 }
 
 .badge.error {
-  background: #fee2e2;
-  color: #991b1b;
+  background: rgba(244, 63, 94, 0.15);
+  color: #fda4af;
+  border: 1px solid rgba(244, 63, 94, 0.3);
 }
 
 textarea {
@@ -939,10 +1041,10 @@ textarea {
   padding: 1rem;
   font-family: var(--vp-font-family-mono);
   font-size: 0.85rem;
-  line-height: 1.5;
+  line-height: 1.55;
   border: none;
-  background: transparent;
-  color: var(--vp-c-text-1);
+  background: #090d16;
+  color: #f8fafc;
   resize: none;
   outline: none;
 }
@@ -950,7 +1052,7 @@ textarea {
 .tabs {
   display: flex;
   border-bottom: 1px solid var(--vp-c-divider);
-  background: var(--vp-c-bg);
+  background: var(--vp-c-bg-alt);
 }
 
 .tabs button {
@@ -959,14 +1061,14 @@ textarea {
   align-items: center;
   justify-content: center;
   gap: 0.35rem;
-  padding: 0.65rem 0.5rem;
-  font-size: 0.8rem;
+  padding: 0.7rem 0.5rem;
+  font-size: 0.82rem;
   background: none;
   border: none;
   border-right: 1px solid var(--vp-c-divider);
   cursor: pointer;
   color: var(--vp-c-text-2);
-  transition: color 0.15s ease;
+  transition: all 0.15s ease;
 }
 
 .tabs button:last-child {
@@ -974,18 +1076,18 @@ textarea {
 }
 
 .tabs button.active {
-  color: var(--vp-c-brand-1);
-  border-bottom: 2px solid var(--vp-c-brand-1);
+  color: #38bdf8;
+  border-bottom: 2px solid #38bdf8;
   font-weight: 600;
   background: var(--vp-c-bg-soft);
 }
 
 .tab-count.error {
-  background: #ef4444;
+  background: #f43f5e;
   color: #fff;
   font-size: 0.7rem;
   border-radius: 999px;
-  padding: 0 0.4rem;
+  padding: 0 0.45rem;
   font-weight: 700;
 }
 
@@ -993,73 +1095,56 @@ textarea {
   flex: 1;
   padding: 1rem;
   overflow-y: auto;
+  background: var(--vp-c-bg-soft);
 }
 
 .docs-notice {
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   color: var(--vp-c-text-2);
-  margin-bottom: 0.75rem;
-  padding: 0.4rem 0.75rem;
-  background: var(--vp-c-bg);
+  padding: 0.45rem 0.75rem;
+  background: var(--vp-c-bg-alt);
   border-radius: 6px;
   border: 1px solid var(--vp-c-divider);
+  flex-grow: 1;
 }
 
 .code-block {
   margin: 0;
-  padding: 0.85rem;
+  padding: 1rem;
   font-family: var(--vp-font-family-mono);
-  font-size: 0.8rem;
-  line-height: 1.45;
+  font-size: 0.82rem;
+  line-height: 1.5;
   white-space: pre-wrap;
   word-break: break-word;
-  background: var(--vp-c-bg);
-  border-radius: 6px;
+  background: #090d16;
+  border-radius: 8px;
   border: 1px solid var(--vp-c-divider);
-  color: var(--vp-c-text-1);
+  color: #f8fafc;
 }
 
 .diagnostic-card {
-  padding: 0.75rem 1rem;
-  border-radius: 6px;
+  padding: 0.85rem 1.15rem;
+  border-radius: 8px;
   margin-bottom: 0.75rem;
   font-size: 0.85rem;
   border: 1px solid;
 }
 
 .diagnostic-card.error {
-  background: #fef2f2;
-  border-color: #fca5a5;
-  color: #991b1b;
+  background: rgba(244, 63, 94, 0.1);
+  border-color: rgba(244, 63, 94, 0.35);
+  color: #fda4af;
 }
 
 .diagnostic-card.warning {
-  background: #fffbeb;
-  border-color: #fcd34d;
-  color: #92400e;
-}
-
-.diagnostic-card.success {
-  background: #f0fdf4;
-  border-color: #86efac;
-  color: #166534;
-}
-
-.dark .diagnostic-card.error {
-  background: #450a0a;
-  border-color: #991b1b;
-  color: #fca5a5;
-}
-
-.dark .diagnostic-card.warning {
-  background: #451a03;
-  border-color: #92400e;
+  background: rgba(245, 158, 11, 0.1);
+  border-color: rgba(245, 158, 11, 0.35);
   color: #fcd34d;
 }
 
-.dark .diagnostic-card.success {
-  background: #052e16;
-  border-color: #166534;
+.diagnostic-card.success {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.35);
   color: #86efac;
 }
 
@@ -1067,66 +1152,68 @@ textarea {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.4rem;
 }
 
 .diag-rule {
   font-family: var(--vp-font-family-mono);
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 0.78rem;
 }
 
 .diag-category {
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   color: var(--vp-c-text-2);
 }
 
 .severity-pill {
   font-size: 0.65rem;
   font-weight: 700;
-  padding: 0.1rem 0.4rem;
+  padding: 0.1rem 0.45rem;
   border-radius: 999px;
   margin-left: auto;
 }
 
 .severity-pill.error {
-  background: #ef4444;
+  background: #f43f5e;
   color: #fff;
 }
 
 .severity-pill.warning {
   background: #f59e0b;
-  color: #fff;
+  color: #000;
 }
 
 .diag-msg {
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.4rem;
   font-weight: 500;
 }
 
 .diag-sugg {
-  font-size: 0.8rem;
-  opacity: 0.9;
+  font-size: 0.82rem;
+  opacity: 0.95;
 }
 
 .rule-summary {
   margin-top: 1.5rem;
-  padding: 0.75rem 1rem;
-  background: var(--vp-c-bg);
+  padding: 0.85rem 1.15rem;
+  background: var(--vp-c-bg-alt);
   border: 1px solid var(--vp-c-divider);
-  border-radius: 6px;
-  font-size: 0.8rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
 }
 
 .rule-summary h4 {
   margin: 0 0 0.5rem 0;
-  font-size: 0.85rem;
+  font-size: 0.88rem;
+  color: var(--vp-c-text-1);
 }
 
 .rule-summary ul {
   margin: 0;
   padding-left: 1.25rem;
   line-height: 1.6;
+  color: var(--vp-c-text-2);
 }
 
 .search-tester {
@@ -1137,23 +1224,25 @@ textarea {
 }
 
 .search-label {
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 600;
   color: var(--vp-c-text-2);
 }
 
 .search-input {
   width: 100%;
-  padding: 0.5rem 0.75rem;
+  padding: 0.6rem 0.85rem;
   font-size: 0.85rem;
-  border-radius: 6px;
+  border-radius: 8px;
   border: 1px solid var(--vp-c-divider);
-  background: var(--vp-c-bg);
-  color: var(--vp-c-text-1);
+  background: #090d16;
+  color: #f8fafc;
   outline: none;
+  transition: border-color 0.2s;
 }
 
 .search-input:focus {
-  border-color: var(--vp-c-brand-1);
+  border-color: #38bdf8;
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.2);
 }
 </style>

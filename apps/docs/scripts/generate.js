@@ -31,19 +31,35 @@ function loadMeta(id) {
 
 function trustBlock(meta) {
   const agents = (meta.supportedAgents || []).join(', ');
+  const langs = (meta.languages || meta.sdkLanguages || []).join(', ') || '—';
   return `
 <div class="trust-panel">
-
-| | |
-| :--- | :--- |
-| **Validation** | ${meta.validationStatus || 'validated'} |
-| **Schema** | ${meta.schemaVersion || '1.0.0'} |
-| **Maintainer** | ${meta.maintainer || meta.author || 'awesome-api-skills'} |
-| **Updated** | ${meta.lastUpdated || '—'} |
-| **Languages** | ${(meta.languages || meta.sdkLanguages || []).join(', ') || '—'} |
-| **Agents** | ${agents || 'cursor, claude-code, cline, continue'} |
-| **Doc source** | ${meta.documentationSource ? `[official docs](${meta.documentationSource})` : '—'} |
-
+  <div class="trust-header">
+    <div class="trust-badge">
+      <span class="pulse-dot"></span>
+      <span>${meta.validationStatus || 'validated'}</span>
+    </div>
+    <span class="trust-version">Schema v${meta.schemaVersion || '1.0.0'}</span>
+  </div>
+  <div class="trust-grid">
+    <div class="trust-item">
+      <span class="trust-label">Maintainer</span>
+      <span class="trust-val">${meta.maintainer || meta.author || 'awesome-api-skills'}</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-label">Last Verified</span>
+      <span class="trust-val">${meta.lastVerified || meta.lastUpdated || '2026-07-03'}</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-label">Languages</span>
+      <span class="trust-val">${langs}</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-label">Supported Agents</span>
+      <span class="trust-val">${agents || 'cursor, claude-code, cline, continue'}</span>
+    </div>
+  </div>
+  ${meta.documentationSource ? `<div class="trust-doc-link"><a href="${meta.documentationSource}" target="_blank" rel="noopener">Official Documentation ↗</a></div>` : ''}
 </div>
 `;
 }
@@ -136,7 +152,18 @@ const allCards = skillIds
     const title = meta.displayName || meta.name || id;
     const cats = (meta.categories || ['Other']).join(' ');
     const langs = (meta.languages || []).join(' ');
-    return `<a class="skill-card" data-cat="${cats.toLowerCase()}" data-lang="${langs.toLowerCase()}" data-name="${id}" href="/skills/${id}"><h3>${title}</h3><p>${(meta.categories || []).join(' · ')}</p><span class="skill-tag">${meta.validationStatus || 'validated'}</span></a>`;
+    const desc = meta.description || 'Verified API skill specification for AI coding agents.';
+    return `<a class="skill-card" data-cat="${cats.toLowerCase()}" data-lang="${langs.toLowerCase()}" data-name="${id}" href="/skills/${id}">
+  <div class="skill-card-top">
+    <h3>${title}</h3>
+    <span class="skill-badge-status"><span class="badge-dot"></span>${meta.validationStatus || 'validated'}</span>
+  </div>
+  <p class="skill-desc">${desc}</p>
+  <div class="skill-card-footer">
+    <span class="skill-cat-pill">${(meta.categories || ['Tools'])[0]}</span>
+    <span class="skill-arrow">→</span>
+  </div>
+</a>`;
   })
   .join('\n');
 
@@ -145,16 +172,27 @@ const categories = [...new Set(skillIds.flatMap((id) => loadMeta(id).categories 
 fs.writeFileSync(
   path.join(skillsOutDir, 'index.md'),
   `---
-title: Skills
+title: Skills Directory
 ---
 
-# Find a skill
+# Verified API Skills Catalog
 
-<input id="skill-search" type="search" placeholder="Search stripe, postgres, auth…" aria-label="Search skills" />
+<p class="catalog-subtitle">Explore <strong>${skillIds.length} structured skill specifications</strong> tested against AI coding agents (Claude Code, Cursor, Cline, Continue).</p>
+
+<div class="search-container">
+  <div class="search-box-wrapper">
+    <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+    <input id="skill-search" type="search" placeholder="Search by skill name, category, or keyword (e.g., stripe, rag, auth, postgres)..." aria-label="Search skills" autofocus />
+  </div>
+  <div class="catalog-stats" id="catalog-stats">Showing ${skillIds.length} of ${skillIds.length} skills</div>
+</div>
 
 <div class="filter-row">
-${categories.map((c) => `<button type="button" class="filter-btn" data-filter="${c.toLowerCase()}">${c}</button>`).join('\n')}
-<button type="button" class="filter-btn active" data-filter="all">All</button>
+  <button type="button" class="filter-btn active" data-filter="all">All (${skillIds.length})</button>
+${categories.map((c) => {
+  const count = skillIds.filter((id) => (loadMeta(id).categories || []).includes(c)).length;
+  return `  <button type="button" class="filter-btn" data-filter="${c.toLowerCase()}">${c} (${count})</button>`;
+}).join('\n')}
 </div>
 
 <div class="skills-grid" id="skills-grid">
@@ -165,18 +203,25 @@ ${allCards}
 if (typeof window !== 'undefined') {
   const search = document.getElementById('skill-search');
   const grid = document.getElementById('skills-grid');
+  const stats = document.getElementById('catalog-stats');
   const cards = grid?.querySelectorAll('.skill-card') || [];
   const btns = document.querySelectorAll('.filter-btn');
   let activeCat = 'all';
   function apply() {
-    const q = (search?.value || '').toLowerCase();
+    const q = (search?.value || '').toLowerCase().trim();
+    let visibleCount = 0;
     cards.forEach((el) => {
       const name = el.getAttribute('data-name') || '';
       const cat = el.getAttribute('data-cat') || '';
       const matchQ = !q || name.includes(q) || cat.includes(q);
       const matchC = activeCat === 'all' || cat.includes(activeCat);
-      el.style.display = matchQ && matchC ? '' : 'none';
+      const isVisible = matchQ && matchC;
+      el.style.display = isVisible ? '' : 'none';
+      if (isVisible) visibleCount++;
     });
+    if (stats) {
+      stats.textContent = \`Showing \${visibleCount} of \${cards.length} skills\`;
+    }
   }
   search?.addEventListener('input', apply);
   btns.forEach((b) => b.addEventListener('click', () => {
@@ -189,19 +234,238 @@ if (typeof window !== 'undefined') {
 </script>
 
 <style>
-.skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; margin-top: 20px; }
-.skill-card { display: block; padding: 16px; border: 1px solid var(--vp-c-divider); border-radius: 8px; text-decoration: none; color: inherit; background: var(--vp-c-bg-soft); transition: border-color 0.15s; }
-.skill-card:hover { border-color: var(--vp-c-brand-1); }
-.skill-card h3 { margin: 0 0 6px; font-size: 15px; }
-.skill-card p { margin: 0; font-size: 12px; color: var(--vp-c-text-2); }
-.skill-tag { display: inline-block; margin-top: 8px; font-size: 10px; padding: 2px 6px; border-radius: 4px; background: var(--vp-c-brand-soft); color: var(--vp-c-brand-1); text-transform: uppercase; letter-spacing: 0.05em; }
-.filter-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
-.filter-btn { font-size: 12px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--vp-c-divider); background: transparent; cursor: pointer; color: var(--vp-c-text-2); }
-.filter-btn.active, .filter-btn:hover { border-color: var(--vp-c-brand-1); color: var(--vp-c-brand-1); }
-#skill-search { width: 100%; max-width: 480px; padding: 10px 14px; border-radius: 8px; border: 1px solid var(--vp-c-divider); background: var(--vp-c-bg-soft); color: inherit; font-size: 14px; }
-.trust-panel { font-size: 13px; margin: 16px 0; padding: 12px 16px; border: 1px solid var(--vp-c-divider); border-radius: 8px; background: var(--vp-c-bg-soft); }
-.trust-panel table { margin: 0; }
-.skill-meta { color: var(--vp-c-text-2); margin-top: -8px; }
+.catalog-subtitle {
+  color: var(--vp-c-text-2);
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+.search-container {
+  margin: 1.5rem 0 1rem;
+}
+.search-box-wrapper {
+  position: relative;
+  max-width: 640px;
+}
+.search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--vp-c-text-3);
+  pointer-events: none;
+}
+#skill-search {
+  width: 100%;
+  padding: 12px 16px 12px 42px;
+  border-radius: 10px;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+#skill-search:focus {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 0 14px rgba(56, 189, 248, 0.25);
+}
+.catalog-stats {
+  font-size: 0.85rem;
+  color: var(--vp-c-text-3);
+  margin-top: 0.6rem;
+  font-family: var(--vp-font-family-mono);
+}
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 1.25rem 0 2rem;
+}
+.filter-btn {
+  font-size: 0.82rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-alt);
+  cursor: pointer;
+  color: var(--vp-c-text-2);
+  transition: all 0.15s ease;
+}
+.filter-btn:hover {
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-text-1);
+}
+.filter-btn.active {
+  border-color: var(--vp-c-brand-1);
+  background: rgba(56, 189, 248, 0.15);
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  text-decoration: none !important;
+  color: inherit !important;
+  background: var(--vp-c-bg-soft);
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+.skill-card:hover {
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg-alt);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), 0 0 12px rgba(56, 189, 248, 0.15);
+}
+.skill-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.skill-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
+}
+.skill-desc {
+  margin: 0 0 14px;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: var(--vp-c-text-2);
+  flex-grow: 1;
+}
+.skill-badge-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.72rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  font-family: var(--vp-font-family-mono);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+}
+.skill-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--vp-c-divider);
+  padding-top: 10px;
+  margin-top: auto;
+}
+.skill-cat-pill {
+  font-size: 0.75rem;
+  color: var(--vp-c-text-3);
+  font-weight: 500;
+}
+.skill-arrow {
+  color: var(--vp-c-brand-1);
+  font-weight: 700;
+  transition: transform 0.15s ease;
+}
+.skill-card:hover .skill-arrow {
+  transform: translateX(4px);
+}
+.trust-panel {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.trust-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+}
+.pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+}
+.trust-version {
+  font-size: 0.78rem;
+  font-family: var(--vp-font-family-mono);
+  color: var(--vp-c-text-3);
+}
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+.trust-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.trust-label {
+  font-size: 0.75rem;
+  color: var(--vp-c-text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.trust-val {
+  font-size: 0.88rem;
+  color: var(--vp-c-text-1);
+  font-weight: 500;
+}
+.trust-doc-link {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid var(--vp-c-divider);
+  font-size: 0.85rem;
+}
+.trust-doc-link a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  font-weight: 500;
+}
+.skill-meta {
+  color: var(--vp-c-brand-1);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: -8px;
+}
 </style>
 `,
 );
