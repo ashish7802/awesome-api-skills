@@ -16,25 +16,22 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 9
       - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: pnpm install
+        run: npm ci
 
       - name: Run Linter
-        run: pnpm lint
+        run: npm run lint
 
       - name: Run Typecheck
         run: |
-          pnpm build
-          pnpm typecheck
+          npm run build
+          npm run typecheck
 
       - name: Validate Skill Schemas
-        run: node scripts/dev/run-validation-v2.js
+        run: npm run validate:skills

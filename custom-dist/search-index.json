@@ -1,17 +1,20 @@
 [
   {
+    "id": "algolia",
     "name": "algolia",
     "categories": [
       "Search"
     ]
   },
   {
+    "id": "anthropic",
     "name": "anthropic",
     "categories": [
       "AI"
     ]
   },
   {
+    "id": "argo-cd",
     "name": "argo-cd",
     "categories": [
       "CI/CD",
@@ -19,6 +22,7 @@
     ]
   },
   {
+    "id": "auth0",
     "name": "auth0",
     "categories": [
       "Authentication",
@@ -26,6 +30,7 @@
     ]
   },
   {
+    "id": "aws-dynamodb",
     "name": "aws-dynamodb",
     "categories": [
       "Databases",
@@ -33,6 +38,7 @@
     ]
   },
   {
+    "id": "aws-s3",
     "name": "aws-s3",
     "categories": [
       "Cloud",
@@ -40,6 +46,7 @@
     ]
   },
   {
+    "id": "azure-blob-storage",
     "name": "azure-blob-storage",
     "categories": [
       "Cloud",
@@ -47,6 +54,7 @@
     ]
   },
   {
+    "id": "azure-openai",
     "name": "azure-openai",
     "categories": [
       "AI",
@@ -54,18 +62,21 @@
     ]
   },
   {
+    "id": "better-auth",
     "name": "better-auth",
     "categories": [
       "Authentication"
     ]
   },
   {
+    "id": "biome",
     "name": "biome",
     "categories": [
       "Developer Tools"
     ]
   },
   {
+    "id": "braintree",
     "name": "braintree",
     "categories": [
       "Payments",
@@ -73,6 +84,7 @@
     ]
   },
   {
+    "id": "bullmq",
     "name": "bullmq",
     "categories": [
       "Messaging",
@@ -80,6 +92,7 @@
     ]
   },
   {
+    "id": "caddy",
     "name": "caddy",
     "categories": [
       "Infrastructure",
@@ -87,6 +100,7 @@
     ]
   },
   {
+    "id": "clerk",
     "name": "clerk",
     "categories": [
       "Authentication",
@@ -94,6 +108,7 @@
     ]
   },
   {
+    "id": "cloudflare",
     "name": "cloudflare",
     "categories": [
       "Cloud",
@@ -101,6 +116,7 @@
     ]
   },
   {
+    "id": "cloudflare-workers",
     "name": "cloudflare-workers",
     "categories": [
       "Cloud",
@@ -108,6 +124,7 @@
     ]
   },
   {
+    "id": "cohere",
     "name": "cohere",
     "categories": [
       "AI",
@@ -116,6 +133,7 @@
     ]
   },
   {
+    "id": "convex",
     "name": "convex",
     "categories": [
       "Databases",
@@ -123,6 +141,7 @@
     ]
   },
   {
+    "id": "datadog",
     "name": "datadog",
     "categories": [
       "Monitoring",
@@ -130,6 +149,7 @@
     ]
   },
   {
+    "id": "deepseek",
     "name": "deepseek",
     "categories": [
       "AI",
@@ -137,6 +157,7 @@
     ]
   },
   {
+    "id": "deno-deploy",
     "name": "deno-deploy",
     "categories": [
       "Cloud",
@@ -144,18 +165,21 @@
     ]
   },
   {
+    "id": "digitalocean",
     "name": "digitalocean",
     "categories": [
       "Cloud"
     ]
   },
   {
+    "id": "discord",
     "name": "discord",
     "categories": [
       "Messaging"
     ]
   },
   {
+    "id": "docker",
     "name": "docker",
     "categories": [
       "Developer Tools",
@@ -163,6 +187,7 @@
     ]
   },
   {
+    "id": "drizzle",
     "name": "drizzle",
     "categories": [
       "Databases",
@@ -170,6 +195,7 @@
     ]
   },
   {
+    "id": "elevenlabs",
     "name": "elevenlabs",
     "categories": [
       "AI",
@@ -178,24 +204,28 @@
     ]
   },
   {
+    "id": "eslint",
     "name": "eslint",
     "categories": [
       "Developer Tools"
     ]
   },
   {
+    "id": "express",
     "name": "express",
     "categories": [
       "Backend Frameworks"
     ]
   },
   {
+    "id": "fastapi",
     "name": "fastapi",
     "categories": [
       "Backend Frameworks"
     ]
   },
   {
+    "id": "firebase",
     "name": "firebase",
     "categories": [
       "Cloud",
@@ -203,6 +233,7 @@
     ]
   },
   {
+    "id": "fly",
     "name": "fly",
     "categories": [
       "Cloud",
@@ -210,18 +241,21 @@
     ]
   },
   {
+    "id": "gemini",
     "name": "gemini",
     "categories": [
       "AI"
     ]
   },
   {
+    "id": "git",
     "name": "git",
     "categories": [
       "Developer Tools"
     ]
   },
   {
+    "id": "github",
     "name": "github",
     "categories": [
       "DevOps",
@@ -229,6 +263,7 @@
     ]
   },
   {
+    "id": "github-actions",
     "name": "github-actions",
     "categories": [
       "CI/CD",
@@ -236,6 +271,7 @@
     ]
   },
   {
+    "id": "google-cloud-storage",
     "name": "google-cloud-storage",
     "categories": [
       "Cloud",
@@ -243,12 +279,14 @@
     ]
   },
   {
+    "id": "grafana",
     "name": "grafana",
     "categories": [
       "Observability"
     ]
   },
   {
+    "id": "groq",
     "name": "groq",
     "categories": [
       "AI",
@@ -257,6 +295,7 @@
     ]
   },
   {
+    "id": "helm",
     "name": "helm",
     "categories": [
       "Developer Tools",
@@ -264,12 +303,14 @@
     ]
   },
   {
+    "id": "hono",
     "name": "hono",
     "categories": [
       "Backend Frameworks"
     ]
   },
   {
+    "id": "inngest",
     "name": "inngest",
     "categories": [
       "Developer Tools",
@@ -278,12 +319,14 @@
     ]
   },
   {
+    "id": "jaeger",
     "name": "jaeger",
     "categories": [
       "Observability"
     ]
   },
   {
+    "id": "jwt",
     "name": "jwt",
     "categories": [
       "Authentication",
@@ -291,6 +334,7 @@
     ]
   },
   {
+    "id": "kafka",
     "name": "kafka",
     "categories": [
       "Messaging",
@@ -298,6 +342,7 @@
     ]
   },
   {
+    "id": "kubernetes",
     "name": "kubernetes",
     "categories": [
       "Developer Tools",
@@ -305,6 +350,7 @@
     ]
   },
   {
+    "id": "langchain",
     "name": "langchain",
     "categories": [
       "AI",
@@ -312,6 +358,7 @@
     ]
   },
   {
+    "id": "lemon-squeezy",
     "name": "lemon-squeezy",
     "categories": [
       "Payments",
@@ -319,6 +366,7 @@
     ]
   },
   {
+    "id": "linux",
     "name": "linux",
     "categories": [
       "Infrastructure",
@@ -326,6 +374,7 @@
     ]
   },
   {
+    "id": "llamaindex",
     "name": "llamaindex",
     "categories": [
       "AI",
@@ -333,12 +382,14 @@
     ]
   },
   {
+    "id": "loki",
     "name": "loki",
     "categories": [
       "Observability"
     ]
   },
   {
+    "id": "mapbox",
     "name": "mapbox",
     "categories": [
       "Maps",
@@ -346,6 +397,7 @@
     ]
   },
   {
+    "id": "meilisearch",
     "name": "meilisearch",
     "categories": [
       "Search",
@@ -353,6 +405,7 @@
     ]
   },
   {
+    "id": "mistral",
     "name": "mistral",
     "categories": [
       "AI",
@@ -360,12 +413,14 @@
     ]
   },
   {
+    "id": "mixpanel",
     "name": "mixpanel",
     "categories": [
       "Analytics"
     ]
   },
   {
+    "id": "mongodb-atlas",
     "name": "mongodb-atlas",
     "categories": [
       "Databases",
@@ -373,12 +428,14 @@
     ]
   },
   {
+    "id": "mysql",
     "name": "mysql",
     "categories": [
       "Databases"
     ]
   },
   {
+    "id": "nats",
     "name": "nats",
     "categories": [
       "Messaging",
@@ -386,6 +443,7 @@
     ]
   },
   {
+    "id": "neon",
     "name": "neon",
     "categories": [
       "Databases",
@@ -393,18 +451,21 @@
     ]
   },
   {
+    "id": "nestjs",
     "name": "nestjs",
     "categories": [
       "Backend Frameworks"
     ]
   },
   {
+    "id": "nextjs",
     "name": "nextjs",
     "categories": [
       "Frontend Frameworks"
     ]
   },
   {
+    "id": "nginx",
     "name": "nginx",
     "categories": [
       "Developer Tools",
@@ -412,6 +473,7 @@
     ]
   },
   {
+    "id": "novu",
     "name": "novu",
     "categories": [
       "Communications",
@@ -419,12 +481,14 @@
     ]
   },
   {
+    "id": "nuxt",
     "name": "nuxt",
     "categories": [
       "Frontend Frameworks"
     ]
   },
   {
+    "id": "oauth2",
     "name": "oauth2",
     "categories": [
       "Authentication",
@@ -432,6 +496,7 @@
     ]
   },
   {
+    "id": "okta",
     "name": "okta",
     "categories": [
       "Authentication",
@@ -439,6 +504,7 @@
     ]
   },
   {
+    "id": "ollama",
     "name": "ollama",
     "categories": [
       "AI",
@@ -446,6 +512,7 @@
     ]
   },
   {
+    "id": "openai",
     "name": "openai",
     "categories": [
       "AI",
@@ -453,6 +520,7 @@
     ]
   },
   {
+    "id": "openid-connect",
     "name": "openid-connect",
     "categories": [
       "Authentication",
@@ -460,12 +528,14 @@
     ]
   },
   {
+    "id": "opentelemetry",
     "name": "opentelemetry",
     "categories": [
       "Observability"
     ]
   },
   {
+    "id": "paddle",
     "name": "paddle",
     "categories": [
       "Payments",
@@ -473,6 +543,7 @@
     ]
   },
   {
+    "id": "pinecone",
     "name": "pinecone",
     "categories": [
       "Databases",
@@ -480,6 +551,7 @@
     ]
   },
   {
+    "id": "plaid",
     "name": "plaid",
     "categories": [
       "Payments",
@@ -487,6 +559,7 @@
     ]
   },
   {
+    "id": "planetscale",
     "name": "planetscale",
     "categories": [
       "Databases",
@@ -494,6 +567,7 @@
     ]
   },
   {
+    "id": "playwright",
     "name": "playwright",
     "categories": [
       "Developer Tools",
@@ -501,18 +575,21 @@
     ]
   },
   {
+    "id": "postgresql",
     "name": "postgresql",
     "categories": [
       "Databases"
     ]
   },
   {
+    "id": "posthog",
     "name": "posthog",
     "categories": [
       "Analytics"
     ]
   },
   {
+    "id": "postmark",
     "name": "postmark",
     "categories": [
       "Email",
@@ -520,12 +597,14 @@
     ]
   },
   {
+    "id": "prettier",
     "name": "prettier",
     "categories": [
       "Developer Tools"
     ]
   },
   {
+    "id": "prisma",
     "name": "prisma",
     "categories": [
       "Databases",
@@ -533,12 +612,14 @@
     ]
   },
   {
+    "id": "prometheus",
     "name": "prometheus",
     "categories": [
       "Observability"
     ]
   },
   {
+    "id": "pulumi",
     "name": "pulumi",
     "categories": [
       "Developer Tools",
@@ -546,6 +627,7 @@
     ]
   },
   {
+    "id": "qdrant",
     "name": "qdrant",
     "categories": [
       "AI",
@@ -554,6 +636,7 @@
     ]
   },
   {
+    "id": "rabbitmq",
     "name": "rabbitmq",
     "categories": [
       "Messaging",
@@ -561,6 +644,7 @@
     ]
   },
   {
+    "id": "railway",
     "name": "railway",
     "categories": [
       "Cloud",
@@ -568,18 +652,21 @@
     ]
   },
   {
+    "id": "react",
     "name": "react",
     "categories": [
       "Frontend Frameworks"
     ]
   },
   {
+    "id": "redis",
     "name": "redis",
     "categories": [
       "Databases"
     ]
   },
   {
+    "id": "redis-streams",
     "name": "redis-streams",
     "categories": [
       "Messaging",
@@ -587,6 +674,7 @@
     ]
   },
   {
+    "id": "render",
     "name": "render",
     "categories": [
       "Cloud",
@@ -594,6 +682,7 @@
     ]
   },
   {
+    "id": "replicate",
     "name": "replicate",
     "categories": [
       "AI",
@@ -602,12 +691,14 @@
     ]
   },
   {
+    "id": "resend",
     "name": "resend",
     "categories": [
       "Messaging"
     ]
   },
   {
+    "id": "revenuecat",
     "name": "revenuecat",
     "categories": [
       "Payments",
@@ -615,24 +706,28 @@
     ]
   },
   {
+    "id": "sendgrid",
     "name": "sendgrid",
     "categories": [
       "Messaging"
     ]
   },
   {
+    "id": "sentry",
     "name": "sentry",
     "categories": [
       "Monitoring"
     ]
   },
   {
+    "id": "shopify",
     "name": "shopify",
     "categories": [
       "Commerce"
     ]
   },
   {
+    "id": "slack",
     "name": "slack",
     "categories": [
       "Messaging",
@@ -640,12 +735,14 @@
     ]
   },
   {
+    "id": "sqlite",
     "name": "sqlite",
     "categories": [
       "Databases"
     ]
   },
   {
+    "id": "stripe",
     "name": "stripe",
     "categories": [
       "Payments",
@@ -653,6 +750,7 @@
     ]
   },
   {
+    "id": "supabase",
     "name": "supabase",
     "categories": [
       "Databases",
@@ -660,12 +758,14 @@
     ]
   },
   {
+    "id": "sveltekit",
     "name": "sveltekit",
     "categories": [
       "Frontend Frameworks"
     ]
   },
   {
+    "id": "svix",
     "name": "svix",
     "categories": [
       "Developer Tools",
@@ -674,6 +774,7 @@
     ]
   },
   {
+    "id": "terraform",
     "name": "terraform",
     "categories": [
       "Developer Tools",
@@ -681,6 +782,7 @@
     ]
   },
   {
+    "id": "traefik",
     "name": "traefik",
     "categories": [
       "Infrastructure",
@@ -688,6 +790,7 @@
     ]
   },
   {
+    "id": "trigger-dev",
     "name": "trigger-dev",
     "categories": [
       "Developer Tools",
@@ -696,6 +799,7 @@
     ]
   },
   {
+    "id": "trpc",
     "name": "trpc",
     "categories": [
       "Backend Frameworks",
@@ -703,12 +807,14 @@
     ]
   },
   {
+    "id": "turborepo",
     "name": "turborepo",
     "categories": [
       "Developer Tools"
     ]
   },
   {
+    "id": "turso",
     "name": "turso",
     "categories": [
       "Databases",
@@ -716,12 +822,14 @@
     ]
   },
   {
+    "id": "twilio",
     "name": "twilio",
     "categories": [
       "Messaging"
     ]
   },
   {
+    "id": "typesense",
     "name": "typesense",
     "categories": [
       "Search",
@@ -729,6 +837,7 @@
     ]
   },
   {
+    "id": "unkey",
     "name": "unkey",
     "categories": [
       "Security",
@@ -737,6 +846,7 @@
     ]
   },
   {
+    "id": "upstash",
     "name": "upstash",
     "categories": [
       "Databases",
@@ -744,6 +854,7 @@
     ]
   },
   {
+    "id": "vercel",
     "name": "vercel",
     "categories": [
       "Cloud",
@@ -751,6 +862,7 @@
     ]
   },
   {
+    "id": "vitest",
     "name": "vitest",
     "categories": [
       "Testing",
@@ -758,6 +870,7 @@
     ]
   },
   {
+    "id": "vllm",
     "name": "vllm",
     "categories": [
       "AI",
@@ -765,12 +878,14 @@
     ]
   },
   {
+    "id": "vue",
     "name": "vue",
     "categories": [
       "Frontend Frameworks"
     ]
   },
   {
+    "id": "weaviate",
     "name": "weaviate",
     "categories": [
       "AI",
@@ -779,6 +894,7 @@
     ]
   },
   {
+    "id": "xquik",
     "name": "xquik",
     "categories": [
       "Developer Tools",

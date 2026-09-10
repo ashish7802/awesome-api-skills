@@ -49,6 +49,10 @@ const command: Command = {
       .filter((f) => fs.statSync(path.join(skillsDir, f)).isDirectory())
       .filter((f) => !targetId || f === targetId);
 
+    if (skillFolders.length === 0) {
+      throw new Error(targetId ? `Unknown skill: ${targetId}` : 'No skills found in workspace');
+    }
+
     const engine = new ValidatorEngine();
     engine.registerRule(new MetadataPresenceRule());
     engine.registerRule(new SkillMarkdownPresenceRule());

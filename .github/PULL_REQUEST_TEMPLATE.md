@@ -4,11 +4,11 @@
 
 ## Checklist before submitting
 
-- [ ] I have run local validation via `pnpm run validate:skills` or `node scripts/dev/run-validation-v2.js` and all checks passed.
+- [ ] I have run local validation via `npm run validate:skills` or `node scripts/dev/run-validation-v2.js` and all checks passed.
 - [ ] `SKILL.md` contains verified technical patterns (correct SDK method names, current webhook events, exact auth headers).
 - [ ] `metadata.json` includes `lastVerified` set to the current date (`YYYY-MM-DD`).
 - [ ] Code examples under `examples/` are syntactically valid.
-- [ ] All workspace tests pass via `pnpm test`.
+- [ ] All workspace tests pass via `npm test`.
 
 ## Automated PR Validation Notice
 

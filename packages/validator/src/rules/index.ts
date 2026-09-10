@@ -6,7 +6,7 @@ let schemaPath = '';
 try {
   schemaPath = require.resolve('@awesome-api-skills/shared-types/schema/skill.schema.json');
 } catch {
-  schemaPath = path.resolve(__dirname, '../../../../shared-types/schema/skill.schema.json');
+  schemaPath = path.resolve(__dirname, '../../../shared-types/schema/skill.schema.json');
 }
 
 export class MetadataPresenceRule implements ValidationRule {

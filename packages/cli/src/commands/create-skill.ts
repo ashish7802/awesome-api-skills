@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { assertSkillId } from '../skill-id.js';
 import path from 'path';
 import { Command } from '../interfaces.js';
 import pc from 'picocolors';
@@ -27,6 +28,7 @@ const command: Command = {
   ],
   async execute(context) {
     const skillId = context.args[0];
+    if (skillId) assertSkillId(skillId);
     if (!skillId) {
       throw new Error('Skill ID is required. Example: awesome-api create-skill my-api');
     }

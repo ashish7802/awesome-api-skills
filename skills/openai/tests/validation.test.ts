@@ -1,1 +1,2 @@
-import { describe, it } from 'vitest';\ndescribe('OpenAI API', () => { it('should work', () => {}) });\n
+import { describe, it } from 'vitest';
+describe('OpenAI API', () => { it('should work', () => {}) });

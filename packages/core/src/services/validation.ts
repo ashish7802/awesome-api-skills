@@ -6,6 +6,9 @@ import {
   MetadataSchemaValidationRule,
   ValidationContext,
 } from '@awesome-api-skills/validator';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { createHash } from 'node:crypto';
 import { SkillMetadata } from '@awesome-api-skills/shared-types';
 
 export class ValidationManager {
@@ -19,11 +22,19 @@ export class ValidationManager {
     this.engine.registerRule(new MetadataSchemaValidationRule());
   }
 
-  async validate(skills: { path: string; metadata: SkillMetadata }[]) {
+  async validate(skills: { path: string; metadata?: SkillMetadata }[]) {
     const contexts: ValidationContext[] = skills.map((s) => ({
       skillPath: s.path,
       metadata: s.metadata,
-      contentHash: 'content-hash-mock',
+      contentHash: (() => {
+        try {
+          return createHash('sha256')
+            .update(readFileSync(join(s.path, 'SKILL.md')))
+            .digest('hex');
+        } catch {
+          return 'empty';
+        }
+      })(),
     }));
     return this.engine.validateAll(contexts);
   }

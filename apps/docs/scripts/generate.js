@@ -90,7 +90,9 @@ function relationsBlock(id, meta) {
 for (const id of skillIds) {
   const meta = loadMeta(id);
   const title = meta.displayName || meta.name || id;
-  const skillMd = fs.readFileSync(path.join(skillsSrcDir, id, 'SKILL.md'), 'utf8');
+  const skillMd = fs
+    .readFileSync(path.join(skillsSrcDir, id, 'SKILL.md'), 'utf8')
+    .replace(/\r\n/g, '\n');
   const categories = (meta.categories || []).join(' · ') || 'General';
 
   const page = `---
@@ -189,10 +191,12 @@ title: Skills Directory
 
 <div class="filter-row">
   <button type="button" class="filter-btn active" data-filter="all">All (${skillIds.length})</button>
-${categories.map((c) => {
-  const count = skillIds.filter((id) => (loadMeta(id).categories || []).includes(c)).length;
-  return `  <button type="button" class="filter-btn" data-filter="${c.toLowerCase()}">${c} (${count})</button>`;
-}).join('\n')}
+${categories
+  .map((c) => {
+    const count = skillIds.filter((id) => (loadMeta(id).categories || []).includes(c)).length;
+    return `  <button type="button" class="filter-btn" data-filter="${c.toLowerCase()}">${c} (${count})</button>`;
+  })
+  .join('\n')}
 </div>
 
 <div class="skills-grid" id="skills-grid">

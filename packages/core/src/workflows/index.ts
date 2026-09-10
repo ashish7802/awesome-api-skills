@@ -10,23 +10,25 @@ import path from 'path';
 export class Workflows {
   constructor(private container: Container) {}
 
-  private loadRealSkills(skillsPath: string): { path: string; metadata: SkillMetadata }[] {
+  private loadRealSkills(skillsPath: string): { path: string; metadata?: SkillMetadata }[] {
     if (!fs.existsSync(skillsPath)) return [];
     const skillFolders = fs
       .readdirSync(skillsPath)
       .filter((f) => fs.statSync(path.join(skillsPath, f)).isDirectory());
 
-    const list: { path: string; metadata: SkillMetadata }[] = [];
+    const list: { path: string; metadata?: SkillMetadata }[] = [];
     for (const folder of skillFolders) {
       const folderPath = path.join(skillsPath, folder);
       const metaPath = path.join(folderPath, 'metadata.json');
       if (fs.existsSync(metaPath)) {
         try {
           const metadata = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
-          list.push({ path: folderPath, metadata });
+          list.push({ path: folderPath, metadata: { ...metadata, id: metadata.id || folder } });
         } catch {
-          // ignore or parse empty
+          list.push({ path: folderPath });
         }
+      } else {
+        list.push({ path: folderPath });
       }
     }
     return list;
@@ -48,9 +50,13 @@ export class Workflows {
     const generator = this.container.resolve<GenerationManager>('GenerationManager');
 
     const ws = wsManager.discover(cwd);
-    const realSkills = this.loadRealSkills(ws.skillsPath).map((s) => s.metadata);
+    const loaded = this.loadRealSkills(ws.skillsPath);
+    const realSkills = loaded.map((s) => {
+      if (!s.metadata) throw new Error(`Invalid metadata: ${s.path}`);
+      return s.metadata;
+    });
 
-    const report = await generator.generate(realSkills, ws.config.outputDir);
+    const report = await generator.generate(realSkills, path.resolve(ws.root, ws.config.outputDir));
     return report;
   }
 

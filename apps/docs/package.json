@@ -10,14 +10,14 @@
   },
   "dependencies": {
     "vue": "^3.5.0",
-    "vitepress": "1.5.0",
+    "vitepress": "^1.6.4",
     "@awesome-api-skills/core": "*",
     "@awesome-api-skills/shared-types": "*",
     "@awesome-api-skills/validator": "*",
     "@awesome-api-skills/generator": "*"
   },
   "devDependencies": {
-    "lighthouse": "^12.2.0",
+    "lighthouse": "^13.4.1",
     "vite-bundle-visualizer": "^1.2.1"
   }
 }

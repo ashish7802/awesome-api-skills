@@ -2,18 +2,23 @@ import { ValidationContext, ValidationResult, ValidationRule, Diagnostic } from 
 
 export class ValidatorEngine {
   private rules: ValidationRule[] = [];
-  private cache: Map<string, ValidationResult> = new Map();
+  private cache = new Map<string, { key: string; result: ValidationResult }>();
 
   registerRule(rule: ValidationRule) {
     this.rules.push(rule);
+    this.clearCache();
   }
 
   async validateSkill(context: ValidationContext): Promise<ValidationResult> {
     // Incremental validation
     const cached = this.cache.get(context.skillPath);
-    if (cached && cached.skillId === context.contentHash) {
-      // HACK: Reusing skillId field in cache mapping as contentHash for demonstration
-      return cached;
+    const key = JSON.stringify([
+      context.contentHash,
+      context.metadata,
+      this.rules.map((r) => [r.id, r.version, r.enabled, r.severity]),
+    ]);
+    if (cached && cached.key === key) {
+      return structuredClone(cached.result);
     }
 
     const diagnostics: Diagnostic[] = [];
@@ -50,7 +55,7 @@ export class ValidatorEngine {
     };
 
     // Store with hash
-    this.cache.set(context.skillPath, { ...finalResult, skillId: context.contentHash });
+    this.cache.set(context.skillPath, { key, result: structuredClone(finalResult) });
 
     return { ...finalResult }; // return unmutated id
   }

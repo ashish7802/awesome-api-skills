@@ -1,406 +1,466 @@
 [
   {
     "id": "algolia",
-    "checksum": "sha256-mock-algolia"
+    "checksum": "456ef9621a512d6f9ba33c975e4545908af9d93b3b3bb86a481f1f073fe7980f"
   },
   {
     "id": "anthropic",
-    "checksum": "sha256-mock-anthropic"
+    "checksum": "ba6267566b17f60f80a46201a77846ef4ca08616e7b2212a80587db6a3b4887a"
   },
   {
     "id": "argo-cd",
-    "checksum": "sha256-mock-argo-cd"
+    "checksum": "ca825c1b1b5e78ec9cafdf4bc9727ec165e863a1be671173a6066dfc2329b066"
   },
   {
     "id": "auth0",
-    "checksum": "sha256-mock-auth0"
+    "checksum": "8a738afba858734b567fffd151541ccc47e6f2e176830716bfb466f9b57a4d29"
   },
   {
     "id": "aws-dynamodb",
-    "checksum": "sha256-mock-aws-dynamodb"
+    "checksum": "e1e1403716f87bc1902ecab1a0c97c2939cb754ce170bd5909e04372e50020f6"
   },
   {
     "id": "aws-s3",
-    "checksum": "sha256-mock-aws-s3"
+    "checksum": "a87cede930a271c1747609acd87ecb26acc650ec05c64382fd51864e14b1bf96"
   },
   {
     "id": "azure-blob-storage",
-    "checksum": "sha256-mock-azure-blob-storage"
+    "checksum": "5e95998aa291d12a5352ba119a986127f40059a8c55316cddf1ead08a56ff982"
   },
   {
     "id": "azure-openai",
-    "checksum": "sha256-mock-azure-openai"
+    "checksum": "44c016741551ff5b61f355c21f55422cc8bcad1f9b986cf71a969296b1f4ddd3"
   },
   {
     "id": "better-auth",
-    "checksum": "sha256-mock-better-auth"
+    "checksum": "cf0f92b43ed86eb39e0401d340a891e6133e07ddfe21c792d178f212229ef6d5"
   },
   {
     "id": "biome",
-    "checksum": "sha256-mock-biome"
+    "checksum": "034691a23d8346b8132cbd273d74e57e425f51265cf9ae63e79af810786e324b"
+  },
+  {
+    "id": "braintree",
+    "checksum": "cf2696a415d27697f78c577009a1e061a856efc9f9613cbaf88a80a211594c72"
   },
   {
     "id": "bullmq",
-    "checksum": "sha256-mock-bullmq"
+    "checksum": "0fc2e373b5d63fc9113488a7690ce03b52e94e240e124fb7fa769cf34bc5b80a"
   },
   {
     "id": "caddy",
-    "checksum": "sha256-mock-caddy"
+    "checksum": "e6326f32d1d2d81b56f4a60564d63aa7452c8ac91435047e122e75d7ccf11e47"
   },
   {
     "id": "clerk",
-    "checksum": "sha256-mock-clerk"
+    "checksum": "b109820954b1e1e309751d026d59bce5d060724fa4bf5d4e467b4d5a1fa0e840"
   },
   {
     "id": "cloudflare",
-    "checksum": "sha256-mock-cloudflare"
+    "checksum": "9400054c445b77264ee1846237f6a73ea9a734fe217e8f727fa40b2b28e71d91"
   },
   {
     "id": "cloudflare-workers",
-    "checksum": "sha256-mock-cloudflare-workers"
+    "checksum": "e6be724df7cd7e94a50e5ba47d593e75c2db71b8404d8e6f96c44450dde43bb1"
+  },
+  {
+    "id": "cohere",
+    "checksum": "4cc05f6e1c03c760921f92fe237fdd7c6388be9f41e15adfed7225373d42a5e7"
   },
   {
     "id": "convex",
-    "checksum": "sha256-mock-convex"
+    "checksum": "f231723b5b572d5c69b61adc9e0c87cac5d9ebd04908f9ce96bf351e174a9194"
   },
   {
     "id": "datadog",
-    "checksum": "sha256-mock-datadog"
+    "checksum": "559c7949d29aaa6c1734bbc4ad5bdbdd91791b81c8c610794be10e396182e1c4"
+  },
+  {
+    "id": "deepseek",
+    "checksum": "5898288b3c91154e25a7f0e76ab4c3121bb9e70ff35793aa8329376cb63a3ea4"
   },
   {
     "id": "deno-deploy",
-    "checksum": "sha256-mock-deno-deploy"
+    "checksum": "b91b0aea0833efbdf70e8b28219bf89bf518eadc6d8383680685c84bfb481623"
   },
   {
     "id": "digitalocean",
-    "checksum": "sha256-mock-digitalocean"
+    "checksum": "255c8dd3263b7e19ef52270327c027ed61f5bc46b38d133c50931dbe83b41146"
   },
   {
     "id": "discord",
-    "checksum": "sha256-mock-discord"
+    "checksum": "56e0e0b415666487522277f2acc4713e640db31c822ce8e06e01f67fde586257"
   },
   {
     "id": "docker",
-    "checksum": "sha256-mock-docker"
+    "checksum": "1bbd84e871960bbd5a4a586b2b10fbc34c0445bbd20b6e62343f85ada8dd5aab"
   },
   {
     "id": "drizzle",
-    "checksum": "sha256-mock-drizzle"
+    "checksum": "47f367b3b2a509fc84a0dd5d57be9aa650290f27fae6f4606bf8970050847ca6"
+  },
+  {
+    "id": "elevenlabs",
+    "checksum": "bae9281fab673a85ac921e3f314d275d86f00ac012739670d94b005d1451fc48"
   },
   {
     "id": "eslint",
-    "checksum": "sha256-mock-eslint"
+    "checksum": "40c2c717598fae8779acc28c7c15b89cdbcdde4641bb899297cc54d5a4502c40"
   },
   {
     "id": "express",
-    "checksum": "sha256-mock-express"
+    "checksum": "dcdf4daf57d89999ff1a1a2916b4a7861b41d1d894e6e2c22550b74490913993"
   },
   {
     "id": "fastapi",
-    "checksum": "sha256-mock-fastapi"
+    "checksum": "8d638e9f86af024bb5165a8367acf4b3404042f1e5af4d16e79c8caf9bea759b"
   },
   {
     "id": "firebase",
-    "checksum": "sha256-mock-firebase"
+    "checksum": "89bfa8f6f1c266252c24f6fbe656ca54f3752a5b49c184453f29966891403cf2"
   },
   {
     "id": "fly",
-    "checksum": "sha256-mock-fly"
+    "checksum": "171cb575ba9d23c433655810b57893a7e694a47ffc170fe7ae2fbd0cdb149fb3"
   },
   {
     "id": "gemini",
-    "checksum": "sha256-mock-gemini"
+    "checksum": "839a7230a778a74d61507eacbceb415ad5ea9e584abd8362d28ee15d82a28eb7"
   },
   {
     "id": "git",
-    "checksum": "sha256-mock-git"
+    "checksum": "4996a6f4a5f4d20f87c3fb52f98aa1c411f897bde0aadbd040140e740afaa070"
   },
   {
     "id": "github",
-    "checksum": "sha256-mock-github"
+    "checksum": "06c378c96fb6f8ddee876f2cad9a4b239c39c525ef530b538aa71ba4bcbe17b0"
   },
   {
     "id": "github-actions",
-    "checksum": "sha256-mock-github-actions"
+    "checksum": "b20797f903c26ba19bb6a82e715f8061406944b3632cbdb5485fa19af6a6cc79"
   },
   {
     "id": "google-cloud-storage",
-    "checksum": "sha256-mock-google-cloud-storage"
+    "checksum": "a3a7e180239167660a707e38a84d73948c130568f0823b566cd874d9e5254785"
   },
   {
     "id": "grafana",
-    "checksum": "sha256-mock-grafana"
+    "checksum": "6f6675036dd641568b66c44fbddfb5b66f8b36db8eaff86a7ef20293811ae69c"
+  },
+  {
+    "id": "groq",
+    "checksum": "36305252cab80f893e1f5cf384a87bde821a378393e6069dbd2de0e9e99fadf8"
   },
   {
     "id": "helm",
-    "checksum": "sha256-mock-helm"
+    "checksum": "ff0500d2ba6fe0b59f6df47bb237dd279513881d3492cafd3be06c9af1e1abec"
   },
   {
     "id": "hono",
-    "checksum": "sha256-mock-hono"
+    "checksum": "bb8c6f3f267a864541cd0ea1b08d37ea10176a3434b258a25265c91def4d822d"
+  },
+  {
+    "id": "inngest",
+    "checksum": "b177eb3d9d41b1fc1499b623e5cd4255510c59f53804b40b7ed0901df98a7f7b"
   },
   {
     "id": "jaeger",
-    "checksum": "sha256-mock-jaeger"
+    "checksum": "68cb74bf2382928343bcb986780b1f3253fd2eaf6ffbf6d9f3857987ec223e53"
   },
   {
     "id": "jwt",
-    "checksum": "sha256-mock-jwt"
+    "checksum": "47521c09bfd318310c3380af195bbf807655fb5e5c681b29117feec193779e8e"
   },
   {
     "id": "kafka",
-    "checksum": "sha256-mock-kafka"
+    "checksum": "ec2d31d33ddf5221769840afb568fdf0b4bdf7b409b7d447d9c6cd843fea4e07"
   },
   {
     "id": "kubernetes",
-    "checksum": "sha256-mock-kubernetes"
+    "checksum": "bf5067bd33271c194380375f4cda202356affaf4cfc4d260b0ae53673e4dc57a"
   },
   {
     "id": "langchain",
-    "checksum": "sha256-mock-langchain"
+    "checksum": "093dcc5cf9d8062ff6b2f45247b6339ecb89888fb35dd9835cff1c435b72a3d1"
   },
   {
     "id": "lemon-squeezy",
-    "checksum": "sha256-mock-lemon-squeezy"
+    "checksum": "510a8f8bc7c22283136bc7ce7393aa7b7123579900907d7481815f7d277456f2"
   },
   {
     "id": "linux",
-    "checksum": "sha256-mock-linux"
+    "checksum": "ccc84f1caae63f99f83ceeed5feccee20c9db48d22578b9c86d0ee86d8f29a75"
   },
   {
     "id": "llamaindex",
-    "checksum": "sha256-mock-llamaindex"
+    "checksum": "d8ef1dbdb5fc0b22cb8d66836f3e2ab2fd3339610f4912531a3e762460bcadcb"
   },
   {
     "id": "loki",
-    "checksum": "sha256-mock-loki"
+    "checksum": "6b0fec09254a5b0646531c8f4a44c632b6ba006992492f2a5d0649f54b14aa07"
   },
   {
     "id": "mapbox",
-    "checksum": "sha256-mock-mapbox"
+    "checksum": "d3b3562b61673d1f6c6166d1fefd7bb2abe5f5dd208f9f5cdd687b403fbf1d0f"
   },
   {
     "id": "meilisearch",
-    "checksum": "sha256-mock-meilisearch"
+    "checksum": "530bd4c470eee37f038fc0296216dca6fe04f4d4448cf70f6eaa5168821a9a09"
+  },
+  {
+    "id": "mistral",
+    "checksum": "d9bc4e37b94442107967940f07f1bc1c9c301c96ebd4b6c0993dd81395c666c8"
   },
   {
     "id": "mixpanel",
-    "checksum": "sha256-mock-mixpanel"
+    "checksum": "7f8b3e260d887ae14598654b4364b5864effccf2fd1aa802fa84fe643b3acfac"
   },
   {
     "id": "mongodb-atlas",
-    "checksum": "sha256-mock-mongodb-atlas"
+    "checksum": "51b8e589a42dbba5fab8ba4cf35eec451ecb70e1949c963f77c9f469edcc649f"
   },
   {
     "id": "mysql",
-    "checksum": "sha256-mock-mysql"
+    "checksum": "d38a2ba7ba06740e7c8d450b7fec24c5c939628b9ac343dafa0388c1834cb65c"
   },
   {
     "id": "nats",
-    "checksum": "sha256-mock-nats"
+    "checksum": "6d0986e547de4f8be6973c3fce025bff5907287a257149d0f14765cffeb67477"
   },
   {
     "id": "neon",
-    "checksum": "sha256-mock-neon"
+    "checksum": "bdb0d2484a4d3aa92dc946ee42dc840c43871033d1268de4b0743f0ba787235f"
   },
   {
     "id": "nestjs",
-    "checksum": "sha256-mock-nestjs"
+    "checksum": "6dccf7c2f5dd3fd6324d299d50fbae5e03b3c99fb95865344037d2c29450f30c"
   },
   {
     "id": "nextjs",
-    "checksum": "sha256-mock-nextjs"
+    "checksum": "e2d5007206b96d92534a2592d2a197f017559e9cc62c47af920d1bddf99bc52b"
   },
   {
     "id": "nginx",
-    "checksum": "sha256-mock-nginx"
+    "checksum": "5e5fcd1e4339b9979c13098271a3c68e2fa90dfe392947f99b4331a7c13ce543"
+  },
+  {
+    "id": "novu",
+    "checksum": "91780aad8fda7ac47c7345551ab1d1002a7215a85a8dbaddfa034b48e4477d2b"
   },
   {
     "id": "nuxt",
-    "checksum": "sha256-mock-nuxt"
+    "checksum": "24dadcc51d5666f0d668564868acffcad0301cace797069bbc3e40569f403877"
   },
   {
     "id": "oauth2",
-    "checksum": "sha256-mock-oauth2"
+    "checksum": "52af796ef660ef1d500e9a30f8caaf943bd69316522fcfbeff94d54cdd3c82cd"
   },
   {
     "id": "okta",
-    "checksum": "sha256-mock-okta"
+    "checksum": "0fbf648eafc663301fe449971571f8c85fd7ef80b27140defafa850acb6ac787"
   },
   {
     "id": "ollama",
-    "checksum": "sha256-mock-ollama"
+    "checksum": "0ff3f3189a3f05d027ada19ac20538604bf15a3881311b2f33855ffc9e023fe0"
   },
   {
     "id": "openai",
-    "checksum": "sha256-mock-openai"
+    "checksum": "aa2fddd11dac2d543911732152cef8a97942280f26f7176ea82a7d9114772e3a"
   },
   {
     "id": "openid-connect",
-    "checksum": "sha256-mock-openid-connect"
+    "checksum": "7d9876f3942da209c0a25fb3e0cb761d64d9c39424f823cc37585eb501c16677"
   },
   {
     "id": "opentelemetry",
-    "checksum": "sha256-mock-opentelemetry"
+    "checksum": "c5c639b706184886d65c161201936f68d93f32ec4cf00efc95bcf4b2a3ddf740"
   },
   {
     "id": "paddle",
-    "checksum": "sha256-mock-paddle"
+    "checksum": "8da3f67c5b1f6fb88dbae106273a66709d398fe665dddd7af0e87cd5be1bfd51"
   },
   {
     "id": "pinecone",
-    "checksum": "sha256-mock-pinecone"
+    "checksum": "1a795465972a34d22260568a3dd84ce815660768df2ccce1ea62a4a967d90b0b"
   },
   {
     "id": "plaid",
-    "checksum": "sha256-mock-plaid"
+    "checksum": "2e5dbf4684d2b0cad0cec112bc8251cd85c399399295427453bfe7dcef80e70f"
   },
   {
     "id": "planetscale",
-    "checksum": "sha256-mock-planetscale"
+    "checksum": "9f67b0859250e79e8bed6f60ba4ad7b87e26006639ddf21d84a85e6dbf8df272"
   },
   {
     "id": "playwright",
-    "checksum": "sha256-mock-playwright"
+    "checksum": "151d583e66f89a7a2e5d2ec32282f8b5918e5ef36de32d950be73e3092268f0c"
   },
   {
     "id": "postgresql",
-    "checksum": "sha256-mock-postgresql"
+    "checksum": "6c908feb36dac1cc243c2973c5a837900f6cc56f5825ad6b3c7be00036e13ac4"
   },
   {
     "id": "posthog",
-    "checksum": "sha256-mock-posthog"
+    "checksum": "d3bd3f7f6cd94dcb6b399e68b3c5cf268f8b9d3f88fff87d9c97220572d17144"
+  },
+  {
+    "id": "postmark",
+    "checksum": "e8f5f03cadeafb9fe2c65f5753159bdd508825c076391e942bd720a3d3248131"
   },
   {
     "id": "prettier",
-    "checksum": "sha256-mock-prettier"
+    "checksum": "ab82771501afa58f5eae9ac898f2f9f2e0ae88e9a95142a699b830a02b3aaccc"
   },
   {
     "id": "prisma",
-    "checksum": "sha256-mock-prisma"
+    "checksum": "e9fd075ba093c7b85ec05aa93fb12ec37f8e4fd34887b5fe2addb4679cd90127"
   },
   {
     "id": "prometheus",
-    "checksum": "sha256-mock-prometheus"
+    "checksum": "1a25e3a666c752d14b2d424a5dfd093646d4068fbe3c42e685763fe232c3b103"
   },
   {
     "id": "pulumi",
-    "checksum": "sha256-mock-pulumi"
+    "checksum": "8d78521ef068a9c6c4360f49635b5009a0b62adb0fa6ecf7a690253c7c98ebc0"
+  },
+  {
+    "id": "qdrant",
+    "checksum": "2fe0dc38f36e12baeb5a2d07a48a7d8833bb7f6605327695034b2ca243959f10"
   },
   {
     "id": "rabbitmq",
-    "checksum": "sha256-mock-rabbitmq"
+    "checksum": "a038fb87969bc583ff6466a4cc8da003d584d04fd2891a76f76f1b06114d1303"
   },
   {
     "id": "railway",
-    "checksum": "sha256-mock-railway"
+    "checksum": "7873399d3775013b66e7edd4074ebd9903408e6e5c3dd0ed49f0860e40558ed4"
   },
   {
     "id": "react",
-    "checksum": "sha256-mock-react"
+    "checksum": "ce47eff659dd506a22d059ba29222bad306e707a9f09df6491fd8a2dbff59859"
   },
   {
     "id": "redis",
-    "checksum": "sha256-mock-redis"
+    "checksum": "dde8891127693efae7fc581aaffc6c6647aae24de8d4a9b700a267173b21bc2a"
   },
   {
     "id": "redis-streams",
-    "checksum": "sha256-mock-redis-streams"
+    "checksum": "ebb13d7d69c5be2349a88c8248a3089084fd06ba3bc5f3f8da5ff8d98e675903"
   },
   {
     "id": "render",
-    "checksum": "sha256-mock-render"
+    "checksum": "a8d43ca587771082207d40108d9c7f5994e9b7b99be5b379399232442b69825a"
+  },
+  {
+    "id": "replicate",
+    "checksum": "b8ae3f1605db90b961c78e7f58b4ea1aeb113f25365f5ea345a79a5d5c4e44a6"
   },
   {
     "id": "resend",
-    "checksum": "sha256-mock-resend"
+    "checksum": "9a3f4fbe5728939a0e0b59a4950fcb8321d80c771c7ca667a4ca9781b7d1c11f"
   },
   {
     "id": "revenuecat",
-    "checksum": "sha256-mock-revenuecat"
+    "checksum": "699cac7b8c7dff6d0beda7f7906903046ca4ca2f4e09fc31ec8af6798a40e748"
   },
   {
     "id": "sendgrid",
-    "checksum": "sha256-mock-sendgrid"
+    "checksum": "081f55ccc5beb5206023eb601a5802a2e68131b02f3199913d7b598f777545e6"
   },
   {
     "id": "sentry",
-    "checksum": "sha256-mock-sentry"
+    "checksum": "64f944a3e198e6ffce43f72dbc062df6a17265a2ce2a9282acd5f1d0a00060bc"
   },
   {
     "id": "shopify",
-    "checksum": "sha256-mock-shopify"
+    "checksum": "fc79b241c562d78b67088cf0b0927c061743a9bfc971feb8567d31f1ee067213"
   },
   {
     "id": "slack",
-    "checksum": "sha256-mock-slack"
+    "checksum": "b010832173a66cfb30a6f5d82487952c0a433167f17a6a4ce83e48a0b992f934"
   },
   {
     "id": "sqlite",
-    "checksum": "sha256-mock-sqlite"
+    "checksum": "c4ee1e11eb09d33b428f105707d9c15f43749d9777bf40aebbbe590a147cfb17"
   },
   {
     "id": "stripe",
-    "checksum": "sha256-mock-stripe"
+    "checksum": "2cbe7bcad10eee0ec6fe88af7fe71e8986a8ee43e68dbf5b5f35fcf0c9e396aa"
   },
   {
     "id": "supabase",
-    "checksum": "sha256-mock-supabase"
+    "checksum": "6684d50527f0e6bef136bb64f24f9d3b08e235d225c554b70f65335f0db854ef"
   },
   {
     "id": "sveltekit",
-    "checksum": "sha256-mock-sveltekit"
+    "checksum": "8151076be6d72e1b22ad65fd9a92395fe03e8283d93e5f98535b4b5b23c609d7"
+  },
+  {
+    "id": "svix",
+    "checksum": "439cb2a8afb36b86b0934b56f3d438e8c51a492219554ba4159693ff785c2b1d"
   },
   {
     "id": "terraform",
-    "checksum": "sha256-mock-terraform"
+    "checksum": "f74e45679647fd988afae4974148a28fbe078d6695d76de13610b0f892e7e26d"
   },
   {
     "id": "traefik",
-    "checksum": "sha256-mock-traefik"
+    "checksum": "fecbd344455b0d5e48e62eafbe9852719f0667b3565d03957800af32cf0eceea"
+  },
+  {
+    "id": "trigger-dev",
+    "checksum": "e00cd076ea5cd0faa63fb609aec88cc0045cbc6e27f05b8ff296a44465aec224"
   },
   {
     "id": "trpc",
-    "checksum": "sha256-mock-trpc"
+    "checksum": "579338d42c7a6bfd48846ec564c3daba9817d98770d37983ff80a8663ffd527a"
   },
   {
     "id": "turborepo",
-    "checksum": "sha256-mock-turborepo"
+    "checksum": "2c46a36eb633db35d22824a4c4515a59458b3445ec6db2f1fc68d766e939c4f2"
   },
   {
     "id": "turso",
-    "checksum": "sha256-mock-turso"
+    "checksum": "174446bfd8cbdb8af06e1bcc12285ee4f681dbdfdc9a3e68c6e5d8c7dec8bb66"
   },
   {
     "id": "twilio",
-    "checksum": "sha256-mock-twilio"
+    "checksum": "5ad7d28d4ad75ba4052b90085a768c8f3f7c992ee5888069b34c1f7a1f766d23"
   },
   {
     "id": "typesense",
-    "checksum": "sha256-mock-typesense"
+    "checksum": "0a90af38921b4eb4c2c83c608267c74d18e982bdde5a06a38d6e881b62d14be8"
+  },
+  {
+    "id": "unkey",
+    "checksum": "d60ef67bd0aa2dd6c0c109f2f5cd216901ba1df2d07b4ee692d140eab32c6c66"
   },
   {
     "id": "upstash",
-    "checksum": "sha256-mock-upstash"
+    "checksum": "31d602173a8ce3827468d890a6ad0ff9e5c4f3a27338503a1f757e0209a65e60"
   },
   {
     "id": "vercel",
-    "checksum": "sha256-mock-vercel"
+    "checksum": "d0773c8ffe90d23b2304034f244d26eb6772d6d22fd33fab2e7ba22e8c92bbe5"
   },
   {
     "id": "vitest",
-    "checksum": "sha256-mock-vitest"
+    "checksum": "0a9d9db11fdba015b07327d137a7151eb9311d0f1e76c612b1948fe413863bee"
   },
   {
     "id": "vllm",
-    "checksum": "sha256-mock-vllm"
+    "checksum": "374963e4787bdf684eedde406adb045102a589586e06a087bfa24e326d083802"
   },
   {
     "id": "vue",
-    "checksum": "sha256-mock-vue"
+    "checksum": "973d09900ee08d479f03374408d9b7fefe9547b0b0c86f6224f246c203b0e90f"
+  },
+  {
+    "id": "weaviate",
+    "checksum": "95f11dcd5ef31f7c7c6b37e247a49a0e8df4d9854278362bcc72ff4bc7e6325d"
   },
   {
     "id": "xquik",
-    "checksum": "sha256-mock-xquik"
+    "checksum": "78e8702c79dbda8c40c0d64699d499917b8915e9cb1034081dacbf282954ade0"
   }
 ]
