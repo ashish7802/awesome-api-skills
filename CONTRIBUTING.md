@@ -56,3 +56,9 @@ This project follows the [Contributor Covenant](https://www.contributor-covenant
 ## Regression checks
 
 Run `npm run typecheck`, `npm run validate:skills`, and `npm run test:snapshots` after changes. To deliberately refresh artifact snapshots after reviewing generator changes, run `npx tsx scripts/dev/dogfood.ts --update-snapshots`, then run the snapshot check again.
+
+## npm releases
+
+The release workflow prepares version pull requests on the default `master` branch. Publishing to npm requires the `NPM_TOKEN` GitHub Actions repository secret, containing an npm token with permission to publish the `@awesome-api-skills` packages.
+
+Without that secret, the workflow records that npm publishing was skipped and can still prepare release pull requests. After configuring the secret, the next release workflow run can publish unpublished package versions. Invalid or expired credentials still fail the publish step so release failures remain visible.
