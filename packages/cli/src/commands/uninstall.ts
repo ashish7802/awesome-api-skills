@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { assertSkillId } from '../skill-id.js';
 import path from 'path';
 import { Command } from '../interfaces.js';
 import pc from 'picocolors';
@@ -14,6 +15,7 @@ const command: Command = {
   examples: ['awesome-api uninstall stripe', 'awesome-api uninstall clerk --target=.claude/skills'],
   async execute(context) {
     const skillId = context.args[0];
+    if (skillId) assertSkillId(skillId);
     if (!skillId) throw new Error('Skill ID is required. Example: awesome-api uninstall stripe');
 
     const targetArg = (context.options.target as string) || '.claude/skills';

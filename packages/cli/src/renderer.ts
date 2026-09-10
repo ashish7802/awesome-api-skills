@@ -23,7 +23,17 @@ export class OutputRenderer {
 
   renderSuccess(summary: string, data: unknown, command?: string) {
     if (this.jsonMode) {
-      console.log(JSON.stringify({ success: true, summary, data }, null, 2));
+      console.log(
+        JSON.stringify(
+          {
+            success: !(data && typeof data === 'object' && 'valid' in data && data.valid === false),
+            summary,
+            data,
+          },
+          null,
+          2,
+        ),
+      );
       return;
     }
 

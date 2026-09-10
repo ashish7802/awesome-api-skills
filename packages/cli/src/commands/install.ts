@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { assertSkillId } from '../skill-id.js';
 import path from 'path';
 import { Command } from '../interfaces.js';
 import pc from 'picocolors';
@@ -23,6 +24,7 @@ const command: Command = {
   examples: ['awesome-api install stripe', 'awesome-api install clerk --target=.claude/skills'],
   async execute(context) {
     const skillId = context.args[0];
+    if (skillId) assertSkillId(skillId);
     if (!skillId) throw new Error('Skill ID is required. Example: awesome-api install stripe');
 
     const root = findRepoRoot();

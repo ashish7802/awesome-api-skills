@@ -113,3 +113,21 @@ describe('Validator Engine', () => {
     expect(result.diagnostics[0].id).toBe('ERR-SCHEMA-VALIDATION');
   });
 });
+
+describe('Validation cache regressions', () => {
+  it('preserves identities and invalidates changed metadata and registered rules', async () => {
+    const engine = new ValidatorEngine();
+    engine.registerRule(new MetadataPresenceRule());
+    const context = {
+      skillPath: '/cache-test',
+      contentHash: 'same',
+      metadata: { id: 'stable-id' } as SkillMetadata,
+    };
+    expect((await engine.validateSkill(context)).skillId).toBe('stable-id');
+    expect((await engine.validateSkill(context)).skillId).toBe('stable-id');
+    expect((await engine.validateSkill({ ...context, metadata: undefined })).isValid).toBe(false);
+    await engine.validateSkill(context);
+    engine.registerRule(new MetadataSchemaValidationRule());
+    expect((await engine.validateSkill(context)).isValid).toBe(false);
+  });
+});

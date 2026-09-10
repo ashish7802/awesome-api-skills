@@ -8,34 +8,33 @@ jobs:
   publish:
     name: Publish Build Artifacts
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 9
       - uses: actions/setup-node@v4
         with:
           node-version: 22.x
-          cache: 'pnpm'
+          cache: 'npm'
 
       - name: Install Dependencies
-        run: pnpm install
+        run: npm ci
 
       - name: Build All
-        run: pnpm build
+        run: npm run build
 
       - name: Generate Integrity Report & Checksums
-        run: pnpm run generate-integrity
+        run: npm run generate-integrity
 
       - name: Generate SBOM
-        uses: advanced-security/sbom-generator-action@v0.0.2
+        run: npm sbom --sbom-format=spdx > sbom.spdx.json
 
       - name: Upload Artifacts to Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            packages/core/custom-dist/registry.json
-            packages/core/custom-dist/search-index.json
-            packages/core/custom-dist/integrity-report.json
+            dist/artifacts/registry.json
+            dist/artifacts/search-index.json
+            dist/artifacts/integrity-report.json
             checksums.txt
             sbom.spdx.json

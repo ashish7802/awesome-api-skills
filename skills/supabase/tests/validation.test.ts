@@ -1,1 +1,2 @@
-import { describe, it } from 'vitest';\ndescribe('Supabase API', () => { it('should work', () => {}) });\n
+import { describe, it } from 'vitest';
+describe('Supabase API', () => { it('should work', () => {}) });

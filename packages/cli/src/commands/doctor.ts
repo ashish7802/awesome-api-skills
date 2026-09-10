@@ -56,12 +56,12 @@ const command: Command = {
       nextSteps: healthy
         ? [
             'awesome-api search <topic>  — find a skill',
-            'pnpm dev                    — browse skills in docs',
+            'npm run dev                    — browse skills in docs',
             'cp -r skills/stripe .skills/stripe — use in your project',
           ]
         : [
             'git clone https://github.com/ashish7802/awesome-api-skills.git',
-            'pnpm install && pnpm build',
+            'npm ci && npm run build',
           ],
     };
   },

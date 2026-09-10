@@ -418,6 +418,49 @@
       "id": "biome"
     },
     {
+      "name": "braintree",
+      "version": "1.0.0",
+      "description": "PayPal and Braintree payment gateway integration for global credit cards, PayPal, and Apple Pay.",
+      "categories": [
+        "Payments",
+        "Commerce"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "java"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://developer.paypal.com/braintree/docs"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://developer.paypal.com/braintree/docs",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-03",
+      "pitfalls": [
+        "Directly accepting raw credit card numbers on backend servers instead of using client tokens and payment method nonces",
+        "Not verifying 3D Secure verification status on transactions in European regions",
+        "Using Sandbox merchant credentials in Production environments"
+      ],
+      "checklist": [
+        "Server generates client token via gateway.clientToken.generate()",
+        "Frontend collects payment and returns paymentMethodNonce",
+        "Server calls gateway.transaction.sale() with submitForSettlement: true"
+      ],
+      "id": "braintree"
+    },
+    {
       "name": "bullmq",
       "version": "1.0.0",
       "description": "Redis-based robust queue system for Node.js.",
@@ -656,6 +699,49 @@
       "id": "cloudflare-workers"
     },
     {
+      "name": "cohere",
+      "version": "1.0.0",
+      "description": "Enterprise AI platform for high-accuracy multilingual Embeddings (v3), Rerank, and Command R+ models.",
+      "categories": [
+        "AI",
+        "Search",
+        "Machine Learning"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://docs.cohere.com/reference/about"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.cohere.com/reference/about",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-03",
+      "pitfalls": [
+        "Omitting required inputType on Embed v3 (\"search_document\" vs \"search_query\")",
+        "Not leveraging cohere.rerank() on RAG candidate sets for dramatic precision boosts",
+        "Confusing command-r with command-r-plus model identifiers"
+      ],
+      "checklist": [
+        "Embeddings specify inputType: \"search_document\" when indexing and \"search_query\" when searching",
+        "Rerank endpoint utilized for reordering top-k semantic search results",
+        "COHERE_API_KEY stored securely on the backend"
+      ],
+      "id": "cohere"
+    },
+    {
       "name": "convex",
       "version": "1.0.0",
       "description": "Backend-as-a-Service with deterministic React sync.",
@@ -723,6 +809,48 @@
       "compatibility": "SKILL.md v1.0",
       "lastVerified": "2026-07-02",
       "id": "datadog"
+    },
+    {
+      "name": "deepseek",
+      "version": "1.0.0",
+      "description": "DeepSeek frontier reasoning (R1) and general chat (V3) models with OpenAI-compatible API endpoints.",
+      "categories": [
+        "AI",
+        "Machine Learning"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://platform.deepseek.com/api-docs"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://platform.deepseek.com/api-docs",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-03",
+      "pitfalls": [
+        "Omitting baseURL: \"https://api.deepseek.com\" when using the standard openai SDK client",
+        "Confusing reasoning model \"deepseek-reasoner\" (which includes reasoning_content) with \"deepseek-chat\"",
+        "Setting temperature too high on deepseek-reasoner (recommended: 0.6 or default)"
+      ],
+      "checklist": [
+        "Client sets baseURL: \"https://api.deepseek.com\"",
+        "DEEPSEEK_API_KEY loaded securely in server environment variables",
+        "Streaming handler separates delta.reasoning_content from delta.content on deepseek-reasoner"
+      ],
+      "id": "deepseek"
     },
     {
       "name": "deno-deploy",
@@ -981,6 +1109,49 @@
       "compatibility": "SKILL.md v1.0",
       "lastVerified": "2026-07-02",
       "id": "drizzle"
+    },
+    {
+      "name": "elevenlabs",
+      "version": "1.0.0",
+      "description": "Realistic AI voice synthesis, text-to-speech, voice cloning, and real-time conversational audio APIs.",
+      "categories": [
+        "AI",
+        "Audio",
+        "Media"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://elevenlabs.io/docs/api-reference"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://elevenlabs.io/docs/api-reference",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-03",
+      "pitfalls": [
+        "Buffering entire audio files before playing instead of streaming audio chunks to the player",
+        "Hardcoding voiceId values that may not exist on other workspaces or accounts",
+        "Exposing ELEVENLABS_API_KEY in frontend browser code"
+      ],
+      "checklist": [
+        "Stream TTS audio directly via HTTP chunked response or WebSockets",
+        "ELEVENLABS_API_KEY stored securely in backend server environment",
+        "Voice IDs loaded dynamically via client.voices.getAll()"
+      ],
+      "id": "elevenlabs"
     },
     {
       "name": "eslint",
@@ -1502,6 +1673,49 @@
       "id": "grafana"
     },
     {
+      "name": "groq",
+      "version": "1.0.0",
+      "description": "Ultra-low latency inference engine powered by Groq LPU chips for real-time AI and voice pipelines.",
+      "categories": [
+        "AI",
+        "Performance",
+        "Machine Learning"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://console.groq.com/docs/quickstart"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://console.groq.com/docs/quickstart",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-03",
+      "pitfalls": [
+        "Using deprecated model names like llama3-8b-8192 instead of modern llama-3.3-70b-versatile",
+        "Not handling streaming backpressure when processing high token generation rates (500+ tok/s)",
+        "Hardcoding GROQ_API_KEY in frontend client code"
+      ],
+      "checklist": [
+        "Using groq-sdk or OpenAI client with baseURL: \"https://api.groq.com/openai/v1\"",
+        "GROQ_API_KEY loaded securely in backend environment",
+        "Model ID verified against current Groq production catalog"
+      ],
+      "id": "groq"
+    },
+    {
       "name": "helm",
       "version": "1.0.0",
       "description": "The package manager for Kubernetes.",
@@ -1609,6 +1823,49 @@
       "compatibility": "SKILL.md v1.0",
       "lastVerified": "2026-07-02",
       "id": "hono"
+    },
+    {
+      "name": "inngest",
+      "version": "1.0.0",
+      "description": "Event-driven durable execution engine for background jobs, workflows, and step functions without queues.",
+      "categories": [
+        "Developer Tools",
+        "Serverless",
+        "Workflows"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "Apache-2.0",
+      "links": {
+        "API Reference": "https://www.inngest.com/docs"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://www.inngest.com/docs",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-03",
+      "pitfalls": [
+        "Executing non-deterministic operations (e.g. Math.random(), Date.now()) outside step.run() blocks",
+        "Not returning serializable JSON data from step.run() calls",
+        "Forgetting to export serve() handler from the API route (e.g., /api/inngest)"
+      ],
+      "checklist": [
+        "API handler exposed at /api/inngest with serve({ client: inngest, functions: [...] })",
+        "All side-effects and external API calls wrapped in step.run()",
+        "INNGEST_SIGNING_KEY and INNGEST_EVENT_KEY set in production"
+      ],
+      "id": "inngest"
     },
     {
       "name": "jaeger",
@@ -2181,6 +2438,48 @@
       "id": "meilisearch"
     },
     {
+      "name": "mistral",
+      "version": "1.0.0",
+      "description": "Mistral AI API for frontier multilingual models, Codestral code generation, and embeddings.",
+      "categories": [
+        "AI",
+        "Developer Tools"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "Apache-2.0",
+      "links": {
+        "API Reference": "https://docs.mistral.ai/api/"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.mistral.ai/api/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-03",
+      "pitfalls": [
+        "Using legacy @mistralai/mistralai SDK syntax instead of the modern client methods",
+        "Confusing Codestral endpoint (codestral.mistral.ai) with general chat endpoint (api.mistral.ai)",
+        "Passing unformatted tool definitions to mistral function calling"
+      ],
+      "checklist": [
+        "MISTRAL_API_KEY initialized via Mistral client",
+        "Using mistral-large-latest or codestral-latest models",
+        "Tool calls properly formatted with function schemas"
+      ],
+      "id": "mistral"
+    },
+    {
       "name": "mixpanel",
       "version": "1.0.0",
       "description": "Advanced product analytics for tracking user interactions.",
@@ -2570,6 +2869,48 @@
       "compatibility": "SKILL.md v1.0",
       "lastVerified": "2026-07-02",
       "id": "nginx"
+    },
+    {
+      "name": "novu",
+      "version": "1.0.0",
+      "description": "Unified notification infrastructure for email, SMS, push, Chat (Slack/Discord), and in-app feeds.",
+      "categories": [
+        "Communications",
+        "Developer Tools"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://docs.novu.co"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.novu.co",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-03",
+      "pitfalls": [
+        "Triggering notifications with missing subscriber object credentials",
+        "Not configuring channel provider fallback keys in Novu dashboard",
+        "Hardcoding email templates in application code rather than Novu workflow layouts"
+      ],
+      "checklist": [
+        "NOVU_SECRET_KEY loaded in server environment",
+        "Subscribers identified with consistent subscriberId",
+        "Trigger workflow slugs verified against Novu console"
+      ],
+      "id": "novu"
     },
     {
       "name": "nuxt",
@@ -3243,6 +3584,48 @@
       "id": "posthog"
     },
     {
+      "name": "postmark",
+      "version": "1.0.0",
+      "description": "High-deliverability transactional email service with detailed delivery metrics and inbound webhooks.",
+      "categories": [
+        "Email",
+        "Communications"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://postmarkapp.com/developer"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://postmarkapp.com/developer",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-03",
+      "pitfalls": [
+        "Using account tokens instead of server API tokens for sending messages",
+        "Sending emails from unverified sender signatures or domains",
+        "Forgetting to attach MessageStream parameter for broadcast vs transactional streams"
+      ],
+      "checklist": [
+        "POSTMARK_SERVER_API_TOKEN configured in backend environment",
+        "From address matches verified domain with DKIM/SPF passing",
+        "Batch emails use sendEmailBatch for bulk delivery"
+      ],
+      "id": "postmark"
+    },
+    {
       "name": "prettier",
       "version": "1.0.0",
       "description": "Opinionated Code Formatter.",
@@ -3468,6 +3851,51 @@
       "compatibility": "SKILL.md v1.0",
       "lastVerified": "2026-07-02",
       "id": "pulumi"
+    },
+    {
+      "name": "qdrant",
+      "version": "1.0.0",
+      "description": "Vector similarity search engine and database for production AI embeddings and RAG pipelines.",
+      "categories": [
+        "AI",
+        "Databases",
+        "Search"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "rust"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "Apache-2.0",
+      "links": {
+        "API Reference": "https://qdrant.tech/documentation/",
+        "TypeScript SDK": "https://github.com/qdrant/qdrant-js"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://qdrant.tech/documentation/",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-03",
+      "pitfalls": [
+        "Inserting vector dimensions that mismatch collection vector parameters (e.g., 1536 vs 3072)",
+        "Forgetting to create payload indexes on filter fields before running large filtered searches",
+        "Passing integer IDs as strings or UUIDs when collection expects a specific ID format"
+      ],
+      "checklist": [
+        "Collection vector size matches the exact embedding model output dimensions",
+        "Payload fields used in filter queries are indexed with createPayloadIndex",
+        "QDRANT_URL and QDRANT_API_KEY are configured in server-side environment variables"
+      ],
+      "id": "qdrant"
     },
     {
       "name": "rabbitmq",
@@ -3745,6 +4173,49 @@
       "compatibility": "SKILL.md v1.0",
       "lastVerified": "2026-07-02",
       "id": "render"
+    },
+    {
+      "name": "replicate",
+      "version": "1.0.0",
+      "description": "Cloud API for running open-source machine learning models (Flux, SDXL, Llama, Whisper) with a few lines of code.",
+      "categories": [
+        "AI",
+        "Media",
+        "Machine Learning"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://replicate.com/docs/reference/http"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://replicate.com/docs/reference/http",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-03",
+      "pitfalls": [
+        "Blocking synchronous web requests waiting for cold-booting GPU model predictions",
+        "Not configuring webhooks for asynchronous long-running predictions (>30 seconds)",
+        "Hardcoding version hashes that may be superseded by official owner/model slugs"
+      ],
+      "checklist": [
+        "REPLICATE_API_TOKEN loaded in server environment",
+        "Async workflows use webhook callbacks or replicate.predictions.create() with polling",
+        "Generated media URLs downloaded and stored in persistent S3/GCS buckets"
+      ],
+      "id": "replicate"
     },
     {
       "name": "resend",
@@ -4160,6 +4631,50 @@
       "id": "sveltekit"
     },
     {
+      "name": "svix",
+      "version": "1.0.0",
+      "description": "Enterprise webhook sending service and cryptographic signature verification standard.",
+      "categories": [
+        "Developer Tools",
+        "Security",
+        "Communications"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "MIT",
+      "links": {
+        "API Reference": "https://docs.svix.com"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://docs.svix.com",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-03",
+      "pitfalls": [
+        "Attempting to verify webhook signatures against parsed JSON objects instead of raw string bodies",
+        "Missing required headers: svix-id, svix-timestamp, svix-signature",
+        "Not handling replay attack protection (timestamp drift validation)"
+      ],
+      "checklist": [
+        "Webhook headers passed exactly: svix-id, svix-timestamp, svix-signature",
+        "Webhook secret starts with whsec_ and is retrieved from environment variables",
+        "Verification runs on the raw, unparsed request payload string"
+      ],
+      "id": "svix"
+    },
+    {
       "name": "terraform",
       "version": "1.0.0",
       "description": "Infrastructure as Code.",
@@ -4277,6 +4792,48 @@
       "compatibility": "SKILL.md v1.0",
       "lastVerified": "2026-07-02",
       "id": "traefik"
+    },
+    {
+      "name": "trigger-dev",
+      "version": "1.0.0",
+      "description": "Background jobs and long-running tasks platform for TypeScript with zero server timeouts.",
+      "categories": [
+        "Developer Tools",
+        "Serverless",
+        "Workflows"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "Apache-2.0",
+      "links": {
+        "API Reference": "https://trigger.dev/docs"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://trigger.dev/docs",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-03",
+      "pitfalls": [
+        "Using v2 syntax instead of Trigger.dev v3 task() definitions",
+        "Running heavy tasks inside Next.js serverless functions instead of delegating to trigger.dev tasks",
+        "Missing trigger.config.ts in the project root"
+      ],
+      "checklist": [
+        "trigger.config.ts configured with project ID and runtime settings",
+        "Tasks defined with task({ id: \"...\", run: async (payload) => { ... } })",
+        "TRIGGER_SECRET_KEY set in deployment environment"
+      ],
+      "id": "trigger-dev"
     },
     {
       "name": "trpc",
@@ -4496,6 +5053,50 @@
       "compatibility": "SKILL.md v1.0",
       "lastVerified": "2026-07-02",
       "id": "typesense"
+    },
+    {
+      "name": "unkey",
+      "version": "1.0.0",
+      "description": "Open-source API key management, validation, and distributed edge rate limiting infrastructure.",
+      "categories": [
+        "Security",
+        "Developer Tools",
+        "Serverless"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "Apache-2.0",
+      "links": {
+        "API Reference": "https://www.unkey.com/docs"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://www.unkey.com/docs",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-03",
+      "pitfalls": [
+        "Validating API keys with database queries instead of sub-10ms edge caching via unkey.keys.verify()",
+        "Forgetting to check result.data.valid on key verification",
+        "Not configuring rate limit overrides per API tier"
+      ],
+      "checklist": [
+        "UNKEY_ROOT_KEY loaded on secure server or edge middleware",
+        "Key verification checks result.data.valid and handles result.error",
+        "Global edge rate limits enabled with Ratelimit module"
+      ],
+      "id": "unkey"
     },
     {
       "name": "upstash",
@@ -4732,6 +5333,50 @@
       "compatibility": "SKILL.md v1.0",
       "lastVerified": "2026-07-02",
       "id": "vue"
+    },
+    {
+      "name": "weaviate",
+      "version": "1.0.0",
+      "description": "Open-source vector database with multi-modal embeddings, hybrid keyword+vector search, and generative AI search modules.",
+      "categories": [
+        "AI",
+        "Databases",
+        "Search"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "go"
+      ],
+      "author": "Awesome API Skills Team",
+      "license": "BSD-3-Clause",
+      "links": {
+        "API Reference": "https://weaviate.io/developers/weaviate"
+      },
+      "schemaVersion": "1.0.0",
+      "validationStatus": "validated",
+      "maintainer": "Awesome API Skills Team",
+      "lastUpdated": "2026-07-02",
+      "documentationSource": "https://weaviate.io/developers/weaviate",
+      "supportedAgents": [
+        "cursor",
+        "claude-code",
+        "cline",
+        "continue"
+      ],
+      "compatibility": "SKILL.md v1.0",
+      "lastVerified": "2026-07-03",
+      "pitfalls": [
+        "Using legacy v2/v3 Weaviate client syntax instead of modern weaviate-client v3+ collections API",
+        "Not setting vectorizer configuration when creating new collections",
+        "Passing unindexed properties in complex GraphQL / REST filters"
+      ],
+      "checklist": [
+        "Connect using weaviate.connectToWeaviateCloud or connectToCustom",
+        "Collections defined with explicit vectorIndexType and distance metric",
+        "Hybrid search configured with alpha balancing (0 = sparse BM25, 1 = dense vector)"
+      ],
+      "id": "weaviate"
     },
     {
       "name": "xquik",

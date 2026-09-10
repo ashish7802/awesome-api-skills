@@ -78,7 +78,7 @@ awesome-api search stripe --json
         "score": 1
       }
     ],
-    "next": "Open skills/stripe/SKILL.md or run: pnpm dev → /skills/stripe"
+    "next": "Open skills/stripe/SKILL.md or run: npm run dev → /skills/stripe"
   }
 }
 ```
@@ -110,7 +110,7 @@ awesome-api doctor --json
     "issues": [],
     "nextSteps": [
       "awesome-api search <topic>  — find a skill",
-      "pnpm dev                    — browse skills in docs",
+      "npm run dev                    — browse skills in docs",
       "cp -r skills/stripe .skills/stripe — use in your project"
     ]
   }

@@ -1,1 +1,2 @@
-import { describe, it } from 'vitest';\ndescribe('Stripe API', () => { it('should work', () => {}) });\n
+import { describe, it } from 'vitest';
+describe('Stripe API', () => { it('should work', () => {}) });

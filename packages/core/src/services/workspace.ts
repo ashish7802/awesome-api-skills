@@ -7,8 +7,8 @@ export class WorkspaceManager {
   constructor(private configManager: ConfigurationManager) {}
 
   discover(startPath: string): Workspace {
-    let current = startPath;
-    while (current !== path.parse(current).root) {
+    let current = path.resolve(startPath);
+    while (true) {
       if (
         fs.existsSync(path.join(current, 'awesome-config.json')) ||
         fs.existsSync(path.join(current, 'skills'))
@@ -19,7 +19,9 @@ export class WorkspaceManager {
           skillsPath: path.join(current, 'skills'),
         };
       }
-      current = path.dirname(current);
+      const parent = path.dirname(current);
+      if (parent === current) break;
+      current = parent;
     }
 
     // Default to startPath if not found

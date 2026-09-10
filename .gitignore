@@ -6,3 +6,7 @@ coverage/
 .eslintcache
 .vscode/
 build-health.json
+
+# Generated release artifacts
+checksums.txt
+sbom.spdx.json

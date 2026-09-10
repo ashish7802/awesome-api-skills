@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { assertSkillId } from '../skill-id.js';
 import path from 'path';
 import { Command } from '../interfaces.js';
 import pc from 'picocolors';
@@ -23,6 +24,7 @@ const command: Command = {
     const root = findRepoRoot();
     const skillsDir = path.join(root, 'skills');
     const targetSkill = context.args[0];
+    if (targetSkill) assertSkillId(targetSkill);
 
     if (!fs.existsSync(skillsDir)) {
       throw new Error(`Skills directory not found at ${skillsDir}`);

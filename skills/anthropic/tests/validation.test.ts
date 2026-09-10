@@ -1,1 +1,2 @@
-import { describe, it } from 'vitest';\ndescribe('Anthropic API', () => { it('should work', () => {}) });\n
+import { describe, it } from 'vitest';
+describe('Anthropic API', () => { it('should work', () => {}) });

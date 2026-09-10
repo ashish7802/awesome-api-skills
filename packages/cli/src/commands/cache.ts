@@ -17,16 +17,14 @@ const command: Command = {
 
     if (action === 'clear' || action === 'clean') {
       cache.clear();
-      const distDir = path.resolve(process.cwd(), 'dist');
       const cacheDir = path.resolve(process.cwd(), '.cache');
 
-      if (fs.existsSync(distDir)) fs.rmSync(distDir, { recursive: true, force: true });
       if (fs.existsSync(cacheDir)) fs.rmSync(cacheDir, { recursive: true, force: true });
 
       return {
         action: 'clear',
         cleared: true,
-        message: 'Successfully cleared local build and generator cache directories',
+        message: 'Successfully cleared local generator cache directory',
       };
     }
 

@@ -1,6 +1,11 @@
 import { GeneratorPlugin, BuildContext, BuildDiagnostic } from '../interfaces.js';
 import * as fs from 'fs';
 import * as path from 'path';
+import { createHash } from 'node:crypto';
+
+function contentHash(value: unknown): string {
+  return createHash('sha256').update(JSON.stringify(value)).digest('hex');
+}
 
 export class SearchIndexPlugin implements GeneratorPlugin {
   id = 'plugin-search-index';
@@ -15,9 +20,13 @@ export class SearchIndexPlugin implements GeneratorPlugin {
       tags: s.tags,
       categories: s.categories,
     }));
-    const hash = 'hash-' + JSON.stringify(index).length;
+    const hash = contentHash(index);
 
-    if (context.isIncremental && context.cache.isUnchanged('search-index', hash)) {
+    if (
+      context.isIncremental &&
+      context.cache.isUnchanged(path.resolve(context.outputDir, 'search-index.json'), hash) &&
+      fs.existsSync(path.join(context.outputDir, 'search-index.json'))
+    ) {
       return {
         stage: this.id,
         durationMs: performance.now() - start,
@@ -33,7 +42,7 @@ export class SearchIndexPlugin implements GeneratorPlugin {
       path.join(context.outputDir, 'search-index.json'),
       JSON.stringify(index, null, 2),
     );
-    context.cache.setHash('search-index', hash);
+    context.cache.setHash(path.resolve(context.outputDir, 'search-index.json'), hash);
 
     return {
       stage: this.id,
@@ -53,8 +62,12 @@ export class RegistryPlugin implements GeneratorPlugin {
 
   async generate(context: BuildContext): Promise<BuildDiagnostic> {
     const start = performance.now();
-    const hash = 'hash-' + context.skills.length;
-    if (context.isIncremental && context.cache.isUnchanged('registry', hash)) {
+    const hash = contentHash(context.skills);
+    if (
+      context.isIncremental &&
+      context.cache.isUnchanged(path.resolve(context.outputDir, 'registry.json'), hash) &&
+      fs.existsSync(path.join(context.outputDir, 'registry.json'))
+    ) {
       return {
         stage: this.id,
         durationMs: performance.now() - start,
@@ -70,7 +83,7 @@ export class RegistryPlugin implements GeneratorPlugin {
       path.join(context.outputDir, 'registry.json'),
       JSON.stringify({ skills: context.skills }, null, 2),
     );
-    context.cache.setHash('registry', hash);
+    context.cache.setHash(path.resolve(context.outputDir, 'registry.json'), hash);
 
     return {
       stage: this.id,
@@ -90,8 +103,12 @@ export class ManifestPlugin implements GeneratorPlugin {
 
   async generate(context: BuildContext): Promise<BuildDiagnostic> {
     const start = performance.now();
-    const hash = 'hash-' + context.skills.length;
-    if (context.isIncremental && context.cache.isUnchanged('manifest', hash)) {
+    const hash = contentHash(context.skills);
+    if (
+      context.isIncremental &&
+      context.cache.isUnchanged(path.resolve(context.outputDir, 'manifest.json'), hash) &&
+      fs.existsSync(path.join(context.outputDir, 'manifest.json'))
+    ) {
       return {
         stage: this.id,
         durationMs: performance.now() - start,
@@ -113,7 +130,7 @@ export class ManifestPlugin implements GeneratorPlugin {
       path.join(context.outputDir, 'manifest.json'),
       JSON.stringify(manifest, null, 2),
     );
-    context.cache.setHash('manifest', hash);
+    context.cache.setHash(path.resolve(context.outputDir, 'manifest.json'), hash);
 
     return {
       stage: this.id,
@@ -133,8 +150,12 @@ export class IntegrityReportPlugin implements GeneratorPlugin {
 
   async generate(context: BuildContext): Promise<BuildDiagnostic> {
     const start = performance.now();
-    const hash = 'hash-' + context.skills.length;
-    if (context.isIncremental && context.cache.isUnchanged('integrity', hash)) {
+    const hash = contentHash(context.skills);
+    if (
+      context.isIncremental &&
+      context.cache.isUnchanged(path.resolve(context.outputDir, 'integrity-report.json'), hash) &&
+      fs.existsSync(path.join(context.outputDir, 'integrity-report.json'))
+    ) {
       return {
         stage: this.id,
         durationMs: performance.now() - start,
@@ -146,12 +167,12 @@ export class IntegrityReportPlugin implements GeneratorPlugin {
     }
 
     fs.mkdirSync(context.outputDir, { recursive: true });
-    const integrity = context.skills.map((s) => ({ id: s.id, checksum: 'sha256-mock-' + s.id }));
+    const integrity = context.skills.map((s) => ({ id: s.id, checksum: contentHash(s) }));
     fs.writeFileSync(
       path.join(context.outputDir, 'integrity-report.json'),
       JSON.stringify(integrity, null, 2),
     );
-    context.cache.setHash('integrity', hash);
+    context.cache.setHash(path.resolve(context.outputDir, 'integrity-report.json'), hash);
 
     return {
       stage: this.id,
@@ -171,8 +192,12 @@ export class DocsPlugin implements GeneratorPlugin {
 
   async generate(context: BuildContext): Promise<BuildDiagnostic> {
     const start = performance.now();
-    const hash = 'hash-' + context.skills.length;
-    if (context.isIncremental && context.cache.isUnchanged('docs', hash)) {
+    const hash = contentHash(context.skills);
+    if (
+      context.isIncremental &&
+      context.cache.isUnchanged(path.resolve(context.outputDir, 'docs'), hash) &&
+      context.skills.every((s) => fs.existsSync(path.join(context.outputDir, 'docs', s.id + '.md')))
+    ) {
       return {
         stage: this.id,
         durationMs: performance.now() - start,
@@ -194,7 +219,7 @@ export class DocsPlugin implements GeneratorPlugin {
       );
       outputs++;
     }
-    context.cache.setHash('docs', hash);
+    context.cache.setHash(path.resolve(context.outputDir, 'docs'), hash);
 
     return {
       stage: this.id,
@@ -214,8 +239,12 @@ export class SitemapPlugin implements GeneratorPlugin {
 
   async generate(context: BuildContext): Promise<BuildDiagnostic> {
     const start = performance.now();
-    const hash = 'hash-' + context.skills.length;
-    if (context.isIncremental && context.cache.isUnchanged('sitemap', hash)) {
+    const hash = contentHash(context.skills);
+    if (
+      context.isIncremental &&
+      context.cache.isUnchanged(path.resolve(context.outputDir, 'sitemap.xml'), hash) &&
+      fs.existsSync(path.join(context.outputDir, 'sitemap.xml'))
+    ) {
       return {
         stage: this.id,
         durationMs: performance.now() - start,
@@ -235,7 +264,7 @@ export class SitemapPlugin implements GeneratorPlugin {
       path.join(context.outputDir, 'sitemap.xml'),
       '<?xml version="1.0" encoding="UTF-8"?><urlset>' + urls + '</urlset>',
     );
-    context.cache.setHash('sitemap', hash);
+    context.cache.setHash(path.resolve(context.outputDir, 'sitemap.xml'), hash);
 
     return {
       stage: this.id,

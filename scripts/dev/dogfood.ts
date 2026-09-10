@@ -18,7 +18,7 @@ import {
 import { RegistryCache, SearchIndex } from '../../packages/registry/src/index.js';
 
 const root = path.join(process.cwd(), 'skills');
-const outDir = path.join(process.cwd(), 'dist');
+const outDir = path.join(process.cwd(), 'dist/dogfood');
 const snapshotsDir = path.join(process.cwd(), 'snapshots');
 
 async function loadRealSkills(): Promise<SkillMetadata[]> {
@@ -55,7 +55,7 @@ function generateSyntheticSkills(count: number): SkillMetadata[] {
 }
 
 async function runSnapshotTests() {
-  if (!fs.existsSync(snapshotsDir)) {
+  if (process.argv.includes('--update-snapshots')) {
     fs.mkdirSync(snapshotsDir, { recursive: true });
     // First run, copy generated artifacts to snapshots
     const files = [
@@ -92,13 +92,13 @@ async function runSnapshotTests() {
 }
 
 async function runBenchmarks() {
-  const health: Record<string, unknown> = {
+  const health = {
     timestamp: new Date().toISOString(),
     platform: process.platform,
     nodeVersion: process.version,
-    benchmarks: {},
-    validationResults: null,
-    buildResults: null,
+    benchmarks: {} as Record<string, number>,
+    validationResults: null as unknown,
+    buildResults: null as unknown,
   };
 
   const realSkills = await loadRealSkills();
@@ -119,7 +119,7 @@ async function runBenchmarks() {
 
   health.validationResults = valResults;
   health.benchmarks.validationReal = elapsed;
-  console.log(`Validation (10 real): ${elapsed.toFixed(2)}ms`);
+  console.log(`Validation (${realSkills.length} real): ${elapsed.toFixed(2)}ms`);
 
   const hasErrors = valResults.some((r) => !r.isValid);
   if (hasErrors) throw new Error('Real skills failed validation!');
@@ -152,7 +152,7 @@ async function runBenchmarks() {
   elapsed = performance.now() - start;
   health.buildResults = buildReport;
   health.benchmarks.generationReal = elapsed;
-  console.log(`Generation Full (10 real): ${elapsed.toFixed(2)}ms`);
+  console.log(`Generation Full (${realSkills.length} real): ${elapsed.toFixed(2)}ms`);
 
   // Incremental generation
   start = performance.now();
@@ -162,7 +162,7 @@ async function runBenchmarks() {
   );
   health.benchmarks.generationIncrementalReal = performance.now() - start;
   console.log(
-    `Generation Incremental (10 real): ${health.benchmarks.generationIncrementalReal.toFixed(2)}ms`,
+    `Generation Incremental (${realSkills.length} real): ${health.benchmarks.generationIncrementalReal.toFixed(2)}ms`,
   );
 
   // Snapshot assertion
@@ -188,13 +188,17 @@ async function runBenchmarks() {
   start = performance.now();
   for (const s of realSkills) registryCache.set(s, 'local');
   health.benchmarks.registryLoadReal = performance.now() - start;
-  console.log(`Registry Load (10 real): ${health.benchmarks.registryLoadReal.toFixed(2)}ms`);
+  console.log(
+    `Registry Load (${realSkills.length} real): ${health.benchmarks.registryLoadReal.toFixed(2)}ms`,
+  );
 
   const searchIndex = new SearchIndex(registryCache);
   start = performance.now();
   searchIndex.search({ term: 'API', category: 'AI' });
   health.benchmarks.searchReal = performance.now() - start;
-  console.log(`Registry Search Latency (10 real): ${health.benchmarks.searchReal.toFixed(2)}ms`);
+  console.log(
+    `Registry Search Latency (${realSkills.length} real): ${health.benchmarks.searchReal.toFixed(2)}ms`,
+  );
 
   // Registry Scalability
   const bigRegistry = new RegistryCache();

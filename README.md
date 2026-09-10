@@ -167,13 +167,14 @@ We welcome contributions of new API skills and improvements to existing document
    ```bash
    git clone https://github.com/ashish7802/awesome-api-skills.git
    cd awesome-api-skills
-   pnpm install
+   npm ci
+   npm run build:packages
    ```
 2. **Create your skill** under `skills/<skill-name>/` containing `SKILL.md` and `metadata.json`.
 3. **Run schema validation & test suite**:
    ```bash
-   pnpm run validate:skills
-   pnpm test
+   npm run validate:skills
+   npm test
    ```
 4. **Submit a Pull Request**. Our automated GitHub Actions workflow will review and validate the submission.
 

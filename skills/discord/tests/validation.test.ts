@@ -1,1 +1,2 @@
-import { describe, it } from 'vitest';\ndescribe('Discord API', () => { it('should work', () => {}) });\n
+import { describe, it } from 'vitest';
+describe('Discord API', () => { it('should work', () => {}) });

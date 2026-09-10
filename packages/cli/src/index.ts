@@ -77,6 +77,9 @@ export async function main(argv: string[]) {
   const execStart = performance.now();
   try {
     const data = await cmd.execute({ args: commandArgs, options: parsed.values, globalOptions });
+    if (data && typeof data === 'object' && 'valid' in data && data.valid === false) {
+      process.exitCode = 1;
+    }
 
     if (typeof data === 'string') {
       renderer.renderData(data);

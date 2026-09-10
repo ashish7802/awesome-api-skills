@@ -1,1 +1,2 @@
-import { describe, it } from 'vitest';\ndescribe('Cloudflare API', () => { it('should work', () => {}) });\n
+import { describe, it } from 'vitest';
+describe('Cloudflare API', () => { it('should work', () => {}) });

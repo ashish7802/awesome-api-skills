@@ -76,6 +76,14 @@
     ]
   },
   {
+    "id": "braintree",
+    "name": "braintree",
+    "categories": [
+      "Payments",
+      "Commerce"
+    ]
+  },
+  {
     "id": "bullmq",
     "name": "bullmq",
     "categories": [
@@ -116,6 +124,15 @@
     ]
   },
   {
+    "id": "cohere",
+    "name": "cohere",
+    "categories": [
+      "AI",
+      "Search",
+      "Machine Learning"
+    ]
+  },
+  {
     "id": "convex",
     "name": "convex",
     "categories": [
@@ -129,6 +146,14 @@
     "categories": [
       "Monitoring",
       "DevOps"
+    ]
+  },
+  {
+    "id": "deepseek",
+    "name": "deepseek",
+    "categories": [
+      "AI",
+      "Machine Learning"
     ]
   },
   {
@@ -167,6 +192,15 @@
     "categories": [
       "Databases",
       "Developer Tools"
+    ]
+  },
+  {
+    "id": "elevenlabs",
+    "name": "elevenlabs",
+    "categories": [
+      "AI",
+      "Audio",
+      "Media"
     ]
   },
   {
@@ -252,6 +286,15 @@
     ]
   },
   {
+    "id": "groq",
+    "name": "groq",
+    "categories": [
+      "AI",
+      "Performance",
+      "Machine Learning"
+    ]
+  },
+  {
     "id": "helm",
     "name": "helm",
     "categories": [
@@ -264,6 +307,15 @@
     "name": "hono",
     "categories": [
       "Backend Frameworks"
+    ]
+  },
+  {
+    "id": "inngest",
+    "name": "inngest",
+    "categories": [
+      "Developer Tools",
+      "Serverless",
+      "Workflows"
     ]
   },
   {
@@ -353,6 +405,14 @@
     ]
   },
   {
+    "id": "mistral",
+    "name": "mistral",
+    "categories": [
+      "AI",
+      "Developer Tools"
+    ]
+  },
+  {
     "id": "mixpanel",
     "name": "mixpanel",
     "categories": [
@@ -410,6 +470,14 @@
     "categories": [
       "Developer Tools",
       "Infrastructure"
+    ]
+  },
+  {
+    "id": "novu",
+    "name": "novu",
+    "categories": [
+      "Communications",
+      "Developer Tools"
     ]
   },
   {
@@ -521,6 +589,14 @@
     ]
   },
   {
+    "id": "postmark",
+    "name": "postmark",
+    "categories": [
+      "Email",
+      "Communications"
+    ]
+  },
+  {
     "id": "prettier",
     "name": "prettier",
     "categories": [
@@ -548,6 +624,15 @@
     "categories": [
       "Developer Tools",
       "Infrastructure"
+    ]
+  },
+  {
+    "id": "qdrant",
+    "name": "qdrant",
+    "categories": [
+      "AI",
+      "Databases",
+      "Search"
     ]
   },
   {
@@ -594,6 +679,15 @@
     "categories": [
       "Cloud",
       "DevOps"
+    ]
+  },
+  {
+    "id": "replicate",
+    "name": "replicate",
+    "categories": [
+      "AI",
+      "Media",
+      "Machine Learning"
     ]
   },
   {
@@ -671,6 +765,15 @@
     ]
   },
   {
+    "id": "svix",
+    "name": "svix",
+    "categories": [
+      "Developer Tools",
+      "Security",
+      "Communications"
+    ]
+  },
+  {
     "id": "terraform",
     "name": "terraform",
     "categories": [
@@ -684,6 +787,15 @@
     "categories": [
       "Infrastructure",
       "Developer Tools"
+    ]
+  },
+  {
+    "id": "trigger-dev",
+    "name": "trigger-dev",
+    "categories": [
+      "Developer Tools",
+      "Serverless",
+      "Workflows"
     ]
   },
   {
@@ -725,6 +837,15 @@
     ]
   },
   {
+    "id": "unkey",
+    "name": "unkey",
+    "categories": [
+      "Security",
+      "Developer Tools",
+      "Serverless"
+    ]
+  },
+  {
     "id": "upstash",
     "name": "upstash",
     "categories": [
@@ -761,6 +882,15 @@
     "name": "vue",
     "categories": [
       "Frontend Frameworks"
+    ]
+  },
+  {
+    "id": "weaviate",
+    "name": "weaviate",
+    "categories": [
+      "AI",
+      "Databases",
+      "Search"
     ]
   },
   {

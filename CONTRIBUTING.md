@@ -4,13 +4,15 @@ Thank you for your interest in contributing.
 
 ## Development setup
 
+Use Node.js 22.19+ (22.x), 24.x, or 26+ and npm.
+
 ```bash
 git clone https://github.com/ashish7802/awesome-api-skills.git
 cd awesome-api-skills
-pnpm install
-pnpm build
-pnpm test
-pnpm lint
+npm ci
+npm run build
+npm test
+npm run lint
 ```
 
 ## Adding a new skill
@@ -50,3 +52,7 @@ pnpm lint
 ## Code of Conduct
 
 This project follows the [Contributor Covenant](https://www.contributor-covenant.org/) Code of Conduct.
+
+## Regression checks
+
+Run `npm run typecheck`, `npm run validate:skills`, and `npm run test:snapshots` after changes. To deliberately refresh artifact snapshots after reviewing generator changes, run `npx tsx scripts/dev/dogfood.ts --update-snapshots`, then run the snapshot check again.

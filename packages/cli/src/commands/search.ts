@@ -85,7 +85,7 @@ const command: Command = {
         path: `skills/${r.id}/SKILL.md`,
         score: r.score,
       })),
-      next: `Open skills/${results[0].id}/SKILL.md or run: pnpm dev → /skills/${results[0].id}`,
+      next: `Open skills/${results[0].id}/SKILL.md or run: npm run dev → /skills/${results[0].id}`,
     };
   },
 };

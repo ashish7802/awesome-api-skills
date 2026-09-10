@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import {
   PipelineEngine,
   BuildContext,
@@ -86,8 +86,9 @@ describe('Generator Pipeline', () => {
       });
     }
 
+    vi.useFakeTimers();
     const start = performance.now();
-    const report = await engine.runPipeline(
+    const pending = engine.runPipeline(
       {
         skills: [],
         cache: new GeneratorCache(),
@@ -97,10 +98,13 @@ describe('Generator Pipeline', () => {
       },
       ['TestStage'],
     );
+    await vi.runAllTimersAsync();
+    const report = await pending;
     const elapsed = performance.now() - start;
+    vi.useRealTimers();
 
     // 100 plugins running 10ms tasks concurrently should take roughly ~10-30ms total, not 1000ms.
-    expect(elapsed).toBeLessThan(100);
+    expect(elapsed).toBe(10);
     expect(report.totalDurationMs).toBeGreaterThan(0);
     expect(report.diagnostics.length).toBe(100);
   });
